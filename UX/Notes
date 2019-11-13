@@ -7,3 +7,7 @@ Wireframes:
                       6) Login Screen (New/Logged-In User)
                       7) Register Screen (New User)
                       8) Booking (Logged-In User)
+
+Topics:
+- Στην αρχική οθόνη ο νέος χρήστης θα έχει μπροστά του πέρα του sidebar menu για να δεί όλα τα events κάθε κατηγορίας 
+  και προτεινόμενα events της καθε κατηγορίας. Με βαση ποιο κριτήριο θα ανανεώνονται τα προτεινόμενα events?
