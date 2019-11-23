@@ -8,6 +8,12 @@ Wireframes:
                       7) Register Screen (New User)
                       8) Booking (Logged-In User)
 
-Topics:
-- Στην αρχική οθόνη ο νέος χρήστης θα έχει μπροστά του πέρα του sidebar menu για να δεί όλα τα events κάθε κατηγορίας 
-  και προτεινόμενα events της καθε κατηγορίας. Με βαση ποιο κριτήριο θα ανανεώνονται τα προτεινόμενα events?
+Details:
+-Font: Open Sans
+-Color Palette: #5680E9 - #84CEEB - #5AB9EA - #C1C8E4 - #8860D0
+-Menu Bar Properties:
+      Width: 1920px
+      Height: 100px
+-Search Box Properties:
+      Width: 900px
+      Height: 80px
