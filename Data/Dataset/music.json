@@ -1,0 +1,494 @@
+{
+  "count": 20,
+  "overflow": true,
+  "next": "https://api.predicthq.com/v1/events/?country=GR&label=music&offset=10",
+  "previous": null,
+  "results": [
+    {
+      "relevance": 1,
+      "id": "qf89GgqJZUVubnaCX2",
+      "title": "SL Theory | Album release show",
+      "description": "SL Theory . Album Release Show\n28 Δεκεμβρίου 2019 – Fuzz Club\nΝοely Rayn presenting their new album “Perfect is not Enough”\n& Cellar Stone\nΤο Σάββατο 28 Δεκεμβρίου οι SL Theory θα ταρακουνήσουν το Fuzz, παρουσιάζοντας τον νέο τους δίσκο! Η μπάντα που έχει προσελκύσει το ενδιαφέρον κοινού και κριτικών, σε μια headline εμφάνιση που θα θυμόμαστε για καιρό.\nΟι SL Theory είναι ένα Heavy Rock συγκρότημα το οποίο κινείται σε ένα ηχητικό φάσμα που αγκαλιάζει από το Heavy Prog έως το AOR. Με όπλο τους μια σειρά από ποιοτικές συνθέσεις, είναι αναμφίβολα μια από τις πιο ενδιαφέρουσες μουσικές προτάσεις του σκληρού ήχου. Μέσα από πολυσυζητημένες Live εμφανίσεις σε συνθήκες υψηλών απαιτήσεων, οι SL Theory προκαλούν και προσκαλούν τον ακροατή σε ένα αξέχαστο μουσικό ταξίδι, που έχει αποσπάσει τα εύσημα οπαδών, εντός και εκτός συναυλιακών τειχών.\nΤο συγκρότημα έχει ως τώρα κυκλοφορήσει δύο στούντιο άλμπουμ σε CD, ενώ πρόσφατα κυκλοφόρησε το πρώτο του live CD / DVD και βλέπει την δημοτικότητά του να μεγαλώνει μέσα από τις θεαματικές του οπτικοακουστικές ζωντανές εμφανίσεις.\nH καινούργια στούντιο δουλειά των SL Theory έχει τον τίτλο “Cipher” και πρόκειται σίγουρα για μια από τις πιο ενδιαφέρουσες κυκλοφορίες της χρονιάς. Με το “Cipher”, οι SL Theory καταφέρνουν να ανεβάσουν τον πήχη με την προσοχή την οποία το συγκρότημα έχει, για μια ακόμα φορά, δείξει στη λεπτομέρεια, κάνοντας τη διαφορά με μουσική η οποία δείχνει τα «δόντια» της, ενώ παράλληλα αγγίζει και γεννά συναισθήματα στον ακροατή. Στο Fuzz, πρόκειται να δώσουν ένα μοναδικό show, για όσους τυχερούς παρευρεθούν στον χώρο!\nMαζί τους οι Νοely Rayn, θα παρουσιάσουν τον νέο τους δίσκο “Perfect is not Enough”, σαν γνήσια τέκνα των Thin Lizzy και της ιρλανδικής hard rock σκηνής.\nΤη συναυλία θα ανοίξουν οι Cellar Stone, με το heavy rock τους το αλήτικο να μην χαρίζεται σε κανένα!\nΗ ελληνική σκηνή δείχνει τα δόντια της και σε καλεί να δεις από κοντά πόσα απίδια πιάνει ο σάκος της! Δίνουμε ραντεβού λοιπόν, επί σκηνής το Σάββατο 28 Δεκεμβρίου στο Fuzz.\nΟι SL Theory είναι:\nΜιχάλης Καρασούλης (φωνή)\nΆλεξ Φλούρος (κιθάρα)\nΓιάννης Νίγδελης (κιθάρα)\nΧρήστος Κόλλιας (μπάσο)\nΜανώλης Γαβαλάς (πλήκτρα)\nΣωτήρης Λαγωνίκας (drums)\nΣτα φωνητικά είναι:\nΜαργαρίτα Παπαδημητρίου Άννα Τάρμπα\nhttps://www.sltheory.com/\nhttps://www.youtube.com/sltheory\nhttps://www.facebook.com/sltheory\nhttps://sotirislagonikas.bandcamp.com/album/progressively-dark\nΠληροφορίες εισιτηρίων\nΗ προπώληση θα ξεκινήσει την Τετάρτη 2 Οκτωβρίου 2019.\nΤιμές εισιτηρίων\nΠροπώληση: 10€\nΤαμείο: 12€",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 17,
+      "local_rank": 23,
+      "entities": [
+        {
+          "name": "Fuzz Club",
+          "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
+          "entity_id": "38ajSpwEDLzVQzcMibzERbu",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T06:00:00Z",
+      "end": "2019-12-28T06:00:00Z",
+      "updated": "2019-10-10T03:41:25Z",
+      "first_seen": "2019-10-10T03:40:03Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.698703,
+        37.967968
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133676",
+          "253025"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "WZxdyFuXzcuGc24oBv",
+      "title": "Voltage Welcomes Marika Rossa",
+      "description": "",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 41,
+      "local_rank": 47,
+      "entities": [
+        {
+          "name": "STEAM ATHENS",
+          "formatted_address": "Evrymedontos 3\nAthens\nGreece",
+          "entity_id": "JE7FBtfYBF3EamHhaRjdsd",
+          "type": "venue"
+        }
+      ],
+      "duration": 30660,
+      "start": "2019-12-20T21:59:00Z",
+      "end": "2019-12-21T06:30:00Z",
+      "updated": "2019-10-12T15:54:06Z",
+      "first_seen": "2019-10-12T15:53:57Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.713347,
+        37.980824
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "RgKAvLoJFWe9XtPfvv",
+      "title": "The Christmas Boogie #8 – The Class of ’58 live in Athens",
+      "description": "Οι Rollin Foxes σας προσκαλούμε στο Christmas Boogie #8!\nΌσοι έχετε βρεθεί σε κάποια από τα προηγούμενα ανάλογα events, ξέρετε τι σημαίνει.. Όσοι όχι, ελάτε να ζήσετε μία αμιγώς rock ‘n’ roll βραδιά βγαλμένη από τη δεκαετία του ’50, σε ένα από τα μεγαλύτερα και σημαντικότερα events που διοργανώνει η χορευτική ομάδα των Rollin Foxes!\nΌπως όλες μας οι εκδηλώσεις, έτσι και τo Christmas Boogie, αποτελεί χάρη στη συνέπεια και την υψηλή ποιότητά του, θεσμό στην εγχώρια rock’n’roll σκηνή, όντας εκτός των άλλων, βασισμένο σε αντίστοιχα rock’n’roll events του εξωτερικού, και επηρεασμένο από αυτά.\nΤο πρόγραμμα περιλαμβάνει (όπως πάντα, έτσι και αυτή τη φορά): live μπάντες και καλλιτέχνες από την Ελλάδα και το εξωτερικό, DJ sets, υπέροχες μουσικές και, φυσικά, πολύ χορό!\nKαλεσμένοι μας αυτή τη φορά, είναι η υπέροχη μπάντα από την Αγγλία “The Class of ’58”!! Μία οικογένεια (κυριολεκτικά, είναι πατέρας, μητέρα και οι δύο γιοι!!) rock ‘n’ roll, που θα μας ξεσηκώσουν με τις 50s μουσικές τους!! Και ξέρουν πολύ καλά πώς να το κάνουν!!\nΤο live θα ανοίξουν οι “δικοί μας” Jitterbugs! Πρόκειται για μία από τις παλαιότερες μπάντες του είδους και σίγουρα η καλύτερη! Αυτό σημαίνει πως θα έχουμε το καλύτερο ζέσταμα για ό,τι πρόκειται να ακολουθήσει.\nΠριν την έναρξη της συναυλίας, στα διαλείμματα ανάμεσα στις εμφανίσεις των καλλιτεχνών αλλά και μετά το πέρας αυτών, οι DJs Manos K και Silvery Theodore θα φροντίσουν να κρατήσουν ζεστή την υπέροχη πίστα του καλύτερου live stage της Αθήνας, του Fuzz Live Music Club.\nΤο 8ο Christmas Boogie, θα είναι σίγουρα μια βραδιά που θα σας μείνει αξέχαστη!\n– ΕΙΣΙΤΗΡΙΑ\n* ΤΙΜΗ EARLY BIRD: 10 ευρώ.\nΗ πώληση εισιτηρίων Early Bird ξεκινάει την Τρίτη 26 Νοεμβρίου και ισχύει μέχρι το Σάββατο 30 Νοεμβρίου\nΤΙΜΗ ΠΡΟΠΩΛΗΣΗΣ: 12 ευρώ.\nΗ προπώληση εισιτηρίων ξεκινάει την Τρίτη 3 Δεκεμβρίου και ισχύει μέχρι το Σάββατο 14 Δεκεμβρίου\nΤΙΜΗ ΣΤΗΝ ΕΙΣΟΔΟ ΤΟΥ FUZZ\nΤΟ ΒΡΑΔΥ ΤΗΣ ΕΚΔΗΛΩΣΗΣ: 14 ευρώ\n-Τα εισιτήρια Early Bird και προπώλησης μπορείτε να τα προμηθευτείτε αποκλειστικά από το Blue Fox, Ασκληπιού 91 – Εξάρχεια, Τρίτη με Σάββατο και ώρες 18:00 με 21:00. Δεν γίνονται κρατήσεις εισιτηρίων, μόνο αγορά.\n——–\nThe Class of ’58 – Βιογραφικό\nΗ οικογένεια Coleman είναι οι “The Class of ’58”, μία από τις καλύτερες και πιο γνωστές μπάντες Rock & Roll και Doowop Vocal Harmony Group της Ευρώπης. Έχουν αναγνωριστεί διεθνώς ως ένας από τους κορυφαίους εκπροσώπους της ’50s μουσικής σήμερα.\nΑποτελείται από τον πατέρα (Howie) σε κιθάρα και τραγούδι, τη μητέρα (Chris) στο κόντρα μπάσο και τραγούδι και τους γιους John στα drums και τραγούδι και David στο πιάνο και τα φωνητικά .\nΈχουν συμμετάσχει πρόσφατα ως πρώτα ονόματα σε μεγάλα φεστιβάλ, όπως: “Chromefest”, NSW (Australia), The Summer Jamboree (Italy), Bethune Retro (France), Rockin’ Doowop (Gran Canaria) και αρκετά άλλα!!",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 17,
+      "local_rank": 23,
+      "entities": [
+        {
+          "name": "Fuzz Club",
+          "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
+          "entity_id": "38ajSpwEDLzVQzcMibzERbu",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-15T07:00:00Z",
+      "end": "2019-12-15T07:00:00Z",
+      "updated": "2019-11-19T03:37:21Z",
+      "first_seen": "2019-11-19T03:28:10Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.698703,
+        37.967968
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133676",
+          "253025"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "bpzdmnQYxyz6HfJeNF",
+      "title": "Hooverphonic",
+      "description": "Oι Hooverphonic επιστρέφουν στη χώρα μας για δύο μοναδικές βραδιές, γεμάτες από τις επιτυχίες που αγαπά το ελληνικό κοινό, την Παρασκευή 13 Δεκεμβρίου στο Fix Factory of sound της Θεσσαλονίκης και το Σάββατο 14, στο Fuzz live music club στην Αθήνα.\nΗ βελγική μπάντα, από την πρώτη στιγμή που εμφανίστηκε στο ευρωπαϊκό μουσικό στερέωμα, κατέχει μια ιδιαίτερη θέση και στις δικές μας καρδιές, με πιο πρόσφατη απόδειξη την εξαιρετική εμφάνισή τους στο Release Athens, τον περασμένο Ιούνιο.",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 17,
+      "local_rank": 23,
+      "entities": [
+        {
+          "name": "Fuzz Club",
+          "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
+          "entity_id": "38ajSpwEDLzVQzcMibzERbu",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-14T06:00:00Z",
+      "end": "2019-12-14T06:00:00Z",
+      "updated": "2019-09-26T06:27:14Z",
+      "first_seen": "2019-09-26T06:27:00Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.698703,
+        37.967968
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133676",
+          "253025"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "UHjRvJ5ARsoCycLKDc",
+      "title": "Scott Bradlee’s Postmodern Jukebox",
+      "description": "Welcome to the Twenties 2.0 World Tour Κυριακή 08 Δεκεμβρίου 2019 – Fuzz Club\nA Great Gatsby party…in 2019\n“Αμερική, αρχές 1920. Σε μία πολυτελή έπαυλη, δίπλα στην πισίνα με θέα την ακτή, άνδρες με κοστούμια και παπιγιόν και γυναίκες με φορέματα μέχρι το γόνατο, πέρλες στο λαιμό και μαλλιά κομμένα καρέ, πίνουν Cosmopolitan και χορεύουν στους ρυθμούς της live μπάντας που βρίσκεται εκεί για να τους διασκεδάσει”.\nΗ παραπάνω σκηνή μοιάζει να έχει βγει από τις σελίδες του Great Gatsby. Όταν όμως οι μουσικοί εκτελούν τις μεγαλύτερες επιτυχίες των τελευταίων δεκαετιών, σε ρυθμούς jazz, swing, foxtrot και soul, τότε μόλις ήρθατε στο μεγάλο party των Postmodern Jukebox!\nΈτοιμοι για ένα tap dance υπό τους “ήχους” του Bad Romance;\nΗ ιστορία αυτής της μουσικής “κολεκτίβας” δεν είναι σε καμία περίπτωση συνηθισμένη.\nΟ Scott Bradlee ξεκίνησε το 2009 να επανεκτελεί γνωστά τραγούδια σε πιο…jazz εκδοχή θέλοντας να βρει έναν ενδιαφέροντα τρόπο για να εξασκηθεί στο πιάνο. Λίγα χρόνια αργότερα, αποφασίζει τη δημιουργία ενός σχήματος, μιας συνάντησης διαφορετικών μουσικών με κοινή αγάπη στο πιάνο και το Motown!\nΕκτός από τον ιδρυτή και ιθύνοντα νου, Scott Bradlee, τα μέλη των PMJ δεν είναι σταθερά. Αντίθετα εναλλάσσονται – ξεπερνώντας συνολικά τα 70 – αναλόγως τη διασκευή, ώστε το αποτέλεσμα κάθε φορά να είναι μοναδικό!\nΜετρούν περισσότερες από ένα δισεκατομμύριο προβολές στο YouTube και εκατομμύρια followers. Μάλιστα, αναρτώντας κάθε εβδομάδα ένα νέο video, οι PMJ φροντίζουν να ικανοποιούν τους φανατικούς οπαδούς τους και, φυσικά, να ανανεώνονται τα playlist μας!\nΤο “Motown Tribute to Nickelback” κέρδισε τις εντυπώσεις και έδωσε στους PMJ το ιδανικό έναυσμα για να συνεχίσουν να προσεγγίζουν με τον δικό τους, ξεχωριστό τρόπο, τις μεγαλύτερες ραδιοφωνικές επιτυχίες. Έτσι, εκτός από τους Nickelback, Eminem, Adele, Lady Gaga, Sia, Rihanna, Justin Bieber, Katy Perry και Metallica είναι μόνο μερικοί από εκείνους που «ταξιδεύουν» σε δεκαετίες που κανείς δεν θα μπορούσε ποτέ να φανταστεί!\nΌπως σχολιάζει κι ο ίδιος ο Bradlee για την επερχόμενη Welcome to the Twenties 2.0 περιοδεία των PMJ, «χρησιμοποιούμε το μικρό μερίδιο που έχουμε στην ποπ κουλτούρα για να προτρέψουμε το κοινό να ξεχάσει τα προβλήματά του και να έρθει σε εμάς, για μία βραδιά που θα γιορτάσουμε το πραγματικό μουσικό ταλέντο και το διαχρονικό στυλ – ζωντανά και στην πραγματική ζωή».\nΔύο μήνες λοιπόν πριν ανακαλύψουμε τι μας επιφυλάσσει το 2020, οι Scott Bradlee’s Postmodern Jukebox μας ταξιδεύουν στον χρόνο, σε ένα εντυπωσιακό 1920s party με 2020s δημιουργίες!\nΦέρτε την καλή σας διάθεση, βρείτε τον χορευτικό σας παρτενέρ και ετοιμαστείτε για χορό!\nΜέχρι το ραντεβού μας την Κυριακή 8 Δεκεμβρίου στο Fuzz Club, απολαύστε τις playlists των PMJ:\nWeb: http://postmodernjukebox.com/\nYouTube: https://www.youtube.com/user/ScottBradleeLovesYa\nFacebook: https://www.facebook.com/postmodernjukebox\nSpotify: https://open.spotify.com/artist/5HYNPEO2NNBONQkp3Mvwvc\nSCOTT BRADLEE’S POSTMODERN JUKEBOX\nΚυριακή 8 Δεκεμβρίου – Fuzz Club\nΚάντε attend στην εκδήλωση στο Facebook εδώ\n\nΗ προπώληση συνεχίζεται\nΤα εισιτήρια γενικής εισόδου κοστίζουν 30€\nVIP Meet & Greet – 172,7 € (Διαθέσιμα αποκλειστικά ηλεκτρονικά και σε εξαιρετικά περιορισμένο αριθμό. Ισχύει όριο αγοράς 8 εισιτηρίων)\nΣτο VIP πακέτο περιλαμβάνονται:\nΕισιτήριο γενικής εισόδου\nΑποκλειστική δυνατότητα για Meet & Greet με τους Postmodern Jukebox\nΑναμνηστική φωτογραφία με τους Postmodern Jukebox\nΣυλλεκτική υπογεγραμμένη αφίσα του Welcome to the Twenties 2.0 Tour\nΑναμνηστικό πάσο του Welcome to the Twenties 2.0 Tour\nΣημεία Προπώλησης\nwww.highpriority.gr\nwww.ticketmaster.gr\nΤηλεφωνικό Kέντρο Ticketmaster 210 893 8111\nΔίκτυο καταστημάτων Public\n* Για αγορές μέσω internet υπάρχει επιβάρυνση 10% στην τιμή του εισιτηρίου\nΦυσικό σημείο προπώλησης (διαθέσιμα μόνο τα εισιτήρια γενικής εισόδου):\nReload Stores\nΑκαδημίας 81, Αθήνα\nΩράριο λειτουργίας:\nΔευτέρα έως Παρασκευή 09:30-21:00\nΣάββατο 10:00-20:00",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 17,
+      "local_rank": 23,
+      "entities": [
+        {
+          "name": "Fuzz Club",
+          "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
+          "entity_id": "38ajSpwEDLzVQzcMibzERbu",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-08T06:00:00Z",
+      "end": "2019-12-08T06:00:00Z",
+      "updated": "2019-10-10T03:43:00Z",
+      "first_seen": "2019-10-10T03:41:21Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.698703,
+        37.967968
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133676",
+          "253025"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "FgSrwzd7hDGWm9We8j",
+      "title": "Gazi View Pres Phaedon / Some Me / Steph / Fro",
+      "description": "",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 0,
+      "local_rank": 0,
+      "entities": [
+        {
+          "name": "Gazi View",
+          "formatted_address": "Iakhou 22\n11854 11854 Athens\nGreece\nΙάκχου 22 (14,966.91 km) 11854 Athens\nGreece",
+          "entity_id": "zJMUpMWmXwBz4saFC4BQpa",
+          "type": "venue"
+        }
+      ],
+      "duration": 32400,
+      "start": "2019-12-07T21:00:00Z",
+      "end": "2019-12-08T06:00:00Z",
+      "updated": "2019-10-11T17:01:15Z",
+      "first_seen": "2019-10-11T07:16:50Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.712224,
+        37.977718
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "zrsfETGD9g9bGv5W2j",
+      "title": "Gletzair Gl41",
+      "description": "",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 0,
+      "local_rank": 0,
+      "entities": [
+        {
+          "name": "Faust",
+          "formatted_address": "Kalamiotou 11 & Athinaidos 12\nAthens 10560\nGreece",
+          "entity_id": "KCV4JnsTLFuSzzUJYjhHgM",
+          "type": "venue"
+        }
+      ],
+      "duration": 25200,
+      "start": "2019-12-07T20:30:00Z",
+      "end": "2019-12-08T03:30:00Z",
+      "updated": "2019-10-11T22:39:21Z",
+      "first_seen": "2019-10-11T22:39:11Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.728789,
+        37.976916
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "frHYjpjfLYvrNnV2CF",
+      "title": "Plisskën Winter Edition",
+      "description": "",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 64,
+      "local_rank": 71,
+      "entities": [
+        {
+          "name": "Piraeus 117 Academy",
+          "formatted_address": "Pireos 117\nAthens\nGreece",
+          "entity_id": "LuR2EQh7FwrKecXJQ75V2x",
+          "type": "venue"
+        }
+      ],
+      "duration": 43200,
+      "start": "2019-12-07T17:00:00Z",
+      "end": "2019-12-08T05:00:00Z",
+      "updated": "2019-10-11T05:46:53Z",
+      "first_seen": "2019-09-17T20:30:38Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71097,
+        37.97563
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "S6mNeiXTxGBLodnjwY",
+      "title": "Modular Expansion with Sebastian Bayne & Emex",
+      "description": "",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 26,
+      "local_rank": 32,
+      "entities": [
+        {
+          "name": "Astron bar",
+          "formatted_address": "3 Taki\n105 54 Athina\nGreece",
+          "entity_id": "rVZexwKf4HjntnsRPBs5YC",
+          "type": "venue"
+        }
+      ],
+      "duration": 23460,
+      "start": "2019-12-06T21:59:00Z",
+      "end": "2019-12-07T04:30:00Z",
+      "updated": "2019-11-23T05:47:47Z",
+      "first_seen": "2019-11-23T05:47:39Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.724517,
+        37.978803
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "2Td5YJYyAVzUU832gj",
+      "title": "Terry Riley & Gyan Riley",
+      "description": "",
+      "category": "concerts",
+      "labels": [
+        "concert",
+        "music"
+      ],
+      "rank": 40,
+      "local_rank": 46,
+      "entities": [
+        {
+          "name": "Parnassos Literary Society Concert Hall",
+          "formatted_address": "St. George's Square\nKarytsi 8\nAthens\nGreece",
+          "entity_id": "DpVnQqpSaTy3BHQWkMXHNz",
+          "type": "venue"
+        }
+      ],
+      "duration": 10800,
+      "start": "2019-12-04T18:30:00Z",
+      "end": "2019-12-04T21:30:00Z",
+      "updated": "2019-09-21T19:51:07Z",
+      "first_seen": "2019-01-18T02:44:15Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.731451,
+        37.978248
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    }
+  ]
+}

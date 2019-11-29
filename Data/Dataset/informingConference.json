@@ -1,0 +1,396 @@
+{
+  "count": 20,
+  "overflow": true,
+  "next": "https://api.predicthq.com/v1/events/?category=conferences&country=GR&offset=10",
+  "previous": null,
+  "results": [
+    {
+      "relevance": 1,
+      "id": "wSsynoQWCC57Qwd4rU",
+      "title": "International Conference Applied Mathematics, Computational Science and Systems Engineering",
+      "description": "",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "science",
+        "technology"
+      ],
+      "rank": 30,
+      "local_rank": 36,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "88CyGgwearJsRMDpm2gEaL",
+          "name": "Titania Hotel",
+          "formatted_address": "Athens 106 78\nGreece"
+        }
+      ],
+      "duration": 205200,
+      "start": "2019-12-28T07:00:00Z",
+      "end": "2019-12-30T16:00:00Z",
+      "updated": "2019-08-12T09:38:58Z",
+      "first_seen": "2019-08-12T01:53:30Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.730953,
+        37.98295
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "cbyxMnarfTw37ryGwf",
+      "title": "Hellenic Congress on Clinical Nutrition & Metabolism",
+      "description": "",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "health",
+        "science"
+      ],
+      "rank": 30,
+      "local_rank": 36,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "4ieqc6ZtLv6NhYuLrBVmCB",
+          "name": "Megaron Athens International Conference Centre",
+          "formatted_address": "115 21 Athina\nGreece"
+        }
+      ],
+      "duration": 205200,
+      "start": "2019-12-13T07:00:00Z",
+      "end": "2019-12-15T16:00:00Z",
+      "updated": "2019-09-23T16:53:16Z",
+      "first_seen": "2019-09-23T16:53:11Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.754072,
+        37.980519
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "dgVTNkNXvFyU3mxFif",
+      "title": "8th International Conference on e-Democracy: Safeguarding Democracy and Hum",
+      "description": "How can we safeguard our democracy against such threats? How can we create an intelligent digital world while ensuring individual rights?",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "science",
+        "technology"
+      ],
+      "rank": 0,
+      "local_rank": 0,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "WgtRGFj8cuVvQncuC56Ks3",
+          "name": "Divani Caravel Hotel",
+          "formatted_address": "2 Leoforos Vasileos Alexandrou\n161 21 Athens\nGreece"
+        }
+      ],
+      "duration": 97200,
+      "start": "2019-12-12T17:00:00Z",
+      "end": "2019-12-13T20:00:00Z",
+      "updated": "2019-08-13T09:06:48Z",
+      "first_seen": "2019-08-12T15:52:29Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.751444,
+        37.973102
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133859",
+          "251948"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "tFSLscUejdQpDD85Xc",
+      "title": "International Conference On E-democracy",
+      "description": "",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "technology"
+      ],
+      "rank": 44,
+      "local_rank": 50,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "WgtRGFj8cuVvQncuC56Ks3",
+          "name": "Divani Caravel Hotel",
+          "formatted_address": "2 Leoforos Vasileos Alexandrou\n161 21 Athens\nGreece"
+        }
+      ],
+      "duration": 118800,
+      "start": "2019-12-12T07:00:00Z",
+      "end": "2019-12-13T16:00:00Z",
+      "updated": "2019-07-01T10:13:54Z",
+      "first_seen": "2019-07-01T08:15:52Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.751444,
+        37.973102
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133859",
+          "251948"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "3c99M5ncUBX3cXZ2io",
+      "title": "Panhellenic Pulmonology Congress",
+      "description": "",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "health",
+        "medical"
+      ],
+      "rank": 44,
+      "local_rank": 50,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "MqpYYwthRtDKxByLg8QLiV",
+          "name": "Hilton Athens",
+          "formatted_address": "46 Leoforos Vasilissis Sofias\n115 28 Athina\nGreece"
+        }
+      ],
+      "duration": 291600,
+      "start": "2019-12-12T07:00:00Z",
+      "end": "2019-12-15T16:00:00Z",
+      "updated": "2019-10-08T21:43:30Z",
+      "first_seen": "2019-08-06T12:42:27Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.750396,
+        37.976458
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "nJuw8raWJe8kRLuxsM",
+      "title": "International Conference on Control, Artificial Intelligence, Robotics and Optimization",
+      "description": "",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "technology"
+      ],
+      "rank": 30,
+      "local_rank": 36,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "88CyGgwearJsRMDpm2gEaL",
+          "name": "Titania Hotel",
+          "formatted_address": "Athens 106 78\nGreece"
+        }
+      ],
+      "duration": 205200,
+      "start": "2019-12-08T07:00:00Z",
+      "end": "2019-12-10T16:00:00Z",
+      "updated": "2019-09-10T19:06:58Z",
+      "first_seen": "2019-09-10T19:06:55Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.730953,
+        37.98295
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "HLtxkq8rFe5HKPuCGo",
+      "title": "Panhellenic Scientific Conference of EPGE",
+      "description": "",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "health",
+        "medical",
+        "science"
+      ],
+      "rank": 30,
+      "local_rank": 36,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "WgtRGFj8cuVvQncuC56Ks3",
+          "name": "Divani Caravel Hotel",
+          "formatted_address": "2 Leoforos Vasileos Alexandrou\n161 21 Athens\nGreece"
+        }
+      ],
+      "duration": 118800,
+      "start": "2019-12-07T07:00:00Z",
+      "end": "2019-12-08T16:00:00Z",
+      "updated": "2019-09-16T03:10:56Z",
+      "first_seen": "2019-09-16T03:10:45Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.751444,
+        37.973102
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133859",
+          "251948"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "MTq5xaWZYpKQLhHz7q",
+      "title": "ΣΥΝΘΗΚΗ ΜΑΚΟΛΕΝ ΚΑΙ ΣΤΗΜΕΝΑ ΠΑΙΧΝΙΔΙΑ",
+      "description": "1ο ΔΙΕΘΝΕΣ ΣΥΝΕΔΡΙΟ  ΓΙΑ ΤΗΝ ΣΥΝΘΗΚΗ ΜΑΚΟΛΕΝ \n«ΣΥΝΘΗΚΗ ΜΑΚΟΛΕΝ (MACOLIN). ΔΙΑΝΟΗΤΙΚΗ ΙΔΙΟΚΤΗΣΙΑ, ΑΘΛΗΤΙΚΟ ΚΑΙ ΕΜΠΟΡΙΚΟ ΔΙΚΑΙΟ»",
+      "category": "conferences",
+      "labels": [
+        "conference",
+        "sport"
+      ],
+      "rank": 0,
+      "local_rank": 0,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "f43U9FTBTEhYKVeP8vAUxH",
+          "name": "The Met Hotel",
+          "formatted_address": "48 26is Oktovriou\n546 27 Thessaloniki\nGreece"
+        }
+      ],
+      "duration": 34200,
+      "start": "2019-12-07T06:30:00Z",
+      "end": "2019-12-07T16:00:00Z",
+      "updated": "2019-10-26T05:35:14Z",
+      "first_seen": "2019-10-26T05:32:03Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.920766,
+        40.640458
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133841",
+          "734077"
+        ]
+      ],
+      "state": "active"
+    }
+  ]
+}

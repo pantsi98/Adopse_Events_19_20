@@ -1,0 +1,316 @@
+{
+  "count": 7,
+  "overflow": false,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "relevance": 1,
+      "id": "Pw8zMW8ovZJUE3dYJU",
+      "title": "Oedipus Rex by Sophocles",
+      "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 11,
+      "local_rank": 16,
+      "entities": [
+        {
+          "formatted_address": "Kastorias 34-36\nAthens\nGreece",
+          "name": "ATHINAIS",
+          "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-26T18:30:00Z",
+      "end": "2019-12-26T18:30:00Z",
+      "updated": "2019-09-04T19:02:30Z",
+      "first_seen": "2019-09-04T19:02:26Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71102,
+        37.983588
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "pNFeA7zTrBGQAg9Q8z",
+      "title": "Jim Jefferies Athina",
+      "description": "",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 62,
+      "local_rank": 69,
+      "entities": [
+        {
+          "formatted_address": "7 Iera Odos\n118 54 Athina\nGreece",
+          "name": "Gazi Music Hall",
+          "entity_id": "TS9xKqCiVZU3RNeffEHsPj",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-19T19:00:00Z",
+      "end": "2019-12-19T19:00:00Z",
+      "updated": "2019-06-16T18:16:48Z",
+      "first_seen": "2019-06-14T17:39:40Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.715161,
+        37.979423
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "6ucePmdEtL9HNj4ohM",
+      "title": "Oedipus Rex by Sophocles",
+      "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 11,
+      "local_rank": 16,
+      "entities": [
+        {
+          "formatted_address": "Kastorias 34-36\nAthens\nGreece",
+          "name": "ATHINAIS",
+          "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-19T18:30:00Z",
+      "end": "2019-12-19T18:30:00Z",
+      "updated": "2019-09-04T15:46:23Z",
+      "first_seen": "2019-09-04T15:46:15Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71102,
+        37.983588
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "DnJqXefrLcWxJZB48Y",
+      "title": "Oedipus Rex by Sophocles",
+      "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 11,
+      "local_rank": 16,
+      "entities": [
+        {
+          "formatted_address": "Kastorias 34-36\nAthens\nGreece",
+          "name": "ATHINAIS",
+          "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-12T18:30:00Z",
+      "end": "2019-12-12T18:30:00Z",
+      "updated": "2019-09-04T15:46:23Z",
+      "first_seen": "2019-09-04T15:46:14Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71102,
+        37.983588
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "hzN2Y7SHPqsiePDyeb",
+      "title": "Oedipus Rex by Sophocles",
+      "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 11,
+      "local_rank": 16,
+      "entities": [
+        {
+          "formatted_address": "Kastorias 34-36\nAthens\nGreece",
+          "name": "ATHINAIS",
+          "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-05T18:30:00Z",
+      "end": "2019-12-05T18:30:00Z",
+      "updated": "2019-09-04T15:46:22Z",
+      "first_seen": "2019-09-04T15:46:13Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71102,
+        37.983588
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "n7XoMA7evEVFcAwjXg",
+      "title": "Oedipus Rex by Sophocles",
+      "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 11,
+      "local_rank": 16,
+      "entities": [
+        {
+          "formatted_address": "Kastorias 34-36\nAthens\nGreece",
+          "name": "ATHINAIS",
+          "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-11-28T18:30:00Z",
+      "end": "2019-11-28T18:30:00Z",
+      "updated": "2019-09-04T19:02:30Z",
+      "first_seen": "2019-09-04T19:02:25Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71102,
+        37.983588
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "FfFNTynZ3BJhqFtefM",
+      "title": "Oedipus Rex by Sophocles",
+      "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
+      "category": "performing-arts",
+      "labels": [
+        "performing-arts"
+      ],
+      "rank": 11,
+      "local_rank": 16,
+      "entities": [
+        {
+          "formatted_address": "Kastorias 34-36\nAthens\nGreece",
+          "name": "ATHINAIS",
+          "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
+          "type": "venue"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-11-21T18:30:00Z",
+      "end": "2019-11-21T18:30:00Z",
+      "updated": "2019-09-04T15:33:17Z",
+      "first_seen": "2019-09-04T15:33:11Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.71102,
+        37.983588
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ]
+      ],
+      "state": "active"
+    }
+  ]
+}

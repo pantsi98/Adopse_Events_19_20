@@ -1,3 +1,21 @@
+SET sql_mode = '';
+
+/*
+SET foreign_key_checks = 0;
+	
+drop table `user`;
+drop table `events`;
+drop table `category`;
+drop table `venues`;
+drop table `admin`;
+drop table `reservations`;
+drop table `play`;
+drop table `labels`;
+drop table `labeled`;
+
+SET foreign_key_checks = 1;
+*/
+
 CREATE TABLE `user` (
   `id` int not null PRIMARY KEY AUTO_INCREMENT,
   `fname` varchar(255),
@@ -17,9 +35,7 @@ CREATE TABLE `events` (
   `category_id` int,
   `created_at` timestamp,
   `description` text,
-  `venue` text,
   `participants_amount` int,
-  `created_at` timestamp,
   `admin_id` int
 );
 
@@ -62,9 +78,18 @@ CREATE TABLE `play` (
   primary key (`event_id`, `date`)
 );
 
-ALTER TABLE `events` ADD FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`);
+CREATE TABLE `labels`(
+`id` int not null primary key auto_increment,
+`name` varchar(255)
+);
 
-ALTER TABLE `venues` ADD FOREIGN KEY (`event_id`) REFERENCES `events` (`id`);
+CREATE TABLE `labeled`(
+`event_id` int,
+`label_id` int,
+primary key (`event_id`,`label_id`)
+);
+
+ALTER TABLE `events` ADD FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`);
 
 ALTER TABLE `reservations` ADD FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
@@ -76,3 +101,28 @@ ALTER TABLE `play` ADD FOREIGN KEY (`event_id`) REFERENCES `events` (`id`);
 
 ALTER TABLE `play` ADD FOREIGN KEY (`venue_id`) REFERENCES `venues` (`id`);
 
+ALTER TABLE `category` ADD column father int after name;
+
+ALTER TABLE `labeled` ADD FOREIGN KEY (`event_id`) REFERENCES `events` (`id`);
+
+ALTER TABLE `labeled` ADD FOREIGN KEY (`label_id`) REFERENCES `labels` (`id`);
+
+insert into category(name,father) values ('Music',null);
+insert into category(name,father) values ('Theater',null);
+insert into category(name,father) values ('Conference',null);
+insert into category(name,father) values ('Festivals',null);
+insert into category(name,father) values ('Sports',null);
+insert into category(name,father) values ('Educational',3);
+insert into category(name,father) values ('Informing',3);
+insert into category(name,father) values ('Football',5);
+insert into category(name,father) values ('Basketball',5);
+
+insert into labels(name) values ('basketball');
+insert into labels(name) values ('soccer');
+insert into labels(name) values ('technology');
+insert into labels(name) values ('sience');
+insert into labels(name) values ('business');
+insert into labels(name) values ('music');
+insert into labels(name) values ('health');
+insert into labels(name) values ('medical');
+insert into labels(name) values ('sport');

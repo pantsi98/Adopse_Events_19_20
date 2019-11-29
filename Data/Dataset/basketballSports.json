@@ -1,0 +1,526 @@
+{
+  "count": 20,
+  "overflow": true,
+  "next": "https://api.predicthq.com/v1/events/?category=sports&country=GR&label=basketball&offset=10",
+  "previous": null,
+  "results": [
+    {
+      "relevance": 1,
+      "id": "JD5GGFtcbCxTBrKbR9",
+      "title": "Ifaistos Limnou vs Peristeri Athens",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 62,
+      "local_rank": 69,
+      "entities": [
+        {
+          "name": "Peristeri Arena",
+          "formatted_address": "121 31 Peristeri\nGreece",
+          "type": "venue",
+          "entity_id": "s7pXnyXG3LnSCSCzB22FxE"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T15:00:00Z",
+      "end": "2019-12-28T15:00:00Z",
+      "updated": "2019-07-28T02:57:34Z",
+      "first_seen": "2019-07-28T02:57:18Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.689012,
+        38.003987
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133783",
+          "255524"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "BkRoAk95PerkNLDaDe",
+      "title": "BC Kolossos Rhodes vs Rethymno Cretan Kings",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 54,
+      "local_rank": 69,
+      "entities": [
+        {
+          "name": "Melina Merkouri Indoor Hall",
+          "formatted_address": "",
+          "type": "venue",
+          "entity_id": "tJd6Tb3irABqze8ENjwxQK"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T15:00:00Z",
+      "end": "2019-12-28T15:00:00Z",
+      "updated": "2019-10-23T22:27:08Z",
+      "first_seen": "2019-07-28T05:51:18Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        24.48199,
+        35.364275
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697802",
+          "254353",
+          "8133759",
+          "254352"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "hD6Yr5MVrA4GgJUkf8",
+      "title": "Panathinaikos Athens vs BC Panionios Nea Smyrni",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 55,
+      "local_rank": 59,
+      "entities": [
+        {
+          "name": "Nea Smyrni Indoor Hall",
+          "formatted_address": "Athens\nGreece",
+          "type": "venue",
+          "entity_id": "36bFtDyGG2MWzCsRpEyA9A9"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T15:00:00Z",
+      "end": "2019-12-28T15:00:00Z",
+      "updated": "2019-10-24T21:38:04Z",
+      "first_seen": "2019-07-28T01:35:25Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.721648,
+        37.94655
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133665",
+          "256575"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "cAqSSy3Y5PnzQUKBtv",
+      "title": "BC Aris Thessaloniki vs ASP Promitheas",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 64,
+      "local_rank": 82,
+      "entities": [
+        {
+          "name": "Dimitris Tofalos Arena",
+          "formatted_address": "Toffalos Stadium\n264 43 Patras\nGreece",
+          "type": "venue",
+          "entity_id": "W7VNHtawEUMh9DHjnzBzfx"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T15:00:00Z",
+      "end": "2019-12-28T15:00:00Z",
+      "updated": "2019-07-28T21:39:46Z",
+      "first_seen": "2019-07-28T21:39:30Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        21.773404,
+        38.283757
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697810",
+          "265491",
+          "8133690",
+          "255683"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697810",
+          "265491",
+          "8133690",
+          "254315"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "RSaLM9bF9wJqKAs8fy",
+      "title": "AO Ionikos Nikaias vs BC AEK Athens",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 75,
+      "local_rank": 89,
+      "entities": [
+        {
+          "name": "O.a.k.a. Indoor Hall",
+          "formatted_address": "151 24 Marousi\nGreece",
+          "type": "venue",
+          "entity_id": "S32NZYBmZaEYnZS5Z3RPwp"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T15:00:00Z",
+      "end": "2019-12-28T15:00:00Z",
+      "updated": "2019-07-28T03:32:30Z",
+      "first_seen": "2019-07-28T03:30:54Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.798934,
+        38.040956
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133770",
+          "265243"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "gKgQzzf4GW5Mm3eAUB",
+      "title": "GS Ermis Agias Larisas vs GS Lavriou",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 55,
+      "local_rank": 84,
+      "entities": [
+        {
+          "name": "Lavrio Indoor Hall",
+          "formatted_address": "Κλειστό Γυμναστήριο Νεάπολης Λαυρίου\n195 00 Lavrio\nGreece",
+          "type": "venue",
+          "entity_id": "sVVHsK8NXS9kpPCXH8bM7x"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-28T13:00:00Z",
+      "end": "2019-12-28T13:00:00Z",
+      "updated": "2019-09-26T23:34:57Z",
+      "first_seen": "2019-09-01T02:44:54Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        24.052362,
+        37.70959
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445406",
+          "8133923",
+          "258543"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "k88MY9bRKKiXx6mhFU",
+      "title": "Real Madrid vs Panathinaikos Athens",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 75,
+      "local_rank": 88,
+      "entities": [
+        {
+          "name": "Oaka BASKET",
+          "formatted_address": "151 23 Marousi\nGreece",
+          "type": "venue",
+          "entity_id": "ZdDEWAz8AYe7gvQA3XbLLa"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-26T19:00:00Z",
+      "end": "2019-12-26T19:00:00Z",
+      "updated": "2019-11-28T04:12:23Z",
+      "first_seen": "2019-07-21T13:07:42Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.782724,
+        38.037237
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133770",
+          "262398"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "ra8wiXNVY8gKRmBnMD",
+      "title": "ASP Promitheas vs PAOK BC",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 56,
+      "local_rank": 73,
+      "entities": [
+        {
+          "name": "P.a.o.k. Sports Arena",
+          "formatted_address": "Thessaloniki\nGreece",
+          "type": "venue",
+          "entity_id": "kyjB4xQxGgyDJ8w3Bcneen"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-21T15:00:00Z",
+      "end": "2019-12-21T15:00:00Z",
+      "updated": "2019-07-28T04:04:36Z",
+      "first_seen": "2019-07-28T04:04:21Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.981253,
+        40.565606
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133959",
+          "736083"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133841",
+          "734077"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "GZgdcr7pNEPAofkD8w",
+      "title": "Rethymno Cretan Kings vs Panathinaikos Athens",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 75,
+      "local_rank": 87,
+      "entities": [
+        {
+          "name": "Oaka BASKET",
+          "formatted_address": "151 23 Marousi\nGreece",
+          "type": "venue",
+          "entity_id": "ZdDEWAz8AYe7gvQA3XbLLa"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-21T15:00:00Z",
+      "end": "2019-12-21T15:00:00Z",
+      "updated": "2019-10-29T22:59:57Z",
+      "first_seen": "2019-07-28T01:35:24Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.782724,
+        38.037237
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133770",
+          "262398"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "gpZ7TghoUQ9nHt6rRS",
+      "title": "Peristeri Athens vs BC Kolossos Rhodes",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "basketball",
+        "sport"
+      ],
+      "rank": 52,
+      "local_rank": 69,
+      "entities": [
+        {
+          "name": "Venetoklio Indoor Hall",
+          "formatted_address": "Rhodes\nGreece",
+          "type": "venue",
+          "entity_id": "6Uh6WeLgvfLGmkF6ZajLMf"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-21T15:00:00Z",
+      "end": "2019-12-21T15:00:00Z",
+      "updated": "2019-10-23T21:30:04Z",
+      "first_seen": "2019-07-28T21:39:29Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        28.223037,
+        36.437552
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697808",
+          "263021",
+          "8133781",
+          "400666"
+        ]
+      ],
+      "state": "active"
+    }
+  ]
+}

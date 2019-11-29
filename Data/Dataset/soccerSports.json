@@ -1,0 +1,520 @@
+{
+  "count": 20,
+  "overflow": true,
+  "next": "https://api.predicthq.com/v1/events/?category=sports&country=GR&label=soccer&offset=10",
+  "previous": null,
+  "results": [
+    {
+      "relevance": 1,
+      "id": "pTp2moajArsbQrdWY7",
+      "title": "Super League 1 - PAOK vs Atromitos",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 79,
+      "local_rank": 85,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "gA3Vpt5fKDvPqXFVQvAyDf",
+          "formatted_address": "6 Mikras Asias\n544 54 Thessaloniki\nGreece",
+          "name": "Toumba Stadium"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-23T16:00:00Z",
+      "end": "2019-12-23T16:00:00Z",
+      "updated": "2019-10-23T20:00:35Z",
+      "first_seen": "2019-07-03T17:45:04Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.972241,
+        40.613858
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133841",
+          "734077"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133774",
+          "734643"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "4QdWgdskRseQZi6Ttd",
+      "title": "Super League 1 - Panathinaikos vs Aris",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 87,
+      "local_rank": 100,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "FNcZpRYX8zgpDJkPJVc9UR",
+          "formatted_address": "Leoforos Olimpionikou Spirou Loui\n151 23 Marousi\nGreece",
+          "name": "Main Olympic Stadium"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-22T17:30:00Z",
+      "end": "2019-12-22T17:30:00Z",
+      "updated": "2019-11-20T20:46:31Z",
+      "first_seen": "2019-07-03T17:45:03Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.787591,
+        38.036129
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "264353",
+          "8358544"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133770",
+          "262398"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "ZEHiLmGf8UQaDSjeSZ",
+      "title": "Super League 1 - Volos NFC vs Olympiakos Piraeus",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 77,
+      "local_rank": 95,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "KDt66exStNUE7TqPtzKFqz",
+          "formatted_address": "38445 Volos\nGreece",
+          "name": "Panthessaliko Stadium"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-22T15:15:00Z",
+      "end": "2019-12-22T15:15:00Z",
+      "updated": "2019-10-23T20:00:44Z",
+      "first_seen": "2019-07-03T17:45:02Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.931265,
+        39.387308
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697809",
+          "258013",
+          "8133894",
+          "251833"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697809",
+          "258013",
+          "8133894",
+          "9034728"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "UVDzpkQNZzbeU4VBPU",
+      "title": "Super League 1 - Panaitolikos vs OFI",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 67,
+      "local_rank": 82,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "Nu8HeAzthebGgAiQxAUbiE",
+          "formatted_address": "Nikitara\n301 31 Agrinio\nGreece",
+          "name": "Stadio Panetolikou"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-22T15:00:00Z",
+      "end": "2019-12-22T15:00:00Z",
+      "updated": "2019-10-23T20:00:42Z",
+      "first_seen": "2019-07-03T17:45:03Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        21.411538,
+        38.62985
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697810",
+          "265508",
+          "8133845",
+          "265560"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697810",
+          "265508",
+          "8133706",
+          "257186"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "CbbeZMoiKEd7nxv52t",
+      "title": "Super League 1 - Larissa vs Panionios",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 74,
+      "local_rank": 90,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "fxLwz659EpMwVVtu2JVy6r",
+          "formatted_address": "Larisa\nΕλλάδα",
+          "name": "VVIP @ AEL FC ARENA"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-22T13:00:00Z",
+      "end": "2019-12-22T13:00:00Z",
+      "updated": "2019-10-23T20:00:38Z",
+      "first_seen": "2019-07-03T17:45:00Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.398782,
+        39.615523
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697809",
+          "258575",
+          "8133786",
+          "258576"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "23Xr4Q6deRXCHMkv8M",
+      "title": "Super League 1 - Lamia vs AEK Athens",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 65,
+      "local_rank": 82,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "4eAqz2CunQebadxTrwgawh",
+          "formatted_address": "351 00 Lamia\nGreece",
+          "name": "Dimotiko Athlitiko Kentro Lamias"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-21T17:30:00Z",
+      "end": "2019-12-21T17:30:00Z",
+      "updated": "2019-10-23T20:00:42Z",
+      "first_seen": "2019-07-03T17:45:04Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.430976,
+        38.90987
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697800",
+          "262187",
+          "8133738",
+          "258620"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "5ipdsHb7HzM4kdsaEa",
+      "title": "Super League 1 - Asteras Tripolis vs Xanthi",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 68,
+      "local_rank": 87,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "VkHBfNzgdmUrnvDtTGZCLZ",
+          "formatted_address": "Liagora\nTripoli\nGreece",
+          "name": "Stadio Theodoros Kolokotronis"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-21T17:30:00Z",
+      "end": "2019-12-21T17:30:00Z",
+      "updated": "2019-10-23T20:03:00Z",
+      "first_seen": "2019-07-03T17:45:01Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.388431,
+        37.502432
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697807",
+          "264644",
+          "8133668",
+          "252601"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "2mtwBz69QwXv5niZ5M",
+      "title": "Super League 1 - Panionios vs PAOK",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 71,
+      "local_rank": 76,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "b3H3VYhqCSygepNcpX4C6h",
+          "formatted_address": "Chrisostomou\n171 22 Nea Smirni\nGreece",
+          "name": "Nea Smyrni Stadium"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-19T17:30:00Z",
+      "end": "2019-12-19T17:30:00Z",
+      "updated": "2019-10-23T20:00:37Z",
+      "first_seen": "2019-07-03T17:45:00Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.70923,
+        37.943101
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133665",
+          "256575"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "ezbGnrXRDiAMkUNfg6",
+      "title": "Super League 1 - Aris vs Volos NFC",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 77,
+      "local_rank": 86,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "WANPvbfJ4ajVss8Y72M2zT",
+          "formatted_address": "69 Alkminis, Charilaou\nThessaloníki\nGreece",
+          "name": "Stadio Harilaou Kleánthis Vikelídis"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-19T15:15:00Z",
+      "end": "2019-12-19T15:15:00Z",
+      "updated": "2019-10-23T20:00:34Z",
+      "first_seen": "2019-07-03T17:44:58Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        22.969612,
+        40.600114
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133774",
+          "734643"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6697801",
+          "734075",
+          "8133841",
+          "734077"
+        ]
+      ],
+      "state": "active"
+    },
+    {
+      "relevance": 1,
+      "id": "5CPdWD4hNUpCTumSuU",
+      "title": "Super League 1 - Atromitos vs Lamia",
+      "description": "",
+      "category": "sports",
+      "labels": [
+        "soccer",
+        "sport"
+      ],
+      "rank": 69,
+      "local_rank": 76,
+      "entities": [
+        {
+          "type": "venue",
+          "entity_id": "7Nj2RBgFQviAB6Laf6yGeh",
+          "formatted_address": "93 Giannitson, Peristeri\nAthína (Athens)\nGreece",
+          "name": "Stadio Peristeriou"
+        }
+      ],
+      "duration": 0,
+      "start": "2019-12-18T17:30:00Z",
+      "end": "2019-12-18T17:30:00Z",
+      "updated": "2019-10-23T20:00:45Z",
+      "first_seen": "2019-07-03T17:44:58Z",
+      "timezone": "Europe/Athens",
+      "location": [
+        23.689849,
+        38.005023
+      ],
+      "scope": "locality",
+      "country": "GR",
+      "place_hierarchies": [
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133876",
+          "264371"
+        ],
+        [
+          "6295630",
+          "6255148",
+          "390903",
+          "6692632",
+          "445408",
+          "8133783",
+          "255524"
+        ]
+      ],
+      "state": "active"
+    }
+  ]
+}
