@@ -1,9 +1,4 @@
-{
-  "count": 20,
-  "overflow": true,
-  "next": "https://api.predicthq.com/v1/events/?country=GR&label=music&offset=10",
-  "previous": null,
-  "results": [
+[
     {
       "relevance": 1,
       "id": "qf89GgqJZUVubnaCX2",
@@ -491,4 +486,3 @@
       "state": "active"
     }
   ]
-}

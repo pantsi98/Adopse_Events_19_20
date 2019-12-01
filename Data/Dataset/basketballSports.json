@@ -1,9 +1,4 @@
-{
-  "count": 20,
-  "overflow": true,
-  "next": "https://api.predicthq.com/v1/events/?category=sports&country=GR&label=basketball&offset=10",
-  "previous": null,
-  "results": [
+[
     {
       "relevance": 1,
       "id": "JD5GGFtcbCxTBrKbR9",
@@ -523,4 +518,3 @@
       "state": "active"
     }
   ]
-}

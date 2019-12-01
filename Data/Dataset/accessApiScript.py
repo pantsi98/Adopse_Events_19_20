@@ -8,17 +8,19 @@ import json
 import requests
 
 response = requests.get(
-    url="https://api.predicthq.com/v1/events",
+    url="https://api.predicthq.com/v1/events?fields[events]=results",
     headers={
       "Authorization": "Bearer oPZoBwG7_7dQQm7KC_s3MmhqxVu_4805awvIuI8D",
       "Accept": "application/json"
     },
     params={
-      "id": "WZxdyFuXzcuGc24oBv"
+      "country": "GR"
     }
 )
 
-with open("singleEventExample.json","w") as jsonFile:
+print(response.json())
+'''
+with open("venues.json","w") as jsonFile:
     json.dump(response.json(),jsonFile)
     
 response = requests.get(
@@ -34,3 +36,4 @@ response = requests.get(
 
 with open("EventsExample.json","w") as jsonFile:
     json.dump(response.json(),jsonFile)
+    '''

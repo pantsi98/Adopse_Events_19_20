@@ -1,9 +1,4 @@
-{
-  "count": 20,
-  "overflow": true,
-  "next": "https://api.predicthq.com/v1/events/?category=conferences&country=GR&offset=10",
-  "previous": null,
-  "results": [
+[
     {
       "relevance": 1,
       "id": "wSsynoQWCC57Qwd4rU",
@@ -393,4 +388,3 @@
       "state": "active"
     }
   ]
-}
