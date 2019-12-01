@@ -1,0 +1,13 @@
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\bin\Debug\Project 4.exe.config
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\bin\Debug\Project 4.exe
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\bin\Debug\Project 4.pdb
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project_4.Form1.resources
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project_4.Properties.Resources.resources
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project 4.csproj.GenerateResource.cache
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project 4.exe
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project 4.pdb
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\bin\Debug\MetroFramework.Design.dll
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\bin\Debug\MetroFramework.dll
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project 4.csproj.CopyComplete
+C:\Users\Πάνος Πελτέκης\source\repos\PanChee00\Adopse_Events_19_20\Events_Omada1\Project 4\obj\Debug\Project 4.csprojAssemblyReference.cache
