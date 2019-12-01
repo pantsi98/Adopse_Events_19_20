@@ -1,0 +1,14 @@
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\bin\Debug\Project 4.exe.config
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\bin\Debug\Project 4.exe
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\bin\Debug\Project 4.pdb
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\bin\Debug\MetroFramework.Design.dll
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\bin\Debug\MetroFramework.dll
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4 (Panos Peltekis).csprojAssemblyReference.cache
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Form1.resources
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Properties.Resources.resources
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.RegisterPopUp.resources
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4 (Panos Peltekis).csproj.GenerateResource.cache
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4 (Panos Peltekis).csproj.CopyComplete
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.exe
+C:\Users\Pantsi\Desktop\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.pdb

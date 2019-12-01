@@ -34,7 +34,8 @@ namespace Project_4
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            Form RegisterPopUp = new RegisterPopUp();
+            RegisterPopUp.ShowDialog();
         }
 
         private void button8_Click(object sender, EventArgs e)
