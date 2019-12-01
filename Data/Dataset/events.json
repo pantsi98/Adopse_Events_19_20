@@ -1,7 +1,6 @@
 [
     {
-      "relevance": 1,
-      "id": "JD5GGFtcbCxTBrKbR9",
+     "id": "JD5GGFtcbCxTBrKbR9",
       "title": "Ifaistos Limnou vs Peristeri Athens",
       "description": "",
       "category": "sports",
@@ -9,52 +8,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 62,
-      "local_rank": 69,
-      "entities": [
-        {
-          "name": "Peristeri Arena",
-          "formatted_address": "121 31 Peristeri\nGreece",
-          "type": "venue",
-          "entity_id": "s7pXnyXG3LnSCSCzB22FxE"
-        }
-      ],
+     "entity_id": "s7pXnyXG3LnSCSCzB22FxE",
       "duration": 0,
-      "start": "2019-12-28T15:00:00Z",
-      "end": "2019-12-28T15:00:00Z",
-      "updated": "2019-07-28T02:57:34Z",
-      "first_seen": "2019-07-28T02:57:18Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        23.689012,
-        38.003987
-      ],
-      "scope": "locality",
+      "start": "2019-12-28 15:00:00",
+      "first_seen": "2019-07-28 02:57:18",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133876",
-          "264371"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133783",
-          "255524"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "BkRoAk95PerkNLDaDe",
       "title": "BC Kolossos Rhodes vs Rethymno Cretan Kings",
       "description": "",
@@ -63,43 +24,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 54,
-      "local_rank": 69,
-      "entities": [
-        {
-          "name": "Melina Merkouri Indoor Hall",
-          "formatted_address": "",
-          "type": "venue",
-          "entity_id": "tJd6Tb3irABqze8ENjwxQK"
-        }
-      ],
+      "entity_id": "tJd6Tb3irABqze8ENjwxQK",
       "duration": 0,
-      "start": "2019-12-28T15:00:00Z",
-      "end": "2019-12-28T15:00:00Z",
-      "updated": "2019-10-23T22:27:08Z",
-      "first_seen": "2019-07-28T05:51:18Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        24.48199,
-        35.364275
-      ],
-      "scope": "locality",
-      "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6697802",
-          "254353",
-          "8133759",
-          "254352"
-        ]
-      ],
-      "state": "active"
+      "start": "2019-12-28 15:00:00",
+      "first_seen" : "2019-07-28 05:51:18",
+      "country" : "GR",
+      "state" : "active"
     },
     {
-      "relevance": 1,
       "id": "hD6Yr5MVrA4GgJUkf8",
       "title": "Panathinaikos Athens vs BC Panionios Nea Smyrni",
       "description": "",
@@ -108,52 +40,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 55,
-      "local_rank": 59,
-      "entities": [
-        {
-          "name": "Nea Smyrni Indoor Hall",
-          "formatted_address": "Athens\nGreece",
-          "type": "venue",
-          "entity_id": "36bFtDyGG2MWzCsRpEyA9A9"
-        }
-      ],
+      "entity_id": "36bFtDyGG2MWzCsRpEyA9A9",
       "duration": 0,
-      "start": "2019-12-28T15:00:00Z",
-      "end": "2019-12-28T15:00:00Z",
-      "updated": "2019-10-24T21:38:04Z",
-      "first_seen": "2019-07-28T01:35:25Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        23.721648,
-        37.94655
-      ],
-      "scope": "locality",
+      "start": "2019-12-28 15:00:00",
+      "first_seen": "2019-07-28 01:35:25",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133876",
-          "264371"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133665",
-          "256575"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "cAqSSy3Y5PnzQUKBtv",
       "title": "BC Aris Thessaloniki vs ASP Promitheas",
       "description": "",
@@ -162,52 +56,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 64,
-      "local_rank": 82,
-      "entities": [
-        {
-          "name": "Dimitris Tofalos Arena",
-          "formatted_address": "Toffalos Stadium\n264 43 Patras\nGreece",
-          "type": "venue",
-          "entity_id": "W7VNHtawEUMh9DHjnzBzfx"
-        }
-      ],
+      "entity_id": "W7VNHtawEUMh9DHjnzBzfx",
       "duration": 0,
-      "start": "2019-12-28T15:00:00Z",
-      "end": "2019-12-28T15:00:00Z",
-      "updated": "2019-07-28T21:39:46Z",
-      "first_seen": "2019-07-28T21:39:30Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        21.773404,
-        38.283757
-      ],
-      "scope": "locality",
+      "start": "2019-12-28 15:00:00",
+      "first_seen": "2019-07-28 21:39:30",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6697810",
-          "265491",
-          "8133690",
-          "255683"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6697810",
-          "265491",
-          "8133690",
-          "254315"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "RSaLM9bF9wJqKAs8fy",
       "title": "AO Ionikos Nikaias vs BC AEK Athens",
       "description": "",
@@ -216,51 +72,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 75,
-      "local_rank": 89,
-      "entities": [
-        {
-          "name": "O.a.k.a. Indoor Hall",
-          "formatted_address": "151 24 Marousi\nGreece",
-          "type": "venue",
-          "entity_id": "S32NZYBmZaEYnZS5Z3RPwp"
-        }
-      ],
+      "entity_id": "S32NZYBmZaEYnZS5Z3RPwp",
       "duration": 0,
-      "start": "2019-12-28T15:00:00Z",
-      "end": "2019-12-28T15:00:00Z",
-      "updated": "2019-07-28T03:32:30Z",
-      "first_seen": "2019-07-28T03:30:54Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        23.798934,
-        38.040956
-      ],
-      "scope": "locality",
+      "start": "2019-12-28 15:00:00",
+      "first_seen": "2019-07-28 03:30:54",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133770",
-          "265243"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "264353",
-          "8358544"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "gKgQzzf4GW5Mm3eAUB",
       "title": "GS Ermis Agias Larisas vs GS Lavriou",
       "description": "",
@@ -269,51 +88,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 55,
-      "local_rank": 84,
-      "entities": [
-        {
-          "name": "Lavrio Indoor Hall",
-          "formatted_address": "Κλειστό Γυμναστήριο Νεάπολης Λαυρίου\n195 00 Lavrio\nGreece",
-          "type": "venue",
-          "entity_id": "sVVHsK8NXS9kpPCXH8bM7x"
-        }
-      ],
+      "entity_id": "sVVHsK8NXS9kpPCXH8bM7x",
       "duration": 0,
-      "start": "2019-12-28T13:00:00Z",
-      "end": "2019-12-28T13:00:00Z",
-      "updated": "2019-09-26T23:34:57Z",
-      "first_seen": "2019-09-01T02:44:54Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        24.052362,
-        37.70959
-      ],
-      "scope": "locality",
+      "start": "2019-12-28 13:00:00",
+      "first_seen": "2019-09-01 02:44:54",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "264353",
-          "8358544"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445406",
-          "8133923",
-          "258543"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "k88MY9bRKKiXx6mhFU",
       "title": "Real Madrid vs Panathinaikos Athens",
       "description": "",
@@ -322,51 +104,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 75,
-      "local_rank": 88,
-      "entities": [
-        {
-          "name": "Oaka BASKET",
-          "formatted_address": "151 23 Marousi\nGreece",
-          "type": "venue",
-          "entity_id": "ZdDEWAz8AYe7gvQA3XbLLa"
-        }
-      ],
+      "entity_id": "ZdDEWAz8AYe7gvQA3XbLLa",
       "duration": 0,
-      "start": "2019-12-26T19:00:00Z",
-      "end": "2019-12-26T19:00:00Z",
-      "updated": "2019-11-28T04:12:23Z",
-      "first_seen": "2019-07-21T13:07:42Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        23.782724,
-        38.037237
-      ],
-      "scope": "locality",
+      "start": "2019-12-26 19:00:00",
+      "first_seen": "2019-07-21 13:07:42",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133770",
-          "262398"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "264353",
-          "8358544"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "ra8wiXNVY8gKRmBnMD",
       "title": "ASP Promitheas vs PAOK BC",
       "description": "",
@@ -375,52 +120,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 56,
-      "local_rank": 73,
-      "entities": [
-        {
-          "name": "P.a.o.k. Sports Arena",
-          "formatted_address": "Thessaloniki\nGreece",
-          "type": "venue",
-          "entity_id": "kyjB4xQxGgyDJ8w3Bcneen"
-        }
-      ],
+      "entity_id": "kyjB4xQxGgyDJ8w3Bcneen",
       "duration": 0,
-      "start": "2019-12-21T15:00:00Z",
-      "end": "2019-12-21T15:00:00Z",
-      "updated": "2019-07-28T04:04:36Z",
-      "first_seen": "2019-07-28T04:04:21Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        22.981253,
-        40.565606
-      ],
-      "scope": "locality",
+      "start": "2019-12-21 15:00:00",
+      "first_seen": "2019-07-28 04:04:21",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6697801",
-          "734075",
-          "8133959",
-          "736083"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6697801",
-          "734075",
-          "8133841",
-          "734077"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "GZgdcr7pNEPAofkD8w",
       "title": "Rethymno Cretan Kings vs Panathinaikos Athens",
       "description": "",
@@ -429,51 +136,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 75,
-      "local_rank": 87,
-      "entities": [
-        {
-          "name": "Oaka BASKET",
-          "formatted_address": "151 23 Marousi\nGreece",
-          "type": "venue",
-          "entity_id": "ZdDEWAz8AYe7gvQA3XbLLa"
-        }
-      ],
+      "entity_id": "ZdDEWAz8AYe7gvQA3XbLLa",
       "duration": 0,
-      "start": "2019-12-21T15:00:00Z",
-      "end": "2019-12-21T15:00:00Z",
-      "updated": "2019-10-29T22:59:57Z",
-      "first_seen": "2019-07-28T01:35:24Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        23.782724,
-        38.037237
-      ],
-      "scope": "locality",
+      "start": "2019-12-21 15:00:00",
+      "first_seen": "2019-07-28 01:35:24",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "445408",
-          "8133770",
-          "262398"
-        ],
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6692632",
-          "264353",
-          "8358544"
-        ]
-      ],
       "state": "active"
     },
     {
-      "relevance": 1,
       "id": "gpZ7TghoUQ9nHt6rRS",
       "title": "Peristeri Athens vs BC Kolossos Rhodes",
       "description": "",
@@ -482,43 +152,14 @@
         "basketball",
         "sport"
       ],
-      "rank": 52,
-      "local_rank": 69,
-      "entities": [
-        {
-          "name": "Venetoklio Indoor Hall",
-          "formatted_address": "Rhodes\nGreece",
-          "type": "venue",
-          "entity_id": "6Uh6WeLgvfLGmkF6ZajLMf"
-        }
-      ],
+      "entity_id": "6Uh6WeLgvfLGmkF6ZajLMf",
       "duration": 0,
-      "start": "2019-12-21T15:00:00Z",
-      "end": "2019-12-21T15:00:00Z",
-      "updated": "2019-10-23T21:30:04Z",
-      "first_seen": "2019-07-28T21:39:29Z",
-      "timezone": "Europe/Athens",
-      "location": [
-        28.223037,
-        36.437552
-      ],
-      "scope": "locality",
+      "start": "2019-12-21 15:00:00",
+      "first_seen": "2019-07-28 21:39:29",
       "country": "GR",
-      "place_hierarchies": [
-        [
-          "6295630",
-          "6255148",
-          "390903",
-          "6697808",
-          "263021",
-          "8133781",
-          "400666"
-        ]
-      ],
       "state": "active"
     },
     {
-        "relevance": 1,
         "id": "X3TrrQyYEFifP6BRBy",
         "title": "International Conference on Bioinformatics Applied Sciences Engineering Technology Space Environment & Aviation Technology",
         "description": "",
@@ -528,43 +169,15 @@
           "education",
           "technology"
         ],
-        "rank": 30,
-        "local_rank": 36,
-        "entities": [
-          {
-            "name": "Titania Hotel",
-            "formatted_address": "Athens 106 78\nGreece",
-            "entity_id": "88CyGgwearJsRMDpm2gEaL",
-            "type": "venue"
-          }
-        ],
+
+        "entity_id": "88CyGgwearJsRMDpm2gEaL",
         "duration": 118800,
-        "start": "2019-12-14T07:00:00Z",
-        "end": "2019-12-15T16:00:00Z",
-        "updated": "2019-03-27T11:05:03Z",
-        "first_seen": "2019-01-14T16:28:18Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.730953,
-          37.98295
-        ],
-        "scope": "locality",
+        "start": "2019-12-14 07:00:00",
+        "first_seen": "2019-01-14 16:28:18",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "gUBjjvyeE6Yzr5KFx9",
         "title": "International Conference on Business Economics Entrepreneurship and Management Research",
         "description": "",
@@ -573,43 +186,15 @@
           "conference",
           "education"
         ],
-        "rank": 30,
-        "local_rank": 36,
-        "entities": [
-          {
-            "name": "Titania Hotel",
-            "formatted_address": "Athens 106 78\nGreece",
-            "entity_id": "88CyGgwearJsRMDpm2gEaL",
-            "type": "venue"
-          }
-        ],
+
+        "entity_id": "88CyGgwearJsRMDpm2gEaL",
         "duration": 115200,
-        "start": "2019-12-14T07:00:00Z",
-        "end": "2019-12-15T15:00:00Z",
-        "updated": "2019-03-22T14:11:41Z",
-        "first_seen": "2019-01-14T16:25:25Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.730953,
-          37.98295
-        ],
-        "scope": "locality",
+        "start": "2019-12-14 07:00:00",
+        "first_seen": "2019-01-14 16:25:25",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "scfS9kDM4cr7E4mXQL",
         "title": "International Conference In Information Security And Digital Forensics",
         "description": "",
@@ -618,43 +203,15 @@
           "conference",
           "education"
         ],
-        "rank": 50,
-        "local_rank": 56,
-        "entities": [
-          {
-            "name": "Metropolitan College",
-            "formatted_address": "El. Venizelou 14\nThessaloniki 546 24\nGreece",
+
             "entity_id": "36UTY2wf4yMPVd4BFRFwrWu",
-            "type": "venue"
-          }
-        ],
         "duration": 205200,
-        "start": "2019-11-29T07:00:00Z",
-        "end": "2019-12-01T16:00:00Z",
-        "updated": "2019-05-08T17:10:28Z",
-        "first_seen": "2019-05-08T17:05:57Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          22.939294,
-          40.63433
-        ],
-        "scope": "locality",
+        "start": "2019-11-29 07:00:00",
+        "first_seen": "2019-05-08 17:05:57",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6697801",
-            "734075",
-            "8133841",
-            "734077"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "s5mzCPLmkodbBhDzXn",
         "title": "WEASC International Conference on Industrial Engineering, Applied Sciences, Computing, Nanotechnology & Smart Materials",
         "description": "",
@@ -664,213 +221,79 @@
           "education",
           "science"
         ],
-        "rank": 44,
-        "local_rank": 50,
-        "entities": [
-          {
-            "name": "Titania Hotel",
-            "formatted_address": "Athens 106 78\nGreece",
-            "entity_id": "88CyGgwearJsRMDpm2gEaL",
-            "type": "venue"
-          }
-        ],
+
+        "entity_id": "88CyGgwearJsRMDpm2gEaL",
         "duration": 115200,
-        "start": "2019-11-16T07:00:00Z",
-        "end": "2019-11-17T15:00:00Z",
-        "updated": "2019-03-27T11:25:55Z",
-        "first_seen": "2018-09-13T15:42:05Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.730953,
-          37.98295
-        ],
-        "scope": "locality",
+        "start": "2019-11-16 07:00:00",
+        "first_seen": "2018-09-13 15:42:05",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "tRiL2UEiv2b7D6jpJA",
         "title": "iNTERLiNKED Expo Greece & Southeastern Europe 2019",
         "description": "Event Briefing\nHaving knowledge of the transformation of international exhibitions, industry prospects and the needs of the domestic market, the Music World Expo organizers have changed the name and the categories of successful exhibitions to iNTERLiNKED Southeastern Europe, focusing more on developing industries such as Audio Visual, Lighting integration, installation, digital signage, broadcast media and smart building etc and their networking and control via IT.\n\nΠΕΡΙΓΡΑΦΗ ΕΚΔΗΛΩΣΗΣ\nΑφουγκραζόμενοι τις διεθνείς εκθεσιακές εξελίξεις, τις προοπτικές του ευρύτερου κλάδου και τις ανάγκες της εγχώριας αγοράς, οι διοργανωτές της έκθεσης Music World Expo τροποποίησαν το όνομα και τις κατηγορίες της επιτυχημένης έκθεσης σε iNTERLiNKED Southeastern Europe, εστιάζοντας περισσότερο σε αναπτυσσόμενους κλάδους όπως του Audio – Visual - Lighting integration, του installation, του digital signage, των broadcast media και του smart building κλπ και τη δικτύωσή και τον έλεγχό τους τους μέσω IT.",
         "category": "festivals",
+        "entity_id":" ",
         "labels": [
           "business",
           "festival"
         ],
-        "rank": 0,
-        "local_rank": 0,
-        "entities": [],
         "duration": 216000,
-        "start": "2019-11-30T09:00:00Z",
-        "end": "2019-12-02T21:00:00Z",
-        "updated": "2019-05-13T02:52:01Z",
-        "first_seen": "2019-05-13T02:51:38Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.735548,
-          37.969786
-        ],
-        "scope": "locality",
+        "start": "2019-11-30 09:00:00",
+        "first_seen": "2019-05-13 02:51:38",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ],
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133859",
-            "251948"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "WkD2bFYrphTgykg2dV",
         "title": "eCommerce & Digital Marketing Expo Greece & Southeastern Europe 2019",
         "description": "ΠΕΡΙΓΡΑΦΗ ΕΚΔΗΛΩΣΗΣ\nΗ eCommerce & Digital Marketing Expo Greece & Southeastern Europe (ECDM Expo), όπως μαρτυρά και η ονομασία της, που φέτος άλλαξε προσθέτοντας τον κλάδο του Digital Marketing, είναι μια πολυεπίπεδη διοργάνωση με πολλά παράλληλα event. \nΣκοπός της είναι η ανάπτυξη των συνεργασιών μεταξύ εταιρειών που ειδικεύονται στις υπηρεσίες παρουσίας και προβολής στο internet και επιχειρήσεων που είτε πωλούν ηλεκτρονικά (ηλεκτρονικά καταστήματα) είτε διαφημίζονται στο internet.\n\nThe eCommerce & Digital Marketing Expo, changed this year by adding the Digital Marketing industry. It is a multi-level exhibition with many parallel events. Its purpose is to develop collaborations between companies that specialize in Internet services and promotion and businesses that either sell online (eshops) or advertise on the Internet.",
         "category": "festivals",
+        "entity_id":" ",
         "labels": [
           "business",
           "festival"
         ],
-        "rank": 0,
-        "local_rank": 0,
-        "entities": [],
         "duration": 129600,
-        "start": "2019-11-23T09:00:00Z",
-        "end": "2019-11-24T21:00:00Z",
-        "updated": "2019-06-18T08:57:37Z",
-        "first_seen": "2019-06-18T08:57:25Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.735548,
-          37.969786
-        ],
-        "scope": "locality",
+        "start": "2019-11-23 09:00:00",
+        "first_seen": "2019-06-18 08:57:25",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ],
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133859",
-            "251948"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "E6XP9MpASSVrABieQP",
         "title": "Annihilator Thessaloniki",
         "description": "Καταστροφέας, εξολοθρευτής, αφανιστής. Και Jeff Waters! Aυτοί είναι οι ορισμοί της λέξης αυτής και του συγκροτήματος-συμβόλου του Καναδά, που κάποτε επαναπροσδιόρισαν το thrash και στη συνέχεια ο ίδιος ο Waters βάλθηκε να μάθει σε όλους πως παίζεται η ηλεκτρική κιθάρα εκ νέου. Επειδή τα πολλά λόγια είναι φτώχεια κι επειδή οι ίδιοι το ζήτησαν μετά από και την πρόσφατη τους εμφάνιση προ 14 μηνών, οι Έλληνες οπαδοί θα έχουν την ευκαιρία να απολαύσουν για άλλη μία φορά τους εκπληκτικούς Καναδούς, αποτέλεσμα της ζεστής τους υποδοχής στο συγκρότημα κάθε φορά. Αυτή τη φορά οι συνθήκες θα είναι πολύ πιό ιδανικές, καθώς το τελευταίο τους άλμπουμ ''For The Demented'', τους βρίσκει ανανεωμένους και σε εμφανώς καλύτερη κατάσταση από το προηγούμενο απαράδεκτο ''Suicide Society''.   Tώρα το πως στον χειρότερο δίσκο της καριέρας τους κατάφεραν να κάνουν τον κόσμο να παραμιλάει, είναι ένα άλλο θέμα. Όλες τους οι επισκέψεις (1991, 2001, 2008, 2010 και 2016) αποτέλεσαν ορισμό της συναυλιακής τελειότητας, ενώ κοινό χαρακτηριστικό τους είναι ότι παίζουν τα πιό κουφά κομμάτια κατά καιρούς που μόνο άκρως ενημερωμένοι οπαδοί γνωρίζουν και αφήνουν τον κόσμο να τους κοιτάει με απορία. Μπορεί για πολύ κόσμο να ισχύει το ''Οι Ανιχιλέιτορ είναι μόνο τα δύο πρώτα'' (''Alice In Hell'', ''Never Neverland''), αλλά στο συναυλιακό μέτωπο κάνανε πάντα ακόμα και τις μεγαλύτερες μπάντες να υποκλίνονται στην αξία τους στο σανίδι. Αυτή τη φορά το συγκρότημα θα έρθει ακόμα πιό πεινασμένο και να τα δώσει όλα για το κατ'επανάληψη δηλωμένο κι από τους ίδιους αγαπημένο τους κοινό σε όλο τον κόσμο.   Ενδεικτικό της αξίας τους, το γεγονός ότι ο πρόσφατα εκκλιπών Warrel Dane που έτυχε να παίξει δύο φορές μαζί τους (το 2001 στη βράβευση των Nevermore για το ''Dead Heart In A Dead World'' και το 2008 στο March Metal Day στην Αθήνα), παραδέχτηκε και τις δύο φορές την ανωτερότητα τους λέγοντας ''δεν πρέπει να ξαναπαίξουμε μαζί τους''. Οι Annihilator που πρόσφατα επέστρεψαν στη βάση τους ως θριαμβευτές από την κοινή τους περιοδεία με τα ιερά τέρατα του thrash, Τestament και Death Angel, φορτίζουν τις μπαταρίες τους και είναι έτοιμοι να εκπλήξουν ευχάριστα τους φανατικούς Έλληνες οπαδούς τους. Προσεχώς θα ανακοινωθούν και τα support σχήματα που θα έχουν μαζί τους. Όσοι γνωρίζουν την συναυλιακή τους αξία, είναι ήδη εκεί και μετράνε μέρες από τώρα. Όσοι δεν τους έχετε δεί ποτέ, θα γίνετε μάρτυρες της απόλυτης έκρηξης αδρεναλίνης με τον πλέον πειστικό τρόπο. Να μη λείψει κανείς απολύτως! Οperation: Annihilation mode...ON!  ΤΙΜΕΣ ΕΙΣΙΤΗΡΙΩΝ:  • Περιορισμένη προπώληση: 20€ • Προπώληση: 23€ • Ταμείο: 25€  Ηλεκτρονικά εισιτήρια με paypal / κάρτα: http://krisisproductions.eventbrite.com/  ΣΗΜΕΙΑ ΠΡΟΠΩΛΗΣΗΣ (η έναρξή της θα ανακοινωθεί σύντομα): Αθήνα • Metal Era (Εμ. Μπενάκη 22, τηλ.: 210 3304133, www.metalera.gr) • No Remorse Records (Γαμβέτα 4, τηλ.: 210 3830981, www.noremorse.gr) • EAT METAL RECORDS (Σπυρίδωνος Τρικούπη 45, Εξάρχεια, τηλ.: 213 0378553, www.eatmetalrecords.com) • Sirens Records (Νικηταρά 14, τηλ.: 210 3822304)  Θεσσαλονίκη • Ticket House / Musicland (Μητροπόλεως 102, τηλ.: 2310 264880) • Empire store (Κωνσταντίνου Παλαιολόγου 10, τηλ.: 2313 090287) • ALONE Records (Γ. Θεοχάρη 2, τηλ.: 2310 266772, http://alone.gr/) • Classic cafe-bar Διωροφον (Μεταμορφώσεως, Καλαμαριά. τηλ.: 2310 453998)\n\n\nΚατάλληλο για παιδιά",
         "category": "festivals",
+        "entity_id":" ",
         "labels": [
           "festival",
           "music"
         ],
-        "rank": 18,
-        "local_rank": 24,
-        "entities": [],
         "duration": 10800,
-        "start": "2019-11-16T17:00:00Z",
-        "end": "2019-11-16T20:00:00Z",
-        "updated": "2019-01-30T05:34:36Z",
-        "first_seen": "2017-12-18T18:05:33Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          22.922256,
-          40.640152
-        ],
-        "scope": "locality",
+        "start": "2019-11-16 17:00:00",
+        "first_seen": "2017-12-18 18:05:33",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6697801",
-            "734075",
-            "8133841",
-            "734077"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "VZ6wz45DZqoQxATSJQ",
         "title": "Annihilator Athens",
         "description": "Καταστροφέας, εξολοθρευτής, αφανιστής. Και Jeff Waters! Aυτοί είναι οι ορισμοί της λέξης αυτής και του συγκροτήματος-συμβόλου του Καναδά, που κάποτε επαναπροσδιόρισαν το thrash και στη συνέχεια ο ίδιος ο Waters βάλθηκε να μάθει σε όλους πως παίζεται η ηλεκτρική κιθάρα εκ νέου. Επειδή τα πολλά λόγια είναι φτώχεια κι επειδή οι ίδιοι το ζήτησαν μετά από και την πρόσφατη τους εμφάνιση προ 14 μηνών, οι Έλληνες οπαδοί θα έχουν την ευκαιρία να απολαύσουν για άλλη μία φορά τους εκπληκτικούς Καναδούς, αποτέλεσμα της ζεστής τους υποδοχής στο συγκρότημα κάθε φορά. Αυτή τη φορά οι συνθήκες θα είναι πολύ πιό ιδανικές, καθώς το τελευταίο τους άλμπουμ ''For The Demented'', τους βρίσκει ανανεωμένους και σε εμφανώς καλύτερη κατάσταση από το προηγούμενο απαράδεκτο ''Suicide Society''.   Tώρα το πως στον χειρότερο δίσκο της καριέρας τους κατάφεραν να κάνουν τον κόσμο να παραμιλάει, είναι ένα άλλο θέμα. Όλες τους οι επισκέψεις (1991, 2001, 2008, 2010 και 2016) αποτέλεσαν ορισμό της συναυλιακής τελειότητας, ενώ κοινό χαρακτηριστικό τους είναι ότι παίζουν τα πιό κουφά κομμάτια κατά καιρούς που μόνο άκρως ενημερωμένοι οπαδοί γνωρίζουν και αφήνουν τον κόσμο να τους κοιτάει με απορία. Μπορεί για πολύ κόσμο να ισχύει το ''Οι Ανιχιλέιτορ είναι μόνο τα δύο πρώτα'' (''Alice In Hell'', ''Never Neverland''), αλλά στο συναυλιακό μέτωπο κάνανε πάντα ακόμα και τις μεγαλύτερες μπάντες να υποκλίνονται στην αξία τους στο σανίδι. Αυτή τη φορά το συγκρότημα θα έρθει ακόμα πιό πεινασμένο και να τα δώσει όλα για το κατ'επανάληψη δηλωμένο κι από τους ίδιους αγαπημένο τους κοινό σε όλο τον κόσμο.   Ενδεικτικό της αξίας τους, το γεγονός ότι ο πρόσφατα εκκλιπών Warrel Dane που έτυχε να παίξει δύο φορές μαζί τους (το 2001 στη βράβευση των Nevermore για το ''Dead Heart In A Dead World'' και το 2008 στο March Metal Day στην Αθήνα), παραδέχτηκε και τις δύο φορές την ανωτερότητα τους λέγοντας ''δεν πρέπει να ξαναπαίξουμε μαζί τους''. Οι Annihilator που πρόσφατα επέστρεψαν στη βάση τους ως θριαμβευτές από την κοινή τους περιοδεία με τα ιερά τέρατα του thrash, Τestament και Death Angel, φορτίζουν τις μπαταρίες τους και είναι έτοιμοι να εκπλήξουν ευχάριστα τους φανατικούς Έλληνες οπαδούς τους. Προσεχώς θα ανακοινωθούν και τα support σχήματα που θα έχουν μαζί τους. Όσοι γνωρίζουν την συναυλιακή τους αξία, είναι ήδη εκεί και μετράνε μέρες από τώρα. Όσοι δεν τους έχετε δεί ποτέ, θα γίνετε μάρτυρες της απόλυτης έκρηξης αδρεναλίνης με τον πλέον πειστικό τρόπο. Να μη λείψει κανείς απολύτως! Οperation: Annihilation mode...ON!  ΤΙΜΕΣ ΕΙΣΙΤΗΡΙΩΝ:  • Περιορισμένη προπώληση: 20€ • Προπώληση: 23€ • Ταμείο: 25€  Ηλεκτρονικά εισιτήρια με paypal / κάρτα: http://krisisproductions.eventbrite.com/  ΣΗΜΕΙΑ ΠΡΟΠΩΛΗΣΗΣ (η έναρξή της θα ανακοινωθεί σύντομα): Αθήνα • Metal Era (Εμ. Μπενάκη 22, τηλ.: 210 3304133, www.metalera.gr) • No Remorse Records (Γαμβέτα 4, τηλ.: 210 3830981, www.noremorse.gr) • EAT METAL RECORDS (Σπυρίδωνος Τρικούπη 45, Εξάρχεια, τηλ.: 213 0378553, www.eatmetalrecords.com) • Sirens Records (Νικηταρά 14, τηλ.: 210 3822304)  Θεσσαλονίκη • Ticket House / Musicland (Μητροπόλεως 102, τηλ.: 2310 264880) • Empire store (Κωνσταντίνου Παλαιολόγου 10, τηλ.: 2313 090287) • ALONE Records (Γ. Θεοχάρη 2, τηλ.: 2310 266772, http://alone.gr/) • Classic cafe-bar Διωροφον (Μεταμορφώσεως, Καλαμαριά. τηλ.: 2310 453998)\n\n\nΚατάλληλο για παιδιά",
         "category": "festivals",
+        "entity_id":" ",
         "labels": [
           "festival",
           "music"
         ],
-        "rank": 18,
-        "local_rank": 24,
-        "entities": [],
         "duration": 10800,
-        "start": "2019-11-15T18:00:00Z",
-        "end": "2019-11-15T21:00:00Z",
-        "updated": "2019-11-21T19:23:44Z",
-        "first_seen": "2017-12-18T21:23:05Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.711061,
-          37.975715
-        ],
-        "scope": "locality",
+        "start": "2019-11-15 18:00:00",
+        "first_seen": "2017-12-18 21:23:05",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "wSsynoQWCC57Qwd4rU",
         "title": "International Conference Applied Mathematics, Computational Science and Systems Engineering",
         "description": "",
@@ -880,43 +303,15 @@
           "science",
           "technology"
         ],
-        "rank": 30,
-        "local_rank": 36,
-        "entities": [
-          {
-            "type": "venue",
-            "entity_id": "88CyGgwearJsRMDpm2gEaL",
-            "name": "Titania Hotel",
-            "formatted_address": "Athens 106 78\nGreece"
-          }
-        ],
+
+        "entity_id": "88CyGgwearJsRMDpm2gEaL",
         "duration": 205200,
-        "start": "2019-12-28T07:00:00Z",
-        "end": "2019-12-30T16:00:00Z",
-        "updated": "2019-08-12T09:38:58Z",
-        "first_seen": "2019-08-12T01:53:30Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.730953,
-          37.98295
-        ],
-        "scope": "locality",
+        "start": "2019-12-28 07:00:00",
+        "first_seen": "2019-08-12 01:53:30",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "cbyxMnarfTw37ryGwf",
         "title": "Hellenic Congress on Clinical Nutrition & Metabolism",
         "description": "",
@@ -926,42 +321,15 @@
           "health",
           "science"
         ],
-        "rank": 30,
-        "local_rank": 36,
-        "entities": [
-          {
-            "type": "venue",
+
             "entity_id": "4ieqc6ZtLv6NhYuLrBVmCB",
-            "name": "Megaron Athens International Conference Centre",
-            "formatted_address": "115 21 Athina\nGreece"
-          }
-        ],
         "duration": 205200,
-        "start": "2019-12-13T07:00:00Z",
-        "end": "2019-12-15T16:00:00Z",
-        "updated": "2019-09-23T16:53:16Z",
-        "first_seen": "2019-09-23T16:53:11Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.754072,
-          37.980519
-        ],
-        "scope": "locality",
+        "start": "2019-12-13 07:00:00",
+        "first_seen": "2019-09-23 16:53:11",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "264353",
-            "8358544"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "dgVTNkNXvFyU3mxFif",
         "title": "8th International Conference on e-Democracy: Safeguarding Democracy and Hum",
         "description": "How can we safeguard our democracy against such threats? How can we create an intelligent digital world while ensuring individual rights?",
@@ -971,51 +339,15 @@
           "science",
           "technology"
         ],
-        "rank": 0,
-        "local_rank": 0,
-        "entities": [
-          {
-            "type": "venue",
+
             "entity_id": "WgtRGFj8cuVvQncuC56Ks3",
-            "name": "Divani Caravel Hotel",
-            "formatted_address": "2 Leoforos Vasileos Alexandrou\n161 21 Athens\nGreece"
-          }
-        ],
         "duration": 97200,
-        "start": "2019-12-12T17:00:00Z",
-        "end": "2019-12-13T20:00:00Z",
-        "updated": "2019-08-13T09:06:48Z",
-        "first_seen": "2019-08-12T15:52:29Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.751444,
-          37.973102
-        ],
-        "scope": "locality",
+        "start": "2019-12-12 17:00:00",
+        "first_seen": "2019-08-12 15:52:29",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133859",
-            "251948"
-          ],
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "264353",
-            "8358544"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "tFSLscUejdQpDD85Xc",
         "title": "International Conference On E-democracy",
         "description": "",
@@ -1024,51 +356,15 @@
           "conference",
           "technology"
         ],
-        "rank": 44,
-        "local_rank": 50,
-        "entities": [
-          {
-            "type": "venue",
+
             "entity_id": "WgtRGFj8cuVvQncuC56Ks3",
-            "name": "Divani Caravel Hotel",
-            "formatted_address": "2 Leoforos Vasileos Alexandrou\n161 21 Athens\nGreece"
-          }
-        ],
         "duration": 118800,
-        "start": "2019-12-12T07:00:00Z",
-        "end": "2019-12-13T16:00:00Z",
-        "updated": "2019-07-01T10:13:54Z",
-        "first_seen": "2019-07-01T08:15:52Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.751444,
-          37.973102
-        ],
-        "scope": "locality",
+        "start": "2019-12-12 07:00:00",
+        "first_seen": "2019-07-01 08:15:52",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133859",
-            "251948"
-          ],
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "264353",
-            "8358544"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "3c99M5ncUBX3cXZ2io",
         "title": "Panhellenic Pulmonology Congress",
         "description": "",
@@ -1078,42 +374,15 @@
           "health",
           "medical"
         ],
-        "rank": 44,
-        "local_rank": 50,
-        "entities": [
-          {
-            "type": "venue",
+
             "entity_id": "MqpYYwthRtDKxByLg8QLiV",
-            "name": "Hilton Athens",
-            "formatted_address": "46 Leoforos Vasilissis Sofias\n115 28 Athina\nGreece"
-          }
-        ],
         "duration": 291600,
-        "start": "2019-12-12T07:00:00Z",
-        "end": "2019-12-15T16:00:00Z",
-        "updated": "2019-10-08T21:43:30Z",
-        "first_seen": "2019-08-06T12:42:27Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.750396,
-          37.976458
-        ],
-        "scope": "locality",
+        "start": "2019-12-12 07:00:00",
+        "first_seen": "2019-08-06 12:42:27",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "264353",
-            "8358544"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "nJuw8raWJe8kRLuxsM",
         "title": "International Conference on Control, Artificial Intelligence, Robotics and Optimization",
         "description": "",
@@ -1122,43 +391,15 @@
           "conference",
           "technology"
         ],
-        "rank": 30,
-        "local_rank": 36,
-        "entities": [
-          {
-            "type": "venue",
-            "entity_id": "88CyGgwearJsRMDpm2gEaL",
-            "name": "Titania Hotel",
-            "formatted_address": "Athens 106 78\nGreece"
-          }
-        ],
+
+        "entity_id": "88CyGgwearJsRMDpm2gEaL",
         "duration": 205200,
-        "start": "2019-12-08T07:00:00Z",
-        "end": "2019-12-10T16:00:00Z",
-        "updated": "2019-09-10T19:06:58Z",
-        "first_seen": "2019-09-10T19:06:55Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.730953,
-          37.98295
-        ],
-        "scope": "locality",
+        "start": "2019-12-08 07:00:00",
+        "first_seen": "2019-09-10 19:06:55",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133876",
-            "264371"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "HLtxkq8rFe5HKPuCGo",
         "title": "Panhellenic Scientific Conference of EPGE",
         "description": "",
@@ -1169,51 +410,15 @@
           "medical",
           "science"
         ],
-        "rank": 30,
-        "local_rank": 36,
-        "entities": [
-          {
-            "type": "venue",
+
             "entity_id": "WgtRGFj8cuVvQncuC56Ks3",
-            "name": "Divani Caravel Hotel",
-            "formatted_address": "2 Leoforos Vasileos Alexandrou\n161 21 Athens\nGreece"
-          }
-        ],
         "duration": 118800,
-        "start": "2019-12-07T07:00:00Z",
-        "end": "2019-12-08T16:00:00Z",
-        "updated": "2019-09-16T03:10:56Z",
-        "first_seen": "2019-09-16T03:10:45Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          23.751444,
-          37.973102
-        ],
-        "scope": "locality",
+        "start": "2019-12-07 07:00:00",
+        "first_seen": "2019-09-16 03:10:45",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "445408",
-            "8133859",
-            "251948"
-          ],
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6692632",
-            "264353",
-            "8358544"
-          ]
-        ],
         "state": "active"
       },
       {
-        "relevance": 1,
         "id": "MTq5xaWZYpKQLhHz7q",
         "title": "ΣΥΝΘΗΚΗ ΜΑΚΟΛΕΝ ΚΑΙ ΣΤΗΜΕΝΑ ΠΑΙΧΝΙΔΙΑ",
         "description": "1ο ΔΙΕΘΝΕΣ ΣΥΝΕΔΡΙΟ  ΓΙΑ ΤΗΝ ΣΥΝΘΗΚΗ ΜΑΚΟΛΕΝ \n«ΣΥΝΘΗΚΗ ΜΑΚΟΛΕΝ (MACOLIN). ΔΙΑΝΟΗΤΙΚΗ ΙΔΙΟΚΤΗΣΙΑ, ΑΘΛΗΤΙΚΟ ΚΑΙ ΕΜΠΟΡΙΚΟ ΔΙΚΑΙΟ»",
@@ -1222,43 +427,15 @@
           "conference",
           "sport"
         ],
-        "rank": 0,
-        "local_rank": 0,
-        "entities": [
-          {
-            "type": "venue",
+
             "entity_id": "f43U9FTBTEhYKVeP8vAUxH",
-            "name": "The Met Hotel",
-            "formatted_address": "48 26is Oktovriou\n546 27 Thessaloniki\nGreece"
-          }
-        ],
         "duration": 34200,
-        "start": "2019-12-07T06:30:00Z",
-        "end": "2019-12-07T16:00:00Z",
-        "updated": "2019-10-26T05:35:14Z",
-        "first_seen": "2019-10-26T05:32:03Z",
-        "timezone": "Europe/Athens",
-        "location": [
-          22.920766,
-          40.640458
-        ],
-        "scope": "locality",
+        "start": "2019-12-07 06:30:00",
+        "first_seen": "2019-10-26 05:32:03",
         "country": "GR",
-        "place_hierarchies": [
-          [
-            "6295630",
-            "6255148",
-            "390903",
-            "6697801",
-            "734075",
-            "8133841",
-            "734077"
-          ]
-        ],
         "state": "active"
       },
         {
-          "relevance": 1,
           "id": "qf89GgqJZUVubnaCX2",
           "title": "SL Theory | Album release show",
           "description": "SL Theory . Album Release Show\n28 Δεκεμβρίου 2019 – Fuzz Club\nΝοely Rayn presenting their new album “Perfect is not Enough”\n& Cellar Stone\nΤο Σάββατο 28 Δεκεμβρίου οι SL Theory θα ταρακουνήσουν το Fuzz, παρουσιάζοντας τον νέο τους δίσκο! Η μπάντα που έχει προσελκύσει το ενδιαφέρον κοινού και κριτικών, σε μια headline εμφάνιση που θα θυμόμαστε για καιρό.\nΟι SL Theory είναι ένα Heavy Rock συγκρότημα το οποίο κινείται σε ένα ηχητικό φάσμα που αγκαλιάζει από το Heavy Prog έως το AOR. Με όπλο τους μια σειρά από ποιοτικές συνθέσεις, είναι αναμφίβολα μια από τις πιο ενδιαφέρουσες μουσικές προτάσεις του σκληρού ήχου. Μέσα από πολυσυζητημένες Live εμφανίσεις σε συνθήκες υψηλών απαιτήσεων, οι SL Theory προκαλούν και προσκαλούν τον ακροατή σε ένα αξέχαστο μουσικό ταξίδι, που έχει αποσπάσει τα εύσημα οπαδών, εντός και εκτός συναυλιακών τειχών.\nΤο συγκρότημα έχει ως τώρα κυκλοφορήσει δύο στούντιο άλμπουμ σε CD, ενώ πρόσφατα κυκλοφόρησε το πρώτο του live CD / DVD και βλέπει την δημοτικότητά του να μεγαλώνει μέσα από τις θεαματικές του οπτικοακουστικές ζωντανές εμφανίσεις.\nH καινούργια στούντιο δουλειά των SL Theory έχει τον τίτλο “Cipher” και πρόκειται σίγουρα για μια από τις πιο ενδιαφέρουσες κυκλοφορίες της χρονιάς. Με το “Cipher”, οι SL Theory καταφέρνουν να ανεβάσουν τον πήχη με την προσοχή την οποία το συγκρότημα έχει, για μια ακόμα φορά, δείξει στη λεπτομέρεια, κάνοντας τη διαφορά με μουσική η οποία δείχνει τα «δόντια» της, ενώ παράλληλα αγγίζει και γεννά συναισθήματα στον ακροατή. Στο Fuzz, πρόκειται να δώσουν ένα μοναδικό show, για όσους τυχερούς παρευρεθούν στον χώρο!\nMαζί τους οι Νοely Rayn, θα παρουσιάσουν τον νέο τους δίσκο “Perfect is not Enough”, σαν γνήσια τέκνα των Thin Lizzy και της ιρλανδικής hard rock σκηνής.\nΤη συναυλία θα ανοίξουν οι Cellar Stone, με το heavy rock τους το αλήτικο να μην χαρίζεται σε κανένα!\nΗ ελληνική σκηνή δείχνει τα δόντια της και σε καλεί να δεις από κοντά πόσα απίδια πιάνει ο σάκος της! Δίνουμε ραντεβού λοιπόν, επί σκηνής το Σάββατο 28 Δεκεμβρίου στο Fuzz.\nΟι SL Theory είναι:\nΜιχάλης Καρασούλης (φωνή)\nΆλεξ Φλούρος (κιθάρα)\nΓιάννης Νίγδελης (κιθάρα)\nΧρήστος Κόλλιας (μπάσο)\nΜανώλης Γαβαλάς (πλήκτρα)\nΣωτήρης Λαγωνίκας (drums)\nΣτα φωνητικά είναι:\nΜαργαρίτα Παπαδημητρίου Άννα Τάρμπα\nhttps://www.sltheory.com/\nhttps://www.youtube.com/sltheory\nhttps://www.facebook.com/sltheory\nhttps://sotirislagonikas.bandcamp.com/album/progressively-dark\nΠληροφορίες εισιτηρίων\nΗ προπώληση θα ξεκινήσει την Τετάρτη 2 Οκτωβρίου 2019.\nΤιμές εισιτηρίων\nΠροπώληση: 10€\nΤαμείο: 12€",
@@ -1267,52 +444,14 @@
             "concert",
             "music"
           ],
-          "rank": 17,
-          "local_rank": 23,
-          "entities": [
-            {
-              "name": "Fuzz Club",
-              "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
               "entity_id": "38ajSpwEDLzVQzcMibzERbu",
-              "type": "venue"
-            }
-          ],
           "duration": 0,
-          "start": "2019-12-28T06:00:00Z",
-          "end": "2019-12-28T06:00:00Z",
-          "updated": "2019-10-10T03:41:25Z",
-          "first_seen": "2019-10-10T03:40:03Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.698703,
-            37.967968
-          ],
-          "scope": "locality",
+          "start": "2019-12-28 06:00:00",
+          "first_seen": "2019-10-10 03:40:03",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133676",
-              "253025"
-            ],
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "WZxdyFuXzcuGc24oBv",
           "title": "Voltage Welcomes Marika Rossa",
           "description": "",
@@ -1321,43 +460,14 @@
             "concert",
             "music"
           ],
-          "rank": 41,
-          "local_rank": 47,
-          "entities": [
-            {
-              "name": "STEAM ATHENS",
-              "formatted_address": "Evrymedontos 3\nAthens\nGreece",
               "entity_id": "JE7FBtfYBF3EamHhaRjdsd",
-              "type": "venue"
-            }
-          ],
           "duration": 30660,
-          "start": "2019-12-20T21:59:00Z",
-          "end": "2019-12-21T06:30:00Z",
-          "updated": "2019-10-12T15:54:06Z",
-          "first_seen": "2019-10-12T15:53:57Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.713347,
-            37.980824
-          ],
-          "scope": "locality",
+          "start": "2019-12-20 21:59:00",
+          "first_seen": "2019-10-12 15:53:57",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "RgKAvLoJFWe9XtPfvv",
           "title": "The Christmas Boogie #8 – The Class of ’58 live in Athens",
           "description": "Οι Rollin Foxes σας προσκαλούμε στο Christmas Boogie #8!\nΌσοι έχετε βρεθεί σε κάποια από τα προηγούμενα ανάλογα events, ξέρετε τι σημαίνει.. Όσοι όχι, ελάτε να ζήσετε μία αμιγώς rock ‘n’ roll βραδιά βγαλμένη από τη δεκαετία του ’50, σε ένα από τα μεγαλύτερα και σημαντικότερα events που διοργανώνει η χορευτική ομάδα των Rollin Foxes!\nΌπως όλες μας οι εκδηλώσεις, έτσι και τo Christmas Boogie, αποτελεί χάρη στη συνέπεια και την υψηλή ποιότητά του, θεσμό στην εγχώρια rock’n’roll σκηνή, όντας εκτός των άλλων, βασισμένο σε αντίστοιχα rock’n’roll events του εξωτερικού, και επηρεασμένο από αυτά.\nΤο πρόγραμμα περιλαμβάνει (όπως πάντα, έτσι και αυτή τη φορά): live μπάντες και καλλιτέχνες από την Ελλάδα και το εξωτερικό, DJ sets, υπέροχες μουσικές και, φυσικά, πολύ χορό!\nKαλεσμένοι μας αυτή τη φορά, είναι η υπέροχη μπάντα από την Αγγλία “The Class of ’58”!! Μία οικογένεια (κυριολεκτικά, είναι πατέρας, μητέρα και οι δύο γιοι!!) rock ‘n’ roll, που θα μας ξεσηκώσουν με τις 50s μουσικές τους!! Και ξέρουν πολύ καλά πώς να το κάνουν!!\nΤο live θα ανοίξουν οι “δικοί μας” Jitterbugs! Πρόκειται για μία από τις παλαιότερες μπάντες του είδους και σίγουρα η καλύτερη! Αυτό σημαίνει πως θα έχουμε το καλύτερο ζέσταμα για ό,τι πρόκειται να ακολουθήσει.\nΠριν την έναρξη της συναυλίας, στα διαλείμματα ανάμεσα στις εμφανίσεις των καλλιτεχνών αλλά και μετά το πέρας αυτών, οι DJs Manos K και Silvery Theodore θα φροντίσουν να κρατήσουν ζεστή την υπέροχη πίστα του καλύτερου live stage της Αθήνας, του Fuzz Live Music Club.\nΤο 8ο Christmas Boogie, θα είναι σίγουρα μια βραδιά που θα σας μείνει αξέχαστη!\n– ΕΙΣΙΤΗΡΙΑ\n* ΤΙΜΗ EARLY BIRD: 10 ευρώ.\nΗ πώληση εισιτηρίων Early Bird ξεκινάει την Τρίτη 26 Νοεμβρίου και ισχύει μέχρι το Σάββατο 30 Νοεμβρίου\nΤΙΜΗ ΠΡΟΠΩΛΗΣΗΣ: 12 ευρώ.\nΗ προπώληση εισιτηρίων ξεκινάει την Τρίτη 3 Δεκεμβρίου και ισχύει μέχρι το Σάββατο 14 Δεκεμβρίου\nΤΙΜΗ ΣΤΗΝ ΕΙΣΟΔΟ ΤΟΥ FUZZ\nΤΟ ΒΡΑΔΥ ΤΗΣ ΕΚΔΗΛΩΣΗΣ: 14 ευρώ\n-Τα εισιτήρια Early Bird και προπώλησης μπορείτε να τα προμηθευτείτε αποκλειστικά από το Blue Fox, Ασκληπιού 91 – Εξάρχεια, Τρίτη με Σάββατο και ώρες 18:00 με 21:00. Δεν γίνονται κρατήσεις εισιτηρίων, μόνο αγορά.\n——–\nThe Class of ’58 – Βιογραφικό\nΗ οικογένεια Coleman είναι οι “The Class of ’58”, μία από τις καλύτερες και πιο γνωστές μπάντες Rock & Roll και Doowop Vocal Harmony Group της Ευρώπης. Έχουν αναγνωριστεί διεθνώς ως ένας από τους κορυφαίους εκπροσώπους της ’50s μουσικής σήμερα.\nΑποτελείται από τον πατέρα (Howie) σε κιθάρα και τραγούδι, τη μητέρα (Chris) στο κόντρα μπάσο και τραγούδι και τους γιους John στα drums και τραγούδι και David στο πιάνο και τα φωνητικά .\nΈχουν συμμετάσχει πρόσφατα ως πρώτα ονόματα σε μεγάλα φεστιβάλ, όπως: “Chromefest”, NSW (Australia), The Summer Jamboree (Italy), Bethune Retro (France), Rockin’ Doowop (Gran Canaria) και αρκετά άλλα!!",
@@ -1366,52 +476,14 @@
             "concert",
             "music"
           ],
-          "rank": 17,
-          "local_rank": 23,
-          "entities": [
-            {
-              "name": "Fuzz Club",
-              "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
               "entity_id": "38ajSpwEDLzVQzcMibzERbu",
-              "type": "venue"
-            }
-          ],
           "duration": 0,
-          "start": "2019-12-15T07:00:00Z",
-          "end": "2019-12-15T07:00:00Z",
-          "updated": "2019-11-19T03:37:21Z",
-          "first_seen": "2019-11-19T03:28:10Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.698703,
-            37.967968
-          ],
-          "scope": "locality",
+          "start": "2019-12-15 07:00:00",
+          "first_seen": "2019-11-19 03:28:10",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133676",
-              "253025"
-            ],
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "bpzdmnQYxyz6HfJeNF",
           "title": "Hooverphonic",
           "description": "Oι Hooverphonic επιστρέφουν στη χώρα μας για δύο μοναδικές βραδιές, γεμάτες από τις επιτυχίες που αγαπά το ελληνικό κοινό, την Παρασκευή 13 Δεκεμβρίου στο Fix Factory of sound της Θεσσαλονίκης και το Σάββατο 14, στο Fuzz live music club στην Αθήνα.\nΗ βελγική μπάντα, από την πρώτη στιγμή που εμφανίστηκε στο ευρωπαϊκό μουσικό στερέωμα, κατέχει μια ιδιαίτερη θέση και στις δικές μας καρδιές, με πιο πρόσφατη απόδειξη την εξαιρετική εμφάνισή τους στο Release Athens, τον περασμένο Ιούνιο.",
@@ -1420,52 +492,14 @@
             "concert",
             "music"
           ],
-          "rank": 17,
-          "local_rank": 23,
-          "entities": [
-            {
-              "name": "Fuzz Club",
-              "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
               "entity_id": "38ajSpwEDLzVQzcMibzERbu",
-              "type": "venue"
-            }
-          ],
           "duration": 0,
-          "start": "2019-12-14T06:00:00Z",
-          "end": "2019-12-14T06:00:00Z",
-          "updated": "2019-09-26T06:27:14Z",
-          "first_seen": "2019-09-26T06:27:00Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.698703,
-            37.967968
-          ],
-          "scope": "locality",
+          "start": "2019-12-14 06:00:00",
+          "first_seen": "2019-09-26 06:27:00",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133676",
-              "253025"
-            ],
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "UHjRvJ5ARsoCycLKDc",
           "title": "Scott Bradlee’s Postmodern Jukebox",
           "description": "Welcome to the Twenties 2.0 World Tour Κυριακή 08 Δεκεμβρίου 2019 – Fuzz Club\nA Great Gatsby party…in 2019\n“Αμερική, αρχές 1920. Σε μία πολυτελή έπαυλη, δίπλα στην πισίνα με θέα την ακτή, άνδρες με κοστούμια και παπιγιόν και γυναίκες με φορέματα μέχρι το γόνατο, πέρλες στο λαιμό και μαλλιά κομμένα καρέ, πίνουν Cosmopolitan και χορεύουν στους ρυθμούς της live μπάντας που βρίσκεται εκεί για να τους διασκεδάσει”.\nΗ παραπάνω σκηνή μοιάζει να έχει βγει από τις σελίδες του Great Gatsby. Όταν όμως οι μουσικοί εκτελούν τις μεγαλύτερες επιτυχίες των τελευταίων δεκαετιών, σε ρυθμούς jazz, swing, foxtrot και soul, τότε μόλις ήρθατε στο μεγάλο party των Postmodern Jukebox!\nΈτοιμοι για ένα tap dance υπό τους “ήχους” του Bad Romance;\nΗ ιστορία αυτής της μουσικής “κολεκτίβας” δεν είναι σε καμία περίπτωση συνηθισμένη.\nΟ Scott Bradlee ξεκίνησε το 2009 να επανεκτελεί γνωστά τραγούδια σε πιο…jazz εκδοχή θέλοντας να βρει έναν ενδιαφέροντα τρόπο για να εξασκηθεί στο πιάνο. Λίγα χρόνια αργότερα, αποφασίζει τη δημιουργία ενός σχήματος, μιας συνάντησης διαφορετικών μουσικών με κοινή αγάπη στο πιάνο και το Motown!\nΕκτός από τον ιδρυτή και ιθύνοντα νου, Scott Bradlee, τα μέλη των PMJ δεν είναι σταθερά. Αντίθετα εναλλάσσονται – ξεπερνώντας συνολικά τα 70 – αναλόγως τη διασκευή, ώστε το αποτέλεσμα κάθε φορά να είναι μοναδικό!\nΜετρούν περισσότερες από ένα δισεκατομμύριο προβολές στο YouTube και εκατομμύρια followers. Μάλιστα, αναρτώντας κάθε εβδομάδα ένα νέο video, οι PMJ φροντίζουν να ικανοποιούν τους φανατικούς οπαδούς τους και, φυσικά, να ανανεώνονται τα playlist μας!\nΤο “Motown Tribute to Nickelback” κέρδισε τις εντυπώσεις και έδωσε στους PMJ το ιδανικό έναυσμα για να συνεχίσουν να προσεγγίζουν με τον δικό τους, ξεχωριστό τρόπο, τις μεγαλύτερες ραδιοφωνικές επιτυχίες. Έτσι, εκτός από τους Nickelback, Eminem, Adele, Lady Gaga, Sia, Rihanna, Justin Bieber, Katy Perry και Metallica είναι μόνο μερικοί από εκείνους που «ταξιδεύουν» σε δεκαετίες που κανείς δεν θα μπορούσε ποτέ να φανταστεί!\nΌπως σχολιάζει κι ο ίδιος ο Bradlee για την επερχόμενη Welcome to the Twenties 2.0 περιοδεία των PMJ, «χρησιμοποιούμε το μικρό μερίδιο που έχουμε στην ποπ κουλτούρα για να προτρέψουμε το κοινό να ξεχάσει τα προβλήματά του και να έρθει σε εμάς, για μία βραδιά που θα γιορτάσουμε το πραγματικό μουσικό ταλέντο και το διαχρονικό στυλ – ζωντανά και στην πραγματική ζωή».\nΔύο μήνες λοιπόν πριν ανακαλύψουμε τι μας επιφυλάσσει το 2020, οι Scott Bradlee’s Postmodern Jukebox μας ταξιδεύουν στον χρόνο, σε ένα εντυπωσιακό 1920s party με 2020s δημιουργίες!\nΦέρτε την καλή σας διάθεση, βρείτε τον χορευτικό σας παρτενέρ και ετοιμαστείτε για χορό!\nΜέχρι το ραντεβού μας την Κυριακή 8 Δεκεμβρίου στο Fuzz Club, απολαύστε τις playlists των PMJ:\nWeb: http://postmodernjukebox.com/\nYouTube: https://www.youtube.com/user/ScottBradleeLovesYa\nFacebook: https://www.facebook.com/postmodernjukebox\nSpotify: https://open.spotify.com/artist/5HYNPEO2NNBONQkp3Mvwvc\nSCOTT BRADLEE’S POSTMODERN JUKEBOX\nΚυριακή 8 Δεκεμβρίου – Fuzz Club\nΚάντε attend στην εκδήλωση στο Facebook εδώ\n\nΗ προπώληση συνεχίζεται\nΤα εισιτήρια γενικής εισόδου κοστίζουν 30€\nVIP Meet & Greet – 172,7 € (Διαθέσιμα αποκλειστικά ηλεκτρονικά και σε εξαιρετικά περιορισμένο αριθμό. Ισχύει όριο αγοράς 8 εισιτηρίων)\nΣτο VIP πακέτο περιλαμβάνονται:\nΕισιτήριο γενικής εισόδου\nΑποκλειστική δυνατότητα για Meet & Greet με τους Postmodern Jukebox\nΑναμνηστική φωτογραφία με τους Postmodern Jukebox\nΣυλλεκτική υπογεγραμμένη αφίσα του Welcome to the Twenties 2.0 Tour\nΑναμνηστικό πάσο του Welcome to the Twenties 2.0 Tour\nΣημεία Προπώλησης\nwww.highpriority.gr\nwww.ticketmaster.gr\nΤηλεφωνικό Kέντρο Ticketmaster 210 893 8111\nΔίκτυο καταστημάτων Public\n* Για αγορές μέσω internet υπάρχει επιβάρυνση 10% στην τιμή του εισιτηρίου\nΦυσικό σημείο προπώλησης (διαθέσιμα μόνο τα εισιτήρια γενικής εισόδου):\nReload Stores\nΑκαδημίας 81, Αθήνα\nΩράριο λειτουργίας:\nΔευτέρα έως Παρασκευή 09:30-21:00\nΣάββατο 10:00-20:00",
@@ -1474,52 +508,14 @@
             "concert",
             "music"
           ],
-          "rank": 17,
-          "local_rank": 23,
-          "entities": [
-            {
-              "name": "Fuzz Club",
-              "formatted_address": "1 Patriarchou Ioakim\n177 78 Tavros\nGreece",
               "entity_id": "38ajSpwEDLzVQzcMibzERbu",
-              "type": "venue"
-            }
-          ],
           "duration": 0,
-          "start": "2019-12-08T06:00:00Z",
-          "end": "2019-12-08T06:00:00Z",
-          "updated": "2019-10-10T03:43:00Z",
-          "first_seen": "2019-10-10T03:41:21Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.698703,
-            37.967968
-          ],
-          "scope": "locality",
+          "start": "2019-12-08 06:00:00",
+          "first_seen": "2019-10-10 03:41:21",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133676",
-              "253025"
-            ],
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "FgSrwzd7hDGWm9We8j",
           "title": "Gazi View Pres Phaedon / Some Me / Steph / Fro",
           "description": "",
@@ -1528,43 +524,14 @@
             "concert",
             "music"
           ],
-          "rank": 0,
-          "local_rank": 0,
-          "entities": [
-            {
-              "name": "Gazi View",
-              "formatted_address": "Iakhou 22\n11854 11854 Athens\nGreece\nΙάκχου 22 (14,966.91 km) 11854 Athens\nGreece",
               "entity_id": "zJMUpMWmXwBz4saFC4BQpa",
-              "type": "venue"
-            }
-          ],
           "duration": 32400,
-          "start": "2019-12-07T21:00:00Z",
-          "end": "2019-12-08T06:00:00Z",
-          "updated": "2019-10-11T17:01:15Z",
-          "first_seen": "2019-10-11T07:16:50Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.712224,
-            37.977718
-          ],
-          "scope": "locality",
+          "start": "2019-12-07 21:00:00",
+          "first_seen": "2019-10-11 07:16:50",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "zrsfETGD9g9bGv5W2j",
           "title": "Gletzair Gl41",
           "description": "",
@@ -1573,43 +540,14 @@
             "concert",
             "music"
           ],
-          "rank": 0,
-          "local_rank": 0,
-          "entities": [
-            {
-              "name": "Faust",
-              "formatted_address": "Kalamiotou 11 & Athinaidos 12\nAthens 10560\nGreece",
               "entity_id": "KCV4JnsTLFuSzzUJYjhHgM",
-              "type": "venue"
-            }
-          ],
           "duration": 25200,
-          "start": "2019-12-07T20:30:00Z",
-          "end": "2019-12-08T03:30:00Z",
-          "updated": "2019-10-11T22:39:21Z",
-          "first_seen": "2019-10-11T22:39:11Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.728789,
-            37.976916
-          ],
-          "scope": "locality",
+          "start": "2019-12-07 20:30:00",
+          "first_seen": "2019-10-11 22:39:11",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "frHYjpjfLYvrNnV2CF",
           "title": "Plisskën Winter Edition",
           "description": "",
@@ -1618,43 +556,14 @@
             "concert",
             "music"
           ],
-          "rank": 64,
-          "local_rank": 71,
-          "entities": [
-            {
-              "name": "Piraeus 117 Academy",
-              "formatted_address": "Pireos 117\nAthens\nGreece",
               "entity_id": "LuR2EQh7FwrKecXJQ75V2x",
-              "type": "venue"
-            }
-          ],
           "duration": 43200,
-          "start": "2019-12-07T17:00:00Z",
-          "end": "2019-12-08T05:00:00Z",
-          "updated": "2019-10-11T05:46:53Z",
-          "first_seen": "2019-09-17T20:30:38Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.71097,
-            37.97563
-          ],
-          "scope": "locality",
+          "start": "2019-12-07 17:00:00",
+          "first_seen": "2019-09-17 20:30:38",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "S6mNeiXTxGBLodnjwY",
           "title": "Modular Expansion with Sebastian Bayne & Emex",
           "description": "",
@@ -1663,43 +572,14 @@
             "concert",
             "music"
           ],
-          "rank": 26,
-          "local_rank": 32,
-          "entities": [
-            {
-              "name": "Astron bar",
-              "formatted_address": "3 Taki\n105 54 Athina\nGreece",
               "entity_id": "rVZexwKf4HjntnsRPBs5YC",
-              "type": "venue"
-            }
-          ],
           "duration": 23460,
-          "start": "2019-12-06T21:59:00Z",
-          "end": "2019-12-07T04:30:00Z",
-          "updated": "2019-11-23T05:47:47Z",
-          "first_seen": "2019-11-23T05:47:39Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.724517,
-            37.978803
-          ],
-          "scope": "locality",
+          "start": "2019-12-06 21:59:00",
+          "first_seen": "2019-11-23 05:47:39",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-          "relevance": 1,
           "id": "2Td5YJYyAVzUU832gj",
           "title": "Terry Riley & Gyan Riley",
           "description": "",
@@ -1708,43 +588,14 @@
             "concert",
             "music"
           ],
-          "rank": 40,
-          "local_rank": 46,
-          "entities": [
-            {
-              "name": "Parnassos Literary Society Concert Hall",
-              "formatted_address": "St. George's Square\nKarytsi 8\nAthens\nGreece",
-              "entity_id": "DpVnQqpSaTy3BHQWkMXHNz",
-              "type": "venue"
-            }
-          ],
+              "entity_id": "DpVnQqpSaTy3BHQWkMXHN",
           "duration": 10800,
-          "start": "2019-12-04T18:30:00Z",
-          "end": "2019-12-04T21:30:00Z",
-          "updated": "2019-09-21T19:51:07Z",
-          "first_seen": "2019-01-18T02:44:15Z",
-          "timezone": "Europe/Athens",
-          "location": [
-            23.731451,
-            37.978248
-          ],
-          "scope": "locality",
+          "start": "2019-12-04 18:30:00",
+          "first_seen": "2019-01-18 02:44:15",          
           "country": "GR",
-          "place_hierarchies": [
-            [
-              "6295630",
-              "6255148",
-              "390903",
-              "6692632",
-              "445408",
-              "8133876",
-              "264371"
-            ]
-          ],
           "state": "active"
         },
         {
-            "relevance": 1,
             "id": "Pw8zMW8ovZJUE3dYJU",
             "title": "Oedipus Rex by Sophocles",
             "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
@@ -1752,87 +603,29 @@
             "labels": [
               "performing-arts"
             ],
-            "rank": 11,
-            "local_rank": 16,
-            "entities": [
-              {
-                "formatted_address": "Kastorias 34-36\nAthens\nGreece",
-                "name": "ATHINAIS",
                 "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-26T18:30:00Z",
-            "end": "2019-12-26T18:30:00Z",
-            "updated": "2019-09-04T19:02:30Z",
-            "first_seen": "2019-09-04T19:02:26Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.71102,
-              37.983588
-            ],
-            "scope": "locality",
+            "start": "2019-12-26 18:30:00",
+            "first_seen": "2019-09-04 19:02:26",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
-            "id": "pNFeA7zTrBGQAg9Q8z",
+            "id": "pNFeA7zTrBGQAg9Q8",
             "title": "Jim Jefferies Athina",
             "description": "",
             "category": "performing-arts",
             "labels": [
               "performing-arts"
             ],
-            "rank": 62,
-            "local_rank": 69,
-            "entities": [
-              {
-                "formatted_address": "7 Iera Odos\n118 54 Athina\nGreece",
-                "name": "Gazi Music Hall",
                 "entity_id": "TS9xKqCiVZU3RNeffEHsPj",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-19T19:00:00Z",
-            "end": "2019-12-19T19:00:00Z",
-            "updated": "2019-06-16T18:16:48Z",
-            "first_seen": "2019-06-14T17:39:40Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.715161,
-              37.979423
-            ],
-            "scope": "locality",
+            "start": "2019-12-19 19:00:00",
+            "first_seen": "2019-06-14 17:39:40",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "6ucePmdEtL9HNj4ohM",
             "title": "Oedipus Rex by Sophocles",
             "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
@@ -1840,43 +633,14 @@
             "labels": [
               "performing-arts"
             ],
-            "rank": 11,
-            "local_rank": 16,
-            "entities": [
-              {
-                "formatted_address": "Kastorias 34-36\nAthens\nGreece",
-                "name": "ATHINAIS",
                 "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-19T18:30:00Z",
-            "end": "2019-12-19T18:30:00Z",
-            "updated": "2019-09-04T15:46:23Z",
-            "first_seen": "2019-09-04T15:46:15Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.71102,
-              37.983588
-            ],
-            "scope": "locality",
+            "start": "2019-12-19 18:30:00",
+            "first_seen": "2019-09-04 15:46:15",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "DnJqXefrLcWxJZB48Y",
             "title": "Oedipus Rex by Sophocles",
             "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
@@ -1884,43 +648,14 @@
             "labels": [
               "performing-arts"
             ],
-            "rank": 11,
-            "local_rank": 16,
-            "entities": [
-              {
-                "formatted_address": "Kastorias 34-36\nAthens\nGreece",
-                "name": "ATHINAIS",
                 "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-12T18:30:00Z",
-            "end": "2019-12-12T18:30:00Z",
-            "updated": "2019-09-04T15:46:23Z",
-            "first_seen": "2019-09-04T15:46:14Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.71102,
-              37.983588
-            ],
-            "scope": "locality",
+            "start": "2019-12-12 18:30:00",
+            "first_seen": "2019-09-04 15:46:14",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "hzN2Y7SHPqsiePDyeb",
             "title": "Oedipus Rex by Sophocles",
             "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
@@ -1928,43 +663,14 @@
             "labels": [
               "performing-arts"
             ],
-            "rank": 11,
-            "local_rank": 16,
-            "entities": [
-              {
-                "formatted_address": "Kastorias 34-36\nAthens\nGreece",
-                "name": "ATHINAIS",
                 "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-05T18:30:00Z",
-            "end": "2019-12-05T18:30:00Z",
-            "updated": "2019-09-04T15:46:22Z",
-            "first_seen": "2019-09-04T15:46:13Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.71102,
-              37.983588
-            ],
-            "scope": "locality",
+            "start": "2019-12-05 18:30:00",
+            "first_seen": "2019-09-04 15:46:13",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "n7XoMA7evEVFcAwjXg",
             "title": "Oedipus Rex by Sophocles",
             "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
@@ -1972,43 +678,14 @@
             "labels": [
               "performing-arts"
             ],
-            "rank": 11,
-            "local_rank": 16,
-            "entities": [
-              {
-                "formatted_address": "Kastorias 34-36\nAthens\nGreece",
-                "name": "ATHINAIS",
                 "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-11-28T18:30:00Z",
-            "end": "2019-11-28T18:30:00Z",
-            "updated": "2019-09-04T19:02:30Z",
-            "first_seen": "2019-09-04T19:02:25Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.71102,
-              37.983588
-            ],
-            "scope": "locality",
+            "start": "2019-11-28 18:30:00",
+            "first_seen": "2019-09-04 19:02:25",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "FfFNTynZ3BJhqFtefM",
             "title": "Oedipus Rex by Sophocles",
             "description": "For the first time, a performance of Ancient Theater play will take place in the center of the city drama was born. The play “Oedipus Rex” by Sophocles, a script of 5th century BC with English and French subtitles will be a unique experience for foreigners as Athens is the city Drama was born.",
@@ -2016,43 +693,14 @@
             "labels": [
               "performing-arts"
             ],
-            "rank": 11,
-            "local_rank": 16,
-            "entities": [
-              {
-                "formatted_address": "Kastorias 34-36\nAthens\nGreece",
-                "name": "ATHINAIS",
                 "entity_id": "UT8cFJ2N8HRZ6S9BLtUH5A",
-                "type": "venue"
-              }
-            ],
             "duration": 0,
-            "start": "2019-11-21T18:30:00Z",
-            "end": "2019-11-21T18:30:00Z",
-            "updated": "2019-09-04T15:33:17Z",
-            "first_seen": "2019-09-04T15:33:11Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.71102,
-              37.983588
-            ],
-            "scope": "locality",
+            "start": "2019-11-21 18:30:00",
+            "first_seen": "2019-09-04 15:33:11",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "pTp2moajArsbQrdWY7",
             "title": "Super League 1 - PAOK vs Atromitos",
             "description": "",
@@ -2061,52 +709,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 79,
-            "local_rank": 85,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "gA3Vpt5fKDvPqXFVQvAyDf",
-                "formatted_address": "6 Mikras Asias\n544 54 Thessaloniki\nGreece",
-                "name": "Toumba Stadium"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-23T16:00:00Z",
-            "end": "2019-12-23T16:00:00Z",
-            "updated": "2019-10-23T20:00:35Z",
-            "first_seen": "2019-07-03T17:45:04Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              22.972241,
-              40.613858
-            ],
-            "scope": "locality",
+            "start": "2019-12-23 16:00:00",
+            "first_seen": "2019-07-03 17:45:04",           
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697801",
-                "734075",
-                "8133841",
-                "734077"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697801",
-                "734075",
-                "8133774",
-                "734643"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "4QdWgdskRseQZi6Ttd",
             "title": "Super League 1 - Panathinaikos vs Aris",
             "description": "",
@@ -2115,52 +725,15 @@
               "soccer",
               "sport"
             ],
-            "rank": 87,
-            "local_rank": 100,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "FNcZpRYX8zgpDJkPJVc9UR",
-                "formatted_address": "Leoforos Olimpionikou Spirou Loui\n151 23 Marousi\nGreece",
-                "name": "Main Olympic Stadium"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-22T17:30:00Z",
-            "end": "2019-12-22T17:30:00Z",
-            "updated": "2019-11-20T20:46:31Z",
-            "first_seen": "2019-07-03T17:45:03Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.787591,
-              38.036129
-            ],
-            "scope": "locality",
+            "start": "2019-12-22 17:30:00",
+            "first_seen": "2019-07-03 17:45:03",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "264353",
-                "8358544"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133770",
-                "262398"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
-            "id": "ZEHiLmGf8UQaDSjeSZ",
+            "id": "ZEHiLmGf8UQaDSjeS",
             "title": "Super League 1 - Volos NFC vs Olympiakos Piraeus",
             "description": "",
             "category": "sports",
@@ -2168,52 +741,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 77,
-            "local_rank": 95,
-            "entities": [
-              {
-                "type": "venue",
-                "entity_id": "KDt66exStNUE7TqPtzKFqz",
-                "formatted_address": "38445 Volos\nGreece",
-                "name": "Panthessaliko Stadium"
-              }
-            ],
+                "entity_id": "KDt66exStNUE7TqPtzKFq",
             "duration": 0,
-            "start": "2019-12-22T15:15:00Z",
-            "end": "2019-12-22T15:15:00Z",
-            "updated": "2019-10-23T20:00:44Z",
-            "first_seen": "2019-07-03T17:45:02Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              22.931265,
-              39.387308
-            ],
-            "scope": "locality",
+            "start": "2019-12-22 15:15:00",
+            "first_seen": "2019-07-03 17:45:02",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697809",
-                "258013",
-                "8133894",
-                "251833"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697809",
-                "258013",
-                "8133894",
-                "9034728"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "UVDzpkQNZzbeU4VBPU",
             "title": "Super League 1 - Panaitolikos vs OFI",
             "description": "",
@@ -2222,52 +757,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 67,
-            "local_rank": 82,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "Nu8HeAzthebGgAiQxAUbiE",
-                "formatted_address": "Nikitara\n301 31 Agrinio\nGreece",
-                "name": "Stadio Panetolikou"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-22T15:00:00Z",
-            "end": "2019-12-22T15:00:00Z",
-            "updated": "2019-10-23T20:00:42Z",
-            "first_seen": "2019-07-03T17:45:03Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              21.411538,
-              38.62985
-            ],
-            "scope": "locality",
+            "start": "2019-12-22 15:00:00",
+            "first_seen": "2019-07-03 17:45:03",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697810",
-                "265508",
-                "8133845",
-                "265560"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697810",
-                "265508",
-                "8133706",
-                "257186"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "CbbeZMoiKEd7nxv52t",
             "title": "Super League 1 - Larissa vs Panionios",
             "description": "",
@@ -2276,43 +773,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 74,
-            "local_rank": 90,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "fxLwz659EpMwVVtu2JVy6r",
-                "formatted_address": "Larisa\nΕλλάδα",
-                "name": "VVIP @ AEL FC ARENA"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-22T13:00:00Z",
-            "end": "2019-12-22T13:00:00Z",
-            "updated": "2019-10-23T20:00:38Z",
-            "first_seen": "2019-07-03T17:45:00Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              22.398782,
-              39.615523
-            ],
-            "scope": "locality",
+            "start": "2019-12-22 13:00:00",
+            "first_seen": "2019-07-03 17:45:00",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697809",
-                "258575",
-                "8133786",
-                "258576"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "23Xr4Q6deRXCHMkv8M",
             "title": "Super League 1 - Lamia vs AEK Athens",
             "description": "",
@@ -2321,43 +789,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 65,
-            "local_rank": 82,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "4eAqz2CunQebadxTrwgawh",
-                "formatted_address": "351 00 Lamia\nGreece",
-                "name": "Dimotiko Athlitiko Kentro Lamias"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-21T17:30:00Z",
-            "end": "2019-12-21T17:30:00Z",
-            "updated": "2019-10-23T20:00:42Z",
-            "first_seen": "2019-07-03T17:45:04Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              22.430976,
-              38.90987
-            ],
-            "scope": "locality",
+            "start": "2019-12-21 17:30:00",
+            "first_seen": "2019-07-03 17:45:04",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697800",
-                "262187",
-                "8133738",
-                "258620"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "5ipdsHb7HzM4kdsaEa",
             "title": "Super League 1 - Asteras Tripolis vs Xanthi",
             "description": "",
@@ -2366,43 +805,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 68,
-            "local_rank": 87,
-            "entities": [
-              {
-                "type": "venue",
-                "entity_id": "VkHBfNzgdmUrnvDtTGZCLZ",
-                "formatted_address": "Liagora\nTripoli\nGreece",
-                "name": "Stadio Theodoros Kolokotronis"
-              }
-            ],
+                "entity_id": "VkHBfNzgdmUrnvDtTGZCL",
             "duration": 0,
-            "start": "2019-12-21T17:30:00Z",
-            "end": "2019-12-21T17:30:00Z",
-            "updated": "2019-10-23T20:03:00Z",
-            "first_seen": "2019-07-03T17:45:01Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              22.388431,
-              37.502432
-            ],
-            "scope": "locality",
+            "start": "2019-12-21 17:30:00",
+            "first_seen": "2019-07-03 17:45:01",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697807",
-                "264644",
-                "8133668",
-                "252601"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "2mtwBz69QwXv5niZ5M",
             "title": "Super League 1 - Panionios vs PAOK",
             "description": "",
@@ -2411,52 +821,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 71,
-            "local_rank": 76,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "b3H3VYhqCSygepNcpX4C6h",
-                "formatted_address": "Chrisostomou\n171 22 Nea Smirni\nGreece",
-                "name": "Nea Smyrni Stadium"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-19T17:30:00Z",
-            "end": "2019-12-19T17:30:00Z",
-            "updated": "2019-10-23T20:00:37Z",
-            "first_seen": "2019-07-03T17:45:00Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.70923,
-              37.943101
-            ],
-            "scope": "locality",
+            "start": "2019-12-19 17:30:00",
+            "first_seen": "2019-07-03 17:45:00",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133665",
-                "256575"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "ezbGnrXRDiAMkUNfg6",
             "title": "Super League 1 - Aris vs Volos NFC",
             "description": "",
@@ -2465,52 +837,14 @@
               "soccer",
               "sport"
             ],
-            "rank": 77,
-            "local_rank": 86,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "WANPvbfJ4ajVss8Y72M2zT",
-                "formatted_address": "69 Alkminis, Charilaou\nThessaloníki\nGreece",
-                "name": "Stadio Harilaou Kleánthis Vikelídis"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-19T15:15:00Z",
-            "end": "2019-12-19T15:15:00Z",
-            "updated": "2019-10-23T20:00:34Z",
-            "first_seen": "2019-07-03T17:44:58Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              22.969612,
-              40.600114
-            ],
-            "scope": "locality",
+            "start": "2019-12-19 15:15:00",
+            "first_seen": "2019-07-03 17:44:58",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697801",
-                "734075",
-                "8133774",
-                "734643"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6697801",
-                "734075",
-                "8133841",
-                "734077"
-              ]
-            ],
             "state": "active"
           },
           {
-            "relevance": 1,
             "id": "5CPdWD4hNUpCTumSuU",
             "title": "Super League 1 - Atromitos vs Lamia",
             "description": "",
@@ -2519,48 +853,11 @@
               "soccer",
               "sport"
             ],
-            "rank": 69,
-            "local_rank": 76,
-            "entities": [
-              {
-                "type": "venue",
                 "entity_id": "7Nj2RBgFQviAB6Laf6yGeh",
-                "formatted_address": "93 Giannitson, Peristeri\nAthína (Athens)\nGreece",
-                "name": "Stadio Peristeriou"
-              }
-            ],
             "duration": 0,
-            "start": "2019-12-18T17:30:00Z",
-            "end": "2019-12-18T17:30:00Z",
-            "updated": "2019-10-23T20:00:45Z",
-            "first_seen": "2019-07-03T17:44:58Z",
-            "timezone": "Europe/Athens",
-            "location": [
-              23.689849,
-              38.005023
-            ],
-            "scope": "locality",
+            "start": "2019-12-18 17:30:00",
+            "first_seen": "2019-07-03 17:44:58",            
             "country": "GR",
-            "place_hierarchies": [
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133876",
-                "264371"
-              ],
-              [
-                "6295630",
-                "6255148",
-                "390903",
-                "6692632",
-                "445408",
-                "8133783",
-                "255524"
-              ]
-            ],
             "state": "active"
           }
     ]
