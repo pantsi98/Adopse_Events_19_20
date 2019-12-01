@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
@@ -15,6 +16,16 @@ namespace Project_4
         public Form1()
         {
             InitializeComponent();
+            string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
+
+            var con = new MySqlConnection(cs);
+            con.Open();
+
+            var stm = "SELECT * FROM category";
+            var cmd = new MySqlCommand(stm, con);
+
+            string version = cmd.ExecuteScalar().ToString();
+            label1.Text = version;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +64,11 @@ namespace Project_4
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,0 +1,9 @@
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\bin\Debug\Events_Omada1.exe.config
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\bin\Debug\Events_Omada1.exe
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\bin\Debug\Events_Omada1.pdb
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\obj\Debug\Project 1.csprojAssemblyReference.cache
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\obj\Debug\Events_Omada1.Properties.Resources.resources
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\obj\Debug\Project 1.csproj.GenerateResource.cache
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\obj\Debug\Project 1.csproj.CoreCompileInputs.cache
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\obj\Debug\Events_Omada1.exe
+C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\obj\Debug\Events_Omada1.pdb
