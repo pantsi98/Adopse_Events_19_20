@@ -1,9 +1,4 @@
-{
-  "count": 20,
-  "overflow": true,
-  "next": "https://api.predicthq.com/v1/events/?category=sports&country=GR&label=soccer&offset=10",
-  "previous": null,
-  "results": [
+[
     {
       "relevance": 1,
       "id": "pTp2moajArsbQrdWY7",
@@ -517,4 +512,3 @@
       "state": "active"
     }
   ]
-}

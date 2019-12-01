@@ -1,9 +1,4 @@
-{
-  "count": 4,
-  "overflow": false,
-  "next": null,
-  "previous": null,
-  "results": [
+[
     {
       "relevance": 1,
       "id": "tRiL2UEiv2b7D6jpJA",
@@ -175,4 +170,3 @@
       "state": "active"
     }
   ]
-}

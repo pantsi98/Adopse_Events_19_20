@@ -1,6 +1,5 @@
 SET sql_mode = '';
 
-/*
 SET foreign_key_checks = 0;
 	
 drop table `user`;
@@ -14,7 +13,6 @@ drop table `labels`;
 drop table `labeled`;
 
 SET foreign_key_checks = 1;
-*/
 
 CREATE TABLE `user` (
   `id` int not null PRIMARY KEY AUTO_INCREMENT,
@@ -36,7 +34,8 @@ CREATE TABLE `events` (
   `created_at` timestamp,
   `description` text,
   `participants_amount` int,
-  `admin_id` int
+  `admin_id` int,
+  `json_id` varchar(255)
 );
 
 CREATE TABLE `category` (
@@ -46,10 +45,10 @@ CREATE TABLE `category` (
 
 CREATE TABLE `venues` (
   `id` int not null PRIMARY KEY AUTO_INCREMENT,
-  `event_id` int,
   `name` varchar(255),
   `location` varchar(255),
-  `capacity` int
+  `capacity` int,
+  `json_id` varchar(255)
 );
 
 CREATE TABLE `admin` (
