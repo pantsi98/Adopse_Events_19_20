@@ -18,14 +18,16 @@ namespace Project_4
             InitializeComponent();
             string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
-            var con = new MySqlConnection(cs);
-            con.Open();
+          var con = new MySqlConnection(cs);
+          con.Open();
 
             var stm = "SELECT * FROM category";
             var cmd = new MySqlCommand(stm, con);
 
             string version = cmd.ExecuteScalar().ToString();
             label1.Text = version;
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,12 +47,17 @@ namespace Project_4
 
         private void button7_Click(object sender, EventArgs e)
         {
+            MainPanel.Controls.Clear();
+            SignUpstep1 su = new SignUpstep1();
+            MainPanel.Controls.Add(su);
 
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            MainPanel.Controls.Clear();
+           LogIn su = new LogIn();
+            MainPanel.Controls.Add(su);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -69,6 +76,16 @@ namespace Project_4
         }
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
