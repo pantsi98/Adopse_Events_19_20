@@ -1,0 +1,9 @@
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\bin\Debug\Project 3.exe.config
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\bin\Debug\Project 3.exe
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\bin\Debug\Project 3.pdb
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\obj\Debug\Project 3.csprojAssemblyReference.cache
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\obj\Debug\Project_3.Properties.Resources.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\obj\Debug\Project 3.csproj.GenerateResource.cache
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\obj\Debug\Project 3.csproj.CoreCompileInputs.cache
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\obj\Debug\Project 3.exe
+C:\Users\stella\Source\Repos\Adopse_Events_19_2011\Envent\Events_Omada1\Project 3\obj\Debug\Project 3.pdb
