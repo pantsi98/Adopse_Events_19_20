@@ -46,6 +46,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.music_tab = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
@@ -299,6 +300,15 @@
             this.music_tab.UseVisualStyleBackColor = false;
             this.music_tab.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(639, 395);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "test";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -306,6 +316,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1904, 1055);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroPanel1);
@@ -346,6 +357,7 @@
         private System.Windows.Forms.TextBox tiletextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Button button9;
     }
 }
 
