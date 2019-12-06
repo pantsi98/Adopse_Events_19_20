@@ -14,11 +14,24 @@ namespace Project_4.User_Classes
 
         }
 
-        public RegisteredUser logIn(string userName,string passWord)
+        public RegisteredUser logInAsNormalUser(string userName,string passWord)
         {
+
             RegisteredUser test = new RegisteredUser();
             return test;
         }
 
+
+        public Admin logInAsAdmin(string userName, string passWord)
+        {
+            Admin test = new Admin();
+            return test;
+        }
+
+        public EventManager logInAsEventManager(string userName, string passWord)
+        {
+            EventManager test = new EventManager();
+            return test;
+        }
     }
 }

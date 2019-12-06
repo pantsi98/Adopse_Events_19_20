@@ -93,6 +93,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enventDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,8 +136,14 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="testdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>testdbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="User Classes\Admin.cs" />
     <Compile Include="User Classes\Event.cs" />
+    <Compile Include="User Classes\EventManager.cs" />
     <Compile Include="User Classes\Profile.cs" />
     <Compile Include="User Classes\RegisteredUser.cs" />
     <Compile Include="User Classes\User.cs" />
@@ -161,6 +172,17 @@
     <EmbeddedResource Include="SignUpUser.resx">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="enventDbDataSet.xsc">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>enventDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="enventDbDataSet.xss">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -171,6 +193,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="testdbDataSet.xsc">
+      <DependentUpon>testdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="testdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>testdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="testdbDataSet.xss">
+      <DependentUpon>testdbDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

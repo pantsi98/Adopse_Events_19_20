@@ -13,6 +13,14 @@ namespace Project_4.User_Classes
         private string passWord;
         private string userID;
 
+        public Admin(string userName,string passWord)
+        {
+
+            this.userName = userName;
+            this.passWord = passWord;
+
+        }
+
         public void editProfile(Profile profile)
         {
 
