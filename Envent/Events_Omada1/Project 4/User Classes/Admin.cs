@@ -21,6 +21,11 @@ namespace Project_4.User_Classes
 
         }
 
+        override
+        public void showEvents() {
+        
+        }
+
         public void editProfile(Profile profile)
         {
 

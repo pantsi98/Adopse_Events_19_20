@@ -99,9 +99,8 @@ namespace Project_4
              return deiktislathwn;
              */
 
-            enventDbDataSetTableAdapters.userTableAdapter login = new enventDbDataSetTableAdapters.userTableAdapter();
-            login.login('test');
-
+            //login.login('test');
+            return true;
         }
 
 
