@@ -3,7 +3,7 @@ Connection method : Standar(TCP/IP)
 Connenction type : Public IP
 Hostname : 35.228.3.69
 port : 3306
-username : root
+username : appUser
 password : l7heDyE6lxs7CN7o
 id : enventdb
 
