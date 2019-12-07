@@ -347,10 +347,12 @@ namespace Project_4
                 messageLabel.Visible = true;
                 messageLabel.Text = imera + " " + minas + " " + etos;
 
-
             }
         }
 
-       
+        private void messageLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

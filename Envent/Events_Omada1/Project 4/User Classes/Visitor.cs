@@ -22,11 +22,10 @@ namespace Project_4.User_Classes
         }
 
 
-        public Admin logInAsAdmin(string userName, string passWord)
+        /*public Admin logInAsAdmin(string userName, string passWord)
         {
-            Admin test = new Admin();
             return test;
-        }
+        }*/
 
         public EventManager logInAsEventManager(string userName, string passWord)
         {
