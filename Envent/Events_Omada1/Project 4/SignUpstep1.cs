@@ -29,5 +29,12 @@ namespace Project_4
         {
 
         }
+
+        private void EventManagerButton_Click(object sender, EventArgs e)
+        {
+            panelRegister.Controls.Clear();
+            SignUpAdmin su = new SignUpAdmin();
+            panelRegister.Controls.Add(su);
+        }
     }
 }

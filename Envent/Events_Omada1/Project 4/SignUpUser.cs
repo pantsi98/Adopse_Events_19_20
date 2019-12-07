@@ -72,164 +72,185 @@ namespace Project_4
             }
         }
 
-            private void Email1_MouseClick(object sender, MouseEventArgs e)
+        private void Email1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Email1.ForeColor = Color.Black;
+            if (Email1.Text == "Email" || Email1.Text == "Συμπλήρωσε Email")
             {
+
+                Email1.Text = "";
                 Email1.ForeColor = Color.Black;
-                if (Email1.Text == "Email" || Email1.Text == "Συμπλήρωσε Email")
-                {
 
-                    Email1.Text = "";
-                    Email1.ForeColor = Color.Black;
-
-                }
             }
-            private void Kodikos1_MouseClick(object sender, MouseEventArgs e)
+        }
+        private void address_MouseClick(object sender, MouseEventArgs e)
+        {
+            address.ForeColor = Color.Black;
+            if (address.Text == "Περιοχή" || address.Text == "Συμπλήρωσε Περιοχή")
             {
+
+                address.Text = "";
+                address.ForeColor = Color.Black;
+
+            }
+        }
+        private void Kodikos1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Kodikos1.ForeColor = Color.Black;
+            if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "Συμπλήρωσε Kωδικό")
+            {
+
+                Kodikos1.Text = "";
                 Kodikos1.ForeColor = Color.Black;
-                if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "Συμπλήρωσε Kωδικό")
-                {
-
-                    Kodikos1.Text = "";
-                    Kodikos1.ForeColor = Color.Black;
-                    Kodikos1.PasswordChar = '*';
-                }
-
+                Kodikos1.PasswordChar = '*';
             }
 
-            private void Kodikos2_MouseClick(object sender, MouseEventArgs e)
+        }
+
+        private void Kodikos2_MouseClick(object sender, MouseEventArgs e)
+        {
+            Kodikos2.ForeColor = Color.Black;
+            if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "Συμπλήρωσε Κωδικό Επαλήθευσης")
             {
+
+                Kodikos2.Text = "";
                 Kodikos2.ForeColor = Color.Black;
-                if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "Συμπλήρωσε Κωδικό Επαλήθευσης")
-                {
-
-                    Kodikos2.Text = "";
-                    Kodikos2.ForeColor = Color.Black;
-                    Kodikos2.PasswordChar = '*';
-                }
-
-
+                Kodikos2.PasswordChar = '*';
             }
-            private void domainUpDown1_Click(object sender, EventArgs e)
+
+
+        }
+        private void domainUpDown1_Click(object sender, EventArgs e)
+        {
+            domainUpDown1.ForeColor = Color.Black;
+
+        }
+
+
+
+
+        //methodos pou elegxei ean o kodikos1 einai idios me ton kodiko2
+        private Boolean checkPasswords()
+        {
+            Boolean cp = false;
+            if (Kodikos1.Text == Kodikos2.Text)
             {
-                domainUpDown1.ForeColor = Color.Black;
-
+                cp = true;
             }
-
-
-
-
-            //methodos pou elegxei ean o kodikos1 einai idios me ton kodiko2
-            private Boolean checkPasswords()
+            else
             {
-                Boolean cp = false;
-                if (Kodikos1.Text == Kodikos2.Text)
-                {
-                    cp = true;
-                }
-                else
-                {
-                    Kodikos2.ForeColor = Color.Red;
-                    Kodikos1.ForeColor = Color.Red;
-                }
-                return cp;
+                Kodikos2.ForeColor = Color.Red;
+                Kodikos1.ForeColor = Color.Red;
+            }
+            return cp;
+        }
+
+
+
+        //elegxei ean o xristis exei sumplirwsei ola ta pedia swsta, ean oxi tou emfanizei minima kai kanei ton
+        //analogo deikti txt false 
+
+        private Boolean AllCheck()
+        {
+
+            Boolean deiktislathwn = false;
+            messagefullo.Visible = false;
+            messageLabel.Visible = false;
+
+            if (Onoma.Text == "Όνομα" || Onoma.Text == "")
+            {
+                Onoma.ForeColor = Color.Red;
+                Onoma.Text = "Συμπλήρωσε Όνομα";
+                deiktislathwn = true;
+
+
             }
 
-
-
-            //elegxei ean o xristis exei sumplirwsei ola ta pedia swsta, ean oxi tou emfanizei minima kai kanei ton
-            //analogo deikti txt false 
-
-            private Boolean AllCheck()
+            if (Epitheto.Text == "" || Epitheto.Text == "Επώνυμο")
             {
 
-                Boolean deiktislathwn = false;
-                messagefullo.Visible = false;
-                messageLabel.Visible = false;
-
-                if (Onoma.Text == "Όνομα" || Onoma.Text == "")
-                {
-                    Onoma.ForeColor = Color.Red;
-                    Onoma.Text = "Συμπλήρωσε Όνομα";
-                    deiktislathwn = true;
+                Epitheto.ForeColor = Color.Red;
+                Epitheto.Text = "Συμπλήρωσε Επίθετο";
+                deiktislathwn = true;
 
 
-                }
+            }
+            if (username1.Text == "" || username1.Text == "Username")
+            {
 
-                if (Epitheto.Text == "" || Epitheto.Text == "Επώνυμο")
-                {
+                username1.ForeColor = Color.Red;
+                username1.Text = "Συμπλήρωσε Username";
+                deiktislathwn = true;
 
-                    Epitheto.ForeColor = Color.Red;
-                    Epitheto.Text = "Συμπλήρωσε Επίθετο";
-                    deiktislathwn = true;
-
-
-                }
-                if (username1.Text == "" || username1.Text == "Username")
-                {
-
-                    username1.ForeColor = Color.Red;
-                    username1.Text = "Συμπλήρωσε Username";
-                    deiktislathwn = true;
-
-
-                }
-
-                if (Email1.Text == "" || Email1.Text == "Email")
-                {
-                    Email1.ForeColor = Color.Red;
-                    Email1.Text = "Συμπλήρωσε Email";
-                    deiktislathwn = true;
-
-
-                }
-                if (Kodikos1.Text == "" || Kodikos1.Text == "Κωδικός")
-                {
-
-                    Kodikos1.ForeColor = Color.Red;
-                    Kodikos1.Text = "Συμπλήρωσε Kωδικό";
-                    deiktislathwn = true;
-
-
-                }
-                if (Kodikos2.Text == "" || Kodikos2.Text == "Επαλήθευση Κωδικού")
-                {
-
-                    Kodikos2.ForeColor = Color.Red;
-                    Kodikos2.Text = "Συμπλήρωσε Κωδικό Επαλήθευσης";
-                    deiktislathwn = true;
-
-
-
-                }
-                if (domainUpDown1.Text == "Μήνας")
-                {
-
-                    domainUpDown1.ForeColor = Color.Red;
-                    deiktislathwn = true;
-
-                }
-
-                if (!Andras.Checked && !Gynaika.Checked)
-                {
-
-                    fullolabel.ForeColor = Color.Red;
-                    deiktislathwn = true;
-
-                }
-
-
-                if (checkPasswords() == false)
-                {
-                    messageLabel.Visible = true;
-                    messageLabel.ForeColor = Color.Red;
-                    messageLabel.Text = "Οι κωδικοί δεν είναι ίδιοι, ξαναπροσπαθήστε .";
-                    deiktislathwn = true;
-
-                }
-                return deiktislathwn;
 
             }
 
+            if (Email1.Text == "" || Email1.Text == "Email")
+            {
+                Email1.ForeColor = Color.Red;
+                Email1.Text = "Συμπλήρωσε Email";
+                deiktislathwn = true;
+
+
+            }
+            if (Kodikos1.Text == "" || Kodikos1.Text == "Κωδικός")
+            {
+
+                Kodikos1.ForeColor = Color.Red;
+                Kodikos1.Text = "Συμπλήρωσε Kωδικό";
+                deiktislathwn = true;
+
+
+            }
+
+            if (address.Text == "" || address.Text == "Περιοχή")
+            {
+
+                address.ForeColor = Color.Red;
+                address.Text = "Συμπλήρωσε Περιοχή";
+                deiktislathwn = true;
+
+
+            }
+            if (Kodikos2.Text == "" || Kodikos2.Text == "Επαλήθευση Κωδικού")
+            {
+
+                Kodikos2.ForeColor = Color.Red;
+                Kodikos2.Text = "Συμπλήρωσε Κωδικό Επαλήθευσης";
+                deiktislathwn = true;
+
+
+
+            }
+            if (domainUpDown1.Text == "Μήνας")
+            {
+
+                domainUpDown1.ForeColor = Color.Red;
+                deiktislathwn = true;
+
+            }
+
+            if (!Andras.Checked && !Gynaika.Checked)
+            {
+
+                fullolabel.ForeColor = Color.Red;
+                deiktislathwn = true;
+
+            }
+
+
+            if (checkPasswords() == false)
+            {
+                messageLabel.Visible = true;
+                messageLabel.ForeColor = Color.Red;
+                messageLabel.Text = "Οι κωδικοί δεν είναι ίδιοι, ξαναπροσπαθήστε .";
+                deiktislathwn = true;
+
+            }
+            return deiktislathwn;
+
+        }
+    
 
 
             //methodoi wste na einai mono ena checkbox checked
@@ -294,7 +315,19 @@ namespace Project_4
                 }
             }
 
-            private void Kodikos1_Leave(object sender, EventArgs e)
+        private void address_Leave(object sender, EventArgs e)
+        {
+            if (address.Text == "")
+            {
+                address.Text = "Περιοχή";
+                address.ForeColor = Color.DimGray;
+
+
+            }
+
+        }
+
+        private void Kodikos1_Leave(object sender, EventArgs e)
             {
                 if (Kodikos1.Text == "")
                 {
@@ -351,6 +384,15 @@ namespace Project_4
             }
         }
 
-       
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Title_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

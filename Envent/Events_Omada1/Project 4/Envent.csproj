@@ -111,6 +111,12 @@
     <Compile Include="GradientSideBarPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Location.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Location.Designer.cs">
+      <DependentUpon>Location.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +125,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignUpAdmin.Designer.cs">
+      <DependentUpon>SignUpAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpstep1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +149,9 @@
     <EmbeddedResource Include="Home Page.resx">
       <DependentUpon>Home Page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Location.resx">
+      <DependentUpon>Location.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +164,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SignUpAdmin.resx">
+      <DependentUpon>SignUpAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpstep1.resx">
       <DependentUpon>SignUpstep1.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +201,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

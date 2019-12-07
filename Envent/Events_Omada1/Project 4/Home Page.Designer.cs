@@ -34,9 +34,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.tiletextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.gradientPanel1 = new Project_4.GradientSideBarPanel();
             this.button6 = new System.Windows.Forms.Button();
@@ -47,7 +44,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.music_tab = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,7 +110,6 @@
             this.metroTile1.TabIndex = 3;
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile1.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile1.TileImage")));
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile1.UseCustomBackColor = true;
             this.metroTile1.UseCustomForeColor = true;
@@ -128,35 +123,32 @@
             this.metroPanel1.Controls.Add(this.tiletextBox);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 8;
-            this.metroPanel1.Location = new System.Drawing.Point(348, 208);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(464, 272);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(184, 50);
+            this.metroPanel1.Size = new System.Drawing.Size(245, 65);
             this.metroPanel1.TabIndex = 0;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 8;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // tiletextBox
             // 
             this.tiletextBox.Enabled = false;
-            this.tiletextBox.Location = new System.Drawing.Point(2, 2);
-            this.tiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.tiletextBox.Location = new System.Drawing.Point(3, 3);
             this.tiletextBox.Multiline = true;
             this.tiletextBox.Name = "tiletextBox";
             this.tiletextBox.ReadOnly = true;
-            this.tiletextBox.Size = new System.Drawing.Size(180, 46);
+            this.tiletextBox.Size = new System.Drawing.Size(239, 59);
             this.tiletextBox.TabIndex = 2;
             this.tiletextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(575, 134);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(767, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -324,8 +316,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1428, 807);
             this.Controls.Add(this.MainPanel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
@@ -337,11 +327,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -360,9 +347,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox textBox1;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.TextBox tiletextBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel MainPanel;
     }
 }

@@ -25,7 +25,7 @@ namespace Project_4
             var cmd = new MySqlCommand(stm, con);
 
             string version = cmd.ExecuteScalar().ToString();
-            label1.Text = version;
+          
             
             
         }
@@ -47,9 +47,10 @@ namespace Project_4
 
         private void button7_Click(object sender, EventArgs e)
         {
+            
             MainPanel.Controls.Clear();
             SignUpstep1 su = new SignUpstep1();
-            MainPanel.Controls.Add(su);
+           MainPanel.Controls.Add(su);
 
         }
 
@@ -60,10 +61,7 @@ namespace Project_4
             MainPanel.Controls.Add(su);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
@@ -86,6 +84,11 @@ namespace Project_4
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
         {
 
         }
