@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
@@ -76,27 +77,30 @@ namespace Project_4
         private Boolean AllCheck()
         {
 
-            Boolean deiktislathwn = false;
-            if (EmailLog.Text == "" || EmailLog.Text == "Email")
-            {
-                EmailLog.ForeColor = Color.Red;
-                EmailLog.Text = "Συμπλήρωσε Email";
-                deiktislathwn = true;
+            /* Boolean deiktislathwn = false;
+             if (EmailLog.Text == "" || EmailLog.Text == "Email")
+             {
+                 EmailLog.ForeColor = Color.Red;
+                 EmailLog.Text = "Συμπλήρωσε Email";
+                 deiktislathwn = true;
 
 
-            }
-            if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός")
-            {
+             }
+             if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός")
+             {
 
-                PasswordLog.ForeColor = Color.Red;
-                PasswordLog.Text = "Συμπλήρωσε Kωδικό";
-                deiktislathwn = true;
+                 PasswordLog.ForeColor = Color.Red;
+                 PasswordLog.Text = "Συμπλήρωσε Kωδικό";
+                 deiktislathwn = true;
 
 
-            }
+             }
 
-            return deiktislathwn;
+             return deiktislathwn;
+             */
 
+            enventDbDataSetTableAdapters.userTableAdapter login = new enventDbDataSetTableAdapters.userTableAdapter();
+            login.login('test');
 
         }
 
