@@ -58,17 +58,19 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1904, 80);
+            this.panel1.Size = new System.Drawing.Size(1428, 61);
             this.panel1.TabIndex = 2;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(623, 12);
-            this.textBox1.MinimumSize = new System.Drawing.Size(500, 5);
+            this.textBox1.Location = new System.Drawing.Point(467, 9);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.MinimumSize = new System.Drawing.Size(376, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(751, 56);
+            this.textBox1.Size = new System.Drawing.Size(564, 44);
             this.textBox1.TabIndex = 2;
             // 
             // button8
@@ -76,9 +78,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(1502, 0);
+            this.button8.Location = new System.Drawing.Point(1126, 0);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(168, 80);
+            this.button8.Size = new System.Drawing.Size(126, 61);
             this.button8.TabIndex = 1;
             this.button8.Text = "LOGIN";
             this.button8.UseVisualStyleBackColor = true;
@@ -89,9 +92,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(1667, 0);
+            this.button7.Location = new System.Drawing.Point(1250, 0);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(168, 80);
+            this.button7.Size = new System.Drawing.Size(126, 61);
             this.button7.TabIndex = 0;
             this.button7.Text = "SIGNUP";
             this.button7.UseVisualStyleBackColor = true;
@@ -102,9 +106,10 @@
             this.metroTile1.ActiveControl = null;
             this.metroTile1.BackColor = System.Drawing.Color.Transparent;
             this.metroTile1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroTile1.Location = new System.Drawing.Point(464, 175);
+            this.metroTile1.Location = new System.Drawing.Point(348, 134);
+            this.metroTile1.Margin = new System.Windows.Forms.Padding(2);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(245, 162);
+            this.metroTile1.Size = new System.Drawing.Size(184, 124);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroTile1.TabIndex = 3;
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -123,41 +128,45 @@
             this.metroPanel1.Controls.Add(this.tiletextBox);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(464, 272);
+            this.metroPanel1.HorizontalScrollbarSize = 8;
+            this.metroPanel1.Location = new System.Drawing.Point(348, 208);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(245, 65);
+            this.metroPanel1.Size = new System.Drawing.Size(184, 50);
             this.metroPanel1.TabIndex = 0;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 8;
             // 
             // tiletextBox
             // 
             this.tiletextBox.Enabled = false;
-            this.tiletextBox.Location = new System.Drawing.Point(3, 3);
+            this.tiletextBox.Location = new System.Drawing.Point(2, 2);
+            this.tiletextBox.Margin = new System.Windows.Forms.Padding(2);
             this.tiletextBox.Multiline = true;
             this.tiletextBox.Name = "tiletextBox";
             this.tiletextBox.ReadOnly = true;
-            this.tiletextBox.Size = new System.Drawing.Size(239, 59);
+            this.tiletextBox.Size = new System.Drawing.Size(180, 46);
             this.tiletextBox.TabIndex = 2;
             this.tiletextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(767, 175);
+            this.label1.Location = new System.Drawing.Point(575, 134);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // MainPanel
             // 
-            this.MainPanel.Location = new System.Drawing.Point(819, 122);
+            this.MainPanel.Location = new System.Drawing.Point(614, 93);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(980, 724);
+            this.MainPanel.Size = new System.Drawing.Size(735, 554);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
@@ -172,9 +181,10 @@
             this.gradientPanel1.Controls.Add(this.button2);
             this.gradientPanel1.Controls.Add(this.button1);
             this.gradientPanel1.Controls.Add(this.music_tab);
-            this.gradientPanel1.Location = new System.Drawing.Point(-1, 80);
+            this.gradientPanel1.Location = new System.Drawing.Point(-1, 61);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(400, 980);
+            this.gradientPanel1.Size = new System.Drawing.Size(300, 749);
             this.gradientPanel1.TabIndex = 1;
             this.gradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
             // 
@@ -188,9 +198,10 @@
             this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 390);
+            this.button6.Location = new System.Drawing.Point(0, 300);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(400, 65);
+            this.button6.Size = new System.Drawing.Size(300, 50);
             this.button6.TabIndex = 6;
             this.button6.Text = "Αθλήματα";
             this.button6.UseVisualStyleBackColor = false;
@@ -205,9 +216,10 @@
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 325);
+            this.button5.Location = new System.Drawing.Point(0, 250);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(400, 65);
+            this.button5.Size = new System.Drawing.Size(300, 50);
             this.button5.TabIndex = 5;
             this.button5.Text = "Festivals";
             this.button5.UseVisualStyleBackColor = false;
@@ -222,9 +234,10 @@
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 260);
+            this.button4.Location = new System.Drawing.Point(0, 200);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(400, 65);
+            this.button4.Size = new System.Drawing.Size(300, 50);
             this.button4.TabIndex = 4;
             this.button4.Text = "Εκπαίδευση";
             this.button4.UseVisualStyleBackColor = false;
@@ -239,9 +252,10 @@
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 195);
+            this.button3.Location = new System.Drawing.Point(0, 150);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(400, 65);
+            this.button3.Size = new System.Drawing.Size(300, 50);
             this.button3.TabIndex = 3;
             this.button3.Text = "Χορός";
             this.button3.UseVisualStyleBackColor = false;
@@ -256,9 +270,10 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 130);
+            this.button2.Location = new System.Drawing.Point(0, 100);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(400, 65);
+            this.button2.Size = new System.Drawing.Size(300, 50);
             this.button2.TabIndex = 2;
             this.button2.Text = "Θέατρο";
             this.button2.UseVisualStyleBackColor = false;
@@ -273,9 +288,10 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 65);
+            this.button1.Location = new System.Drawing.Point(0, 50);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(400, 65);
+            this.button1.Size = new System.Drawing.Size(300, 50);
             this.button1.TabIndex = 1;
             this.button1.Text = "Μουσική";
             this.button1.UseVisualStyleBackColor = false;
@@ -292,8 +308,9 @@
             this.music_tab.Image = ((System.Drawing.Image)(resources.GetObject("music_tab.Image")));
             this.music_tab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.music_tab.Location = new System.Drawing.Point(0, 0);
+            this.music_tab.Margin = new System.Windows.Forms.Padding(2);
             this.music_tab.Name = "music_tab";
-            this.music_tab.Size = new System.Drawing.Size(400, 65);
+            this.music_tab.Size = new System.Drawing.Size(300, 50);
             this.music_tab.TabIndex = 0;
             this.music_tab.Text = "Menu";
             this.music_tab.UseVisualStyleBackColor = false;
@@ -301,11 +318,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1904, 1055);
+            this.ClientSize = new System.Drawing.Size(1428, 807);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroPanel1);
@@ -314,6 +331,7 @@
             this.Controls.Add(this.gradientPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
