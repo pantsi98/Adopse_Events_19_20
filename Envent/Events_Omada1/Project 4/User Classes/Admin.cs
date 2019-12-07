@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_4.User_Classes
 {
-    class Admin : User
+    class Admin
     {
         private List<RegisteredUser> Users;
         private string userName;
@@ -22,8 +22,11 @@ namespace Project_4.User_Classes
         }
 
         override
-        public void showEvents() {
+        public void showEvents() {}
         
+        public Admin ()
+        {
+            
         }
 
         public void editProfile(Profile profile)
