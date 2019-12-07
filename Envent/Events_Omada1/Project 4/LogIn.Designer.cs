@@ -46,7 +46,7 @@
             this.LogInpanel.Controls.Add(this.Syndesi);
             this.LogInpanel.Controls.Add(this.PasswordLog);
             this.LogInpanel.Controls.Add(this.EmailLog);
-            this.LogInpanel.Location = new System.Drawing.Point(0, 3);
+            this.LogInpanel.Location = new System.Drawing.Point(0, 0);
             this.LogInpanel.Name = "LogInpanel";
             this.LogInpanel.Size = new System.Drawing.Size(1130, 745);
             this.LogInpanel.TabIndex = 0;
