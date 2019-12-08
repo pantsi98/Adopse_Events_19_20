@@ -33,7 +33,7 @@ namespace Project_4
         private void EventManagerButton_Click(object sender, EventArgs e)
         {
             panelRegister.Controls.Clear();
-            SignUpAdmin su = new SignUpAdmin();
+            SignUpAdmin1 su = new SignUpAdmin1();
             panelRegister.Controls.Add(su);
         }
     }

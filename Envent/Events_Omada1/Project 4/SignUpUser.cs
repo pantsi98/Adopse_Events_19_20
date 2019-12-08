@@ -414,18 +414,18 @@ namespace Project_4
                 etos = numericUpDown2.Value.ToString();
                 dieuth = address.Text.ToString();
                 
-
+                
                 string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
                 var con = new MySqlConnection(cs);
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    String stm = "INSERT INTO `user` (`fname`, `lname`, `username`, `password`, `interests`, `email`, `address`, `created_at`, `last_login`, `gender`, `dob`) VALUES ('"+
+                   /* String stm = "INSERT INTO `user` (`fname`, `lname`, `username`, `password`, `interests`, `email`, `address`, `created_at`, `last_login`, `gender`, `dob`) VALUES ('"+
                         fname+"','"+lname + "','"+username+"','"+password+"','"+ @p5  + "','"+ email + "','" + dieuth + "','" + @p8e + "','" + @p9e + "','" + gender+"','"+dateofBirth +"')'";
                     MySqlCommand cmd = new MySqlCommand(stm, con);
 
-                   cmd.ExecuteNonQuery();
+                   cmd.ExecuteNonQuery();*/
                 }
 
                 con.Close();

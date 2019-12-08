@@ -1,6 +1,6 @@
 ﻿namespace Project_4
 {
-    partial class SignUpAdmin
+    partial class SignUpAdmin1
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.address = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Title = new System.Windows.Forms.Label();
             this.IBAN = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.Kodikos2 = new System.Windows.Forms.TextBox();
             this.Epitheto = new System.Windows.Forms.TextBox();
             this.Onoma = new System.Windows.Forms.TextBox();
-            this.address = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,17 +62,86 @@
             this.panel2.Controls.Add(this.Epitheto);
             this.panel2.Controls.Add(this.Onoma);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.panel2.Location = new System.Drawing.Point(0, -38);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1130, 745);
-            this.panel2.TabIndex = 14;
-            this.panel2.Leave += new System.EventHandler(this.panel2_Leave);
+            this.panel2.TabIndex = 15;
+            // 
+            // address
+            // 
+            this.address.AutoCompleteCustomSource.AddRange(new string[] {
+            "Αθήνα",
+            "Θεσσαλονίκη",
+            "Πάτρα",
+            "Ηράκλειο",
+            "Λάρισα",
+            "Βόλος",
+            "Ιωάννινα",
+            "Τρίκαλα",
+            "Χαλκίδα",
+            "Σέρρες",
+            "Αλεξανδρούπολη\t",
+            "Ξάνθη",
+            "Κατερίνη",
+            "Αγρίνιο",
+            "Καλαμάτα",
+            "Καβάλα",
+            "Χανιά",
+            "Λαμία",
+            "Κομοτηνή",
+            "Ρόδος",
+            "Δράμα",
+            "Βέροια",
+            "Κοζάνη",
+            "Καρδίτσα",
+            "Ρέθυμνο",
+            "Πτολεμαΐδα",
+            "Τρίπολη",
+            "Κόρινθος",
+            "Γέρακας",
+            "Γιαννιτσά",
+            "Μυτιλήνη",
+            "Χίος",
+            "Σαλαμίνα",
+            "Ελευσίνα",
+            "Κέρκυρα",
+            "Πύργος",
+            "Μέγαρα",
+            "Κιλκίς",
+            "Θήβα",
+            "Άργος",
+            "Άρτα",
+            "Κως",
+            "Πρέβεζα",
+            "Σπάρτη",
+            "Νάουσα",
+            "Ορεστιάδα",
+            "Έδεσσα",
+            "Φλώρινα",
+            "Θέρμη",
+            "Αλεξάνδρεια\t",
+            "Ναύπλιο",
+            "Ναύπακτος\t",
+            "Καστοριά",
+            "Γρεβενά",
+            "Άγιος Νικόλαος",
+            "Ερμούπολη",
+            "Χρυσούπολη"});
+            this.address.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.address.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.address.ForeColor = System.Drawing.Color.Gray;
+            this.address.Location = new System.Drawing.Point(328, 449);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(472, 27);
+            this.address.TabIndex = 31;
+            this.address.Text = "Περιοχή";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.panel1.Controls.Add(this.Title);
-            this.panel1.Location = new System.Drawing.Point(0, 38);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1130, 63);
             this.panel1.TabIndex = 30;
@@ -153,7 +222,9 @@
             this.Register.TabIndex = 10;
             this.Register.Text = "Eγγραφή";
             this.Register.UseVisualStyleBackColor = false;
+            this.Register.UseVisualStyleBackColor = false;
             this.Register.Click += new System.EventHandler(this.Register_Click);
+
             // 
             // Kodikos1
             // 
@@ -203,85 +274,13 @@
             this.Onoma.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Onoma_MouseClick);
             this.Onoma.Leave += new System.EventHandler(this.Onoma_Leave);
             // 
-            // address
-            // 
-            this.address.AutoCompleteCustomSource.AddRange(new string[] {
-            "Αθήνα",
-            "Θεσσαλονίκη",
-            "Πάτρα",
-            "Ηράκλειο",
-            "Λάρισα",
-            "Βόλος",
-            "Ιωάννινα",
-            "Τρίκαλα",
-            "Χαλκίδα",
-            "Σέρρες",
-            "Αλεξανδρούπολη\t",
-            "Ξάνθη",
-            "Κατερίνη",
-            "Αγρίνιο",
-            "Καλαμάτα",
-            "Καβάλα",
-            "Χανιά",
-            "Λαμία",
-            "Κομοτηνή",
-            "Ρόδος",
-            "Δράμα",
-            "Βέροια",
-            "Κοζάνη",
-            "Καρδίτσα",
-            "Ρέθυμνο",
-            "Πτολεμαΐδα",
-            "Τρίπολη",
-            "Κόρινθος",
-            "Γέρακας",
-            "Γιαννιτσά",
-            "Μυτιλήνη",
-            "Χίος",
-            "Σαλαμίνα",
-            "Ελευσίνα",
-            "Κέρκυρα",
-            "Πύργος",
-            "Μέγαρα",
-            "Κιλκίς",
-            "Θήβα",
-            "Άργος",
-            "Άρτα",
-            "Κως",
-            "Πρέβεζα",
-            "Σπάρτη",
-            "Νάουσα",
-            "Ορεστιάδα",
-            "Έδεσσα",
-            "Φλώρινα",
-            "Θέρμη",
-            "Αλεξάνδρεια\t",
-            "Ναύπλιο",
-            "Ναύπακτος\t",
-            "Καστοριά",
-            "Γρεβενά",
-            "Άγιος Νικόλαος",
-            "Ερμούπολη",
-            "Χρυσούπολη"});
-            this.address.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.address.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.address.ForeColor = System.Drawing.Color.Gray;
-            this.address.Location = new System.Drawing.Point(328, 449);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(472, 27);
-            this.address.TabIndex = 31;
-            this.address.Text = "Περιοχή";
-            this.address.MouseClick += new System.Windows.Forms.MouseEventHandler(this.address_MouseClick);
-            this.address.Leave += new System.EventHandler(this.address_Leave);
-            // 
-            // SignUpAdmin
+            // SignUpAdmin1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "SignUpAdmin";
-            this.Size = new System.Drawing.Size(1130, 745);
+            this.Name = "SignUpAdmin1";
+            this.Size = new System.Drawing.Size(1134, 750);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -293,18 +292,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.TextBox IBAN;
         private System.Windows.Forms.TextBox Email1;
         private System.Windows.Forms.TextBox username1;
         private System.Windows.Forms.Label messagefullo;
-        private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label messageLabel;
         private System.Windows.Forms.Button Register;
         private System.Windows.Forms.TextBox Kodikos1;
         private System.Windows.Forms.TextBox Kodikos2;
         private System.Windows.Forms.TextBox Epitheto;
         private System.Windows.Forms.TextBox Onoma;
-        private System.Windows.Forms.TextBox IBAN;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox address;
     }
 }

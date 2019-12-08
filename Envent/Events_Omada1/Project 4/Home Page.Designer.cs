@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homepagePanel = new System.Windows.Forms.Panel();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsBtn = new System.Windows.Forms.Button();
             this.festivalsBtn = new System.Windows.Forms.Button();
@@ -51,7 +51,6 @@
             // homepagePanel
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.homepagePanel.Controls.Add(this.MainPanel);
             this.homepagePanel.Controls.Add(this.logo);
             this.homepagePanel.Controls.Add(this.textBox1);
             this.homepagePanel.Controls.Add(this.button8);
@@ -61,6 +60,18 @@
             this.homepagePanel.Name = "homepagePanel";
             this.homepagePanel.Size = new System.Drawing.Size(1520, 61);
             this.homepagePanel.TabIndex = 2;
+            this.homepagePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homepagePanel_Paint);
+            // 
+            // logo
+            // 
+            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
+            this.logo.InitialImage = ((System.Drawing.Image)(resources.GetObject("logo.InitialImage")));
+            this.logo.Location = new System.Drawing.Point(25, -19);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(271, 80);
+            this.logo.TabIndex = 3;
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox1
             // 
@@ -102,26 +113,17 @@
             // 
             // MainPanel
             // 
-            this.MainPanel.Location = new System.Drawing.Point(64, 59);
+            this.MainPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.MainPanel.Location = new System.Drawing.Point(303, 57);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1456, 778);
+            this.MainPanel.Size = new System.Drawing.Size(1215, 576);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
-            // logo
-            // 
-            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.logo.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.logo.Location = new System.Drawing.Point(25, -19);
-            this.logo.Name = "pictureBox1";
-            this.logo.Size = new System.Drawing.Size(271, 80);
-            this.logo.TabIndex = 3;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // sideBarPanel
             // 
+            this.sideBarPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sideBarPanel.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(206)))), ((int)(((byte)(235)))));
             this.sideBarPanel.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.sideBarPanel.Controls.Add(this.sportsBtn);
@@ -274,17 +276,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1520, 839);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.homepagePanel);
             this.Controls.Add(this.sideBarPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Envent";
+            this.Name = "Form1";
             this.Text = "Envent";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);

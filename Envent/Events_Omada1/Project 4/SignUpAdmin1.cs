@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -11,9 +12,9 @@ using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
-    public partial class SignUpAdmin : UserControl
+    public partial class SignUpAdmin1 : UserControl
     {
-        public SignUpAdmin()
+        public SignUpAdmin1()
         {
             InitializeComponent();
         }
@@ -332,8 +333,8 @@ namespace Project_4
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    String stm = "INSERT INTO `admin` (`fname`, `lname`, `username`, `password`, `iban`, `email`, `address`) VALUES("+
-                        fname + "','" + lname + "','" + username + "','" + password + "','" +iban+ "','" + email + "','" + dieuth+"')'";
+                    String stm = "INSERT INTO `admin` (`fname`, `lname`, `username`, `password`, `iban`, `email`, `address`) VALUES(" +
+                        fname + "','" + lname + "','" + username + "','" + password + "','" + iban + "','" + email + "','" + dieuth + "')'";
                     MySqlCommand cmd = new MySqlCommand(stm, con);
 
                     cmd.ExecuteNonQuery();
@@ -373,5 +374,7 @@ namespace Project_4
 
             }
         }
+
     }
 }
+
