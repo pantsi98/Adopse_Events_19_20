@@ -93,10 +93,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="enventDbDataSet.Designer.cs">
+    <Compile Include="enventDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+      <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>UserControl</SubType>
@@ -167,16 +167,16 @@
     <EmbeddedResource Include="SignUpUser.resx">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="enventDbDataSet.xsc">
-      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    <None Include="enventDataSet1.xsc">
+      <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="enventDbDataSet.xsd">
+    <None Include="enventDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>enventDbDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>enventDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="enventDbDataSet.xss">
-      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    <None Include="enventDataSet1.xss">
+      <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

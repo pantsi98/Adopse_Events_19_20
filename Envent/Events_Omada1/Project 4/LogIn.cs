@@ -77,7 +77,7 @@ namespace Project_4
         private Boolean AllCheck()
         {
 
-            /* Boolean deiktislathwn = false;
+            Boolean deiktislathwn = false;
              if (EmailLog.Text == "" || EmailLog.Text == "Email")
              {
                  EmailLog.ForeColor = Color.Red;
@@ -97,10 +97,12 @@ namespace Project_4
              }
 
              return deiktislathwn;
-             */
+             
 
-            enventDbDataSetTableAdapters.userTableAdapter login = new enventDbDataSetTableAdapters.userTableAdapter();
-            login.login('test');
+            //login.login('test');
+            return true;
+            //enventDbDataSetTableAdapters.userTableAdapter login = new enventDbDataSetTableAdapters.userTableAdapter();
+            //login.login('test');
 
         }
 
