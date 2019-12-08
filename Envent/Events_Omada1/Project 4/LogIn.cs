@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
@@ -103,9 +104,32 @@ namespace Project_4
 
         private void Syndesi_Click(object sender, EventArgs e)
         {
+            loginfail.Visible = false;
             if (AllCheck() == false)
             {
                 //kane eisodo
+
+                string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
+
+                var con = new MySqlConnection(cs);
+                MySqlDataAdapter sda = new MySqlDataAdapter("Select Count(*) From user where email= '" + EmailLog.Text + "'and " +
+                    "password='" + PasswordLog.Text + "'", con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    //entoles eisodou
+                }
+                else {
+                    //minima lathous
+                    loginfail.Visible = true;
+                    EmailLog.ForeColor = System.Drawing.Color.Gray;
+                    EmailLog.Text = "Email";
+                    PasswordLog.ForeColor = System.Drawing.Color.Gray;
+                    PasswordLog.Text = "Κωδικός";
+                }
+
+                con.Close();
 
 
             }
@@ -129,5 +153,7 @@ namespace Project_4
         {
 
         }
+
+       
     }
 }

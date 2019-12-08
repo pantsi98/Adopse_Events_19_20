@@ -88,10 +88,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(1250, 0);
+            this.button7.Location = new System.Drawing.Point(1256, 0);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(126, 61);
+            this.button7.Size = new System.Drawing.Size(135, 61);
             this.button7.TabIndex = 0;
             this.button7.Text = "SIGNUP";
             this.button7.UseVisualStyleBackColor = true;

@@ -8,3 +8,16 @@ C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project
 C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Envent.csproj.GenerateResource.cache
 C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.exe
 C:\Users\James\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.pdb
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Envent.csprojAssemblyReference.cache
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.ForgetPassword.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Form1.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Location.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.LogIn.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Properties.Resources.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.SignUpAdmin.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.SignUpstep1.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.SignUpUser.resources
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Envent.csproj.GenerateResource.cache
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Envent.csproj.CoreCompileInputs.cache
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.exe
+C:\Users\stella\Source\Repos\Adopse_Events_19_203\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.pdb

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
@@ -16,6 +17,14 @@ namespace Project_4
         {
             InitializeComponent();
         }
+
+        String fname = "";
+        String lname = "";
+        String username = "";
+        String email = "";
+        String password = "";
+        String iban = "";
+        String dieuth = "";
 
 
         private void Onoma_MouseClick(object sender, MouseEventArgs e)
@@ -194,6 +203,15 @@ namespace Project_4
 
 
             }
+            if (address.Text == "" || address.Text == "Περιοχή")
+            {
+
+                address.ForeColor = Color.Red;
+                address.Text = "Συμπλήρωσε Περιοχή";
+                deiktislathwn = true;
+
+
+            }
 
 
 
@@ -291,13 +309,69 @@ namespace Project_4
 
 
 
+
         private void Register_Click(object sender, EventArgs e)
         {
             if (AllCheck() == false)
             {
 
+                fname = Onoma.Text;
+                lname = Epitheto.Text;
+                username = username1.Text;
+                email = Email1.Text;
+                password = Kodikos1.Text;
+                iban = IBAN.Text;
+                dieuth = address.Text.ToString();
+
+
+
+
+                string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
+
+                var con = new MySqlConnection(cs);
+                con.Open();
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+                    String stm = "INSERT INTO `admin` (`fname`, `lname`, `username`, `password`, `iban`, `email`, `address`) VALUES("+
+                        fname + "','" + lname + "','" + username + "','" + password + "','" +iban+ "','" + email + "','" + dieuth+"')'";
+                    MySqlCommand cmd = new MySqlCommand(stm, con);
+
+                    cmd.ExecuteNonQuery();
+                }
+                con.Close();
+
+
+
+
             }
         }
 
+        private void panel2_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void address_MouseClick(object sender, MouseEventArgs e)
+        {
+            address.ForeColor = Color.Black;
+            if (address.Text == "Περιοχή" || address.Text == "Συμπλήρωσε Περιοχή")
+            {
+
+                address.Text = "";
+                address.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void address_Leave(object sender, EventArgs e)
+        {
+            if (address.Text == "")
+            {
+                address.Text = "Περιοχή";
+                address.ForeColor = Color.DimGray;
+
+
+            }
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.LogInpanel = new System.Windows.Forms.Panel();
+            this.loginfail = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Syndesi = new System.Windows.Forms.Button();
             this.PasswordLog = new System.Windows.Forms.TextBox();
@@ -42,6 +43,7 @@
             // LogInpanel
             // 
             this.LogInpanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LogInpanel.Controls.Add(this.loginfail);
             this.LogInpanel.Controls.Add(this.linkLabel1);
             this.LogInpanel.Controls.Add(this.Syndesi);
             this.LogInpanel.Controls.Add(this.PasswordLog);
@@ -51,6 +53,18 @@
             this.LogInpanel.Size = new System.Drawing.Size(1130, 745);
             this.LogInpanel.TabIndex = 0;
             this.LogInpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LogInpanel_Paint);
+            // 
+            // loginfail
+            // 
+            this.loginfail.AutoSize = true;
+            this.loginfail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.loginfail.ForeColor = System.Drawing.Color.Red;
+            this.loginfail.Location = new System.Drawing.Point(254, 129);
+            this.loginfail.Name = "loginfail";
+            this.loginfail.Size = new System.Drawing.Size(637, 20);
+            this.loginfail.TabIndex = 5;
+            this.loginfail.Text = "Ο κωδικός πρόσβασης ή το Email που καταχωρήσατε είναι λάθος. Ξαναπροσπαθήστε.";
+            this.loginfail.Visible = false;
             // 
             // linkLabel1
             // 
@@ -149,5 +163,6 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label loginfail;
     }
 }

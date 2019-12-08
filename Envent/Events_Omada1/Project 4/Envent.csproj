@@ -93,6 +93,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enventDbDataSet.cs">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="enventDbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,12 +118,6 @@
     </Compile>
     <Compile Include="GradientSideBarPanel.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Location.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Location.Designer.cs">
-      <DependentUpon>Location.cs</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>UserControl</SubType>
@@ -165,9 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home Page.resx">
       <DependentUpon>Home Page.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Location.resx">
-      <DependentUpon>Location.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>

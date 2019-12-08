@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
@@ -32,6 +34,7 @@ namespace Project_4
         String imera = "";
         String minas = "";
         String etos = "";
+        String dieuth = "";
 
 
         private void Onoma_MouseClick(object sender, MouseEventArgs e)
@@ -250,70 +253,70 @@ namespace Project_4
             return deiktislathwn;
 
         }
-    
 
 
-            //methodoi wste na einai mono ena checkbox checked
-            private void Andras_CheckedChanged(object sender, EventArgs e)
+
+        //methodoi wste na einai mono ena checkbox checked
+        private void Andras_CheckedChanged(object sender, EventArgs e)
+        {
+            Gynaika.Checked = !Andras.Checked;
+            gender = "andras";
+
+
+        }
+
+        private void Gynaika_CheckedChanged(object sender, EventArgs e)
+        {
+            Andras.Checked = !Gynaika.Checked;
+            gender = "gunaika";
+
+        }
+
+
+
+        private void Onoma_Leave(object sender, EventArgs e)
+        {
+            if (Onoma.Text == "")
             {
-                Gynaika.Checked = !Andras.Checked;
-                gender = "andras";
+                Onoma.Text = "Όνομα";
+                Onoma.ForeColor = Color.DimGray;
+
+
+            }
+        }
+
+        private void Epitheto_Leave(object sender, EventArgs e)
+        {
+            if (Epitheto.Text == "")
+            {
+                Epitheto.Text = "Επώνυμο";
+                Epitheto.ForeColor = Color.DimGray;
+
+
+            }
+        }
+        private void username1_Leave(object sender, EventArgs e)
+        {
+            if (username1.Text == "")
+            {
+                username1.Text = "Username";
+                username1.ForeColor = Color.DimGray;
 
 
             }
 
-            private void Gynaika_CheckedChanged(object sender, EventArgs e)
+
+        }
+        private void Email1_Leave(object sender, EventArgs e)
+        {
+            if (Email1.Text == "")
             {
-                Andras.Checked = !Gynaika.Checked;
-                gender = "gunaika";
-
-            }
-
-
-
-            private void Onoma_Leave(object sender, EventArgs e)
-            {
-                if (Onoma.Text == "")
-                {
-                    Onoma.Text = "Όνομα";
-                    Onoma.ForeColor = Color.DimGray;
-
-
-                }
-            }
-
-            private void Epitheto_Leave(object sender, EventArgs e)
-            {
-                if (Epitheto.Text == "")
-                {
-                    Epitheto.Text = "Επώνυμο";
-                    Epitheto.ForeColor = Color.DimGray;
-
-
-                }
-            }
-            private void username1_Leave(object sender, EventArgs e)
-            {
-                if (username1.Text == "")
-                {
-                    username1.Text = "Username";
-                    username1.ForeColor = Color.DimGray;
-
-
-                }
+                Email1.Text = "Email";
+                Email1.ForeColor = Color.DimGray;
 
 
             }
-            private void Email1_Leave(object sender, EventArgs e)
-            {
-                if (Email1.Text == "")
-                {
-                    Email1.Text = "Email";
-                    Email1.ForeColor = Color.DimGray;
-
-
-                }
-            }
+        }
 
         private void address_Leave(object sender, EventArgs e)
         {
@@ -328,38 +331,71 @@ namespace Project_4
         }
 
         private void Kodikos1_Leave(object sender, EventArgs e)
+        {
+            if (Kodikos1.Text == "")
             {
-                if (Kodikos1.Text == "")
-                {
-                    Kodikos1.Text = "Κωδικός";
-                    Kodikos1.ForeColor = Color.DimGray;
-                    Kodikos1.PasswordChar = '\0';
-
-                }
+                Kodikos1.Text = "Κωδικός";
+                Kodikos1.ForeColor = Color.DimGray;
+                Kodikos1.PasswordChar = '\0';
 
             }
 
-            private void Kodikos2_Leave(object sender, EventArgs e)
-            {
-                if (Kodikos2.Text == "")
-                {
-                    Kodikos2.Text = "Επαλήθευση Κωδικού";
-                    Kodikos2.ForeColor = Color.DimGray;
-                    Kodikos2.PasswordChar = '\0';
-
-                }
-
-            }
-
-            private void Gynaika_Click(object sender, EventArgs e)
-            {
-                fullolabel.ForeColor = Color.FromArgb(86, 128, 233);
         }
 
-            private void Andras_Click(object sender, EventArgs e)
+        private void Kodikos2_Leave(object sender, EventArgs e)
+        {
+            if (Kodikos2.Text == "")
             {
-                fullolabel.ForeColor = Color.FromArgb(86, 128, 233);
+                Kodikos2.Text = "Επαλήθευση Κωδικού";
+                Kodikos2.ForeColor = Color.DimGray;
+                Kodikos2.PasswordChar = '\0';
+
             }
+
+        }
+
+        private void Gynaika_Click(object sender, EventArgs e)
+        {
+            fullolabel.ForeColor = Color.FromArgb(86, 128, 233);
+        }
+
+        private void Andras_Click(object sender, EventArgs e)
+        {
+            fullolabel.ForeColor = Color.FromArgb(86, 128, 233);
+        }
+
+        private void dateofBirth() {
+            String dateofBirth;
+            imera = numericUpDown1.Value.ToString();
+            minas = domainUpDown1.Text.ToString();
+            etos = numericUpDown2.Value.ToString();
+            if (minas == "Ιαν")
+                dateofBirth = String.Concat(imera + 01 + etos);
+            if (minas == "Φεβ")
+                dateofBirth = String.Concat(imera + 02 + etos);
+            if (minas == "Μάρ")
+                dateofBirth = String.Concat(imera + 03+ etos);
+            if (minas == "Απρ")
+                dateofBirth = String.Concat(imera + 04 + etos);
+            if (minas == "Μάι")
+                dateofBirth = String.Concat(imera + 05 + etos);
+            if (minas == "Ιούν")
+                dateofBirth = String.Concat(imera + 06 + etos);
+            if (minas == "Ιούλ")
+                dateofBirth = String.Concat(imera + 07 + etos);
+            if (minas == "Αύγ")
+                dateofBirth = String.Concat(imera + 08 + etos);
+            if (minas == "Σεπ")
+                dateofBirth = String.Concat(imera + 09 + etos);
+            if (minas == "Οκτ")
+                dateofBirth = String.Concat(imera + 10 + etos);
+            if (minas == "Νοέμ")
+                dateofBirth = String.Concat(imera + 11 + etos);
+            if (minas == "Δεκ")
+                dateofBirth = String.Concat(imera + 12 + etos);
+
+
+        }
 
         private void Register_Click(object sender, EventArgs e)
         {
@@ -376,13 +412,32 @@ namespace Project_4
                 imera = numericUpDown1.Value.ToString();
                 minas = domainUpDown1.Text.ToString();
                 etos = numericUpDown2.Value.ToString();
-                //να ελλεξω πως λειτουργει το ντομαιν
-                messageLabel.Visible = true;
-                messageLabel.Text = imera + " " + minas + " " + etos;
+                dieuth = address.Text.ToString();
+                
+
+                string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
+
+                var con = new MySqlConnection(cs);
+                con.Open();
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+                    String stm = "INSERT INTO `user` (`fname`, `lname`, `username`, `password`, `interests`, `email`, `address`, `created_at`, `last_login`, `gender`, `dob`) VALUES ('"+
+                        fname+"','"+lname + "','"+username+"','"+password+"','"+ @p5  + "','"+ email + "','" + dieuth + "','" + @p8e + "','" + @p9e + "','" + gender+"','"+dateofBirth +"')'";
+                    MySqlCommand cmd = new MySqlCommand(stm, con);
+
+                   cmd.ExecuteNonQuery();
+                }
+
+                con.Close();
+
 
 
             }
         }
+
+
+    
+
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {

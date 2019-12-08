@@ -35,5 +35,9 @@ namespace Project_4.User_Classes
         {
 
         }
+        public void showEventDetails(int id)
+        {
+
+        }
     }
 }
