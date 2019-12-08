@@ -78,26 +78,31 @@ namespace Project_4
         {
 
             Boolean deiktislathwn = false;
-            if (EmailLog.Text == "" || EmailLog.Text == "Email")
-            {
-                EmailLog.ForeColor = Color.Red;
-                EmailLog.Text = "Συμπλήρωσε Email";
-                deiktislathwn = true;
+             if (EmailLog.Text == "" || EmailLog.Text == "Email")
+             {
+                 EmailLog.ForeColor = Color.Red;
+                 EmailLog.Text = "Συμπλήρωσε Email";
+                 deiktislathwn = true;
 
 
-            }
-            if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός")
-            {
+             }
+             if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός")
+             {
 
-                PasswordLog.ForeColor = Color.Red;
-                PasswordLog.Text = "Συμπλήρωσε Kωδικό";
-                deiktislathwn = true;
+                 PasswordLog.ForeColor = Color.Red;
+                 PasswordLog.Text = "Συμπλήρωσε Kωδικό";
+                 deiktislathwn = true;
 
 
-            }
+             }
 
-            return deiktislathwn;
+             return deiktislathwn;
+             
 
+            //login.login('test');
+            return true;
+            //enventDbDataSetTableAdapters.userTableAdapter login = new enventDbDataSetTableAdapters.userTableAdapter();
+            //login.login('test');
 
         }
 

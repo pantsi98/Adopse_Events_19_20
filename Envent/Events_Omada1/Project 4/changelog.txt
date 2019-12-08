@@ -1,0 +1,24 @@
+﻿8/12/2019
+From DatasetQueries Branche
+Added Queries methods
+Στο τραπέζι events:
+	1- createEvent. Δέχεται 7 παραμέτρους . Με την σείρά `title`,`category_id`,`created_at`,`description`,`admin_id`,`duration`,`active`.
+	2- updateEvent. Δέχεται 5 παραμέτρους . Με την σείρά `title`,`description`,`duration`,`active` και τέλος το `id` όπου αναφέρεται σε ποιο event
+		θα γίνει η αλλαγεί.
+	3- changeEventStatus. Δέχεται 2 παραμέτρους . Με την σείρά `active` και τέλος το `id` όπου αναφέρεται σε ποιο event θα γίνει η αλλαγεί.
+Στο τραπέζι play:
+	1- createPlay . Δέχεται 3 παραμέτρους . Με την σείρά `event_id`,`venue_id`,`date`. H στήλη status θα μπαίνει αυτόματα true όταν δημειουργήτε.
+	2- updatePlayStatus . Δέχεται 3 παραμέτρους . Με την σείρά `event_id`,`venue_id`,`status`.
+Στο τραπέζι venues:
+	1- addVenue . Δέχεται 3 παραμέτρους . Με την σείρά `name`,`location`,`capacity`.
+Στο τραπέζι user:
+	1- tryLogInAsUser . Επιβεβαιώνει αν υπάρχει όντως ο χρήστης που προσπαθεί να κάνει login επιστρέφοντας Scalar αποτέλεσμα.
+		Δέχεται 2 παραμέτρους . Με την σείρά `username`,`password`.
+	2- logInAsUser .Επιστρέφη όλα τα πεδία σε πίνακα . Δέχεται 2 παραμέτρους . Με την σείρά `username`,`password`.
+	3- registerAsUser . Δέχεται 8 παραμέτρους . Με την σείρά `fname`,`lname`,`username`,`password`,`email`,`address`,`gender`,`dob`.
+Στο τραπέζι userInterests:
+	1- addInterests . Δέχεται 2 παραμέτρους . Με την σείρά `user_id`,`label_id`.
+Στο τραπέζι reservations:
+	1- createReservation . Δέχεται 4 παραμέτρους . Με την σείρά `user_id`,`event_id`,`payment_type`,`date`. Θα δηλώνεται active αυτόματα όταν 
+		θα δημιουργήτε.
+	2- cancelReservation . Δέχεται 2 παραμέτρους . Με την σείρά `user_id`,`id`.
