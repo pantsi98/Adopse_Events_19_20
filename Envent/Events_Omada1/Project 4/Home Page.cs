@@ -121,5 +121,10 @@ namespace Project_4
         {
 
         }
+
+        private void homepagePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

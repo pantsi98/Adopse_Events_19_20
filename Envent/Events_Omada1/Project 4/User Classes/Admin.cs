@@ -21,8 +21,9 @@ namespace Project_4.User_Classes
 
         }
 
-        override
-        public void showEvents() {}
+        
+        public void showEvents() {
+        }
         
         public Admin ()
         {
@@ -40,6 +41,10 @@ namespace Project_4.User_Classes
         }
 
         public void editEvents(Event events)
+        {
+
+        }
+        public void showEventDetails(int id)
         {
 
         }

@@ -124,6 +124,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpAdmin1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignUpAdmin1.Designer.cs">
+      <DependentUpon>SignUpAdmin1.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpstep1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +167,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SignUpAdmin1.resx">
+      <DependentUpon>SignUpAdmin1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpstep1.resx">
       <DependentUpon>SignUpstep1.cs</DependentUpon>
     </EmbeddedResource>

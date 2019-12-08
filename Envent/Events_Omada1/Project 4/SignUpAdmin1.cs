@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -7,33 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
-    public partial class SignUpUser : UserControl
+    public partial class SignUpAdmin1 : UserControl
     {
-        public SignUpUser()
+        public SignUpAdmin1()
         {
             InitializeComponent();
         }
 
-        private void SignUpUser_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        String gender = "";
         String fname = "";
         String lname = "";
         String username = "";
         String email = "";
         String password = "";
-        String interest = "";
-        String imera = "";
-        String minas = "";
-        String etos = "";
+        String iban = "";
         String dieuth = "";
 
 
@@ -54,7 +45,7 @@ namespace Project_4
         private void Epitheto_MouseClick(object sender, MouseEventArgs e)
         {
             Epitheto.ForeColor = Color.Black;
-            if (Epitheto.Text == "Επώνυμο" || Epitheto.Text == "Συμπλήρωσε Επίθετο")
+            if (Epitheto.Text == "Επώνυμο" || Epitheto.Text == "Συμπλήρωσε Επώνυμο")
             {
 
                 Epitheto.Text = "";
@@ -86,16 +77,17 @@ namespace Project_4
 
             }
         }
-        private void address_MouseClick(object sender, MouseEventArgs e)
+        private void IBAN_MouseClick(object sender, MouseEventArgs e)
         {
-            address.ForeColor = Color.Black;
-            if (address.Text == "Περιοχή" || address.Text == "Συμπλήρωσε Περιοχή")
+            IBAN.ForeColor = Color.Black;
+            if (IBAN.Text == "IBAN" || IBAN.Text == "Συμπλήρωσε IBAN")
             {
 
-                address.Text = "";
-                address.ForeColor = Color.Black;
+                IBAN.Text = "";
+                IBAN.ForeColor = Color.Black;
 
             }
+
         }
         private void Kodikos1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -123,14 +115,6 @@ namespace Project_4
 
 
         }
-        private void domainUpDown1_Click(object sender, EventArgs e)
-        {
-            domainUpDown1.ForeColor = Color.Black;
-
-        }
-
-
-
 
         //methodos pou elegxei ean o kodikos1 einai idios me ton kodiko2
         private Boolean checkPasswords()
@@ -149,9 +133,6 @@ namespace Project_4
         }
 
 
-
-        //elegxei ean o xristis exei sumplirwsei ola ta pedia swsta, ean oxi tou emfanizei minima kai kanei ton
-        //analogo deikti txt false 
 
         private Boolean AllCheck()
         {
@@ -173,7 +154,7 @@ namespace Project_4
             {
 
                 Epitheto.ForeColor = Color.Red;
-                Epitheto.Text = "Συμπλήρωσε Επίθετο";
+                Epitheto.Text = "Συμπλήρωσε Επώνυμο";
                 deiktislathwn = true;
 
 
@@ -196,21 +177,19 @@ namespace Project_4
 
 
             }
+            if (IBAN.Text == "" || IBAN.Text == "IBAN")
+            {
+                IBAN.ForeColor = Color.Red;
+                IBAN.Text = "Συμπλήρωσε IBAN";
+                deiktislathwn = true;
+
+
+            }
             if (Kodikos1.Text == "" || Kodikos1.Text == "Κωδικός")
             {
 
                 Kodikos1.ForeColor = Color.Red;
                 Kodikos1.Text = "Συμπλήρωσε Kωδικό";
-                deiktislathwn = true;
-
-
-            }
-
-            if (address.Text == "" || address.Text == "Περιοχή")
-            {
-
-                address.ForeColor = Color.Red;
-                address.Text = "Συμπλήρωσε Περιοχή";
                 deiktislathwn = true;
 
 
@@ -225,21 +204,16 @@ namespace Project_4
 
 
             }
-            if (domainUpDown1.Text == "Μήνας")
+            if (address.Text == "" || address.Text == "Περιοχή")
             {
 
-                domainUpDown1.ForeColor = Color.Red;
+                address.ForeColor = Color.Red;
+                address.Text = "Συμπλήρωσε Περιοχή";
                 deiktislathwn = true;
+
 
             }
 
-            if (!Andras.Checked && !Gynaika.Checked)
-            {
-
-                fullolabel.ForeColor = Color.Red;
-                deiktislathwn = true;
-
-            }
 
 
             if (checkPasswords() == false)
@@ -253,25 +227,6 @@ namespace Project_4
             return deiktislathwn;
 
         }
-
-
-
-        //methodoi wste na einai mono ena checkbox checked
-        private void Andras_CheckedChanged(object sender, EventArgs e)
-        {
-            Gynaika.Checked = !Andras.Checked;
-            gender = "andras";
-
-
-        }
-
-        private void Gynaika_CheckedChanged(object sender, EventArgs e)
-        {
-            Andras.Checked = !Gynaika.Checked;
-            gender = "gunaika";
-
-        }
-
 
 
         private void Onoma_Leave(object sender, EventArgs e)
@@ -318,18 +273,17 @@ namespace Project_4
             }
         }
 
-        private void address_Leave(object sender, EventArgs e)
+        private void IBAN_Leave(object sender, EventArgs e)
         {
-            if (address.Text == "")
+            if (IBAN.Text == "")
             {
-                address.Text = "Περιοχή";
-                address.ForeColor = Color.DimGray;
+                IBAN.Text = "IBAN";
+                IBAN.ForeColor = Color.DimGray;
 
 
             }
 
         }
-
         private void Kodikos1_Leave(object sender, EventArgs e)
         {
             if (Kodikos1.Text == "")
@@ -354,100 +308,73 @@ namespace Project_4
 
         }
 
-        private void Gynaika_Click(object sender, EventArgs e)
-        {
-            fullolabel.ForeColor = Color.FromArgb(86, 128, 233);
-        }
-
-        private void Andras_Click(object sender, EventArgs e)
-        {
-            fullolabel.ForeColor = Color.FromArgb(86, 128, 233);
-        }
-
-        private void dateofBirth() {
-            String dateofBirth;
-            imera = numericUpDown1.Value.ToString();
-            minas = domainUpDown1.Text.ToString();
-            etos = numericUpDown2.Value.ToString();
-            if (minas == "Ιαν")
-                dateofBirth = String.Concat(imera + 01 + etos);
-            if (minas == "Φεβ")
-                dateofBirth = String.Concat(imera + 02 + etos);
-            if (minas == "Μάρ")
-                dateofBirth = String.Concat(imera + 03+ etos);
-            if (minas == "Απρ")
-                dateofBirth = String.Concat(imera + 04 + etos);
-            if (minas == "Μάι")
-                dateofBirth = String.Concat(imera + 05 + etos);
-            if (minas == "Ιούν")
-                dateofBirth = String.Concat(imera + 06 + etos);
-            if (minas == "Ιούλ")
-                dateofBirth = String.Concat(imera + 07 + etos);
-            if (minas == "Αύγ")
-                dateofBirth = String.Concat(imera + 08 + etos);
-            if (minas == "Σεπ")
-                dateofBirth = String.Concat(imera + 09 + etos);
-            if (minas == "Οκτ")
-                dateofBirth = String.Concat(imera + 10 + etos);
-            if (minas == "Νοέμ")
-                dateofBirth = String.Concat(imera + 11 + etos);
-            if (minas == "Δεκ")
-                dateofBirth = String.Concat(imera + 12 + etos);
 
 
-        }
 
         private void Register_Click(object sender, EventArgs e)
         {
             if (AllCheck() == false)
             {
 
-                //tote kane eggrafi sti vasi ta stoixeia toy xristi
-
                 fname = Onoma.Text;
                 lname = Epitheto.Text;
                 username = username1.Text;
                 email = Email1.Text;
                 password = Kodikos1.Text;
-                imera = numericUpDown1.Value.ToString();
-                minas = domainUpDown1.Text.ToString();
-                etos = numericUpDown2.Value.ToString();
+                iban = IBAN.Text;
                 dieuth = address.Text.ToString();
-                
-                
+
+
+
+
                 string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
                 var con = new MySqlConnection(cs);
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                   /* String stm = "INSERT INTO `user` (`fname`, `lname`, `username`, `password`, `interests`, `email`, `address`, `created_at`, `last_login`, `gender`, `dob`) VALUES ('"+
-                        fname+"','"+lname + "','"+username+"','"+password+"','"+ @p5  + "','"+ email + "','" + dieuth + "','" + @p8e + "','" + @p9e + "','" + gender+"','"+dateofBirth +"')'";
+                    String stm = "INSERT INTO `admin` (`fname`, `lname`, `username`, `password`, `iban`, `email`, `address`) VALUES(" +
+                        fname + "','" + lname + "','" + username + "','" + password + "','" + iban + "','" + email + "','" + dieuth + "')'";
                     MySqlCommand cmd = new MySqlCommand(stm, con);
 
-                   cmd.ExecuteNonQuery();*/
+                    cmd.ExecuteNonQuery();
                 }
-
                 con.Close();
+
 
 
 
             }
         }
 
-
-    
-
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void panel2_Leave(object sender, EventArgs e)
         {
 
         }
 
-        private void Title_Click(object sender, EventArgs e)
+        private void address_MouseClick(object sender, MouseEventArgs e)
         {
+            address.ForeColor = Color.Black;
+            if (address.Text == "Περιοχή" || address.Text == "Συμπλήρωσε Περιοχή")
+            {
 
+                address.Text = "";
+                address.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void address_Leave(object sender, EventArgs e)
+        {
+            if (address.Text == "")
+            {
+                address.Text = "Περιοχή";
+                address.ForeColor = Color.DimGray;
+
+
+            }
         }
 
     }
 }
+
