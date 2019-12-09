@@ -35,12 +35,12 @@
             this.Email1 = new System.Windows.Forms.TextBox();
             this.username1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ConferenceCB = new System.Windows.Forms.CheckBox();
+            this.CinemaCB = new System.Windows.Forms.CheckBox();
+            this.SportsCB = new System.Windows.Forms.CheckBox();
+            this.TheaterCB = new System.Windows.Forms.CheckBox();
+            this.FstivalCB = new System.Windows.Forms.CheckBox();
+            this.MusicCB = new System.Windows.Forms.CheckBox();
             this.messagefullo = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
@@ -55,6 +55,7 @@
             this.Kodikos2 = new System.Windows.Forms.TextBox();
             this.Epitheto = new System.Windows.Forms.TextBox();
             this.Onoma = new System.Windows.Forms.TextBox();
+            this.EducationalCB = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -212,85 +213,86 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.EducationalCB);
+            this.groupBox1.Controls.Add(this.ConferenceCB);
+            this.groupBox1.Controls.Add(this.CinemaCB);
+            this.groupBox1.Controls.Add(this.SportsCB);
+            this.groupBox1.Controls.Add(this.TheaterCB);
+            this.groupBox1.Controls.Add(this.FstivalCB);
+            this.groupBox1.Controls.Add(this.MusicCB);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.groupBox1.Location = new System.Drawing.Point(296, 429);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(472, 136);
+            this.groupBox1.Size = new System.Drawing.Size(481, 177);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eνδιαφέρομαι για:";
             // 
-            // checkBox6
+            // ConferenceCB
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox6.Location = new System.Drawing.Point(275, 68);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(120, 26);
-            this.checkBox6.TabIndex = 32;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.ConferenceCB.AutoSize = true;
+            this.ConferenceCB.ForeColor = System.Drawing.Color.DimGray;
+            this.ConferenceCB.Location = new System.Drawing.Point(370, 35);
+            this.ConferenceCB.Name = "ConferenceCB";
+            this.ConferenceCB.Size = new System.Drawing.Size(105, 26);
+            this.ConferenceCB.TabIndex = 32;
+            this.ConferenceCB.Text = "Συνέδρια";
+            this.ConferenceCB.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // CinemaCB
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox5.Location = new System.Drawing.Point(6, 104);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(85, 26);
-            this.checkBox5.TabIndex = 31;
-            this.checkBox5.Text = "Σινεμά";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.CinemaCB.AutoSize = true;
+            this.CinemaCB.ForeColor = System.Drawing.Color.DimGray;
+            this.CinemaCB.Location = new System.Drawing.Point(371, 84);
+            this.CinemaCB.Name = "CinemaCB";
+            this.CinemaCB.Size = new System.Drawing.Size(85, 26);
+            this.CinemaCB.TabIndex = 31;
+            this.CinemaCB.Text = "Σινεμά";
+            this.CinemaCB.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // SportsCB
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox4.Location = new System.Drawing.Point(140, 72);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(120, 26);
-            this.checkBox4.TabIndex = 30;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.SportsCB.AutoSize = true;
+            this.SportsCB.ForeColor = System.Drawing.Color.DimGray;
+            this.SportsCB.Location = new System.Drawing.Point(6, 84);
+            this.SportsCB.Name = "SportsCB";
+            this.SportsCB.Size = new System.Drawing.Size(214, 26);
+            this.SportsCB.TabIndex = 30;
+            this.SportsCB.Text = "Αθλητικές Εκδηλώσεις";
+            this.SportsCB.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // TheaterCB
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox3.Location = new System.Drawing.Point(140, 35);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(226, 26);
-            this.checkBox3.TabIndex = 29;
-            this.checkBox3.Text = "Θεατρικές Παραστάσεις";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.TheaterCB.AutoSize = true;
+            this.TheaterCB.ForeColor = System.Drawing.Color.DimGray;
+            this.TheaterCB.Location = new System.Drawing.Point(6, 35);
+            this.TheaterCB.Name = "TheaterCB";
+            this.TheaterCB.Size = new System.Drawing.Size(226, 26);
+            this.TheaterCB.TabIndex = 29;
+            this.TheaterCB.Text = "Θεατρικές Παραστάσεις";
+            this.TheaterCB.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // FstivalCB
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox2.Location = new System.Drawing.Point(6, 72);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(120, 26);
-            this.checkBox2.TabIndex = 28;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.FstivalCB.AutoSize = true;
+            this.FstivalCB.ForeColor = System.Drawing.Color.DimGray;
+            this.FstivalCB.Location = new System.Drawing.Point(242, 84);
+            this.FstivalCB.Name = "FstivalCB";
+            this.FstivalCB.Size = new System.Drawing.Size(109, 26);
+            this.FstivalCB.TabIndex = 28;
+            this.FstivalCB.Text = "Φεστιβάλ";
+            this.FstivalCB.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // MusicCB
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox1.Location = new System.Drawing.Point(2, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 26);
-            this.checkBox1.TabIndex = 27;
-            this.checkBox1.Text = "Μουσική";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.MusicCB.AutoSize = true;
+            this.MusicCB.ForeColor = System.Drawing.Color.DimGray;
+            this.MusicCB.Location = new System.Drawing.Point(242, 35);
+            this.MusicCB.Name = "MusicCB";
+            this.MusicCB.Size = new System.Drawing.Size(99, 26);
+            this.MusicCB.TabIndex = 27;
+            this.MusicCB.Text = "Μουσική";
+            this.MusicCB.UseVisualStyleBackColor = true;
             // 
             // messagefullo
             // 
@@ -484,6 +486,17 @@
             this.Onoma.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Onoma_MouseClick);
             this.Onoma.Leave += new System.EventHandler(this.Onoma_Leave);
             // 
+            // EducationalCB
+            // 
+            this.EducationalCB.AutoSize = true;
+            this.EducationalCB.ForeColor = System.Drawing.Color.DimGray;
+            this.EducationalCB.Location = new System.Drawing.Point(6, 133);
+            this.EducationalCB.Name = "EducationalCB";
+            this.EducationalCB.Size = new System.Drawing.Size(226, 26);
+            this.EducationalCB.TabIndex = 34;
+            this.EducationalCB.Text = "Επιμορφωτικά Σεμινάρια";
+            this.EducationalCB.UseVisualStyleBackColor = true;
+            // 
             // SignUpUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -509,12 +522,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox username1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ConferenceCB;
+        private System.Windows.Forms.CheckBox CinemaCB;
+        private System.Windows.Forms.CheckBox SportsCB;
+        private System.Windows.Forms.CheckBox TheaterCB;
+        private System.Windows.Forms.CheckBox FstivalCB;
+        private System.Windows.Forms.CheckBox MusicCB;
         private System.Windows.Forms.Label messagefullo;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.DomainUpDown domainUpDown1;
@@ -533,5 +546,6 @@
         private System.Windows.Forms.TextBox Email1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.CheckBox EducationalCB;
     }
 }
