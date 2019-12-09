@@ -102,6 +102,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EventFullDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventFullDescription.Designer.cs">
+      <DependentUpon>EventFullDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,6 +152,10 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+
+    <EmbeddedResource Include="EventFullDescription.resx">
+      <DependentUpon>EventFullDescription.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="App_Code\Admin.cs" />
     <Compile Include="App_Code\Event.cs" />
     <Compile Include="App_Code\EventManager.cs" />
@@ -173,6 +183,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUpAdmin1.resx">
       <DependentUpon>SignUpAdmin1.cs</DependentUpon>
@@ -223,6 +234,14 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Banff-Canada-s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps-and-flags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
