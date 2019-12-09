@@ -1,4 +1,9 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Envent"
+  ],
+  "SelectedNode": "\\Envent\\Events_Omada1.sln",
   "PreviewInSolutionExplorer": false
 }

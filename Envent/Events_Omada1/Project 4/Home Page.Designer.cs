@@ -114,10 +114,10 @@
             // MainPanel
             // 
             this.MainPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.MainPanel.Location = new System.Drawing.Point(303, 57);
+            this.MainPanel.Location = new System.Drawing.Point(303, 65);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1215, 576);
+            this.MainPanel.Size = new System.Drawing.Size(1215, 847);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
@@ -280,7 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1520, 839);
+            this.ClientSize = new System.Drawing.Size(1555, 978);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.homepagePanel);
             this.Controls.Add(this.sideBarPanel);
@@ -288,7 +288,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Envent";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();

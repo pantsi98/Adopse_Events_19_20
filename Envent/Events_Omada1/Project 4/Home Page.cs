@@ -78,7 +78,7 @@ namespace Project_4
         private void button8_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            LogIn su = new LogIn();
+            EventFullDescription su = new EventFullDescription();
             MainPanel.Controls.Add(su);
         }
 
