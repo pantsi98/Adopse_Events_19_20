@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.genderLabel = new System.Windows.Forms.Label();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.confimrpassLabel = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.dobPicker = new System.Windows.Forms.DateTimePicker();
+            this.radioButtonBox = new System.Windows.Forms.GroupBox();
+            this.femaleRadioButton = new System.Windows.Forms.RadioButton();
+            this.maleRadioButton = new System.Windows.Forms.RadioButton();
             this.address = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Title = new System.Windows.Forms.Label();
@@ -50,20 +62,24 @@
             this.Kodikos2 = new System.Windows.Forms.TextBox();
             this.Epitheto = new System.Windows.Forms.TextBox();
             this.Onoma = new System.Windows.Forms.TextBox();
-            this.maleRadioButton = new System.Windows.Forms.RadioButton();
-            this.femaleRadioButton = new System.Windows.Forms.RadioButton();
-            this.radioButtonBox = new System.Windows.Forms.GroupBox();
-            this.dobPicker = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
+            this.radioButtonBox.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.radioButtonBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(this.dateLabel);
+            this.panel2.Controls.Add(this.genderLabel);
+            this.panel2.Controls.Add(this.addressLabel);
+            this.panel2.Controls.Add(this.confimrpassLabel);
+            this.panel2.Controls.Add(this.emailLabel);
+            this.panel2.Controls.Add(this.usernameLabel);
+            this.panel2.Controls.Add(this.nameLabel);
+            this.panel2.Controls.Add(this.passwordLabel);
             this.panel2.Controls.Add(this.dobPicker);
             this.panel2.Controls.Add(this.radioButtonBox);
             this.panel2.Controls.Add(this.address);
@@ -82,11 +98,123 @@
             this.panel2.Controls.Add(this.Onoma);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(848, 605);
             this.panel2.TabIndex = 13;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.Enter += new System.EventHandler(this.panel2_MouseHover);
+            this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover);
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.ForeColor = System.Drawing.Color.Red;
+            this.dateLabel.Location = new System.Drawing.Point(430, 334);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(0, 17);
+            this.dateLabel.TabIndex = 43;
+            // 
+            // genderLabel
+            // 
+            this.genderLabel.AutoSize = true;
+            this.genderLabel.ForeColor = System.Drawing.Color.Red;
+            this.genderLabel.Location = new System.Drawing.Point(374, 283);
+            this.genderLabel.Name = "genderLabel";
+            this.genderLabel.Size = new System.Drawing.Size(0, 17);
+            this.genderLabel.TabIndex = 42;
+            // 
+            // addressLabel
+            // 
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.ForeColor = System.Drawing.Color.Red;
+            this.addressLabel.Location = new System.Drawing.Point(590, 234);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(0, 17);
+            this.addressLabel.TabIndex = 41;
+            // 
+            // confimrpassLabel
+            // 
+            this.confimrpassLabel.AutoSize = true;
+            this.confimrpassLabel.ForeColor = System.Drawing.Color.Red;
+            this.confimrpassLabel.Location = new System.Drawing.Point(587, 204);
+            this.confimrpassLabel.Name = "confimrpassLabel";
+            this.confimrpassLabel.Size = new System.Drawing.Size(0, 17);
+            this.confimrpassLabel.TabIndex = 40;
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.ForeColor = System.Drawing.Color.Red;
+            this.emailLabel.Location = new System.Drawing.Point(587, 148);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(0, 17);
+            this.emailLabel.TabIndex = 39;
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.ForeColor = System.Drawing.Color.Red;
+            this.usernameLabel.Location = new System.Drawing.Point(587, 124);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(0, 17);
+            this.usernameLabel.TabIndex = 38;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.ForeColor = System.Drawing.Color.Red;
+            this.nameLabel.Location = new System.Drawing.Point(587, 94);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(0, 17);
+            this.nameLabel.TabIndex = 37;
+            // 
+            // passwordLabel
+            // 
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.ForeColor = System.Drawing.Color.Red;
+            this.passwordLabel.Location = new System.Drawing.Point(587, 177);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(0, 17);
+            this.passwordLabel.TabIndex = 36;
+            // 
+            // dobPicker
+            // 
+            this.dobPicker.Location = new System.Drawing.Point(224, 329);
+            this.dobPicker.Name = "dobPicker";
+            this.dobPicker.Size = new System.Drawing.Size(200, 23);
+            this.dobPicker.TabIndex = 35;
+            // 
+            // radioButtonBox
+            // 
+            this.radioButtonBox.Controls.Add(this.femaleRadioButton);
+            this.radioButtonBox.Controls.Add(this.maleRadioButton);
+            this.radioButtonBox.Location = new System.Drawing.Point(224, 269);
+            this.radioButtonBox.Name = "radioButtonBox";
+            this.radioButtonBox.Size = new System.Drawing.Size(144, 37);
+            this.radioButtonBox.TabIndex = 34;
+            this.radioButtonBox.TabStop = false;
+            // 
+            // femaleRadioButton
+            // 
+            this.femaleRadioButton.AutoSize = true;
+            this.femaleRadioButton.Location = new System.Drawing.Point(66, 10);
+            this.femaleRadioButton.Name = "femaleRadioButton";
+            this.femaleRadioButton.Size = new System.Drawing.Size(72, 21);
+            this.femaleRadioButton.TabIndex = 32;
+            this.femaleRadioButton.TabStop = true;
+            this.femaleRadioButton.Text = "Female";
+            this.femaleRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // maleRadioButton
+            // 
+            this.maleRadioButton.AutoSize = true;
+            this.maleRadioButton.Location = new System.Drawing.Point(6, 10);
+            this.maleRadioButton.Name = "maleRadioButton";
+            this.maleRadioButton.Size = new System.Drawing.Size(56, 21);
+            this.maleRadioButton.TabIndex = 31;
+            this.maleRadioButton.TabStop = true;
+            this.maleRadioButton.Text = "Male";
+            this.maleRadioButton.UseVisualStyleBackColor = true;
             // 
             // address
             // 
@@ -153,13 +281,13 @@
             this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.address.ForeColor = System.Drawing.Color.Gray;
             this.address.Location = new System.Drawing.Point(224, 225);
-            this.address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.address.Margin = new System.Windows.Forms.Padding(2);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(355, 23);
             this.address.TabIndex = 30;
             this.address.Text = "Περιοχή";
-            this.address.MouseClick += new System.Windows.Forms.MouseEventHandler(this.address_MouseClick);
-            this.address.Leave += new System.EventHandler(this.address_Leave);
+            this.address.TextChanged += new System.EventHandler(this.address_TextChanged);
+            this.address.Enter += new System.EventHandler(this.address_MouseClick);
             // 
             // panel1
             // 
@@ -167,7 +295,7 @@
             this.panel1.Controls.Add(this.Title);
             this.panel1.ForeColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(848, 51);
             this.panel1.TabIndex = 29;
@@ -185,31 +313,30 @@
             this.Title.Size = new System.Drawing.Size(339, 25);
             this.Title.TabIndex = 15;
             this.Title.Text = "Δημιουργήστε Nέο Λογαριασμό";
-            this.Title.Click += new System.EventHandler(this.Title_Click);
             // 
             // Email1
             // 
             this.Email1.ForeColor = System.Drawing.Color.Gray;
             this.Email1.Location = new System.Drawing.Point(224, 145);
-            this.Email1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Email1.Margin = new System.Windows.Forms.Padding(2);
             this.Email1.Name = "Email1";
             this.Email1.Size = new System.Drawing.Size(356, 23);
             this.Email1.TabIndex = 28;
             this.Email1.Text = "Email";
-            this.Email1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Email1_MouseClick);
-            this.Email1.Leave += new System.EventHandler(this.Email1_Leave);
+            this.Email1.TextChanged += new System.EventHandler(this.Email1_TextChanged);
+            this.Email1.Enter += new System.EventHandler(this.Email1_MouseClick);
             // 
             // username1
             // 
             this.username1.ForeColor = System.Drawing.Color.Gray;
             this.username1.Location = new System.Drawing.Point(224, 118);
-            this.username1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.username1.Margin = new System.Windows.Forms.Padding(2);
             this.username1.Name = "username1";
             this.username1.Size = new System.Drawing.Size(356, 23);
             this.username1.TabIndex = 27;
             this.username1.Text = "Username";
-            this.username1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username1_MouseClick);
-            this.username1.Leave += new System.EventHandler(this.username1_Leave);
+            this.username1.Enter += new System.EventHandler(this.username1_MouseClick);
+            this.username1.MouseLeave += new System.EventHandler(this.username1_TextChanged);
             // 
             // groupBox1
             // 
@@ -221,9 +348,9 @@
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.groupBox1.Location = new System.Drawing.Point(222, 368);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(354, 110);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
@@ -234,7 +361,7 @@
             this.checkBox6.AutoSize = true;
             this.checkBox6.ForeColor = System.Drawing.Color.DimGray;
             this.checkBox6.Location = new System.Drawing.Point(206, 55);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(95, 21);
             this.checkBox6.TabIndex = 32;
@@ -246,7 +373,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.ForeColor = System.Drawing.Color.DimGray;
             this.checkBox5.Location = new System.Drawing.Point(4, 84);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(69, 21);
             this.checkBox5.TabIndex = 31;
@@ -258,7 +385,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.ForeColor = System.Drawing.Color.DimGray;
             this.checkBox4.Location = new System.Drawing.Point(105, 58);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(95, 21);
             this.checkBox4.TabIndex = 30;
@@ -270,7 +397,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.ForeColor = System.Drawing.Color.DimGray;
             this.checkBox3.Location = new System.Drawing.Point(105, 28);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(180, 21);
             this.checkBox3.TabIndex = 29;
@@ -282,7 +409,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.Color.DimGray;
             this.checkBox2.Location = new System.Drawing.Point(4, 58);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(95, 21);
             this.checkBox2.TabIndex = 28;
@@ -294,7 +421,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.DimGray;
             this.checkBox1.Location = new System.Drawing.Point(2, 28);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(80, 21);
             this.checkBox1.TabIndex = 27;
@@ -351,7 +478,7 @@
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.Register.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Register.Location = new System.Drawing.Point(311, 516);
-            this.Register.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Register.Margin = new System.Windows.Forms.Padding(2);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(142, 41);
             this.Register.TabIndex = 10;
@@ -364,110 +491,70 @@
             this.Kodikos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Kodikos1.ForeColor = System.Drawing.Color.Gray;
             this.Kodikos1.Location = new System.Drawing.Point(224, 171);
-            this.Kodikos1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Kodikos1.Margin = new System.Windows.Forms.Padding(2);
             this.Kodikos1.Name = "Kodikos1";
             this.Kodikos1.Size = new System.Drawing.Size(355, 23);
             this.Kodikos1.TabIndex = 8;
             this.Kodikos1.Text = "Κωδικός";
-            this.Kodikos1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kodikos1_MouseClick);
-            this.Kodikos1.Leave += new System.EventHandler(this.Kodikos1_Leave);
+            this.Kodikos1.TextChanged += new System.EventHandler(this.Kodikos1_TextChanged);
+            this.Kodikos1.Enter += new System.EventHandler(this.Kodikos1_MouseClick);
             // 
             // Kodikos2
             // 
             this.Kodikos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Kodikos2.ForeColor = System.Drawing.Color.Gray;
             this.Kodikos2.Location = new System.Drawing.Point(224, 198);
-            this.Kodikos2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Kodikos2.Margin = new System.Windows.Forms.Padding(2);
             this.Kodikos2.Name = "Kodikos2";
             this.Kodikos2.Size = new System.Drawing.Size(355, 23);
             this.Kodikos2.TabIndex = 9;
             this.Kodikos2.Text = "Επαλήθευση Κωδικού";
-            this.Kodikos2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kodikos2_MouseClick);
-            this.Kodikos2.Leave += new System.EventHandler(this.Kodikos2_Leave);
+            this.Kodikos2.TextChanged += new System.EventHandler(this.Kodikos2_TextChanged);
+            this.Kodikos2.Enter += new System.EventHandler(this.Kodikos2_MouseClick);
             // 
             // Epitheto
             // 
             this.Epitheto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Epitheto.ForeColor = System.Drawing.Color.Gray;
             this.Epitheto.Location = new System.Drawing.Point(404, 91);
-            this.Epitheto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Epitheto.Margin = new System.Windows.Forms.Padding(2);
             this.Epitheto.Name = "Epitheto";
             this.Epitheto.Size = new System.Drawing.Size(176, 23);
             this.Epitheto.TabIndex = 6;
             this.Epitheto.Text = "Επώνυμο";
-            this.Epitheto.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Epitheto_MouseClick);
-            this.Epitheto.Leave += new System.EventHandler(this.Epitheto_Leave);
+            this.Epitheto.TextChanged += new System.EventHandler(this.Epitheto_TextChanged);
+            this.Epitheto.Enter += new System.EventHandler(this.Epitheto_MouseClick);
             // 
             // Onoma
             // 
             this.Onoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Onoma.ForeColor = System.Drawing.Color.DimGray;
             this.Onoma.Location = new System.Drawing.Point(224, 91);
-            this.Onoma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Onoma.Margin = new System.Windows.Forms.Padding(2);
             this.Onoma.Name = "Onoma";
             this.Onoma.Size = new System.Drawing.Size(176, 23);
             this.Onoma.TabIndex = 5;
             this.Onoma.Text = "Όνομα";
-            this.Onoma.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Onoma_MouseClick);
-            this.Onoma.Leave += new System.EventHandler(this.Onoma_Leave);
-            // 
-            // maleRadioButton
-            // 
-            this.maleRadioButton.AutoSize = true;
-            this.maleRadioButton.Location = new System.Drawing.Point(6, 10);
-            this.maleRadioButton.Name = "maleRadioButton";
-            this.maleRadioButton.Size = new System.Drawing.Size(56, 21);
-            this.maleRadioButton.TabIndex = 31;
-            this.maleRadioButton.TabStop = true;
-            this.maleRadioButton.Text = "Male";
-            this.maleRadioButton.UseVisualStyleBackColor = true;
-            this.maleRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // femaleRadioButton
-            // 
-            this.femaleRadioButton.AutoSize = true;
-            this.femaleRadioButton.Location = new System.Drawing.Point(66, 10);
-            this.femaleRadioButton.Name = "femaleRadioButton";
-            this.femaleRadioButton.Size = new System.Drawing.Size(72, 21);
-            this.femaleRadioButton.TabIndex = 32;
-            this.femaleRadioButton.TabStop = true;
-            this.femaleRadioButton.Text = "Female";
-            this.femaleRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonBox
-            // 
-            this.radioButtonBox.Controls.Add(this.femaleRadioButton);
-            this.radioButtonBox.Controls.Add(this.maleRadioButton);
-            this.radioButtonBox.Location = new System.Drawing.Point(224, 269);
-            this.radioButtonBox.Name = "radioButtonBox";
-            this.radioButtonBox.Size = new System.Drawing.Size(144, 37);
-            this.radioButtonBox.TabIndex = 34;
-            this.radioButtonBox.TabStop = false;
-            // 
-            // dobPicker
-            // 
-            this.dobPicker.Location = new System.Drawing.Point(224, 329);
-            this.dobPicker.Name = "dobPicker";
-            this.dobPicker.Size = new System.Drawing.Size(200, 23);
-            this.dobPicker.TabIndex = 35;
+            this.Onoma.TextChanged += new System.EventHandler(this.Onoma_TextChanged);
+            this.Onoma.Enter += new System.EventHandler(this.Onoma_MouseClick);
             // 
             // SignUpUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SignUpUser";
             this.Size = new System.Drawing.Size(848, 605);
             this.Load += new System.EventHandler(this.SignUpUser_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.radioButtonBox.ResumeLayout(false);
+            this.radioButtonBox.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.radioButtonBox.ResumeLayout(false);
-            this.radioButtonBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -500,5 +587,13 @@
         private System.Windows.Forms.RadioButton femaleRadioButton;
         private System.Windows.Forms.GroupBox radioButtonBox;
         private System.Windows.Forms.DateTimePicker dobPicker;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Label confimrpassLabel;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label genderLabel;
+        private System.Windows.Forms.Label addressLabel;
     }
 }
