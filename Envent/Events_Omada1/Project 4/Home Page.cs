@@ -13,11 +13,14 @@ namespace Project_4
 {
     public partial class Form1 : Form
     {
-        public List<string> btntxtList = new List<string>() {"Αθλήματα","Festivals","Εκπαίδευση","Χορός","Θέατρο","Μουσική","Menu"};
+        public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals","Συνέδρια", "Θέατρο","Μουσική","Menu"};
         public int index = 0;
         public Form1()
         {
             InitializeComponent();
+            conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
+            sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
+            hideSubmenus();
             /*string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
             var con = new MySqlConnection(cs);
@@ -26,7 +29,14 @@ namespace Project_4
             var stm = "SELECT * FROM category";
             var cmd = new MySqlCommand(stm, con);
             */
-            
+
+
+        }
+
+        private void hideSubmenus()
+        {
+            conferenceSubMenu.Visible = false;
+            sportsSubMenu.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,6 +51,7 @@ namespace Project_4
                     }
                 }
                 sideBarPanel.Width = 80;
+                hideSubmenus();
             }
             else if (sideBarPanel.Width == 80)
             {
@@ -120,6 +131,44 @@ namespace Project_4
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void educationBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sportsBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void conferencesBtn_MouseEnter(object sender, EventArgs e)
+        {
+            if (sideBarPanel.Width == 300)
+            {
+                conferenceSubMenu.Visible = true;
+                sportsSubMenu.Visible = false;
+            }
+        }
+
+        private void sportsBtn_MouseEnter(object sender, EventArgs e)
+        {
+            if (sideBarPanel.Width == 300)
+            {
+                sportsSubMenu.Visible = true;
+                conferenceSubMenu.Visible = false;
+            }
         }
     }
 }
