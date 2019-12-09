@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
@@ -142,13 +145,16 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Classes\Admin.cs" />
-    <Compile Include="User Classes\Event.cs" />
-    <Compile Include="User Classes\EventManager.cs" />
-    <Compile Include="User Classes\Profile.cs" />
-    <Compile Include="User Classes\RegisteredUser.cs" />
-    <Compile Include="User Classes\User.cs" />
-    <Compile Include="User Classes\Visitor.cs" />
+    <Compile Include="App_Code\Admin.cs" />
+    <Compile Include="App_Code\Event.cs" />
+    <Compile Include="App_Code\EventManager.cs" />
+    <Compile Include="App_Code\Exceptions\UserNameException.cs" />
+    <Compile Include="App_Code\ManagerProfile.cs" />
+    <Compile Include="App_Code\Profile.cs" />
+    <Compile Include="App_Code\RegisteredUser.cs" />
+    <Compile Include="App_Code\User.cs" />
+    <Compile Include="App_Code\UserProfile.cs" />
+    <Compile Include="App_Code\Visitor.cs" />
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +221,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\StaticMethods\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

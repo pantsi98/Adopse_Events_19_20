@@ -123,11 +123,11 @@ namespace Project_4
 
 
         }
-        private void domainUpDown1_Click(object sender, EventArgs e)
+       /* private void domainUpDown1_Click(object sender, EventArgs e)
         {
             domainUpDown1.ForeColor = Color.Black;
 
-        }
+        } */
 
 
 
@@ -225,21 +225,21 @@ namespace Project_4
 
 
             }
-            if (domainUpDown1.Text == "Μήνας")
+            /*if (domainUpDown1.Text == "Μήνας")
             {
 
                 domainUpDown1.ForeColor = Color.Red;
                 deiktislathwn = true;
 
-            }
+            }*/
 
-            if (!Andras.Checked && !Gynaika.Checked)
+            /*if (!Andras.Checked && !Gynaika.Checked)
             {
 
                 fullolabel.ForeColor = Color.Red;
                 deiktislathwn = true;
 
-            }
+            }*/
 
 
             if (checkPasswords() == false)
@@ -259,16 +259,16 @@ namespace Project_4
         //methodoi wste na einai mono ena checkbox checked
         private void Andras_CheckedChanged(object sender, EventArgs e)
         {
-            Gynaika.Checked = !Andras.Checked;
-            gender = "andras";
+            /*Gynaika.Checked = !Andras.Checked;
+            gender = "andras";*/
 
 
         }
 
         private void Gynaika_CheckedChanged(object sender, EventArgs e)
         {
-            Andras.Checked = !Gynaika.Checked;
-            gender = "gunaika";
+            /*Andras.Checked = !Gynaika.Checked;
+            gender = "gunaika";*/
 
         }
 
@@ -366,9 +366,9 @@ namespace Project_4
 
         private void dateofBirth() {
             String dateofBirth;
-            imera = numericUpDown1.Value.ToString();
-            minas = domainUpDown1.Text.ToString();
-            etos = numericUpDown2.Value.ToString();
+            //imera = numericUpDown1.Value.ToString();
+           // minas = domainUpDown1.Text.ToString();
+            //etos = numericUpDown2.Value.ToString();
             if (minas == "Ιαν")
                 dateofBirth = String.Concat(imera + 01 + etos);
             if (minas == "Φεβ")
@@ -397,46 +397,56 @@ namespace Project_4
 
         }
 
+
         private void Register_Click(object sender, EventArgs e)
         {
-            if (AllCheck() == false)
-            {
+            var buttons = radioButtonBox.Controls.OfType<RadioButton>()
+                           .FirstOrDefault(n => n.Checked);
+            User_Classes.UserProfile profile = new User_Classes.UserProfile(Onoma.Text,Epitheto.Text,Email1.Text,address.Text,
+                buttons.Text,dobPicker.Value);
+            string userName = username1.Text;
+            string passWord = Kodikos1.Text;
+            User_Classes.Visitor.signUpAsUser(profile, userName, passWord);
+            #region close
+            /*            if (AllCheck() == false)
+                        {
 
-                //tote kane eggrafi sti vasi ta stoixeia toy xristi
+                            //tote kane eggrafi sti vasi ta stoixeia toy xristi
 
-                fname = Onoma.Text;
-                lname = Epitheto.Text;
-                username = username1.Text;
-                email = Email1.Text;
-                password = Kodikos1.Text;
-                imera = numericUpDown1.Value.ToString();
-                minas = domainUpDown1.Text.ToString();
-                etos = numericUpDown2.Value.ToString();
-                dieuth = address.Text.ToString();
-                
-                
-                string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
-
-                var con = new MySqlConnection(cs);
-                con.Open();
-                if (con.State == System.Data.ConnectionState.Open)
-                {
-                   /* String stm = "INSERT INTO `user` (`fname`, `lname`, `username`, `password`, `interests`, `email`, `address`, `created_at`, `last_login`, `gender`, `dob`) VALUES ('"+
-                        fname+"','"+lname + "','"+username+"','"+password+"','"+ @p5  + "','"+ email + "','" + dieuth + "','" + @p8e + "','" + @p9e + "','" + gender+"','"+dateofBirth +"')'";
-                    MySqlCommand cmd = new MySqlCommand(stm, con);
-
-                   cmd.ExecuteNonQuery();*/
-                }
-
-                con.Close();
+                            fname = Onoma.Text;
+                            lname = Epitheto.Text;
+                            username = username1.Text;
+                            email = Email1.Text;
+                            password = Kodikos1.Text;
+                            imera = numericUpDown1.Value.ToString();
+                            minas = domainUpDown1.Text.ToString();
+                            etos = numericUpDown2.Value.ToString();
+                            dieuth = address.Text.ToString();
 
 
+                            string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
-            }
+                            var con = new MySqlConnection(cs);
+                            con.Open();
+                            if (con.State == System.Data.ConnectionState.Open)
+                            {
+                               /* String stm = "INSERT INTO `user` (`fname`, `lname`, `username`, `password`, `interests`, `email`, `address`, `created_at`, `last_login`, `gender`, `dob`) VALUES ('"+
+                                    fname+"','"+lname + "','"+username+"','"+password+"','"+ @p5  + "','"+ email + "','" + dieuth + "','" + @p8e + "','" + @p9e + "','" + gender+"','"+dateofBirth +"')'";
+                                MySqlCommand cmd = new MySqlCommand(stm, con);
+
+                               cmd.ExecuteNonQuery();
+                            }
+
+                            con.Close();
+
+
+
+                        }*/
+            #endregion
         }
 
 
-    
+
 
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -449,5 +459,14 @@ namespace Project_4
 
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

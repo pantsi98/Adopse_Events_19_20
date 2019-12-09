@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_4.User_Classes
 {
-    class Profile
+    public class RegisteredUser
     {
     }
 }
