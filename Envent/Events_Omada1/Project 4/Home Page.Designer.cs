@@ -58,7 +58,6 @@
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.homepagePanel.Controls.Add(this.panel2);
-            this.homepagePanel.Controls.Add(this.MainPanel);
             this.homepagePanel.Controls.Add(this.textBox1);
             this.homepagePanel.Controls.Add(this.button8);
             this.homepagePanel.Controls.Add(this.button7);
@@ -79,10 +78,10 @@
             // 
             // MainPanel
             // 
-            this.MainPanel.Location = new System.Drawing.Point(64, 61);
+            this.MainPanel.Location = new System.Drawing.Point(337, 91);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1456, 776);
+            this.MainPanel.Size = new System.Drawing.Size(1039, 673);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
@@ -345,6 +344,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1520, 839);
             this.Controls.Add(this.homepagePanel);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.sideBarPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
