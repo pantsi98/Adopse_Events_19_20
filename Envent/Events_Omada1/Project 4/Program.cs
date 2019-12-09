@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Autofac;
+using Autofac.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,5 +20,6 @@ namespace Project_4
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
     }
 }
