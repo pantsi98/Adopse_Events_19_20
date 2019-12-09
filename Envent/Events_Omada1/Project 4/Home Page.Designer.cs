@@ -30,28 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homepagePanel = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
+            this.sportsSubMenu = new System.Windows.Forms.Panel();
+            this.basketBtn = new System.Windows.Forms.Button();
+            this.footballBtn = new System.Windows.Forms.Button();
             this.sportsBtn = new System.Windows.Forms.Button();
             this.festivalsBtn = new System.Windows.Forms.Button();
+            this.conferenceSubMenu = new System.Windows.Forms.Panel();
+            this.newsButton = new System.Windows.Forms.Button();
             this.educationBtn = new System.Windows.Forms.Button();
-            this.danceBtn = new System.Windows.Forms.Button();
+            this.conferencesBtn = new System.Windows.Forms.Button();
             this.theaterBtn = new System.Windows.Forms.Button();
             this.musicBtn = new System.Windows.Forms.Button();
             this.menuBtn = new System.Windows.Forms.Button();
             this.homepagePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.sideBarPanel.SuspendLayout();
+            this.sportsSubMenu.SuspendLayout();
+            this.conferenceSubMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // homepagePanel
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.homepagePanel.Controls.Add(this.logo);
+            this.homepagePanel.Controls.Add(this.panel2);
+            this.homepagePanel.Controls.Add(this.MainPanel);
             this.homepagePanel.Controls.Add(this.textBox1);
             this.homepagePanel.Controls.Add(this.button8);
             this.homepagePanel.Controls.Add(this.button7);
@@ -60,18 +67,24 @@
             this.homepagePanel.Name = "homepagePanel";
             this.homepagePanel.Size = new System.Drawing.Size(1520, 61);
             this.homepagePanel.TabIndex = 2;
-            this.homepagePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homepagePanel_Paint);
             // 
-            // logo
+            // panel2
             // 
-            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.InitialImage = ((System.Drawing.Image)(resources.GetObject("logo.InitialImage")));
-            this.logo.Location = new System.Drawing.Point(25, -19);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(271, 80);
-            this.logo.TabIndex = 3;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Location = new System.Drawing.Point(28, -21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(271, 82);
+            this.panel2.TabIndex = 6;
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Location = new System.Drawing.Point(64, 61);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1456, 776);
+            this.MainPanel.TabIndex = 5;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
             // textBox1
             // 
@@ -111,25 +124,15 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // MainPanel
-            // 
-            this.MainPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.MainPanel.Location = new System.Drawing.Point(303, 57);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1215, 576);
-            this.MainPanel.TabIndex = 5;
-            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
-            // 
             // sideBarPanel
             // 
-            this.sideBarPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sideBarPanel.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(206)))), ((int)(((byte)(235)))));
             this.sideBarPanel.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.sideBarPanel.Controls.Add(this.sportsSubMenu);
             this.sideBarPanel.Controls.Add(this.sportsBtn);
             this.sideBarPanel.Controls.Add(this.festivalsBtn);
-            this.sideBarPanel.Controls.Add(this.educationBtn);
-            this.sideBarPanel.Controls.Add(this.danceBtn);
+            this.sideBarPanel.Controls.Add(this.conferenceSubMenu);
+            this.sideBarPanel.Controls.Add(this.conferencesBtn);
             this.sideBarPanel.Controls.Add(this.theaterBtn);
             this.sideBarPanel.Controls.Add(this.musicBtn);
             this.sideBarPanel.Controls.Add(this.menuBtn);
@@ -140,81 +143,140 @@
             this.sideBarPanel.TabIndex = 1;
             this.sideBarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
             // 
+            // sportsSubMenu
+            // 
+            this.sportsSubMenu.Controls.Add(this.basketBtn);
+            this.sportsSubMenu.Controls.Add(this.footballBtn);
+            this.sportsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sportsSubMenu.Location = new System.Drawing.Point(0, 446);
+            this.sportsSubMenu.Name = "sportsSubMenu";
+            this.sportsSubMenu.Size = new System.Drawing.Size(300, 80);
+            this.sportsSubMenu.TabIndex = 10;
+            // 
+            // basketBtn
+            // 
+            this.basketBtn.BackColor = System.Drawing.Color.Transparent;
+            this.basketBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.basketBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.basketBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.basketBtn.Location = new System.Drawing.Point(0, 40);
+            this.basketBtn.Name = "basketBtn";
+            this.basketBtn.Size = new System.Drawing.Size(300, 40);
+            this.basketBtn.TabIndex = 1;
+            this.basketBtn.Text = "Basket";
+            this.basketBtn.UseVisualStyleBackColor = false;
+            // 
+            // footballBtn
+            // 
+            this.footballBtn.BackColor = System.Drawing.Color.Transparent;
+            this.footballBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.footballBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.footballBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.footballBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.footballBtn.Location = new System.Drawing.Point(0, 0);
+            this.footballBtn.Name = "footballBtn";
+            this.footballBtn.Size = new System.Drawing.Size(300, 40);
+            this.footballBtn.TabIndex = 0;
+            this.footballBtn.Text = "Ποδόσφαιρο";
+            this.footballBtn.UseVisualStyleBackColor = false;
+            // 
             // sportsBtn
             // 
             this.sportsBtn.BackColor = System.Drawing.Color.Transparent;
-            this.sportsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.sportsBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.sportsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sportsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.sportsBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.sportsBtn.ForeColor = System.Drawing.Color.White;
             this.sportsBtn.Image = ((System.Drawing.Image)(resources.GetObject("sportsBtn.Image")));
             this.sportsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sportsBtn.Location = new System.Drawing.Point(0, 384);
-            this.sportsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.sportsBtn.Location = new System.Drawing.Point(0, 385);
+            this.sportsBtn.Margin = new System.Windows.Forms.Padding(0);
             this.sportsBtn.Name = "sportsBtn";
-            this.sportsBtn.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.sportsBtn.Size = new System.Drawing.Size(300, 64);
-            this.sportsBtn.TabIndex = 6;
+            this.sportsBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.sportsBtn.Size = new System.Drawing.Size(300, 61);
+            this.sportsBtn.TabIndex = 9;
             this.sportsBtn.Text = "Αθλήματα";
             this.sportsBtn.UseVisualStyleBackColor = false;
+            this.sportsBtn.Click += new System.EventHandler(this.sportsBtn_Click);
+            this.sportsBtn.MouseEnter += new System.EventHandler(this.sportsBtn_MouseEnter);
             // 
             // festivalsBtn
             // 
             this.festivalsBtn.BackColor = System.Drawing.Color.Transparent;
-            this.festivalsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.festivalsBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.festivalsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.festivalsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.festivalsBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.festivalsBtn.ForeColor = System.Drawing.Color.White;
             this.festivalsBtn.Image = ((System.Drawing.Image)(resources.GetObject("festivalsBtn.Image")));
             this.festivalsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.festivalsBtn.Location = new System.Drawing.Point(0, 320);
-            this.festivalsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.festivalsBtn.Location = new System.Drawing.Point(0, 324);
+            this.festivalsBtn.Margin = new System.Windows.Forms.Padding(0);
             this.festivalsBtn.Name = "festivalsBtn";
-            this.festivalsBtn.Size = new System.Drawing.Size(300, 64);
-            this.festivalsBtn.TabIndex = 5;
+            this.festivalsBtn.Size = new System.Drawing.Size(300, 61);
+            this.festivalsBtn.TabIndex = 8;
             this.festivalsBtn.Text = "Festivals";
             this.festivalsBtn.UseVisualStyleBackColor = false;
-            this.festivalsBtn.Click += new System.EventHandler(this.festivalsBtn_Click);
+            // 
+            // conferenceSubMenu
+            // 
+            this.conferenceSubMenu.BackColor = System.Drawing.SystemColors.Control;
+            this.conferenceSubMenu.Controls.Add(this.newsButton);
+            this.conferenceSubMenu.Controls.Add(this.educationBtn);
+            this.conferenceSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.conferenceSubMenu.Location = new System.Drawing.Point(0, 244);
+            this.conferenceSubMenu.Name = "conferenceSubMenu";
+            this.conferenceSubMenu.Size = new System.Drawing.Size(300, 80);
+            this.conferenceSubMenu.TabIndex = 7;
+            // 
+            // newsButton
+            // 
+            this.newsButton.BackColor = System.Drawing.Color.Transparent;
+            this.newsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.newsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.newsButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.newsButton.Location = new System.Drawing.Point(0, 40);
+            this.newsButton.Name = "newsButton";
+            this.newsButton.Size = new System.Drawing.Size(300, 40);
+            this.newsButton.TabIndex = 2;
+            this.newsButton.Text = "Ενημερωτικά";
+            this.newsButton.UseVisualStyleBackColor = false;
+            this.newsButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // educationBtn
             // 
             this.educationBtn.BackColor = System.Drawing.Color.Transparent;
-            this.educationBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.educationBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.educationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.educationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.educationBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.educationBtn.Image = ((System.Drawing.Image)(resources.GetObject("educationBtn.Image")));
-            this.educationBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.educationBtn.Location = new System.Drawing.Point(0, 256);
-            this.educationBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.educationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.educationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.educationBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.educationBtn.Location = new System.Drawing.Point(0, 0);
             this.educationBtn.Name = "educationBtn";
-            this.educationBtn.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.educationBtn.Size = new System.Drawing.Size(300, 64);
-            this.educationBtn.TabIndex = 4;
+            this.educationBtn.Size = new System.Drawing.Size(300, 40);
+            this.educationBtn.TabIndex = 0;
             this.educationBtn.Text = "Εκπαίδευση";
             this.educationBtn.UseVisualStyleBackColor = false;
+            this.educationBtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // danceBtn
+            // conferencesBtn
             // 
-            this.danceBtn.BackColor = System.Drawing.Color.Transparent;
-            this.danceBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.danceBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.danceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.danceBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.danceBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.danceBtn.Image = ((System.Drawing.Image)(resources.GetObject("danceBtn.Image")));
-            this.danceBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.danceBtn.Location = new System.Drawing.Point(0, 192);
-            this.danceBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.danceBtn.Name = "danceBtn";
-            this.danceBtn.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.danceBtn.Size = new System.Drawing.Size(300, 64);
-            this.danceBtn.TabIndex = 3;
-            this.danceBtn.Text = "Χορός";
-            this.danceBtn.UseVisualStyleBackColor = false;
+            this.conferencesBtn.BackColor = System.Drawing.Color.Transparent;
+            this.conferencesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.conferencesBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.conferencesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.conferencesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.conferencesBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.conferencesBtn.Image = ((System.Drawing.Image)(resources.GetObject("conferencesBtn.Image")));
+            this.conferencesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.conferencesBtn.Location = new System.Drawing.Point(0, 183);
+            this.conferencesBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.conferencesBtn.Name = "conferencesBtn";
+            this.conferencesBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.conferencesBtn.Size = new System.Drawing.Size(300, 61);
+            this.conferencesBtn.TabIndex = 4;
+            this.conferencesBtn.Text = "Συνέδρια";
+            this.conferencesBtn.UseVisualStyleBackColor = false;
+            this.conferencesBtn.MouseEnter += new System.EventHandler(this.conferencesBtn_MouseEnter);
             // 
             // theaterBtn
             // 
@@ -226,11 +288,11 @@
             this.theaterBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.theaterBtn.Image = ((System.Drawing.Image)(resources.GetObject("theaterBtn.Image")));
             this.theaterBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.theaterBtn.Location = new System.Drawing.Point(0, 128);
+            this.theaterBtn.Location = new System.Drawing.Point(0, 122);
             this.theaterBtn.Margin = new System.Windows.Forms.Padding(2);
             this.theaterBtn.Name = "theaterBtn";
-            this.theaterBtn.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.theaterBtn.Size = new System.Drawing.Size(300, 64);
+            this.theaterBtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.theaterBtn.Size = new System.Drawing.Size(300, 61);
             this.theaterBtn.TabIndex = 2;
             this.theaterBtn.Text = "Θέατρο";
             this.theaterBtn.UseVisualStyleBackColor = false;
@@ -245,11 +307,11 @@
             this.musicBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.musicBtn.Image = ((System.Drawing.Image)(resources.GetObject("musicBtn.Image")));
             this.musicBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.musicBtn.Location = new System.Drawing.Point(0, 64);
+            this.musicBtn.Location = new System.Drawing.Point(0, 61);
             this.musicBtn.Margin = new System.Windows.Forms.Padding(2);
             this.musicBtn.Name = "musicBtn";
             this.musicBtn.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.musicBtn.Size = new System.Drawing.Size(300, 64);
+            this.musicBtn.Size = new System.Drawing.Size(300, 61);
             this.musicBtn.TabIndex = 1;
             this.musicBtn.Text = "Μουσική";
             this.musicBtn.UseVisualStyleBackColor = false;
@@ -268,7 +330,8 @@
             this.menuBtn.Location = new System.Drawing.Point(0, 0);
             this.menuBtn.Margin = new System.Windows.Forms.Padding(2);
             this.menuBtn.Name = "menuBtn";
-            this.menuBtn.Size = new System.Drawing.Size(300, 64);
+            this.menuBtn.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.menuBtn.Size = new System.Drawing.Size(300, 61);
             this.menuBtn.TabIndex = 0;
             this.menuBtn.Text = "Menu";
             this.menuBtn.UseVisualStyleBackColor = false;
@@ -276,12 +339,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1520, 839);
-            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.homepagePanel);
             this.Controls.Add(this.sideBarPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -292,8 +354,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.sideBarPanel.ResumeLayout(false);
+            this.sportsSubMenu.ResumeLayout(false);
+            this.conferenceSubMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -304,16 +367,21 @@
         private System.Windows.Forms.Button menuBtn;
         private System.Windows.Forms.Panel homepagePanel;
         private System.Windows.Forms.Button theaterBtn;
-        private System.Windows.Forms.Button musicBtn;
-        private System.Windows.Forms.Button festivalsBtn;
-        private System.Windows.Forms.Button educationBtn;
-        private System.Windows.Forms.Button danceBtn;
-        private System.Windows.Forms.Button sportsBtn;
+        private System.Windows.Forms.Button conferencesBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel conferenceSubMenu;
+        private System.Windows.Forms.Button festivalsBtn;
+        private System.Windows.Forms.Button sportsBtn;
+        private System.Windows.Forms.Button educationBtn;
+        private System.Windows.Forms.Button newsButton;
+        private System.Windows.Forms.Panel sportsSubMenu;
+        private System.Windows.Forms.Button basketBtn;
+        private System.Windows.Forms.Button footballBtn;
+        private System.Windows.Forms.Button musicBtn;
     }
 }
 
