@@ -369,15 +369,6 @@
             this.ConferenceCB.TabIndex = 32;
             this.ConferenceCB.Text = "Συνέδρια";
             this.ConferenceCB.UseVisualStyleBackColor = true;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox6.Location = new System.Drawing.Point(206, 55);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(95, 21);
-            this.checkBox6.TabIndex = 32;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // CinemaCB
             // 
@@ -389,15 +380,6 @@
             this.CinemaCB.TabIndex = 31;
             this.CinemaCB.Text = "Σινεμά";
             this.CinemaCB.UseVisualStyleBackColor = true;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox5.Location = new System.Drawing.Point(4, 84);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(69, 21);
-            this.checkBox5.TabIndex = 31;
-            this.checkBox5.Text = "Σινεμά";
-            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // SportsCB
             // 
@@ -409,15 +391,6 @@
             this.SportsCB.TabIndex = 30;
             this.SportsCB.Text = "Αθλητικές Εκδηλώσεις";
             this.SportsCB.UseVisualStyleBackColor = true;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox4.Location = new System.Drawing.Point(105, 58);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(95, 21);
-            this.checkBox4.TabIndex = 30;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // TheaterCB
             // 
@@ -429,15 +402,6 @@
             this.TheaterCB.TabIndex = 29;
             this.TheaterCB.Text = "Θεατρικές Παραστάσεις";
             this.TheaterCB.UseVisualStyleBackColor = true;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox3.Location = new System.Drawing.Point(105, 28);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(180, 21);
-            this.checkBox3.TabIndex = 29;
-            this.checkBox3.Text = "Θεατρικές Παραστάσεις";
-            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // FstivalCB
             // 
@@ -449,15 +413,6 @@
             this.FstivalCB.TabIndex = 28;
             this.FstivalCB.Text = "Φεστιβάλ";
             this.FstivalCB.UseVisualStyleBackColor = true;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox2.Location = new System.Drawing.Point(4, 58);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(95, 21);
-            this.checkBox2.TabIndex = 28;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // MusicCB
             // 
@@ -469,15 +424,6 @@
             this.MusicCB.TabIndex = 27;
             this.MusicCB.Text = "Μουσική";
             this.MusicCB.UseVisualStyleBackColor = true;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox1.Location = new System.Drawing.Point(2, 28);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 21);
-            this.checkBox1.TabIndex = 27;
-            this.checkBox1.Text = "Μουσική";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // messagefullo
             // 
