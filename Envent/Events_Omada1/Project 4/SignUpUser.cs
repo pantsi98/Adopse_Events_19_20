@@ -159,7 +159,7 @@ namespace Project_4
             {
                 if (!App_Code.StaticMethods.ValidationCheck.PasswordIsValid(Kodikos1.Text))
                 {
-                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρε , κεφαλαιο γράμμα και νούμερο.";
+                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμερο.";
                 }
                 else
                 {
@@ -195,7 +195,7 @@ namespace Project_4
         {
             if (username1.TextLength == 0)
             {
-                usernameLabel.Text = "Παρακαλώ συμπληρώστε ψευδόνυμο";
+                usernameLabel.Text = "Παρακαλώ συμπληρώστε ψευδώνυμο";
             }
             else
             {
@@ -271,6 +271,11 @@ namespace Project_4
             {
                 Register.Enabled = false;
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -170,5 +170,13 @@ namespace Project_4
                 conferenceSubMenu.Visible = false;
             }
         }
+
+        private void booking_test_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            Booking_Step1 bs1 = new Booking_Step1();
+            MainPanel.Controls.Add(bs1);
+
+        }
     }
 }

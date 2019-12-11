@@ -97,10 +97,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
+    <Compile Include="BookingStep2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2.Designer.cs">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking_Step1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking_Step1.Designer.cs">
+      <DependentUpon>Booking_Step1.cs</DependentUpon>
+    </Compile>
     <Compile Include="enventDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="enventDbDataSet.cs">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="enventDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="enventDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enventDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eventDb_title_date.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eventDb_title_date.xsd</DependentUpon>
     </Compile>
     <Compile Include="EventFullDescription.cs">
       <SubType>UserControl</SubType>
@@ -152,7 +182,12 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
-
+    <EmbeddedResource Include="BookingStep2.resx">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking_Step1.resx">
+      <DependentUpon>Booking_Step1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventFullDescription.resx">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +239,39 @@
     </None>
     <None Include="enventDataSet1.xss">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet.xsc">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>enventDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="enventDbDataSet.xss">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet1.xsc">
+      <DependentUpon>enventDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>enventDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="enventDbDataSet1.xss">
+      <DependentUpon>enventDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="eventDb_title_date.xsc">
+      <DependentUpon>eventDb_title_date.xsd</DependentUpon>
+    </None>
+    <None Include="eventDb_title_date.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eventDb_title_date.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eventDb_title_date.xss">
+      <DependentUpon>eventDb_title_date.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
