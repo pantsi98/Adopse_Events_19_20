@@ -47,6 +47,7 @@
             this.Email1 = new System.Windows.Forms.TextBox();
             this.username1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.EducationalCB = new System.Windows.Forms.CheckBox();
             this.ConferenceCB = new System.Windows.Forms.CheckBox();
             this.CinemaCB = new System.Windows.Forms.CheckBox();
             this.SportsCB = new System.Windows.Forms.CheckBox();
@@ -56,13 +57,11 @@
             this.messagefullo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fullolabel = new System.Windows.Forms.Label();
-            this.messageLabel = new System.Windows.Forms.Label();
             this.Register = new System.Windows.Forms.Button();
             this.Kodikos1 = new System.Windows.Forms.TextBox();
             this.Kodikos2 = new System.Windows.Forms.TextBox();
             this.Epitheto = new System.Windows.Forms.TextBox();
             this.Onoma = new System.Windows.Forms.TextBox();
-            this.EducationalCB = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.radioButtonBox.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -91,7 +90,6 @@
             this.panel2.Controls.Add(this.messagefullo);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.fullolabel);
-            this.panel2.Controls.Add(this.messageLabel);
             this.panel2.Controls.Add(this.Register);
             this.panel2.Controls.Add(this.Kodikos1);
             this.panel2.Controls.Add(this.Kodikos2);
@@ -183,7 +181,7 @@
             this.dobPicker.Location = new System.Drawing.Point(224, 329);
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(200, 23);
-            this.dobPicker.TabIndex = 35;
+            this.dobPicker.TabIndex = 13;
             // 
             // radioButtonBox
             // 
@@ -192,7 +190,7 @@
             this.radioButtonBox.Location = new System.Drawing.Point(224, 269);
             this.radioButtonBox.Name = "radioButtonBox";
             this.radioButtonBox.Size = new System.Drawing.Size(144, 37);
-            this.radioButtonBox.TabIndex = 34;
+            this.radioButtonBox.TabIndex = 12;
             this.radioButtonBox.TabStop = false;
             // 
             // femaleRadioButton
@@ -285,7 +283,7 @@
             this.address.Margin = new System.Windows.Forms.Padding(2);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(355, 23);
-            this.address.TabIndex = 30;
+            this.address.TabIndex = 11;
             this.address.Text = "Περιοχή";
             this.address.TextChanged += new System.EventHandler(this.address_TextChanged);
             this.address.Enter += new System.EventHandler(this.address_MouseClick);
@@ -322,10 +320,11 @@
             this.Email1.Margin = new System.Windows.Forms.Padding(2);
             this.Email1.Name = "Email1";
             this.Email1.Size = new System.Drawing.Size(356, 23);
-            this.Email1.TabIndex = 28;
+            this.Email1.TabIndex = 8;
             this.Email1.Text = "Email";
             this.Email1.TextChanged += new System.EventHandler(this.Email1_TextChanged);
             this.Email1.Enter += new System.EventHandler(this.Email1_MouseClick);
+            this.Email1.Leave += new System.EventHandler(this.Email1_Leave);
             // 
             // username1
             // 
@@ -334,10 +333,10 @@
             this.username1.Margin = new System.Windows.Forms.Padding(2);
             this.username1.Name = "username1";
             this.username1.Size = new System.Drawing.Size(356, 23);
-            this.username1.TabIndex = 27;
+            this.username1.TabIndex = 7;
             this.username1.Text = "Username";
             this.username1.Enter += new System.EventHandler(this.username1_MouseClick);
-            this.username1.MouseLeave += new System.EventHandler(this.username1_TextChanged);
+            this.username1.Leave += new System.EventHandler(this.username1_TextChanged);
             // 
             // groupBox1
             // 
@@ -349,15 +348,26 @@
             this.groupBox1.Controls.Add(this.FstivalCB);
             this.groupBox1.Controls.Add(this.MusicCB);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.groupBox1.Location = new System.Drawing.Point(222, 368);
+            this.groupBox1.Location = new System.Drawing.Point(171, 368);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(481, 177);
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-
+            this.groupBox1.Size = new System.Drawing.Size(460, 160);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eνδιαφέρομαι για:";
+            // 
+            // EducationalCB
+            // 
+            this.EducationalCB.AutoSize = true;
+            this.EducationalCB.ForeColor = System.Drawing.Color.DimGray;
+            this.EducationalCB.Location = new System.Drawing.Point(6, 133);
+            this.EducationalCB.Name = "EducationalCB";
+            this.EducationalCB.Size = new System.Drawing.Size(179, 21);
+            this.EducationalCB.TabIndex = 20;
+            this.EducationalCB.Text = "Επιμορφωτικά Σεμινάρια";
+            this.EducationalCB.UseVisualStyleBackColor = true;
+            this.EducationalCB.CheckedChanged += new System.EventHandler(this.EducationalCB_CheckedChanged);
             // 
             // ConferenceCB
             // 
@@ -365,10 +375,11 @@
             this.ConferenceCB.ForeColor = System.Drawing.Color.DimGray;
             this.ConferenceCB.Location = new System.Drawing.Point(370, 35);
             this.ConferenceCB.Name = "ConferenceCB";
-            this.ConferenceCB.Size = new System.Drawing.Size(105, 26);
-            this.ConferenceCB.TabIndex = 32;
+            this.ConferenceCB.Size = new System.Drawing.Size(85, 21);
+            this.ConferenceCB.TabIndex = 16;
             this.ConferenceCB.Text = "Συνέδρια";
             this.ConferenceCB.UseVisualStyleBackColor = true;
+            this.ConferenceCB.CheckedChanged += new System.EventHandler(this.ConferenceCB_CheckedChanged);
             // 
             // CinemaCB
             // 
@@ -376,10 +387,11 @@
             this.CinemaCB.ForeColor = System.Drawing.Color.DimGray;
             this.CinemaCB.Location = new System.Drawing.Point(371, 84);
             this.CinemaCB.Name = "CinemaCB";
-            this.CinemaCB.Size = new System.Drawing.Size(85, 26);
-            this.CinemaCB.TabIndex = 31;
+            this.CinemaCB.Size = new System.Drawing.Size(69, 21);
+            this.CinemaCB.TabIndex = 19;
             this.CinemaCB.Text = "Σινεμά";
             this.CinemaCB.UseVisualStyleBackColor = true;
+            this.CinemaCB.CheckedChanged += new System.EventHandler(this.CinemaCB_CheckedChanged);
             // 
             // SportsCB
             // 
@@ -387,10 +399,11 @@
             this.SportsCB.ForeColor = System.Drawing.Color.DimGray;
             this.SportsCB.Location = new System.Drawing.Point(6, 84);
             this.SportsCB.Name = "SportsCB";
-            this.SportsCB.Size = new System.Drawing.Size(214, 26);
-            this.SportsCB.TabIndex = 30;
+            this.SportsCB.Size = new System.Drawing.Size(169, 21);
+            this.SportsCB.TabIndex = 17;
             this.SportsCB.Text = "Αθλητικές Εκδηλώσεις";
             this.SportsCB.UseVisualStyleBackColor = true;
+            this.SportsCB.CheckedChanged += new System.EventHandler(this.SportsCB_CheckedChanged);
             // 
             // TheaterCB
             // 
@@ -398,10 +411,11 @@
             this.TheaterCB.ForeColor = System.Drawing.Color.DimGray;
             this.TheaterCB.Location = new System.Drawing.Point(6, 35);
             this.TheaterCB.Name = "TheaterCB";
-            this.TheaterCB.Size = new System.Drawing.Size(226, 26);
-            this.TheaterCB.TabIndex = 29;
+            this.TheaterCB.Size = new System.Drawing.Size(180, 21);
+            this.TheaterCB.TabIndex = 14;
             this.TheaterCB.Text = "Θεατρικές Παραστάσεις";
             this.TheaterCB.UseVisualStyleBackColor = true;
+            this.TheaterCB.CheckedChanged += new System.EventHandler(this.TheaterCB_CheckedChanged);
             // 
             // FstivalCB
             // 
@@ -409,10 +423,11 @@
             this.FstivalCB.ForeColor = System.Drawing.Color.DimGray;
             this.FstivalCB.Location = new System.Drawing.Point(242, 84);
             this.FstivalCB.Name = "FstivalCB";
-            this.FstivalCB.Size = new System.Drawing.Size(109, 26);
-            this.FstivalCB.TabIndex = 28;
+            this.FstivalCB.Size = new System.Drawing.Size(86, 21);
+            this.FstivalCB.TabIndex = 18;
             this.FstivalCB.Text = "Φεστιβάλ";
             this.FstivalCB.UseVisualStyleBackColor = true;
+            this.FstivalCB.CheckedChanged += new System.EventHandler(this.FstivalCB_CheckedChanged);
             // 
             // MusicCB
             // 
@@ -420,10 +435,11 @@
             this.MusicCB.ForeColor = System.Drawing.Color.DimGray;
             this.MusicCB.Location = new System.Drawing.Point(242, 35);
             this.MusicCB.Name = "MusicCB";
-            this.MusicCB.Size = new System.Drawing.Size(99, 26);
-            this.MusicCB.TabIndex = 27;
+            this.MusicCB.Size = new System.Drawing.Size(80, 21);
+            this.MusicCB.TabIndex = 15;
             this.MusicCB.Text = "Μουσική";
             this.MusicCB.UseVisualStyleBackColor = true;
+            this.MusicCB.CheckedChanged += new System.EventHandler(this.MusicCB_CheckedChanged);
             // 
             // messagefullo
             // 
@@ -456,25 +472,13 @@
             this.fullolabel.TabIndex = 18;
             this.fullolabel.Text = "Φύλλο";
             // 
-            // messageLabel
-            // 
-            this.messageLabel.AutoSize = true;
-            this.messageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.134328F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.messageLabel.Location = new System.Drawing.Point(220, 63);
-            this.messageLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.messageLabel.Name = "messageLabel";
-            this.messageLabel.Size = new System.Drawing.Size(98, 16);
-            this.messageLabel.TabIndex = 13;
-            this.messageLabel.Text = "message label";
-            this.messageLabel.Visible = false;
-            // 
             // Register
             // 
             this.Register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.Register.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Register.Location = new System.Drawing.Point(311, 516);
+            this.Register.Location = new System.Drawing.Point(335, 542);
             this.Register.Margin = new System.Windows.Forms.Padding(2);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(142, 41);
@@ -491,7 +495,7 @@
             this.Kodikos1.Margin = new System.Windows.Forms.Padding(2);
             this.Kodikos1.Name = "Kodikos1";
             this.Kodikos1.Size = new System.Drawing.Size(355, 23);
-            this.Kodikos1.TabIndex = 8;
+            this.Kodikos1.TabIndex = 9;
             this.Kodikos1.Text = "Κωδικός";
             this.Kodikos1.TextChanged += new System.EventHandler(this.Kodikos1_TextChanged);
             this.Kodikos1.Enter += new System.EventHandler(this.Kodikos1_MouseClick);
@@ -504,7 +508,7 @@
             this.Kodikos2.Margin = new System.Windows.Forms.Padding(2);
             this.Kodikos2.Name = "Kodikos2";
             this.Kodikos2.Size = new System.Drawing.Size(355, 23);
-            this.Kodikos2.TabIndex = 9;
+            this.Kodikos2.TabIndex = 10;
             this.Kodikos2.Text = "Επαλήθευση Κωδικού";
             this.Kodikos2.TextChanged += new System.EventHandler(this.Kodikos2_TextChanged);
             this.Kodikos2.Enter += new System.EventHandler(this.Kodikos2_MouseClick);
@@ -534,17 +538,6 @@
             this.Onoma.Text = "Όνομα";
             this.Onoma.TextChanged += new System.EventHandler(this.Onoma_TextChanged);
             this.Onoma.Enter += new System.EventHandler(this.Onoma_MouseClick);
-            // 
-            // EducationalCB
-            // 
-            this.EducationalCB.AutoSize = true;
-            this.EducationalCB.ForeColor = System.Drawing.Color.DimGray;
-            this.EducationalCB.Location = new System.Drawing.Point(6, 133);
-            this.EducationalCB.Name = "EducationalCB";
-            this.EducationalCB.Size = new System.Drawing.Size(226, 26);
-            this.EducationalCB.TabIndex = 34;
-            this.EducationalCB.Text = "Επιμορφωτικά Σεμινάρια";
-            this.EducationalCB.UseVisualStyleBackColor = true;
             // 
             // SignUpUser
             // 
@@ -582,7 +575,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label fullolabel;
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.Label messageLabel;
         private System.Windows.Forms.Button Register;
         private System.Windows.Forms.TextBox Kodikos1;
         private System.Windows.Forms.TextBox Kodikos2;
