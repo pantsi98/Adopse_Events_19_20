@@ -97,6 +97,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Class1.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="enventDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
