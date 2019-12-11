@@ -14,6 +14,7 @@ namespace Project_4
 {
     public partial class SignUpUser : UserControl
     {
+        List<int> prefferences = new List<int>();
         public SignUpUser()
         {
             InitializeComponent();
@@ -113,8 +114,6 @@ namespace Project_4
 
             Boolean deiktislathwn = false;
             messagefullo.Visible = false;
-            messageLabel.Visible = false;
-
             if (!(nameLabel.Text==""))
             {
                 deiktislathwn = true;
@@ -146,7 +145,22 @@ namespace Project_4
                 buttons.Text,dobPicker.Value);
             string userName = username1.Text;
             string passWord = Kodikos1.Text;
-            User_Classes.Visitor.signUpAsUser(profile, userName, passWord);
+            try
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                User_Classes.Visitor.signUpAsUser(profile, userName, passWord,prefferences);
+                Cursor.Current = Cursors.Default;
+                MessageBox.Show("Η εγγραφή ήταν επιτυχής!");
+                Controls.Clear();
+                LogIn su = new LogIn();
+                Controls.Add(su);
+            }
+            catch(User_Classes.Exceptions.UserNameException msg)
+            {
+                Cursor.Current = Cursors.Default;
+                usernameLabel.Text = msg.ToString();
+            }
+            
         }
 
         private void Kodikos1_TextChanged(object sender, EventArgs e)
@@ -193,22 +207,23 @@ namespace Project_4
 
         private void username1_TextChanged(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             if (username1.TextLength == 0)
             {
                 usernameLabel.Text = "Παρακαλώ συμπληρώστε ψευδόνυμο";
             }
             else
             {
-                enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
-                if (Convert.ToInt32(checkUserName.tryLogInAsUser(username1.Text)) > 0)
+                if (App_Code.StaticMethods.ValidationCheck.CheckUserName(username1.Text))
                 {
-                    usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται.";
+                    usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται ήδη.";
                 }
                 else
                 {
                     usernameLabel.Text = "";
                 }
             }
+            Cursor.Current = Cursors.Default;
         }
 
         private void Email1_TextChanged(object sender, EventArgs e)
@@ -271,6 +286,59 @@ namespace Project_4
             {
                 Register.Enabled = false;
             }
+        }
+
+        private void TheaterCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(2);
+        }
+
+        private void MusicCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(1);
+        }
+
+        private void ConferenceCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(3);
+        }
+
+        private void SportsCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(5);
+        }
+
+        private void FstivalCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(4);
+        }
+
+        private void CinemaCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(10);
+        }
+
+        private void EducationalCB_CheckedChanged(object sender, EventArgs e)
+        {
+            prefferences.Add(6);
+        }
+
+        private void Email1_Leave(object sender, EventArgs e)
+        {
+            if (!(Email1.Text.Length == 0))
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                if (App_Code.StaticMethods.ValidationCheck.CheckEmail(Email1.Text))
+                {
+                    emailLabel.Text = "Υπάρχει ήδη λογαριασμός με αυτό το email.";
+                }
+                else
+                {
+                    emailLabel.Text = "";
+                }
+                Cursor.Current = Cursors.Default;
+            }
+            
         }
     }
 }

@@ -9,12 +9,21 @@ namespace Project_4.User_Classes
     public static class Visitor
     {
 
-        public static void signUpAsUser(UserProfile profile,string userName, string passWord)
+        public static void signUpAsUser(UserProfile profile,string userName, string passWord,List<int> prefferences)
         {
             enventDataSetTableAdapters.userTableAdapter singUp = new enventDataSetTableAdapters.userTableAdapter();
             if (checkUserName(userName))
             {
                 singUp.registerAsUser(profile.getFirstName(), profile.getLastName(), userName, passWord, profile.getEmail(), profile.getAddress(), profile.getGender(), profile.getDob());
+                if (prefferences.Count > 0)
+                {
+                    enventDataSetTableAdapters.preffered_categoriesTableAdapter prefference = new enventDataSetTableAdapters.preffered_categoriesTableAdapter();
+                    int id = Convert.ToInt32(singUp.getID(userName));
+                    foreach(int i in prefferences)
+                    {
+                        prefference.insertPrefference(id, i);
+                    }
+                }
             }
             else
             {

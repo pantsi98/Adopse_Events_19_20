@@ -13,25 +13,25 @@ namespace Project_4.App_Code.StaticMethods
 
         public static bool EmailIsValid(string emailaddress)
         {
-            try
-            {
-                MailAddress m = new MailAddress(emailaddress);
-
-                return true;
-            }
-            catch (FormatException)
-            {
-                return false;
-            }
+                var valid = new Regex(@"^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$");
+                if (valid.IsMatch(emailaddress))    
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
         }
 
         public static bool PasswordIsValid(string password)
         {
             var hasNumber = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
+            var hasLowerChar = new Regex(@"[a-z]");
             var hasMinimum8Chars = new Regex(@".{8,}");
 
-            if(hasNumber.IsMatch(password) && hasUpperChar.IsMatch(password) && hasMinimum8Chars.IsMatch(password))
+            if(hasNumber.IsMatch(password) && hasUpperChar.IsMatch(password) && hasMinimum8Chars.IsMatch(password)&& hasLowerChar.IsMatch(password))
             {
                 return true;
             }
@@ -53,5 +53,16 @@ namespace Project_4.App_Code.StaticMethods
             }
         }
 
+        public static bool CheckUserName(String userName)
+        {
+            enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
+            return Convert.ToBoolean(checkUserName.tryLogInAsUser(userName));
+        }
+
+        public static bool CheckEmail(String email)
+        {
+            enventDataSetTableAdapters.userTableAdapter check = new enventDataSetTableAdapters.userTableAdapter();
+            return Convert.ToBoolean(check.checkEmail(email));
+        }
     }
 }
