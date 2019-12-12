@@ -170,5 +170,12 @@ namespace Project_4
                 conferenceSubMenu.Visible = false;
             }
         }
+
+        private void cCircularButton1_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            Profile su = new Profile();
+            MainPanel.Controls.Add(su);
+        }
     }
 }
