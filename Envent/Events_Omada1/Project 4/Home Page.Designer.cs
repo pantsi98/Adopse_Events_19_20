@@ -48,6 +48,7 @@
             this.musicBtn = new System.Windows.Forms.Button();
             this.menuBtn = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.homepagePanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
@@ -57,6 +58,7 @@
             // homepagePanel
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.homepagePanel.Controls.Add(this.cCircularButton1);
             this.homepagePanel.Controls.Add(this.panel2);
             this.homepagePanel.Controls.Add(this.textBox1);
             this.homepagePanel.Controls.Add(this.button8);
@@ -337,6 +339,19 @@
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
+            // cCircularButton1
+            // 
+            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
+            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCircularButton1.Location = new System.Drawing.Point(411, 3);
+            this.cCircularButton1.Name = "cCircularButton1";
+            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
+            this.cCircularButton1.TabIndex = 0;
+            this.cCircularButton1.UseVisualStyleBackColor = false;
+            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +400,7 @@
         private System.Windows.Forms.Button basketBtn;
         private System.Windows.Forms.Button footballBtn;
         private System.Windows.Forms.Button musicBtn;
+        private App_Code.CCircularButton cCircularButton1;
     }
 }
 
