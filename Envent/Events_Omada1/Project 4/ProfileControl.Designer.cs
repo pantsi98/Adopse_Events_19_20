@@ -49,9 +49,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1131, 63);
+            this.panel1.Size = new System.Drawing.Size(848, 51);
             this.panel1.TabIndex = 31;
             // 
             // label2
@@ -59,9 +59,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Location = new System.Drawing.Point(2, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 63);
+            this.label2.Size = new System.Drawing.Size(89, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "Προφίλ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,9 +72,10 @@
             this.circularPicture1.BackColor = System.Drawing.Color.Transparent;
             this.circularPicture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circularPicture1.Image = global::Project_4.Properties.Resources.userProfile;
-            this.circularPicture1.Location = new System.Drawing.Point(491, 26);
+            this.circularPicture1.Location = new System.Drawing.Point(368, 21);
+            this.circularPicture1.Margin = new System.Windows.Forms.Padding(2);
             this.circularPicture1.Name = "circularPicture1";
-            this.circularPicture1.Size = new System.Drawing.Size(150, 150);
+            this.circularPicture1.Size = new System.Drawing.Size(113, 122);
             this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture1.TabIndex = 32;
             this.circularPicture1.TabStop = false;
@@ -83,9 +85,10 @@
             this.circularPicture2.BackColor = System.Drawing.Color.Transparent;
             this.circularPicture2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circularPicture2.Image = global::Project_4.Properties.Resources.facebook;
-            this.circularPicture2.Location = new System.Drawing.Point(9, 682);
+            this.circularPicture2.Location = new System.Drawing.Point(7, 554);
+            this.circularPicture2.Margin = new System.Windows.Forms.Padding(2);
             this.circularPicture2.Name = "circularPicture2";
-            this.circularPicture2.Size = new System.Drawing.Size(50, 50);
+            this.circularPicture2.Size = new System.Drawing.Size(38, 41);
             this.circularPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture2.TabIndex = 33;
             this.circularPicture2.TabStop = false;
@@ -95,9 +98,10 @@
             this.circularPicture3.BackColor = System.Drawing.Color.Transparent;
             this.circularPicture3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circularPicture3.Image = global::Project_4.Properties.Resources.gmail;
-            this.circularPicture3.Location = new System.Drawing.Point(65, 682);
+            this.circularPicture3.Location = new System.Drawing.Point(49, 554);
+            this.circularPicture3.Margin = new System.Windows.Forms.Padding(2);
             this.circularPicture3.Name = "circularPicture3";
-            this.circularPicture3.Size = new System.Drawing.Size(80, 50);
+            this.circularPicture3.Size = new System.Drawing.Size(60, 41);
             this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture3.TabIndex = 34;
             this.circularPicture3.TabStop = false;
@@ -105,9 +109,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(200, 182);
+            this.panel2.Location = new System.Drawing.Point(150, 148);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 1);
+            this.panel2.Size = new System.Drawing.Size(562, 1);
             this.panel2.TabIndex = 35;
             // 
             // label1
@@ -118,9 +123,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(489, 163);
+            this.label1.Location = new System.Drawing.Point(367, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 31);
+            this.label1.Size = new System.Drawing.Size(121, 25);
             this.label1.TabIndex = 36;
             this.label1.Text = "UserName";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,9 +138,10 @@
             this.UserButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UserButon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.UserButon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UserButon.Location = new System.Drawing.Point(200, 109);
+            this.UserButon.Location = new System.Drawing.Point(150, 89);
+            this.UserButon.Margin = new System.Windows.Forms.Padding(2);
             this.UserButon.Name = "UserButon";
-            this.UserButon.Size = new System.Drawing.Size(202, 50);
+            this.UserButon.Size = new System.Drawing.Size(152, 41);
             this.UserButon.TabIndex = 37;
             this.UserButon.Text = "Επεξεργασία";
             this.UserButon.UseVisualStyleBackColor = false;
@@ -145,16 +152,17 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(748, 109);
+            this.button2.Location = new System.Drawing.Point(561, 89);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 50);
+            this.button2.Size = new System.Drawing.Size(152, 41);
             this.button2.TabIndex = 39;
             this.button2.Text = "Ιστορικό";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // Profile
+            // ProfileControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.UserButon);
@@ -164,9 +172,9 @@
             this.Controls.Add(this.circularPicture2);
             this.Controls.Add(this.circularPicture1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Profile";
-            this.Size = new System.Drawing.Size(1131, 745);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "ProfileControl";
+            this.Size = new System.Drawing.Size(848, 605);
             this.Load += new System.EventHandler(this.Profile_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();

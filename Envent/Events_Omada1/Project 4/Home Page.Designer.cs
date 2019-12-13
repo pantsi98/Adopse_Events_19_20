@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.homepagePanel = new System.Windows.Forms.Panel();

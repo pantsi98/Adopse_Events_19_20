@@ -97,6 +97,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\CCircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code\circularPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="App_Code\Exceptions\EventException.cs" />
     <Compile Include="App_Code\NormalUser.cs" />
     <Compile Include="App_Code\Play.cs" />
@@ -205,11 +211,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SignUpAdmin1.resx">
       <DependentUpon>SignUpAdmin1.cs</DependentUpon>
     </EmbeddedResource>
