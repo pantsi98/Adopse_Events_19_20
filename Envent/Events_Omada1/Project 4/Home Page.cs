@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Project_4.App_Code;
+using Project_4.App_Code.StaticMethods;
+using Project_4.User_Classes;
 
 namespace Project_4
 {
@@ -21,6 +24,12 @@ namespace Project_4
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
+            var listItem = new ListViewItem();
+            for (int i=0; i < App_Code.StaticMethods.Events.events.Count;  i++)
+            {
+                listItem = new ListViewItem(App_Code.StaticMethods.Events.events.ElementAt(i));
+                eventsListView.Items.Add(listItem);
+            }
             /*string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
             var con = new MySqlConnection(cs);
@@ -29,8 +38,6 @@ namespace Project_4
             var stm = "SELECT * FROM category";
             var cmd = new MySqlCommand(stm, con);
             */
-
-
         }
 
         private void hideSubmenus()
@@ -152,7 +159,6 @@ namespace Project_4
         {
 
         }
-
         private void conferencesBtn_MouseEnter(object sender, EventArgs e)
         {
             if (sideBarPanel.Width == 300)
@@ -168,6 +174,21 @@ namespace Project_4
             {
                 sportsSubMenu.Visible = true;
                 conferenceSubMenu.Visible = false;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            eventsListView.Items.Clear();
+            Visitor vs = (Visitor)InstanceOfUser.GetUser();
+            List<string> list = new List<string>();
+            list = vs.SearchForEvent(textBox1.Text);
+            var listItem = new ListViewItem();
+            for (int i = 0; i < list.Count; i++)
+            {
+                listItem = new ListViewItem(list.ElementAt(i));
+                eventsListView.Items.Add(listItem);
+                eventsListView.Groups[0].Items.Add(listItem);
             }
         }
     }

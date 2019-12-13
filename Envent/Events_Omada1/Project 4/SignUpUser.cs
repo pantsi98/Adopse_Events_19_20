@@ -148,7 +148,8 @@ namespace Project_4
             try
             {
                 Cursor.Current = Cursors.WaitCursor;
-                User_Classes.Visitor.signUpAsUser(profile, userName, passWord,prefferences);
+                User_Classes.Visitor user = (User_Classes.Visitor)App_Code.StaticMethods.InstanceOfUser.GetUser();
+                user.signUpAsUser(profile, userName, passWord, prefferences);
                 Cursor.Current = Cursors.Default;
                 MessageBox.Show("Η εγγραφή ήταν επιτυχής!");
                 Controls.Clear();

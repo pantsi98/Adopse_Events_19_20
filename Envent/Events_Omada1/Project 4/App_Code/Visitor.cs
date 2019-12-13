@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Project_4.App_Code.StaticMethods;
+using Project_4.App_Code;
 //author Τζέιμς Μπαλάση
 namespace Project_4.User_Classes
 {
-    public static class Visitor
+    public class Visitor : User
     {
 
-        public static void signUpAsUser(UserProfile profile,string userName, string passWord,List<int> prefferences)
+        public void signUpAsUser(UserProfile profile,string userName, string passWord,List<int> prefferences)
         {
             enventDataSetTableAdapters.userTableAdapter singUp = new enventDataSetTableAdapters.userTableAdapter();
             if (checkUserName(userName))
             {
-                singUp.registerAsUser(profile.getFirstName(), profile.getLastName(), userName, passWord, profile.getEmail(), profile.getAddress(), profile.getGender(), profile.getDob());
+                singUp.registerAsUser(profile.GetFirstName(), profile.GetLastName(), userName, passWord, profile.GetEmail(), profile.GetAddress(), profile.GetGender(), profile.GetDob());
                 if (prefferences.Count > 0)
                 {
                     enventDataSetTableAdapters.preffered_categoriesTableAdapter prefference = new enventDataSetTableAdapters.preffered_categoriesTableAdapter();
@@ -31,7 +33,7 @@ namespace Project_4.User_Classes
             }
         }
 
-        public static bool checkUserName(string userName)
+        public bool checkUserName(string userName)
         {
             enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
             if (Convert.ToInt32(checkUserName.tryLogInAsUser(userName)) > 0)
@@ -44,23 +46,26 @@ namespace Project_4.User_Classes
             }
         }
 
-        public static RegisteredUser logInAsNormalUser(string userName,string passWord)
+        public User logInAsNormalUser(string userName,string passWord)
         {
-
-            RegisteredUser test = new RegisteredUser();
-            return test;
+            InstanceOfUser.CreateCustomerUser(userName,passWord);
+            return InstanceOfUser.GetUser();
         }
 
-
-        /*public Admin logInAsAdmin(string userName, string passWord)
+        public User logInAsEventManager(string userName, string passWord)
         {
-            return test;
-        }*/
+            InstanceOfUser.CreateEventManager(userName,passWord);
+            return InstanceOfUser.GetUser();
+        }
 
-        public static EventManager logInAsEventManager(string userName, string passWord)
+        public override void ShowEvents()
         {
-            EventManager test = new EventManager();
-            return test;
+            throw new NotImplementedException();
+        }
+
+        public override void ShowEventDeails(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
