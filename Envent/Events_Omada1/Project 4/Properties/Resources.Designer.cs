@@ -83,9 +83,9 @@ namespace Project_4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap facebookIcon {
+        internal static System.Drawing.Bitmap facebook {
             get {
-                object obj = ResourceManager.GetObject("facebookIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("facebook", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Project_4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap gmailIcon {
+        internal static System.Drawing.Bitmap gmail {
             get {
-                object obj = ResourceManager.GetObject("gmailIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("gmail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Project_4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap profileIcon {
+        internal static System.Drawing.Bitmap profileIconWhiten {
             get {
-                object obj = ResourceManager.GetObject("profileIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("profileIconWhiten", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace Project_4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap profileIconWhiten {
+        internal static System.Drawing.Bitmap userProfile {
             get {
-                object obj = ResourceManager.GetObject("profileIconWhiten", resourceCulture);
+                object obj = ResourceManager.GetObject("userProfile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
