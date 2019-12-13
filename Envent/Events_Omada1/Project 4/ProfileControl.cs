@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project_4
 {
-    public partial class Profile : UserControl
+    public partial class ProfileControl : UserControl
     {
-        public Profile()
+        public ProfileControl()
         {
             InitializeComponent();
         }

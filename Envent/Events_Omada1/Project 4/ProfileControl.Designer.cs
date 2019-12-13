@@ -1,6 +1,6 @@
 ﻿namespace Project_4
 {
-    partial class Profile
+    partial class ProfileControl
     {
         /// <summary> 
         /// Required designer variable.
