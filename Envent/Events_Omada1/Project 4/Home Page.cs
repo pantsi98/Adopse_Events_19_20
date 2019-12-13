@@ -177,6 +177,13 @@ namespace Project_4
             }
         }
 
+        private void cCircularButton1_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            Profile su = new Profile();
+            MainPanel.Controls.Add(su);
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             eventsListView.Items.Clear();
