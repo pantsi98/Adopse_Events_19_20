@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_4.App_Code.StaticMethods;
 
 namespace Project_4
 {
@@ -16,11 +17,11 @@ namespace Project_4
         [STAThread]
         static void Main()
         {
+            InstanceOfUser.CreateVisitor();
+            Events.FillEventsData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            
         }
-
     }
 }

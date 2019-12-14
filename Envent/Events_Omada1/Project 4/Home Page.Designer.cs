@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.homepagePanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.eventsListView = new System.Windows.Forms.ListView();
+            this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
             this.basketBtn = new System.Windows.Forms.Button();
@@ -49,6 +53,7 @@
             this.musicBtn = new System.Windows.Forms.Button();
             this.menuBtn = new System.Windows.Forms.Button();
             this.homepagePanel.SuspendLayout();
+            this.MainPanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
             this.conferenceSubMenu.SuspendLayout();
@@ -57,6 +62,7 @@
             // homepagePanel
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.homepagePanel.Controls.Add(this.cCircularButton1);
             this.homepagePanel.Controls.Add(this.panel2);
             this.homepagePanel.Controls.Add(this.textBox1);
             this.homepagePanel.Controls.Add(this.button8);
@@ -85,6 +91,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(564, 44);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button8
             // 
@@ -116,12 +123,33 @@
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.eventsListView);
             this.MainPanel.Location = new System.Drawing.Point(319, 65);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1190, 763);
+            this.MainPanel.Size = new System.Drawing.Size(1190, 673);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // eventsListView
+            // 
+            this.eventsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Title});
+            this.eventsListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "viewGourp";
+            this.eventsListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1});
+            this.eventsListView.HideSelection = false;
+            this.eventsListView.Location = new System.Drawing.Point(0, 0);
+            this.eventsListView.Name = "eventsListView";
+            this.eventsListView.Size = new System.Drawing.Size(1190, 673);
+            this.eventsListView.TabIndex = 0;
+            this.eventsListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // Title
+            // 
+            this.Title.Width = 200;
             // 
             // sideBarPanel
             // 
@@ -337,9 +365,31 @@
             this.menuBtn.UseVisualStyleBackColor = false;
             this.menuBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // MainPanel
+            // 
+            this.MainPanel.Location = new System.Drawing.Point(319, 65);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1190, 673);
+            this.MainPanel.TabIndex = 5;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // cCircularButton1
+            // 
+            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
+            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCircularButton1.Location = new System.Drawing.Point(411, 3);
+            this.cCircularButton1.Name = "cCircularButton1";
+            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
+            this.cCircularButton1.TabIndex = 0;
+            this.cCircularButton1.UseVisualStyleBackColor = false;
+            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -357,6 +407,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();
+            this.MainPanel.ResumeLayout(false);
             this.sideBarPanel.ResumeLayout(false);
             this.sportsSubMenu.ResumeLayout(false);
             this.conferenceSubMenu.ResumeLayout(false);
@@ -385,6 +436,9 @@
         private System.Windows.Forms.Button basketBtn;
         private System.Windows.Forms.Button footballBtn;
         private System.Windows.Forms.Button musicBtn;
+        private App_Code.CCircularButton cCircularButton1;
+        private System.Windows.Forms.ListView eventsListView;
+        private System.Windows.Forms.ColumnHeader Title;
     }
 }
 
