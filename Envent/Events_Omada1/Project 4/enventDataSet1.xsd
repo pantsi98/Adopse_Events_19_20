@@ -383,6 +383,14 @@ VALUES       (@p1, @p2, @p3, @p4, @p5, @p6)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              <DbSource ConnectionRef="enventDbConnectionString (Settings)" DbObjectName="enventDb.events" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="getEvents" GetMethodModifier="Public" GetMethodName="getEvents" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getEvents" UserSourceName="getEvents">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM  `events`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="enventDbConnectionString (Settings)" DbObjectName="enventDb.events" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="getEventTitles" GetMethodModifier="Public" GetMethodName="getEventTitles" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getEventTitles" UserSourceName="getEventTitles">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">

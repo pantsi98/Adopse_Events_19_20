@@ -18,7 +18,7 @@ namespace Project_4
         static void Main()
         {
             InstanceOfUser.CreateVisitor();
-            Events.fillEventsData();
+            Events.FillEventsData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
