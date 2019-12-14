@@ -187,7 +187,7 @@ namespace Project_4
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             eventsListView.Items.Clear();
-            Visitor vs = (Visitor)InstanceOfUser.GetUser();
+            User vs =InstanceOfUser.GetUser();
             List<string> list = new List<string>();
             list = vs.SearchForEvent(textBox1.Text);
             var listItem = new ListViewItem();
