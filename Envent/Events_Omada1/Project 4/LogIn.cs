@@ -18,38 +18,21 @@ namespace Project_4
             InitializeComponent();
         }
 
-        private void label_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void EmailLog_Click(object sender, EventArgs e)
+        private void UsernameLog_Click(object sender, EventArgs e)
         {
-            EmailLog.ForeColor = Color.Black;
-            if (EmailLog.Text == "Email" || EmailLog.Text == "Συμπλήρωσε Email")
+            UsernameLog.ForeColor = Color.Black;
+            if (UsernameLog.Text == "Username" || UsernameLog.Text == "Συμπλήρωσε Username")
             {
 
-                EmailLog.Text = "";
-                EmailLog.ForeColor = Color.Black;
+                UsernameLog.Text = "";
+                UsernameLog.ForeColor = Color.Black;
 
             }
-        }
-
-        private void EmailLog_Leave(object sender, EventArgs e)
-        {
-            if (EmailLog.Text == "")
-            {
-                EmailLog.Text = "Email";
-                EmailLog.ForeColor = Color.Gray;
-
-
-            }
-        }
-
-        private void PasswordLog_TextChanged(object sender, EventArgs e)
-        {
 
         }
+
+
 
         private void PasswordLog_Click(object sender, EventArgs e)
         {
@@ -63,6 +46,17 @@ namespace Project_4
             }
         }
 
+        private void UsernameLog_Leave(object sender, EventArgs e)
+        {
+            if (UsernameLog.Text == "")
+            {
+                UsernameLog.Text = "Username";
+                UsernameLog.ForeColor = Color.Gray;
+                UsernameLog.PasswordChar = '\0';
+
+            }
+
+        }
         private void PasswordLog_Leave(object sender, EventArgs e)
         {
             if (PasswordLog.Text == "")
@@ -78,10 +72,10 @@ namespace Project_4
         {
 
             Boolean deiktislathwn = false;
-             if (EmailLog.Text == "" || EmailLog.Text == "Email")
+             if (UsernameLog.Text == "" || UsernameLog.Text == "Username")
              {
-                 EmailLog.ForeColor = Color.Red;
-                 EmailLog.Text = "Συμπλήρωσε Email";
+                 UsernameLog.ForeColor = Color.Red;
+                 UsernameLog.Text = "Συμπλήρωσε Username";
                  deiktislathwn = true;
 
 
@@ -112,12 +106,25 @@ namespace Project_4
             loginfail.Visible = false;
             if (AllCheck() == false)
             {
+
+
                 //kane eisodo
+
+               // User_Classes.UserProfile profile = new User_Classes.UserProfile(UsernameLog.Text);
+
+
+
+
+
+
+
+
+                //apo edw ksekinoun ta palia
 
                 string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
 
                 var con = new MySqlConnection(cs);
-                MySqlDataAdapter sda = new MySqlDataAdapter("Select Count(*) From user where email= '" + EmailLog.Text + "'and " +
+                MySqlDataAdapter sda = new MySqlDataAdapter("Select Count(*) From user where email= '" + UsernameLog.Text + "'and " +
                     "password='" + PasswordLog.Text + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -128,8 +135,8 @@ namespace Project_4
                 else {
                     //minima lathous
                     loginfail.Visible = true;
-                    EmailLog.ForeColor = System.Drawing.Color.Gray;
-                    EmailLog.Text = "Email";
+                    UsernameLog.ForeColor = System.Drawing.Color.Gray;
+                    UsernameLog.Text = "Email";
                     PasswordLog.ForeColor = System.Drawing.Color.Gray;
                     PasswordLog.Text = "Κωδικός";
                 }
@@ -149,16 +156,5 @@ namespace Project_4
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LogInpanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
     }
 }

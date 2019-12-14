@@ -100,6 +100,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1131, 831);
             this.panel2.TabIndex = 13;
+            this.panel2.Visible = false;
             this.panel2.Enter += new System.EventHandler(this.panel2_MouseHover);
             this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover);
             // 
@@ -137,31 +138,37 @@
             // 
             this.confimrpassLabel.AutoSize = true;
             this.confimrpassLabel.ForeColor = System.Drawing.Color.Red;
-            this.confimrpassLabel.Location = new System.Drawing.Point(293, 87);
+            this.confimrpassLabel.Location = new System.Drawing.Point(439, 131);
             this.confimrpassLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.confimrpassLabel.Name = "confimrpassLabel";
-            this.confimrpassLabel.Size = new System.Drawing.Size(0, 22);
+            this.confimrpassLabel.Size = new System.Drawing.Size(205, 22);
             this.confimrpassLabel.TabIndex = 40;
+            this.confimrpassLabel.Text = "Ο κωδικός δεν ταιριάζει.";
+            this.confimrpassLabel.Visible = false;
             // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.ForeColor = System.Drawing.Color.Red;
-            this.emailLabel.Location = new System.Drawing.Point(293, 65);
+            this.emailLabel.Location = new System.Drawing.Point(423, 65);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(0, 22);
+            this.emailLabel.Size = new System.Drawing.Size(221, 22);
             this.emailLabel.TabIndex = 39;
+            this.emailLabel.Text = "To email δεν είναι έγκυρο.";
+            this.emailLabel.Visible = false;
             // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.ForeColor = System.Drawing.Color.Red;
-            this.usernameLabel.Location = new System.Drawing.Point(783, 153);
+            this.usernameLabel.Location = new System.Drawing.Point(339, 87);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(0, 22);
+            this.usernameLabel.Size = new System.Drawing.Size(413, 22);
             this.usernameLabel.TabIndex = 38;
+            this.usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται ήδη.";
+            this.usernameLabel.Visible = false;
             // 
             // passwordLabel
             // 
@@ -169,11 +176,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.ForeColor = System.Drawing.Color.Red;
-            this.passwordLabel.Location = new System.Drawing.Point(252, 107);
+            this.passwordLabel.Location = new System.Drawing.Point(198, 109);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(0, 22);
+            this.passwordLabel.Size = new System.Drawing.Size(722, 22);
             this.passwordLabel.TabIndex = 36;
+            this.passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμε" +
+    "ρο.";
+            this.passwordLabel.Visible = false;
             // 
             // dobPicker
             // 
@@ -286,7 +296,7 @@
             this.address.Location = new System.Drawing.Point(308, 332);
             this.address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(472, 27);
+            this.address.Size = new System.Drawing.Size(532, 27);
             this.address.TabIndex = 11;
             this.address.Text = "Περιοχή";
             this.address.Enter += new System.EventHandler(this.address_MouseClick);
@@ -322,7 +332,7 @@
             this.Email1.Location = new System.Drawing.Point(308, 233);
             this.Email1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Email1.Name = "Email1";
-            this.Email1.Size = new System.Drawing.Size(473, 27);
+            this.Email1.Size = new System.Drawing.Size(532, 27);
             this.Email1.TabIndex = 8;
             this.Email1.Text = "Email";
             this.Email1.Enter += new System.EventHandler(this.Email1_MouseClick);
@@ -334,7 +344,7 @@
             this.username1.Location = new System.Drawing.Point(308, 200);
             this.username1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.username1.Name = "username1";
-            this.username1.Size = new System.Drawing.Size(473, 27);
+            this.username1.Size = new System.Drawing.Size(532, 27);
             this.username1.TabIndex = 7;
             this.username1.Text = "Username";
             this.username1.Enter += new System.EventHandler(this.username1_MouseClick);
@@ -350,11 +360,11 @@
             this.groupBox1.Controls.Add(this.FstivalCB);
             this.groupBox1.Controls.Add(this.MusicCB);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.groupBox1.Location = new System.Drawing.Point(242, 519);
+            this.groupBox1.Location = new System.Drawing.Point(253, 518);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(613, 189);
+            this.groupBox1.Size = new System.Drawing.Size(613, 198);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eνδιαφέρομαι για:";
@@ -363,7 +373,7 @@
             // 
             this.EducationalCB.AutoSize = true;
             this.EducationalCB.ForeColor = System.Drawing.Color.DimGray;
-            this.EducationalCB.Location = new System.Drawing.Point(8, 164);
+            this.EducationalCB.Location = new System.Drawing.Point(8, 157);
             this.EducationalCB.Margin = new System.Windows.Forms.Padding(4);
             this.EducationalCB.Name = "EducationalCB";
             this.EducationalCB.Size = new System.Drawing.Size(226, 26);
@@ -462,11 +472,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.label2.Location = new System.Drawing.Point(304, 447);
+            this.label2.Location = new System.Drawing.Point(304, 437);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 22);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Ημερομηνίά γέννησης";
+            this.label2.Text = "Ημερομηνία γέννησης";
             // 
             // fullolabel
             // 
@@ -500,7 +510,7 @@
             this.Kodikos1.Location = new System.Drawing.Point(308, 265);
             this.Kodikos1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Kodikos1.Name = "Kodikos1";
-            this.Kodikos1.Size = new System.Drawing.Size(472, 27);
+            this.Kodikos1.Size = new System.Drawing.Size(532, 27);
             this.Kodikos1.TabIndex = 9;
             this.Kodikos1.Text = "Κωδικός";
             this.Kodikos1.Enter += new System.EventHandler(this.Kodikos1_MouseClick);
@@ -513,7 +523,7 @@
             this.Kodikos2.Location = new System.Drawing.Point(308, 299);
             this.Kodikos2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Kodikos2.Name = "Kodikos2";
-            this.Kodikos2.Size = new System.Drawing.Size(472, 27);
+            this.Kodikos2.Size = new System.Drawing.Size(532, 27);
             this.Kodikos2.TabIndex = 10;
             this.Kodikos2.Text = "Επαλήθευση Κωδικού";
             this.Kodikos2.Enter += new System.EventHandler(this.Kodikos2_MouseClick);
@@ -523,10 +533,10 @@
             // 
             this.Epitheto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Epitheto.ForeColor = System.Drawing.Color.Gray;
-            this.Epitheto.Location = new System.Drawing.Point(548, 167);
+            this.Epitheto.Location = new System.Drawing.Point(575, 167);
             this.Epitheto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Epitheto.Name = "Epitheto";
-            this.Epitheto.Size = new System.Drawing.Size(233, 27);
+            this.Epitheto.Size = new System.Drawing.Size(265, 27);
             this.Epitheto.TabIndex = 6;
             this.Epitheto.Text = "Επώνυμο";
             this.Epitheto.Enter += new System.EventHandler(this.Epitheto_MouseClick);
@@ -539,7 +549,7 @@
             this.Onoma.Location = new System.Drawing.Point(308, 167);
             this.Onoma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Onoma.Name = "Onoma";
-            this.Onoma.Size = new System.Drawing.Size(233, 27);
+            this.Onoma.Size = new System.Drawing.Size(265, 27);
             this.Onoma.TabIndex = 5;
             this.Onoma.Text = "Όνομα";
             this.Onoma.Enter += new System.EventHandler(this.Onoma_MouseClick);

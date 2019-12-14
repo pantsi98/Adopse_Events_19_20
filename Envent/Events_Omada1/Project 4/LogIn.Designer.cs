@@ -33,7 +33,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Syndesi = new System.Windows.Forms.Button();
             this.PasswordLog = new System.Windows.Forms.TextBox();
-            this.EmailLog = new System.Windows.Forms.TextBox();
+            this.UsernameLog = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LogInpanel.SuspendLayout();
@@ -47,12 +47,11 @@
             this.LogInpanel.Controls.Add(this.linkLabel1);
             this.LogInpanel.Controls.Add(this.Syndesi);
             this.LogInpanel.Controls.Add(this.PasswordLog);
-            this.LogInpanel.Controls.Add(this.EmailLog);
+            this.LogInpanel.Controls.Add(this.UsernameLog);
             this.LogInpanel.Location = new System.Drawing.Point(0, 0);
             this.LogInpanel.Name = "LogInpanel";
             this.LogInpanel.Size = new System.Drawing.Size(1130, 745);
             this.LogInpanel.TabIndex = 0;
-            this.LogInpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LogInpanel_Paint);
             // 
             // loginfail
             // 
@@ -101,20 +100,19 @@
             this.PasswordLog.TabIndex = 1;
             this.PasswordLog.Text = "Κωδικός";
             this.PasswordLog.Click += new System.EventHandler(this.PasswordLog_Click);
-            this.PasswordLog.TextChanged += new System.EventHandler(this.PasswordLog_TextChanged);
             this.PasswordLog.Leave += new System.EventHandler(this.PasswordLog_Leave);
             // 
-            // EmailLog
+            // UsernameLog
             // 
-            this.EmailLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.EmailLog.ForeColor = System.Drawing.Color.Gray;
-            this.EmailLog.Location = new System.Drawing.Point(388, 189);
-            this.EmailLog.Name = "EmailLog";
-            this.EmailLog.Size = new System.Drawing.Size(345, 34);
-            this.EmailLog.TabIndex = 0;
-            this.EmailLog.Text = "Email";
-            this.EmailLog.Click += new System.EventHandler(this.EmailLog_Click);
-            this.EmailLog.Leave += new System.EventHandler(this.EmailLog_Leave);
+            this.UsernameLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.UsernameLog.ForeColor = System.Drawing.Color.Gray;
+            this.UsernameLog.Location = new System.Drawing.Point(388, 189);
+            this.UsernameLog.Name = "UsernameLog";
+            this.UsernameLog.Size = new System.Drawing.Size(345, 34);
+            this.UsernameLog.TabIndex = 0;
+            this.UsernameLog.Text = "Username";
+            this.UsernameLog.Click += new System.EventHandler(this.UsernameLog_Click);
+            this.UsernameLog.Leave += new System.EventHandler(this.UsernameLog_Leave);
             // 
             // label
             // 
@@ -127,7 +125,6 @@
             this.label.Size = new System.Drawing.Size(120, 31);
             this.label.TabIndex = 2;
             this.label.Text = "Είσοδος";
-            this.label.Click += new System.EventHandler(this.label_Click);
             // 
             // panel1
             // 
@@ -158,7 +155,7 @@
 
         private System.Windows.Forms.Panel LogInpanel;
         private System.Windows.Forms.TextBox PasswordLog;
-        private System.Windows.Forms.TextBox EmailLog;
+        private System.Windows.Forms.TextBox UsernameLog;
         private System.Windows.Forms.Button Syndesi;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.LinkLabel linkLabel1;

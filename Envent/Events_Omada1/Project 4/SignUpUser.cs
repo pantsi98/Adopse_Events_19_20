@@ -162,8 +162,7 @@ namespace Project_4
         {
             if (deiktislathwn == true)
             {
-                messagefullo.Visible = true;
-                messagefullo.Text = "ola komple";
+               
 
                  var selectedGendreRadioButton = radioButtonBox.Controls.OfType<RadioButton>()
                                 .FirstOrDefault(n => n.Checked);
