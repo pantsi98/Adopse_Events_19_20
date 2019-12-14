@@ -34,6 +34,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
             this.basketBtn = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.theaterBtn = new System.Windows.Forms.Button();
             this.musicBtn = new System.Windows.Forms.Button();
             this.menuBtn = new System.Windows.Forms.Button();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.homepagePanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
@@ -113,6 +113,15 @@
             this.button7.Text = "SIGNUP";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // MainPanel
+            // 
+            this.MainPanel.Location = new System.Drawing.Point(319, 65);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1190, 763);
+            this.MainPanel.TabIndex = 5;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
             // sideBarPanel
             // 
@@ -328,18 +337,9 @@
             this.menuBtn.UseVisualStyleBackColor = false;
             this.menuBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // MainPanel
-            // 
-            this.MainPanel.Location = new System.Drawing.Point(319, 65);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1190, 673);
-            this.MainPanel.TabIndex = 5;
-            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

@@ -23,7 +23,8 @@ namespace Project_4
         private void SignUpUser_Load(object sender, EventArgs e)
         {
             Register.Enabled = false;
-            maleRadioButton.Checked = true;
+            maleRadioButton.Checked = true; 
+
         }
 
 
@@ -31,7 +32,7 @@ namespace Project_4
         {
 
             Onoma.ForeColor = Color.Black;
-            if (Onoma.Text == "Όνομα" || Onoma.Text == "Συμπλήρωσε Όνομα")
+            if (Onoma.Text == "Όνομα" || Onoma.Text == "Παρακαλω συμπλήρωστε όνομα")
             {
                 Onoma.Text = "";
                 Onoma.ForeColor = Color.Black;
@@ -41,7 +42,7 @@ namespace Project_4
         private void Epitheto_MouseClick(object sender, EventArgs e)
         {
             Epitheto.ForeColor = Color.Black;
-            if (Epitheto.Text == "Επώνυμο" || Epitheto.Text == "Συμπλήρωσε Επίθετο")
+            if (Epitheto.Text == "Επώνυμο" || Epitheto.Text == "Παρακαλώ συμπλήρωστε επώνυμο")
             {
 
                 Epitheto.Text = "";
@@ -53,7 +54,7 @@ namespace Project_4
         private void username1_MouseClick(object sender, EventArgs e)
         {
             username1.ForeColor = Color.Black;
-            if (username1.Text == "Username" || username1.Text == "Συμπλήρωσε Username")
+            if (username1.Text == "Username" || username1.Text == "Παρακαλώ συμπλήρωστε ψευδόνυμο")
             {
 
                 username1.Text = "";
@@ -65,7 +66,7 @@ namespace Project_4
         private void Email1_MouseClick(object sender, EventArgs e)
         {
             Email1.ForeColor = Color.Black;
-            if (Email1.Text == "Email" || Email1.Text == "Συμπλήρωσε Email")
+            if (Email1.Text == "Email" || Email1.Text == "Παρακαλω συμπλήρωστε Email")
             {
 
                 Email1.Text = "";
@@ -76,7 +77,7 @@ namespace Project_4
         private void address_MouseClick(object sender, EventArgs e)
         {
             address.ForeColor = Color.Black;
-            if (address.Text == "Περιοχή" || address.Text == "Συμπλήρωσε Περιοχή")
+            if (address.Text == "Περιοχή" || address.Text == "Παρακαλώ συμπληρώστε διέυθυνση")
             {
 
                 address.Text = "";
@@ -87,7 +88,7 @@ namespace Project_4
         private void Kodikos1_MouseClick(object sender, EventArgs e)
         {
             Kodikos1.ForeColor = Color.Black;
-            if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "Συμπλήρωσε Kωδικό")
+            if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
             {
 
                 Kodikos1.Text = "";
@@ -100,7 +101,7 @@ namespace Project_4
         private void Kodikos2_MouseClick(object sender, EventArgs e)
         {
             Kodikos2.ForeColor = Color.Black;
-            if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "Συμπλήρωσε Κωδικό Επαλήθευσης")
+            if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "Παρακαλώ συμπλήρωστε Κωδικό Επαλήθευσης")
             {
 
                 Kodikos2.Text = "";
@@ -108,183 +109,212 @@ namespace Project_4
                 Kodikos2.PasswordChar = '*';
             }
         }
-
+        Boolean deiktislathwn;
         private Boolean AllCheck()
         {
 
-            Boolean deiktislathwn = false;
-            messagefullo.Visible = false;
-            if (!(nameLabel.Text==""))
+            deiktislathwn = true;
+
+            if (Onoma.Text == "Όνομα" || Onoma.Text == "" || Onoma.Text == "Παρακαλώ συμπληρώστε όνομα")
             {
-                deiktislathwn = true;
-            }else if (!(usernameLabel.Text == ""))
-            {
-                deiktislathwn = true;
-            }else if (!(emailLabel.Text == ""))
-            {
-                deiktislathwn = true;
-            }else if (!(passwordLabel.Text == ""))
-            {
-                deiktislathwn = true;
-            }else if (!(addressLabel.Text == ""))
-            {
-                deiktislathwn = true;
+                deiktislathwn = false;
             }
-            else if (!(confimrpassLabel.Text == ""))
+            else if (Epitheto.Text == "Επώνυμο" || Epitheto.Text == "" || Epitheto.Text == "Παρακαλώ συμπληρώστε επώνυμο")
             {
-                deiktislathwn = true;
+                deiktislathwn = false;
             }
+            else if (Email1.Text == "" || Email1.Text == "" || Email1.Text == "Παρακαλώ συμπληρώστε Εmail")
+            {
+                deiktislathwn = false;
+            }
+            else if (Kodikos1.Text == "" || Kodikos1.Text == "" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
+            {
+                deiktislathwn = false;
+            }
+            else if (address.Text == "Περιοχή" || address.Text == "" || address.Text == "Παρακαλώ συμπληρώστε διέυθυνση")
+            {
+                deiktislathwn = false;
+            }
+            else if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "" || Kodikos2.Text == "Παρακαλώ συμπλήρωσε Κωδικό Επαλήθευσης")
+            {
+                deiktislathwn = false;
+            }
+            else if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
+            {
+                deiktislathwn = false;
+            }
+            else if (checksamepass = false) {
+                deiktislathwn = false;
+            }
+            else if (emailcheck = false)
+            {
+                deiktislathwn = false;
+            }
+            else if (checkpassIsValid=false)
+            {
+                deiktislathwn = false;
+            }
+
             return deiktislathwn;
         }
 
         private void Register_Click(object sender, EventArgs e)
         {
-            var buttons = radioButtonBox.Controls.OfType<RadioButton>()
-                           .FirstOrDefault(n => n.Checked);
-            User_Classes.UserProfile profile = new User_Classes.UserProfile(Onoma.Text,Epitheto.Text,Email1.Text,address.Text,
-                buttons.Text,dobPicker.Value);
-            string userName = username1.Text;
-            string passWord = Kodikos1.Text;
-            try
+            if (deiktislathwn == true)
             {
-                Cursor.Current = Cursors.WaitCursor;
-                User_Classes.Visitor.signUpAsUser(profile, userName, passWord,prefferences);
-                Cursor.Current = Cursors.Default;
-                MessageBox.Show("Η εγγραφή ήταν επιτυχής!");
-                Controls.Clear();
-                LogIn su = new LogIn();
-                Controls.Add(su);
-            }
-            catch(User_Classes.Exceptions.UserNameException msg)
-            {
-                Cursor.Current = Cursors.Default;
-                usernameLabel.Text = msg.ToString();
+                messagefullo.Visible = true;
+                messagefullo.Text = "ola komple";
+
+                 var selectedGendreRadioButton = radioButtonBox.Controls.OfType<RadioButton>()
+                                .FirstOrDefault(n => n.Checked);
+                var genderText = "";
+
+                if (selectedGendreRadioButton == maleRadioButton) {
+                    genderText = "Male";
+                } else
+                {
+                    genderText = "Female";
+                }
+
+                 User_Classes.UserProfile profile = new User_Classes.UserProfile(Onoma.Text, Epitheto.Text, Email1.Text, address.Text,
+                    genderText, dobPicker.Value);
+                 string userName = username1.Text;
+                 string passWord = Kodikos1.Text;
+                 try
+                 {
+                     Cursor.Current = Cursors.WaitCursor;
+                     User_Classes.Visitor.signUpAsUser(profile, userName, passWord, prefferences);
+                     Cursor.Current = Cursors.Default;
+                     MessageBox.Show("Η εγγραφή ήταν επιτυχής!");
+                     Controls.Clear();
+                     LogIn su = new LogIn();
+                     Controls.Add(su);
+                 }
+                 catch (User_Classes.Exceptions.UserNameException msg)
+                 {
+                     Cursor.Current = Cursors.Default;
+                     usernameLabel.Text = msg.ToString();
+                 }
             }
             
+          
         }
+        Boolean checkpassIsValid;
 
-        private void Kodikos1_TextChanged(object sender, EventArgs e)
+        private void Kodikos1_Leave(object sender, EventArgs e)
         {
+            checkpassIsValid=true;
+            passwordLabel.Visible = false;
             if (Kodikos1.TextLength == 0)
             {
-                passwordLabel.Text = "Παρακαλώ συμπληρώστε password";
+                Kodikos1.ForeColor = Color.Red;
+                Kodikos1.Text = "Παρακαλώ συμπληρώστε κωδικό";
+                Kodikos1.PasswordChar = '\0';
             }
             else
             {
                 if (!App_Code.StaticMethods.ValidationCheck.PasswordIsValid(Kodikos1.Text))
                 {
-                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρε , κεφαλαιο γράμμα και νούμερο.";
+                    passwordLabel.Visible = true;
+                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμερο.";
+                    checkpassIsValid = false;
                 }
-                else
-                {
-                    passwordLabel.Text = "";
-                }
+
+
+                confirmpasswords();
+            }
+        }
+        private void Onoma_Leave(object sender, EventArgs e)
+        {
+            if (Onoma.Text == "")
+            {
+                Onoma.ForeColor = Color.Red;
+                Onoma.Text = "Παρακαλω συμπλήρωστε όνομα";
             }
         }
 
-        private void Onoma_TextChanged(object sender, EventArgs e)
+        private void Epitheto_Leave(object sender, EventArgs e)
         {
-            if (Onoma.TextLength == 0)
+            if (Epitheto.Text == "")
             {
-                nameLabel.Text = "Παρακαλώ συμπληρώστε όνομα";
-            }else
-            {
-                nameLabel.Text = "";
+                Epitheto.ForeColor = Color.Red;
+                Epitheto.Text = "Παρακαλώ συμπλήρωστε επώνυμο";
+             
             }
         }
 
-        private void Epitheto_TextChanged(object sender, EventArgs e)
+        private void username1_Leave(object sender, EventArgs e)
         {
-            if (Epitheto.TextLength == 0)
-            {
-                nameLabel.Text = "Παρακαλώ συμπληρώστε όνομα";
-            }
-            else
-            {
-                nameLabel.Text = "";
-            }
-        }
-
-        private void username1_TextChanged(object sender, EventArgs e)
-        {
+            usernameLabel.Visible = false;
             Cursor.Current = Cursors.WaitCursor;
-            if (username1.TextLength == 0)
+            if (username1.Text == "")
             {
-                usernameLabel.Text = "Παρακαλώ συμπληρώστε ψευδόνυμο";
+                username1.ForeColor = Color.Red;
+                username1.Text = "Παρακαλώ συμπλήρωστε ψευδόνυμο";
             }
             else
             {
                 if (App_Code.StaticMethods.ValidationCheck.CheckUserName(username1.Text))
                 {
+                    usernameLabel.Visible = true;
                     usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται ήδη.";
                 }
-                else
-                {
-                    usernameLabel.Text = "";
-                }
-            }
+           }
             Cursor.Current = Cursors.Default;
         }
 
-        private void Email1_TextChanged(object sender, EventArgs e)
+  
+        private void Kodikos2_Leave(object sender, EventArgs e)
         {
-            if (Email1.TextLength == 0)
-            {
-                emailLabel.Text = "Παρακαλώ συμπληρώστε email";
-            }
-            else
-            {
-                if (!App_Code.StaticMethods.ValidationCheck.EmailIsValid(Email1.Text))
-                {
-                    emailLabel.Text = "To email δεν είναι έγκυρο.";
-                }
-                else
-                {
-                    emailLabel.Text = "";
-                }
-            }
-        }
-
-        private void Kodikos2_TextChanged(object sender, EventArgs e)
-        {
+            confimrpassLabel.Visible = false;
             if (Kodikos2.TextLength == 0)
             {
-                confimrpassLabel.Text = "Παρακαλώ συμπληρώστε password";
+                Kodikos2.ForeColor = Color.Red;
+                Kodikos2.Text = "Παρακαλώ συμπλήρωστε Κωδικό Επαλήθευσης";
+                Kodikos2.PasswordChar = '\0';
+
             }
             else
             {
-                if (!App_Code.StaticMethods.ValidationCheck.ConfirmPasswordIsValid(Kodikos1.Text,Kodikos2.Text))
-                {
-                    confimrpassLabel.Text = "Ο κωδικός δεν ταιριάζει.";
-                }
-                else
-                {
-                    confimrpassLabel.Text = "";
-                }
+                confirmpasswords();
+               
             }
         }
+        //methodos pou elegxei ean oi kwdikoi einai idioi, ean den einai thetei tin timi checksamepass = false gia tin checkall()
+        Boolean checksamepass = true;
+        private void confirmpasswords() {
 
-        private void address_TextChanged(object sender, EventArgs e)
+            checksamepass = true;
+            confimrpassLabel.Visible = false;
+
+            if (!App_Code.StaticMethods.ValidationCheck.ConfirmPasswordIsValid(Kodikos1.Text, Kodikos2.Text))
+            {
+                confimrpassLabel.Visible = true;
+                confimrpassLabel.Text = "Ο κωδικός δεν ταιριάζει.";
+                checksamepass = false;
+            }
+
+
+        }
+        private void address_Leave(object sender, EventArgs e)
         {
             if (address.TextLength == 0)
             {
-                addressLabel.Text = "Παρακαλώ συμπληρώστε διέυθυνση";
+                address.ForeColor = Color.Red;
+                address.Text = "Παρακαλώ συμπληρώστε διέυθυνση";
             }
-            else
-            {
-                addressLabel.Text = "";
-            }
+           
         }
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
             if (!AllCheck())
             {
-                Register.Enabled = true;
+                Register.Enabled = false;  
             }
             else
             {
-                Register.Enabled = false;
+                Register.Enabled = true;
             }
         }
 
@@ -322,23 +352,34 @@ namespace Project_4
         {
             prefferences.Add(6);
         }
-
+        Boolean emailcheck;
         private void Email1_Leave(object sender, EventArgs e)
         {
-            if (!(Email1.Text.Length == 0))
+            emailcheck = true;
+            emailLabel.Visible = false;
+          
+               Cursor.Current = Cursors.WaitCursor;
+            if (Email1.Text == "" || Email1.Text == "Email")
             {
-                Cursor.Current = Cursors.WaitCursor;
+                Email1.ForeColor = Color.Red;
+                Email1.Text = "Παρακαλω συμπλήρωστε Email";
+            }
+            else if (!App_Code.StaticMethods.ValidationCheck.EmailIsValid(Email1.Text))
+            {
+                emailLabel.Visible = true;
+                emailLabel.Text = "To email δεν είναι έγκυρο.";
+                emailcheck = false;
+            }
+            else
+            {
                 if (App_Code.StaticMethods.ValidationCheck.CheckEmail(Email1.Text))
                 {
+                    emailLabel.Visible = true;
                     emailLabel.Text = "Υπάρχει ήδη λογαριασμός με αυτό το email.";
+                    emailcheck = false;
                 }
-                else
-                {
-                    emailLabel.Text = "";
-                }
-                Cursor.Current = Cursors.Default;
             }
-            
+            Cursor.Current = Cursors.Default;
         }
     }
 }
