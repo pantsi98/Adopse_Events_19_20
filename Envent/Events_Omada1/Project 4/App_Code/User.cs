@@ -21,7 +21,7 @@ namespace Project_4.User_Classes
 
             var valid = new Regex(@"^.*" + keyWord + ".*$");
             List<string> results = new List<string>();
-            foreach (string i in Events.events)
+            foreach (string i in Events.eventsTitle)
             {
                 if (valid.IsMatch(i))
                 {
