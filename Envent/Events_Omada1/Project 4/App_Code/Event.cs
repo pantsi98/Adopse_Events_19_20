@@ -17,7 +17,6 @@ namespace Project_4.User_Classes
         private int duration;
         private bool status;
 
-
         public Event(int id)
         {
             this.id = id;
@@ -72,5 +71,6 @@ namespace Project_4.User_Classes
         {
             return status;
         }
+
     }
 }

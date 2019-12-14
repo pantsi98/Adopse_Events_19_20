@@ -47,7 +47,6 @@ namespace Project_4.User_Classes
                 {
                     throw new EventException("Το event δεν υπάρχει.");
                 }
-                
             }
             catch (EventException msg)
             {
