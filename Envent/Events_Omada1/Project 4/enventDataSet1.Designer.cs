@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace Project_4 {
     
     
@@ -12273,7 +12275,10 @@ namespace Project_4.enventDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Param1));
             }
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            this.Adapter.Fill(dataTable);
+            try
+            {
+                this.Adapter.Fill(dataTable);
+            }catch(Exception ex) { }
             return dataTable;
         }
         
