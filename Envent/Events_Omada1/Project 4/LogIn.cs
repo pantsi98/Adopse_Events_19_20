@@ -17,27 +17,32 @@ namespace Project_4
         {
             InitializeComponent();
         }
+   
+        private void LogIn_Load_1(object sender, EventArgs e)
+        {
+            Syndesi.Enabled = false;
+            UsernameLog.ForeColor = Color.Black;
+            UsernameLog.Text = "Username";
+            PasswordLog.ForeColor = Color.Black;
+            PasswordLog.Text = "Κωδικός";
 
+        }
 
         private void UsernameLog_Click(object sender, EventArgs e)
         {
             UsernameLog.ForeColor = Color.Black;
-            if (UsernameLog.Text == "Username" || UsernameLog.Text == "Συμπλήρωσε Username")
+            if (UsernameLog.Text == "Username" || UsernameLog.Text == "Συμπληρώστε Username")
             {
 
                 UsernameLog.Text = "";
                 UsernameLog.ForeColor = Color.Black;
 
             }
-
-        }
-
-
-
+ }
         private void PasswordLog_Click(object sender, EventArgs e)
         {
             PasswordLog.ForeColor = Color.Black;
-            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπλήρωσε Kωδικό")
+            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
             {
 
                 PasswordLog.Text = "";
@@ -50,8 +55,8 @@ namespace Project_4
         {
             if (UsernameLog.Text == "")
             {
-                UsernameLog.Text = "Username";
-                UsernameLog.ForeColor = Color.Gray;
+                UsernameLog.Text = "Συμπληρώστε Username";
+                UsernameLog.ForeColor = Color.Red;
                 UsernameLog.PasswordChar = '\0';
 
             }
@@ -59,10 +64,11 @@ namespace Project_4
         }
         private void PasswordLog_Leave(object sender, EventArgs e)
         {
-            if (PasswordLog.Text == "")
+            if (PasswordLog.Text == "" )
             {
-                PasswordLog.Text = "Κωδικός";
-                PasswordLog.ForeColor = Color.Gray;
+
+                PasswordLog.ForeColor = Color.Red;
+                PasswordLog.Text = "Συμπληρώστε Kωδικό";
                 PasswordLog.PasswordChar = '\0';
 
             }
@@ -71,81 +77,69 @@ namespace Project_4
         private Boolean AllCheck()
         {
 
-            Boolean deiktislathwn = false;
-             if (UsernameLog.Text == "" || UsernameLog.Text == "Username")
-             {
-                 UsernameLog.ForeColor = Color.Red;
-                 UsernameLog.Text = "Συμπλήρωσε Username";
-                 deiktislathwn = true;
+            Boolean deiktislathwn = true;
+            if (UsernameLog.Text == "" || UsernameLog.Text == "Username" || UsernameLog.Text == "Συμπληρώστε Username")
+            {
+                deiktislathwn = false;
+            }
+            if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός" || PasswordLog.Text== "Συμπληρώστε Kωδικό")
+            { 
+                deiktislathwn = false;
+            }
 
-
-             }
-             if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός")
-             {
-
-                 PasswordLog.ForeColor = Color.Red;
-                 PasswordLog.Text = "Συμπλήρωσε Kωδικό";
-                 deiktislathwn = true;
-
-
-             }
-
-             return deiktislathwn;
-             
-
-            //login.login('test');
-            //return true;
-            //enventDbDataSetTableAdapters.userTableAdapter login = new enventDbDataSetTableAdapters.userTableAdapter();
-            //login.login('test');
-
+            return deiktislathwn;
         }
 
 
         private void Syndesi_Click(object sender, EventArgs e)
         {
             loginfail.Visible = false;
-            if (AllCheck() == false)
+            if (AllCheck() == true)
             {
 
 
                 //kane eisodo
+                User_Classes.Visitor vis = new User_Classes.Visitor();
+                String username = UsernameLog.Text;
+                String password = PasswordLog.Text;
 
-               // User_Classes.UserProfile profile = new User_Classes.UserProfile(UsernameLog.Text);
-
-
-
-
-
-
-
-
-                //apo edw ksekinoun ta palia
-
-                string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
-
-                var con = new MySqlConnection(cs);
-                MySqlDataAdapter sda = new MySqlDataAdapter("Select Count(*) From user where email= '" + UsernameLog.Text + "'and " +
-                    "password='" + PasswordLog.Text + "'", con);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows[0][0].ToString() == "1")
+                try
                 {
-                    //entoles eisodou
+                    //try gia na dei ean einai normaluser
+                    Cursor.Current = Cursors.WaitCursor;
+                    vis.LogInAsNormalUser(username, password);
+                    Cursor.Current = Cursors.Default;
+                    MessageBox.Show("Έίσοδος στον λογαργιασμό σας!");
+                    Controls.Clear();
                 }
-                else {
-                    //minima lathous
-                    loginfail.Visible = true;
-                    UsernameLog.ForeColor = System.Drawing.Color.Gray;
-                    UsernameLog.Text = "Email";
-                    PasswordLog.ForeColor = System.Drawing.Color.Gray;
-                    PasswordLog.Text = "Κωδικός";
+                catch (User_Classes.Exceptions.FailLogInAsNormaillUser msg)
+                {//ean den einainormaluser ,try ean einai eventmanager
+                    try
+                    {
+                        Cursor.Current = Cursors.WaitCursor;
+                        vis.LogInAsEventManager(username, password);
+                        Cursor.Current = Cursors.Default;
+                        MessageBox.Show("Έίσοδος στον λογαργιασμό σας!");
+                        Controls.Clear();
+                        
+
+
+                    }
+                    catch (User_Classes.Exceptions.FailLoginAsEventManager msg1)
+                    {//ean den einai emfanizei minma lathous 
+                        Cursor.Current = Cursors.Default;
+                        messagelabel.Text = msg1.ToString();
+                        loginfail.Visible = true;
+                        
+                        UsernameLog.ForeColor = System.Drawing.Color.Gray;
+                        UsernameLog.Text = "Username";
+                        PasswordLog.ForeColor = System.Drawing.Color.Gray;
+                        PasswordLog.Text = "Κωδικός";
+                    }
                 }
-
-                con.Close();
-
-
             }
         }
+
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -156,5 +150,28 @@ namespace Project_4
 
         }
 
+        private void LogInpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LogInpanel_MouseHover(object sender, EventArgs e)
+        {
+         
+                if (!AllCheck())
+                {
+                    Syndesi.Enabled = false;
+                }
+                else
+                {
+                    Syndesi.Enabled = true;
+                }
+            }
+
+        private void UsernameLog_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }
+

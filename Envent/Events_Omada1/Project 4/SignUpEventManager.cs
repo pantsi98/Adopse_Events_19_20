@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -7,15 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
 namespace Project_4
 {
-    public partial class SignUpUser : UserControl
+    public partial class SignUpEventManager : UserControl
     {
-        List<int> prefferences = new List<int>();
-        public SignUpUser()
+        public SignUpEventManager()
         {
             InitializeComponent();
         }
@@ -23,7 +22,7 @@ namespace Project_4
         private void SignUpUser_Load(object sender, EventArgs e)
         {
             Register.Enabled = false;
-            maleRadioButton.Checked = true; 
+            maleRadioButton.Checked = true;
 
         }
 
@@ -49,6 +48,21 @@ namespace Project_4
                 Epitheto.ForeColor = Color.Black;
 
             }
+
+        }
+
+        private void IBAN_MouseClick(object sender, MouseEventArgs e)
+        {
+            IBAN.ForeColor = Color.Black;
+            if (IBAN.Text == "IBAN" || IBAN.Text == "Παρακαλώ συμπλήρωστε IBAN")
+            {
+
+                IBAN.Text = "";
+                IBAN.ForeColor = Color.Black;
+
+            }
+
+
 
         }
         private void username1_MouseClick(object sender, EventArgs e)
@@ -143,14 +157,18 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (checksamepass = false) {
+            else if (IBAN.Text == "IBAN" || IBAN.Text=="" || IBAN.Text =="Παρακαλώ συμπλήρωστε IBAN") {
+                deiktislathwn = false;
+            }
+            else if (checksamepass = false)
+            {
                 deiktislathwn = false;
             }
             else if (emailcheck = false)
             {
                 deiktislathwn = false;
             }
-            else if (checkpassIsValid=false)
+            else if (checkpassIsValid = false)
             {
                 deiktislathwn = false;
             }
@@ -162,50 +180,27 @@ namespace Project_4
         {
             if (deiktislathwn == true)
             {
-               
-
-                 var selectedGendreRadioButton = radioButtonBox.Controls.OfType<RadioButton>()
-                                .FirstOrDefault(n => n.Checked);
+                var selectedGendreRadioButton = radioButtonBox.Controls.OfType<RadioButton>()
+                               .FirstOrDefault(n => n.Checked);
                 var genderText = "";
 
-                if (selectedGendreRadioButton == maleRadioButton) {
+                if (selectedGendreRadioButton == maleRadioButton)
+                {
                     genderText = "Male";
-                } else
+                }
+                else
                 {
                     genderText = "Female";
                 }
+                //eggrafi sti vasi
 
-
-                User_Classes.Visitor vis = new User_Classes.Visitor();
-                User_Classes.UserProfile profile = new User_Classes.UserProfile(Onoma.Text, Epitheto.Text, Email1.Text, address.Text,
-                    genderText, dobPicker.Value);
-                 string userName = username1.Text;
-                 string passWord = Kodikos1.Text;
-                 try
-                 {
-                     Cursor.Current = Cursors.WaitCursor;
-                     vis.signUpAsUser(profile, userName, passWord, prefferences);
-                     Cursor.Current = Cursors.Default;
-                     MessageBox.Show("Η εγγραφή ήταν επιτυχής!");
-                     Controls.Clear();
-                     LogIn su = new LogIn();
-                     Controls.Add(su);
-                 }
-                 catch (User_Classes.Exceptions.UserNameException msg)
-                 {
-                     Cursor.Current = Cursors.Default;
-                     usernameLabel.Text = msg.ToString();
-                    
-                 }
-            }
-            
-          
-        }
+                
+            }  }
         Boolean checkpassIsValid;
 
         private void Kodikos1_Leave(object sender, EventArgs e)
         {
-            checkpassIsValid=true;
+            checkpassIsValid = true;
             passwordLabel.Visible = false;
             if (Kodikos1.TextLength == 0)
             {
@@ -223,7 +218,7 @@ namespace Project_4
                 }
 
 
-                
+
             }
         }
         private void Onoma_Leave(object sender, EventArgs e)
@@ -241,7 +236,7 @@ namespace Project_4
             {
                 Epitheto.ForeColor = Color.Red;
                 Epitheto.Text = "Παρακαλώ συμπλήρωστε επώνυμο";
-             
+
             }
         }
 
@@ -261,11 +256,11 @@ namespace Project_4
                     usernameLabel.Visible = true;
                     usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται ήδη.";
                 }
-           }
+            }
             Cursor.Current = Cursors.Default;
         }
 
-  
+
         private void Kodikos2_Leave(object sender, EventArgs e)
         {
             confimrpassLabel.Visible = false;
@@ -279,12 +274,13 @@ namespace Project_4
             else
             {
                 confirmpasswords();
-               
+
             }
         }
         //methodos pou elegxei ean oi kwdikoi einai idioi, ean den einai thetei tin timi checksamepass = false gia tin checkall()
         Boolean checksamepass = true;
-        private void confirmpasswords() {
+        private void confirmpasswords()
+        {
 
             checksamepass = true;
             confimrpassLabel.Visible = false;
@@ -305,14 +301,14 @@ namespace Project_4
                 address.ForeColor = Color.Red;
                 address.Text = "Παρακαλώ συμπληρώστε διέυθυνση";
             }
-           
+
         }
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
             if (!AllCheck())
             {
-                Register.Enabled = false;  
+                Register.Enabled = false;
             }
             else
             {
@@ -320,47 +316,23 @@ namespace Project_4
             }
         }
 
-        private void TheaterCB_CheckedChanged(object sender, EventArgs e)
+
+        private void IBAN_Leave(object sender, EventArgs e)
         {
-            prefferences.Add(2);
+            if (IBAN.Text == "")
+            {
+                IBAN.ForeColor = Color.Red;
+                IBAN.Text = "Παρακαλώ συμπληρώστε IBAN";
+            }
         }
 
-        private void MusicCB_CheckedChanged(object sender, EventArgs e)
-        {
-            prefferences.Add(1);
-        }
-
-        private void ConferenceCB_CheckedChanged(object sender, EventArgs e)
-        {
-            prefferences.Add(3);
-        }
-
-        private void SportsCB_CheckedChanged(object sender, EventArgs e)
-        {
-            prefferences.Add(5);
-        }
-
-        private void FstivalCB_CheckedChanged(object sender, EventArgs e)
-        {
-            prefferences.Add(4);
-        }
-
-        private void CinemaCB_CheckedChanged(object sender, EventArgs e)
-        {
-            prefferences.Add(10);
-        }
-
-        private void EducationalCB_CheckedChanged(object sender, EventArgs e)
-        {
-            prefferences.Add(6);
-        }
         Boolean emailcheck;
         private void Email1_Leave(object sender, EventArgs e)
         {
             emailcheck = true;
             emailLabel.Visible = false;
-          
-               Cursor.Current = Cursors.WaitCursor;
+
+            Cursor.Current = Cursors.WaitCursor;
             if (Email1.Text == "" || Email1.Text == "Email")
             {
                 Email1.ForeColor = Color.Red;
@@ -383,5 +355,7 @@ namespace Project_4
             }
             Cursor.Current = Cursors.Default;
         }
-    }
+
+       }
 }
+

@@ -21,8 +21,8 @@ namespace Project_4.User_Classes
                 if (prefferences.Count > 0)//Ελεγχος αν ο χρήστης συμπλήρωσε προτημίσης
                 {
                     enventDataSetTableAdapters.preffered_categoriesTableAdapter prefference = new enventDataSetTableAdapters.preffered_categoriesTableAdapter();
-                    int id = Convert.ToInt32(singUp.getID(userName));//Παίρνει το id που μόλις δημιουργήθηκε
-                    foreach(int i in prefferences) // Σάρωση της λίστας με τα ενδιαφεροντα που συμπληρωσε ο χρήστης
+                    int id = Convert.ToInt32(singUp.getID(userName).ToList().ElementAt(0).id);//Παίρνει το id που μόλις δημιουργήθηκε
+                    foreach (int i in prefferences) // Σάρωση της λίστας με τα ενδιαφεροντα που συμπληρωσε ο χρήστης
                     {
                         prefference.insertPrefference(id, i);//Εγγραφη στη βαση
                     }
@@ -33,6 +33,7 @@ namespace Project_4.User_Classes
                 throw new Exceptions.UserNameException("User name is already in use"); //Σε περίπτωση που το username χρησιμοποιήτε ήδη
             }
         }
+
 
         //Μεθοδος που ελεγχεί αν υπαρχει ο χρήστης στη βάση (Για αποφυγεί σφαλμάτων στη βαση κατα την διαδικασία του login ή οποιαδηποτε αλλη συμπεριλαμβανη τον χρήστη)
         public bool checkUserName(string userName)

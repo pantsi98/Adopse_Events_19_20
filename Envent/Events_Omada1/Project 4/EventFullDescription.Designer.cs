@@ -34,12 +34,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.topothesia = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Title = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.IconEvent = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.perigrafi = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.categorylabel = new System.Windows.Forms.Label();
+            this.durationlabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.perigrafilabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tilefonoofPlace = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -54,6 +58,7 @@
             this.meiomenoTimi = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconEvent)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,7 +76,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.topothesia);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.Title);
+            this.panel1.Controls.Add(this.titleLabel);
             this.panel1.Location = new System.Drawing.Point(18, 318);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1172, 100);
@@ -134,15 +139,15 @@
             this.label1.Text = "    ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Title
+            // titleLabel
             // 
-            this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.Title.Location = new System.Drawing.Point(20, 31);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(70, 32);
-            this.Title.TabIndex = 0;
-            this.Title.Text = "Title";
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.titleLabel.Location = new System.Drawing.Point(20, 31);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(70, 32);
+            this.titleLabel.TabIndex = 0;
+            this.titleLabel.Text = "Title";
             // 
             // IconEvent
             // 
@@ -170,33 +175,77 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tabControl1.Location = new System.Drawing.Point(18, 455);
+            this.tabControl1.Location = new System.Drawing.Point(18, 481);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1172, 319);
+            this.tabControl1.Size = new System.Drawing.Size(1172, 339);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.perigrafi);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.categorylabel);
+            this.tabPage1.Controls.Add(this.durationlabel);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.perigrafilabel);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1164, 286);
+            this.tabPage1.Size = new System.Drawing.Size(1164, 306);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Περιγραφή";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // perigrafi
+            // label12
             // 
-            this.perigrafi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label12.Location = new System.Drawing.Point(6, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 20);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Κατηγορία:";
+            // 
+            // categorylabel
+            // 
+            this.categorylabel.AutoSize = true;
+            this.categorylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.categorylabel.Location = new System.Drawing.Point(111, 21);
+            this.categorylabel.Name = "categorylabel";
+            this.categorylabel.Size = new System.Drawing.Size(34, 20);
+            this.categorylabel.TabIndex = 6;
+            this.categorylabel.Text = "κατ";
+            // 
+            // durationlabel
+            // 
+            this.durationlabel.AutoSize = true;
+            this.durationlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.durationlabel.Location = new System.Drawing.Point(111, 41);
+            this.durationlabel.Name = "durationlabel";
+            this.durationlabel.Size = new System.Drawing.Size(40, 20);
+            this.durationlabel.TabIndex = 5;
+            this.durationlabel.Text = "διαρ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label5.Location = new System.Drawing.Point(6, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Διάρκεια:";
+            // 
+            // perigrafilabel
+            // 
+            this.perigrafilabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.perigrafi.Location = new System.Drawing.Point(22, 17);
-            this.perigrafi.Name = "perigrafi";
-            this.perigrafi.Size = new System.Drawing.Size(1112, 238);
-            this.perigrafi.TabIndex = 3;
-            this.perigrafi.Text = "περιγραφη";
+            this.perigrafilabel.Location = new System.Drawing.Point(18, 84);
+            this.perigrafilabel.Name = "perigrafilabel";
+            this.perigrafilabel.Size = new System.Drawing.Size(1112, 196);
+            this.perigrafilabel.TabIndex = 3;
+            this.perigrafilabel.Text = "περιγραφη";
             // 
             // tabPage2
             // 
@@ -209,7 +258,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1164, 286);
+            this.tabPage2.Size = new System.Drawing.Size(1164, 306);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Τοποθεσία";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -271,7 +320,7 @@
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1164, 286);
+            this.tabPage3.Size = new System.Drawing.Size(1164, 306);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Τιμές Εισητηρίων";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -339,16 +388,25 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Κανονικό:";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(502, 443);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.TabIndex = 4;
+            // 
             // EventFullDescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "EventFullDescription";
-            this.Size = new System.Drawing.Size(1215, 774);
+            this.Size = new System.Drawing.Size(1215, 922);
             this.Load += new System.EventHandler(this.EventFullDescription_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -356,11 +414,13 @@
             this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -368,7 +428,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox IconEvent;
-        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label imerominia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label topothesia;
@@ -377,7 +437,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label perigrafi;
+        private System.Windows.Forms.Label perigrafilabel;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label tilefonoofPlace;
         private System.Windows.Forms.Label label11;
@@ -392,5 +452,10 @@
         private System.Windows.Forms.Label meiomenoTimi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label durationlabel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label categorylabel;
+        private System.Windows.Forms.Label label10;
     }
 }

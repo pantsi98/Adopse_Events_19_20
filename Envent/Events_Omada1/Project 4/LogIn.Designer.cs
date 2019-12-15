@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.LogInpanel = new System.Windows.Forms.Panel();
+            this.msglabel = new System.Windows.Forms.Label();
+            this.messagelabel = new System.Windows.Forms.Label();
             this.loginfail = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Syndesi = new System.Windows.Forms.Button();
@@ -43,6 +45,8 @@
             // LogInpanel
             // 
             this.LogInpanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LogInpanel.Controls.Add(this.msglabel);
+            this.LogInpanel.Controls.Add(this.messagelabel);
             this.LogInpanel.Controls.Add(this.loginfail);
             this.LogInpanel.Controls.Add(this.linkLabel1);
             this.LogInpanel.Controls.Add(this.Syndesi);
@@ -52,6 +56,24 @@
             this.LogInpanel.Name = "LogInpanel";
             this.LogInpanel.Size = new System.Drawing.Size(1130, 745);
             this.LogInpanel.TabIndex = 0;
+            this.LogInpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LogInpanel_Paint);
+            this.LogInpanel.MouseHover += new System.EventHandler(this.LogInpanel_MouseHover);
+            // 
+            // msglabel
+            // 
+            this.msglabel.AutoSize = true;
+            this.msglabel.Location = new System.Drawing.Point(540, 104);
+            this.msglabel.Name = "msglabel";
+            this.msglabel.Size = new System.Drawing.Size(0, 17);
+            this.msglabel.TabIndex = 7;
+            // 
+            // messagelabel
+            // 
+            this.messagelabel.AutoSize = true;
+            this.messagelabel.Location = new System.Drawing.Point(255, 647);
+            this.messagelabel.Name = "messagelabel";
+            this.messagelabel.Size = new System.Drawing.Size(0, 17);
+            this.messagelabel.TabIndex = 6;
             // 
             // loginfail
             // 
@@ -112,6 +134,7 @@
             this.UsernameLog.TabIndex = 0;
             this.UsernameLog.Text = "Username";
             this.UsernameLog.Click += new System.EventHandler(this.UsernameLog_Click);
+            this.UsernameLog.TextChanged += new System.EventHandler(this.UsernameLog_TextChanged);
             this.UsernameLog.Leave += new System.EventHandler(this.UsernameLog_Leave);
             // 
             // label
@@ -143,6 +166,7 @@
             this.Controls.Add(this.LogInpanel);
             this.Name = "LogIn";
             this.Size = new System.Drawing.Size(1130, 745);
+            this.Load += new System.EventHandler(this.LogIn_Load_1);
             this.LogInpanel.ResumeLayout(false);
             this.LogInpanel.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -161,5 +185,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label loginfail;
+        private System.Windows.Forms.Label messagelabel;
+        private System.Windows.Forms.Label msglabel;
     }
 }

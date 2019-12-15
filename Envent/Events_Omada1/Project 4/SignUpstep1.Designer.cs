@@ -50,13 +50,16 @@
             // 
             // UserButon
             // 
+            this.UserButon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UserButon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.UserButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UserButon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.UserButon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UserButon.Location = new System.Drawing.Point(473, 263);
+            this.UserButon.Location = new System.Drawing.Point(449, 171);
             this.UserButon.Name = "UserButon";
-            this.UserButon.Size = new System.Drawing.Size(226, 80);
+            this.UserButon.Size = new System.Drawing.Size(236, 82);
             this.UserButon.TabIndex = 2;
             this.UserButon.Text = "Χρήστης";
             this.UserButon.UseVisualStyleBackColor = false;
@@ -64,13 +67,16 @@
             // 
             // EventManagerButton
             // 
+            this.EventManagerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EventManagerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.EventManagerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EventManagerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.EventManagerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EventManagerButton.Location = new System.Drawing.Point(473, 427);
+            this.EventManagerButton.Location = new System.Drawing.Point(449, 307);
             this.EventManagerButton.Name = "EventManagerButton";
-            this.EventManagerButton.Size = new System.Drawing.Size(226, 80);
+            this.EventManagerButton.Size = new System.Drawing.Size(237, 82);
             this.EventManagerButton.TabIndex = 3;
             this.EventManagerButton.Text = "Event Manager";
             this.EventManagerButton.UseVisualStyleBackColor = false;
@@ -84,7 +90,7 @@
             this.panelRegister.Controls.Add(this.EventManagerButton);
             this.panelRegister.Location = new System.Drawing.Point(0, 0);
             this.panelRegister.Name = "panelRegister";
-            this.panelRegister.Size = new System.Drawing.Size(1130, 745);
+            this.panelRegister.Size = new System.Drawing.Size(1131, 831);
             this.panelRegister.TabIndex = 4;
             this.panelRegister.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRegister_Paint);
             // 
@@ -95,17 +101,17 @@
             this.panel1.ForeColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1130, 63);
+            this.panel1.Size = new System.Drawing.Size(1190, 63);
             this.panel1.TabIndex = 30;
             // 
             // SignUpstep1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panelRegister);
             this.Name = "SignUpstep1";
-            this.Size = new System.Drawing.Size(1130, 745);
+            this.Size = new System.Drawing.Size(1131, 831);
             this.panelRegister.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

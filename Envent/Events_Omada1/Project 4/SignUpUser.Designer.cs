@@ -100,7 +100,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1131, 831);
             this.panel2.TabIndex = 13;
-            this.panel2.Visible = false;
             this.panel2.Enter += new System.EventHandler(this.panel2_MouseHover);
             this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover);
             // 
@@ -494,7 +493,7 @@
             this.Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.Register.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Register.Location = new System.Drawing.Point(412, 739);
+            this.Register.Location = new System.Drawing.Point(443, 746);
             this.Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Register.Name = "Register";
             this.Register.Size = new System.Drawing.Size(189, 50);
