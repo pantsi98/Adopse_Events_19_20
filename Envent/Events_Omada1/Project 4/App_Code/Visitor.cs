@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
+using Project_4.User_Classes.Exceptions;
 //author Τζέιμς Μπαλάση
 namespace Project_4.User_Classes
 {
@@ -52,16 +53,31 @@ namespace Project_4.User_Classes
         //Μέθοδος για το LogIn
         public User LogInAsNormalUser(string userName,string passWord)
         {
-            InstanceOfUser.CreateCustomerUser(userName,passWord); //Δημιουργία global χρήστη τύπου normla στην στατική κλάση.
-            return InstanceOfUser.GetUser(); // Επιστροφή
-        }
+
+                enventDataSetTableAdapters.userTableAdapter tr = new enventDataSetTableAdapters.userTableAdapter();
+                if (Convert.ToInt32(tr.tryLogInAsUser(userName))>0)
+                {
+                    InstanceOfUser.CreateCustomerUser(userName, passWord); //Δημιουργία global χρήστη τύπου normla στην στατική κλάση.
+                    return InstanceOfUser.GetUser(); // Επιστροφή
+                }
+                else{
+                    throw new FailLogInAsNormaillUser("O Χρήστης δεν υπάρχει");
+                }
+            }
 
         //Μέθοδος για το LogIn
         public User LogInAsEventManager(string userName, string passWord)
         {
-            InstanceOfUser.CreateEventManager(userName,passWord);//Δημιουργία global χρήστη τύπου Event Manager στην στατική κλάση.
-            return InstanceOfUser.GetUser();
-        }
+            enventDataSetTableAdapters.adminTableAdapter tr = new enventDataSetTableAdapters.adminTableAdapter();
+                if (Convert.ToInt32(tr.tryLogInManager(userName)) > 0)
+                {
+                    InstanceOfUser.CreateEventManager(userName, passWord);//Δημιουργία global χρήστη τύπου Event Manager στην στατική κλάση.
+                    return InstanceOfUser.GetUser();
+
+                } else {
+                    throw new FailLoginAsEventManager("O manager δεν υπάρχει");
+                }
+            }
 
         //Πρέπει να συμπληρωθεί
         public override void ShowEvents()
