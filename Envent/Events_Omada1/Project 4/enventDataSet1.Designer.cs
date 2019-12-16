@@ -6818,7 +6818,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[8];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[9];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, fname, lname, username, password, iban, email, address, dob, gender FR" +
@@ -6838,8 +6838,20 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "UPDATE `admin` SET  `address` = @p6  WHERE (`id` = @p11) ";
+            this._commandCollection[2].CommandText = "SELECT * FROM `admin` WHERE  `username`=?";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@Param1";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 255;
+            param.IsNullable = true;
+            param.SourceColumn = "username";
+            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE `admin` SET  `address` = @p6  WHERE (`id` = @p11) ";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p6";
             param.DbType = global::System.Data.DbType.String;
@@ -6847,29 +6859,9 @@ namespace Project_4.enventDataSetTableAdapters {
             param.Size = 255;
             param.IsNullable = true;
             param.SourceColumn = "address";
-            this._commandCollection[2].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p11";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
-            param.IsNullable = true;
-            param.SourceColumn = "id";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._commandCollection[2].Parameters.Add(param);
-            this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
-            this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "UPDATE  `admin` SET `email` = @p1 WHERE (`id` = @p2)";
-            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p1";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
-            param.Size = 255;
-            param.IsNullable = true;
-            param.SourceColumn = "email";
             this._commandCollection[3].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p2";
+            param.ParameterName = "@p11";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
@@ -6878,7 +6870,7 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[3].Parameters.Add(param);
             this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "UPDATE `admin` SET `fname` = @p1 WHERE (`id` = @p2)";
+            this._commandCollection[4].CommandText = "UPDATE  `admin` SET `email` = @p1 WHERE (`id` = @p2)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -6886,7 +6878,7 @@ namespace Project_4.enventDataSetTableAdapters {
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 255;
             param.IsNullable = true;
-            param.SourceColumn = "fname";
+            param.SourceColumn = "email";
             this._commandCollection[4].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p2";
@@ -6898,18 +6890,18 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[4].Parameters.Add(param);
             this._commandCollection[5] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "UPDATE `admin` SET  `lname` = @p2  WHERE (`id` = @p11) \r\n";
+            this._commandCollection[5].CommandText = "UPDATE `admin` SET `fname` = @p1 WHERE (`id` = @p2)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p2";
+            param.ParameterName = "@p1";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 255;
             param.IsNullable = true;
-            param.SourceColumn = "lname";
+            param.SourceColumn = "fname";
             this._commandCollection[5].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p11";
+            param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
@@ -6918,15 +6910,15 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[5].Parameters.Add(param);
             this._commandCollection[6] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = "UPDATE `admin` SET  `password` = @p4 WHERE (`id` = @p11)\r\n";
+            this._commandCollection[6].CommandText = "UPDATE `admin` SET  `lname` = @p2  WHERE (`id` = @p11) \r\n";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p4";
+            param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 255;
             param.IsNullable = true;
-            param.SourceColumn = "password";
+            param.SourceColumn = "lname";
             this._commandCollection[6].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p11";
@@ -6938,15 +6930,15 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[6].Parameters.Add(param);
             this._commandCollection[7] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "UPDATE `admin` SET  `username` = @p3  WHERE (`id` = @p11)";
+            this._commandCollection[7].CommandText = "UPDATE `admin` SET  `password` = @p4 WHERE (`id` = @p11)\r\n";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p3";
+            param.ParameterName = "@p4";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 255;
             param.IsNullable = true;
-            param.SourceColumn = "username";
+            param.SourceColumn = "password";
             this._commandCollection[7].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p11";
@@ -6956,6 +6948,26 @@ namespace Project_4.enventDataSetTableAdapters {
             param.SourceColumn = "id";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[7].Parameters.Add(param);
+            this._commandCollection[8] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[8].Connection = this.Connection;
+            this._commandCollection[8].CommandText = "UPDATE `admin` SET  `username` = @p3  WHERE (`id` = @p11)";
+            this._commandCollection[8].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p3";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 255;
+            param.IsNullable = true;
+            param.SourceColumn = "username";
+            this._commandCollection[8].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p11";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "id";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[8].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7338,9 +7350,43 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> tryLogInManager(string Param1) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
+            if ((Param1 == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Param1));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<int>();
+            }
+            else {
+                return new global::System.Nullable<int>(((int)(returnValue)));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateAddress(string p6, int p11) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[3];
             if ((p6 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -7370,36 +7416,6 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateEmail(string p1, int p2) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[3];
-            if ((p1 == null)) {
-                command.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[0].Value = ((string)(p1));
-            }
-            command.Parameters[1].Value = ((int)(p2));
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int updateFirstName(string p1, int p2) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
             if ((p1 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
@@ -7429,8 +7445,38 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int updateLastName(string p2, int p11) {
+        public virtual int updateFirstName(string p1, int p2) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[5];
+            if ((p1 == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(p1));
+            }
+            command.Parameters[1].Value = ((int)(p2));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int updateLastName(string p2, int p11) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[6];
             if ((p2 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -7460,7 +7506,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updatePassword(string p4, int p11) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[6];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[7];
             if ((p4 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -7490,7 +7536,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateUserName(string p3, int p11) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[7];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[8];
             if ((p3 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -12276,9 +12322,11 @@ namespace Project_4.enventDataSetTableAdapters {
             }
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
             try
+
             {
                 this.Adapter.Fill(dataTable);
             }catch(Exception ex) { }
+
             return dataTable;
         }
         
@@ -12290,7 +12338,14 @@ namespace Project_4.enventDataSetTableAdapters {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Param1));
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            this.Adapter.Fill(dataTable);
+            try
+            {
+                this.Adapter.Fill(dataTable);
+
+            }catch(Exception ex)
+            {
+
+            }
             return dataTable;
         }
         
