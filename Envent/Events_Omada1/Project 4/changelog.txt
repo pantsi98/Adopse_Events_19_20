@@ -13,7 +13,7 @@ Added Queries methods
 	1- addVenue . Δέχεται 3 παραμέτρους . Με την σείρά `name`,`location`,`capacity`.
 Στο τραπέζι user:
 	1- tryLogInAsUser . Επιβεβαιώνει αν υπάρχει όντως ο χρήστης που προσπαθεί να κάνει login επιστρέφοντας Scalar αποτέλεσμα.
-		Δέχεται 2 παραμέτρους . Με την σείρά `username`,`password`.
+		ΔέχεταιC:\Users\stella\Source\Repos\Adopse_Events_19_2017\Envent\Events_Omada1\Project 4\changelog.txt 2 παραμέτρους . Με την σείρά `username`,`password`.
 	2- logInAsUser .Επιστρέφη όλα τα πεδία σε πίνακα . Δέχεται 2 παραμέτρους . Με την σείρά `username`,`password`.
 	3- registerAsUser . Δέχεται 8 παραμέτρους . Με την σείρά `fname`,`lname`,`username`,`password`,`email`,`address`,`gender`,`dob`.
 Στο τραπέζι userInterests:

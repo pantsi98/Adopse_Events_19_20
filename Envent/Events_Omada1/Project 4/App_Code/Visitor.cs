@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
+using Project_4.User_Classes.Exceptions;
 //author Τζέιμς Μπαλάση
 namespace Project_4.User_Classes
 {
@@ -22,7 +23,9 @@ namespace Project_4.User_Classes
                 {
                     enventDataSetTableAdapters.preffered_categoriesTableAdapter prefference = new enventDataSetTableAdapters.preffered_categoriesTableAdapter();
                     int id = Convert.ToInt32(singUp.getID(userName).ToList().ElementAt(0).id);//Παίρνει το id που μόλις δημιουργήθηκε
+
                     foreach(int i in prefferences) // Σάρωση της λίστας με τα ενδιαφεροντα που συμπληρωσε ο χρήστης
+
                     {
                         prefference.insertPrefference(id, i);//Εγγραφη στη βαση
                     }
@@ -33,6 +36,7 @@ namespace Project_4.User_Classes
                 throw new Exceptions.UserNameException("User name is already in use"); //Σε περίπτωση που το username χρησιμοποιήτε ήδη
             }
         }
+
 
         //Μεθοδος που ελεγχεί αν υπαρχει ο χρήστης στη βάση (Για αποφυγεί σφαλμάτων στη βαση κατα την διαδικασία του login ή οποιαδηποτε αλλη συμπεριλαμβανη τον χρήστη)
         public bool checkUserName(string userName)
@@ -51,16 +55,31 @@ namespace Project_4.User_Classes
         //Μέθοδος για το LogIn
         public User LogInAsNormalUser(string userName,string passWord)
         {
-            InstanceOfUser.CreateCustomerUser(userName,passWord); //Δημιουργία global χρήστη τύπου normla στην στατική κλάση.
-            return InstanceOfUser.GetUser(); // Επιστροφή
-        }
+
+                enventDataSetTableAdapters.userTableAdapter tr = new enventDataSetTableAdapters.userTableAdapter();
+                if (Convert.ToInt32(tr.tryLogInAsUser(userName))>0)
+                {
+                    InstanceOfUser.CreateCustomerUser(userName, passWord); //Δημιουργία global χρήστη τύπου normla στην στατική κλάση.
+                    return InstanceOfUser.GetUser(); // Επιστροφή
+                }
+                else{
+                    throw new FailLogInAsNormaillUser("O Χρήστης δεν υπάρχει");
+                }
+            }
 
         //Μέθοδος για το LogIn
         public User LogInAsEventManager(string userName, string passWord)
         {
-            InstanceOfUser.CreateEventManager(userName,passWord);//Δημιουργία global χρήστη τύπου Event Manager στην στατική κλάση.
-            return InstanceOfUser.GetUser();
-        }
+            enventDataSetTableAdapters.adminTableAdapter tr = new enventDataSetTableAdapters.adminTableAdapter();
+                if (Convert.ToInt32(tr.tryLogInManager(userName)) > 0)
+                {
+                    InstanceOfUser.CreateEventManager(userName, passWord);//Δημιουργία global χρήστη τύπου Event Manager στην στατική κλάση.
+                    return InstanceOfUser.GetUser();
+
+                } else {
+                    throw new FailLoginAsEventManager("O manager δεν υπάρχει");
+                }
+            }
 
         //Πρέπει να συμπληρωθεί
         public override void ShowEvents()
