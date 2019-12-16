@@ -21,9 +21,9 @@ namespace Project_4
         private void LogIn_Load_1(object sender, EventArgs e)
         {
             Syndesi.Enabled = false;
-            UsernameLog.ForeColor = Color.Black;
+           
             UsernameLog.Text = "Username";
-            PasswordLog.ForeColor = Color.Black;
+           
             PasswordLog.Text = "Κωδικός";
 
         }
@@ -112,7 +112,7 @@ namespace Project_4
                     MessageBox.Show("Έίσοδος στον λογαργιασμό σας!");
                     Controls.Clear();
                 }
-                catch (User_Classes.Exceptions.FailLogInAsNormaillUser msg)
+                catch (User_Classes.Exceptions.FailLogInAsNormalUser msg)
                 {//ean den einainormaluser ,try ean einai eventmanager
                     try
                     {

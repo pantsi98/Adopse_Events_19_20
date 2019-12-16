@@ -63,7 +63,7 @@ namespace Project_4.User_Classes
                     return InstanceOfUser.GetUser(); // Επιστροφή
                 }
                 else{
-                    throw new FailLogInAsNormaillUser("O Χρήστης δεν υπάρχει");
+                    throw new Exceptions.FailLogInAsNormalUser("O Χρήστης δεν υπάρχει");
                 }
             }
 
