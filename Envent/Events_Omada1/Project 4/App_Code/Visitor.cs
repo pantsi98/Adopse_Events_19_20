@@ -23,7 +23,9 @@ namespace Project_4.User_Classes
                 {
                     enventDataSetTableAdapters.preffered_categoriesTableAdapter prefference = new enventDataSetTableAdapters.preffered_categoriesTableAdapter();
                     int id = Convert.ToInt32(singUp.getID(userName).ToList().ElementAt(0).id);//Παίρνει το id που μόλις δημιουργήθηκε
-                    foreach (int i in prefferences) // Σάρωση της λίστας με τα ενδιαφεροντα που συμπληρωσε ο χρήστης
+
+                    foreach(int i in prefferences) // Σάρωση της λίστας με τα ενδιαφεροντα που συμπληρωσε ο χρήστης
+
                     {
                         prefference.insertPrefference(id, i);//Εγγραφη στη βαση
                     }
