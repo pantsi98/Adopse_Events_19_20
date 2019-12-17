@@ -104,10 +104,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="App_Code\Exceptions\EventException.cs" />
-
-
+    <Compile Include="App_Code\Exceptions\ExcepetionNull.cs" />
+    <Compile Include="App_Code\Exceptions\FailLoginAsEventManager.cs" />
+    <Compile Include="App_Code\Exceptions\FailLogInAsNormaillUser.cs" />
     <Compile Include="App_Code\Exceptions\VenueException.cs" />
-
     <Compile Include="App_Code\NormalUser.cs" />
     <Compile Include="App_Code\Play.cs" />
     <Compile Include="App_Code\Reservation.cs" />
