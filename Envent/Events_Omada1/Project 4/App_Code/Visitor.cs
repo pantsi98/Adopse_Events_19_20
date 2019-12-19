@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
 using Project_4.User_Classes.Exceptions;
+using System.Windows.Controls;
 //author Τζέιμς Μπαλάση
 namespace Project_4.User_Classes
 {
@@ -30,6 +31,19 @@ namespace Project_4.User_Classes
                         prefference.insertPrefference(id, i);//Εγγραφη στη βαση
                     }
                 }
+            }
+            else
+            {
+                throw new Exceptions.UserNameException("User name is already in use"); //Σε περίπτωση που το username χρησιμοποιήτε ήδη
+            }
+        }
+
+        public void SingUpAsEventManager(ManagerProfile profile, string userName, string passWord)
+        {//fname`, `lname`, `username`, `password`, `iban`, `email`, `address`, `dob`, `gender`
+            enventDataSetTableAdapters.adminTableAdapter singUp = new enventDataSetTableAdapters.adminTableAdapter();
+            if (checkUserName(userName))//Έλεγχος αν υπάρχει το username ήδη .
+            {
+                singUp.SignUp(profile.GetFirstName(), profile.GetLastName(), userName, passWord,profile.GetIban(), profile.GetEmail(), profile.GetAddress(),  profile.GetDob (), profile.GetGender());//Η εγγραφη στη βαση
             }
             else
             {
@@ -82,15 +96,16 @@ namespace Project_4.User_Classes
             }
 
         //Πρέπει να συμπληρωθεί
-        public override void ShowEvents()
+        public override void ShowEventDeails(int id)
         {
             throw new NotImplementedException();
         }
 
-        //Πρέπει να συμπληρωθεί
-        public override void ShowEventDeails(int id)
+        public override List<Event> ShowEvents()
         {
-            throw new NotImplementedException();
+            List<Event> events = new List<Event>();
+            events = Events.events;
+            return events;
         }
     }
 }

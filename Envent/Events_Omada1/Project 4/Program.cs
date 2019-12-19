@@ -19,6 +19,7 @@ namespace Project_4
         {
             InstanceOfUser.CreateVisitor();
             Events.FillEventsData();
+            Categories.FillCategoryData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

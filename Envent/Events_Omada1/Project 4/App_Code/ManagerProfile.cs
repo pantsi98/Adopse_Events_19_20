@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_4.User_Classes
 {
-    class ManagerProfile : Profile
+    public class ManagerProfile : Profile
     {
         string iban;
         public ManagerProfile(int userID,bool admin) : base(userID,admin)
@@ -51,5 +51,11 @@ namespace Project_4.User_Classes
             enventDataSetTableAdapters.adminTableAdapter up = new enventDataSetTableAdapters.adminTableAdapter();
             up.updateUserName(userName, id);
         }
+
+        public string GetIban()
+        {
+            return iban;
+        }
+
     }
 }

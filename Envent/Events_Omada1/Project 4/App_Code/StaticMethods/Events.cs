@@ -9,21 +9,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Project_4.App_Code.StaticMethods;
+using Project_4.User_Classes;
 namespace Project_4.App_Code.StaticMethods
 {
     class Events
     {
         static enventDataSetTableAdapters.eventsTableAdapter eve = new enventDataSetTableAdapters.eventsTableAdapter();
         static List<enventDataSet.eventsRow> eveList = new List<enventDataSet.eventsRow>();
-        public static List<string> eventsTitle = new List<string>();
+        public static List<Event> events= new List<Event>();
 
 
         public static void FillEventsData(){
             eveList = eve.getEvents().ToList();
             for (int i = 0; i < eveList.Count; i++)
             {
-                eventsTitle.Add(eveList.ElementAt(i).title);
+                Event eventItem = new Event(eveList.ElementAt(i).id, eveList.ElementAt(i).title, eveList.ElementAt(i).category_id, eveList.ElementAt(i).created_at, eveList.ElementAt(i).description, eveList.ElementAt(i).duration, eveList.ElementAt(i).active, eveList.ElementAt(i).img);
+                events.Add(eventItem);
             }
         }
-}
+
+        public static List<int> GetIDs()
+        {
+            List<int> ids = new List<int>();
+            foreach(Event e in events)
+            {
+                ids.Add(e.GetID());
+            }
+            return ids;
+        }
+    }
 }

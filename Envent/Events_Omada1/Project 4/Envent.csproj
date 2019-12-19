@@ -112,6 +112,7 @@
     <Compile Include="App_Code\Play.cs" />
     <Compile Include="App_Code\Reservation.cs" />
     <Compile Include="App_Code\Search.cs" />
+    <Compile Include="App_Code\StaticMethods\Categories.cs" />
     <Compile Include="App_Code\StaticMethods\Events.cs" />
     <Compile Include="App_Code\StaticMethods\InstanceOfUser.cs" />
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
