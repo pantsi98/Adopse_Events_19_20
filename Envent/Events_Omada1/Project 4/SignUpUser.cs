@@ -143,14 +143,14 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (checksamepass = false) {
+            else if (checksamepass == false) {
                 deiktislathwn = false;
             }
-            else if (emailcheck = false)
+            else if (emailcheck == false)
             {
                 deiktislathwn = false;
             }
-            else if (checkpassIsValid=false)
+            else if (checkpassIsValid==false)
             {
                 deiktislathwn = false;
             }

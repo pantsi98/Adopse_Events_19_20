@@ -37,7 +37,7 @@ namespace Project_4.User_Classes
             throw new NotImplementedException();
         }
         //Waiting for UI
-        public override void ShowEvents()
+        public override List<Event> ShowEvents()
         {
             throw new NotImplementedException();
         }

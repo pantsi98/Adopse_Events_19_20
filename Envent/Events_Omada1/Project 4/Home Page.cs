@@ -24,20 +24,6 @@ namespace Project_4
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
-            var listItem = new ListViewItem();
-            for (int i=0; i < App_Code.StaticMethods.Events.eventsTitle.Count;  i++)
-            {
-                listItem = new ListViewItem(App_Code.StaticMethods.Events.eventsTitle.ElementAt(i));
-                eventsListView.Items.Add(listItem);
-            }
-            /*string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
-
-            var con = new MySqlConnection(cs);
-            con.Open();
-
-            var stm = "SELECT * FROM category";
-            var cmd = new MySqlCommand(stm, con);
-            */
         }
 
         private void hideSubmenus()
@@ -167,7 +153,7 @@ namespace Project_4
             eventsListView.Items.Clear();
             User vs =InstanceOfUser.GetUser();
             List<string> list = new List<string>();
-            list = vs.SearchForEvent(searchTextBox.Text);
+            //list = vs.SearchForEvent(searchTextBox.Text);
             var listItem = new ListViewItem();
             for (int i = 0; i < list.Count; i++)
             {

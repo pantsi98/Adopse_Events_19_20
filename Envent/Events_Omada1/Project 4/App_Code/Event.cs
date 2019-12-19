@@ -7,7 +7,7 @@ using Project_4.User_Classes.Exceptions;
 
 namespace Project_4.User_Classes
 {
-    class Event
+    public class Event
     {
         private int id;
         private string title;
@@ -16,6 +16,7 @@ namespace Project_4.User_Classes
         private string description;
         private int duration;
         private bool status;
+        private string imgurl;
 
         public Event(int id)
         {
@@ -35,6 +36,18 @@ namespace Project_4.User_Classes
             {
                 throw new EventException("To event δεν υπάρχει.");
             }
+        }
+
+        public Event(int id, string title, int category, DateTime createdAt, string description, int duration, bool status, string imgurl)
+        {
+            this.id = id;
+            this.title = title;
+            this.category = category;
+            this.createdAt = createdAt;
+            this.description = description;
+            this.duration = duration;
+            this.status = status;
+            this.imgurl = imgurl;
         }
 
         public int GetID()
@@ -72,5 +85,9 @@ namespace Project_4.User_Classes
             return status;
         }
 
+        public string GetImage()
+        {
+            return imgurl;
+        }
     }
 }
