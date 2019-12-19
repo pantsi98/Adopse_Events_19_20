@@ -48,31 +48,9 @@ namespace Project_4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (sideBarPanel.Width == 300)
-            {
-                foreach (Control c in sideBarPanel.Controls)
-                {
-                    if (c is Button && !String.IsNullOrEmpty((c as Button).Text))
-                    {
-                        (c as Button).Text = "";
-                    }
-                }
-                sideBarPanel.Width = 80;
-                hideSubmenus();
-            }
-            else if (sideBarPanel.Width == 80)
-            {
-                foreach (Control c in sideBarPanel.Controls) 
-                { 
-                    if (c is Button && String.IsNullOrEmpty((c as Button).Text))
-                    {
-                        (c as Button).Text = btntxtList[index];
-                        index++;
-                    }
-                }
-                sideBarPanel.Width = 300;
-                index = 0;
-            }
+            MainPanel.Controls.Clear();
+            HomeMain hm = new HomeMain();
+            MainPanel.Controls.Add(hm);
         }
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -189,7 +167,7 @@ namespace Project_4
             eventsListView.Items.Clear();
             User vs =InstanceOfUser.GetUser();
             List<string> list = new List<string>();
-            list = vs.SearchForEvent(textBox1.Text);
+            list = vs.SearchForEvent(searchTextBox.Text);
             var listItem = new ListViewItem();
             for (int i = 0; i < list.Count; i++)
             {

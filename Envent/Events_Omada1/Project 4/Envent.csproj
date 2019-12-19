@@ -148,6 +148,12 @@
     <Compile Include="GradientSideBarPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="HomeMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeMain.Designer.cs">
+      <DependentUpon>HomeMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home Page.resx">
       <DependentUpon>Home Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeMain.resx">
+      <DependentUpon>HomeMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
