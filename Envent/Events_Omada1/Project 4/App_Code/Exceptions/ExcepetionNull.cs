@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Project_4.User_Classes.Exceptions
 {
-    class EventException : Exception
+    class ExcepetionNull : Exception
     {
-
-        public EventException(string msg) : base(msg)
+        public ExcepetionNull(string msg) : base(msg)
         {
         }
 
-        public EventException()
+        public ExcepetionNull()
         {
 
         }
+
     }
 }

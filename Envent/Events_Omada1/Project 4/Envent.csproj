@@ -104,6 +104,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="App_Code\Exceptions\EventException.cs" />
+    <Compile Include="App_Code\Exceptions\ExcepetionNull.cs" />
+    <Compile Include="App_Code\Exceptions\FailLoginAsEventManager.cs" />
+    <Compile Include="App_Code\Exceptions\FailLogInAsNormaillUser.cs" />
+    <Compile Include="App_Code\Exceptions\VenueException.cs" />
     <Compile Include="App_Code\NormalUser.cs" />
     <Compile Include="App_Code\Play.cs" />
     <Compile Include="App_Code\Reservation.cs" />
@@ -163,11 +167,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SignUpAdmin1.cs">
+    <Compile Include="SignUpEventManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SignUpAdmin1.Designer.cs">
-      <DependentUpon>SignUpAdmin1.cs</DependentUpon>
+    <Compile Include="SignUpEventManager.Designer.cs">
+      <DependentUpon>SignUpEventManager.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUpstep1.cs">
       <SubType>UserControl</SubType>
@@ -211,8 +215,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUpAdmin1.resx">
-      <DependentUpon>SignUpAdmin1.cs</DependentUpon>
+    <EmbeddedResource Include="SignUpEventManager.resx">
+      <DependentUpon>SignUpEventManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpstep1.resx">
       <DependentUpon>SignUpstep1.cs</DependentUpon>

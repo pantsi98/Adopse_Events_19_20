@@ -15,10 +15,10 @@ namespace Project_4.User_Classes
 
         public RegisteredUser(string userName, string passWord)
         {
-            enventDataSetTableAdapters.userTableAdapter id = new enventDataSetTableAdapters.userTableAdapter();
-            this.userID = id.getID("username").ToList().ElementAt(0).id;
-            this.userName = userName;
-            this.passWord = passWord;
+                enventDataSetTableAdapters.userTableAdapter id = new enventDataSetTableAdapters.userTableAdapter();
+                this.userID = id.getID("username").ToList().ElementAt(0).id;
+                this.userName = userName;
+                this.passWord = passWord;
         }
 
         public void LogOut()

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Project_4.App_Code.StaticMethods;
-using Project_4.App_Code.Exceptions;
+using Project_4.User_Classes.Exceptions;
 using System.Windows.Forms;
 
 namespace Project_4.User_Classes
@@ -47,7 +47,6 @@ namespace Project_4.User_Classes
                 {
                     throw new EventException("Το event δεν υπάρχει.");
                 }
-                
             }
             catch (EventException msg)
             {

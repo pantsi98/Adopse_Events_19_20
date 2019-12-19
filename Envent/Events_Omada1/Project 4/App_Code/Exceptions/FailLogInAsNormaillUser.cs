@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Project_4.User_Classes.Exceptions
 {
-    class EventException : Exception
+    class FailLogInAsNormalUser : Exception
     {
-
-        public EventException(string msg) : base(msg)
+        public FailLogInAsNormalUser(string msg) : base(msg)
         {
         }
 
-        public EventException()
+        public FailLogInAsNormalUser()
         {
 
         }
+
     }
 }

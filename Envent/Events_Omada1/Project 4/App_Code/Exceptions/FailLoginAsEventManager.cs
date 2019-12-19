@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace Project_4.User_Classes.Exceptions
 {
-    class EventException : Exception
+    class FailLoginAsEventManager : Exception
     {
-
-        public EventException(string msg) : base(msg)
+        public FailLoginAsEventManager(string msg) : base(msg)
         {
         }
 
-        public EventException()
+        public FailLoginAsEventManager()
         {
 
         }
+
+
+
     }
 }

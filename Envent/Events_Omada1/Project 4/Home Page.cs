@@ -25,9 +25,9 @@ namespace Project_4
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
             var listItem = new ListViewItem();
-            for (int i=0; i < App_Code.StaticMethods.Events.events.Count;  i++)
+            for (int i=0; i < App_Code.StaticMethods.Events.eventsTitle.Count;  i++)
             {
-                listItem = new ListViewItem(App_Code.StaticMethods.Events.events.ElementAt(i));
+                listItem = new ListViewItem(App_Code.StaticMethods.Events.eventsTitle.ElementAt(i));
                 eventsListView.Items.Add(listItem);
             }
             /*string cs = @"server=35.228.3.69;userid=root;password=l7heDyE6lxs7CN7o;database=enventDb";
@@ -187,7 +187,7 @@ namespace Project_4
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             eventsListView.Items.Clear();
-            Visitor vs = (Visitor)InstanceOfUser.GetUser();
+            User vs =InstanceOfUser.GetUser();
             List<string> list = new List<string>();
             list = vs.SearchForEvent(textBox1.Text);
             var listItem = new ListViewItem();
