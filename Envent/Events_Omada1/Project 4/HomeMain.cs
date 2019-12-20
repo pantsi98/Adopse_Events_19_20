@@ -21,9 +21,14 @@ namespace Project_4
         private void HomeMain_Load(object sender, EventArgs e)
         {
 
-            /* int index = 0;
+             int index = 0;
              User user = InstanceOfUser.GetUser();
-             List<Event> events = user.ShowEvents();
+             List<Event> events = new List<Event>();
+            foreach(Event ev in user.ShowEvents())
+            {
+                if(ev.GetCategory())
+            }
+
              List<Categories> cat = Categories.categories;
              foreach (Control p in musicPanel.Controls)
              {
@@ -32,7 +37,7 @@ namespace Project_4
                      if (i is PictureBox)
                      {
                          PictureBox pic = (PictureBox)i;
-                         pic.Load(events.ElementAt(index).GetImage());
+                         pic.Image = Images.pic.ElementAt(index);
                      }
                      if (i is Label)
                      {
@@ -41,7 +46,7 @@ namespace Project_4
                      }
                      index++;
                  }
-             }*/
+             }
         }
 
         private void label17_Click(object sender, EventArgs e)

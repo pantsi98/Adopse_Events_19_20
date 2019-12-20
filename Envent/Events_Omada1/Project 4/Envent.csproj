@@ -114,6 +114,7 @@
     <Compile Include="App_Code\Search.cs" />
     <Compile Include="App_Code\StaticMethods\Categories.cs" />
     <Compile Include="App_Code\StaticMethods\Events.cs" />
+    <Compile Include="App_Code\StaticMethods\Images.cs" />
     <Compile Include="App_Code\StaticMethods\InstanceOfUser.cs" />
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="App_Code\Venue.cs" />
