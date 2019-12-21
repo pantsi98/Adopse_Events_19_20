@@ -61,5 +61,86 @@ namespace Project_4
         {
 
         }
+
+        private void circularPicture4_Click(object sender, EventArgs e)
+        {
+            if (usernamTextBox.Enabled)
+            {
+                usernamTextBox.Enabled = false;
+            }
+            else usernamTextBox.Enabled = true;
+        }
+
+        private void circularPicture5_Click(object sender, EventArgs e)
+        {
+            if (onomaTextBox.Enabled) { onomaTextBox.Enabled = false; } else
+            {
+                onomaTextBox.Enabled = true;
+            }
+        }
+
+        private void circularPicture7_Click(object sender, EventArgs e)
+        {
+            if (passwordTextBox.Enabled) { passwordTextBox.Enabled = false; } else
+            {
+                passwordTextBox.Enabled = true;
+
+            }
+        }
+
+        private void circularPicture6_Click(object sender, EventArgs e)
+        {
+            if (adressTextBox.Enabled) { adressTextBox.Enabled = false; } else
+            {
+                adressTextBox.Enabled = true;
+            }
+        }
+
+        private void circularPicture8_Click(object sender, EventArgs e)
+        {
+            if (lastnameTextBox.Enabled) { lastnameTextBox.Enabled = false; } else
+            {
+                lastnameTextBox.Enabled = true;
+            }
+        }
+
+        private void usernamTextBox_Leave(object sender, EventArgs e)
+        {
+            usernamTextBox.Enabled = false;
+        }
+
+        private void onomaTextBox_Leave(object sender, EventArgs e)
+        {
+            onomaTextBox.Enabled = false;
+        }
+
+        private void adressTextBox_Leave(object sender, EventArgs e)
+        {
+            adressTextBox.Enabled = false;
+        }
+
+        private void passwordTextBox_Leave(object sender, EventArgs e)
+        {
+            passwordTextBox.Enabled = false;
+        }
+
+        private void lastnameTextBox_Leave(object sender, EventArgs e)
+        {
+            lastnameTextBox.Enabled = false;
+        }
+
+        private void circularPicture9_Click(object sender, EventArgs e)
+        {
+            if (dobPicker.Enabled) { dobPicker.Enabled = false; }
+            else
+            {
+                dobPicker.Enabled = true;
+            }
+        }
+
+        private void dobPicker_Leave(object sender, EventArgs e)
+        {
+            dobPicker.Enabled = false;
+        }
     }
 }
