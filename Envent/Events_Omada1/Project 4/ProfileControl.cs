@@ -52,11 +52,6 @@ namespace Project_4
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void dobPicker_ValueChanged(object sender, EventArgs e)
         {
 

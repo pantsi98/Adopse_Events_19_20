@@ -104,7 +104,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1066, 635);
             this.panel1.TabIndex = 40;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lastnameTextBox
             // 
@@ -116,7 +115,6 @@
             this.lastnameTextBox.Name = "lastnameTextBox";
             this.lastnameTextBox.Size = new System.Drawing.Size(331, 27);
             this.lastnameTextBox.TabIndex = 94;
-            this.lastnameTextBox.Text = "...";
             this.lastnameTextBox.Leave += new System.EventHandler(this.lastnameTextBox_Leave);
             // 
             // passwordTextBox
@@ -129,7 +127,6 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(331, 27);
             this.passwordTextBox.TabIndex = 93;
-            this.passwordTextBox.Text = "...";
             this.passwordTextBox.Leave += new System.EventHandler(this.passwordTextBox_Leave);
             // 
             // button1
@@ -187,7 +184,6 @@
             this.usernamTextBox.Name = "usernamTextBox";
             this.usernamTextBox.Size = new System.Drawing.Size(331, 27);
             this.usernamTextBox.TabIndex = 86;
-            this.usernamTextBox.Text = "...";
             this.usernamTextBox.Leave += new System.EventHandler(this.usernamTextBox_Leave);
             // 
             // label5
@@ -220,7 +216,6 @@
             this.adressTextBox.Name = "adressTextBox";
             this.adressTextBox.Size = new System.Drawing.Size(331, 27);
             this.adressTextBox.TabIndex = 83;
-            this.adressTextBox.Text = "...";
             this.adressTextBox.Leave += new System.EventHandler(this.adressTextBox_Leave);
             // 
             // label3
@@ -244,7 +239,6 @@
             this.onomaTextBox.Name = "onomaTextBox";
             this.onomaTextBox.Size = new System.Drawing.Size(331, 27);
             this.onomaTextBox.TabIndex = 81;
-            this.onomaTextBox.Text = "...";
             this.onomaTextBox.Leave += new System.EventHandler(this.onomaTextBox_Leave);
             // 
             // fullolabel
