@@ -132,22 +132,7 @@ namespace Project_4
 
         }
 
-        Boolean isvisible=false;
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (isvisible = false)
-            {
-                visiblepas.Image = global::Project_4.Properties.Resources.hide;
-                NewPassword.PasswordChar = '\0';
-                isvisible = true;
-            }
-            else {
-                visiblepas.Image = global::Project_4.Properties.Resources.eye;
-                NewPassword.PasswordChar = '*';
-                isvisible = false;
-            }
-
-
-        }
+       
+        
     } 
 }

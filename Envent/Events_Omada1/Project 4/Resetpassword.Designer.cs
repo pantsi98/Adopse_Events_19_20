@@ -41,7 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.passwordlabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.visiblepas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -177,7 +176,6 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.visiblepas);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.ChangePassBtn);
@@ -192,22 +190,6 @@
             this.panel3.Size = new System.Drawing.Size(843, 451);
             this.panel3.TabIndex = 46;
             this.panel3.MouseHover += new System.EventHandler(this.panel3_MouseHover);
-            // 
-            // visiblepas
-            // 
-            this.visiblepas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.visiblepas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.visiblepas.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.visiblepas.FlatAppearance.BorderSize = 0;
-            this.visiblepas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.visiblepas.Image = global::Project_4.Properties.Resources.eye;
-            this.visiblepas.Location = new System.Drawing.Point(369, 220);
-            this.visiblepas.Name = "visiblepas";
-            this.visiblepas.Size = new System.Drawing.Size(29, 28);
-            this.visiblepas.TabIndex = 45;
-            this.visiblepas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.visiblepas.UseVisualStyleBackColor = false;
-            this.visiblepas.Click += new System.EventHandler(this.button1_Click);
             // 
             // Resetpassword
             // 
@@ -244,6 +226,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label passwordlabel;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button visiblepas;
     }
 }
