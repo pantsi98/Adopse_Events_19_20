@@ -158,7 +158,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(311, 50);
             this.button3.TabIndex = 47;
-            this.button3.Text = "Event προς Επιβεβαίωση";
+            this.button3.Text = "Event προς Επιβεβαίωσηη";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // EmanPanel
