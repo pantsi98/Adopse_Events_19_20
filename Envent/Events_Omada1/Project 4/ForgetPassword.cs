@@ -74,6 +74,25 @@ namespace Project_4
             if (Check() == false)
             {
                 //steile meil
+                try
+                {
+                    //entoles gia syndesi me vasi
+
+
+
+                    //entoles gia emfanisi tou epomenou user control
+                    ForgotPaspanel.Controls.Clear();
+                    Resetpassword ru = new Resetpassword();
+                    ForgotPaspanel.Controls.Add(ru);
+
+                }catch{
+
+                    messagelabel.Visible = true;
+                    EmailForgot.Text = "Email";
+                    EmailForgot.ForeColor = Color.DimGray;
+
+                }
+
 
 
             }
