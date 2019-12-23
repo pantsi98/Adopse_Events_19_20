@@ -199,11 +199,10 @@
             // 
             // musicTileLabel4
             // 
-            this.musicTileLabel4.AutoSize = true;
-            this.musicTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.musicTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel4.Name = "musicTileLabel4";
-            this.musicTileLabel4.Size = new System.Drawing.Size(86, 25);
+            this.musicTileLabel4.Size = new System.Drawing.Size(232, 63);
             this.musicTileLabel4.TabIndex = 1;
             this.musicTileLabel4.Text = "music4";
             // 
@@ -230,11 +229,10 @@
             // 
             // musicTileLabel2
             // 
-            this.musicTileLabel2.AutoSize = true;
-            this.musicTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.musicTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel2.Name = "musicTileLabel2";
-            this.musicTileLabel2.Size = new System.Drawing.Size(86, 25);
+            this.musicTileLabel2.Size = new System.Drawing.Size(232, 63);
             this.musicTileLabel2.TabIndex = 1;
             this.musicTileLabel2.Text = "music2";
             // 
@@ -261,11 +259,10 @@
             // 
             // musicTileLabel3
             // 
-            this.musicTileLabel3.AutoSize = true;
-            this.musicTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.musicTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel3.Name = "musicTileLabel3";
-            this.musicTileLabel3.Size = new System.Drawing.Size(86, 25);
+            this.musicTileLabel3.Size = new System.Drawing.Size(232, 63);
             this.musicTileLabel3.TabIndex = 1;
             this.musicTileLabel3.Text = "music3";
             // 
@@ -292,11 +289,10 @@
             // 
             // musicTileLabel1
             // 
-            this.musicTileLabel1.AutoSize = true;
-            this.musicTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.musicTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel1.Name = "musicTileLabel1";
-            this.musicTileLabel1.Size = new System.Drawing.Size(86, 25);
+            this.musicTileLabel1.Size = new System.Drawing.Size(232, 63);
             this.musicTileLabel1.TabIndex = 1;
             this.musicTileLabel1.Text = "music1";
             // 
@@ -346,11 +342,10 @@
             // 
             // theaterTileLabel4
             // 
-            this.theaterTileLabel4.AutoSize = true;
             this.theaterTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel4.Name = "theaterTileLabel4";
-            this.theaterTileLabel4.Size = new System.Drawing.Size(99, 25);
+            this.theaterTileLabel4.Size = new System.Drawing.Size(231, 67);
             this.theaterTileLabel4.TabIndex = 1;
             this.theaterTileLabel4.Text = "theater4";
             // 
@@ -377,11 +372,10 @@
             // 
             // theaterTileLabel2
             // 
-            this.theaterTileLabel2.AutoSize = true;
             this.theaterTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel2.Name = "theaterTileLabel2";
-            this.theaterTileLabel2.Size = new System.Drawing.Size(99, 25);
+            this.theaterTileLabel2.Size = new System.Drawing.Size(231, 67);
             this.theaterTileLabel2.TabIndex = 1;
             this.theaterTileLabel2.Text = "theater2";
             // 
@@ -408,11 +402,10 @@
             // 
             // theaterTileLabel3
             // 
-            this.theaterTileLabel3.AutoSize = true;
             this.theaterTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel3.Name = "theaterTileLabel3";
-            this.theaterTileLabel3.Size = new System.Drawing.Size(99, 25);
+            this.theaterTileLabel3.Size = new System.Drawing.Size(231, 67);
             this.theaterTileLabel3.TabIndex = 1;
             this.theaterTileLabel3.Text = "theater3";
             // 
@@ -439,11 +432,10 @@
             // 
             // theaterTileLabel1
             // 
-            this.theaterTileLabel1.AutoSize = true;
             this.theaterTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel1.Name = "theaterTileLabel1";
-            this.theaterTileLabel1.Size = new System.Drawing.Size(99, 25);
+            this.theaterTileLabel1.Size = new System.Drawing.Size(231, 67);
             this.theaterTileLabel1.TabIndex = 1;
             this.theaterTileLabel1.Text = "theater1";
             // 
@@ -492,11 +484,10 @@
             // 
             // conferenceTileLabel4
             // 
-            this.conferenceTileLabel4.AutoSize = true;
             this.conferenceTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel4.Name = "conferenceTileLabel4";
-            this.conferenceTileLabel4.Size = new System.Drawing.Size(142, 25);
+            this.conferenceTileLabel4.Size = new System.Drawing.Size(231, 68);
             this.conferenceTileLabel4.TabIndex = 1;
             this.conferenceTileLabel4.Text = "conference4";
             // 
@@ -523,11 +514,10 @@
             // 
             // conferenceTileLabel2
             // 
-            this.conferenceTileLabel2.AutoSize = true;
             this.conferenceTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel2.Name = "conferenceTileLabel2";
-            this.conferenceTileLabel2.Size = new System.Drawing.Size(142, 25);
+            this.conferenceTileLabel2.Size = new System.Drawing.Size(231, 68);
             this.conferenceTileLabel2.TabIndex = 1;
             this.conferenceTileLabel2.Text = "conference2";
             // 
@@ -554,11 +544,10 @@
             // 
             // conferenceTileLabel3
             // 
-            this.conferenceTileLabel3.AutoSize = true;
             this.conferenceTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel3.Name = "conferenceTileLabel3";
-            this.conferenceTileLabel3.Size = new System.Drawing.Size(142, 25);
+            this.conferenceTileLabel3.Size = new System.Drawing.Size(231, 68);
             this.conferenceTileLabel3.TabIndex = 1;
             this.conferenceTileLabel3.Text = "conference3";
             // 
@@ -585,11 +574,10 @@
             // 
             // conferenceTileLabel1
             // 
-            this.conferenceTileLabel1.AutoSize = true;
             this.conferenceTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel1.Name = "conferenceTileLabel1";
-            this.conferenceTileLabel1.Size = new System.Drawing.Size(142, 25);
+            this.conferenceTileLabel1.Size = new System.Drawing.Size(231, 68);
             this.conferenceTileLabel1.TabIndex = 1;
             this.conferenceTileLabel1.Text = "conference1";
             // 
@@ -638,11 +626,10 @@
             // 
             // festivalsTileLabel4
             // 
-            this.festivalsTileLabel4.AutoSize = true;
             this.festivalsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel4.Name = "festivalsTileLabel4";
-            this.festivalsTileLabel4.Size = new System.Drawing.Size(113, 25);
+            this.festivalsTileLabel4.Size = new System.Drawing.Size(230, 65);
             this.festivalsTileLabel4.TabIndex = 1;
             this.festivalsTileLabel4.Text = "festivals4";
             // 
@@ -669,11 +656,10 @@
             // 
             // festivalsTileLabel2
             // 
-            this.festivalsTileLabel2.AutoSize = true;
             this.festivalsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel2.Name = "festivalsTileLabel2";
-            this.festivalsTileLabel2.Size = new System.Drawing.Size(113, 25);
+            this.festivalsTileLabel2.Size = new System.Drawing.Size(230, 65);
             this.festivalsTileLabel2.TabIndex = 1;
             this.festivalsTileLabel2.Text = "festivals2";
             // 
@@ -700,11 +686,10 @@
             // 
             // festivalsTileLabel3
             // 
-            this.festivalsTileLabel3.AutoSize = true;
             this.festivalsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel3.Name = "festivalsTileLabel3";
-            this.festivalsTileLabel3.Size = new System.Drawing.Size(113, 25);
+            this.festivalsTileLabel3.Size = new System.Drawing.Size(230, 65);
             this.festivalsTileLabel3.TabIndex = 1;
             this.festivalsTileLabel3.Text = "festivals3";
             // 
@@ -731,11 +716,10 @@
             // 
             // festivalsTileLabel1
             // 
-            this.festivalsTileLabel1.AutoSize = true;
             this.festivalsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel1.Name = "festivalsTileLabel1";
-            this.festivalsTileLabel1.Size = new System.Drawing.Size(113, 25);
+            this.festivalsTileLabel1.Size = new System.Drawing.Size(230, 65);
             this.festivalsTileLabel1.TabIndex = 1;
             this.festivalsTileLabel1.Text = "festivals1";
             // 
@@ -784,11 +768,10 @@
             // 
             // sportsTileLabel4
             // 
-            this.sportsTileLabel4.AutoSize = true;
             this.sportsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel4.Name = "sportsTileLabel4";
-            this.sportsTileLabel4.Size = new System.Drawing.Size(90, 25);
+            this.sportsTileLabel4.Size = new System.Drawing.Size(230, 72);
             this.sportsTileLabel4.TabIndex = 1;
             this.sportsTileLabel4.Text = "sports4";
             // 
@@ -815,11 +798,10 @@
             // 
             // sportsTileLabel2
             // 
-            this.sportsTileLabel2.AutoSize = true;
             this.sportsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel2.Name = "sportsTileLabel2";
-            this.sportsTileLabel2.Size = new System.Drawing.Size(90, 25);
+            this.sportsTileLabel2.Size = new System.Drawing.Size(230, 72);
             this.sportsTileLabel2.TabIndex = 1;
             this.sportsTileLabel2.Text = "sports2";
             // 
@@ -846,11 +828,10 @@
             // 
             // sportsTileLabel3
             // 
-            this.sportsTileLabel3.AutoSize = true;
             this.sportsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel3.Name = "sportsTileLabel3";
-            this.sportsTileLabel3.Size = new System.Drawing.Size(90, 25);
+            this.sportsTileLabel3.Size = new System.Drawing.Size(230, 72);
             this.sportsTileLabel3.TabIndex = 1;
             this.sportsTileLabel3.Text = "sports3";
             // 
@@ -877,11 +858,10 @@
             // 
             // sportsTileLabel1
             // 
-            this.sportsTileLabel1.AutoSize = true;
             this.sportsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel1.Name = "sportsTileLabel1";
-            this.sportsTileLabel1.Size = new System.Drawing.Size(90, 25);
+            this.sportsTileLabel1.Size = new System.Drawing.Size(230, 72);
             this.sportsTileLabel1.TabIndex = 1;
             this.sportsTileLabel1.Text = "sports1";
             // 
@@ -907,72 +887,52 @@
             this.musicPanel.ResumeLayout(false);
             this.musicPanel.PerformLayout();
             this.musicTilePanel4.ResumeLayout(false);
-            this.musicTilePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.musicTilepicBox4)).EndInit();
             this.musicTilePanel2.ResumeLayout(false);
-            this.musicTilePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.musicTilepicBox2)).EndInit();
             this.musicTilePanel3.ResumeLayout(false);
-            this.musicTilePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.musicTilepicBox3)).EndInit();
             this.musicTilePanel1.ResumeLayout(false);
-            this.musicTilePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.musicTilepicBox1)).EndInit();
             this.theaterPanel.ResumeLayout(false);
             this.theaterPanel.PerformLayout();
             this.theaterTilePanel4.ResumeLayout(false);
-            this.theaterTilePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theaterTilepicBox4)).EndInit();
             this.theaterTilePanel2.ResumeLayout(false);
-            this.theaterTilePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theaterTilepicBox2)).EndInit();
             this.theaterTilePanel3.ResumeLayout(false);
-            this.theaterTilePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theaterTilepicBox3)).EndInit();
             this.theaterTilePanel1.ResumeLayout(false);
-            this.theaterTilePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theaterTilepicBox1)).EndInit();
             this.conferencePanel.ResumeLayout(false);
             this.conferencePanel.PerformLayout();
             this.conferenceTilePanel4.ResumeLayout(false);
-            this.conferenceTilePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conferenceTilepicBox4)).EndInit();
             this.conferenceTilePanel2.ResumeLayout(false);
-            this.conferenceTilePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conferenceTilepicBox2)).EndInit();
             this.conferenceTilePanel3.ResumeLayout(false);
-            this.conferenceTilePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conferenceTilepicBox3)).EndInit();
             this.conferenceTilePanel1.ResumeLayout(false);
-            this.conferenceTilePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conferenceTilepicBox1)).EndInit();
             this.festivalsPanel.ResumeLayout(false);
             this.festivalsPanel.PerformLayout();
             this.festivalsTilePanel4.ResumeLayout(false);
-            this.festivalsTilePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.festivalsTilepicBox4)).EndInit();
             this.festivalsTilePanel2.ResumeLayout(false);
-            this.festivalsTilePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.festivalsTilepicBox2)).EndInit();
             this.festivalsTilePanel3.ResumeLayout(false);
-            this.festivalsTilePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.festivalsTilepicBox3)).EndInit();
             this.festivalsTilePanel1.ResumeLayout(false);
-            this.festivalsTilePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.festivalsTilepicBox1)).EndInit();
             this.sportsPanel.ResumeLayout(false);
             this.sportsPanel.PerformLayout();
             this.sportsTilePanel4.ResumeLayout(false);
-            this.sportsTilePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sportsTilepicBox4)).EndInit();
             this.sportsTilePanel2.ResumeLayout(false);
-            this.sportsTilePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sportsTilepicBox2)).EndInit();
             this.sportsTilePanel3.ResumeLayout(false);
-            this.sportsTilePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sportsTilepicBox3)).EndInit();
             this.sportsTilePanel1.ResumeLayout(false);
-            this.sportsTilePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sportsTilepicBox1)).EndInit();
             this.ResumeLayout(false);
 
