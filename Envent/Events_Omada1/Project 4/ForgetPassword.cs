@@ -21,7 +21,8 @@ namespace Project_4
         string randomCode;
         string theEmail;
         public static string to;
-        ForgetPassword fgp = new ForgetPassword();
+        //gia skoupidia
+        //ForgetPassword fgp = new ForgetPassword();
 
         public ForgetPassword()
         {
@@ -107,7 +108,8 @@ namespace Project_4
             private void button1_Click(object sender, EventArgs e){
             //Dimiourgia antikeimenou gia na pame to email se alli klasi
             theEmail = EmailForgot.Text;
-            fgp.setEmail(theEmail);
+            //gia skoupidia
+            //fgp.setEmail(theEmail);
             
 
 
