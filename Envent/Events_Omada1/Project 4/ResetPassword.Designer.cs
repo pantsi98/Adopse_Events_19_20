@@ -34,6 +34,7 @@
             this.txtResetPassVer = new System.Windows.Forms.TextBox();
             this.button_reset_pass = new System.Windows.Forms.Button();
             this.showPass = new System.Windows.Forms.CheckBox();
+            this.recoverMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // new_pass_label
@@ -99,10 +100,19 @@
             this.showPass.UseVisualStyleBackColor = true;
             this.showPass.CheckedChanged += new System.EventHandler(this.showPass_CheckedChanged);
             // 
+            // recoverMsg
+            // 
+            this.recoverMsg.AutoSize = true;
+            this.recoverMsg.Location = new System.Drawing.Point(356, 370);
+            this.recoverMsg.Name = "recoverMsg";
+            this.recoverMsg.Size = new System.Drawing.Size(0, 17);
+            this.recoverMsg.TabIndex = 7;
+            // 
             // ResetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.recoverMsg);
             this.Controls.Add(this.showPass);
             this.Controls.Add(this.button_reset_pass);
             this.Controls.Add(this.txtResetPassVer);
@@ -125,5 +135,6 @@
         private System.Windows.Forms.TextBox txtResetPassVer;
         private System.Windows.Forms.Button button_reset_pass;
         private System.Windows.Forms.CheckBox showPass;
+        private System.Windows.Forms.Label recoverMsg;
     }
 }

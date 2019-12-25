@@ -34,6 +34,8 @@ namespace Project_4
             int id = nu.GetUserID();
             UserProfile ru =  (UserProfile)nu.GetProfile();
             ru.UpdatePassword(id, txtResetPass.Text);
+            recoverMsg.ForeColor = Color.Green;
+            recoverMsg.Text = "Ο κωδικός άλλαξε επιτυχώς!";
         }
     }
 }
