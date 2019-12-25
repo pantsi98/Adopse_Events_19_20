@@ -115,7 +115,7 @@ namespace Project_4
 
             User x = InstanceOfUser.GetUser();
 
-            if(x is Visitor)
+            if((x is Visitor) && (emailExists()))
             {
                 Visitor vis = (Visitor)x;
                 enventDataSetTableAdapters.userTableAdapter env = new enventDataSetTableAdapters.userTableAdapter();
@@ -124,10 +124,6 @@ namespace Project_4
                 string password = env.returnUsernamePassword(theEmail).ToList().ElementAt(0).password;
 
                 NormalUser nu = (NormalUser)vis.LogInAsNormalUser(username, password);
-
-                
-
-
             }
 
 

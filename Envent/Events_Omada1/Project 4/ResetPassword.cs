@@ -32,11 +32,8 @@ namespace Project_4
 
             NormalUser nu = (NormalUser)InstanceOfUser.GetUser();
             int id = nu.GetUserID();
-            nu.GetProfile(id).UpdatePassword(id, txtResetPass.Text);
-
-
-
-
+            UserProfile ru =  (UserProfile)nu.GetProfile();
+            ru.UpdatePassword(id, txtResetPass.Text);
         }
     }
 }
