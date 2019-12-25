@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_4.App_Code.StaticMethods;
+using Project_4.User_Classes;
+using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -26,11 +29,13 @@ namespace Project_4
 
         private void button_reset_pass_Click(object sender, EventArgs e)
         {
-            ForgetPassword fgp = new ForgetPassword();
-            fgp.getEmail();
-            
-            
-            
+
+            NormalUser nu = (NormalUser)InstanceOfUser.GetUser();
+            int id = nu.GetUserID();
+            nu.GetProfile(id).UpdatePassword(id, txtResetPass.Text);
+
+
+
 
         }
     }

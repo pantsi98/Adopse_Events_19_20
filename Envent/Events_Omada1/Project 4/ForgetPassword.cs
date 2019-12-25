@@ -12,6 +12,10 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Net;
 using System.Net.Mail;
+using Project_4.App_Code.StaticMethods;
+using Project_4.User_Classes;
+using Project_4.App_Code;
+
 
 namespace Project_4
 {
@@ -21,8 +25,7 @@ namespace Project_4
         string randomCode;
         string theEmail;
         public static string to;
-        //gia skoupidia
-        //ForgetPassword fgp = new ForgetPassword();
+        
 
         public ForgetPassword()
         {
@@ -108,9 +111,28 @@ namespace Project_4
             private void button1_Click(object sender, EventArgs e){
             //Dimiourgia antikeimenou gia na pame to email se alli klasi
             theEmail = EmailForgot.Text;
-            //gia skoupidia
-            //fgp.setEmail(theEmail);
-            
+
+
+            User x = InstanceOfUser.GetUser();
+
+            if(x is Visitor)
+            {
+                Visitor vis = (Visitor)x;
+                enventDataSetTableAdapters.userTableAdapter env = new enventDataSetTableAdapters.userTableAdapter();
+                
+                string username = env.returnUsernamePassword(theEmail).ToList().ElementAt(0).username;
+                string password = env.returnUsernamePassword(theEmail).ToList().ElementAt(0).password;
+
+                NormalUser nu = (NormalUser)vis.LogInAsNormalUser(username, password);
+
+                
+
+
+            }
+
+
+
+
 
 
             if (emailExists())
