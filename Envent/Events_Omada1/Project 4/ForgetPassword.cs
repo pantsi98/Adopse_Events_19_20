@@ -19,7 +19,9 @@ namespace Project_4
     {
         //dimiorgia tou forgot password - panagiotis
         string randomCode;
+        string theEmail;
         public static string to;
+        ForgetPassword fgp = new ForgetPassword();
 
         public ForgetPassword()
         {
@@ -77,56 +79,76 @@ namespace Project_4
                 return deiktislathwn;
         }
 
-            private void button1_Click(object sender, EventArgs e)
 
+        private Boolean emailExists()
         {
-            if (Check() == false)
+            bool result;
+            //elegxoume an yparxei to email sti vasi
+            enventDataSetTableAdapters.userTableAdapter kati = new enventDataSetTableAdapters.userTableAdapter();
+            int counter = Convert.ToInt32(kati.checkEmail(EmailForgot.Text));
+            if (counter > 0)
+                result = true;
+            else
+                result = false;
+            return result;
+        }
+
+
+        //set k get
+        private void setEmail(string x)
+        {
+            string email = x;
+        }
+        public string getEmail()
+        {
+            return theEmail ;
+        }
+
+            private void button1_Click(object sender, EventArgs e){
+            //Dimiourgia antikeimenou gia na pame to email se alli klasi
+            theEmail = EmailForgot.Text;
+            fgp.setEmail(theEmail);
+            
+
+
+            if (emailExists())
             {
-                //steile meil
-                string from, pass, messageBody;
+               //Dimiourgia Random Verification Code
                 Random rand = new Random();
                 randomCode = (rand.Next(999999)).ToString();
-                MailMessage message = new MailMessage();
-                to = (EmailForgot.Text).ToString();
-                from = "adopsetest@gmail.com";
-                pass = "adopsetest2019";
-                messageBody = "your reset code is " + randomCode;
-                message.To.Add(to);
-                message.From = new MailAddress(from);
-                message.Body = messageBody;
-                message.Subject = "Επαναφορά Κωδικού";
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+
+                //Apostoli Email
+                MailMessage mm = new MailMessage("adopsetest@gmail.com", EmailForgot.Text.Trim());
+                mm.Subject = "Κωδικός Επαναφοράς";
+                mm.Body = string.Format("Ο κωδικός επαναφοράς είναι: " + randomCode);
+                mm.IsBodyHtml = true;
+                SmtpClient smtp = new SmtpClient();
+                smtp.Host = "smtp.gmail.com";
                 smtp.EnableSsl = true;
+                NetworkCredential NetworkCred = new NetworkCredential();
+                NetworkCred.UserName = "adopsetest@gmail.com";
+                NetworkCred.Password = "adopsetest2019";
+                smtp.UseDefaultCredentials = true;
+                smtp.Credentials = NetworkCred;
                 smtp.Port = 587;
-                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Credentials = new NetworkCredential(from, pass);
-
-                try
-                {
-                    smtp.Send(message);
-                    MessageBox.Show("Ο κωδικός εστάλη επιτυχώς" + randomCode);
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-
-
+                smtp.Send(mm);
+                labelSend.ForeColor = Color.Green;
+                labelSend.Text = "Ο κωδικός επαναφοράς εστάλη επιτυχώς!";
             }
-
-
-
+            else
+            {
+                labelSend.ForeColor = Color.Red;
+                labelSend.Text = "Το e-mail δεν βρέθηκε";
+            }
         }
 
         private void ver_button_Click(object sender, EventArgs e)
         {
             if(randomCode == (txtVerCode.Text).ToString())
             {
-                to = EmailForgot.Text;
+                ForgotPaspanel.Controls.Clear();
                 ResetPassword rp = new ResetPassword();
-                this.Hide();
+                ForgotPaspanel.Controls.Add(rp);
                 rp.Show();
             }
             else

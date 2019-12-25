@@ -243,6 +243,13 @@
     <EmbeddedResource Include="SignUpUser.resx">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="enventDataSet.xsc">
+      <DependentUpon>enventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="enventDataSet.xsd" />
+    <None Include="enventDataSet.xss">
+      <DependentUpon>enventDataSet.xsd</DependentUpon>
+    </None>
     <None Include="enventDataSet1.xsc">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </None>

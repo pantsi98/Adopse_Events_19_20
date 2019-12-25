@@ -12,9 +12,26 @@ namespace Project_4
 {
     public partial class ResetPassword : UserControl
     {
+        
+        
         public ResetPassword()
         {
             InitializeComponent();
+        }
+
+        private void showPass_CheckedChanged(object sender, EventArgs e)
+        {
+            txtResetPass.PasswordChar = showPass.Checked ? '\0' : '*';
+        }
+
+        private void button_reset_pass_Click(object sender, EventArgs e)
+        {
+            ForgetPassword fgp = new ForgetPassword();
+            fgp.getEmail();
+            
+            
+            
+
         }
     }
 }
