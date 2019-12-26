@@ -43,6 +43,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.onomaTextBox = new System.Windows.Forms.TextBox();
             this.fullolabel = new System.Windows.Forms.Label();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.genderTextBox = new System.Windows.Forms.TextBox();
+            this.gender = new System.Windows.Forms.Label();
+            this.circularPicture10 = new Project_4.App_Code.circularPicture();
+            this.circularPicture9 = new Project_4.App_Code.circularPicture();
             this.circularPicture8 = new Project_4.App_Code.circularPicture();
             this.circularPicture7 = new Project_4.App_Code.circularPicture();
             this.circularPicture6 = new Project_4.App_Code.circularPicture();
@@ -51,8 +57,9 @@
             this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.circularPicture2 = new Project_4.App_Code.circularPicture();
             this.circularPicture1 = new Project_4.App_Code.circularPicture();
-            this.circularPicture9 = new Project_4.App_Code.circularPicture();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture6)).BeginInit();
@@ -61,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -81,6 +87,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.circularPicture10);
+            this.panel1.Controls.Add(this.genderTextBox);
+            this.panel1.Controls.Add(this.gender);
+            this.panel1.Controls.Add(this.emailTextBox);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.circularPicture9);
             this.panel1.Controls.Add(this.circularPicture8);
             this.panel1.Controls.Add(this.circularPicture7);
@@ -135,7 +146,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(792, 386);
+            this.button1.Location = new System.Drawing.Point(792, 462);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 50);
@@ -251,6 +262,71 @@
             this.fullolabel.TabIndex = 80;
             this.fullolabel.Text = "Όνομα";
             // 
+            // emailTextBox
+            // 
+            this.emailTextBox.Enabled = false;
+            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.emailTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.emailTextBox.Location = new System.Drawing.Point(611, 262);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(331, 27);
+            this.emailTextBox.TabIndex = 102;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.label1.Location = new System.Drawing.Point(608, 229);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "E-mail";
+            // 
+            // genderTextBox
+            // 
+            this.genderTextBox.Enabled = false;
+            this.genderTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.genderTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.genderTextBox.Location = new System.Drawing.Point(611, 352);
+            this.genderTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.genderTextBox.Name = "genderTextBox";
+            this.genderTextBox.Size = new System.Drawing.Size(331, 27);
+            this.genderTextBox.TabIndex = 104;
+            // 
+            // gender
+            // 
+            this.gender.AutoSize = true;
+            this.gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.gender.Location = new System.Drawing.Point(608, 319);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(42, 17);
+            this.gender.TabIndex = 103;
+            this.gender.Text = "Φύλο";
+            // 
+            // circularPicture10
+            // 
+            this.circularPicture10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture10.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture10.Location = new System.Drawing.Point(948, 352);
+            this.circularPicture10.Name = "circularPicture10";
+            this.circularPicture10.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture10.TabIndex = 105;
+            this.circularPicture10.TabStop = false;
+            // 
+            // circularPicture9
+            // 
+            this.circularPicture9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture9.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture9.Location = new System.Drawing.Point(387, 346);
+            this.circularPicture9.Name = "circularPicture9";
+            this.circularPicture9.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture9.TabIndex = 100;
+            this.circularPicture9.TabStop = false;
+            this.circularPicture9.Click += new System.EventHandler(this.circularPicture9_Click);
+            // 
             // circularPicture8
             // 
             this.circularPicture8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -350,18 +426,6 @@
             this.circularPicture1.TabIndex = 32;
             this.circularPicture1.TabStop = false;
             // 
-            // circularPicture9
-            // 
-            this.circularPicture9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture9.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture9.Location = new System.Drawing.Point(387, 346);
-            this.circularPicture9.Name = "circularPicture9";
-            this.circularPicture9.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture9.TabIndex = 100;
-            this.circularPicture9.TabStop = false;
-            this.circularPicture9.Click += new System.EventHandler(this.circularPicture9_Click);
-            // 
             // ProfileControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -377,6 +441,8 @@
             this.Load += new System.EventHandler(this.Profile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture6)).EndInit();
@@ -385,7 +451,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -415,5 +480,10 @@
         private App_Code.circularPicture circularPicture5;
         private App_Code.circularPicture circularPicture4;
         private App_Code.circularPicture circularPicture9;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.Label label1;
+        private App_Code.circularPicture circularPicture10;
+        private System.Windows.Forms.TextBox genderTextBox;
+        private System.Windows.Forms.Label gender;
     }
 }
