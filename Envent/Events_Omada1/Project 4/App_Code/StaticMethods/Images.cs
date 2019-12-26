@@ -23,7 +23,6 @@ namespace Project_4.App_Code.StaticMethods
                 path += directories[i];
                 path += "/";
             }
-            Events.FillEventsData();
             WebClient cli = new WebClient();
             List<string> imgUrls = new List<string>();
             for (int i = 0; i < Events.events.Count; i++)

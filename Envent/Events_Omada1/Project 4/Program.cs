@@ -20,9 +20,8 @@ namespace Project_4
         [STAThread]
         static void Main()
         {
-            Dictionary<int, string> d = new Dictionary<int, string>();
-            d.Add(1, "Images.LoadImages");
-            d[1]();
+            Events.FillEventsData();
+            Images.LoadImages();
             InstanceOfUser.CreateVisitor();
             Categories.FillCategoryData();
             Application.EnableVisualStyles();
