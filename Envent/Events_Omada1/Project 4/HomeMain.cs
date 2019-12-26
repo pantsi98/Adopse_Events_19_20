@@ -16,11 +16,11 @@ namespace Project_4
         public HomeMain()
         {
             InitializeComponent();
+            HomeMainPrepare();
         }
 
-        private void HomeMain_Load(object sender, EventArgs e)
+        private void HomeMainPrepare()
         {
-
             int index = 0;
             User user = InstanceOfUser.GetUser();
             List<Event> events = user.ShowEvents();
@@ -64,7 +64,8 @@ namespace Project_4
             {
                 foreach (Control i in p.Controls)
                 {
-                    if (index + 1 < musicevents.Count) {
+                    if (index + 1 < musicevents.Count)
+                    {
                         if (i is PictureBox)
                         {
                             PictureBox pic = (PictureBox)i;
@@ -85,7 +86,8 @@ namespace Project_4
             {
                 foreach (Control i in p.Controls)
                 {
-                    if (index + 1 < theaterevents.Count) {
+                    if (index + 1 < theaterevents.Count)
+                    {
                         if (i is PictureBox)
                         {
                             PictureBox pic = (PictureBox)i;
@@ -169,7 +171,21 @@ namespace Project_4
             index = 0;
         }
 
+        private void HomeMain_Load(object sender, EventArgs e)
+        {
+        }
+
         private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tilesControlsClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void musicTilePanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

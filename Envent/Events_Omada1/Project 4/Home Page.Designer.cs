@@ -88,7 +88,10 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(554, 50);
             this.searchTextBox.TabIndex = 2;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
+            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
+            this.searchTextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.searchTextBox_PreviewKeyDown);
             // 
             // button8
             // 
@@ -391,7 +394,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox searchTextBox;
-        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel conferenceSubMenu;
         private System.Windows.Forms.Button festivalsBtn;
@@ -403,6 +405,7 @@
         private System.Windows.Forms.Button footballBtn;
         private System.Windows.Forms.Button musicBtn;
         private App_Code.CCircularButton cCircularButton1;
+        public System.Windows.Forms.Panel MainPanel;
     }
 }
 

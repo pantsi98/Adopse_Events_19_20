@@ -196,15 +196,17 @@
             this.musicTilePanel4.Name = "musicTilePanel4";
             this.musicTilePanel4.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel4.TabIndex = 1;
+            this.musicTilePanel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTileLabel4
             // 
             this.musicTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel4.Name = "musicTileLabel4";
-            this.musicTileLabel4.Size = new System.Drawing.Size(232, 63);
+            this.musicTileLabel4.Size = new System.Drawing.Size(232, 60);
             this.musicTileLabel4.TabIndex = 1;
             this.musicTileLabel4.Text = "music4";
+            this.musicTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilepicBox4
             // 
@@ -215,6 +217,7 @@
             this.musicTilepicBox4.Size = new System.Drawing.Size(240, 110);
             this.musicTilepicBox4.TabIndex = 0;
             this.musicTilepicBox4.TabStop = false;
+            this.musicTilepicBox4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilePanel2
             // 
@@ -226,15 +229,17 @@
             this.musicTilePanel2.Name = "musicTilePanel2";
             this.musicTilePanel2.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel2.TabIndex = 1;
+            this.musicTilePanel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTileLabel2
             // 
             this.musicTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel2.Name = "musicTileLabel2";
-            this.musicTileLabel2.Size = new System.Drawing.Size(232, 63);
+            this.musicTileLabel2.Size = new System.Drawing.Size(232, 60);
             this.musicTileLabel2.TabIndex = 1;
             this.musicTileLabel2.Text = "music2";
+            this.musicTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilepicBox2
             // 
@@ -242,9 +247,10 @@
             this.musicTilepicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilepicBox2.Location = new System.Drawing.Point(0, 0);
             this.musicTilepicBox2.Name = "musicTilepicBox2";
-            this.musicTilepicBox2.Size = new System.Drawing.Size(269, 110);
+            this.musicTilepicBox2.Size = new System.Drawing.Size(240, 110);
             this.musicTilepicBox2.TabIndex = 0;
             this.musicTilepicBox2.TabStop = false;
+            this.musicTilepicBox2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilePanel3
             // 
@@ -256,15 +262,17 @@
             this.musicTilePanel3.Name = "musicTilePanel3";
             this.musicTilePanel3.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel3.TabIndex = 1;
+            this.musicTilePanel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTileLabel3
             // 
             this.musicTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel3.Name = "musicTileLabel3";
-            this.musicTileLabel3.Size = new System.Drawing.Size(232, 63);
+            this.musicTileLabel3.Size = new System.Drawing.Size(232, 60);
             this.musicTileLabel3.TabIndex = 1;
             this.musicTileLabel3.Text = "music3";
+            this.musicTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilepicBox3
             // 
@@ -272,9 +280,10 @@
             this.musicTilepicBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilepicBox3.Location = new System.Drawing.Point(0, 0);
             this.musicTilepicBox3.Name = "musicTilepicBox3";
-            this.musicTilepicBox3.Size = new System.Drawing.Size(269, 110);
+            this.musicTilepicBox3.Size = new System.Drawing.Size(240, 110);
             this.musicTilepicBox3.TabIndex = 0;
             this.musicTilepicBox3.TabStop = false;
+            this.musicTilepicBox3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilePanel1
             // 
@@ -286,15 +295,18 @@
             this.musicTilePanel1.Name = "musicTilePanel1";
             this.musicTilePanel1.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel1.TabIndex = 1;
+            this.musicTilePanel1.Click += new System.EventHandler(this.tilesControlsClick);
+            this.musicTilePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.musicTilePanel1_Paint);
             // 
             // musicTileLabel1
             // 
             this.musicTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel1.Name = "musicTileLabel1";
-            this.musicTileLabel1.Size = new System.Drawing.Size(232, 63);
+            this.musicTileLabel1.Size = new System.Drawing.Size(232, 60);
             this.musicTileLabel1.TabIndex = 1;
             this.musicTileLabel1.Text = "music1";
+            this.musicTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // musicTilepicBox1
             // 
@@ -302,9 +314,10 @@
             this.musicTilepicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilepicBox1.Location = new System.Drawing.Point(0, 0);
             this.musicTilepicBox1.Name = "musicTilepicBox1";
-            this.musicTilepicBox1.Size = new System.Drawing.Size(269, 110);
+            this.musicTilepicBox1.Size = new System.Drawing.Size(240, 110);
             this.musicTilepicBox1.TabIndex = 0;
             this.musicTilepicBox1.TabStop = false;
+            this.musicTilepicBox1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterPanel
             // 
@@ -339,15 +352,17 @@
             this.theaterTilePanel4.Name = "theaterTilePanel4";
             this.theaterTilePanel4.Size = new System.Drawing.Size(240, 220);
             this.theaterTilePanel4.TabIndex = 1;
+            this.theaterTilePanel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTileLabel4
             // 
-            this.theaterTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.theaterTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel4.Name = "theaterTileLabel4";
-            this.theaterTileLabel4.Size = new System.Drawing.Size(231, 67);
+            this.theaterTileLabel4.Size = new System.Drawing.Size(232, 60);
             this.theaterTileLabel4.TabIndex = 1;
             this.theaterTileLabel4.Text = "theater4";
+            this.theaterTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilepicBox4
             // 
@@ -358,6 +373,7 @@
             this.theaterTilepicBox4.Size = new System.Drawing.Size(239, 110);
             this.theaterTilepicBox4.TabIndex = 0;
             this.theaterTilepicBox4.TabStop = false;
+            this.theaterTilepicBox4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilePanel2
             // 
@@ -369,15 +385,17 @@
             this.theaterTilePanel2.Name = "theaterTilePanel2";
             this.theaterTilePanel2.Size = new System.Drawing.Size(241, 220);
             this.theaterTilePanel2.TabIndex = 1;
+            this.theaterTilePanel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTileLabel2
             // 
-            this.theaterTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.theaterTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel2.Name = "theaterTileLabel2";
-            this.theaterTileLabel2.Size = new System.Drawing.Size(231, 67);
+            this.theaterTileLabel2.Size = new System.Drawing.Size(232, 60);
             this.theaterTileLabel2.TabIndex = 1;
             this.theaterTileLabel2.Text = "theater2";
+            this.theaterTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilepicBox2
             // 
@@ -388,6 +406,7 @@
             this.theaterTilepicBox2.Size = new System.Drawing.Size(239, 110);
             this.theaterTilepicBox2.TabIndex = 0;
             this.theaterTilepicBox2.TabStop = false;
+            this.theaterTilepicBox2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilePanel3
             // 
@@ -399,15 +418,17 @@
             this.theaterTilePanel3.Name = "theaterTilePanel3";
             this.theaterTilePanel3.Size = new System.Drawing.Size(241, 220);
             this.theaterTilePanel3.TabIndex = 1;
+            this.theaterTilePanel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTileLabel3
             // 
-            this.theaterTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.theaterTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel3.Name = "theaterTileLabel3";
-            this.theaterTileLabel3.Size = new System.Drawing.Size(231, 67);
+            this.theaterTileLabel3.Size = new System.Drawing.Size(232, 60);
             this.theaterTileLabel3.TabIndex = 1;
             this.theaterTileLabel3.Text = "theater3";
+            this.theaterTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilepicBox3
             // 
@@ -418,6 +439,7 @@
             this.theaterTilepicBox3.Size = new System.Drawing.Size(240, 110);
             this.theaterTilepicBox3.TabIndex = 0;
             this.theaterTilepicBox3.TabStop = false;
+            this.theaterTilepicBox3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilePanel1
             // 
@@ -429,15 +451,17 @@
             this.theaterTilePanel1.Name = "theaterTilePanel1";
             this.theaterTilePanel1.Size = new System.Drawing.Size(240, 220);
             this.theaterTilePanel1.TabIndex = 1;
+            this.theaterTilePanel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTileLabel1
             // 
-            this.theaterTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.theaterTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel1.Name = "theaterTileLabel1";
-            this.theaterTileLabel1.Size = new System.Drawing.Size(231, 67);
+            this.theaterTileLabel1.Size = new System.Drawing.Size(232, 60);
             this.theaterTileLabel1.TabIndex = 1;
             this.theaterTileLabel1.Text = "theater1";
+            this.theaterTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // theaterTilepicBox1
             // 
@@ -448,6 +472,7 @@
             this.theaterTilepicBox1.Size = new System.Drawing.Size(239, 110);
             this.theaterTilepicBox1.TabIndex = 0;
             this.theaterTilepicBox1.TabStop = false;
+            this.theaterTilepicBox1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferencePanel
             // 
@@ -481,15 +506,17 @@
             this.conferenceTilePanel4.Name = "conferenceTilePanel4";
             this.conferenceTilePanel4.Size = new System.Drawing.Size(241, 220);
             this.conferenceTilePanel4.TabIndex = 1;
+            this.conferenceTilePanel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTileLabel4
             // 
-            this.conferenceTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.conferenceTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel4.Name = "conferenceTileLabel4";
-            this.conferenceTileLabel4.Size = new System.Drawing.Size(231, 68);
+            this.conferenceTileLabel4.Size = new System.Drawing.Size(232, 60);
             this.conferenceTileLabel4.TabIndex = 1;
             this.conferenceTileLabel4.Text = "conference4";
+            this.conferenceTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilepicBox4
             // 
@@ -500,6 +527,7 @@
             this.conferenceTilepicBox4.Size = new System.Drawing.Size(240, 110);
             this.conferenceTilepicBox4.TabIndex = 0;
             this.conferenceTilepicBox4.TabStop = false;
+            this.conferenceTilepicBox4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilePanel2
             // 
@@ -511,15 +539,17 @@
             this.conferenceTilePanel2.Name = "conferenceTilePanel2";
             this.conferenceTilePanel2.Size = new System.Drawing.Size(242, 220);
             this.conferenceTilePanel2.TabIndex = 1;
+            this.conferenceTilePanel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTileLabel2
             // 
-            this.conferenceTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.conferenceTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel2.Name = "conferenceTileLabel2";
-            this.conferenceTileLabel2.Size = new System.Drawing.Size(231, 68);
+            this.conferenceTileLabel2.Size = new System.Drawing.Size(232, 60);
             this.conferenceTileLabel2.TabIndex = 1;
             this.conferenceTileLabel2.Text = "conference2";
+            this.conferenceTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilepicBox2
             // 
@@ -530,6 +560,7 @@
             this.conferenceTilepicBox2.Size = new System.Drawing.Size(241, 110);
             this.conferenceTilepicBox2.TabIndex = 0;
             this.conferenceTilepicBox2.TabStop = false;
+            this.conferenceTilepicBox2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilePanel3
             // 
@@ -541,15 +572,17 @@
             this.conferenceTilePanel3.Name = "conferenceTilePanel3";
             this.conferenceTilePanel3.Size = new System.Drawing.Size(241, 220);
             this.conferenceTilePanel3.TabIndex = 1;
+            this.conferenceTilePanel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTileLabel3
             // 
-            this.conferenceTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.conferenceTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel3.Name = "conferenceTileLabel3";
-            this.conferenceTileLabel3.Size = new System.Drawing.Size(231, 68);
+            this.conferenceTileLabel3.Size = new System.Drawing.Size(232, 60);
             this.conferenceTileLabel3.TabIndex = 1;
             this.conferenceTileLabel3.Text = "conference3";
+            this.conferenceTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilepicBox3
             // 
@@ -560,6 +593,7 @@
             this.conferenceTilepicBox3.Size = new System.Drawing.Size(240, 110);
             this.conferenceTilepicBox3.TabIndex = 0;
             this.conferenceTilepicBox3.TabStop = false;
+            this.conferenceTilepicBox3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilePanel1
             // 
@@ -571,15 +605,17 @@
             this.conferenceTilePanel1.Name = "conferenceTilePanel1";
             this.conferenceTilePanel1.Size = new System.Drawing.Size(240, 220);
             this.conferenceTilePanel1.TabIndex = 1;
+            this.conferenceTilePanel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTileLabel1
             // 
-            this.conferenceTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.conferenceTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel1.Name = "conferenceTileLabel1";
-            this.conferenceTileLabel1.Size = new System.Drawing.Size(231, 68);
+            this.conferenceTileLabel1.Size = new System.Drawing.Size(232, 60);
             this.conferenceTileLabel1.TabIndex = 1;
             this.conferenceTileLabel1.Text = "conference1";
+            this.conferenceTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // conferenceTilepicBox1
             // 
@@ -590,6 +626,7 @@
             this.conferenceTilepicBox1.Size = new System.Drawing.Size(239, 110);
             this.conferenceTilepicBox1.TabIndex = 0;
             this.conferenceTilepicBox1.TabStop = false;
+            this.conferenceTilepicBox1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsPanel
             // 
@@ -623,15 +660,17 @@
             this.festivalsTilePanel4.Name = "festivalsTilePanel4";
             this.festivalsTilePanel4.Size = new System.Drawing.Size(241, 220);
             this.festivalsTilePanel4.TabIndex = 1;
+            this.festivalsTilePanel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTileLabel4
             // 
-            this.festivalsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.festivalsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel4.Name = "festivalsTileLabel4";
-            this.festivalsTileLabel4.Size = new System.Drawing.Size(230, 65);
+            this.festivalsTileLabel4.Size = new System.Drawing.Size(232, 60);
             this.festivalsTileLabel4.TabIndex = 1;
             this.festivalsTileLabel4.Text = "festivals4";
+            this.festivalsTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilepicBox4
             // 
@@ -642,6 +681,7 @@
             this.festivalsTilepicBox4.Size = new System.Drawing.Size(240, 110);
             this.festivalsTilepicBox4.TabIndex = 0;
             this.festivalsTilepicBox4.TabStop = false;
+            this.festivalsTilepicBox4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilePanel2
             // 
@@ -653,15 +693,17 @@
             this.festivalsTilePanel2.Name = "festivalsTilePanel2";
             this.festivalsTilePanel2.Size = new System.Drawing.Size(241, 220);
             this.festivalsTilePanel2.TabIndex = 1;
+            this.festivalsTilePanel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTileLabel2
             // 
-            this.festivalsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.festivalsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel2.Name = "festivalsTileLabel2";
-            this.festivalsTileLabel2.Size = new System.Drawing.Size(230, 65);
+            this.festivalsTileLabel2.Size = new System.Drawing.Size(232, 60);
             this.festivalsTileLabel2.TabIndex = 1;
             this.festivalsTileLabel2.Text = "festivals2";
+            this.festivalsTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilepicBox2
             // 
@@ -672,6 +714,7 @@
             this.festivalsTilepicBox2.Size = new System.Drawing.Size(240, 110);
             this.festivalsTilepicBox2.TabIndex = 0;
             this.festivalsTilepicBox2.TabStop = false;
+            this.festivalsTilepicBox2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilePanel3
             // 
@@ -683,15 +726,17 @@
             this.festivalsTilePanel3.Name = "festivalsTilePanel3";
             this.festivalsTilePanel3.Size = new System.Drawing.Size(241, 220);
             this.festivalsTilePanel3.TabIndex = 1;
+            this.festivalsTilePanel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTileLabel3
             // 
-            this.festivalsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.festivalsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel3.Name = "festivalsTileLabel3";
-            this.festivalsTileLabel3.Size = new System.Drawing.Size(230, 65);
+            this.festivalsTileLabel3.Size = new System.Drawing.Size(232, 60);
             this.festivalsTileLabel3.TabIndex = 1;
             this.festivalsTileLabel3.Text = "festivals3";
+            this.festivalsTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilepicBox3
             // 
@@ -702,6 +747,7 @@
             this.festivalsTilepicBox3.Size = new System.Drawing.Size(240, 110);
             this.festivalsTilepicBox3.TabIndex = 0;
             this.festivalsTilepicBox3.TabStop = false;
+            this.festivalsTilepicBox3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilePanel1
             // 
@@ -713,15 +759,17 @@
             this.festivalsTilePanel1.Name = "festivalsTilePanel1";
             this.festivalsTilePanel1.Size = new System.Drawing.Size(239, 220);
             this.festivalsTilePanel1.TabIndex = 1;
+            this.festivalsTilePanel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTileLabel1
             // 
-            this.festivalsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.festivalsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel1.Name = "festivalsTileLabel1";
-            this.festivalsTileLabel1.Size = new System.Drawing.Size(230, 65);
+            this.festivalsTileLabel1.Size = new System.Drawing.Size(232, 60);
             this.festivalsTileLabel1.TabIndex = 1;
             this.festivalsTileLabel1.Text = "festivals1";
+            this.festivalsTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // festivalsTilepicBox1
             // 
@@ -732,6 +780,7 @@
             this.festivalsTilepicBox1.Size = new System.Drawing.Size(238, 110);
             this.festivalsTilepicBox1.TabIndex = 0;
             this.festivalsTilepicBox1.TabStop = false;
+            this.festivalsTilepicBox1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsPanel
             // 
@@ -765,15 +814,17 @@
             this.sportsTilePanel4.Name = "sportsTilePanel4";
             this.sportsTilePanel4.Size = new System.Drawing.Size(241, 220);
             this.sportsTilePanel4.TabIndex = 1;
+            this.sportsTilePanel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTileLabel4
             // 
-            this.sportsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.sportsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel4.Name = "sportsTileLabel4";
-            this.sportsTileLabel4.Size = new System.Drawing.Size(230, 72);
+            this.sportsTileLabel4.Size = new System.Drawing.Size(232, 60);
             this.sportsTileLabel4.TabIndex = 1;
             this.sportsTileLabel4.Text = "sports4";
+            this.sportsTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilepicBox4
             // 
@@ -784,6 +835,7 @@
             this.sportsTilepicBox4.Size = new System.Drawing.Size(240, 110);
             this.sportsTilepicBox4.TabIndex = 0;
             this.sportsTilepicBox4.TabStop = false;
+            this.sportsTilepicBox4.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilePanel2
             // 
@@ -795,15 +847,17 @@
             this.sportsTilePanel2.Name = "sportsTilePanel2";
             this.sportsTilePanel2.Size = new System.Drawing.Size(241, 220);
             this.sportsTilePanel2.TabIndex = 1;
+            this.sportsTilePanel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTileLabel2
             // 
-            this.sportsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.sportsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel2.Name = "sportsTileLabel2";
-            this.sportsTileLabel2.Size = new System.Drawing.Size(230, 72);
+            this.sportsTileLabel2.Size = new System.Drawing.Size(232, 60);
             this.sportsTileLabel2.TabIndex = 1;
             this.sportsTileLabel2.Text = "sports2";
+            this.sportsTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilepicBox2
             // 
@@ -814,6 +868,7 @@
             this.sportsTilepicBox2.Size = new System.Drawing.Size(240, 110);
             this.sportsTilepicBox2.TabIndex = 0;
             this.sportsTilepicBox2.TabStop = false;
+            this.sportsTilepicBox2.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilePanel3
             // 
@@ -825,15 +880,17 @@
             this.sportsTilePanel3.Name = "sportsTilePanel3";
             this.sportsTilePanel3.Size = new System.Drawing.Size(240, 220);
             this.sportsTilePanel3.TabIndex = 1;
+            this.sportsTilePanel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTileLabel3
             // 
-            this.sportsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.sportsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel3.Name = "sportsTileLabel3";
-            this.sportsTileLabel3.Size = new System.Drawing.Size(230, 72);
+            this.sportsTileLabel3.Size = new System.Drawing.Size(232, 60);
             this.sportsTileLabel3.TabIndex = 1;
             this.sportsTileLabel3.Text = "sports3";
+            this.sportsTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilepicBox3
             // 
@@ -844,6 +901,7 @@
             this.sportsTilepicBox3.Size = new System.Drawing.Size(239, 110);
             this.sportsTilepicBox3.TabIndex = 0;
             this.sportsTilepicBox3.TabStop = false;
+            this.sportsTilepicBox3.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilePanel1
             // 
@@ -855,15 +913,17 @@
             this.sportsTilePanel1.Name = "sportsTilePanel1";
             this.sportsTilePanel1.Size = new System.Drawing.Size(239, 220);
             this.sportsTilePanel1.TabIndex = 1;
+            this.sportsTilePanel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTileLabel1
             // 
-            this.sportsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.sportsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel1.Name = "sportsTileLabel1";
-            this.sportsTileLabel1.Size = new System.Drawing.Size(230, 72);
+            this.sportsTileLabel1.Size = new System.Drawing.Size(232, 60);
             this.sportsTileLabel1.TabIndex = 1;
             this.sportsTileLabel1.Text = "sports1";
+            this.sportsTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // sportsTilepicBox1
             // 
@@ -874,6 +934,7 @@
             this.sportsTilepicBox1.Size = new System.Drawing.Size(238, 110);
             this.sportsTilepicBox1.TabIndex = 0;
             this.sportsTilepicBox1.TabStop = false;
+            this.sportsTilepicBox1.Click += new System.EventHandler(this.tilesControlsClick);
             // 
             // HomeMain
             // 

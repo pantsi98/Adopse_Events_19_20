@@ -180,6 +180,12 @@
     <Compile Include="ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchCategoriesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchCategoriesControl.Designer.cs">
+      <DependentUpon>SearchCategoriesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpEventManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCategoriesControl.resx">
+      <DependentUpon>SearchCategoriesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpEventManager.resx">
       <DependentUpon>SignUpEventManager.cs</DependentUpon>

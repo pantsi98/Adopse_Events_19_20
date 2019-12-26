@@ -16,5 +16,10 @@ namespace Project_4
         {
             InitializeComponent();
         }
+
+        private void button_reset_pass_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

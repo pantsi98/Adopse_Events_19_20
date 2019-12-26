@@ -16,8 +16,11 @@ namespace Project_4
 {
     public partial class Form1 : Form
     {
-        public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals","Συνέδρια", "Θέατρο","Μουσική","Menu"};
+        public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals", "Συνέδρια", "Θέατρο", "Μουσική", "Menu"};
         public int index = 0;
+        SearchCategoriesControl scc = new SearchCategoriesControl();
+        HomeMain hm1 = new HomeMain();
+        HomeMain hm2 = new HomeMain();
         public Form1()
         {
             InitializeComponent();
@@ -35,8 +38,7 @@ namespace Project_4
         private void button1_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            HomeMain hm = new HomeMain();
-            MainPanel.Controls.Add(hm);
+            MainPanel.Controls.Add(hm1);
         }
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -54,7 +56,6 @@ namespace Project_4
             MainPanel.Controls.Clear();
             SignUpstep1 su = new SignUpstep1();
             MainPanel.Controls.Add(su);
-
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -148,18 +149,88 @@ namespace Project_4
             MainPanel.Controls.Add(su);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void addGeneralLayout()
         {
-            //eventsListView.Items.Clear();
-            User vs =InstanceOfUser.GetUser();
-            List<string> list = new List<string>();
-            //list = vs.SearchForEvent(searchTextBox.Text);
-            var listItem = new ListViewItem();
-            for (int i = 0; i < list.Count; i++)
+
+        }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(searchTextBox.Text))
             {
-                listItem = new ListViewItem(list.ElementAt(i));
-                //eventsListView.Items.Add(listItem);
-                //eventsListView.Groups[0].Items.Add(listItem);
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(hm1);
+
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
+            {
+
+                foreach (Control item in scc.Controls)
+                {
+                    System.Diagnostics.Trace.WriteLine(item.GetType().ToString());
+                }
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(scc);
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count > 0)
+            {
+                foreach (Control item in scc.Controls)
+                {
+                    if (item.GetType() == typeof(Label))
+                    {
+                        item.Text = searchTextBox.Text;
+                    }
+                }
+                scc.tileLabel1.Text = searchTextBox.Text;
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(scc);
+            }
+        }
+
+        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void searchTextBox_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (string.IsNullOrEmpty(searchTextBox.Text))
+            {
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(new HomeMain());
+
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
+            {
+                
+                foreach (Control item in scc.Controls)
+                {
+                    System.Diagnostics.Trace.WriteLine(item.GetType().ToString());
+                }
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(scc);
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count > 0)
+            {
+                foreach (Control item in scc.Controls)
+                {
+                    if (item.GetType() == typeof(Label))
+                    {
+                        item.Text = searchTextBox.Text;
+                    }
+                }
+                scc.tileLabel1.Text = searchTextBox.Text;
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(scc);
             }
         }
     }

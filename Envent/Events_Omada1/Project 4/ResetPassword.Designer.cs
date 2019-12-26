@@ -78,6 +78,7 @@
             this.button_reset_pass.TabIndex = 4;
             this.button_reset_pass.Text = "Επαναφορά";
             this.button_reset_pass.UseVisualStyleBackColor = true;
+            this.button_reset_pass.Click += new System.EventHandler(this.button_reset_pass_Click);
             // 
             // ResetPassword
             // 
