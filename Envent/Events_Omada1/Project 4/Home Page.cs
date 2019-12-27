@@ -152,7 +152,7 @@ namespace Project_4
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            eventsListView.Items.Clear();
+            //eventsListView.Items.Clear();
             User vs =InstanceOfUser.GetUser();
             List<string> list = new List<string>();
             //list = vs.SearchForEvent(searchTextBox.Text);
@@ -160,8 +160,8 @@ namespace Project_4
             for (int i = 0; i < list.Count; i++)
             {
                 listItem = new ListViewItem(list.ElementAt(i));
-                eventsListView.Items.Add(listItem);
-                eventsListView.Groups[0].Items.Add(listItem);
+                //eventsListView.Items.Add(listItem);
+                //eventsListView.Groups[0].Items.Add(listItem);
             }
         }
     }

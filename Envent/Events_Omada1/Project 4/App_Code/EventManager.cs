@@ -18,7 +18,7 @@ namespace Project_4.User_Classes
             profile = new ManagerProfile(userID, true);
         }
 
-        public override Profile GetProfile(int userID)
+        public override Profile GetProfile()
         {
             return profile;
         }

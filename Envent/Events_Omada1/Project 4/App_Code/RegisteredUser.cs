@@ -16,7 +16,7 @@ namespace Project_4.User_Classes
         public RegisteredUser(string userName, string passWord)
         {
                 enventDataSetTableAdapters.userTableAdapter id = new enventDataSetTableAdapters.userTableAdapter();
-                this.userID = id.getID("username").ToList().ElementAt(0).id;
+                this.userID = id.getID(userName).ToList().ElementAt(0).id;
                 this.userName = userName;
                 this.passWord = passWord;
         }
@@ -42,6 +42,6 @@ namespace Project_4.User_Classes
             throw new NotImplementedException();
         }
 
-        public abstract Profile GetProfile(int userID);
+        public abstract Profile GetProfile();
     }
 }

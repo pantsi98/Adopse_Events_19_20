@@ -15,7 +15,7 @@ namespace Project_4.App_Code
         {
             profile = new UserProfile(userID);
         }
-        public override Profile GetProfile(int userID)
+        public override Profile GetProfile()
         {
             return profile;
         }
