@@ -7,69 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Project_4.App_Code.StaticMethods;
 using Project_4.User_Classes;
-using Project_4.App_Code;
 
 namespace Project_4
 {
-    public partial class ProfileControl : UserControl
+    public partial class EpeksergasiaEventManager : UserControl
     {
-        public ProfileControl()
+        public EpeksergasiaEventManager()
         {
             InitializeComponent();
-        }
-
-        private void Profile_Load(object sender, EventArgs e)
-        {
-            User x = InstanceOfUser.GetUser();
-            if (x is NormalUser)
-            {
-                NormalUser nu = (NormalUser)x;
-                onomaTextBox.Text = nu.GetProfile().GetFirstName();
-                lastnameTextBox.Text = nu.GetProfile().GetLastName();
-                emailTextBox.Text = nu.GetProfile().GetEmail();
-                genderTextBox.Text = nu.GetProfile().GetGender();
-                dobPicker.Value = nu.GetProfile().GetDob();
-                adressTextBox.Text = nu.GetProfile().GetAddress();
-            }
-        }
-
-        private void cCircularButton3_Click(object sender, EventArgs e)
+        } 
+       
+        private void EpeksergasiaEventManager_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dobPicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void circularPicture4_Click(object sender, EventArgs e)
         {
             if (usernamTextBox.Enabled)
@@ -81,7 +38,8 @@ namespace Project_4
 
         private void circularPicture5_Click(object sender, EventArgs e)
         {
-            if (onomaTextBox.Enabled) { onomaTextBox.Enabled = false; } else
+            if (onomaTextBox.Enabled) { onomaTextBox.Enabled = false; }
+            else
             {
                 onomaTextBox.Enabled = true;
             }
@@ -89,7 +47,8 @@ namespace Project_4
 
         private void circularPicture7_Click(object sender, EventArgs e)
         {
-            if (passwordTextBox.Enabled) { passwordTextBox.Enabled = false; } else
+            if (passwordTextBox.Enabled) { passwordTextBox.Enabled = false; }
+            else
             {
                 passwordTextBox.Enabled = true;
 
@@ -98,7 +57,8 @@ namespace Project_4
 
         private void circularPicture6_Click(object sender, EventArgs e)
         {
-            if (adressTextBox.Enabled) { adressTextBox.Enabled = false; } else
+            if (adressTextBox.Enabled) { adressTextBox.Enabled = false; }
+            else
             {
                 adressTextBox.Enabled = true;
             }
@@ -106,7 +66,8 @@ namespace Project_4
 
         private void circularPicture8_Click(object sender, EventArgs e)
         {
-            if (lastnameTextBox.Enabled) { lastnameTextBox.Enabled = false; } else
+            if (lastnameTextBox.Enabled) { lastnameTextBox.Enabled = false; }
+            else
             {
                 lastnameTextBox.Enabled = true;
             }
@@ -136,10 +97,14 @@ namespace Project_4
         {
             lastnameTextBox.Enabled = false;
         }
-
+        Boolean dodpickerd=false;
         private void circularPicture9_Click(object sender, EventArgs e)
         {
-            if (dobPicker.Enabled) { dobPicker.Enabled = false; }
+            if (dobPicker.Enabled) {
+                dobPicker.Enabled = false;
+                dodpickerd = true;
+
+            }
             else
             {
                 dobPicker.Enabled = true;
@@ -151,9 +116,63 @@ namespace Project_4
             dobPicker.Enabled = false;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void circularPicture10_Click(object sender, EventArgs e)
         {
+            if (IBANtextbox.Enabled) { IBANtextbox.Enabled = false; }
+            else
+            {
+                IBANtextbox.Enabled = true;
+            }
 
+        }
+        //dokimastikomanagerprofil
+        ManagerProfile mp = new ManagerProfile(7, false);
+        private void Save_Click(object sender, EventArgs e)
+        {
+            if (usernamTextBox.Text != "")
+            {
+                mp.UpdateUserName(7, usernamTextBox.Text);
+
+            }
+            else if (onomaTextBox.Text != "") {
+                mp.UpdateFirstName(7, onomaTextBox.Text);
+
+            }
+            else if (lastnameTextBox.Text != "")
+            {
+                mp.UpdateLastName(7, lastnameTextBox.Text);
+
+            }
+            else if (adressTextBox.Text != "")
+            {
+                mp.UpdateAddress(7, adressTextBox.Text);
+
+            }
+            else if (passwordTextBox.Text != "")
+            {
+                mp.UpdatePassword(7, passwordTextBox.Text);
+
+            }
+            else if (IBANtextbox.Text != "")
+            {
+               // mp.updateIban(7, IBANtextbox.Text);
+
+            }
+            else if (dodpickerd=true)
+            {
+
+
+                // mp.updateDateofbirth(7,dobPicker.Value());
+
+
+            }
+
+
+        }
+
+        private void IBANtextbox_Leave(object sender, EventArgs e)
+        {
+            IBANtextbox.Enabled = true;
         }
     }
 }

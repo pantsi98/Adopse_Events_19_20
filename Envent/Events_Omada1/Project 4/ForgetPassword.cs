@@ -108,6 +108,7 @@ namespace Project_4
             return theEmail ;
         }
 
+
             private void button1_Click(object sender, EventArgs e){
             //Dimiourgia antikeimenou gia na pame to email se alli klasi
             theEmail = EmailForgot.Text;

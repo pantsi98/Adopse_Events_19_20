@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
             this.homepagePanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+
             this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
@@ -49,6 +50,8 @@
             this.theaterBtn = new System.Windows.Forms.Button();
             this.musicBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
+            this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.eventsListView = new System.Windows.Forms.ListView();
             this.homepagePanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
@@ -68,15 +71,6 @@
             this.homepagePanel.Name = "homepagePanel";
             this.homepagePanel.Size = new System.Drawing.Size(1920, 61);
             this.homepagePanel.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Location = new System.Drawing.Point(28, -21);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 82);
-            this.panel2.TabIndex = 6;
             // 
             // searchTextBox
             // 
@@ -129,6 +123,8 @@
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
+
+
             // cCircularButton1
             // 
             this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
@@ -356,9 +352,30 @@
             this.homeBtn.UseVisualStyleBackColor = false;
             this.homeBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Title
+            // 
+            this.Title.Width = 200;
+            // 
+            // eventsListView
+            // 
+            this.eventsListView.BackColor = System.Drawing.Color.White;
+            this.eventsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Title});
+            this.eventsListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "viewGourp";
+            this.eventsListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1});
+            this.eventsListView.HideSelection = false;
+            this.eventsListView.Location = new System.Drawing.Point(0, 0);
+            this.eventsListView.Name = "eventsListView";
+            this.eventsListView.Size = new System.Drawing.Size(1620, 995);
+            this.eventsListView.TabIndex = 0;
+            this.eventsListView.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1584, 861);
