@@ -194,31 +194,7 @@ namespace Project_4
                 }
                 //eggrafi sti vasi
 
-
-              /*  User_Classes.Visitor vis = new User_Classes.Visitor();
-                User_Classes.ManagerProfile   profile = new User_Classes.ManagerProfile(Onoma.Text, Epitheto.Text, Email1.Text, address.Text,
-                    genderText, dobPicker.Value);
-                string userName = username1.Text;
-                string passWord = Kodikos1.Text;
-                try
-                {
-                    Cursor.Current = Cursors.WaitCursor;
-                    vis.SingUpAsEventManager(profile, userName, passWord);
-                    Cursor.Current = Cursors.Default;
-                    MessageBox.Show("Η εγγραφή ήταν επιτυχής!");
-                    Controls.Clear();
-                    LogIn su = new LogIn();
-                    Controls.Add(su);
-                }
-                catch (User_Classes.Exceptions.UserNameException msg)
-                {
-                    Cursor.Current = Cursors.Default;
-                    usernameLabel.Text = msg.ToString();
-
-                }*/
-
-
-
+                
             }  }
         Boolean checkpassIsValid;
 

@@ -30,12 +30,6 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.circularPicture9 = new Project_4.App_Code.circularPicture();
-            this.circularPicture8 = new Project_4.App_Code.circularPicture();
-            this.circularPicture7 = new Project_4.App_Code.circularPicture();
-            this.circularPicture6 = new Project_4.App_Code.circularPicture();
-            this.circularPicture5 = new Project_4.App_Code.circularPicture();
-            this.circularPicture4 = new Project_4.App_Code.circularPicture();
             this.lastnameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,7 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.onomaTextBox = new System.Windows.Forms.TextBox();
             this.fullolabel = new System.Windows.Forms.Label();
-
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.genderTextBox = new System.Windows.Forms.TextBox();
@@ -61,14 +54,11 @@
             this.circularPicture6 = new Project_4.App_Code.circularPicture();
             this.circularPicture5 = new Project_4.App_Code.circularPicture();
             this.circularPicture4 = new Project_4.App_Code.circularPicture();
-
             this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.circularPicture2 = new Project_4.App_Code.circularPicture();
             this.circularPicture1 = new Project_4.App_Code.circularPicture();
             this.panel1.SuspendLayout();
-
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture10)).BeginInit();
-
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
@@ -126,78 +116,6 @@
             this.panel1.Size = new System.Drawing.Size(1066, 635);
             this.panel1.TabIndex = 40;
             // 
-            // circularPicture9
-            // 
-            this.circularPicture9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture9.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture9.Location = new System.Drawing.Point(387, 346);
-            this.circularPicture9.Name = "circularPicture9";
-            this.circularPicture9.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture9.TabIndex = 100;
-            this.circularPicture9.TabStop = false;
-            this.circularPicture9.Click += new System.EventHandler(this.circularPicture9_Click);
-            // 
-            // circularPicture8
-            // 
-            this.circularPicture8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture8.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture8.Location = new System.Drawing.Point(948, 177);
-            this.circularPicture8.Name = "circularPicture8";
-            this.circularPicture8.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture8.TabIndex = 99;
-            this.circularPicture8.TabStop = false;
-            this.circularPicture8.Click += new System.EventHandler(this.circularPicture8_Click);
-            // 
-            // circularPicture7
-            // 
-            this.circularPicture7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture7.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture7.Location = new System.Drawing.Point(948, 91);
-            this.circularPicture7.Name = "circularPicture7";
-            this.circularPicture7.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture7.TabIndex = 98;
-            this.circularPicture7.TabStop = false;
-            this.circularPicture7.Click += new System.EventHandler(this.circularPicture7_Click);
-            // 
-            // circularPicture6
-            // 
-            this.circularPicture6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture6.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture6.Location = new System.Drawing.Point(387, 262);
-            this.circularPicture6.Name = "circularPicture6";
-            this.circularPicture6.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture6.TabIndex = 97;
-            this.circularPicture6.TabStop = false;
-            this.circularPicture6.Click += new System.EventHandler(this.circularPicture6_Click);
-            // 
-            // circularPicture5
-            // 
-            this.circularPicture5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture5.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture5.Location = new System.Drawing.Point(387, 177);
-            this.circularPicture5.Name = "circularPicture5";
-            this.circularPicture5.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture5.TabIndex = 96;
-            this.circularPicture5.TabStop = false;
-            this.circularPicture5.Click += new System.EventHandler(this.circularPicture5_Click);
-            // 
-            // circularPicture4
-            // 
-            this.circularPicture4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture4.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture4.Location = new System.Drawing.Point(387, 91);
-            this.circularPicture4.Name = "circularPicture4";
-            this.circularPicture4.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture4.TabIndex = 95;
-            this.circularPicture4.TabStop = false;
-            this.circularPicture4.Click += new System.EventHandler(this.circularPicture4_Click);
-            // 
             // lastnameTextBox
             // 
             this.lastnameTextBox.Enabled = false;
@@ -235,7 +153,6 @@
             this.button1.TabIndex = 92;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dobPicker
             // 
@@ -345,7 +262,6 @@
             this.fullolabel.TabIndex = 80;
             this.fullolabel.Text = "Όνομα";
             // 
-
             // emailTextBox
             // 
             this.emailTextBox.Enabled = false;
@@ -471,7 +387,6 @@
             this.circularPicture4.TabStop = false;
             this.circularPicture4.Click += new System.EventHandler(this.circularPicture4_Click);
             // 
-
             // circularPicture3
             // 
             this.circularPicture3.BackColor = System.Drawing.Color.Transparent;
@@ -526,9 +441,7 @@
             this.Load += new System.EventHandler(this.Profile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture10)).EndInit();
-
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).EndInit();
