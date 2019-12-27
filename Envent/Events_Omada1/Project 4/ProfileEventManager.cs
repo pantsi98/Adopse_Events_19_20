@@ -24,7 +24,9 @@ namespace Project_4
 
         private void UserButon_Click(object sender, EventArgs e)
         {
-
+            EmanPanel.Controls.Clear();
+            EpeksergasiaEventManager su = new EpeksergasiaEventManager();
+            EmanPanel.Controls.Add(su);
         }
 
         private void label1_Click(object sender, EventArgs e)

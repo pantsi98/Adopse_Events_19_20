@@ -87,7 +87,7 @@
             // EventstreeView
             // 
             this.EventstreeView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.EventstreeView.Location = new System.Drawing.Point(0, 0);
+            this.EventstreeView.Location = new System.Drawing.Point(193, 3);
             this.EventstreeView.Name = "EventstreeView";
             treeNode1.Name = "Node3";
             treeNode1.Text = "Ιανουάριος";
@@ -150,7 +150,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(218, 0);
+            this.panel1.Location = new System.Drawing.Point(411, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(841, 520);
             this.panel1.TabIndex = 51;
@@ -172,7 +172,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.EventstreeView);
             this.Name = "HistoryEventManager";
-            this.Size = new System.Drawing.Size(1062, 523);
+            this.Size = new System.Drawing.Size(1392, 796);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

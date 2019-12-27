@@ -1,6 +1,6 @@
 ﻿namespace Project_4
 {
-    partial class ProfileControl
+    partial class EpeksergasiaEventManager
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.circularPicture10 = new Project_4.App_Code.circularPicture();
+            this.IBANtextbox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.circularPicture9 = new Project_4.App_Code.circularPicture();
             this.circularPicture8 = new Project_4.App_Code.circularPicture();
             this.circularPicture7 = new Project_4.App_Code.circularPicture();
@@ -38,7 +40,7 @@
             this.circularPicture4 = new Project_4.App_Code.circularPicture();
             this.lastnameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
             this.dobPicker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,38 +51,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.onomaTextBox = new System.Windows.Forms.TextBox();
             this.fullolabel = new System.Windows.Forms.Label();
-            this.circularPicture3 = new Project_4.App_Code.circularPicture();
-            this.circularPicture2 = new Project_4.App_Code.circularPicture();
-            this.circularPicture1 = new Project_4.App_Code.circularPicture();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(290, 168);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 50);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Ιστορικό";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.circularPicture10);
+            this.panel1.Controls.Add(this.IBANtextbox);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.circularPicture9);
             this.panel1.Controls.Add(this.circularPicture8);
             this.panel1.Controls.Add(this.circularPicture7);
@@ -89,7 +75,7 @@
             this.panel1.Controls.Add(this.circularPicture4);
             this.panel1.Controls.Add(this.lastnameTextBox);
             this.panel1.Controls.Add(this.passwordTextBox);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.Save);
             this.panel1.Controls.Add(this.dobPicker);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -100,10 +86,45 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.onomaTextBox);
             this.panel1.Controls.Add(this.fullolabel);
-            this.panel1.Location = new System.Drawing.Point(290, 253);
+            this.panel1.Location = new System.Drawing.Point(173, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 635);
-            this.panel1.TabIndex = 40;
+            this.panel1.Size = new System.Drawing.Size(1047, 570);
+            this.panel1.TabIndex = 41;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // circularPicture10
+            // 
+            this.circularPicture10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture10.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture10.Location = new System.Drawing.Point(948, 262);
+            this.circularPicture10.Name = "circularPicture10";
+            this.circularPicture10.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture10.TabIndex = 103;
+            this.circularPicture10.TabStop = false;
+            this.circularPicture10.Click += new System.EventHandler(this.circularPicture10_Click);
+            // 
+            // IBANtextbox
+            // 
+            this.IBANtextbox.Enabled = false;
+            this.IBANtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.IBANtextbox.ForeColor = System.Drawing.Color.DimGray;
+            this.IBANtextbox.Location = new System.Drawing.Point(611, 262);
+            this.IBANtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.IBANtextbox.Name = "IBANtextbox";
+            this.IBANtextbox.Size = new System.Drawing.Size(331, 27);
+            this.IBANtextbox.TabIndex = 102;
+            this.IBANtextbox.Leave += new System.EventHandler(this.IBANtextbox_Leave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.label1.Location = new System.Drawing.Point(608, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 17);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "IBAN";
             // 
             // circularPicture9
             // 
@@ -201,20 +222,20 @@
             this.passwordTextBox.TabIndex = 93;
             this.passwordTextBox.Leave += new System.EventHandler(this.passwordTextBox_Leave);
             // 
-            // button1
+            // Save
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(792, 386);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 92;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.Save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Save.Location = new System.Drawing.Point(781, 390);
+            this.Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(195, 50);
+            this.Save.TabIndex = 92;
+            this.Save.Text = "Αποθήκευση";
+            this.Save.UseVisualStyleBackColor = false;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // dobPicker
             // 
@@ -224,7 +245,6 @@
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(331, 22);
             this.dobPicker.TabIndex = 91;
-            this.dobPicker.ValueChanged += new System.EventHandler(this.dobPicker_ValueChanged);
             this.dobPicker.Leave += new System.EventHandler(this.dobPicker_Leave);
             // 
             // label7
@@ -324,80 +344,40 @@
             this.fullolabel.TabIndex = 80;
             this.fullolabel.Text = "Όνομα";
             // 
-            // circularPicture3
-            // 
-            this.circularPicture3.BackColor = System.Drawing.Color.Transparent;
-            this.circularPicture3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture3.Image = global::Project_4.Properties.Resources.gmail;
-            this.circularPicture3.Location = new System.Drawing.Point(68, 929);
-            this.circularPicture3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.circularPicture3.Name = "circularPicture3";
-            this.circularPicture3.Size = new System.Drawing.Size(83, 50);
-            this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture3.TabIndex = 34;
-            this.circularPicture3.TabStop = false;
-            // 
-            // circularPicture2
-            // 
-            this.circularPicture2.BackColor = System.Drawing.Color.Transparent;
-            this.circularPicture2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture2.Image = global::Project_4.Properties.Resources.facebook;
-            this.circularPicture2.Location = new System.Drawing.Point(12, 929);
-            this.circularPicture2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.circularPicture2.Name = "circularPicture2";
-            this.circularPicture2.Size = new System.Drawing.Size(50, 50);
-            this.circularPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture2.TabIndex = 33;
-            this.circularPicture2.TabStop = false;
-            // 
-            // circularPicture1
-            // 
-            this.circularPicture1.BackColor = System.Drawing.Color.Transparent;
-            this.circularPicture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture1.Image = global::Project_4.Properties.Resources.userProfile;
-            this.circularPicture1.Location = new System.Drawing.Point(749, 78);
-            this.circularPicture1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.circularPicture1.Name = "circularPicture1";
-            this.circularPicture1.Size = new System.Drawing.Size(159, 150);
-            this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture1.TabIndex = 32;
-            this.circularPicture1.TabStop = false;
-            // 
-            // ProfileControl
+            // EpeksergasiaEventManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.circularPicture3);
-            this.Controls.Add(this.circularPicture2);
-            this.Controls.Add(this.circularPicture1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "ProfileControl";
-            this.Size = new System.Drawing.Size(1620, 995);
-            this.Load += new System.EventHandler(this.Profile_Load);
+            this.Name = "EpeksergasiaEventManager";
+            this.Size = new System.Drawing.Size(1392, 796);
+            this.Load += new System.EventHandler(this.EpeksergasiaEventManager_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private App_Code.circularPicture circularPicture1;
-        private App_Code.circularPicture circularPicture2;
-        private App_Code.circularPicture circularPicture3;
-        private System.Windows.Forms.Button button2;
+
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private App_Code.circularPicture circularPicture9;
+        private App_Code.circularPicture circularPicture8;
+        private App_Code.circularPicture circularPicture7;
+        private App_Code.circularPicture circularPicture6;
+        private App_Code.circularPicture circularPicture5;
+        private App_Code.circularPicture circularPicture4;
+        private System.Windows.Forms.TextBox lastnameTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Button Save;
         private System.Windows.Forms.DateTimePicker dobPicker;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -408,13 +388,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox onomaTextBox;
         private System.Windows.Forms.Label fullolabel;
-        private System.Windows.Forms.TextBox lastnameTextBox;
-        private System.Windows.Forms.TextBox passwordTextBox;
-        private App_Code.circularPicture circularPicture8;
-        private App_Code.circularPicture circularPicture7;
-        private App_Code.circularPicture circularPicture6;
-        private App_Code.circularPicture circularPicture5;
-        private App_Code.circularPicture circularPicture4;
-        private App_Code.circularPicture circularPicture9;
+        private App_Code.circularPicture circularPicture10;
+        private System.Windows.Forms.TextBox IBANtextbox;
+        private System.Windows.Forms.Label label1;
     }
 }

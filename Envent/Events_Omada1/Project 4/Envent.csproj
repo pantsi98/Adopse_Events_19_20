@@ -132,6 +132,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EpeksergasiaEventManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EpeksergasiaEventManager.Designer.cs">
+      <DependentUpon>EpeksergasiaEventManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventFullDescription.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </Compile>
     <EmbeddedResource Include="CreateNewEvent.resx">
       <DependentUpon>CreateNewEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpeksergasiaEventManager.resx">
+      <DependentUpon>EpeksergasiaEventManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventFullDescription.resx">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
