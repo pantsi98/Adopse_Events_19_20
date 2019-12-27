@@ -7,7 +7,7 @@ using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
 using Project_4.User_Classes.Exceptions;
 using System.Windows.Controls;
-//author Τζέιμς Μπαλάση
+
 namespace Project_4.User_Classes
 {
     public class Visitor : User

@@ -26,6 +26,16 @@ namespace Project_4
             InitializeComponent();
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
+            hideSubmenus();
+            MainPanel.Controls.Clear();
+            HomeMain su = new HomeMain();
+            MainPanel.Controls.Add(su);
+        }
+
+        private void hideSubmenus()
+        {
+            conferenceSubMenu.Visible = false;
+            sportsSubMenu.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
