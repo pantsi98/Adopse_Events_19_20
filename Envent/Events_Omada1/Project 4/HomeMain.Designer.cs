@@ -943,7 +943,6 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "HomeMain";
             this.Size = new System.Drawing.Size(1285, 1636);
-            this.Load += new System.EventHandler(this.HomeMain_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.musicPanel.ResumeLayout(false);
             this.musicPanel.PerformLayout();

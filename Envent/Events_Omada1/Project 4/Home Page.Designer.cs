@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homepagePanel = new System.Windows.Forms.Panel();
-            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
             this.basketBtn = new System.Windows.Forms.Button();
@@ -68,19 +68,6 @@
             this.homepagePanel.Name = "homepagePanel";
             this.homepagePanel.Size = new System.Drawing.Size(1920, 61);
             this.homepagePanel.TabIndex = 2;
-            // 
-            // cCircularButton1
-            // 
-            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
-            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
-            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
-            this.cCircularButton1.Name = "cCircularButton1";
-            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
-            this.cCircularButton1.TabIndex = 0;
-            this.cCircularButton1.UseVisualStyleBackColor = false;
-            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
             // 
             // panel2
             // 
@@ -145,6 +132,19 @@
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
+            // cCircularButton1
+            // 
+            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
+            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
+            this.cCircularButton1.Name = "cCircularButton1";
+            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
+            this.cCircularButton1.TabIndex = 0;
+            this.cCircularButton1.UseVisualStyleBackColor = false;
+            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
+            // 
             // sideBarPanel
             // 
             this.sideBarPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
@@ -187,6 +187,7 @@
             this.basketBtn.TabIndex = 1;
             this.basketBtn.Text = "Basket";
             this.basketBtn.UseVisualStyleBackColor = false;
+            this.basketBtn.Click += new System.EventHandler(this.basketBtn_Click);
             // 
             // footballBtn
             // 
@@ -201,6 +202,7 @@
             this.footballBtn.TabIndex = 0;
             this.footballBtn.Text = "Ποδόσφαιρο";
             this.footballBtn.UseVisualStyleBackColor = false;
+            this.footballBtn.Click += new System.EventHandler(this.footballBtn_Click);
             // 
             // sportsBtn
             // 
@@ -279,7 +281,7 @@
             this.educationBtn.TabIndex = 0;
             this.educationBtn.Text = "Εκπαίδευση";
             this.educationBtn.UseVisualStyleBackColor = false;
-            this.educationBtn.Click += new System.EventHandler(this.button2_Click);
+            this.educationBtn.Click += new System.EventHandler(this.educationBtn_Click);
             // 
             // conferencesBtn
             // 
@@ -299,6 +301,7 @@
             this.conferencesBtn.TabIndex = 4;
             this.conferencesBtn.Text = "Συνέδρια";
             this.conferencesBtn.UseVisualStyleBackColor = false;
+            this.conferencesBtn.Click += new System.EventHandler(this.conferencesBtn_Click);
             this.conferencesBtn.MouseEnter += new System.EventHandler(this.conferencesBtn_MouseEnter);
             // 
             // theaterBtn
@@ -319,6 +322,7 @@
             this.theaterBtn.TabIndex = 2;
             this.theaterBtn.Text = "Θέατρο";
             this.theaterBtn.UseVisualStyleBackColor = false;
+            this.theaterBtn.Click += new System.EventHandler(this.theaterBtn_Click);
             // 
             // musicBtn
             // 
@@ -338,7 +342,7 @@
             this.musicBtn.TabIndex = 1;
             this.musicBtn.Text = "Μουσική";
             this.musicBtn.UseVisualStyleBackColor = false;
-            this.musicBtn.Click += new System.EventHandler(this.button1_Click_1);
+            this.musicBtn.Click += new System.EventHandler(this.musicBtn_Click);
             // 
             // homeBtn
             // 

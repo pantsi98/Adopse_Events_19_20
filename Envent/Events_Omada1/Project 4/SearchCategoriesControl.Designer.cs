@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.tilePanel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.tilePictureBox4 = new System.Windows.Forms.PictureBox();
@@ -67,7 +68,6 @@
             this.tilePanel11 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.tilePictureBox11 = new System.Windows.Forms.PictureBox();
-            this.titleLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tilePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox4)).BeginInit();
@@ -108,6 +108,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1284, 267);
             this.panel1.TabIndex = 0;
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.titleLabel.Location = new System.Drawing.Point(56, 17);
+            this.titleLabel.Name = "Μουσικά Events";
+            this.titleLabel.Size = new System.Drawing.Size(76, 25);
+            this.titleLabel.TabIndex = 5;
+            this.titleLabel.Text = "label1";
             // 
             // tilePanel4
             // 
@@ -490,17 +500,6 @@
             this.tilePictureBox11.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox11.TabIndex = 0;
             this.tilePictureBox11.TabStop = false;
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.titleLabel.Location = new System.Drawing.Point(56, 17);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(76, 25);
-            this.titleLabel.TabIndex = 5;
-            this.titleLabel.Text = "label1";
-            this.titleLabel.Click += new System.EventHandler(this.titleLabel_Click);
             // 
             // SearchCategoriesControl
             // 
