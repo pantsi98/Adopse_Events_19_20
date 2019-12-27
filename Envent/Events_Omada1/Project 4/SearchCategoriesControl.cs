@@ -16,5 +16,10 @@ namespace Project_4
         {
             InitializeComponent();
         }
+
+        private void titleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,13 +26,6 @@ namespace Project_4
             InitializeComponent();
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
-            hideSubmenus();
-        }
-
-        private void hideSubmenus()
-        {
-            conferenceSubMenu.Visible = false;
-            sportsSubMenu.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -232,6 +225,11 @@ namespace Project_4
                 MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(scc);
             }
+        }
+
+        private void newsButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
