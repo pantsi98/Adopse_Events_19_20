@@ -7,132 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_4.App_Code.StaticMethods;
+using Project_4.User_Classes;
+using Project_4.App_Code;
 
 namespace Project_4
 {
-    public partial class Resetpassword : UserControl
+    public partial class ResetPassword : UserControl
     {
-        public Resetpassword()
+        
+        
+        public ResetPassword()
         {
             InitializeComponent();
         }
 
-        private void Resetpassword_Load(object sender, EventArgs e)
+        private void showPass_CheckedChanged(object sender, EventArgs e)
         {
-            ChangePassBtn.Enabled = false;
-
+            txtResetPass.PasswordChar = showPass.Checked ? '\0' : '*';
         }
 
-        private void resetparcode_TextChanged(object sender, EventArgs e)
+        private void button_reset_pass_Click(object sender, EventArgs e)
         {
 
+            NormalUser nu = (NormalUser)InstanceOfUser.GetUser();
+            int id = nu.GetUserID();
+            UserProfile ru =  (UserProfile)nu.GetProfile();
+            ru.UpdatePassword(id, txtResetPass.Text);
+            recoverMsg.ForeColor = Color.Green;
+            recoverMsg.Text = "Ο κωδικός άλλαξε επιτυχώς!";
         }
-
-        private void resetparcode_Click(object sender, EventArgs e)
-        {
-            if (resetparcode.Text == "Κωδικός επαναφοράς") {
-                resetparcode.Text = "";
-                resetparcode.ForeColor = Color.Black;
-            }
-        }
-
-        private void NewPassword_Click(object sender, EventArgs e)
-        {
-            if (NewPassword.Text == "Νέος κωδικός ") {
-                NewPassword.Text = "";
-                NewPassword.ForeColor = Color.Black;
-                NewPassword.PasswordChar = '*';
-
-            }
-        }
-
-        private void resetparcode_Leave(object sender, EventArgs e)
-        {
-            if (resetparcode.Text == "") {
-                resetparcode.ForeColor = Color.Red;
-                resetparcode.Text = "Παρακαλώ συμπληρώστε κωδικό επαναφοράς";
-
-            }
-        }
-        Boolean checkpassIsValid;
-        private void NewPassword_Leave(object sender, EventArgs e)
-        {
-            checkpassIsValid = true;
-            passwordlabel.Visible = false;
-            if (NewPassword.Text == "")
-            {
-                NewPassword.ForeColor = Color.Red;
-                NewPassword.Text = "Παρακαλώ συμπλήρωστε κωδικό";
-                NewPassword.PasswordChar = '\0';
-
-            }
-            else
-            {
-                if (!App_Code.StaticMethods.ValidationCheck.PasswordIsValid(NewPassword.Text))
-                {
-                    passwordlabel.Visible = true;
-                    passwordlabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο και μικρό γράμμα και νούμερο.";
-                    checkpassIsValid = false;
-                }
-            }
-        }
-            Boolean deiktislathwn;
-            private Boolean AllCheck()
-            {
-                deiktislathwn = true;
-
-                if (resetparcode.Text == "Κωδικός επαναφοράς" || resetparcode.Text == "" || resetparcode.Text == "Παρακαλώ συμπληρώστε κωδικό επαναφοράς")
-                {
-                    deiktislathwn = false;
-                }
-                else if (NewPassword.Text == "Κωδικός επαναφοράς" || NewPassword.Text == "" || NewPassword.Text == "Παρακαλώ συμπληρώστε κωδικό")
-                {
-                    deiktislathwn = false;
-                }
-                else if (checkpassIsValid == false)
-                {
-                    deiktislathwn = false;
-                 }
-            return deiktislathwn;
-
-            }
-
-        private void panel3_MouseHover(object sender, EventArgs e)
-        {
-            if (!AllCheck())
-            {
-                ChangePassBtn.Enabled = false;
-            }
-            else
-            {
-                ChangePassBtn.Enabled = true;
-            }
-
-
-        }
-
-        private void ChangePassBtn_Click(object sender, EventArgs e)
-        {
-            //kane allagi kwdikou me vasi
-
-            try
-            {
-
-
-                //επιτυχης αλλαγή
-                Cursor.Current = Cursors.WaitCursor;
-                Cursor.Current = Cursors.Default;
-                MessageBox.Show("Η αλλαγη κωδικού ήταν επιτυχής !");
-                Controls.Clear();
-
-
-            }
-            catch { }
-
-
-        }
-
-       
-        
-    } 
+    }
 }

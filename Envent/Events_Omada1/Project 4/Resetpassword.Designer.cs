@@ -1,6 +1,6 @@
 ﻿namespace Project_4
 {
-    partial class Resetpassword
+    partial class ResetPassword
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,184 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.resetparcode = new System.Windows.Forms.TextBox();
-            this.ChangePassBtn = new System.Windows.Forms.Button();
-            this.NewPassword = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.passwordlabel = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.new_pass_label = new System.Windows.Forms.Label();
+            this.ver_new_pass = new System.Windows.Forms.Label();
+            this.txtResetPass = new System.Windows.Forms.TextBox();
+            this.txtResetPassVer = new System.Windows.Forms.TextBox();
+            this.button_reset_pass = new System.Windows.Forms.Button();
+            this.showPass = new System.Windows.Forms.CheckBox();
+            this.recoverMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // panel1
+            // new_pass_label
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.ForeColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1130, 63);
-            this.panel1.TabIndex = 31;
+            this.new_pass_label.AutoSize = true;
+            this.new_pass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_pass_label.Location = new System.Drawing.Point(145, 171);
+            this.new_pass_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.new_pass_label.Name = "new_pass_label";
+            this.new_pass_label.Size = new System.Drawing.Size(139, 25);
+            this.new_pass_label.TabIndex = 0;
+            this.new_pass_label.Text = "Νέος Κωδικός";
             // 
-            // label2
+            // ver_new_pass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(386, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(358, 31);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Βρείτε το λογαριασμό σας";
+            this.ver_new_pass.AutoSize = true;
+            this.ver_new_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ver_new_pass.Location = new System.Drawing.Point(145, 213);
+            this.ver_new_pass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ver_new_pass.Name = "ver_new_pass";
+            this.ver_new_pass.Size = new System.Drawing.Size(257, 25);
+            this.ver_new_pass.TabIndex = 1;
+            this.ver_new_pass.Text = "Επιβεβαίωση Νέου Κωδικού";
             // 
-            // label1
+            // txtResetPass
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(293, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 20);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Γράψτε τον κωδικό ασφαλείας.";
+            this.txtResetPass.Location = new System.Drawing.Point(452, 171);
+            this.txtResetPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtResetPass.Name = "txtResetPass";
+            this.txtResetPass.PasswordChar = '*';
+            this.txtResetPass.Size = new System.Drawing.Size(224, 22);
+            this.txtResetPass.TabIndex = 2;
             // 
-            // panel2
+            // txtResetPassVer
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(29, 36);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(749, 1);
-            this.panel2.TabIndex = 36;
+            this.txtResetPassVer.Location = new System.Drawing.Point(452, 213);
+            this.txtResetPassVer.Margin = new System.Windows.Forms.Padding(4);
+            this.txtResetPassVer.Name = "txtResetPassVer";
+            this.txtResetPassVer.PasswordChar = '*';
+            this.txtResetPassVer.Size = new System.Drawing.Size(224, 22);
+            this.txtResetPassVer.TabIndex = 3;
             // 
-            // label3
+            // button_reset_pass
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(339, 17);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Είσάγεται τον κωδικό που έχετε λάβει στο email σας.";
+            this.button_reset_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reset_pass.Location = new System.Drawing.Point(312, 280);
+            this.button_reset_pass.Margin = new System.Windows.Forms.Padding(4);
+            this.button_reset_pass.Name = "button_reset_pass";
+            this.button_reset_pass.Size = new System.Drawing.Size(185, 50);
+            this.button_reset_pass.TabIndex = 4;
+            this.button_reset_pass.Text = "Επαναφορά";
+            this.button_reset_pass.UseVisualStyleBackColor = true;
+            this.button_reset_pass.Click += new System.EventHandler(this.button_reset_pass_Click);
             // 
-            // label4
+            // showPass
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(582, 67);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 17);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Στείλαμε τον κωδικό σας εδώ:";
+            this.showPass.AutoSize = true;
+            this.showPass.Location = new System.Drawing.Point(683, 171);
+            this.showPass.Name = "showPass";
+            this.showPass.Size = new System.Drawing.Size(143, 21);
+            this.showPass.TabIndex = 6;
+            this.showPass.Text = "Προβολή Κωδικού";
+            this.showPass.UseVisualStyleBackColor = true;
+            this.showPass.CheckedChanged += new System.EventHandler(this.showPass_CheckedChanged);
             // 
-            // label5
+            // recoverMsg
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(582, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 17);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "email@gmail.com";
+            this.recoverMsg.AutoSize = true;
+            this.recoverMsg.Location = new System.Drawing.Point(356, 370);
+            this.recoverMsg.Name = "recoverMsg";
+            this.recoverMsg.Size = new System.Drawing.Size(0, 17);
+            this.recoverMsg.TabIndex = 7;
             // 
-            // resetparcode
-            // 
-            this.resetparcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.resetparcode.ForeColor = System.Drawing.Color.Gray;
-            this.resetparcode.Location = new System.Drawing.Point(29, 95);
-            this.resetparcode.Name = "resetparcode";
-            this.resetparcode.Size = new System.Drawing.Size(334, 28);
-            this.resetparcode.TabIndex = 40;
-            this.resetparcode.Text = "Κωδικός επαναφοράς";
-            this.resetparcode.Click += new System.EventHandler(this.resetparcode_Click);
-            this.resetparcode.TextChanged += new System.EventHandler(this.resetparcode_TextChanged);
-            this.resetparcode.Leave += new System.EventHandler(this.resetparcode_Leave);
-            // 
-            // ChangePassBtn
-            // 
-            this.ChangePassBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.ChangePassBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.ChangePassBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ChangePassBtn.Location = new System.Drawing.Point(562, 220);
-            this.ChangePassBtn.Name = "ChangePassBtn";
-            this.ChangePassBtn.Size = new System.Drawing.Size(216, 44);
-            this.ChangePassBtn.TabIndex = 41;
-            this.ChangePassBtn.Text = "Αποθήκευση αλλαγών";
-            this.ChangePassBtn.UseVisualStyleBackColor = false;
-            this.ChangePassBtn.Click += new System.EventHandler(this.ChangePassBtn_Click);
-            // 
-            // NewPassword
-            // 
-            this.NewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NewPassword.ForeColor = System.Drawing.Color.Gray;
-            this.NewPassword.Location = new System.Drawing.Point(29, 220);
-            this.NewPassword.Name = "NewPassword";
-            this.NewPassword.Size = new System.Drawing.Size(334, 28);
-            this.NewPassword.TabIndex = 43;
-            this.NewPassword.Text = "Νέος κωδικός ";
-            this.NewPassword.Click += new System.EventHandler(this.NewPassword_Click);
-            this.NewPassword.Leave += new System.EventHandler(this.NewPassword_Leave);
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(26, 152);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(427, 34);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Δημιουργήστε ένα νέο κωδικό πρόσβασης με τουλάχιστον 8 χαρακτήρες, ένα κεφαλαίο γ" +
-    "ράμμα, ένα μικρό και έναν αριθμό .";
-            // 
-            // passwordlabel
-            // 
-            this.passwordlabel.AutoSize = true;
-            this.passwordlabel.ForeColor = System.Drawing.Color.Red;
-            this.passwordlabel.Location = new System.Drawing.Point(253, 98);
-            this.passwordlabel.Name = "passwordlabel";
-            this.passwordlabel.Size = new System.Drawing.Size(626, 17);
-            this.passwordlabel.TabIndex = 45;
-            this.passwordlabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο και μικρό γράμμα" +
-    " και νούμερο.";
-            this.passwordlabel.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.ChangePassBtn);
-            this.panel3.Controls.Add(this.NewPassword);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.resetparcode);
-            this.panel3.Location = new System.Drawing.Point(135, 143);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(843, 451);
-            this.panel3.TabIndex = 46;
-            this.panel3.MouseHover += new System.EventHandler(this.panel3_MouseHover);
-            // 
-            // Resetpassword
+            // ResetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.passwordlabel);
-            this.Controls.Add(this.panel1);
-            this.Name = "Resetpassword";
-            this.Size = new System.Drawing.Size(1130, 703);
-            this.Load += new System.EventHandler(this.Resetpassword_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.Controls.Add(this.recoverMsg);
+            this.Controls.Add(this.showPass);
+            this.Controls.Add(this.button_reset_pass);
+            this.Controls.Add(this.txtResetPassVer);
+            this.Controls.Add(this.txtResetPass);
+            this.Controls.Add(this.ver_new_pass);
+            this.Controls.Add(this.new_pass_label);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "ResetPassword";
+            this.Size = new System.Drawing.Size(840, 631);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,18 +129,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox resetparcode;
-        private System.Windows.Forms.Button ChangePassBtn;
-        private System.Windows.Forms.TextBox NewPassword;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label passwordlabel;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label new_pass_label;
+        private System.Windows.Forms.Label ver_new_pass;
+        private System.Windows.Forms.TextBox txtResetPass;
+        private System.Windows.Forms.TextBox txtResetPassVer;
+        private System.Windows.Forms.Button button_reset_pass;
+        private System.Windows.Forms.CheckBox showPass;
+        private System.Windows.Forms.Label recoverMsg;
     }
 }
