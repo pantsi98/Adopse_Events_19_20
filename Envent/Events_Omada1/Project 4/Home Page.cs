@@ -146,7 +146,7 @@ namespace Project_4
             
 
            MainPanel.Controls.Clear();
-            ProfileControl su = new ProfileControl();
+            ProfileEventManager su = new ProfileEventManager();
            MainPanel.Controls.Add(su);
         }
 
