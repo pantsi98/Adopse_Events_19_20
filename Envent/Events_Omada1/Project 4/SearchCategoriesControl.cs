@@ -9,15 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Project_4.User_Classes;
 using Project_4.App_Code.StaticMethods;
+using System.IO;
 
 namespace Project_4
 {
     public partial class SearchCategoriesControl : UserControl
     {
+
+        EventFullDescription evd = new EventFullDescription();
+
         public SearchCategoriesControl()
         {
             InitializeComponent();
-
         }
 
         public SearchCategoriesControl(int category)
@@ -47,9 +50,10 @@ namespace Project_4
                         if (indexImg < catevents.Count)
                         {
                             if (p is PictureBox)
-                            {
+                            {                              
                                 PictureBox pic = (PictureBox)p;
-                                pic.Image = Images.pic.ElementAt(indexImg);
+                                Image rszimg = Images.resizeImage(Images.pic.ElementAt(indexImg), new Size(241, 110));
+                                pic.Image = rszimg;
                                 indexImg++;
                             }
                             if (p is Label)
@@ -66,6 +70,19 @@ namespace Project_4
                     }
                 }
             }
+        }
+
+        private void TileClick(object sender, EventArgs e)
+        {
+
+            Control parent = this.Parent;
+            while(parent.Name != "MainPanel")
+            {
+                parent = parent.Parent;
+            }
+
+            parent.Controls.Clear();
+            parent.Controls.Add(evd);
         }
     }
 }

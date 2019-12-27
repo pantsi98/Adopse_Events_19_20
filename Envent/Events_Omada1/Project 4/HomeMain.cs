@@ -14,6 +14,9 @@ namespace Project_4
 {
     public partial class HomeMain : UserControl
     {
+
+        EventFullDescription evd = new EventFullDescription();
+
         public HomeMain()
         {
             InitializeComponent();
@@ -45,7 +48,8 @@ namespace Project_4
                             if (p is PictureBox)
                             {
                                 PictureBox pic = (PictureBox)p;
-                                pic.Image = Images.pic.ElementAt(indexImg);
+                                Image rszimg = Images.resizeImage(Images.pic.ElementAt(indexImg), new Size(241, 110));
+                                pic.Image = rszimg;
                                 indexImg++;
                             }
                             if (p is Label)
@@ -71,7 +75,14 @@ namespace Project_4
 
         private void tilesControlsClick(object sender, EventArgs e)
         {
-            
+            Control parent = this.Parent;
+            while (parent.Name != "MainPanel")
+            {
+                parent = parent.Parent;
+            }
+
+            parent.Controls.Clear();
+            parent.Controls.Add(evd);
         }
 
         private void musicTilePanel1_Paint(object sender, PaintEventArgs e)

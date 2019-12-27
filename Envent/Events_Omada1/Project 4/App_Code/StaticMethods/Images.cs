@@ -35,5 +35,10 @@ namespace Project_4.App_Code.StaticMethods
                 Images.pic.Add(Image.FromFile(path + @"Resources\eventImg" + i + ".jpg"));
             }
         }
+
+        public static Image resizeImage(Image imgtoResize, Size size)
+        {
+            return (Image)(new Bitmap(imgtoResize, size));
+        }
     }
 }

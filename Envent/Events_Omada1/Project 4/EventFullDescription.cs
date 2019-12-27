@@ -22,6 +22,13 @@ namespace Project_4
         int duration;
 
 
+        private void EventFullDescriptionPrepare(string ttl, string desc, int dur)
+        {
+            this.titleLabel.Text = ttl;
+            this.perigrafilabel.Text = desc;
+            this.durationlabel.Text = dur.ToString();
+        }
+
         private void EventFullDescription_Load(object sender, EventArgs e)
         {
             try

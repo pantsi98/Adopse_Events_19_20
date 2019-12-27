@@ -114,7 +114,7 @@
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.titleLabel.Location = new System.Drawing.Point(56, 17);
-            this.titleLabel.Name = "Μουσικά Events";
+            this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(76, 25);
             this.titleLabel.TabIndex = 5;
             this.titleLabel.Text = "label1";
@@ -129,6 +129,7 @@
             this.tilePanel4.Name = "tilePanel4";
             this.tilePanel4.Size = new System.Drawing.Size(241, 209);
             this.tilePanel4.TabIndex = 4;
+            this.tilePanel4.Click += new System.EventHandler(this.TileClick);
             // 
             // label4
             // 
@@ -138,6 +139,7 @@
             this.label4.Size = new System.Drawing.Size(232, 60);
             this.label4.TabIndex = 1;
             this.label4.Text = "label4";
+            this.label4.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox4
             // 
@@ -148,6 +150,7 @@
             this.tilePictureBox4.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox4.TabIndex = 0;
             this.tilePictureBox4.TabStop = false;
+            this.tilePictureBox4.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel3
             // 
@@ -159,6 +162,7 @@
             this.tilePanel3.Name = "tilePanel3";
             this.tilePanel3.Size = new System.Drawing.Size(241, 209);
             this.tilePanel3.TabIndex = 3;
+            this.tilePanel3.Click += new System.EventHandler(this.TileClick);
             // 
             // label3
             // 
@@ -168,6 +172,7 @@
             this.label3.Size = new System.Drawing.Size(232, 60);
             this.label3.TabIndex = 1;
             this.label3.Text = "label3";
+            this.label3.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox3
             // 
@@ -178,6 +183,7 @@
             this.tilePictureBox3.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox3.TabIndex = 0;
             this.tilePictureBox3.TabStop = false;
+            this.tilePictureBox3.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel2
             // 
@@ -189,6 +195,7 @@
             this.tilePanel2.Name = "tilePanel2";
             this.tilePanel2.Size = new System.Drawing.Size(241, 209);
             this.tilePanel2.TabIndex = 2;
+            this.tilePanel2.Click += new System.EventHandler(this.TileClick);
             // 
             // label2
             // 
@@ -198,6 +205,7 @@
             this.label2.Size = new System.Drawing.Size(232, 60);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox2
             // 
@@ -208,6 +216,7 @@
             this.tilePictureBox2.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox2.TabIndex = 0;
             this.tilePictureBox2.TabStop = false;
+            this.tilePictureBox2.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel1
             // 
@@ -219,6 +228,7 @@
             this.tilePanel1.Name = "tilePanel1";
             this.tilePanel1.Size = new System.Drawing.Size(241, 209);
             this.tilePanel1.TabIndex = 0;
+            this.tilePanel1.Click += new System.EventHandler(this.TileClick);
             // 
             // tileLabel1
             // 
@@ -228,6 +238,7 @@
             this.tileLabel1.Size = new System.Drawing.Size(232, 60);
             this.tileLabel1.TabIndex = 1;
             this.tileLabel1.Text = "label1";
+            this.tileLabel1.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox1
             // 
@@ -238,6 +249,7 @@
             this.tilePictureBox1.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox1.TabIndex = 0;
             this.tilePictureBox1.TabStop = false;
+            this.tilePictureBox1.Click += new System.EventHandler(this.TileClick);
             // 
             // panel2
             // 
@@ -260,6 +272,7 @@
             this.tilePanel5.Name = "tilePanel5";
             this.tilePanel5.Size = new System.Drawing.Size(241, 209);
             this.tilePanel5.TabIndex = 8;
+            this.tilePanel5.Click += new System.EventHandler(this.TileClick);
             // 
             // label5
             // 
@@ -269,6 +282,7 @@
             this.label5.Size = new System.Drawing.Size(232, 60);
             this.label5.TabIndex = 1;
             this.label5.Text = "label5";
+            this.label5.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox5
             // 
@@ -279,6 +293,7 @@
             this.tilePictureBox5.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox5.TabIndex = 0;
             this.tilePictureBox5.TabStop = false;
+            this.tilePictureBox5.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel6
             // 
@@ -290,6 +305,7 @@
             this.tilePanel6.Name = "tilePanel6";
             this.tilePanel6.Size = new System.Drawing.Size(241, 209);
             this.tilePanel6.TabIndex = 7;
+            this.tilePanel6.Click += new System.EventHandler(this.TileClick);
             // 
             // label6
             // 
@@ -299,6 +315,7 @@
             this.label6.Size = new System.Drawing.Size(232, 60);
             this.label6.TabIndex = 1;
             this.label6.Text = "label6";
+            this.label6.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox6
             // 
@@ -309,6 +326,7 @@
             this.tilePictureBox6.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox6.TabIndex = 0;
             this.tilePictureBox6.TabStop = false;
+            this.tilePictureBox6.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel8
             // 
@@ -320,6 +338,7 @@
             this.tilePanel8.Name = "tilePanel8";
             this.tilePanel8.Size = new System.Drawing.Size(241, 209);
             this.tilePanel8.TabIndex = 5;
+            this.tilePanel8.Click += new System.EventHandler(this.TileClick);
             // 
             // label8
             // 
@@ -329,6 +348,7 @@
             this.label8.Size = new System.Drawing.Size(232, 60);
             this.label8.TabIndex = 1;
             this.label8.Text = "label8";
+            this.label8.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox8
             // 
@@ -339,6 +359,7 @@
             this.tilePictureBox8.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox8.TabIndex = 0;
             this.tilePictureBox8.TabStop = false;
+            this.tilePictureBox8.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel7
             // 
@@ -350,6 +371,7 @@
             this.tilePanel7.Name = "tilePanel7";
             this.tilePanel7.Size = new System.Drawing.Size(241, 209);
             this.tilePanel7.TabIndex = 6;
+            this.tilePanel7.Click += new System.EventHandler(this.TileClick);
             // 
             // label7
             // 
@@ -359,6 +381,7 @@
             this.label7.Size = new System.Drawing.Size(232, 60);
             this.label7.TabIndex = 1;
             this.label7.Text = "label7";
+            this.label7.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox7
             // 
@@ -369,6 +392,7 @@
             this.tilePictureBox7.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox7.TabIndex = 0;
             this.tilePictureBox7.TabStop = false;
+            this.tilePictureBox7.Click += new System.EventHandler(this.TileClick);
             // 
             // panel3
             // 
@@ -391,6 +415,7 @@
             this.tilePanel9.Name = "tilePanel9";
             this.tilePanel9.Size = new System.Drawing.Size(241, 209);
             this.tilePanel9.TabIndex = 8;
+            this.tilePanel9.Click += new System.EventHandler(this.TileClick);
             // 
             // label9
             // 
@@ -400,6 +425,7 @@
             this.label9.Size = new System.Drawing.Size(232, 60);
             this.label9.TabIndex = 1;
             this.label9.Text = "label9";
+            this.label9.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox9
             // 
@@ -410,6 +436,7 @@
             this.tilePictureBox9.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox9.TabIndex = 0;
             this.tilePictureBox9.TabStop = false;
+            this.tilePictureBox9.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel12
             // 
@@ -421,6 +448,7 @@
             this.tilePanel12.Name = "tilePanel12";
             this.tilePanel12.Size = new System.Drawing.Size(241, 209);
             this.tilePanel12.TabIndex = 5;
+            this.tilePanel12.Click += new System.EventHandler(this.TileClick);
             // 
             // label12
             // 
@@ -430,6 +458,7 @@
             this.label12.Size = new System.Drawing.Size(232, 60);
             this.label12.TabIndex = 1;
             this.label12.Text = "label12";
+            this.label12.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox12
             // 
@@ -440,6 +469,7 @@
             this.tilePictureBox12.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox12.TabIndex = 0;
             this.tilePictureBox12.TabStop = false;
+            this.tilePictureBox12.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel10
             // 
@@ -451,6 +481,7 @@
             this.tilePanel10.Name = "tilePanel10";
             this.tilePanel10.Size = new System.Drawing.Size(241, 209);
             this.tilePanel10.TabIndex = 7;
+            this.tilePanel10.Click += new System.EventHandler(this.TileClick);
             // 
             // label10
             // 
@@ -460,6 +491,7 @@
             this.label10.Size = new System.Drawing.Size(232, 60);
             this.label10.TabIndex = 1;
             this.label10.Text = "label10";
+            this.label10.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox10
             // 
@@ -470,6 +502,7 @@
             this.tilePictureBox10.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox10.TabIndex = 0;
             this.tilePictureBox10.TabStop = false;
+            this.tilePictureBox10.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePanel11
             // 
@@ -481,6 +514,7 @@
             this.tilePanel11.Name = "tilePanel11";
             this.tilePanel11.Size = new System.Drawing.Size(241, 209);
             this.tilePanel11.TabIndex = 6;
+            this.tilePanel11.Click += new System.EventHandler(this.TileClick);
             // 
             // label11
             // 
@@ -490,6 +524,7 @@
             this.label11.Size = new System.Drawing.Size(232, 60);
             this.label11.TabIndex = 1;
             this.label11.Text = "label11";
+            this.label11.Click += new System.EventHandler(this.TileClick);
             // 
             // tilePictureBox11
             // 
@@ -500,6 +535,7 @@
             this.tilePictureBox11.Size = new System.Drawing.Size(241, 110);
             this.tilePictureBox11.TabIndex = 0;
             this.tilePictureBox11.TabStop = false;
+            this.tilePictureBox11.Click += new System.EventHandler(this.TileClick);
             // 
             // SearchCategoriesControl
             // 
