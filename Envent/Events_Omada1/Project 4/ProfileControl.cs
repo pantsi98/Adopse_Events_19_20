@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_4.App_Code.StaticMethods;
+using Project_4.User_Classes;
+using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -19,7 +22,17 @@ namespace Project_4
 
         private void Profile_Load(object sender, EventArgs e)
         {
-
+            User x = InstanceOfUser.GetUser();
+            if (x is NormalUser)
+            {
+                NormalUser nu = (NormalUser)x;
+                onomaTextBox.Text = nu.GetProfile().GetFirstName();
+                lastnameTextBox.Text = nu.GetProfile().GetLastName();
+                emailTextBox.Text = nu.GetProfile().GetEmail();
+                genderTextBox.Text = nu.GetProfile().GetGender();
+                dobPicker.Value = nu.GetProfile().GetDob();
+                adressTextBox.Text = nu.GetProfile().GetAddress();
+            }
         }
 
         private void cCircularButton3_Click(object sender, EventArgs e)

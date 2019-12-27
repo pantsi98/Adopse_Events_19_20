@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+
             this.homepagePanel = new System.Windows.Forms.Panel();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+
             this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
@@ -53,7 +53,6 @@
             this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.eventsListView = new System.Windows.Forms.ListView();
             this.homepagePanel.SuspendLayout();
-            this.MainPanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
             this.conferenceSubMenu.SuspendLayout();
@@ -90,7 +89,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(1577, 0);
+            this.button8.Location = new System.Drawing.Point(1238, 0);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(126, 61);
@@ -104,7 +103,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(1703, 0);
+            this.button7.Location = new System.Drawing.Point(1364, 0);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(126, 61);
@@ -116,23 +115,16 @@
             // MainPanel
             // 
             this.MainPanel.AutoScroll = true;
-            this.MainPanel.Controls.Add(this.eventsListView);
+            this.MainPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MainPanel.Location = new System.Drawing.Point(300, 61);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1620, 995);
+            this.MainPanel.Size = new System.Drawing.Size(1284, 800);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Location = new System.Drawing.Point(28, -21);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 82);
-            this.panel2.TabIndex = 6;
-            // 
+
+
             // cCircularButton1
             // 
             this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
@@ -385,9 +377,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.homepagePanel);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.sideBarPanel);
@@ -397,11 +388,9 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Envent";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();
-            this.MainPanel.ResumeLayout(false);
             this.sideBarPanel.ResumeLayout(false);
             this.sportsSubMenu.ResumeLayout(false);
             this.conferenceSubMenu.ResumeLayout(false);
@@ -431,8 +420,6 @@
         private System.Windows.Forms.Button footballBtn;
         private System.Windows.Forms.Button musicBtn;
         private App_Code.CCircularButton cCircularButton1;
-        private System.Windows.Forms.ListView eventsListView;
-        private System.Windows.Forms.ColumnHeader Title;
     }
 }
 
