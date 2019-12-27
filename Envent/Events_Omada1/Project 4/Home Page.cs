@@ -143,9 +143,11 @@ namespace Project_4
 
         private void cCircularButton1_Click(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
+            
+
+           MainPanel.Controls.Clear();
             ProfileControl su = new ProfileControl();
-            MainPanel.Controls.Add(su);
+           MainPanel.Controls.Add(su);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

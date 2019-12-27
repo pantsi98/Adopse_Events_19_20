@@ -20,8 +20,8 @@ namespace Project_4
         private void CreateNewEvent_Load(object sender, EventArgs e)
         {
             Addplay.Enabled = false;
-            Savebtn.Enabled = false;
-            preViewbtn.Enabled = false;
+            savebtn.Enabled = false;
+            createEvent.Enabled = false;
         }
 
         private void BrowseImage_Click(object sender, EventArgs e)
@@ -62,19 +62,87 @@ namespace Project_4
         {
             if (!checkall())
             {
-                Addplay.Enabled = false;
+                createEvent.Enabled = false;
             }
             else
             {
-                Addplay.Enabled = true;
+                createEvent.Enabled = true;
             }
 
             
         }
-
-        private void AddPlay_Click(object sender, EventArgs e)
+        int kat;
+        //methodos gia na dinei to swsto id stin katigoria
+        private int katigoriacomboboxselect()
         {
 
+            if (katigoria.SelectedValue == "Music")
+                kat = 1;
+            else if (katigoria.SelectedValue == "Theater")
+                kat = 2;
+            else if (katigoria.SelectedValue == "Conference")
+                kat = 3;
+            else if (katigoria.SelectedValue == "Festivals")
+                kat = 4;
+            else if (katigoria.SelectedValue == "Sports")
+                kat = 5;
+            else if (katigoria.SelectedValue == "Educational")
+                kat = 6;
+            else if (katigoria.SelectedValue == "Informing")
+                kat = 7;
+            else if (katigoria.SelectedValue == "Soccer")
+                kat = 8;
+            else if (katigoria.SelectedValue == "Basketball")
+                kat = 9;
+            else if (katigoria.SelectedValue == "Cinema")
+                kat = 10;
+
+            return kat;
+        }
+
+        private int selectedduration()
+        {
+            int hour = Convert.ToInt32(Math.Round(durationhour.Value));
+            int min = Convert.ToInt32(Math.Round(durationmin.Value));
+            return hour * 60 + min;
+
+        }
+
+        //dokimastikos eventmanager
+        //  EventManager em = new EventManager("user1", "1234");
+
+
+        private void createEvent_Click(object sender, EventArgs e)
+        {
+
+            //  em.CreateEvent(titlos.Text, katigoriacomboboxselect(), perigrafi.Text, selectedduration());
+            //  createplaypanel.Visible = true;
+
+        }
+       
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uploadImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog op = new OpenFileDialog();
+
+            op.Filter = "Bitmaps|*.jpg |*.bmp |jpeps)";
+            if (op.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.ImageLocation = op.FileName;
+
+            }
+        }
+
+        private void createEvent_Click_1(object sender, EventArgs e)
+        {//em eventmanager
+
+            //  em.CreateEvent(titlos.Text, katigoriacomboboxselect(), perigrafi.Text, selectedduration());
+            //  createplaypanel.Visible = true;
         }
     }
 }
