@@ -43,5 +43,10 @@ namespace Project_4.App_Code.StaticMethods
         {
             return name;
         }
+
+        public int GetFather()
+        {
+            return father;
+        }
     }
 }

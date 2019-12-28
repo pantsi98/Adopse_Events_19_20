@@ -40,7 +40,6 @@ namespace Project_4
 
             Dictionary<int, string> category = new Dictionary<int,string>();
             category[1] = "Music"; category[2] = "Theater"; category[3] = "Conference"; category[4] = "Festivals"; category[5] = "Sports"; category[6] = "Educational"; category[7] = "Informing"; category[8] = "Soccer"; category[9] = "Basketball"; category[10] = "Cinema";
-            // string cat_name = event_kati.FindAll(x => x.GetCategory() == category[i.Name]);
             int cat_id = event_kati.GetCategory();
             string cat_name = category[cat_id];
             

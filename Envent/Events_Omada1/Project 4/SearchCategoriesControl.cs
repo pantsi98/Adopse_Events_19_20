@@ -38,10 +38,17 @@ namespace Project_4
             List<Event> catevents = new List<Event>();
             List<Categories> categories = Categories.categories;
             Categories catev;
+            Categories catfather;
 
             catevents = events.FindAll(x => x.GetCategory() == cat);
             catev = categories.Find(x => x.GetID() == cat);
-            titleLabel.Text = catev.GetName();
+            catfather = categories.Find(x => x.GetFather() == cat);
+            if (catfather != null)
+            {
+                titleLabel.Text = catev.GetName();
+            }
+
+            
             foreach (Control i in this.Controls)
             {
                 foreach (Control k in i.Controls)
@@ -88,7 +95,6 @@ namespace Project_4
                 enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
                 int event_id = (int)ev1.getIdFromTitle(a.Text);
                 evd = new EventFullDescription(event_id);
-                Debug.WriteLine(a.Text);
             }
             else if(a is PictureBox)
             {
@@ -97,7 +103,9 @@ namespace Project_4
                 {
                     if(c is Label)
                     {
-                        Debug.WriteLine(c.Text);
+                        enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
+                        int event_id = (int)ev1.getIdFromTitle(a.Text);
+                        evd = new EventFullDescription(event_id);
                     }
                 }
             }

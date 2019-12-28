@@ -22,8 +22,13 @@ namespace Project_4
         SearchCategoriesControl sccmusic = new SearchCategoriesControl(1);
         SearchCategoriesControl scctheater = new SearchCategoriesControl(2);
         SearchCategoriesControl sccconferences = new SearchCategoriesControl(3);
+        SearchCategoriesControl scceducation = new SearchCategoriesControl(6);
+        SearchCategoriesControl sccinforming = new SearchCategoriesControl(7);
         SearchCategoriesControl sccfestivals = new SearchCategoriesControl(4);
-        SearchCategoriesControl sccsports = new SearchCategoriesControl(8);
+        SearchCategoriesControl sccsports = new SearchCategoriesControl(5);
+        SearchCategoriesControl sccsoccer = new SearchCategoriesControl(8);
+        SearchCategoriesControl sccbasket = new SearchCategoriesControl(9);
+        SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
         HomeMain hm1 = new HomeMain();
         HomeMain hm2 = new HomeMain();
         public Form1()
@@ -86,7 +91,8 @@ namespace Project_4
 
         private void educationBtn_Click(object sender, EventArgs e)
         {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(scceducation);
         }
 
         private void sportsBtn_Click(object sender, EventArgs e)
@@ -201,7 +207,8 @@ namespace Project_4
 
         private void newsButton_Click(object sender, EventArgs e)
         {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccinforming);
         }
 
         private void musicBtn_Click(object sender, EventArgs e)
@@ -224,12 +231,14 @@ namespace Project_4
 
         private void footballBtn_Click(object sender, EventArgs e)
         {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccsoccer);
         }
 
         private void basketBtn_Click(object sender, EventArgs e)
         {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccbasket);
         }
     }
 }
