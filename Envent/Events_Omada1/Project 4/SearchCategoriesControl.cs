@@ -10,13 +10,14 @@ using System.Windows.Forms;
 using Project_4.User_Classes;
 using Project_4.App_Code.StaticMethods;
 using System.IO;
+using System.Diagnostics;
 
 namespace Project_4
 {
     public partial class SearchCategoriesControl : UserControl
     {
 
-        EventFullDescription evd = new EventFullDescription();
+        EventFullDescription evd;
 
         public SearchCategoriesControl()
         {
@@ -79,6 +80,26 @@ namespace Project_4
             while(parent.Name != "MainPanel")
             {
                 parent = parent.Parent;
+            }
+
+            Control a = (Control)sender;
+            if(a is Label)
+            {
+                enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
+                int event_id = (int)ev1.getIdFromTitle(a.Text);
+                evd = new EventFullDescription(event_id);
+                Debug.WriteLine(a.Text);
+            }
+            else if(a is PictureBox)
+            {
+                Control parl = a.Parent;
+                foreach( Control c in parl.Controls)
+                {
+                    if(c is Label)
+                    {
+                        Debug.WriteLine(c.Text);
+                    }
+                }
             }
 
             parent.Controls.Clear();

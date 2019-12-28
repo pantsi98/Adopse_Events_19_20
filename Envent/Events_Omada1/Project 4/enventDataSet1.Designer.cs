@@ -7,11 +7,8 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
 
 #pragma warning disable 1591
-
-using System;
 
 namespace Project_4 {
     
@@ -7564,10 +7561,7 @@ namespace Project_4.enventDataSetTableAdapters {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Param1));
             enventDataSet.adminDataTable dataTable = new enventDataSet.adminDataTable();
-            try
-            {
-                this.Adapter.Fill(dataTable);
-            }catch(Exception ex) { }
+            this.Adapter.Fill(dataTable);
             return dataTable;
         }
         
@@ -9113,7 +9107,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[14];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[15];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, title, category_id, created_at, description, duration, active, img FRO" +
@@ -9232,49 +9226,41 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[7] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "SELECT `img` FROM `events`";
+            this._commandCollection[7].CommandText = "SELECT id \r\nFROM `events` \r\nWHERE `title` = @title";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@title";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 255;
+            param.IsNullable = true;
+            param.SourceColumn = "title";
+            this._commandCollection[7].Parameters.Add(param);
             this._commandCollection[8] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[8].Connection = this.Connection;
-            this._commandCollection[8].CommandText = "SELECT COUNT(*) FROM `events`  WHERE `id`=?";
+            this._commandCollection[8].CommandText = "SELECT `img` FROM `events`";
             this._commandCollection[8].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[9] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[9].Connection = this.Connection;
+            this._commandCollection[9].CommandText = "SELECT COUNT(*) FROM `events`  WHERE `id`=?";
+            this._commandCollection[9].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@Param1";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "id";
-            this._commandCollection[8].Parameters.Add(param);
-            this._commandCollection[9] = new global::MySql.Data.MySqlClient.MySqlCommand();
-            this._commandCollection[9].Connection = this.Connection;
-            this._commandCollection[9].CommandText = "UPDATE `events` SET `category_id` = @p2 WHERE (`id` = @p8) ";
-            this._commandCollection[9].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[9].Parameters.Add(param);
+            this._commandCollection[10] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[10].Connection = this.Connection;
+            this._commandCollection[10].CommandText = "UPDATE `events` SET `category_id` = @p2 WHERE (`id` = @p8) ";
+            this._commandCollection[10].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "category_id";
-            this._commandCollection[9].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p8";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
-            param.IsNullable = true;
-            param.SourceColumn = "id";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._commandCollection[9].Parameters.Add(param);
-            this._commandCollection[10] = new global::MySql.Data.MySqlClient.MySqlCommand();
-            this._commandCollection[10].Connection = this.Connection;
-            this._commandCollection[10].CommandText = "UPDATE `events` SET `description` = @p4 WHERE (`id` = @p8)";
-            this._commandCollection[10].CommandType = global::System.Data.CommandType.Text;
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Text;
-            param.Size = 2147483647;
-            param.IsNullable = true;
-            param.SourceColumn = "description";
             this._commandCollection[10].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p8";
@@ -9286,14 +9272,15 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[10].Parameters.Add(param);
             this._commandCollection[11] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[11].Connection = this.Connection;
-            this._commandCollection[11].CommandText = "UPDATE `events` SET `duration` = @p6 WHERE (`id` = @p8)";
+            this._commandCollection[11].CommandText = "UPDATE `events` SET `description` = @p4 WHERE (`id` = @p8)";
             this._commandCollection[11].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p6";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.ParameterName = "@p4";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Text;
+            param.Size = 2147483647;
             param.IsNullable = true;
-            param.SourceColumn = "duration";
+            param.SourceColumn = "description";
             this._commandCollection[11].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p8";
@@ -9305,41 +9292,17 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[11].Parameters.Add(param);
             this._commandCollection[12] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[12].Connection = this.Connection;
-            this._commandCollection[12].CommandText = "UPDATE `events` SET `title` = @p1, `category_id` = @p2, `description` = @p3, `dur" +
-                "ation` = @p4 WHERE (`id`=@p5)";
+            this._commandCollection[12].CommandText = "UPDATE `events` SET `duration` = @p6 WHERE (`id` = @p8)";
             this._commandCollection[12].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p1";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
-            param.Size = 255;
-            param.IsNullable = true;
-            param.SourceColumn = "title";
-            this._commandCollection[12].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p2";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
-            param.IsNullable = true;
-            param.SourceColumn = "category_id";
-            this._commandCollection[12].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p3";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Text;
-            param.Size = 2147483647;
-            param.IsNullable = true;
-            param.SourceColumn = "description";
-            this._commandCollection[12].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p4";
+            param.ParameterName = "@p6";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "duration";
             this._commandCollection[12].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p5";
+            param.ParameterName = "@p8";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
@@ -9348,7 +9311,8 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[12].Parameters.Add(param);
             this._commandCollection[13] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[13].Connection = this.Connection;
-            this._commandCollection[13].CommandText = "UPDATE `events` SET `title` = @p1 WHERE (`id` = @p8) ";
+            this._commandCollection[13].CommandText = "UPDATE `events` SET `title` = @p1, `category_id` = @p2, `description` = @p3, `dur" +
+                "ation` = @p4 WHERE (`id`=@p5)";
             this._commandCollection[13].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -9359,13 +9323,55 @@ namespace Project_4.enventDataSetTableAdapters {
             param.SourceColumn = "title";
             this._commandCollection[13].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p8";
+            param.ParameterName = "@p2";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "category_id";
+            this._commandCollection[13].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p3";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Text;
+            param.Size = 2147483647;
+            param.IsNullable = true;
+            param.SourceColumn = "description";
+            this._commandCollection[13].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p4";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "duration";
+            this._commandCollection[13].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p5";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "id";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[13].Parameters.Add(param);
+            this._commandCollection[14] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[14].Connection = this.Connection;
+            this._commandCollection[14].CommandText = "UPDATE `events` SET `title` = @p1 WHERE (`id` = @p8) ";
+            this._commandCollection[14].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p1";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 255;
+            param.IsNullable = true;
+            param.SourceColumn = "title";
+            this._commandCollection[14].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p8";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "id";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[14].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9431,14 +9437,9 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual enventDataSet.eventsDataTable GetImg() {
-            this.Adapter.SelectCommand = this.CommandCollection[7];
+            this.Adapter.SelectCommand = this.CommandCollection[8];
             enventDataSet.eventsDataTable dataTable = new enventDataSet.eventsDataTable();
-            try
-            {
-                this.Adapter.Fill(dataTable);
-            }catch(Exception e)
-            {
-            }
+            this.Adapter.Fill(dataTable);
             return dataTable;
         }
         
@@ -9813,8 +9814,42 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> getIdFromTitle(string title) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[7];
+            if ((title == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(title));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<int>();
+            }
+            else {
+                return new global::System.Nullable<int>(((int)(returnValue)));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual object tryEvent(int Param1) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[8];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[9];
             command.Parameters[0].Value = ((int)(Param1));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -9844,7 +9879,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateCategory(global::System.Nullable<int> p2, int p8) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[9];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[10];
             if ((p2.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(p2.Value));
             }
@@ -9874,7 +9909,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateDescription(string p4, int p8) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[10];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[11];
             if ((p4 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -9904,7 +9939,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateDuration(global::System.Nullable<int> p6, int p8) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[11];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[12];
             if ((p6.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(p6.Value));
             }
@@ -9934,7 +9969,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateEvent(string p1, global::System.Nullable<int> p2, string p3, global::System.Nullable<int> p4, int p5) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[12];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[13];
             if ((p1 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -9982,7 +10017,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updateTitle(string p1, int p8) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[13];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[14];
             if ((p1 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -13028,15 +13063,7 @@ namespace Project_4.enventDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Param1));
             }
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            try
-            {
-                this.Adapter.Fill(dataTable);
-            }
-            catch(Exception ex)
-            {
-
-            }
-            
+            this.Adapter.Fill(dataTable);
             return dataTable;
         }
         
@@ -13048,10 +13075,7 @@ namespace Project_4.enventDataSetTableAdapters {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Param1));
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            try
-            {
-                this.Adapter.Fill(dataTable);
-            }catch(Exception ex) { }
+            this.Adapter.Fill(dataTable);
             return dataTable;
         }
         
@@ -13091,14 +13115,7 @@ namespace Project_4.enventDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(email));
             }
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            try {
-                this.Adapter.Fill(dataTable);
-            }
-            catch(Exception ex)
-            {
-               
-            }
-            
+            this.Adapter.Fill(dataTable);
             return dataTable;
         }
         
