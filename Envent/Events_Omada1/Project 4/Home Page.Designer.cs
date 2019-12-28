@@ -88,10 +88,7 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(554, 50);
             this.searchTextBox.TabIndex = 2;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
-            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
-            this.searchTextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.searchTextBox_PreviewKeyDown);
+            this.searchTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button8
             // 
@@ -187,7 +184,6 @@
             this.basketBtn.TabIndex = 1;
             this.basketBtn.Text = "Basket";
             this.basketBtn.UseVisualStyleBackColor = false;
-            this.basketBtn.Click += new System.EventHandler(this.basketBtn_Click);
             // 
             // footballBtn
             // 
@@ -202,7 +198,6 @@
             this.footballBtn.TabIndex = 0;
             this.footballBtn.Text = "Ποδόσφαιρο";
             this.footballBtn.UseVisualStyleBackColor = false;
-            this.footballBtn.Click += new System.EventHandler(this.footballBtn_Click);
             // 
             // sportsBtn
             // 
@@ -240,7 +235,6 @@
             this.festivalsBtn.TabIndex = 8;
             this.festivalsBtn.Text = "Festivals";
             this.festivalsBtn.UseVisualStyleBackColor = false;
-            this.festivalsBtn.Click += new System.EventHandler(this.festivalsBtn_Click);
             // 
             // conferenceSubMenu
             // 
@@ -266,7 +260,7 @@
             this.newsButton.TabIndex = 2;
             this.newsButton.Text = "Ενημερωτικά";
             this.newsButton.UseVisualStyleBackColor = false;
-            this.newsButton.Click += new System.EventHandler(this.newsButton_Click);
+            this.newsButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // educationBtn
             // 
@@ -281,7 +275,7 @@
             this.educationBtn.TabIndex = 0;
             this.educationBtn.Text = "Εκπαίδευση";
             this.educationBtn.UseVisualStyleBackColor = false;
-            this.educationBtn.Click += new System.EventHandler(this.educationBtn_Click);
+            this.educationBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // conferencesBtn
             // 
@@ -301,7 +295,6 @@
             this.conferencesBtn.TabIndex = 4;
             this.conferencesBtn.Text = "Συνέδρια";
             this.conferencesBtn.UseVisualStyleBackColor = false;
-            this.conferencesBtn.Click += new System.EventHandler(this.conferencesBtn_Click);
             this.conferencesBtn.MouseEnter += new System.EventHandler(this.conferencesBtn_MouseEnter);
             // 
             // theaterBtn
@@ -322,7 +315,6 @@
             this.theaterBtn.TabIndex = 2;
             this.theaterBtn.Text = "Θέατρο";
             this.theaterBtn.UseVisualStyleBackColor = false;
-            this.theaterBtn.Click += new System.EventHandler(this.theaterBtn_Click);
             // 
             // musicBtn
             // 
@@ -342,7 +334,7 @@
             this.musicBtn.TabIndex = 1;
             this.musicBtn.Text = "Μουσική";
             this.musicBtn.UseVisualStyleBackColor = false;
-            this.musicBtn.Click += new System.EventHandler(this.musicBtn_Click);
+            this.musicBtn.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // homeBtn
             // 
@@ -399,6 +391,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel conferenceSubMenu;
         private System.Windows.Forms.Button festivalsBtn;
@@ -410,7 +403,6 @@
         private System.Windows.Forms.Button footballBtn;
         private System.Windows.Forms.Button musicBtn;
         private App_Code.CCircularButton cCircularButton1;
-        public System.Windows.Forms.Panel MainPanel;
     }
 }
 

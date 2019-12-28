@@ -6,9 +6,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Project_4.App_Code.StaticMethods;
-using System.Net;
-using System.Drawing;
-using System.IO;
 
 namespace Project_4
 {
@@ -20,9 +17,8 @@ namespace Project_4
         [STAThread]
         static void Main()
         {
-            Events.FillEventsData();
-            Images.LoadImages();
             InstanceOfUser.CreateVisitor();
+            Events.FillEventsData();
             Categories.FillCategoryData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
