@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Project_4.App_Code.StaticMethods;
 using System.Net;
 using System.IO;
+using Project_4.User_Classes;
 
 namespace Project_4
 {
@@ -33,10 +34,20 @@ namespace Project_4
 
         private void PrepareElements(int id)
         {
+            
             User_Classes.Event event_kati = new User_Classes.Event(id);
+           
+
+            Dictionary<int, string> category = new Dictionary<int,string>();
+            category[1] = "Music"; category[2] = "Theater"; category[3] = "Conference"; category[4] = "Festivals"; category[5] = "Sports"; category[6] = "Educational"; category[7] = "Informing"; category[8] = "Soccer"; category[9] = "Basketball"; category[10] = "Cinema";
+            // string cat_name = event_kati.FindAll(x => x.GetCategory() == category[i.Name]);
+            int cat_id = event_kati.GetCategory();
+            string cat_name = category[cat_id];
+            
             this.eventTitle.Text = event_kati.GetTitle();
             this.imerominia.Text = event_kati.GetCreatedAt().Date.ToString();
             this.perigrafilabel.Text = event_kati.GetDescription().ToString();
+            this.categorylabel.Text = cat_name;
             
 
 
