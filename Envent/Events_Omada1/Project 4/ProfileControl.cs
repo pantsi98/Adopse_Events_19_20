@@ -137,5 +137,18 @@ namespace Project_4
         {
             dobPicker.Enabled = false;
         }
+
+        private void circularPicture7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void passwordChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            panel1.Controls.Clear();
+            ResetPassword su = new ResetPassword();
+            panel1.Controls.Add(su);
+        }
     }
 }
