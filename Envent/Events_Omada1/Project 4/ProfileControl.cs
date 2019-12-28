@@ -26,6 +26,7 @@ namespace Project_4
             if (x is NormalUser)
             {
                 NormalUser nu = (NormalUser)x;
+                usernamTextBox.Text = nu.GetUserName();
                 onomaTextBox.Text = nu.GetProfile().GetFirstName();
                 lastnameTextBox.Text = nu.GetProfile().GetLastName();
                 emailTextBox.Text = nu.GetProfile().GetEmail();
@@ -87,15 +88,6 @@ namespace Project_4
             }
         }
 
-        private void circularPicture7_Click(object sender, EventArgs e)
-        {
-            if (passwordTextBox.Enabled) { passwordTextBox.Enabled = false; } else
-            {
-                passwordTextBox.Enabled = true;
-
-            }
-        }
-
         private void circularPicture6_Click(object sender, EventArgs e)
         {
             if (adressTextBox.Enabled) { adressTextBox.Enabled = false; } else
@@ -125,11 +117,6 @@ namespace Project_4
         private void adressTextBox_Leave(object sender, EventArgs e)
         {
             adressTextBox.Enabled = false;
-        }
-
-        private void passwordTextBox_Leave(object sender, EventArgs e)
-        {
-            passwordTextBox.Enabled = false;
         }
 
         private void lastnameTextBox_Leave(object sender, EventArgs e)
