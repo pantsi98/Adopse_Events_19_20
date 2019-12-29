@@ -38,8 +38,6 @@
             this.UsernameLog = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.usernameLabel = new System.Windows.Forms.Label();
-            this.passwordLabel = new System.Windows.Forms.Label();
             this.LogInpanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,8 +45,6 @@
             // LogInpanel
             // 
             this.LogInpanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LogInpanel.Controls.Add(this.passwordLabel);
-            this.LogInpanel.Controls.Add(this.usernameLabel);
             this.LogInpanel.Controls.Add(this.msglabel);
             this.LogInpanel.Controls.Add(this.messagelabel);
             this.LogInpanel.Controls.Add(this.loginfail);
@@ -108,7 +104,7 @@
             this.Syndesi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Syndesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.Syndesi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Syndesi.Location = new System.Drawing.Point(469, 369);
+            this.Syndesi.Location = new System.Drawing.Point(475, 344);
             this.Syndesi.Name = "Syndesi";
             this.Syndesi.Size = new System.Drawing.Size(180, 46);
             this.Syndesi.TabIndex = 3;
@@ -120,11 +116,11 @@
             // 
             this.PasswordLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.PasswordLog.ForeColor = System.Drawing.Color.Gray;
-            this.PasswordLog.Location = new System.Drawing.Point(388, 288);
+            this.PasswordLog.Location = new System.Drawing.Point(388, 255);
             this.PasswordLog.Name = "PasswordLog";
-            this.PasswordLog.PasswordChar = '*';
             this.PasswordLog.Size = new System.Drawing.Size(345, 34);
             this.PasswordLog.TabIndex = 1;
+            this.PasswordLog.Text = "Κωδικός";
             this.PasswordLog.Click += new System.EventHandler(this.PasswordLog_Click);
             this.PasswordLog.Leave += new System.EventHandler(this.PasswordLog_Leave);
             // 
@@ -132,10 +128,11 @@
             // 
             this.UsernameLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.UsernameLog.ForeColor = System.Drawing.Color.Gray;
-            this.UsernameLog.Location = new System.Drawing.Point(388, 211);
+            this.UsernameLog.Location = new System.Drawing.Point(388, 189);
             this.UsernameLog.Name = "UsernameLog";
             this.UsernameLog.Size = new System.Drawing.Size(345, 34);
             this.UsernameLog.TabIndex = 0;
+            this.UsernameLog.Text = "Username";
             this.UsernameLog.Click += new System.EventHandler(this.UsernameLog_Click);
             this.UsernameLog.TextChanged += new System.EventHandler(this.UsernameLog_TextChanged);
             this.UsernameLog.Leave += new System.EventHandler(this.UsernameLog_Leave);
@@ -160,24 +157,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1130, 63);
             this.panel1.TabIndex = 31;
-            // 
-            // usernameLabel
-            // 
-            this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(388, 188);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(73, 17);
-            this.usernameLabel.TabIndex = 8;
-            this.usernameLabel.Text = "Username";
-            // 
-            // passwordLabel
-            // 
-            this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(385, 268);
-            this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(69, 17);
-            this.passwordLabel.TabIndex = 9;
-            this.passwordLabel.Text = "Password";
             // 
             // LogIn
             // 
@@ -208,7 +187,5 @@
         private System.Windows.Forms.Label loginfail;
         private System.Windows.Forms.Label messagelabel;
         private System.Windows.Forms.Label msglabel;
-        private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Label usernameLabel;
     }
 }
