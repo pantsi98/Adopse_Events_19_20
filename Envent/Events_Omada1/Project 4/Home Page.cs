@@ -18,6 +18,7 @@ namespace Project_4
     {
         public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals", "Συνέδρια", "Θέατρο", "Μουσική", "Menu"};
         public int index = 0;
+        List<Image> pics = Images.pic;
         SearchCategoriesControl sccsearch = new SearchCategoriesControl();
         SearchCategoriesControl sccmusic = new SearchCategoriesControl(1);
         SearchCategoriesControl scctheater = new SearchCategoriesControl(2);
@@ -31,6 +32,7 @@ namespace Project_4
         SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
         HomeMain hm1 = new HomeMain();
         HomeMain hm2 = new HomeMain();
+        User user = InstanceOfUser.GetUser();
         public Form1()
         {
             InitializeComponent();
@@ -127,7 +129,56 @@ namespace Project_4
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(searchTextBox.Text))
+            MainPanel.Controls.Clear();
+            int imgIndex = 0;
+            int tileIndex = 0;
+            int panelIndex = 0;
+            Control eventsTile;
+            Control.ControlCollection tiles = sccsearch.Controls;
+            List<Event> events = user.SearchForEvent(searchTextBox.Text);
+            for (int i = 0; i <= 10; i++)
+            {
+                eventsTile = tiles[tiles.Count - panelIndex - 1].Controls[tiles[tiles.Count - panelIndex - 1].Controls.Count - tileIndex - 1];
+                if (events.Count > i)
+                {
+                    foreach (Control v in eventsTile.Controls)
+                    {
+                        if (v is PictureBox)
+                        {
+                            PictureBox eventPic = (PictureBox)v;
+                            Image rszimg = Images.resizeImage(Images.pic.ElementAt(imgIndex), new Size(241, 110));
+                            eventPic.Image = rszimg;
+                            imgIndex++;
+                        }
+                        if (v is Label)
+                        {
+                            Label lb = (Label)v;
+                            lb.Text = events.ElementAt(i).GetTitle();
+                            eventsTile.Visible = true;
+                        }
+                    }
+                }
+                else
+                {
+                    eventsTile.Visible = false;
+                }
+
+                tileIndex++;
+                if (tileIndex == 4)
+                {
+                    panelIndex++;
+                    tileIndex = 0;
+                }
+                if (panelIndex == 3)
+                {
+                    panelIndex = 0;
+                    break;
+                }
+            }
+            MainPanel.Controls.Add(sccsearch);
+
+            #region Comments           
+            /*if (string.IsNullOrEmpty(searchTextBox.Text))
             {
                 MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(hm1);
@@ -157,7 +208,8 @@ namespace Project_4
 
                 MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(sccsearch);
-            }
+            }*/
+            #endregion
         }
 
         private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -172,7 +224,7 @@ namespace Project_4
 
         private void searchTextBox_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if (string.IsNullOrEmpty(searchTextBox.Text))
+           /* if (string.IsNullOrEmpty(searchTextBox.Text))
             {
                 MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(new HomeMain());
@@ -202,7 +254,7 @@ namespace Project_4
 
                 MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(sccsearch);
-            }
+            }*/
         }
 
         private void newsButton_Click(object sender, EventArgs e)

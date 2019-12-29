@@ -19,19 +19,19 @@ namespace Project_4.User_Classes
         public abstract void ShowEventDeails(int id);
 
         //Αρχική μέθοδος του search. Πιθανόν να υπάρξει τροποποίηση για πιο ευφυη αναζήτηση.
-/*public List<String> SearchForEvent(string keyWord)//παράμετρος οι χαρακτήρες που πληκτρολογή ο χρήστης
-{
-    var valid = new Regex(@"^.*" + keyWord + ".*$"); //Δημιουργια regular expression
-    List<string> results = new List<string>(); //Εδώ αποθηκεύονται τα αποτελέσματα
-    foreach (string i in Events.eventsTitle) //Σάρωση της στατικής κλάσης όπου αποθηκεύονται τα events
+    public List<Event> SearchForEvent(string keyWord)//παράμετρος οι χαρακτήρες που πληκτρολογή ο χρήστης
     {
-        if (valid.IsMatch(i)) //Έλεγχος αν ταιρίαζει η αναζήτηση του χρήστη στο regular expression
+        var valid = new Regex(@"^.*" + keyWord + ".*$"); //Δημιουργια regular expression
+        List<Event> results = new List<Event>(); //Εδώ αποθηκεύονται τα αποτελέσματα
+        foreach (Event i in Events.events) //Σάρωση της στατικής κλάσης όπου αποθηκεύονται τα events
         {
-            results.Add(i); //Εισαγώγη στα αποτελέσματα
+            if (valid.IsMatch(i.GetTitle())) //Έλεγχος αν ταιρίαζει η αναζήτηση του χρήστη στο regular expression
+            {
+                results.Add(i); //Εισαγώγη στα αποτελέσματα
+            }
         }
+        return results;
     }
-    return results;
-}*/
 }
 }
  

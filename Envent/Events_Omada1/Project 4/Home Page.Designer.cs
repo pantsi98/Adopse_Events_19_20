@@ -37,6 +37,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
+            this.cinemaBtn = new System.Windows.Forms.Button();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
             this.basketBtn = new System.Windows.Forms.Button();
             this.footballBtn = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.theaterBtn = new System.Windows.Forms.Button();
             this.musicBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
-            this.cinemaBtn = new System.Windows.Forms.Button();
             this.homepagePanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
@@ -103,9 +103,6 @@
             this.searchTextBox.Size = new System.Drawing.Size(554, 50);
             this.searchTextBox.TabIndex = 2;
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
-            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
-            this.searchTextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.searchTextBox_PreviewKeyDown);
             // 
             // button8
             // 
@@ -166,6 +163,24 @@
             this.sideBarPanel.Size = new System.Drawing.Size(300, 1080);
             this.sideBarPanel.TabIndex = 1;
             this.sideBarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
+            // 
+            // cinemaBtn
+            // 
+            this.cinemaBtn.BackColor = System.Drawing.Color.Transparent;
+            this.cinemaBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cinemaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cinemaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.cinemaBtn.ForeColor = System.Drawing.Color.White;
+            this.cinemaBtn.Image = ((System.Drawing.Image)(resources.GetObject("cinemaBtn.Image")));
+            this.cinemaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cinemaBtn.Location = new System.Drawing.Point(0, 526);
+            this.cinemaBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.cinemaBtn.Name = "cinemaBtn";
+            this.cinemaBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.cinemaBtn.Size = new System.Drawing.Size(300, 61);
+            this.cinemaBtn.TabIndex = 11;
+            this.cinemaBtn.Text = "Cinema";
+            this.cinemaBtn.UseVisualStyleBackColor = false;
             // 
             // sportsSubMenu
             // 
@@ -365,24 +380,6 @@
             this.homeBtn.Text = "Menu";
             this.homeBtn.UseVisualStyleBackColor = false;
             this.homeBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cinemaBtn
-            // 
-            this.cinemaBtn.BackColor = System.Drawing.Color.Transparent;
-            this.cinemaBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cinemaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cinemaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.cinemaBtn.ForeColor = System.Drawing.Color.White;
-            this.cinemaBtn.Image = ((System.Drawing.Image)(resources.GetObject("cinemaBtn.Image")));
-            this.cinemaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cinemaBtn.Location = new System.Drawing.Point(0, 526);
-            this.cinemaBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.cinemaBtn.Name = "cinemaBtn";
-            this.cinemaBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.cinemaBtn.Size = new System.Drawing.Size(300, 61);
-            this.cinemaBtn.TabIndex = 11;
-            this.cinemaBtn.Text = "Cinema";
-            this.cinemaBtn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
