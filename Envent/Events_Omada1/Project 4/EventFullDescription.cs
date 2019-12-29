@@ -41,6 +41,11 @@ namespace Project_4
             int venue_id = (int)ven.GetVenueIdFromEventID(id);
             Venue theVenue = new Venue(venue_id);
 
+            //pairno ta tickets
+            enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
+            float normal_ticket = (float)tick.GetNormalPriceEventId(id);
+            float reduced_ticket = (float)tick.GetReducedPriceEventId(id);
+
 
             User_Classes.Event event_kati = new User_Classes.Event(id);
            
@@ -57,6 +62,8 @@ namespace Project_4
             this.topothesia.Text = theVenue.GetName();
             this.NameofPlace.Text = theVenue.GetName();
             this.addressofPlace.Text = theVenue.GetLocation();
+            this.kanonikoTimi.Text = normal_ticket.ToString();
+            this.meiomenoTimi.Text = reduced_ticket.ToString();
             
 
 
