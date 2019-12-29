@@ -13,7 +13,6 @@ namespace Project_4.App_Code
         private String name;
         private String location;
         private int capacity;
-        
 
         public Venue()
         {
@@ -29,7 +28,6 @@ namespace Project_4.App_Code
                 this.name = venueDetails.ElementAt(0).name;
                 this.location = venueDetails.ElementAt(0).location;
                 this.capacity = venueDetails.ElementAt(0).capacity;
-                
             }
             else
             {

@@ -107,7 +107,6 @@
     <Compile Include="App_Code\Exceptions\ExcepetionNull.cs" />
     <Compile Include="App_Code\Exceptions\FailLoginAsEventManager.cs" />
     <Compile Include="App_Code\Exceptions\FailLogInAsNormaillUser.cs" />
-    <Compile Include="App_Code\Exceptions\TicketException.cs" />
     <Compile Include="App_Code\Exceptions\VenueException.cs" />
     <Compile Include="App_Code\NormalUser.cs" />
     <Compile Include="App_Code\Play.cs" />
@@ -117,7 +116,6 @@
     <Compile Include="App_Code\StaticMethods\Events.cs" />
     <Compile Include="App_Code\StaticMethods\InstanceOfUser.cs" />
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
-    <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
     <Compile Include="enventDataSet1.cs">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>

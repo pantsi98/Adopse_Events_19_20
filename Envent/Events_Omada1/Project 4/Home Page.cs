@@ -18,19 +18,6 @@ namespace Project_4
     {
         public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals","Συνέδρια", "Θέατρο","Μουσική","Menu"};
         public int index = 0;
-        SearchCategoriesControl sccsearch = new SearchCategoriesControl();
-        SearchCategoriesControl sccmusic = new SearchCategoriesControl(1);
-        SearchCategoriesControl scctheater = new SearchCategoriesControl(2);
-        SearchCategoriesControl sccconferences = new SearchCategoriesControl(3);
-        SearchCategoriesControl scceducation = new SearchCategoriesControl(6);
-        SearchCategoriesControl sccinforming = new SearchCategoriesControl(7);
-        SearchCategoriesControl sccfestivals = new SearchCategoriesControl(4);
-        SearchCategoriesControl sccsports = new SearchCategoriesControl(5);
-        SearchCategoriesControl sccsoccer = new SearchCategoriesControl(8);
-        SearchCategoriesControl sccbasket = new SearchCategoriesControl(9);
-        SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
-        HomeMain hm1 = new HomeMain();
-        HomeMain hm2 = new HomeMain();
         public Form1()
         {
             InitializeComponent();
@@ -94,8 +81,7 @@ namespace Project_4
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
         {
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(scceducation);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -130,8 +116,7 @@ namespace Project_4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(sccinforming);
+
         }
 
         private void sportsBtn_Click(object sender, EventArgs e)
@@ -159,13 +144,23 @@ namespace Project_4
         private void cCircularButton1_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(sccsoccer);
+            ProfileControl su = new ProfileControl();
+            MainPanel.Controls.Add(su);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(sccbasket);
+            //eventsListView.Items.Clear();
+            User vs =InstanceOfUser.GetUser();
+            List<string> list = new List<string>();
+            //list = vs.SearchForEvent(searchTextBox.Text);
+            var listItem = new ListViewItem();
+            for (int i = 0; i < list.Count; i++)
+            {
+                listItem = new ListViewItem(list.ElementAt(i));
+                //eventsListView.Items.Add(listItem);
+                //eventsListView.Groups[0].Items.Add(listItem);
+            }
         }
     }
 }
