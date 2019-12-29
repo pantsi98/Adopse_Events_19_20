@@ -33,5 +33,20 @@ namespace Project_4.App_Code.StaticMethods
                 categories.Add(categoryItem);
             }
         }
+
+        public int GetID()
+        {
+            return id;
+        }
+
+        public String GetName()
+        {
+            return name;
+        }
+
+        public int GetFather()
+        {
+            return father;
+        }
     }
 }
