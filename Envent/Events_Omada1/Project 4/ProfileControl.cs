@@ -185,7 +185,7 @@ namespace Project_4
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if(datachange == false)
+            if(datachange == true)
             {
                 NormalUser nu =(NormalUser)x;
                 Profile up =nu.GetProfile();
