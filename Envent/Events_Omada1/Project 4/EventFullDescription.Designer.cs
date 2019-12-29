@@ -271,7 +271,7 @@
             // tilefonoofPlace
             // 
             this.tilefonoofPlace.AutoSize = true;
-            this.tilefonoofPlace.Location = new System.Drawing.Point(159, 110);
+            this.tilefonoofPlace.Location = new System.Drawing.Point(158, 177);
             this.tilefonoofPlace.Name = "tilefonoofPlace";
             this.tilefonoofPlace.Size = new System.Drawing.Size(120, 24);
             this.tilefonoofPlace.TabIndex = 5;
@@ -280,7 +280,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(27, 110);
+            this.label11.Location = new System.Drawing.Point(26, 177);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(106, 24);
             this.label11.TabIndex = 4;

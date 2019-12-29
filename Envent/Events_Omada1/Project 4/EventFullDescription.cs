@@ -54,10 +54,12 @@ namespace Project_4
             category[1] = "Music"; category[2] = "Theater"; category[3] = "Conference"; category[4] = "Festivals"; category[5] = "Sports"; category[6] = "Educational"; category[7] = "Informing"; category[8] = "Soccer"; category[9] = "Basketball"; category[10] = "Cinema";
             int cat_id = event_kati.GetCategory();
             string cat_name = category[cat_id];
+            int duration = event_kati.GetDuration();
             
             this.eventTitle.Text = event_kati.GetTitle();
-            this.imerominia.Text = event_kati.GetCreatedAt().Date.ToString();
+            this.imerominia.Text = event_kati.GetCreatedAt().ToString("d/M/yyyy");
             this.perigrafilabel.Text = event_kati.GetDescription().ToString();
+            this.durationlabel.Text = (duration / 3600).ToString() + " ώρες";
             this.categorylabel.Text = cat_name;
             this.topothesia.Text = theVenue.GetName();
             this.NameofPlace.Text = theVenue.GetName();
