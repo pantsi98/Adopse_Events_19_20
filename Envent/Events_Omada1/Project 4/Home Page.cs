@@ -16,14 +16,30 @@ namespace Project_4
 {
     public partial class Form1 : Form
     {
-        public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals","Συνέδρια", "Θέατρο","Μουσική","Menu"};
+        public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals", "Συνέδρια", "Θέατρο", "Μουσική", "Menu"};
         public int index = 0;
+        SearchCategoriesControl sccsearch = new SearchCategoriesControl();
+        SearchCategoriesControl sccmusic = new SearchCategoriesControl(1);
+        SearchCategoriesControl scctheater = new SearchCategoriesControl(2);
+        SearchCategoriesControl sccconferences = new SearchCategoriesControl(3);
+        SearchCategoriesControl scceducation = new SearchCategoriesControl(6);
+        SearchCategoriesControl sccinforming = new SearchCategoriesControl(7);
+        SearchCategoriesControl sccfestivals = new SearchCategoriesControl(4);
+        SearchCategoriesControl sccsports = new SearchCategoriesControl(5);
+        SearchCategoriesControl sccsoccer = new SearchCategoriesControl(8);
+        SearchCategoriesControl sccbasket = new SearchCategoriesControl(9);
+        SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
+        HomeMain hm1 = new HomeMain();
+        HomeMain hm2 = new HomeMain();
         public Form1()
         {
             InitializeComponent();
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
+            MainPanel.Controls.Clear();
+            HomeMain su = new HomeMain();
+            MainPanel.Controls.Add(su);
         }
 
         private void hideSubmenus()
@@ -35,16 +51,10 @@ namespace Project_4
         private void button1_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            HomeMain hm = new HomeMain();
-            MainPanel.Controls.Add(hm);
+            MainPanel.Controls.Add(hm1);
         }
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
@@ -54,7 +64,6 @@ namespace Project_4
             MainPanel.Controls.Clear();
             SignUpstep1 su = new SignUpstep1();
             MainPanel.Controls.Add(su);
-
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -62,21 +71,6 @@ namespace Project_4
             MainPanel.Controls.Clear();
             LogIn su = new LogIn();
             MainPanel.Controls.Add(su);
-        }
-
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
@@ -91,37 +85,20 @@ namespace Project_4
 
         private void festivalsBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccfestivals);
         }
 
         private void educationBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(scceducation);
         }
 
         private void sportsBtn_Click(object sender, EventArgs e)
         {
-
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccsports);
         }
         private void conferencesBtn_MouseEnter(object sender, EventArgs e)
         {
@@ -148,19 +125,120 @@ namespace Project_4
             MainPanel.Controls.Add(su);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-            //eventsListView.Items.Clear();
-            User vs =InstanceOfUser.GetUser();
-            List<string> list = new List<string>();
-            //list = vs.SearchForEvent(searchTextBox.Text);
-            var listItem = new ListViewItem();
-            for (int i = 0; i < list.Count; i++)
+            if (string.IsNullOrEmpty(searchTextBox.Text))
             {
-                listItem = new ListViewItem(list.ElementAt(i));
-                //eventsListView.Items.Add(listItem);
-                //eventsListView.Groups[0].Items.Add(listItem);
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(hm1);
+
             }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
+            {
+
+                foreach (Control item in sccsearch.Controls)
+                {
+                    System.Diagnostics.Trace.WriteLine(item.GetType().ToString());
+                }
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(sccsearch);
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count > 0)
+            {
+                foreach (Control item in sccsearch.Controls)
+                {
+                    if (item.GetType() == typeof(Label))
+                    {
+                        item.Text = searchTextBox.Text;
+                    }
+                }
+                sccsearch.tileLabel1.Text = searchTextBox.Text;
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(sccsearch);
+            }
+        }
+
+        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void searchTextBox_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (string.IsNullOrEmpty(searchTextBox.Text))
+            {
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(new HomeMain());
+
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
+            {
+                
+                foreach (Control item in sccsearch.Controls)
+                {
+                    System.Diagnostics.Trace.WriteLine(item.GetType().ToString());
+                }
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(sccsearch);
+            }
+            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count > 0)
+            {
+                foreach (Control item in sccsearch.Controls)
+                {
+                    if (item.GetType() == typeof(Label))
+                    {
+                        item.Text = searchTextBox.Text;
+                    }
+                }
+                sccsearch.tileLabel1.Text = searchTextBox.Text;
+
+                MainPanel.Controls.Clear();
+                MainPanel.Controls.Add(sccsearch);
+            }
+        }
+
+        private void newsButton_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccinforming);
+        }
+
+        private void musicBtn_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccmusic);
+        }
+
+        private void theaterBtn_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(scctheater);
+        }
+
+        private void conferencesBtn_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccconferences);
+        }
+
+        private void footballBtn_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccsoccer);
+        }
+
+        private void basketBtn_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(sccbasket);
         }
     }
 }
