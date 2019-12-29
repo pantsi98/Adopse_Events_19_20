@@ -26,6 +26,16 @@ namespace Project_4
         {
             InitializeComponent();
             PrepareElements(id);
+            User x = InstanceOfUser.GetUser();
+            if (x is NormalUser)
+            {
+                button8.Enabled = true;
+            }
+            else
+            {
+                button8.Enabled = false;
+                button8.BackColor = Color.LightSlateGray;
+            }
         }
 
         String description;
