@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.IconEvent = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.book_tab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.categorylabel = new System.Windows.Forms.Label();
@@ -59,13 +59,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconEvent)).BeginInit();
             this.panel2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.book_tab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -171,18 +175,20 @@
             this.panel2.Size = new System.Drawing.Size(1212, 310);
             this.panel2.TabIndex = 2;
             // 
-            // tabControl1
+            // book_tab
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tabControl1.Location = new System.Drawing.Point(19, 481);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1172, 338);
-            this.tabControl1.TabIndex = 3;
+            this.book_tab.Controls.Add(this.tabPage1);
+            this.book_tab.Controls.Add(this.tabPage2);
+            this.book_tab.Controls.Add(this.tabPage3);
+            this.book_tab.Controls.Add(this.tabPage4);
+            this.book_tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.book_tab.Location = new System.Drawing.Point(19, 481);
+            this.book_tab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.book_tab.Name = "book_tab";
+            this.book_tab.SelectedIndex = 0;
+            this.book_tab.Size = new System.Drawing.Size(1172, 338);
+            this.book_tab.TabIndex = 3;
+            this.book_tab.MouseClick += new System.Windows.Forms.MouseEventHandler(this.book_tab_MouseClick);
             // 
             // tabPage1
             // 
@@ -402,13 +408,43 @@
             this.label10.Size = new System.Drawing.Size(0, 17);
             this.label10.TabIndex = 4;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1164, 305);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Κράτηση";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(56, 21);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 20);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "label13";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(56, 72);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 20);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "label14";
+            // 
             // EventFullDescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.book_tab);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -419,13 +455,15 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconEvent)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.book_tab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,7 +479,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl book_tab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label perigrafilabel;
         private System.Windows.Forms.TabPage tabPage2;
@@ -464,5 +502,8 @@
         private System.Windows.Forms.Label categorylabel;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label eventTitle;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
     }
 }

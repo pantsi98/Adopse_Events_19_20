@@ -17,6 +17,8 @@ namespace Project_4
 {
     public partial class EventFullDescription : UserControl
     {
+        int event_id;
+        int k = 1;
         public EventFullDescription()
         {
             InitializeComponent();
@@ -36,11 +38,12 @@ namespace Project_4
                 button8.Enabled = false;
                 button8.BackColor = Color.LightSlateGray;
             }
+            event_id = id;
         }
 
         String description;
         String title;
-        int duration;
+        
 
 
         private void PrepareElements(int id)
@@ -115,7 +118,7 @@ namespace Project_4
 
 
             //Anathesi timwn sta katallila labels
-            String dur = duration.ToString();
+            //String dur = duration.ToString();
 
            // durationlabel.Text = dur;
             //eventTitle.Text = title;
@@ -123,9 +126,15 @@ namespace Project_4
 
         }
 
-
-        
-
+        private void book_tab_MouseClick(object sender, MouseEventArgs e)
+        {
+            enventDataSet.playDataTable pdt = new enventDataSet.playDataTable();
+            
+            for(int i = 0; i < pdt.Rows.Count; i++)
+            {
+                label13.Text = pdt.Rows[i].ToString();
+            }
+        }
     }
 
   
