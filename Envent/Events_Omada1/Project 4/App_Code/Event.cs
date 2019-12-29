@@ -17,14 +17,11 @@ namespace Project_4.User_Classes
         private int duration;
         private bool status;
         private string imgurl;
-        
-        
 
         public Event(int id)
         {
             this.id = id;
             enventDataSetTableAdapters.eventsTableAdapter ev = new enventDataSetTableAdapters.eventsTableAdapter();
-            enventDataSetTableAdapters.categoryTableAdapter catv = new enventDataSetTableAdapters.categoryTableAdapter();
             if(Convert.ToInt32(ev.tryEvent(this.id)) > 0)
             {
                 List<enventDataSet.eventsRow> eventDetails =  ev.getEvent(this.id).ToList();
@@ -34,9 +31,6 @@ namespace Project_4.User_Classes
                 this.description = eventDetails.ElementAt(0).description;
                 this.duration = eventDetails.ElementAt(0).duration;
                 this.status = eventDetails.ElementAt(0).active;
-                
-                
-
             }
             else
             {
@@ -54,8 +48,6 @@ namespace Project_4.User_Classes
             this.duration = duration;
             this.status = status;
             this.imgurl = imgurl;
-            
-           
         }
 
         public int GetID()
@@ -72,8 +64,6 @@ namespace Project_4.User_Classes
         {
             return category;
         }
-
-       
 
         public DateTime GetCreatedAt()
         {

@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homepagePanel = new System.Windows.Forms.Panel();
-            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
             this.basketBtn = new System.Windows.Forms.Button();
@@ -49,7 +49,6 @@
             this.theaterBtn = new System.Windows.Forms.Button();
             this.musicBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
-            this.cinemaBtn = new System.Windows.Forms.Button();
             this.homepagePanel.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
@@ -70,19 +69,6 @@
             this.homepagePanel.Size = new System.Drawing.Size(1920, 61);
             this.homepagePanel.TabIndex = 2;
             // 
-            // cCircularButton1
-            // 
-            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
-            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
-            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
-            this.cCircularButton1.Name = "cCircularButton1";
-            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
-            this.cCircularButton1.TabIndex = 0;
-            this.cCircularButton1.UseVisualStyleBackColor = false;
-            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
@@ -102,10 +88,7 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(554, 50);
             this.searchTextBox.TabIndex = 2;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
-            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
-            this.searchTextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.searchTextBox_PreviewKeyDown);
+            this.searchTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button8
             // 
@@ -146,12 +129,24 @@
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
+            // cCircularButton1
+            // 
+            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
+            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
+            this.cCircularButton1.Name = "cCircularButton1";
+            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
+            this.cCircularButton1.TabIndex = 0;
+            this.cCircularButton1.UseVisualStyleBackColor = false;
+            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
+            // 
             // sideBarPanel
             // 
             this.sideBarPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.sideBarPanel.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(206)))), ((int)(((byte)(235)))));
             this.sideBarPanel.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.sideBarPanel.Controls.Add(this.cinemaBtn);
             this.sideBarPanel.Controls.Add(this.sportsSubMenu);
             this.sideBarPanel.Controls.Add(this.sportsBtn);
             this.sideBarPanel.Controls.Add(this.festivalsBtn);
@@ -189,7 +184,6 @@
             this.basketBtn.TabIndex = 1;
             this.basketBtn.Text = "Basket";
             this.basketBtn.UseVisualStyleBackColor = false;
-            this.basketBtn.Click += new System.EventHandler(this.basketBtn_Click);
             // 
             // footballBtn
             // 
@@ -204,7 +198,6 @@
             this.footballBtn.TabIndex = 0;
             this.footballBtn.Text = "Ποδόσφαιρο";
             this.footballBtn.UseVisualStyleBackColor = false;
-            this.footballBtn.Click += new System.EventHandler(this.footballBtn_Click);
             // 
             // sportsBtn
             // 
@@ -242,7 +235,6 @@
             this.festivalsBtn.TabIndex = 8;
             this.festivalsBtn.Text = "Festivals";
             this.festivalsBtn.UseVisualStyleBackColor = false;
-            this.festivalsBtn.Click += new System.EventHandler(this.festivalsBtn_Click);
             // 
             // conferenceSubMenu
             // 
@@ -268,7 +260,7 @@
             this.newsButton.TabIndex = 2;
             this.newsButton.Text = "Ενημερωτικά";
             this.newsButton.UseVisualStyleBackColor = false;
-            this.newsButton.Click += new System.EventHandler(this.newsButton_Click);
+            this.newsButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // educationBtn
             // 
@@ -283,7 +275,7 @@
             this.educationBtn.TabIndex = 0;
             this.educationBtn.Text = "Εκπαίδευση";
             this.educationBtn.UseVisualStyleBackColor = false;
-            this.educationBtn.Click += new System.EventHandler(this.educationBtn_Click);
+            this.educationBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // conferencesBtn
             // 
@@ -303,7 +295,6 @@
             this.conferencesBtn.TabIndex = 4;
             this.conferencesBtn.Text = "Συνέδρια";
             this.conferencesBtn.UseVisualStyleBackColor = false;
-            this.conferencesBtn.Click += new System.EventHandler(this.conferencesBtn_Click);
             this.conferencesBtn.MouseEnter += new System.EventHandler(this.conferencesBtn_MouseEnter);
             // 
             // theaterBtn
@@ -324,7 +315,6 @@
             this.theaterBtn.TabIndex = 2;
             this.theaterBtn.Text = "Θέατρο";
             this.theaterBtn.UseVisualStyleBackColor = false;
-            this.theaterBtn.Click += new System.EventHandler(this.theaterBtn_Click);
             // 
             // musicBtn
             // 
@@ -344,7 +334,7 @@
             this.musicBtn.TabIndex = 1;
             this.musicBtn.Text = "Μουσική";
             this.musicBtn.UseVisualStyleBackColor = false;
-            this.musicBtn.Click += new System.EventHandler(this.musicBtn_Click);
+            this.musicBtn.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // homeBtn
             // 
@@ -366,30 +356,12 @@
             this.homeBtn.UseVisualStyleBackColor = false;
             this.homeBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cinemaBtn
-            // 
-            this.cinemaBtn.BackColor = System.Drawing.Color.Transparent;
-            this.cinemaBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cinemaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cinemaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.cinemaBtn.ForeColor = System.Drawing.Color.White;
-            this.cinemaBtn.Image = ((System.Drawing.Image)(resources.GetObject("cinemaBtn.Image")));
-            this.cinemaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cinemaBtn.Location = new System.Drawing.Point(0, 526);
-            this.cinemaBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.cinemaBtn.Name = "cinemaBtn";
-            this.cinemaBtn.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.cinemaBtn.Size = new System.Drawing.Size(300, 61);
-            this.cinemaBtn.TabIndex = 11;
-            this.cinemaBtn.Text = "Cinema";
-            this.cinemaBtn.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.homepagePanel);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.sideBarPanel);
@@ -419,6 +391,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel conferenceSubMenu;
         private System.Windows.Forms.Button festivalsBtn;
@@ -430,8 +403,6 @@
         private System.Windows.Forms.Button footballBtn;
         private System.Windows.Forms.Button musicBtn;
         private App_Code.CCircularButton cCircularButton1;
-        public System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.Button cinemaBtn;
     }
 }
 

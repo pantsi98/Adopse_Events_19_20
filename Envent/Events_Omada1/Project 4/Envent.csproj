@@ -107,7 +107,6 @@
     <Compile Include="App_Code\Exceptions\ExcepetionNull.cs" />
     <Compile Include="App_Code\Exceptions\FailLoginAsEventManager.cs" />
     <Compile Include="App_Code\Exceptions\FailLogInAsNormaillUser.cs" />
-    <Compile Include="App_Code\Exceptions\TicketException.cs" />
     <Compile Include="App_Code\Exceptions\VenueException.cs" />
     <Compile Include="App_Code\NormalUser.cs" />
     <Compile Include="App_Code\Play.cs" />
@@ -115,10 +114,8 @@
     <Compile Include="App_Code\Search.cs" />
     <Compile Include="App_Code\StaticMethods\Categories.cs" />
     <Compile Include="App_Code\StaticMethods\Events.cs" />
-    <Compile Include="App_Code\StaticMethods\Images.cs" />
     <Compile Include="App_Code\StaticMethods\InstanceOfUser.cs" />
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
-    <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
     <Compile Include="enventDataSet1.cs">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
@@ -183,12 +180,6 @@
     <Compile Include="ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchCategoriesControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SearchCategoriesControl.Designer.cs">
-      <DependentUpon>SearchCategoriesControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="SignUpEventManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,9 +233,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SearchCategoriesControl.resx">
-      <DependentUpon>SearchCategoriesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpEventManager.resx">
       <DependentUpon>SignUpEventManager.cs</DependentUpon>
@@ -322,9 +310,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\facebook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\eventImg1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

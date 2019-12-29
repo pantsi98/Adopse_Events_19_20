@@ -17,7 +17,7 @@ namespace Project_4.App_Code.StaticMethods
         static List<enventDataSet.categoryRow> catList = new List<enventDataSet.categoryRow>();
 
 
-        public Categories( int id, string name , int father)
+        public Categories( int id,string name , int father)
         {
             this.id = id;
             this.name = name;
@@ -32,21 +32,6 @@ namespace Project_4.App_Code.StaticMethods
                 Categories categoryItem = new Categories(catList.ElementAt(i).id, catList.ElementAt(i).name, catList.ElementAt(i).father);
                 categories.Add(categoryItem);
             }
-        }
-
-        public int GetID()
-        {
-            return id;
-        }
-
-        public String GetName()
-        {
-            return name;
-        }
-
-        public int GetFather()
-        {
-            return father;
         }
     }
 }

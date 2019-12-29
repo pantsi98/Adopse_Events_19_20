@@ -21,6 +21,10 @@ namespace Project_4.User_Classes
                 this.passWord = passWord;
         }
 
+        public string GetUserName()
+        {
+            return userName;
+        }
         public void LogOut()
         {
             InstanceOfUser.LogOut();
