@@ -7,11 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_4.App_Code;
+using Project_4.User_Classes;
+using Project_4.App_Code.StaticMethods;
 
 namespace Project_4
 {
     public partial class ProfileControl : UserControl
     {
+        User x = InstanceOfUser.GetUser();
+        public bool datachange = false;
+        public int Id;
+        public string onoma;
+        public string lastname;
+        public string email;
+        public string adress;
+        public string usrname;
+        public DateTime dob;
         public ProfileControl()
         {
             InitializeComponent();
@@ -19,7 +31,18 @@ namespace Project_4
 
         private void Profile_Load(object sender, EventArgs e)
         {
-
+            
+            if (x is NormalUser)
+            {
+                NormalUser nu = (NormalUser)x;
+                Id = nu.GetUserID();
+                usrname = usernamTextBox.Text = nu.GetUserName();
+                onoma = onomaTextBox.Text = nu.GetProfile().GetFirstName();
+                lastname = lastnameTextBox.Text = nu.GetProfile().GetLastName();
+                email = emailTextBox.Text = nu.GetProfile().GetEmail();
+                dob = dobPicker.Value = nu.GetProfile().GetDob();
+                adress = adressTextBox.Text = nu.GetProfile().GetAddress();
+            }
         }
 
         private void cCircularButton3_Click(object sender, EventArgs e)
@@ -74,14 +97,7 @@ namespace Project_4
             }
         }
 
-        private void circularPicture7_Click(object sender, EventArgs e)
-        {
-            if (passwordTextBox.Enabled) { passwordTextBox.Enabled = false; } else
-            {
-                passwordTextBox.Enabled = true;
-
-            }
-        }
+        
 
         private void circularPicture6_Click(object sender, EventArgs e)
         {
@@ -102,26 +118,36 @@ namespace Project_4
         private void usernamTextBox_Leave(object sender, EventArgs e)
         {
             usernamTextBox.Enabled = false;
+            
         }
 
         private void onomaTextBox_Leave(object sender, EventArgs e)
         {
             onomaTextBox.Enabled = false;
+            if (String.Equals(onomaTextBox.Text, onoma) == false)
+            {
+                datachange = true;
+            }
         }
 
         private void adressTextBox_Leave(object sender, EventArgs e)
         {
             adressTextBox.Enabled = false;
+            if (String.Equals(adressTextBox.Text, adress) == false)
+            {
+                datachange = true;
+            }
         }
 
-        private void passwordTextBox_Leave(object sender, EventArgs e)
-        {
-            passwordTextBox.Enabled = false;
-        }
+        
 
         private void lastnameTextBox_Leave(object sender, EventArgs e)
         {
             lastnameTextBox.Enabled = false;
+            if (String.Equals(lastnameTextBox.Text, lastname) == false)
+            {
+                datachange = true;
+            }
         }
 
         private void circularPicture9_Click(object sender, EventArgs e)
@@ -136,6 +162,44 @@ namespace Project_4
         private void dobPicker_Leave(object sender, EventArgs e)
         {
             dobPicker.Enabled = false;
+            if (dobPicker.Value != dob)
+            {
+                datachange = true;
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void circularPicture7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(datachange == false)
+            {
+                NormalUser nu =(NormalUser)x;
+                Profile up =nu.GetProfile();
+                up.UpdateAddress(Id, adressTextBox.Text);
+                up.UpdateEmail(Id, emailTextBox.Text);
+                up.UpdateFirstName(Id, onomaTextBox.Text);
+                up.UpdateLastName(Id, lastnameTextBox.Text);
+                up.UpdateUserName(Id, usernamTextBox.Text);
+                MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
+            }
+            else
+            {
+                MessageBox.Show("Δεν έγινε κάποια αλλαγή για να αλλάξουν τα δεδομένα");
+            }
         }
     }
 }
