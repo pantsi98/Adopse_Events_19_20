@@ -11,6 +11,7 @@ using Project_4.App_Code.StaticMethods;
 using System.Net;
 using System.IO;
 using Project_4.User_Classes;
+using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -34,7 +35,13 @@ namespace Project_4
 
         private void PrepareElements(int id)
         {
-            
+
+            //pairno to venue 
+            enventDataSetTableAdapters.venuesTableAdapter ven = new enventDataSetTableAdapters.venuesTableAdapter();
+            int venue_id = (int)ven.GetVenueIdFromEventID(id);
+            Venue theVenue = new Venue(venue_id);
+
+
             User_Classes.Event event_kati = new User_Classes.Event(id);
            
 
@@ -47,6 +54,9 @@ namespace Project_4
             this.imerominia.Text = event_kati.GetCreatedAt().Date.ToString();
             this.perigrafilabel.Text = event_kati.GetDescription().ToString();
             this.categorylabel.Text = cat_name;
+            this.topothesia.Text = theVenue.GetName();
+            this.NameofPlace.Text = theVenue.GetName();
+            this.addressofPlace.Text = theVenue.GetLocation();
             
 
 
