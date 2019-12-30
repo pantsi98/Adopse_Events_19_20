@@ -61,7 +61,8 @@ namespace Project_4
 
 
             User_Classes.Event event_kati = new User_Classes.Event(id);
-           
+            App_Code.Play plays = new App_Code.Play(id);
+
 
             Dictionary<int, string> category = new Dictionary<int,string>();
             category[1] = "Music"; category[2] = "Theater"; category[3] = "Conference"; category[4] = "Festivals"; category[5] = "Sports"; category[6] = "Educational"; category[7] = "Informing"; category[8] = "Soccer"; category[9] = "Basketball"; category[10] = "Cinema";
@@ -79,10 +80,30 @@ namespace Project_4
             this.addressofPlace.Text = theVenue.GetLocation();
             this.kanonikoTimi.Text = normal_ticket.ToString();
             this.meiomenoTimi.Text = reduced_ticket.ToString();
-            
+
+            int z = 0;
+
+            List<DateTime> dates = plays.GetDates();
+            foreach (DateTime date in dates)
+            {
+
+                Label newLabel = new Label();
+
+                newLabel.Width = 125;
+                newLabel.Height = 20;
+                newLabel.Location = new Point(10, 50 + 2 * z * newLabel.Height);
+                newLabel.Name = "label" + z;
+                
+                newLabel.Text = date.ToString();
+                date_panel.Controls.Add(newLabel);
+
+                Button newButton = new Button();
+                newButton.Text = "Κράτηση";
+                book_button_panel.Controls.Add(newButton);
+                z++;
+            }
 
 
-           
         }
 
         private void EventFullDesbcriptionPrepare(string ttl, string desc, int dur)
@@ -128,24 +149,8 @@ namespace Project_4
 
         private void book_tab_MouseClick(object sender, MouseEventArgs e)
         {
-             enventDataSet.playDataTable pdt = new enventDataSet.playDataTable();
-
-            DataTable example = new DataTable();
-            
-            foreach (DataRow row in pdt.Rows) {
-
-                Label newLabel = new Label();
-
-                newLabel.Width = 125;
-                newLabel.Height = 20;
-                newLabel.Text = row.ItemArray.ToString();
-                date_panel.Controls.Add(newLabel);
-
-            }
-            
-            Button newButton = new Button();
-            newButton.Text = "Κράτηση";
-            book_button_panel.Controls.Add(newButton);
+           
+           
             
            
         }

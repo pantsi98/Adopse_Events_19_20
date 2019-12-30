@@ -11,14 +11,27 @@ namespace Project_4.App_Code
     {
         private Event ev;
         private Venue venue;
-        private DateTime date;
+        private static List<DateTime> dates = new List<DateTime>();
         private bool status;
 
         public Play(int eventID) {
             enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
             List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
-            this.date = res.ElementAt(0).date;
-            this.status = res.ElementAt(0).status;
+            for (int i = 0; i < res.Count; i++)
+            {
+                DateTime date = res.ElementAt(i).date;
+                dates.Add(date);
+            }
+        }
+
+        public List<DateTime> GetDates()
+        {
+            List<DateTime> dt = new List<DateTime>();
+            foreach(DateTime i in dates)
+            {
+                dt.Add(i.Date);
+            }
+            return dt;
         }
     }
 }
