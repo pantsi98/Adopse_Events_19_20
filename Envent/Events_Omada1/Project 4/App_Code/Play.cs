@@ -1,6 +1,7 @@
 ﻿using Project_4.User_Classes;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace Project_4.App_Code
             {
                 DateTime date = res.ElementAt(i).date;
                 dates.Add(date);
+                Debug.WriteLine(date);
             }
         }
 
@@ -29,7 +31,8 @@ namespace Project_4.App_Code
             List<DateTime> dt = new List<DateTime>();
             foreach(DateTime i in dates)
             {
-                dt.Add(i.Date);
+                dt.Add(i.Date.Date);
+                Debug.WriteLine(i.Date.Date);
             }
             return dt;
         }

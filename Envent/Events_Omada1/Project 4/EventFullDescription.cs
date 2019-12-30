@@ -94,7 +94,7 @@ namespace Project_4
                 newLabel.Location = new Point(10, 50 + 2 * z * newLabel.Height);
                 newLabel.Name = "label" + z;
                 
-                newLabel.Text = date.ToString();
+                newLabel.Text = date.ToString("dd/MM/yyyy HH:mm");
                 date_panel.Controls.Add(newLabel);
 
                 Button newButton = new Button();

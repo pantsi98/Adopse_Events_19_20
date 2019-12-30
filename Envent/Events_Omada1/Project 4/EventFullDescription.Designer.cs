@@ -435,7 +435,7 @@
             // 
             // book_button_panel
             // 
-            this.book_button_panel.Location = new System.Drawing.Point(148, 16);
+            this.book_button_panel.Location = new System.Drawing.Point(241, 16);
             this.book_button_panel.Name = "book_button_panel";
             this.book_button_panel.Size = new System.Drawing.Size(131, 200);
             this.book_button_panel.TabIndex = 1;
@@ -445,7 +445,7 @@
             this.date_panel.AutoSize = true;
             this.date_panel.Location = new System.Drawing.Point(17, 16);
             this.date_panel.Name = "date_panel";
-            this.date_panel.Size = new System.Drawing.Size(125, 200);
+            this.date_panel.Size = new System.Drawing.Size(218, 200);
             this.date_panel.TabIndex = 0;
             // 
             // label10
