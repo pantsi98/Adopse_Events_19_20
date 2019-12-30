@@ -128,12 +128,26 @@ namespace Project_4
 
         private void book_tab_MouseClick(object sender, MouseEventArgs e)
         {
-            enventDataSet.playDataTable pdt = new enventDataSet.playDataTable();
+             enventDataSet.playDataTable pdt = new enventDataSet.playDataTable();
+
+            DataTable example = new DataTable();
             
-            for(int i = 0; i < pdt.Rows.Count; i++)
-            {
-                label13.Text = pdt.Rows[i].ToString();
+            foreach (DataRow row in pdt.Rows) {
+
+                Label newLabel = new Label();
+
+                newLabel.Width = 125;
+                newLabel.Height = 20;
+                newLabel.Text = row.ItemArray.ToString();
+                date_panel.Controls.Add(newLabel);
+
             }
+            
+            Button newButton = new Button();
+            newButton.Text = "Κράτηση";
+            book_button_panel.Controls.Add(newButton);
+            
+           
         }
     }
 
