@@ -30,6 +30,7 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.passChange = new System.Windows.Forms.LinkLabel();
             this.circularPicture7 = new Project_4.App_Code.circularPicture();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.circularPicture2 = new Project_4.App_Code.circularPicture();
             this.circularPicture1 = new Project_4.App_Code.circularPicture();
-            this.passChange = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
@@ -104,8 +104,19 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(290, 253);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 635);
+            this.panel1.Size = new System.Drawing.Size(1149, 697);
             this.panel1.TabIndex = 40;
+            // 
+            // passChange
+            // 
+            this.passChange.AutoSize = true;
+            this.passChange.Location = new System.Drawing.Point(56, 419);
+            this.passChange.Name = "passChange";
+            this.passChange.Size = new System.Drawing.Size(232, 17);
+            this.passChange.TabIndex = 41;
+            this.passChange.TabStop = true;
+            this.passChange.Text = "Θέλετε να αλλάξετε το κωδικό σας;";
+            this.passChange.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.passChange_LinkClicked);
             // 
             // circularPicture7
             // 
@@ -225,6 +236,7 @@
             this.onomaTextBox.Name = "onomaTextBox";
             this.onomaTextBox.Size = new System.Drawing.Size(331, 27);
             this.onomaTextBox.TabIndex = 81;
+            this.onomaTextBox.TextChanged += new System.EventHandler(this.onomaTextBox_TextChanged);
             this.onomaTextBox.Leave += new System.EventHandler(this.onomaTextBox_Leave);
             // 
             // fullolabel
@@ -365,17 +377,6 @@
             this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture1.TabIndex = 32;
             this.circularPicture1.TabStop = false;
-            // 
-            // passChange
-            // 
-            this.passChange.AutoSize = true;
-            this.passChange.Location = new System.Drawing.Point(56, 419);
-            this.passChange.Name = "passChange";
-            this.passChange.Size = new System.Drawing.Size(232, 17);
-            this.passChange.TabIndex = 41;
-            this.passChange.TabStop = true;
-            this.passChange.Text = "Θέλετε να αλλάξετε το κωδικό σας;";
-            this.passChange.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.passChange_LinkClicked);
             // 
             // ProfileControl
             // 
