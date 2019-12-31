@@ -20,7 +20,10 @@ namespace Project_4.User_Classes
                 this.userName = userName;
                 this.passWord = passWord;
         }
-
+        public string GetPass()
+        {
+            return passWord;
+        }
         public string GetUserName()
         {
             return userName;
