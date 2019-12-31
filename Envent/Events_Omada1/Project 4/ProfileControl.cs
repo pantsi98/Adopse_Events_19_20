@@ -203,10 +203,6 @@ namespace Project_4
             }
         }
 
-        private void usernamTextBox_TextChanged(object sender, EventArgs e)
-        {
-            
         
-        }
     }
 }
