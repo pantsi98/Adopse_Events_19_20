@@ -120,6 +120,18 @@
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
+    <Compile Include="BookingStep1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep1.Designer.cs">
+      <DependentUpon>BookingStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingStep2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2.Designer.cs">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </Compile>
     <Compile Include="enventDataSet1.cs">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
@@ -207,6 +219,12 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookingStep1.resx">
+      <DependentUpon>BookingStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep2.resx">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventFullDescription.resx">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
     </EmbeddedResource>

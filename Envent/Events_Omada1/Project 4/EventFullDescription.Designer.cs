@@ -59,7 +59,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.book_button_panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.label13 = new System.Windows.Forms.Label();
             this.date_panel = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -109,6 +109,7 @@
             this.button8.TabIndex = 4;
             this.button8.Text = "Κράτηση";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // imerominia
             // 
@@ -422,7 +423,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.book_button_panel);
+            this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.date_panel);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
@@ -430,20 +431,22 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(871, 245);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Κράτηση";
+            this.tabPage4.Text = "Παραστάσεις";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // book_button_panel
+            // label13
             // 
-            this.book_button_panel.Location = new System.Drawing.Point(241, 16);
-            this.book_button_panel.Name = "book_button_panel";
-            this.book_button_panel.Size = new System.Drawing.Size(131, 200);
-            this.book_button_panel.TabIndex = 1;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(23, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(177, 17);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Διαθέσιμες ώρες και μέρες";
             // 
             // date_panel
             // 
             this.date_panel.AutoSize = true;
-            this.date_panel.Location = new System.Drawing.Point(17, 16);
+            this.date_panel.Location = new System.Drawing.Point(17, 31);
             this.date_panel.Name = "date_panel";
             this.date_panel.Size = new System.Drawing.Size(218, 200);
             this.date_panel.TabIndex = 0;
@@ -522,7 +525,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label eventTitle;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.FlowLayoutPanel book_button_panel;
         private System.Windows.Forms.Panel date_panel;
+        private System.Windows.Forms.Label label13;
     }
 }

@@ -11138,7 +11138,7 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT event_id, venue_id, `date`, status FROM play where `event_id`=?";
+            this._commandCollection[2].CommandText = "SELECT  DISTINCT event_id, venue_id, `date`, status FROM play where `event_id`=?";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@Param1";
@@ -11149,7 +11149,7 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[2].Parameters.Add(param);
             this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT  `date` FROM play WHERE event_id = @param";
+            this._commandCollection[3].CommandText = "SELECT  DISTINCT `date` FROM play WHERE event_id = @param";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@param";

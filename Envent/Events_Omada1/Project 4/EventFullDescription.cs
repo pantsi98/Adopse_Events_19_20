@@ -97,9 +97,7 @@ namespace Project_4
                 newLabel.Text = date.ToString("dd/MM/yyyy HH:mm");
                 date_panel.Controls.Add(newLabel);
 
-                Button newButton = new Button();
-                newButton.Text = "Κράτηση";
-                book_button_panel.Controls.Add(newButton);
+                
                 z++;
             }
 
@@ -153,6 +151,19 @@ namespace Project_4
            
             
            
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            BookingStep1 b1 = new BookingStep1(event_id);
+            Control parent = this.Parent;
+            while (parent.Name != "MainPanel")
+            {
+                parent = parent.Parent;
+            }
+            parent.Controls.Clear();
+            parent.Controls.Add(b1);
+            
         }
     }
 
