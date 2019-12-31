@@ -195,11 +195,21 @@ namespace Project_4
                 up.UpdateLastName(Id, lastnameTextBox.Text);
                 up.UpdateUserName(Id, usernamTextBox.Text);
                 MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
+                string pass = nu.GetPass();
+                InstanceOfUser.LogOut();
+                InstanceOfUser.CreateCustomerUser(usrname, pass);
             }
             else
-            {
+            {            
                 MessageBox.Show("Δεν έγινε κάποια αλλαγή για να αλλάξουν τα δεδομένα");
             }
+        }
+
+        private void passChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            panel1.Controls.Clear();
+            ResetPassword su = new ResetPassword();
+            panel1.Controls.Add(su);
         }
     }
 }

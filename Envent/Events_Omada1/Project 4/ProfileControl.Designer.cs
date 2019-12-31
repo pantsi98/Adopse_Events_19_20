@@ -30,12 +30,17 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.circularPicture7 = new Project_4.App_Code.circularPicture();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.circularPicture9 = new Project_4.App_Code.circularPicture();
             this.circularPicture8 = new Project_4.App_Code.circularPicture();
             this.circularPicture6 = new Project_4.App_Code.circularPicture();
             this.circularPicture5 = new Project_4.App_Code.circularPicture();
             this.circularPicture4 = new Project_4.App_Code.circularPicture();
             this.lastnameTextBox = new System.Windows.Forms.TextBox();
+            this.onomaTextBox = new System.Windows.Forms.TextBox();
+            this.fullolabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dobPicker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,15 +49,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.adressTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.onomaTextBox = new System.Windows.Forms.TextBox();
-            this.fullolabel = new System.Windows.Forms.Label();
             this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.circularPicture2 = new Project_4.App_Code.circularPicture();
             this.circularPicture1 = new Project_4.App_Code.circularPicture();
-            this.circularPicture7 = new Project_4.App_Code.circularPicture();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.passChange = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture6)).BeginInit();
@@ -61,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -81,6 +82,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.passChange);
             this.panel1.Controls.Add(this.circularPicture7);
             this.panel1.Controls.Add(this.emailTextBox);
             this.panel1.Controls.Add(this.label1);
@@ -104,6 +106,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1066, 635);
             this.panel1.TabIndex = 40;
+            // 
+            // circularPicture7
+            // 
+            this.circularPicture7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture7.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture7.Location = new System.Drawing.Point(948, 177);
+            this.circularPicture7.Name = "circularPicture7";
+            this.circularPicture7.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture7.TabIndex = 103;
+            this.circularPicture7.TabStop = false;
+            this.circularPicture7.Click += new System.EventHandler(this.circularPicture7_Click_1);
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.Enabled = false;
+            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.emailTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.emailTextBox.Location = new System.Drawing.Point(611, 177);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(331, 27);
+            this.emailTextBox.TabIndex = 102;
+            this.emailTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.label1.Location = new System.Drawing.Point(608, 144);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "Email";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // circularPicture9
             // 
@@ -176,6 +213,29 @@
             this.lastnameTextBox.Size = new System.Drawing.Size(331, 27);
             this.lastnameTextBox.TabIndex = 94;
             this.lastnameTextBox.Leave += new System.EventHandler(this.lastnameTextBox_Leave);
+            // 
+            // onomaTextBox
+            // 
+            this.onomaTextBox.Enabled = false;
+            this.onomaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.onomaTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.onomaTextBox.Location = new System.Drawing.Point(50, 91);
+            this.onomaTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.onomaTextBox.Multiline = true;
+            this.onomaTextBox.Name = "onomaTextBox";
+            this.onomaTextBox.Size = new System.Drawing.Size(331, 27);
+            this.onomaTextBox.TabIndex = 81;
+            this.onomaTextBox.Leave += new System.EventHandler(this.onomaTextBox_Leave);
+            // 
+            // fullolabel
+            // 
+            this.fullolabel.AutoSize = true;
+            this.fullolabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.fullolabel.Location = new System.Drawing.Point(47, 58);
+            this.fullolabel.Name = "fullolabel";
+            this.fullolabel.Size = new System.Drawing.Size(51, 17);
+            this.fullolabel.TabIndex = 80;
+            this.fullolabel.Text = "Όνομα";
             // 
             // button1
             // 
@@ -267,29 +327,6 @@
             this.label3.TabIndex = 82;
             this.label3.Text = "Διεύθυνση";
             // 
-            // onomaTextBox
-            // 
-            this.onomaTextBox.Enabled = false;
-            this.onomaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.onomaTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.onomaTextBox.Location = new System.Drawing.Point(50, 91);
-            this.onomaTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.onomaTextBox.Multiline = true;
-            this.onomaTextBox.Name = "onomaTextBox";
-            this.onomaTextBox.Size = new System.Drawing.Size(331, 27);
-            this.onomaTextBox.TabIndex = 81;
-            this.onomaTextBox.Leave += new System.EventHandler(this.onomaTextBox_Leave);
-            // 
-            // fullolabel
-            // 
-            this.fullolabel.AutoSize = true;
-            this.fullolabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.fullolabel.Location = new System.Drawing.Point(47, 58);
-            this.fullolabel.Name = "fullolabel";
-            this.fullolabel.Size = new System.Drawing.Size(51, 17);
-            this.fullolabel.TabIndex = 80;
-            this.fullolabel.Text = "Όνομα";
-            // 
             // circularPicture3
             // 
             this.circularPicture3.BackColor = System.Drawing.Color.Transparent;
@@ -329,40 +366,16 @@
             this.circularPicture1.TabIndex = 32;
             this.circularPicture1.TabStop = false;
             // 
-            // circularPicture7
+            // passChange
             // 
-            this.circularPicture7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture7.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture7.Location = new System.Drawing.Point(948, 177);
-            this.circularPicture7.Name = "circularPicture7";
-            this.circularPicture7.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture7.TabIndex = 103;
-            this.circularPicture7.TabStop = false;
-            this.circularPicture7.Click += new System.EventHandler(this.circularPicture7_Click_1);
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.Enabled = false;
-            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.emailTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.emailTextBox.Location = new System.Drawing.Point(611, 177);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(331, 27);
-            this.emailTextBox.TabIndex = 102;
-            this.emailTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.label1.Location = new System.Drawing.Point(608, 144);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "Email";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.passChange.AutoSize = true;
+            this.passChange.Location = new System.Drawing.Point(56, 419);
+            this.passChange.Name = "passChange";
+            this.passChange.Size = new System.Drawing.Size(232, 17);
+            this.passChange.TabIndex = 41;
+            this.passChange.TabStop = true;
+            this.passChange.Text = "Θέλετε να αλλάξετε το κωδικό σας;";
+            this.passChange.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.passChange_LinkClicked);
             // 
             // ProfileControl
             // 
@@ -379,6 +392,7 @@
             this.Load += new System.EventHandler(this.Profile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture6)).EndInit();
@@ -387,7 +401,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,5 +430,6 @@
         private App_Code.circularPicture circularPicture7;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel passChange;
     }
 }
