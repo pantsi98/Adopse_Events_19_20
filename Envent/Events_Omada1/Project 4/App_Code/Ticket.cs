@@ -12,6 +12,7 @@ namespace Project_4.App_Code
         private int id;
         private String type;
         private float price;
+        private int play_id;
 
 
         public Ticket()
@@ -48,6 +49,12 @@ namespace Project_4.App_Code
         public float GetPrice()
         {
             return price;
+        }
+        public void CreateTicket(string type,float price, int play_id)
+        {
+            this.type = type;
+            this.price = price;
+            this.play_id = play_id;
         }
 
     }
