@@ -120,6 +120,12 @@
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
+    <Compile Include="CreateNewEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateNewEvent.Designer.cs">
+      <DependentUpon>CreateNewEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="enventDataSet1.cs">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
@@ -139,6 +145,12 @@
     </Compile>
     <Compile Include="ForgetPassword.Designer.cs">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryEventManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistoryEventManager.Designer.cs">
+      <DependentUpon>HistoryEventManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Home Page.cs">
       <SubType>Form</SubType>
@@ -169,6 +181,12 @@
     </Compile>
     <Compile Include="ProfileControl.Designer.cs">
       <DependentUpon>ProfileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEventManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfileEventManager.Designer.cs">
+      <DependentUpon>ProfileEventManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -207,6 +225,9 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateNewEvent.resx">
+      <DependentUpon>CreateNewEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventFullDescription.resx">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +244,9 @@
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistoryEventManager.resx">
+      <DependentUpon>HistoryEventManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home Page.resx">
       <DependentUpon>Home Page.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileControl.resx">
       <DependentUpon>ProfileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileEventManager.resx">
+      <DependentUpon>ProfileEventManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
