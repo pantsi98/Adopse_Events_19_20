@@ -59,7 +59,7 @@ namespace Project_4
             normal_tickets = (int)normalTicketsCounter.Value;
             reduced_tickets = (int)reducedTicketsCounter.Value;
 
-            BookingStep2 b2 = new BookingStep2(date, payment_type, normal_tickets, reduced_tickets);
+            BookingStep2 b2 = new BookingStep2(event_id ,date, payment_type, normal_tickets, reduced_tickets);
             Control parent = this.Parent;
             while (parent.Name != "MainPanel")
             {

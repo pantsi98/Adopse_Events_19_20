@@ -20,15 +20,40 @@ namespace Project_4
             InitializeComponent();
         }
 
-        public BookingStep2(string date, string pay_type, int normal , int reduced)
+        public BookingStep2(int id, string date, string pay_type, int normal , int reduced)
         {
-            InitializeComponent();
+            
+                InitializeComponent();
+                //pairno titlo tou event
+                Event ev = new Event(id);
+                //pairno ta tickets
+                enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
+                float normal_ticket_price = (float)tick.GetNormalPriceEventId(id);
+                float reduced_ticket_price = (float)tick.GetReducedPriceEventId(id);
+
+
             User x = InstanceOfUser.GetUser();
-            NormalUser nr = (NormalUser)x;
-           name_label.Text = nr.GetProfile().GetLastName() + " " + nr.GetProfile().GetFirstName();
+            if(x is NormalUser) {
+                NormalUser nr = (NormalUser)x;
+                name_label.Text = nr.GetProfile().GetLastName();
+            }
+                
+                PlayTitle_label.Text = ev.GetTitle();
+                date_label.Text = date;
+                normalTickets_Label.Text = normal_ticket_price.ToString();
+                reducedTickets_Label.Text = reduced.ToString();
+
+            float total_price = normal_ticket_price * normal + reduced_ticket_price * reduced;
+            total_Price.Text = total_price.ToString();
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PlayTitle_label_Click(object sender, EventArgs e)
         {
 
         }
