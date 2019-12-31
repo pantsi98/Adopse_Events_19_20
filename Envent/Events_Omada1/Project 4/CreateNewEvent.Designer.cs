@@ -87,14 +87,14 @@
             // 
             // meiomenoticket
             // 
-            this.meiomenoticket.Location = new System.Drawing.Point(403, 464);
+            this.meiomenoticket.Location = new System.Drawing.Point(402, 213);
             this.meiomenoticket.Name = "meiomenoticket";
             this.meiomenoticket.Size = new System.Drawing.Size(54, 22);
             this.meiomenoticket.TabIndex = 124;
             // 
             // kanonikoticket
             // 
-            this.kanonikoticket.Location = new System.Drawing.Point(231, 464);
+            this.kanonikoticket.Location = new System.Drawing.Point(233, 213);
             this.kanonikoticket.Name = "kanonikoticket";
             this.kanonikoticket.Size = new System.Drawing.Size(54, 22);
             this.kanonikoticket.TabIndex = 123;
@@ -180,7 +180,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(292, 466);
+            this.label15.Location = new System.Drawing.Point(291, 215);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(16, 17);
@@ -190,7 +190,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(464, 471);
+            this.label14.Location = new System.Drawing.Point(456, 220);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(16, 17);
@@ -200,7 +200,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(155, 466);
+            this.label13.Location = new System.Drawing.Point(163, 218);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(63, 17);
@@ -210,7 +210,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(318, 466);
+            this.label12.Location = new System.Drawing.Point(330, 215);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 17);
@@ -220,7 +220,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(2, 466);
+            this.label11.Location = new System.Drawing.Point(6, 218);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(112, 17);
@@ -272,7 +272,7 @@
             this.Addplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Addplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Addplay.Location = new System.Drawing.Point(242, 209);
+            this.Addplay.Location = new System.Drawing.Point(251, 251);
             this.Addplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Addplay.Name = "Addplay";
             this.Addplay.Size = new System.Drawing.Size(113, 34);
@@ -294,7 +294,7 @@
             // 
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(21, 257);
+            this.listView1.Location = new System.Drawing.Point(38, 290);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(528, 257);
             this.listView1.TabIndex = 104;
@@ -455,19 +455,26 @@
             // 
             this.panel1.Controls.Add(this.listView1);
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.meiomenoticket);
             this.panel1.Controls.Add(this.topothesia);
+            this.panel1.Controls.Add(this.kanonikoticket);
             this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.Timemin);
             this.panel1.Controls.Add(this.Addplay);
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.timehour);
             this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Location = new System.Drawing.Point(537, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(588, 542);
+            this.panel1.Size = new System.Drawing.Size(588, 561);
             this.panel1.TabIndex = 126;
             // 
             // CreateNewEvent
@@ -477,18 +484,11 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.meiomenoticket);
-            this.Controls.Add(this.kanonikoticket);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.durationmin);
             this.Controls.Add(this.durationhour);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.savebtn);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.createEvent);
             this.Controls.Add(this.katigoria);
             this.Controls.Add(this.uploadImage);

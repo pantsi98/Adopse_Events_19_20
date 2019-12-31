@@ -7,23 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Project_4.App_Code;
+using Project_4.User_Classes;
+using Project_4.App_Code.StaticMethods;
 namespace Project_4
 {
     public partial class CreateNewEvent : UserControl
     {
+        User uem = InstanceOfUser.GetUser();
+       
         public CreateNewEvent()
         {
             InitializeComponent();
         }
+
+        public int Id;
+       
+
+
+
+
 
         private void CreateNewEvent_Load(object sender, EventArgs e)
         {
             Addplay.Enabled = false;
             savebtn.Enabled = false;
             createEvent.Enabled = false;
+           
+           
+           
 
         }
+        
 
         private void uploadImage_Click(object sender, EventArgs e)
         {
@@ -105,10 +120,13 @@ namespace Project_4
             return hour * 60 + min;
 
         }
-
+         
         private void createEvent_Click(object sender, EventArgs e)
         {
 
+            EventManager em = (EventManager)uem;
+            em.CreateEvent(titlos.Text, katigoriacomboboxselect(), perigrafi.Text, selectedduration());
+            
         }
     }
 }
