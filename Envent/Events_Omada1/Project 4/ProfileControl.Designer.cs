@@ -53,6 +53,8 @@
             this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.circularPicture2 = new Project_4.App_Code.circularPicture();
             this.circularPicture1 = new Project_4.App_Code.circularPicture();
+            this.usernameExist = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
@@ -78,10 +80,11 @@
             this.button2.TabIndex = 39;
             this.button2.Text = "Ιστορικό";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.usernameExist);
             this.panel1.Controls.Add(this.passChange);
             this.panel1.Controls.Add(this.circularPicture7);
             this.panel1.Controls.Add(this.emailTextBox);
@@ -102,6 +105,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.adressTextBox);
             this.panel1.Controls.Add(this.label3);
+            this.panel1.ForeColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(290, 253);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1149, 697);
@@ -140,7 +144,7 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(331, 27);
             this.emailTextBox.TabIndex = 102;
-            this.emailTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.emailTextBox.Leave += new System.EventHandler(this.emailTextBox_Leave);
             // 
             // label1
             // 
@@ -151,7 +155,7 @@
             this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 101;
             this.label1.Text = "Email";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // circularPicture9
             // 
@@ -236,7 +240,6 @@
             this.onomaTextBox.Name = "onomaTextBox";
             this.onomaTextBox.Size = new System.Drawing.Size(331, 27);
             this.onomaTextBox.TabIndex = 81;
-            this.onomaTextBox.TextChanged += new System.EventHandler(this.onomaTextBox_TextChanged);
             this.onomaTextBox.Leave += new System.EventHandler(this.onomaTextBox_Leave);
             // 
             // fullolabel
@@ -272,7 +275,6 @@
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(331, 22);
             this.dobPicker.TabIndex = 91;
-            this.dobPicker.ValueChanged += new System.EventHandler(this.dobPicker_ValueChanged);
             this.dobPicker.Leave += new System.EventHandler(this.dobPicker_Leave);
             // 
             // label7
@@ -295,6 +297,7 @@
             this.usernamTextBox.Name = "usernamTextBox";
             this.usernamTextBox.Size = new System.Drawing.Size(331, 27);
             this.usernamTextBox.TabIndex = 86;
+            this.usernamTextBox.TextChanged += new System.EventHandler(this.usernamTextBox_TextChanged);
             this.usernamTextBox.Leave += new System.EventHandler(this.usernamTextBox_Leave);
             // 
             // label5
@@ -306,6 +309,7 @@
             this.label5.Size = new System.Drawing.Size(103, 17);
             this.label5.TabIndex = 85;
             this.label5.Text = "Όνομα Χρήστη";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -378,6 +382,26 @@
             this.circularPicture1.TabIndex = 32;
             this.circularPicture1.TabStop = false;
             // 
+            // usernameExist
+            // 
+            this.usernameExist.Location = new System.Drawing.Point(169, 144);
+            this.usernameExist.Name = "usernameExist";
+            this.usernameExist.Size = new System.Drawing.Size(212, 17);
+            this.usernameExist.TabIndex = 104;
+            this.usernameExist.Text = "Το username χρησιμοποιείται";
+            this.usernameExist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.usernameExist.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(730, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(212, 17);
+            this.label2.TabIndex = 105;
+            this.label2.Text = "Το email δεν είναι έγκυρο";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Visible = false;
+            // 
             // ProfileControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -432,5 +456,7 @@
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel passChange;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label usernameExist;
     }
 }

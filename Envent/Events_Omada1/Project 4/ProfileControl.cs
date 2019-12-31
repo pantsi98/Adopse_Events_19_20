@@ -45,40 +45,7 @@ namespace Project_4
             }
         }
 
-        private void cCircularButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dobPicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void circularPicture4_Click(object sender, EventArgs e)
         {
@@ -118,7 +85,23 @@ namespace Project_4
         private void usernamTextBox_Leave(object sender, EventArgs e)
         {
             usernamTextBox.Enabled = false;
-            
+            if (String.Equals(usernamTextBox.Text, usrname) == false)
+            {
+                datachange = true;
+            }
+            if ((String.Equals(usernamTextBox.Text, usrname) == false) && (ValidationCheck.CheckUserName(usernamTextBox.Text)))
+            {
+
+                usernameExist.Visible = true;
+                button1.Enabled = false;
+            }
+
+            else
+            {
+
+                usernameExist.Visible = false;
+                button1.Enabled = true;
+            }
         }
 
         private void onomaTextBox_Leave(object sender, EventArgs e)
@@ -168,36 +151,35 @@ namespace Project_4
             }
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void circularPicture7_Click_1(object sender, EventArgs e)
         {
-
+            if (emailTextBox.Enabled) { emailTextBox.Enabled = false; }
+            else
+            {
+                emailTextBox.Enabled = true;
+            }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
+        //Save button click that makes the updates
         private void button1_Click_1(object sender, EventArgs e)
         {
             if(datachange == true)
             {
-                NormalUser nu =(NormalUser)x;
-                Profile up =nu.GetProfile();
-                up.UpdateAddress(Id, adressTextBox.Text);
-                up.UpdateEmail(Id, emailTextBox.Text);
-                up.UpdateFirstName(Id, onomaTextBox.Text);
-                up.UpdateLastName(Id, lastnameTextBox.Text);
-                up.UpdateUserName(Id, usernamTextBox.Text);
-                MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
-                string pass = nu.GetPass();
-                InstanceOfUser.LogOut();
-                InstanceOfUser.CreateCustomerUser(usrname, pass);
+                    NormalUser nu = (NormalUser)x;
+                    Profile up = nu.GetProfile();                
+                    up.UpdateUserName(Id, usernamTextBox.Text);                   
+                    up.UpdateAddress(Id, adressTextBox.Text);
+                    up.UpdateEmail(Id, emailTextBox.Text);
+                    up.UpdateFirstName(Id, onomaTextBox.Text);
+                    up.UpdateLastName(Id, lastnameTextBox.Text);
+                    MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
+                    string pass = nu.GetPass();
+                    InstanceOfUser.LogOut();
+                    InstanceOfUser.CreateCustomerUser(usrname, pass);
+                
             }
             else
             {            
@@ -212,9 +194,19 @@ namespace Project_4
             panel1.Controls.Add(su);
         }
 
-        private void onomaTextBox_TextChanged(object sender, EventArgs e)
+        private void emailTextBox_Leave(object sender, EventArgs e)
         {
+            emailTextBox.Enabled = false;
+            if (String.Equals(emailTextBox.Text, email) == false)
+            {
+                datachange = true;
+            }
+        }
 
+        private void usernamTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        
         }
     }
 }

@@ -69,7 +69,7 @@
             this.createnewevent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createnewevent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.createnewevent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createnewevent.Location = new System.Drawing.Point(30, 120);
+            this.createnewevent.Location = new System.Drawing.Point(1142, 99);
             this.createnewevent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.createnewevent.Name = "createnewevent";
             this.createnewevent.Size = new System.Drawing.Size(297, 50);
@@ -84,10 +84,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(30, 192);
+            this.button1.Location = new System.Drawing.Point(1142, 169);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(252, 50);
+            this.button1.Size = new System.Drawing.Size(297, 50);
             this.button1.TabIndex = 56;
             this.button1.Text = "Επεξεργασία Event";
             this.button1.UseVisualStyleBackColor = false;
@@ -114,7 +114,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.adressTextBox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(277, 267);
+            this.panel1.Location = new System.Drawing.Point(290, 253);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1149, 697);
             this.panel1.TabIndex = 59;
@@ -128,6 +128,7 @@
             this.passChange.TabIndex = 41;
             this.passChange.TabStop = true;
             this.passChange.Text = "Θέλετε να αλλάξετε το κωδικό σας;";
+            this.passChange.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.passChange_LinkClicked);
             // 
             // circularPicture7
             // 
@@ -139,6 +140,7 @@
             this.circularPicture7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture7.TabIndex = 103;
             this.circularPicture7.TabStop = false;
+            this.circularPicture7.Click += new System.EventHandler(this.circularPicture7_Click);
             // 
             // emailTextBox
             // 
@@ -171,6 +173,7 @@
             this.circularPicture9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture9.TabIndex = 100;
             this.circularPicture9.TabStop = false;
+            this.circularPicture9.Click += new System.EventHandler(this.circularPicture9_Click);
             // 
             // circularPicture8
             // 
@@ -182,6 +185,7 @@
             this.circularPicture8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture8.TabIndex = 99;
             this.circularPicture8.TabStop = false;
+            this.circularPicture8.Click += new System.EventHandler(this.circularPicture8_Click);
             // 
             // circularPicture6
             // 
@@ -193,6 +197,7 @@
             this.circularPicture6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture6.TabIndex = 97;
             this.circularPicture6.TabStop = false;
+            this.circularPicture6.Click += new System.EventHandler(this.circularPicture6_Click);
             // 
             // circularPicture5
             // 
@@ -204,6 +209,7 @@
             this.circularPicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture5.TabIndex = 96;
             this.circularPicture5.TabStop = false;
+            this.circularPicture5.Click += new System.EventHandler(this.circularPicture5_Click);
             // 
             // circularPicture4
             // 
@@ -215,6 +221,7 @@
             this.circularPicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture4.TabIndex = 95;
             this.circularPicture4.TabStop = false;
+            this.circularPicture4.Click += new System.EventHandler(this.circularPicture4_Click);
             // 
             // lastnameTextBox
             // 
@@ -262,6 +269,7 @@
             this.button2.TabIndex = 92;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dobPicker
             // 
@@ -340,7 +348,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(30, 267);
+            this.button3.Location = new System.Drawing.Point(290, 168);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 50);
@@ -353,7 +361,7 @@
             this.circularPicture1.BackColor = System.Drawing.Color.Transparent;
             this.circularPicture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circularPicture1.Image = global::Project_4.Properties.Resources.userProfile;
-            this.circularPicture1.Location = new System.Drawing.Point(736, 92);
+            this.circularPicture1.Location = new System.Drawing.Point(749, 78);
             this.circularPicture1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.circularPicture1.Name = "circularPicture1";
             this.circularPicture1.Size = new System.Drawing.Size(159, 150);
@@ -365,7 +373,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.circularPicture1);

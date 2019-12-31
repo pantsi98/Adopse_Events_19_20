@@ -51,5 +51,88 @@ namespace Project_4
         {
 
         }
+
+        private void circularPicture4_Click(object sender, EventArgs e)
+        {
+            if (usernamTextBox.Enabled)
+            {
+                usernamTextBox.Enabled = false;
+            }
+            else usernamTextBox.Enabled = true;
+        }
+
+        private void circularPicture5_Click(object sender, EventArgs e)
+        {
+            if (onomaTextBox.Enabled) { onomaTextBox.Enabled = false; }
+            else
+            {
+                onomaTextBox.Enabled = true;
+            }
+        }
+
+        private void circularPicture6_Click(object sender, EventArgs e)
+        {
+            if (adressTextBox.Enabled) { adressTextBox.Enabled = false; }
+            else
+            {
+                adressTextBox.Enabled = true;
+            }
+        }
+
+        private void circularPicture8_Click(object sender, EventArgs e)
+        {
+            if (lastnameTextBox.Enabled) { lastnameTextBox.Enabled = false; }
+            else
+            {
+                lastnameTextBox.Enabled = true;
+            }
+        }
+
+        private void circularPicture9_Click(object sender, EventArgs e)
+        {
+            if (dobPicker.Enabled) { dobPicker.Enabled = false; }
+            else
+            {
+                dobPicker.Enabled = true;
+            }
+        }
+
+        private void circularPicture7_Click(object sender, EventArgs e)
+        {
+            if (emailTextBox.Enabled) { emailTextBox.Enabled = false; }
+            else
+            {
+                emailTextBox.Enabled = true;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (datachange == true)
+            {
+                EventManager nu = (EventManager)x;
+                Profile up = nu.GetProfile();
+                up.UpdateAddress(Id, adressTextBox.Text);
+                up.UpdateEmail(Id, emailTextBox.Text);
+                up.UpdateFirstName(Id, onomaTextBox.Text);
+                up.UpdateLastName(Id, lastnameTextBox.Text);
+                up.UpdateUserName(Id, usernamTextBox.Text);
+                MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
+                string pass = nu.GetPass();
+                InstanceOfUser.LogOut();
+                InstanceOfUser.CreateEventManager(usrname, pass);
+            }
+            else
+            {
+                MessageBox.Show("Δεν έγινε κάποια αλλαγή για να αλλάξουν τα δεδομένα");
+            }
+        }
+
+        private void passChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            panel1.Controls.Clear();
+            ResetPassword su = new ResetPassword();
+            panel1.Controls.Add(su);
+        }
     }
 }

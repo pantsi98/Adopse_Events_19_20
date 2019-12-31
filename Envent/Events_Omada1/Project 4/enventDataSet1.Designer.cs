@@ -8501,7 +8501,8 @@ namespace Project_4.enventDataSetTableAdapters {
         public virtual enventDataSet.categoryDataTable GetCategories() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             enventDataSet.categoryDataTable dataTable = new enventDataSet.categoryDataTable();
-            this.Adapter.Fill(dataTable);
+            try { this.Adapter.Fill(dataTable); }
+            catch (Exception ex) { };
             return dataTable;
         }
         
@@ -9424,7 +9425,8 @@ namespace Project_4.enventDataSetTableAdapters {
         public virtual enventDataSet.eventsDataTable getEvents() {
             this.Adapter.SelectCommand = this.CommandCollection[6];
             enventDataSet.eventsDataTable dataTable = new enventDataSet.eventsDataTable();
-            this.Adapter.Fill(dataTable);
+            try { this.Adapter.Fill(dataTable); }
+            catch (Exception ex) { };
             return dataTable;
         }
         
