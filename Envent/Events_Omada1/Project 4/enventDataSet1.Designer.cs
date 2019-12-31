@@ -4866,7 +4866,7 @@ namespace Project_4 {
                         return ((int)(this[this.tablecategory.fatherColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'father\' in table \'category\' is DBNull.", e);
+                        return 0;//throw new global::System.Data.StrongTypingException("The value for column \'father\' in table \'category\' is DBNull.", e);
                     }
                 }
                 set {

@@ -130,53 +130,60 @@ namespace Project_4
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            int imgIndex = 0;
-            int tileIndex = 0;
-            int panelIndex = 0;
-            Control eventsTile;
-            Control.ControlCollection tiles = sccsearch.Controls;
-            List<Event> events = user.SearchForEvent(searchTextBox.Text);
-            for (int i = 0; i <= 10; i++)
+            if (searchTextBox.TextLength == 0)
             {
-                eventsTile = tiles[tiles.Count - panelIndex - 1].Controls[tiles[tiles.Count - panelIndex - 1].Controls.Count - tileIndex - 1];
-                if (events.Count > i)
+                
+                MainPanel.Controls.Add(hm1);
+            }
+            else
+            {
+                int imgIndex = 0;
+                int tileIndex = 0;
+                int panelIndex = 0;
+                Control eventsTile;
+                Control.ControlCollection tiles = sccsearch.Controls;
+                List<Event> events = user.SearchForEvent(searchTextBox.Text);
+                for (int i = 0; i <= 10; i++)
                 {
-                    foreach (Control v in eventsTile.Controls)
+                    eventsTile = tiles[tiles.Count - panelIndex - 1].Controls[tiles[tiles.Count - panelIndex - 1].Controls.Count - tileIndex - 1];
+                    if (events.Count > i)
                     {
-                        if (v is PictureBox)
+                        foreach (Control v in eventsTile.Controls)
                         {
-                            PictureBox eventPic = (PictureBox)v;
-                            Image rszimg = Images.resizeImage(Images.pic.ElementAt(imgIndex), new Size(241, 110));
-                            eventPic.Image = rszimg;
-                            imgIndex++;
-                        }
-                        if (v is Label)
-                        {
-                            Label lb = (Label)v;
-                            lb.Text = events.ElementAt(i).GetTitle();
-                            eventsTile.Visible = true;
+                            if (v is PictureBox)
+                            {
+                                PictureBox eventPic = (PictureBox)v;
+                                Image rszimg = Images.resizeImage(Images.pic.ElementAt(imgIndex), new Size(241, 110));
+                                eventPic.Image = rszimg;
+                                imgIndex++;
+                            }
+                            if (v is Label)
+                            {
+                                Label lb = (Label)v;
+                                lb.Text = events.ElementAt(i).GetTitle();
+                                eventsTile.Visible = true;
+                            }
                         }
                     }
-                }
-                else
-                {
-                    eventsTile.Visible = false;
-                }
+                    else
+                    {
+                        eventsTile.Visible = false;
+                    }
 
-                tileIndex++;
-                if (tileIndex == 4)
-                {
-                    panelIndex++;
-                    tileIndex = 0;
+                    tileIndex++;
+                    if (tileIndex == 4)
+                    {
+                        panelIndex++;
+                        tileIndex = 0;
+                    }
+                    if (panelIndex == 3)
+                    {
+                        panelIndex = 0;
+                        break;
+                    }
                 }
-                if (panelIndex == 3)
-                {
-                    panelIndex = 0;
-                    break;
-                }
+                MainPanel.Controls.Add(sccsearch);
             }
-            MainPanel.Controls.Add(sccsearch);
-
             #region Comments           
             /*if (string.IsNullOrEmpty(searchTextBox.Text))
             {
