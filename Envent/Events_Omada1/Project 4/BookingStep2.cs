@@ -38,10 +38,12 @@ namespace Project_4
                 name_label.Text = nr.GetProfile().GetLastName();
             }
                 
-                PlayTitle_label.Text = ev.GetTitle();
-                date_label.Text = date;
-                normalTickets_Label.Text = normal_ticket_price.ToString();
-                reducedTickets_Label.Text = reduced.ToString();
+            PlayTitle_label.Text = ev.GetTitle();
+            date_label.Text = date;
+            normalTickets_Label.Text = normal.ToString();
+            reducedTickets_Label.Text = reduced.ToString();
+            label5.Text += "(" + normal_ticket_price + "€) :";
+            label7.Text += "(" + reduced_ticket_price + "€) :";
 
             float total_price = normal_ticket_price * normal + reduced_ticket_price * reduced;
             total_Price.Text = total_price.ToString();

@@ -54,19 +54,23 @@ namespace Project_4
 
         private void next_button_Click(object sender, EventArgs e)
         {
-            date = dateComboBox.SelectedItem.ToString();
-            payment_type = paymentComboBox.SelectedItem.ToString();
-            normal_tickets = (int)normalTicketsCounter.Value;
-            reduced_tickets = (int)reducedTicketsCounter.Value;
 
-            BookingStep2 b2 = new BookingStep2(event_id ,date, payment_type, normal_tickets, reduced_tickets);
-            Control parent = this.Parent;
-            while (parent.Name != "MainPanel")
+            if (paymentComboBox.SelectedItem.ToString() == "Στο ταμείο")
             {
-                parent = parent.Parent;
+                date = dateComboBox.SelectedItem.ToString();
+                payment_type = paymentComboBox.SelectedItem.ToString();
+                normal_tickets = (int)normalTicketsCounter.Value;
+                reduced_tickets = (int)reducedTicketsCounter.Value;
+
+                BookingStep2 b2 = new BookingStep2(event_id, date, payment_type, normal_tickets, reduced_tickets);
+                Control parent = this.Parent;
+                while (parent.Name != "MainPanel")
+                {
+                    parent = parent.Parent;
+                }
+                parent.Controls.Clear();
+                parent.Controls.Add(b2);
             }
-            parent.Controls.Clear();
-            parent.Controls.Add(b2);
         }
     }
 }

@@ -132,6 +132,12 @@
     <Compile Include="BookingStep2.Designer.cs">
       <DependentUpon>BookingStep2.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookingStep2Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2Card.Designer.cs">
+      <DependentUpon>BookingStep2Card.cs</DependentUpon>
+    </Compile>
     <Compile Include="enventDataSet1.cs">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookingStep2.resx">
       <DependentUpon>BookingStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep2Card.resx">
+      <DependentUpon>BookingStep2Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventFullDescription.resx">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
