@@ -30,9 +30,11 @@ namespace Project_4
         SearchCategoriesControl sccsoccer = new SearchCategoriesControl(8);
         SearchCategoriesControl sccbasket = new SearchCategoriesControl(9);
         SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
+        Advanced_Search searchFilters = new Advanced_Search();
         HomeMain hm1 = new HomeMain();
         HomeMain hm2 = new HomeMain();
         User user = InstanceOfUser.GetUser();
+        
         public Form1()
         {
             InitializeComponent();
@@ -42,6 +44,7 @@ namespace Project_4
             MainPanel.Controls.Clear();
             HomeMain su = new HomeMain();
             MainPanel.Controls.Add(su);
+            homepagePanel.BringToFront();
         }
 
         private void hideSubmenus()
@@ -58,7 +61,6 @@ namespace Project_4
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -82,6 +84,8 @@ namespace Project_4
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'enventDataSet.category' table. You can move, or remove it, as needed.
+            this.categoryTableAdapter.Fill(this.enventDataSet.category);
 
         }
 
@@ -129,10 +133,24 @@ namespace Project_4
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
+            String keyword = searchTextBox.Text;
+            List<Event> events = new List<Event>();
+
+            if (MainPanel.Controls[0].Name.Equals("Advanced_Search"))
+            {
+                String category = searchFilters.GetCategory();
+                DateTime since = searchFilters.GetSince();
+                DateTime until = searchFilters.GetUntil();
+                string city = searchFilters.GetCity();
+                int categ = App_Code.StaticMethods.Categories.NameToID(category);
+                events = user.FilterSearch(keyword,categ,since,until,city);
+            }
+            else {
+                events = user.SearchForEvent(keyword);
+            }
             MainPanel.Controls.Clear();
             if (searchTextBox.TextLength == 0)
             {
-                
                 MainPanel.Controls.Add(hm1);
             }
             else
@@ -142,7 +160,6 @@ namespace Project_4
                 int panelIndex = 0;
                 Control eventsTile;
                 Control.ControlCollection tiles = sccsearch.Controls;
-                List<Event> events = user.SearchForEvent(searchTextBox.Text);
                 for (int i = 0; i <= 10; i++)
                 {
                     eventsTile = tiles[tiles.Count - panelIndex - 1].Controls[tiles[tiles.Count - panelIndex - 1].Controls.Count - tileIndex - 1];
@@ -298,6 +315,12 @@ namespace Project_4
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(sccbasket);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(searchFilters);
         }
     }
 }

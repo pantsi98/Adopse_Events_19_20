@@ -28,14 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homepagePanel = new System.Windows.Forms.Panel();
-            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.enventDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.enventDataSet = new Project_4.enventDataSet();
+            this.categoryTableAdapter = new Project_4.enventDataSetTableAdapters.categoryTableAdapter();
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.cinemaBtn = new System.Windows.Forms.Button();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
@@ -51,6 +57,9 @@
             this.musicBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.homepagePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSet)).BeginInit();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
             this.conferenceSubMenu.SuspendLayout();
@@ -59,9 +68,10 @@
             // homepagePanel
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.homepagePanel.Controls.Add(this.button1);
+            this.homepagePanel.Controls.Add(this.searchTextBox);
             this.homepagePanel.Controls.Add(this.cCircularButton1);
             this.homepagePanel.Controls.Add(this.panel2);
-            this.homepagePanel.Controls.Add(this.searchTextBox);
             this.homepagePanel.Controls.Add(this.button8);
             this.homepagePanel.Controls.Add(this.button7);
             this.homepagePanel.Location = new System.Drawing.Point(0, 0);
@@ -70,18 +80,27 @@
             this.homepagePanel.Size = new System.Drawing.Size(1920, 61);
             this.homepagePanel.TabIndex = 2;
             // 
-            // cCircularButton1
+            // button1
             // 
-            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
-            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
-            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
-            this.cCircularButton1.Name = "cCircularButton1";
-            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
-            this.cCircularButton1.TabIndex = 0;
-            this.cCircularButton1.UseVisualStyleBackColor = false;
-            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
+            this.button1.Location = new System.Drawing.Point(1135, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Advanced Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchTextBox.Location = new System.Drawing.Point(567, 3);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.searchTextBox.MinimumSize = new System.Drawing.Size(376, 5);
+            this.searchTextBox.Multiline = true;
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(554, 51);
+            this.searchTextBox.TabIndex = 2;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // panel2
             // 
@@ -91,18 +110,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 82);
             this.panel2.TabIndex = 6;
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchTextBox.Location = new System.Drawing.Point(529, 6);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.searchTextBox.MinimumSize = new System.Drawing.Size(376, 5);
-            this.searchTextBox.Multiline = true;
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(554, 50);
-            this.searchTextBox.TabIndex = 2;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // button8
             // 
@@ -142,6 +149,38 @@
             this.MainPanel.Size = new System.Drawing.Size(1284, 800);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataMember = "category";
+            this.categoryBindingSource.DataSource = this.enventDataSetBindingSource;
+            // 
+            // enventDataSetBindingSource
+            // 
+            this.enventDataSetBindingSource.DataSource = this.enventDataSet;
+            this.enventDataSetBindingSource.Position = 0;
+            // 
+            // enventDataSet
+            // 
+            this.enventDataSet.DataSetName = "enventDataSet";
+            this.enventDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoryTableAdapter
+            // 
+            this.categoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // cCircularButton1
+            // 
+            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
+            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
+            this.cCircularButton1.Name = "cCircularButton1";
+            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
+            this.cCircularButton1.TabIndex = 0;
+            this.cCircularButton1.UseVisualStyleBackColor = false;
+            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
             // 
             // sideBarPanel
             // 
@@ -399,6 +438,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSet)).EndInit();
             this.sideBarPanel.ResumeLayout(false);
             this.sportsSubMenu.ResumeLayout(false);
             this.conferenceSubMenu.ResumeLayout(false);
@@ -415,7 +457,6 @@
         private System.Windows.Forms.Button conferencesBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel conferenceSubMenu;
         private System.Windows.Forms.Button festivalsBtn;
@@ -429,6 +470,12 @@
         private App_Code.CCircularButton cCircularButton1;
         public System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button cinemaBtn;
+        private System.Windows.Forms.BindingSource enventDataSetBindingSource;
+        private enventDataSet enventDataSet;
+        private System.Windows.Forms.BindingSource categoryBindingSource;
+        private enventDataSetTableAdapters.categoryTableAdapter categoryTableAdapter;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 

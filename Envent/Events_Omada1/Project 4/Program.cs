@@ -9,6 +9,7 @@ using Project_4.App_Code.StaticMethods;
 using System.Net;
 using System.Drawing;
 using System.IO;
+using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -20,9 +21,11 @@ namespace Project_4
         [STAThread]
         static void Main()
         {
+            InstanceOfUser.CreateVisitor();
+            Venue.FillVenuesData();
+            Play.FillPlaysData();
             Events.FillEventsData();
             Images.LoadImages();
-            InstanceOfUser.CreateVisitor();
             Categories.FillCategoryData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

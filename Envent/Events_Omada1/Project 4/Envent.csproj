@@ -97,6 +97,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advanced Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Advanced Search.Designer.cs">
+      <DependentUpon>Advanced Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\CCircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Advanced Search.resx">
+      <DependentUpon>Advanced Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateNewEvent.resx">
       <DependentUpon>CreateNewEvent.cs</DependentUpon>
     </EmbeddedResource>
