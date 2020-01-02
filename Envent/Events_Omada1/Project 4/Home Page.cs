@@ -86,6 +86,7 @@ namespace Project_4
                 InstanceOfUser.LogOut();
                 button8.Text = "LOGIN";
                 button7.Visible = true;
+                MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(hm);
             }
         }

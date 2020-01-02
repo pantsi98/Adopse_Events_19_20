@@ -163,27 +163,4 @@ namespace Project_4
             
         }
     }
-
-            try
-            {
-                HttpWebRequest webRequest = (HttpWebRequest)HttpWebRequest.Create(imageUrl);
-                webRequest.AllowWriteStreamBuffering = true;
-                webRequest.Timeout = 30000;
-
-                WebResponse webResponse = webRequest.GetResponse();
-
-                Stream stream = webResponse.GetResponseStream();
-
-                image = Image.FromStream(stream);
-
-                webResponse.Close();
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-
-            return image;
-        }
-    }
 }

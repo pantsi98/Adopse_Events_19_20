@@ -34,7 +34,6 @@ namespace Project_4.User_Classes
                 this.duration = eventDetails.ElementAt(0).duration;
                 this.status = eventDetails.ElementAt(0).active;
                 this.imgurl = eventDetails.ElementAt(0).img;
-                this.father_cat = (int)ev.getFather(id);
             }
             else
             {

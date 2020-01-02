@@ -118,6 +118,7 @@ namespace Project_4
                             Debug.WriteLine(parent.Name);
                             parent = parent.Parent;
                         }
+
                         foreach (Control c in parent.Controls)
                         {
                             if (c.Name == "homepagePanel")
@@ -125,6 +126,7 @@ namespace Project_4
                                 parent = c;
                             }
                         }
+
                         switch (parent.Controls["button8"].Text) 
                         {
                             case "LOGIN":
@@ -134,6 +136,7 @@ namespace Project_4
                         }
                         
                         Controls.Clear();
+                        Controls.Add(new HomeMain());
                     }
                 }
                 catch (User_Classes.Exceptions.FailLogInAsNormalUser msg)
