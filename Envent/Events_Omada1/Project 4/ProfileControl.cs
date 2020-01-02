@@ -29,6 +29,7 @@ namespace Project_4
             InitializeComponent();
         }
 
+        //On load παίρνει τις τιμές απο το dataset και τις βάζει στα πεδία και τις τοπικές μεταβλητές .
         private void Profile_Load(object sender, EventArgs e)
         {
             
