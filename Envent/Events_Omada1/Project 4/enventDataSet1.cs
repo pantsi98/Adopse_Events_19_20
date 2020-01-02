@@ -22,3 +22,11 @@ namespace Project_4 {
     }
 }
 
+
+
+namespace Project_4.enventDataSetTableAdapters {
+    
+    
+    public partial class eventsTableAdapter {
+    }
+}

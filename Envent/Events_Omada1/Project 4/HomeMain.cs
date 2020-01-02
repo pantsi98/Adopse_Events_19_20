@@ -42,7 +42,7 @@ namespace Project_4
                 foreach (Control k in i.Controls)
                 {
                     foreach(Control p in k.Controls)
-                    {   
+                    {
                         if (indexImg < eventsCat.Count)
                         {
                             if (p is PictureBox)
@@ -79,6 +79,27 @@ namespace Project_4
             while (parent.Name != "MainPanel")
             {
                 parent = parent.Parent;
+            }
+
+            Control a = (Control)sender;
+            if (a is Label)
+            {
+                enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
+                int event_id = (int)ev1.getIdFromTitle(a.Text);
+                evd = new EventFullDescription(event_id);
+            }
+            else if (a is PictureBox)
+            {
+                Control parl = a.Parent;
+                foreach (Control c in parl.Controls)
+                {
+                    if (c is Label)
+                    {
+                        enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
+                        int event_id = (int)ev1.getIdFromTitle(a.Text);
+                        evd = new EventFullDescription(event_id);
+                    }
+                }
             }
 
             parent.Controls.Clear();
