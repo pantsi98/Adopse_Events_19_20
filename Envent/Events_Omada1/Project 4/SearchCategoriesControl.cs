@@ -11,6 +11,7 @@ using Project_4.User_Classes;
 using Project_4.App_Code.StaticMethods;
 using System.IO;
 using System.Diagnostics;
+using System.Net;
 
 namespace Project_4
 {
@@ -34,20 +35,31 @@ namespace Project_4
         {
             int indexImg = 0;
             int indexEv = 0;
+            Dictionary<int,int> catf = new Dictionary<int,int>();
+            catf[1] = 0; catf[2] = 0; catf[3] = 0; catf[4] = 0; catf[5] = 0; catf[6] = 3; catf[7] = 3; catf[8] = 5; catf[9] = 5; catf[10] = 0;
+            int dict = 1;
             List<Event> events = App_Code.StaticMethods.Events.events;
             List<Event> catevents = new List<Event>();
             List<Categories> categories = Categories.categories;
             Categories catev;
             Categories catfather;
 
-            catevents = events.FindAll(x => x.GetCategory() == cat);
-            catev = categories.Find(x => x.GetID() == cat);
-            catfather = categories.Find(x => x.GetFather() == cat);
-            if (catfather != null)
+            if (catf[cat] == 0)
             {
-                titleLabel.Text = catev.GetName();
+                catevents = events.FindAll(x => x.GetCategory() == cat || x.GetFather() == cat);
+            }
+            else if (catf[cat] != 0)
+            {
+                catevents = events.FindAll(x => x.GetCategory() == cat);
             }
 
+            catev = categories.Find(x => x.GetID() == cat);
+  
+            //catfather = categories.Find(x => x.GetFather() == cat);
+                
+
+            Debug.WriteLine(catev.GetName());
+            titleLabel.Text = catev.GetName();
             
             foreach (Control i in this.Controls)
             {
@@ -58,7 +70,7 @@ namespace Project_4
                         if (indexImg < catevents.Count)
                         {
                             if (p is PictureBox)
-                            {                              
+                            {
                                 PictureBox pic = (PictureBox)p;
                                 Image rszimg = Images.resizeImage(Images.pic.ElementAt(indexImg), new Size(241, 110));
                                 pic.Image = rszimg;

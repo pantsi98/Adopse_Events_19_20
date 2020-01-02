@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -16,7 +17,6 @@ namespace Project_4
 {
     public partial class Form1 : Form
     {
-        public List<string> btntxtList = new List<string>() {"Αθλήματα", "Festivals", "Συνέδρια", "Θέατρο", "Μουσική", "Menu"};
         public int index = 0;
         SearchCategoriesControl sccsearch = new SearchCategoriesControl();
         SearchCategoriesControl sccmusic = new SearchCategoriesControl(1);
@@ -29,17 +29,29 @@ namespace Project_4
         SearchCategoriesControl sccsoccer = new SearchCategoriesControl(8);
         SearchCategoriesControl sccbasket = new SearchCategoriesControl(9);
         SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
-        HomeMain hm1 = new HomeMain();
-        HomeMain hm2 = new HomeMain();
+        HomeMain hm = new HomeMain();
+        
         public Form1()
         {
+
+            Splash_Animation sa = new Splash_Animation();
+            sa.Show();
+
             InitializeComponent();
+
+            sa.Close();
+
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
             MainPanel.Controls.Clear();
             HomeMain su = new HomeMain();
             MainPanel.Controls.Add(su);
+        }
+
+        private void Splash_Animation()
+        {
+            Application.Run(new Splash_Animation());
         }
 
         private void hideSubmenus()
@@ -51,7 +63,7 @@ namespace Project_4
         private void button1_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(hm1);
+            MainPanel.Controls.Add(hm);
         }
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -68,9 +80,19 @@ namespace Project_4
 
         private void button8_Click(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
-            LogIn su = new LogIn();
-            MainPanel.Controls.Add(su);
+            if (button8.Text == "LOGIN")
+            {
+                MainPanel.Controls.Clear();
+                LogIn su = new LogIn();
+                MainPanel.Controls.Add(su);
+            }
+            else if (button8.Text == "LOGOUT")
+            {
+                InstanceOfUser.LogOut();
+                button8.Text = "LOGIN";
+                button7.Visible = true;
+                MainPanel.Controls.Add(hm);
+            }
         }
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
@@ -130,7 +152,7 @@ namespace Project_4
             if (string.IsNullOrEmpty(searchTextBox.Text))
             {
                 MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(hm1);
+                MainPanel.Controls.Add(hm);
 
             }
             else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
@@ -239,6 +261,12 @@ namespace Project_4
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(sccbasket);
+        }
+
+        private void cinemaBtn_Click(object sender, EventArgs e)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(scccinema);
         }
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 namespace Project_4
 {
@@ -109,8 +110,31 @@ namespace Project_4
                     Cursor.Current = Cursors.WaitCursor;
                     vis.LogInAsNormalUser(username, password);
                     Cursor.Current = Cursors.Default;
-                    MessageBox.Show("Έίσοδος στον λογαργιασμό σας!");
-                    Controls.Clear();
+                    if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "OK", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                    {
+                        Control parent = this.Parent;
+                        while (parent.Name != "Form1")
+                        {
+                            Debug.WriteLine(parent.Name);
+                            parent = parent.Parent;
+                        }
+                        foreach (Control c in parent.Controls)
+                        {
+                            if (c.Name == "homepagePanel")
+                            {
+                                parent = c;
+                            }
+                        }
+                        switch (parent.Controls["button8"].Text) 
+                        {
+                            case "LOGIN":
+                                parent.Controls["button8"].Text = "LOGOUT";
+                                parent.Controls["button7"].Visible = false;
+                                break;
+                        }
+                        
+                        Controls.Clear();
+                    }
                 }
                 catch (User_Classes.Exceptions.FailLogInAsNormalUser msg)
                 {//ean den einainormaluser ,try ean einai eventmanager
@@ -119,11 +143,18 @@ namespace Project_4
                         Cursor.Current = Cursors.WaitCursor;
                         vis.LogInAsEventManager(username, password);
                         Cursor.Current = Cursors.Default;
-                        MessageBox.Show("Έίσοδος στον λογαργιασμό σας!");
-                        Controls.Clear();
-                        
+                        if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "OK", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                        {
+                            Control parent = this.Parent;
+                            while (parent.Name != "homepagePanel")
+                            {
+                                parent = parent.Parent;
+                            }
 
-
+                            //parent.Controls["button8"].Visible = false;
+                            Debug.WriteLine(parent.Name);
+                            Controls.Clear();
+                        }
                     }
                     catch (User_Classes.Exceptions.FailLoginAsEventManager msg1)
                     {//ean den einai emfanizei minma lathous 

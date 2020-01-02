@@ -47,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Project_4.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
@@ -113,10 +116,14 @@
     <Compile Include="App_Code\Play.cs" />
     <Compile Include="App_Code\Reservation.cs" />
     <Compile Include="App_Code\Search.cs" />
+    <Compile Include="App_Code\StaticMethods\BufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="App_Code\StaticMethods\Categories.cs" />
     <Compile Include="App_Code\StaticMethods\Events.cs" />
     <Compile Include="App_Code\StaticMethods\Images.cs" />
     <Compile Include="App_Code\StaticMethods\InstanceOfUser.cs" />
+    <Compile Include="App_Code\StaticMethods\Loader.cs" />
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
@@ -207,6 +214,12 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Splash_Animation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash_Animation.Designer.cs">
+      <DependentUpon>Splash_Animation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EventFullDescription.resx">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpUser.resx">
       <DependentUpon>SignUpUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash_Animation.resx">
+      <DependentUpon>Splash_Animation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="enventDataSet.xsc">
       <DependentUpon>enventDataSet.xsd</DependentUpon>
@@ -322,9 +338,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\facebook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\eventImg1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

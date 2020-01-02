@@ -9,6 +9,7 @@ using Project_4.App_Code.StaticMethods;
 using System.Net;
 using System.Drawing;
 using System.IO;
+using System.Threading;
 
 namespace Project_4
 {
@@ -20,12 +21,15 @@ namespace Project_4
         [STAThread]
         static void Main()
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Splash_Animation sa = new Splash_Animation();
+            sa.Show();
             Events.FillEventsData();
             Images.LoadImages();
             InstanceOfUser.CreateVisitor();
             Categories.FillCategoryData();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            sa.Close();
             Application.Run(new Form1());
         }
     }

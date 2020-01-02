@@ -12,6 +12,7 @@ using System.Net;
 using System.IO;
 using Project_4.User_Classes;
 using Project_4.App_Code;
+using System.Diagnostics;
 
 namespace Project_4
 {
@@ -66,17 +67,11 @@ namespace Project_4
             this.addressofPlace.Text = theVenue.GetLocation();
             this.kanonikoTimi.Text = normal_ticket.ToString();
             this.meiomenoTimi.Text = reduced_ticket.ToString();
-            
-
+            //Debug.WriteLine(event_kati.GetTitle().ToString());
+            Image rszimg = Images.resizeImage(Images.pic.ElementAt(id), new Size(880, 222));
+            IconEvent.Image = rszimg;
 
            
-        }
-
-        private void EventFullDesbcriptionPrepare(string ttl, string desc, int dur)
-        {
-          //  this.titleLabel.Text = ttl;
-           // this.perigrafilabel.Text = desc;
-            this.durationlabel.Text = dur.ToString();
         }
 
         private void EventFullDescription_Load(object sender, EventArgs e)
@@ -113,10 +108,35 @@ namespace Project_4
 
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
 
-        
+        }
 
+        public Image DownloadImageFromUrl(string imageUrl)
+        {
+            Image image = null;
+
+            try
+            {
+                HttpWebRequest webRequest = (HttpWebRequest)HttpWebRequest.Create(imageUrl);
+                webRequest.AllowWriteStreamBuffering = true;
+                webRequest.Timeout = 30000;
+
+                WebResponse webResponse = webRequest.GetResponse();
+
+                Stream stream = webResponse.GetResponseStream();
+
+                image = Image.FromStream(stream);
+
+                webResponse.Close();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+            return image;
+        }
     }
-
-  
 }
