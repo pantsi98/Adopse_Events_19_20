@@ -238,6 +238,9 @@
     <Compile Include="Splash_Animation.Designer.cs">
       <DependentUpon>Splash_Animation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="App_Code\StaticMethods\BufferedPanel.resx">
+      <DependentUpon>BufferedPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateNewEvent.resx">
       <DependentUpon>CreateNewEvent.cs</DependentUpon>
     </EmbeddedResource>

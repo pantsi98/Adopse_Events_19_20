@@ -21,15 +21,17 @@ namespace Project_4
         {
             InitializeComponent();
 
+            this.WindowState = FormWindowState.Normal;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             panel = new BufferedPanel();
-            panel.Dock = DockStyle.Right;
 
             loader = new Loader(panel);
 
-            this.Controls.Add(panel);
-            panel.Dock = DockStyle.Fill;
-            panel.Location = new Point(0, 100);
-            panel.BringToFront();
+            //this.Controls.Add(panel);
+            //panel.Location = new Point(350, 0);
+            //panel.BackColor = System.Drawing.Color.Transparent;
+            //panel.BringToFront();
         }
     }
 }

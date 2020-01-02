@@ -22,8 +22,9 @@ namespace Project_4
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(true);
             Splash_Animation sa = new Splash_Animation();
+            sa.SetDesktopLocation(500, 500);
             sa.Show();
             Events.FillEventsData();
             Images.LoadImages();
@@ -32,5 +33,10 @@ namespace Project_4
             sa.Close();
             Application.Run(new Form1());
         }
+
+        //public InvokeThreadSafeForm()
+        //{
+            
+        //}
     }
 }

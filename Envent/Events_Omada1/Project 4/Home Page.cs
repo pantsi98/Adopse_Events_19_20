@@ -33,14 +33,7 @@ namespace Project_4
         
         public Form1()
         {
-
-            Splash_Animation sa = new Splash_Animation();
-            sa.Show();
-
             InitializeComponent();
-
-            sa.Close();
-
             conferenceSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
@@ -51,6 +44,8 @@ namespace Project_4
 
         private void Splash_Animation()
         {
+            Splash_Animation sa = new Splash_Animation();
+            sa.SetDesktopLocation(500, 500);
             Application.Run(new Splash_Animation());
         }
 

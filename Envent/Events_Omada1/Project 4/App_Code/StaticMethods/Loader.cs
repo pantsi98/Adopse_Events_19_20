@@ -17,16 +17,17 @@ namespace Project_4.App_Code.StaticMethods
         private int angle = 0;
         private Timer timer;
         private Pen pen;
+        private int startAngle = 0;
     
         public Loader(BufferedPanel panel)
         {
             this.panel = panel;
-            w = 75;
-            h = 75;
+            w = 130;
+            h = 130;
 
             this.panel.Paint += draw;
 
-            pen = new Pen(Color.White);
+            pen = new Pen(Color.FromArgb(86, 128, 233), 7);
 
             timer = new Timer();
             timer.Interval = 1000 / 50;
@@ -38,6 +39,28 @@ namespace Project_4.App_Code.StaticMethods
         private void update(object sender, EventArgs e)
         {
             this.panel.Invalidate();
+
+            if (startAngle > 360)
+            {
+                reverse = true;
+                startAngle = 360;
+            }
+            else if (startAngle < 0)
+            {
+                reverse = false;
+                startAngle = 0;
+            }
+
+            if (!reverse)
+            {
+                startAngle += 3;
+            }
+            else
+            {
+                startAngle -= 3;
+            }
+
+            angle += 2;
         }
 
         private void draw(object sender, PaintEventArgs e)
@@ -48,8 +71,17 @@ namespace Project_4.App_Code.StaticMethods
 
             Graphics ctx = e.Graphics;
             ctx.SmoothingMode = SmoothingMode.HighQuality;
+            ctx.TranslateTransform(x, y);
+            ctx.RotateTransform(angle);
 
-            ctx.DrawArc(pen, x, y, w, h, 0, 360);
+            if (!reverse)
+            {
+                ctx.DrawArc(pen, -w/2, -h/2, w, h, startAngle, startAngle);
+            }
+            else
+            {
+                ctx.DrawArc(pen, -w/2, -h/2, w, h, 360-startAngle, startAngle);
+            }
         }
     }
 }
