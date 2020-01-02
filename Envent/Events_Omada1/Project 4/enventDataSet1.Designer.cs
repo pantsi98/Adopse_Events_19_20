@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace Project_4 {
     
     
@@ -8499,7 +8501,8 @@ namespace Project_4.enventDataSetTableAdapters {
         public virtual enventDataSet.categoryDataTable GetCategories() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             enventDataSet.categoryDataTable dataTable = new enventDataSet.categoryDataTable();
-            this.Adapter.Fill(dataTable);
+            try { this.Adapter.Fill(dataTable); }
+            catch (Exception ex) { };
             return dataTable;
         }
         
@@ -9422,7 +9425,8 @@ namespace Project_4.enventDataSetTableAdapters {
         public virtual enventDataSet.eventsDataTable getEvents() {
             this.Adapter.SelectCommand = this.CommandCollection[6];
             enventDataSet.eventsDataTable dataTable = new enventDataSet.eventsDataTable();
-            this.Adapter.Fill(dataTable);
+            try { this.Adapter.Fill(dataTable); }
+            catch (Exception ex) { };
             return dataTable;
         }
         
@@ -13197,7 +13201,13 @@ namespace Project_4.enventDataSetTableAdapters {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Param1));
             }
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            this.Adapter.Fill(dataTable);
+            try
+            {
+                this.Adapter.Fill(dataTable);
+            }catch(Exception ex)
+            {
+
+            }
             return dataTable;
         }
         
@@ -13209,7 +13219,12 @@ namespace Project_4.enventDataSetTableAdapters {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Param1));
             enventDataSet.userDataTable dataTable = new enventDataSet.userDataTable();
-            this.Adapter.Fill(dataTable);
+            try
+            {
+                this.Adapter.Fill(dataTable);
+            }catch(Exception ex)
+            {
+            }
             return dataTable;
         }
         

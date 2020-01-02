@@ -24,7 +24,10 @@ namespace Project_4.User_Classes
             }catch(Exception ex) { }
                 
         }
-
+        public string GetPass()
+        {
+            return passWord;
+        }
         public string GetUserName()
         {
             return userName;
