@@ -159,7 +159,7 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1290, 1635);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1218, 1635);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.WrapContents = false;
             // 
@@ -172,14 +172,14 @@
             this.musicPanel.Controls.Add(this.musicTilePanel1);
             this.musicPanel.Location = new System.Drawing.Point(3, 3);
             this.musicPanel.Name = "musicPanel";
-            this.musicPanel.Size = new System.Drawing.Size(1284, 321);
+            this.musicPanel.Size = new System.Drawing.Size(1203, 321);
             this.musicPanel.TabIndex = 0;
             // 
             // musicPanelTitle
             // 
             this.musicPanelTitle.AutoSize = true;
             this.musicPanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.musicPanelTitle.Location = new System.Drawing.Point(58, 22);
+            this.musicPanelTitle.Location = new System.Drawing.Point(51, 22);
             this.musicPanelTitle.Name = "musicPanelTitle";
             this.musicPanelTitle.Size = new System.Drawing.Size(101, 25);
             this.musicPanelTitle.TabIndex = 2;
@@ -192,7 +192,7 @@
             this.musicTilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilePanel4.Controls.Add(this.musicTileLabel4);
             this.musicTilePanel4.Controls.Add(this.musicTilepicBox4);
-            this.musicTilePanel4.Location = new System.Drawing.Point(987, 70);
+            this.musicTilePanel4.Location = new System.Drawing.Point(900, 70);
             this.musicTilePanel4.Name = "musicTilePanel4";
             this.musicTilePanel4.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel4.TabIndex = 1;
@@ -225,7 +225,7 @@
             this.musicTilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilePanel2.Controls.Add(this.musicTileLabel2);
             this.musicTilePanel2.Controls.Add(this.musicTilepicBox2);
-            this.musicTilePanel2.Location = new System.Drawing.Point(365, 70);
+            this.musicTilePanel2.Location = new System.Drawing.Point(327, 71);
             this.musicTilePanel2.Name = "musicTilePanel2";
             this.musicTilePanel2.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel2.TabIndex = 1;
@@ -258,7 +258,7 @@
             this.musicTilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilePanel3.Controls.Add(this.musicTileLabel3);
             this.musicTilePanel3.Controls.Add(this.musicTilepicBox3);
-            this.musicTilePanel3.Location = new System.Drawing.Point(675, 70);
+            this.musicTilePanel3.Location = new System.Drawing.Point(617, 70);
             this.musicTilePanel3.Name = "musicTilePanel3";
             this.musicTilePanel3.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel3.TabIndex = 1;
@@ -291,7 +291,7 @@
             this.musicTilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.musicTilePanel1.Controls.Add(this.musicTileLabel1);
             this.musicTilePanel1.Controls.Add(this.musicTilepicBox1);
-            this.musicTilePanel1.Location = new System.Drawing.Point(53, 70);
+            this.musicTilePanel1.Location = new System.Drawing.Point(46, 70);
             this.musicTilePanel1.Name = "musicTilePanel1";
             this.musicTilePanel1.Size = new System.Drawing.Size(241, 209);
             this.musicTilePanel1.TabIndex = 1;
@@ -329,14 +329,14 @@
             this.theaterPanel.Controls.Add(this.theaterTilePanel1);
             this.theaterPanel.Location = new System.Drawing.Point(3, 330);
             this.theaterPanel.Name = "theaterPanel";
-            this.theaterPanel.Size = new System.Drawing.Size(1284, 321);
+            this.theaterPanel.Size = new System.Drawing.Size(1203, 321);
             this.theaterPanel.TabIndex = 3;
             // 
             // theaterPanelTitle
             // 
             this.theaterPanelTitle.AutoSize = true;
             this.theaterPanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.theaterPanelTitle.Location = new System.Drawing.Point(59, 21);
+            this.theaterPanelTitle.Location = new System.Drawing.Point(51, 30);
             this.theaterPanelTitle.Name = "theaterPanelTitle";
             this.theaterPanelTitle.Size = new System.Drawing.Size(92, 25);
             this.theaterPanelTitle.TabIndex = 2;
@@ -348,7 +348,7 @@
             this.theaterTilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.theaterTilePanel4.Controls.Add(this.theaterTileLabel4);
             this.theaterTilePanel4.Controls.Add(this.theaterTilepicBox4);
-            this.theaterTilePanel4.Location = new System.Drawing.Point(988, 60);
+            this.theaterTilePanel4.Location = new System.Drawing.Point(902, 69);
             this.theaterTilePanel4.Name = "theaterTilePanel4";
             this.theaterTilePanel4.Size = new System.Drawing.Size(240, 220);
             this.theaterTilePanel4.TabIndex = 1;
@@ -381,7 +381,7 @@
             this.theaterTilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.theaterTilePanel2.Controls.Add(this.theaterTileLabel2);
             this.theaterTilePanel2.Controls.Add(this.theaterTilepicBox2);
-            this.theaterTilePanel2.Location = new System.Drawing.Point(366, 60);
+            this.theaterTilePanel2.Location = new System.Drawing.Point(331, 69);
             this.theaterTilePanel2.Name = "theaterTilePanel2";
             this.theaterTilePanel2.Size = new System.Drawing.Size(241, 220);
             this.theaterTilePanel2.TabIndex = 1;
@@ -414,7 +414,7 @@
             this.theaterTilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.theaterTilePanel3.Controls.Add(this.theaterTileLabel3);
             this.theaterTilePanel3.Controls.Add(this.theaterTilepicBox3);
-            this.theaterTilePanel3.Location = new System.Drawing.Point(675, 60);
+            this.theaterTilePanel3.Location = new System.Drawing.Point(617, 69);
             this.theaterTilePanel3.Name = "theaterTilePanel3";
             this.theaterTilePanel3.Size = new System.Drawing.Size(241, 220);
             this.theaterTilePanel3.TabIndex = 1;
@@ -447,7 +447,7 @@
             this.theaterTilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.theaterTilePanel1.Controls.Add(this.theaterTileLabel1);
             this.theaterTilePanel1.Controls.Add(this.theaterTilepicBox1);
-            this.theaterTilePanel1.Location = new System.Drawing.Point(54, 60);
+            this.theaterTilePanel1.Location = new System.Drawing.Point(46, 69);
             this.theaterTilePanel1.Name = "theaterTilePanel1";
             this.theaterTilePanel1.Size = new System.Drawing.Size(240, 220);
             this.theaterTilePanel1.TabIndex = 1;
@@ -483,14 +483,14 @@
             this.conferencePanel.Controls.Add(this.conferenceTilePanel1);
             this.conferencePanel.Location = new System.Drawing.Point(3, 657);
             this.conferencePanel.Name = "conferencePanel";
-            this.conferencePanel.Size = new System.Drawing.Size(1284, 321);
+            this.conferencePanel.Size = new System.Drawing.Size(1203, 321);
             this.conferencePanel.TabIndex = 4;
             // 
             // conferencePanelTitle
             // 
             this.conferencePanelTitle.AutoSize = true;
             this.conferencePanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.conferencePanelTitle.Location = new System.Drawing.Point(49, 24);
+            this.conferencePanelTitle.Location = new System.Drawing.Point(41, 23);
             this.conferencePanelTitle.Name = "conferencePanelTitle";
             this.conferencePanelTitle.Size = new System.Drawing.Size(108, 25);
             this.conferencePanelTitle.TabIndex = 2;
@@ -502,7 +502,7 @@
             this.conferenceTilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conferenceTilePanel4.Controls.Add(this.conferenceTileLabel4);
             this.conferenceTilePanel4.Controls.Add(this.conferenceTilepicBox4);
-            this.conferenceTilePanel4.Location = new System.Drawing.Point(987, 65);
+            this.conferenceTilePanel4.Location = new System.Drawing.Point(900, 64);
             this.conferenceTilePanel4.Name = "conferenceTilePanel4";
             this.conferenceTilePanel4.Size = new System.Drawing.Size(241, 220);
             this.conferenceTilePanel4.TabIndex = 1;
@@ -535,7 +535,7 @@
             this.conferenceTilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conferenceTilePanel2.Controls.Add(this.conferenceTileLabel2);
             this.conferenceTilePanel2.Controls.Add(this.conferenceTilepicBox2);
-            this.conferenceTilePanel2.Location = new System.Drawing.Point(365, 65);
+            this.conferenceTilePanel2.Location = new System.Drawing.Point(331, 64);
             this.conferenceTilePanel2.Name = "conferenceTilePanel2";
             this.conferenceTilePanel2.Size = new System.Drawing.Size(242, 220);
             this.conferenceTilePanel2.TabIndex = 1;
@@ -568,7 +568,7 @@
             this.conferenceTilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conferenceTilePanel3.Controls.Add(this.conferenceTileLabel3);
             this.conferenceTilePanel3.Controls.Add(this.conferenceTilepicBox3);
-            this.conferenceTilePanel3.Location = new System.Drawing.Point(675, 65);
+            this.conferenceTilePanel3.Location = new System.Drawing.Point(616, 64);
             this.conferenceTilePanel3.Name = "conferenceTilePanel3";
             this.conferenceTilePanel3.Size = new System.Drawing.Size(241, 220);
             this.conferenceTilePanel3.TabIndex = 1;
@@ -601,7 +601,7 @@
             this.conferenceTilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conferenceTilePanel1.Controls.Add(this.conferenceTileLabel1);
             this.conferenceTilePanel1.Controls.Add(this.conferenceTilepicBox1);
-            this.conferenceTilePanel1.Location = new System.Drawing.Point(54, 65);
+            this.conferenceTilePanel1.Location = new System.Drawing.Point(46, 64);
             this.conferenceTilePanel1.Name = "conferenceTilePanel1";
             this.conferenceTilePanel1.Size = new System.Drawing.Size(240, 220);
             this.conferenceTilePanel1.TabIndex = 1;
@@ -637,14 +637,14 @@
             this.festivalsPanel.Controls.Add(this.festivalsTilePanel1);
             this.festivalsPanel.Location = new System.Drawing.Point(3, 984);
             this.festivalsPanel.Name = "festivalsPanel";
-            this.festivalsPanel.Size = new System.Drawing.Size(1284, 321);
+            this.festivalsPanel.Size = new System.Drawing.Size(1203, 321);
             this.festivalsPanel.TabIndex = 5;
             // 
             // festivalsPanelTitle
             // 
             this.festivalsPanelTitle.AutoSize = true;
             this.festivalsPanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.festivalsPanelTitle.Location = new System.Drawing.Point(51, 23);
+            this.festivalsPanelTitle.Location = new System.Drawing.Point(41, 22);
             this.festivalsPanelTitle.Name = "festivalsPanelTitle";
             this.festivalsPanelTitle.Size = new System.Drawing.Size(107, 25);
             this.festivalsPanelTitle.TabIndex = 2;
@@ -656,7 +656,7 @@
             this.festivalsTilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.festivalsTilePanel4.Controls.Add(this.festivalsTileLabel4);
             this.festivalsTilePanel4.Controls.Add(this.festivalsTilepicBox4);
-            this.festivalsTilePanel4.Location = new System.Drawing.Point(987, 63);
+            this.festivalsTilePanel4.Location = new System.Drawing.Point(900, 63);
             this.festivalsTilePanel4.Name = "festivalsTilePanel4";
             this.festivalsTilePanel4.Size = new System.Drawing.Size(241, 220);
             this.festivalsTilePanel4.TabIndex = 1;
@@ -689,7 +689,7 @@
             this.festivalsTilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.festivalsTilePanel2.Controls.Add(this.festivalsTileLabel2);
             this.festivalsTilePanel2.Controls.Add(this.festivalsTilepicBox2);
-            this.festivalsTilePanel2.Location = new System.Drawing.Point(365, 63);
+            this.festivalsTilePanel2.Location = new System.Drawing.Point(331, 62);
             this.festivalsTilePanel2.Name = "festivalsTilePanel2";
             this.festivalsTilePanel2.Size = new System.Drawing.Size(241, 220);
             this.festivalsTilePanel2.TabIndex = 1;
@@ -722,7 +722,7 @@
             this.festivalsTilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.festivalsTilePanel3.Controls.Add(this.festivalsTileLabel3);
             this.festivalsTilePanel3.Controls.Add(this.festivalsTilepicBox3);
-            this.festivalsTilePanel3.Location = new System.Drawing.Point(675, 63);
+            this.festivalsTilePanel3.Location = new System.Drawing.Point(616, 62);
             this.festivalsTilePanel3.Name = "festivalsTilePanel3";
             this.festivalsTilePanel3.Size = new System.Drawing.Size(241, 220);
             this.festivalsTilePanel3.TabIndex = 1;
@@ -755,7 +755,7 @@
             this.festivalsTilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.festivalsTilePanel1.Controls.Add(this.festivalsTileLabel1);
             this.festivalsTilePanel1.Controls.Add(this.festivalsTilepicBox1);
-            this.festivalsTilePanel1.Location = new System.Drawing.Point(55, 63);
+            this.festivalsTilePanel1.Location = new System.Drawing.Point(45, 62);
             this.festivalsTilePanel1.Name = "festivalsTilePanel1";
             this.festivalsTilePanel1.Size = new System.Drawing.Size(239, 220);
             this.festivalsTilePanel1.TabIndex = 1;
@@ -791,14 +791,14 @@
             this.sportsPanel.Controls.Add(this.sportsTilePanel1);
             this.sportsPanel.Location = new System.Drawing.Point(3, 1311);
             this.sportsPanel.Name = "sportsPanel";
-            this.sportsPanel.Size = new System.Drawing.Size(1284, 321);
+            this.sportsPanel.Size = new System.Drawing.Size(1203, 321);
             this.sportsPanel.TabIndex = 6;
             // 
             // sportsPanelTitle
             // 
             this.sportsPanelTitle.AutoSize = true;
             this.sportsPanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.sportsPanelTitle.Location = new System.Drawing.Point(59, 26);
+            this.sportsPanelTitle.Location = new System.Drawing.Point(49, 27);
             this.sportsPanelTitle.Name = "sportsPanelTitle";
             this.sportsPanelTitle.Size = new System.Drawing.Size(116, 25);
             this.sportsPanelTitle.TabIndex = 2;
@@ -810,7 +810,7 @@
             this.sportsTilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sportsTilePanel4.Controls.Add(this.sportsTileLabel4);
             this.sportsTilePanel4.Controls.Add(this.sportsTilepicBox4);
-            this.sportsTilePanel4.Location = new System.Drawing.Point(987, 63);
+            this.sportsTilePanel4.Location = new System.Drawing.Point(918, 64);
             this.sportsTilePanel4.Name = "sportsTilePanel4";
             this.sportsTilePanel4.Size = new System.Drawing.Size(241, 220);
             this.sportsTilePanel4.TabIndex = 1;
@@ -843,7 +843,7 @@
             this.sportsTilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sportsTilePanel2.Controls.Add(this.sportsTileLabel2);
             this.sportsTilePanel2.Controls.Add(this.sportsTilepicBox2);
-            this.sportsTilePanel2.Location = new System.Drawing.Point(365, 63);
+            this.sportsTilePanel2.Location = new System.Drawing.Point(327, 64);
             this.sportsTilePanel2.Name = "sportsTilePanel2";
             this.sportsTilePanel2.Size = new System.Drawing.Size(241, 220);
             this.sportsTilePanel2.TabIndex = 1;
@@ -876,7 +876,7 @@
             this.sportsTilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sportsTilePanel3.Controls.Add(this.sportsTileLabel3);
             this.sportsTilePanel3.Controls.Add(this.sportsTilepicBox3);
-            this.sportsTilePanel3.Location = new System.Drawing.Point(676, 63);
+            this.sportsTilePanel3.Location = new System.Drawing.Point(620, 64);
             this.sportsTilePanel3.Name = "sportsTilePanel3";
             this.sportsTilePanel3.Size = new System.Drawing.Size(240, 220);
             this.sportsTilePanel3.TabIndex = 1;
@@ -909,7 +909,7 @@
             this.sportsTilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sportsTilePanel1.Controls.Add(this.sportsTileLabel1);
             this.sportsTilePanel1.Controls.Add(this.sportsTilepicBox1);
-            this.sportsTilePanel1.Location = new System.Drawing.Point(55, 63);
+            this.sportsTilePanel1.Location = new System.Drawing.Point(45, 64);
             this.sportsTilePanel1.Name = "sportsTilePanel1";
             this.sportsTilePanel1.Size = new System.Drawing.Size(239, 220);
             this.sportsTilePanel1.TabIndex = 1;
@@ -942,7 +942,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "HomeMain";
-            this.Size = new System.Drawing.Size(1285, 1636);
+            this.Size = new System.Drawing.Size(1208, 1636);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.musicPanel.ResumeLayout(false);
             this.musicPanel.PerformLayout();

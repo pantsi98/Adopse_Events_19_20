@@ -18,14 +18,17 @@ namespace Project_4.User_Classes
 
         public Profile(int userID)
         {
-            enventDataSetTableAdapters.userTableAdapter pro = new enventDataSetTableAdapters.userTableAdapter();
-            List<enventDataSet.userRow> results =  pro.getProfile(userID).ToList();
-            this.fname = results.ElementAt(0).fname;
-            this.lname = results.ElementAt(0).lname;
-            this.email = results.ElementAt(0).email;
-            this.address = results.ElementAt(0).address;
-            this.gender = results.ElementAt(0).gender;
-            this.dob = results.ElementAt(0).dob;
+            try
+            {
+                enventDataSetTableAdapters.userTableAdapter pro = new enventDataSetTableAdapters.userTableAdapter();
+                List<enventDataSet.userRow> results = pro.getProfile(userID).ToList();
+                this.fname = results.ElementAt(0).fname;
+                this.lname = results.ElementAt(0).lname;
+                this.email = results.ElementAt(0).email;
+                this.address = results.ElementAt(0).address;
+                this.gender = results.ElementAt(0).gender;
+                this.dob = results.ElementAt(0).dob;
+            }catch(Exception ex) { }
         }
 
         public Profile(string fname, string lname, string email, string address, string gender, DateTime dob)
