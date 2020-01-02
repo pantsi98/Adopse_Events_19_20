@@ -45,9 +45,6 @@ namespace Project_4
                 adress = adressTextBox.Text = nu.GetProfile().GetAddress();
             }
         }
-
-        
-
         private void circularPicture4_Click(object sender, EventArgs e)
         {
             if (usernamTextBox.Enabled)
@@ -65,7 +62,6 @@ namespace Project_4
             }
         }
 
-        
 
         private void circularPicture6_Click(object sender, EventArgs e)
         {
@@ -122,7 +118,6 @@ namespace Project_4
             }
         }
 
-        
 
         private void lastnameTextBox_Leave(object sender, EventArgs e)
         {
@@ -151,7 +146,26 @@ namespace Project_4
             }
         }
 
-        
+        private void emailTextBox_Leave(object sender, EventArgs e)
+        {
+            emailTextBox.Enabled = false;
+            if (String.Equals(emailTextBox.Text, email) == false)
+            {
+                datachange = true;
+                if (ValidationCheck.CheckEmail(emailTextBox.Text))
+                {
+
+                    emailExist.Visible = true;
+                    button1.Enabled = false;
+                }
+                else
+                {
+
+                    emailExist.Visible = false;
+                    button1.Enabled = true;
+                }
+            }
+        }
 
         private void circularPicture7_Click_1(object sender, EventArgs e)
         {
@@ -194,26 +208,6 @@ namespace Project_4
             panel1.Controls.Add(su);
         }
 
-        private void emailTextBox_Leave(object sender, EventArgs e)
-        {
-            emailTextBox.Enabled = false;
-            if (String.Equals(emailTextBox.Text, email) == false)
-            {
-                datachange = true;
-                if (ValidationCheck.CheckEmail(emailTextBox.Text))
-                {
-
-                    emailExist.Visible = true;
-                    button1.Enabled = false;
-                }
-                else
-                {
-
-                    emailExist.Visible = false;
-                    button1.Enabled = true;
-                }
-            }
-        }
 
         
     }
