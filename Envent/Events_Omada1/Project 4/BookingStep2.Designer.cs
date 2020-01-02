@@ -44,12 +44,14 @@
             this.name = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.testLabel = new System.Windows.Forms.Label();
             this.booking_panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // booking_panel2
             // 
+            this.booking_panel2.Controls.Add(this.testLabel);
             this.booking_panel2.Controls.Add(this.total_Price);
             this.booking_panel2.Controls.Add(this.label9);
             this.booking_panel2.Controls.Add(this.reducedTickets_Label);
@@ -65,7 +67,7 @@
             this.booking_panel2.Controls.Add(this.name);
             this.booking_panel2.Controls.Add(this.panel1);
             this.booking_panel2.Location = new System.Drawing.Point(0, 0);
-            this.booking_panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.booking_panel2.Margin = new System.Windows.Forms.Padding(4);
             this.booking_panel2.Name = "booking_panel2";
             this.booking_panel2.Size = new System.Drawing.Size(907, 702);
             this.booking_panel2.TabIndex = 0;
@@ -135,7 +137,7 @@
             // next_button
             // 
             this.next_button.Location = new System.Drawing.Point(681, 630);
-            this.next_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.next_button.Margin = new System.Windows.Forms.Padding(4);
             this.next_button.Name = "next_button";
             this.next_button.Size = new System.Drawing.Size(201, 53);
             this.next_button.TabIndex = 10;
@@ -206,7 +208,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(907, 71);
             this.panel1.TabIndex = 0;
@@ -222,12 +224,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Επιβεβαίωση Κράτησης";
             // 
+            // testLabel
+            // 
+            this.testLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testLabel.Location = new System.Drawing.Point(359, 410);
+            this.testLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.testLabel.Name = "testLabel";
+            this.testLabel.Size = new System.Drawing.Size(176, 28);
+            this.testLabel.TabIndex = 17;
+            // 
             // BookingStep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.booking_panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BookingStep2";
             this.Size = new System.Drawing.Size(907, 702);
             this.booking_panel2.ResumeLayout(false);
@@ -255,5 +266,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label normalTickets_Label;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label testLabel;
     }
 }

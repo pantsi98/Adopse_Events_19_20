@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Project_4.User_Classes;
 using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
+using System.Diagnostics;
 
 namespace Project_4
 {
@@ -33,9 +34,11 @@ namespace Project_4
 
 
             User x = InstanceOfUser.GetUser();
-            if(x is NormalUser) {
+            Debug.WriteLine(x);
+            if(x is Project_4.App_Code.NormalUser) {
                 NormalUser nr = (NormalUser)x;
                 name_label.Text = nr.GetProfile().GetLastName();
+                testLabel.Text = nr.GetUserID().ToString();
             }
                 
             PlayTitle_label.Text = ev.GetTitle();
