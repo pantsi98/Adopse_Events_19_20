@@ -31,19 +31,23 @@ namespace Project_4
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            
-            if (x is NormalUser)
+            try
             {
-                NormalUser nu = (NormalUser)x;
-                Id = nu.GetUserID();
-                usrname = usernamTextBox.Text = nu.GetUserName();
-                onoma = onomaTextBox.Text = nu.GetProfile().GetFirstName();
-                lastname = lastnameTextBox.Text = nu.GetProfile().GetLastName();
-                email = emailTextBox.Text = nu.GetProfile().GetEmail();
-                dob = dobPicker.Value = nu.GetProfile().GetDob();
-                adress = adressTextBox.Text = nu.GetProfile().GetAddress();
+                if (x is NormalUser)
+                {
+                    NormalUser nu = (NormalUser)x;
+                    Id = nu.GetUserID();
+                    usrname = usernamTextBox.Text = nu.GetUserName();
+                    onoma = onomaTextBox.Text = nu.GetProfile().GetFirstName();
+                    lastname = lastnameTextBox.Text = nu.GetProfile().GetLastName();
+                    email = emailTextBox.Text = nu.GetProfile().GetEmail();
+                    dob = dobPicker.Value = nu.GetProfile().GetDob();
+                    adress = adressTextBox.Text = nu.GetProfile().GetAddress();
+                }
             }
+            catch (Exception ex) { }
         }
+
 
         private void cCircularButton3_Click(object sender, EventArgs e)
         {

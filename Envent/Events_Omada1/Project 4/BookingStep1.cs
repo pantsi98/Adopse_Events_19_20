@@ -70,6 +70,9 @@ namespace Project_4
                 }
                 parent.Controls.Clear();
                 parent.Controls.Add(b2);
+            }else if(paymentComboBox.SelectedItem.ToString() == "Με κάρτα")
+            {
+                System.Windows.Forms.MessageBox.Show("Η πληρωμή με κάρτα δεν είναι ακόμη διαθέσιμη", "Μη διαθέσιμος τρόπος πληρωμής",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
     }

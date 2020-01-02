@@ -39,6 +39,7 @@ namespace Project_4
                 NormalUser nr = (NormalUser)x;
                 name_label.Text = nr.GetProfile().GetLastName();
                 testLabel.Text = nr.GetUserID().ToString();
+                Debug.WriteLine("first name: " + nr.GetProfile().GetFirstName());
             }
                 
             PlayTitle_label.Text = ev.GetTitle();
