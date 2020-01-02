@@ -54,6 +54,7 @@ namespace Project_4
                 usernamTextBox.Enabled = false;
             }
             else usernamTextBox.Enabled = true;
+            if (button1.Enabled == false) button1.Enabled = true;
         }
 
         private void circularPicture5_Click(object sender, EventArgs e)
@@ -81,9 +82,12 @@ namespace Project_4
             }
         }
 
+        
         private void usernamTextBox_Leave(object sender, EventArgs e)
         {
             usernamTextBox.Enabled = false;
+            
+            
             if (String.Equals(usernamTextBox.Text, usrname) == false)
             {
                 datachange = true;
@@ -187,9 +191,11 @@ namespace Project_4
                     NormalUser nu = (NormalUser)x;
                     Profile up = nu.GetProfile();                
                     up.UpdateUserName(Id, usernamTextBox.Text);                   
+                if (usernameExist.Visible == true) usernameExist.Visible = false;
                     up.UpdateAddress(Id, adressTextBox.Text);
                     up.UpdateEmail(Id, emailTextBox.Text);
-                    up.UpdateFirstName(Id, onomaTextBox.Text);
+                if (emailExist.Visible == true) emailExist.Visible = false;
+                up.UpdateFirstName(Id, onomaTextBox.Text);
                     up.UpdateLastName(Id, lastnameTextBox.Text);
                     MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
                     string pass = nu.GetPass();
@@ -210,7 +216,5 @@ namespace Project_4
             panel1.Controls.Add(su);
         }
 
-
-        
     }
 }

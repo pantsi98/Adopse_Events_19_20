@@ -40,6 +40,7 @@ namespace Project_4
             MainPanel.Controls.Clear();
             HomeMain su = new HomeMain();
             MainPanel.Controls.Add(su);
+            cCircularButton1.Visible = false;
         }
 
         private void Splash_Animation()

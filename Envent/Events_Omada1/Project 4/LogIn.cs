@@ -132,6 +132,7 @@ namespace Project_4
                             case "LOGIN":
                                 parent.Controls["button8"].Text = "LOGOUT";
                                 parent.Controls["button7"].Visible = false;
+                                parent.Controls["cCircularbutton1"].Visible = true;
                                 break;
                         }
                         
@@ -153,7 +154,7 @@ namespace Project_4
                             {
                                 parent = parent.Parent;
                             }
-
+                            parent.Controls["cCircularbutton1"].Visible = true;
                             //parent.Controls["button8"].Visible = false;
                             Debug.WriteLine(parent.Name);
                             Controls.Clear();
