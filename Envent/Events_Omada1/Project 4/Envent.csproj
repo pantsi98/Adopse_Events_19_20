@@ -137,6 +137,7 @@
     </Compile>
     <Compile Include="BookingStep2Card.Designer.cs">
       <DependentUpon>BookingStep2Card.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateNewEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -250,6 +251,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookingStep2Card.resx">
       <DependentUpon>BookingStep2Card.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateNewEvent.resx">
       <DependentUpon>CreateNewEvent.cs</DependentUpon>
     </EmbeddedResource>
