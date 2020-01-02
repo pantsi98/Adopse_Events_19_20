@@ -103,9 +103,12 @@ namespace Project_4
                 {
                     if(c is Label)
                     {
-                        enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
-                        int event_id = (int)ev1.getIdFromTitle(a.Text);
-                        evd = new EventFullDescription(event_id);
+                        try
+                        {
+                            enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
+                            int event_id = (int)ev1.getIdFromTitle(a.Text);
+                            evd = new EventFullDescription(event_id);
+                        }catch(Exception ex) { }
                     }
                 }
             }

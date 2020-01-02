@@ -31,21 +31,58 @@ namespace Project_4
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            
-            if (x is NormalUser)
+            try
             {
-                NormalUser nu = (NormalUser)x;
-                Id = nu.GetUserID();
-                usrname = usernamTextBox.Text = nu.GetUserName();
-                onoma = onomaTextBox.Text = nu.GetProfile().GetFirstName();
-                lastname = lastnameTextBox.Text = nu.GetProfile().GetLastName();
-                email = emailTextBox.Text = nu.GetProfile().GetEmail();
-                dob = dobPicker.Value = nu.GetProfile().GetDob();
-                adress = adressTextBox.Text = nu.GetProfile().GetAddress();
+                if (x is NormalUser)
+                {
+                    NormalUser nu = (NormalUser)x;
+                    Id = nu.GetUserID();
+                    usrname = usernamTextBox.Text = nu.GetUserName();
+                    onoma = onomaTextBox.Text = nu.GetProfile().GetFirstName();
+                    lastname = lastnameTextBox.Text = nu.GetProfile().GetLastName();
+                    email = emailTextBox.Text = nu.GetProfile().GetEmail();
+                    dob = dobPicker.Value = nu.GetProfile().GetDob();
+                    adress = adressTextBox.Text = nu.GetProfile().GetAddress();
+                }
             }
+            catch (Exception ex) { }
         }
 
-        
+
+        private void cCircularButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dobPicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void circularPicture4_Click(object sender, EventArgs e)
         {
