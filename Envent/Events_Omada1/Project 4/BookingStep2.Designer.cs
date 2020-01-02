@@ -44,14 +44,12 @@
             this.name = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.testLabel = new System.Windows.Forms.Label();
             this.booking_panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // booking_panel2
             // 
-            this.booking_panel2.Controls.Add(this.testLabel);
             this.booking_panel2.Controls.Add(this.total_Price);
             this.booking_panel2.Controls.Add(this.label9);
             this.booking_panel2.Controls.Add(this.reducedTickets_Label);
@@ -150,7 +148,7 @@
             this.date_label.Location = new System.Drawing.Point(395, 194);
             this.date_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.date_label.Name = "date_label";
-            this.date_label.Size = new System.Drawing.Size(176, 28);
+            this.date_label.Size = new System.Drawing.Size(487, 28);
             this.date_label.TabIndex = 7;
             // 
             // label4
@@ -169,7 +167,7 @@
             this.PlayTitle_label.Location = new System.Drawing.Point(395, 153);
             this.PlayTitle_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PlayTitle_label.Name = "PlayTitle_label";
-            this.PlayTitle_label.Size = new System.Drawing.Size(176, 28);
+            this.PlayTitle_label.Size = new System.Drawing.Size(487, 28);
             this.PlayTitle_label.TabIndex = 5;
             this.PlayTitle_label.Click += new System.EventHandler(this.PlayTitle_label_Click);
             // 
@@ -190,7 +188,7 @@
             this.name_label.Location = new System.Drawing.Point(395, 106);
             this.name_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(176, 28);
+            this.name_label.Size = new System.Drawing.Size(487, 28);
             this.name_label.TabIndex = 3;
             // 
             // name
@@ -223,15 +221,6 @@
             this.label1.Size = new System.Drawing.Size(316, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Επιβεβαίωση Κράτησης";
-            // 
-            // testLabel
-            // 
-            this.testLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testLabel.Location = new System.Drawing.Point(359, 410);
-            this.testLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(176, 28);
-            this.testLabel.TabIndex = 17;
             // 
             // BookingStep2
             // 
@@ -266,6 +255,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label normalTickets_Label;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label testLabel;
     }
 }
