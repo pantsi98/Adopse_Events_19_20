@@ -88,19 +88,18 @@ namespace Project_4
             if (String.Equals(usernamTextBox.Text, usrname) == false)
             {
                 datachange = true;
-            }
-            if ((String.Equals(usernamTextBox.Text, usrname) == false) && (ValidationCheck.CheckUserName(usernamTextBox.Text)))
-            {
+                if (ValidationCheck.CheckUserName(usernamTextBox.Text))
+                {
 
-                usernameExist.Visible = true;
-                button1.Enabled = false;
-            }
+                    usernameExist.Visible = true;
+                    button1.Enabled = false;
+                }
+                else
+                {
 
-            else
-            {
-
-                usernameExist.Visible = false;
-                button1.Enabled = true;
+                    usernameExist.Visible = false;
+                    button1.Enabled = true;
+                }
             }
         }
 
@@ -200,6 +199,18 @@ namespace Project_4
             if (String.Equals(emailTextBox.Text, email) == false)
             {
                 datachange = true;
+                if (ValidationCheck.CheckEmail(emailTextBox.Text))
+                {
+
+                    emailExist.Visible = true;
+                    button1.Enabled = false;
+                }
+                else
+                {
+
+                    emailExist.Visible = false;
+                    button1.Enabled = true;
+                }
             }
         }
 
