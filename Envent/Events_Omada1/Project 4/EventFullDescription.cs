@@ -18,6 +18,8 @@ namespace Project_4
 {
     public partial class EventFullDescription : UserControl
     {
+        int event_id;
+        int k = 1;
         public EventFullDescription()
         {
             InitializeComponent();
@@ -27,11 +29,22 @@ namespace Project_4
         {
             InitializeComponent();
             PrepareElements(id);
+            User x = InstanceOfUser.GetUser();
+            if (x is NormalUser)
+            {
+                button8.Enabled = true;
+            }
+            else
+            {
+                button8.Enabled = false;
+                button8.BackColor = Color.LightSlateGray;
+            }
+            event_id = id;
         }
 
         String description;
         String title;
-        int duration;
+        
 
 
         private void PrepareElements(int id)
@@ -49,7 +62,8 @@ namespace Project_4
 
 
             User_Classes.Event event_kati = new User_Classes.Event(id);
-           
+            App_Code.Play plays = new App_Code.Play(id);
+
 
             Dictionary<int, string> category = new Dictionary<int,string>();
             category[1] = "Music"; category[2] = "Theater"; category[3] = "Conference"; category[4] = "Festivals"; category[5] = "Sports"; category[6] = "Educational"; category[7] = "Informing"; category[8] = "Soccer"; category[9] = "Basketball"; category[10] = "Cinema";
@@ -71,7 +85,27 @@ namespace Project_4
             Image rszimg = Images.resizeImage(Images.pic.ElementAt(id), new Size(880, 222));
             IconEvent.Image = rszimg;
 
-           
+            int z = 0;
+
+            List<DateTime> dates = plays.GetDates();
+            foreach (DateTime date in dates)
+            {
+
+                Label newLabel = new Label();
+
+                newLabel.Width = 125;
+                newLabel.Height = 20;
+                newLabel.Location = new Point(10, 50 + 2 * z * newLabel.Height);
+                newLabel.Name = "label" + z;
+                
+                newLabel.Text = date.ToString("dd/MM/yyyy HH:mm");
+                date_panel.Controls.Add(newLabel);
+
+                
+                z++;
+            }
+
+
         }
 
         private void EventFullDescription_Load(object sender, EventArgs e)
@@ -100,7 +134,7 @@ namespace Project_4
 
 
             //Anathesi timwn sta katallila labels
-            String dur = duration.ToString();
+            //String dur = duration.ToString();
 
            // durationlabel.Text = dur;
             //eventTitle.Text = title;
@@ -108,14 +142,27 @@ namespace Project_4
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void book_tab_MouseClick(object sender, MouseEventArgs e)
         {
-
+           
+           
+            
+           
         }
 
-        public Image DownloadImageFromUrl(string imageUrl)
+        private void button8_Click(object sender, EventArgs e)
         {
-            Image image = null;
+            BookingStep1 b1 = new BookingStep1(event_id);
+            Control parent = this.Parent;
+            while (parent.Name != "MainPanel")
+            {
+                parent = parent.Parent;
+            }
+            parent.Controls.Clear();
+            parent.Controls.Add(b1);
+            
+        }
+    }
 
             try
             {

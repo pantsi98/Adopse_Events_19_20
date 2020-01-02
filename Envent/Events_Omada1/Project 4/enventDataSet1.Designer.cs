@@ -11150,7 +11150,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[4];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[5];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT event_id, venue_id, `date`, status FROM play";
@@ -11183,7 +11183,7 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT event_id, venue_id, `date`, status FROM play where `event_id`=?";
+            this._commandCollection[2].CommandText = "SELECT  DISTINCT event_id, venue_id, `date`, status FROM play where `event_id`=?";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@Param1";
@@ -11194,8 +11194,19 @@ namespace Project_4.enventDataSetTableAdapters {
             this._commandCollection[2].Parameters.Add(param);
             this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "UPDATE `play` SET `status` = @p1 WHERE (`event_id`=@p2 and `date`=@p3)";
+            this._commandCollection[3].CommandText = "SELECT  DISTINCT `date` FROM play WHERE event_id = @param";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@param";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "event_id";
+            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "UPDATE `play` SET `status` = @p1 WHERE (`event_id`=@p2 and `date`=@p3)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
             param.DbType = global::System.Data.DbType.Object;
@@ -11203,7 +11214,7 @@ namespace Project_4.enventDataSetTableAdapters {
             param.Size = 1024;
             param.IsNullable = true;
             param.SourceColumn = "status";
-            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.Int32;
@@ -11211,7 +11222,7 @@ namespace Project_4.enventDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "event_id";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p3";
             param.DbType = global::System.Data.DbType.DateTime;
@@ -11219,7 +11230,7 @@ namespace Project_4.enventDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "date";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11253,6 +11264,32 @@ namespace Project_4.enventDataSetTableAdapters {
         public virtual enventDataSet.playDataTable getPlay(int Param1) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Param1));
+            enventDataSet.playDataTable dataTable = new enventDataSet.playDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int PlaysDataTable(enventDataSet.playDataTable dataTable, int param) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual enventDataSet.playDataTable GetDatesForEvent(int param) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param));
             enventDataSet.playDataTable dataTable = new enventDataSet.playDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -11458,7 +11495,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int updatePlayStatus(object p1, int p2, System.DateTime p3) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[3];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
             if ((p1 == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -11876,7 +11913,7 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[3];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[5];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, user_id, event_id, bool, payment_type, `date` FROM reservations";
@@ -11935,6 +11972,29 @@ namespace Project_4.enventDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "date";
             this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT id, user_id, event_id, bool, payment_type, `date` FROM reservations WHERE " +
+                "id = @id";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@id";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "id";
+            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "SELECT COUNT(*) FROM reservations WHERE id = @id";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@id";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "id";
+            this._commandCollection[4].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11956,6 +12016,18 @@ namespace Project_4.enventDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual enventDataSet.reservationsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            enventDataSet.reservationsDataTable dataTable = new enventDataSet.reservationsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual enventDataSet.reservationsDataTable GetReservation(int id) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(id));
             enventDataSet.reservationsDataTable dataTable = new enventDataSet.reservationsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -12241,6 +12313,35 @@ namespace Project_4.enventDataSetTableAdapters {
                 }
             }
             return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<long> tryReservation(int id) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
+            command.Parameters[0].Value = ((int)(id));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<long>();
+            }
+            else {
+                return new global::System.Nullable<long>(((long)(returnValue)));
+            }
         }
     }
     

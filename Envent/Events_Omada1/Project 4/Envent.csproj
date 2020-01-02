@@ -127,6 +127,23 @@
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
+    <Compile Include="BookingStep1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep1.Designer.cs">
+      <DependentUpon>BookingStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingStep2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2.Designer.cs">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingStep2Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2Card.Designer.cs">
+      <DependentUpon>BookingStep2Card.cs</DependentUpon>
     <Compile Include="CreateNewEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +258,14 @@
     <EmbeddedResource Include="App_Code\StaticMethods\BufferedPanel.resx">
       <DependentUpon>BufferedPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep1.resx">
+      <DependentUpon>BookingStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep2.resx">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep2Card.resx">
+      <DependentUpon>BookingStep2Card.cs</DependentUpon>
     <EmbeddedResource Include="CreateNewEvent.resx">
       <DependentUpon>CreateNewEvent.cs</DependentUpon>
     </EmbeddedResource>

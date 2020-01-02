@@ -21,11 +21,8 @@ namespace Project_4.User_Classes
                 this.userID = id.getID(userName).ToList().ElementAt(0).id;
                 this.userName = userName;
                 this.passWord = passWord;
-            }
-            catch (Exception e)
-            {
-
-            }
+            }catch(Exception ex) { }
+                
         }
         public string GetPass()
         {
