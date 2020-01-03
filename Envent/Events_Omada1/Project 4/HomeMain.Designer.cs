@@ -203,7 +203,7 @@
             this.musicTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel4.Name = "musicTileLabel4";
-            this.musicTileLabel4.Size = new System.Drawing.Size(232, 60);
+            this.musicTileLabel4.Size = new System.Drawing.Size(232, 90);
             this.musicTileLabel4.TabIndex = 1;
             this.musicTileLabel4.Text = "music4";
             this.musicTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
@@ -236,7 +236,7 @@
             this.musicTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel2.Name = "musicTileLabel2";
-            this.musicTileLabel2.Size = new System.Drawing.Size(232, 60);
+            this.musicTileLabel2.Size = new System.Drawing.Size(232, 90);
             this.musicTileLabel2.TabIndex = 1;
             this.musicTileLabel2.Text = "music2";
             this.musicTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
@@ -269,7 +269,7 @@
             this.musicTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel3.Name = "musicTileLabel3";
-            this.musicTileLabel3.Size = new System.Drawing.Size(232, 60);
+            this.musicTileLabel3.Size = new System.Drawing.Size(232, 90);
             this.musicTileLabel3.TabIndex = 1;
             this.musicTileLabel3.Text = "music3";
             this.musicTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
@@ -303,7 +303,7 @@
             this.musicTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.musicTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.musicTileLabel1.Name = "musicTileLabel1";
-            this.musicTileLabel1.Size = new System.Drawing.Size(232, 60);
+            this.musicTileLabel1.Size = new System.Drawing.Size(232, 90);
             this.musicTileLabel1.TabIndex = 1;
             this.musicTileLabel1.Text = "music1";
             this.musicTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
@@ -359,7 +359,7 @@
             this.theaterTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel4.Name = "theaterTileLabel4";
-            this.theaterTileLabel4.Size = new System.Drawing.Size(232, 60);
+            this.theaterTileLabel4.Size = new System.Drawing.Size(232, 90);
             this.theaterTileLabel4.TabIndex = 1;
             this.theaterTileLabel4.Text = "theater4";
             this.theaterTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
@@ -392,7 +392,7 @@
             this.theaterTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel2.Name = "theaterTileLabel2";
-            this.theaterTileLabel2.Size = new System.Drawing.Size(232, 60);
+            this.theaterTileLabel2.Size = new System.Drawing.Size(232, 90);
             this.theaterTileLabel2.TabIndex = 1;
             this.theaterTileLabel2.Text = "theater2";
             this.theaterTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
@@ -425,7 +425,7 @@
             this.theaterTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel3.Name = "theaterTileLabel3";
-            this.theaterTileLabel3.Size = new System.Drawing.Size(232, 60);
+            this.theaterTileLabel3.Size = new System.Drawing.Size(232, 90);
             this.theaterTileLabel3.TabIndex = 1;
             this.theaterTileLabel3.Text = "theater3";
             this.theaterTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
@@ -458,7 +458,7 @@
             this.theaterTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.theaterTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.theaterTileLabel1.Name = "theaterTileLabel1";
-            this.theaterTileLabel1.Size = new System.Drawing.Size(232, 60);
+            this.theaterTileLabel1.Size = new System.Drawing.Size(232, 90);
             this.theaterTileLabel1.TabIndex = 1;
             this.theaterTileLabel1.Text = "theater1";
             this.theaterTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
@@ -513,7 +513,7 @@
             this.conferenceTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel4.Name = "conferenceTileLabel4";
-            this.conferenceTileLabel4.Size = new System.Drawing.Size(232, 60);
+            this.conferenceTileLabel4.Size = new System.Drawing.Size(232, 90);
             this.conferenceTileLabel4.TabIndex = 1;
             this.conferenceTileLabel4.Text = "conference4";
             this.conferenceTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
@@ -546,7 +546,7 @@
             this.conferenceTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel2.Name = "conferenceTileLabel2";
-            this.conferenceTileLabel2.Size = new System.Drawing.Size(232, 60);
+            this.conferenceTileLabel2.Size = new System.Drawing.Size(232, 90);
             this.conferenceTileLabel2.TabIndex = 1;
             this.conferenceTileLabel2.Text = "conference2";
             this.conferenceTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
@@ -579,7 +579,7 @@
             this.conferenceTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel3.Name = "conferenceTileLabel3";
-            this.conferenceTileLabel3.Size = new System.Drawing.Size(232, 60);
+            this.conferenceTileLabel3.Size = new System.Drawing.Size(232, 90);
             this.conferenceTileLabel3.TabIndex = 1;
             this.conferenceTileLabel3.Text = "conference3";
             this.conferenceTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
@@ -612,7 +612,7 @@
             this.conferenceTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.conferenceTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.conferenceTileLabel1.Name = "conferenceTileLabel1";
-            this.conferenceTileLabel1.Size = new System.Drawing.Size(232, 60);
+            this.conferenceTileLabel1.Size = new System.Drawing.Size(232, 90);
             this.conferenceTileLabel1.TabIndex = 1;
             this.conferenceTileLabel1.Text = "conference1";
             this.conferenceTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
@@ -667,7 +667,7 @@
             this.festivalsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel4.Name = "festivalsTileLabel4";
-            this.festivalsTileLabel4.Size = new System.Drawing.Size(232, 60);
+            this.festivalsTileLabel4.Size = new System.Drawing.Size(232, 90);
             this.festivalsTileLabel4.TabIndex = 1;
             this.festivalsTileLabel4.Text = "festivals4";
             this.festivalsTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
@@ -700,7 +700,7 @@
             this.festivalsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel2.Name = "festivalsTileLabel2";
-            this.festivalsTileLabel2.Size = new System.Drawing.Size(232, 60);
+            this.festivalsTileLabel2.Size = new System.Drawing.Size(232, 90);
             this.festivalsTileLabel2.TabIndex = 1;
             this.festivalsTileLabel2.Text = "festivals2";
             this.festivalsTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
@@ -733,7 +733,7 @@
             this.festivalsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel3.Name = "festivalsTileLabel3";
-            this.festivalsTileLabel3.Size = new System.Drawing.Size(232, 60);
+            this.festivalsTileLabel3.Size = new System.Drawing.Size(232, 90);
             this.festivalsTileLabel3.TabIndex = 1;
             this.festivalsTileLabel3.Text = "festivals3";
             this.festivalsTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
@@ -766,7 +766,7 @@
             this.festivalsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.festivalsTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.festivalsTileLabel1.Name = "festivalsTileLabel1";
-            this.festivalsTileLabel1.Size = new System.Drawing.Size(232, 60);
+            this.festivalsTileLabel1.Size = new System.Drawing.Size(232, 90);
             this.festivalsTileLabel1.TabIndex = 1;
             this.festivalsTileLabel1.Text = "festivals1";
             this.festivalsTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
@@ -821,7 +821,7 @@
             this.sportsTileLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel4.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel4.Name = "sportsTileLabel4";
-            this.sportsTileLabel4.Size = new System.Drawing.Size(232, 60);
+            this.sportsTileLabel4.Size = new System.Drawing.Size(232, 90);
             this.sportsTileLabel4.TabIndex = 1;
             this.sportsTileLabel4.Text = "sports4";
             this.sportsTileLabel4.Click += new System.EventHandler(this.tilesControlsClick);
@@ -854,7 +854,7 @@
             this.sportsTileLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel2.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel2.Name = "sportsTileLabel2";
-            this.sportsTileLabel2.Size = new System.Drawing.Size(232, 60);
+            this.sportsTileLabel2.Size = new System.Drawing.Size(232, 90);
             this.sportsTileLabel2.TabIndex = 1;
             this.sportsTileLabel2.Text = "sports2";
             this.sportsTileLabel2.Click += new System.EventHandler(this.tilesControlsClick);
@@ -887,7 +887,7 @@
             this.sportsTileLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel3.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel3.Name = "sportsTileLabel3";
-            this.sportsTileLabel3.Size = new System.Drawing.Size(232, 60);
+            this.sportsTileLabel3.Size = new System.Drawing.Size(232, 90);
             this.sportsTileLabel3.TabIndex = 1;
             this.sportsTileLabel3.Text = "sports3";
             this.sportsTileLabel3.Click += new System.EventHandler(this.tilesControlsClick);
@@ -920,7 +920,7 @@
             this.sportsTileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.sportsTileLabel1.Location = new System.Drawing.Point(4, 117);
             this.sportsTileLabel1.Name = "sportsTileLabel1";
-            this.sportsTileLabel1.Size = new System.Drawing.Size(232, 60);
+            this.sportsTileLabel1.Size = new System.Drawing.Size(232, 90);
             this.sportsTileLabel1.TabIndex = 1;
             this.sportsTileLabel1.Text = "sports1";
             this.sportsTileLabel1.Click += new System.EventHandler(this.tilesControlsClick);
