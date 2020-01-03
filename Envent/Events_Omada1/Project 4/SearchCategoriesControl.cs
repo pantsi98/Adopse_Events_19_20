@@ -11,6 +11,7 @@ using Project_4.User_Classes;
 using Project_4.App_Code.StaticMethods;
 using System.IO;
 using System.Diagnostics;
+using System.Net;
 
 namespace Project_4
 {
@@ -44,7 +45,7 @@ namespace Project_4
             List<Event> catevents = new List<Event>();
             List<Categories> categories = Categories.categories;
             Categories catev;
-            Categories catfather;
+            List<Categories> catschildren = new List<Categories>();
 
             catevents = events.FindAll(x => x.GetCategory() == cat);
             catev = categories.Find(x => x.GetID() == cat);
@@ -78,6 +79,24 @@ namespace Project_4
                 {
                     eventsTile.Visible = false;
                 }
+            catev = categories.Find(x => x.GetID() == cat);
+
+            Debug.WriteLine(catev.GetFather());
+
+            catschildren = categories.FindAll(x => x.GetFather() == catev.GetID());
+
+            if (catev.GetFather() == 0)
+            {
+                catevents = events.FindAll(x => x.GetCategory() == cat);
+                foreach (Categories c in catschildren)
+                {
+                    catevents.AddRange(events.FindAll(x => x.GetCategory() == c.GetID()));
+                }
+            }
+            else if (catev.GetFather() != 0)
+            {
+                catevents = events.FindAll(x => x.GetCategory() == cat);
+            }
 
                 tileIndex++;
                 if (tileIndex == 4)
@@ -93,6 +112,10 @@ namespace Project_4
             }
             #region commetns
             /*foreach (Control i in this.Controls)
+            Debug.WriteLine(catev.GetName());
+            titleLabel.Text = catev.GetName();
+            
+            foreach (Control i in this.Controls)
             {
                 foreach (Control k in i.Controls)
                 {
@@ -101,7 +124,7 @@ namespace Project_4
                         if (indexImg < catevents.Count)
                         {
                             if (p is PictureBox)
-                            {                              
+                            {
                                 PictureBox pic = (PictureBox)p;
                                 Image rszimg = Images.resizeImage(Images.pic.ElementAt(indexImg), new Size(241, 110));
                                 pic.Image = rszimg;
@@ -147,9 +170,12 @@ namespace Project_4
                 {
                     if(c is Label)
                     {
-                        enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
-                        int event_id = (int)ev1.getIdFromTitle(a.Text);
-                        evd = new EventFullDescription(event_id);
+                        try
+                        {
+                            enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
+                            int event_id = (int)ev1.getIdFromTitle(a.Text);
+                            evd = new EventFullDescription(event_id);
+                        }catch(Exception ex) { }
                     }
                 }
             }
