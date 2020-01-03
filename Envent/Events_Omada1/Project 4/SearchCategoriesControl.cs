@@ -35,28 +35,30 @@ namespace Project_4
         {
             int indexImg = 0;
             int indexEv = 0;
-            Dictionary<int,int> catf = new Dictionary<int,int>();
-            catf[1] = 0; catf[2] = 0; catf[3] = 0; catf[4] = 0; catf[5] = 0; catf[6] = 3; catf[7] = 3; catf[8] = 5; catf[9] = 5; catf[10] = 0;
-            int dict = 1;
             List<Event> events = App_Code.StaticMethods.Events.events;
             List<Event> catevents = new List<Event>();
             List<Categories> categories = Categories.categories;
             Categories catev;
-            Categories catfather;
+            List<Categories> catschildren = new List<Categories>();
 
-            if (catf[cat] == 0)
+            catev = categories.Find(x => x.GetID() == cat);
+
+            Debug.WriteLine(catev.GetFather());
+
+            catschildren = categories.FindAll(x => x.GetFather() == catev.GetID());
+
+            if (catev.GetFather() == 0)
             {
-                catevents = events.FindAll(x => x.GetCategory() == cat || x.GetFather() == cat);
+                catevents = events.FindAll(x => x.GetCategory() == cat);
+                foreach (Categories c in catschildren)
+                {
+                    catevents.AddRange(events.FindAll(x => x.GetCategory() == c.GetID()));
+                }
             }
-            else if (catf[cat] != 0)
+            else if (catev.GetFather() != 0)
             {
                 catevents = events.FindAll(x => x.GetCategory() == cat);
             }
-
-            catev = categories.Find(x => x.GetID() == cat);
-  
-            //catfather = categories.Find(x => x.GetFather() == cat);
-                
 
             Debug.WriteLine(catev.GetName());
             titleLabel.Text = catev.GetName();
