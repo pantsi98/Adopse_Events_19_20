@@ -29,6 +29,7 @@ namespace Project_4
             InitializeComponent();
         }
 
+        //On load παίρνει τις τιμές απο το dataset και τις βάζει στα πεδία και τις τοπικές μεταβλητές .
         private void Profile_Load(object sender, EventArgs e)
         {
             try
@@ -44,46 +45,8 @@ namespace Project_4
                     dob = dobPicker.Value = nu.GetProfile().GetDob();
                     adress = adressTextBox.Text = nu.GetProfile().GetAddress();
                 }
-            }
-            catch (Exception ex) { }
+            }catch(Exception ex) { }
         }
-
-
-        private void cCircularButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dobPicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void circularPicture4_Click(object sender, EventArgs e)
         {
             if (usernamTextBox.Enabled)
@@ -91,6 +54,7 @@ namespace Project_4
                 usernamTextBox.Enabled = false;
             }
             else usernamTextBox.Enabled = true;
+            if (button1.Enabled == false) button1.Enabled = true;
         }
 
         private void circularPicture5_Click(object sender, EventArgs e)
@@ -101,7 +65,6 @@ namespace Project_4
             }
         }
 
-        
 
         private void circularPicture6_Click(object sender, EventArgs e)
         {
@@ -119,25 +82,27 @@ namespace Project_4
             }
         }
 
+        
         private void usernamTextBox_Leave(object sender, EventArgs e)
         {
             usernamTextBox.Enabled = false;
+            
+            
             if (String.Equals(usernamTextBox.Text, usrname) == false)
             {
                 datachange = true;
-            }
-            if ((String.Equals(usernamTextBox.Text, usrname) == false) && (ValidationCheck.CheckUserName(usernamTextBox.Text)))
-            {
+                if (ValidationCheck.CheckUserName(usernamTextBox.Text))
+                {
 
-                usernameExist.Visible = true;
-                button1.Enabled = false;
-            }
+                    usernameExist.Visible = true;
+                    button1.Enabled = false;
+                }
+                else
+                {
 
-            else
-            {
-
-                usernameExist.Visible = false;
-                button1.Enabled = true;
+                    usernameExist.Visible = false;
+                    button1.Enabled = true;
+                }
             }
         }
 
@@ -159,7 +124,6 @@ namespace Project_4
             }
         }
 
-        
 
         private void lastnameTextBox_Leave(object sender, EventArgs e)
         {
@@ -188,7 +152,26 @@ namespace Project_4
             }
         }
 
-        
+        private void emailTextBox_Leave(object sender, EventArgs e)
+        {
+            emailTextBox.Enabled = false;
+            if (String.Equals(emailTextBox.Text, email) == false)
+            {
+                datachange = true;
+                if (ValidationCheck.CheckEmail(emailTextBox.Text))
+                {
+
+                    emailExist.Visible = true;
+                    button1.Enabled = false;
+                }
+                else
+                {
+
+                    emailExist.Visible = false;
+                    button1.Enabled = true;
+                }
+            }
+        }
 
         private void circularPicture7_Click_1(object sender, EventArgs e)
         {
@@ -208,9 +191,11 @@ namespace Project_4
                     NormalUser nu = (NormalUser)x;
                     Profile up = nu.GetProfile();                
                     up.UpdateUserName(Id, usernamTextBox.Text);                   
+                if (usernameExist.Visible == true) usernameExist.Visible = false;
                     up.UpdateAddress(Id, adressTextBox.Text);
                     up.UpdateEmail(Id, emailTextBox.Text);
-                    up.UpdateFirstName(Id, onomaTextBox.Text);
+                if (emailExist.Visible == true) emailExist.Visible = false;
+                up.UpdateFirstName(Id, onomaTextBox.Text);
                     up.UpdateLastName(Id, lastnameTextBox.Text);
                     MessageBox.Show("Οι αλλαγές πραγματοποιήθηκαν.");
                     string pass = nu.GetPass();
@@ -231,15 +216,5 @@ namespace Project_4
             panel1.Controls.Add(su);
         }
 
-        private void emailTextBox_Leave(object sender, EventArgs e)
-        {
-            emailTextBox.Enabled = false;
-            if (String.Equals(emailTextBox.Text, email) == false)
-            {
-                datachange = true;
-            }
-        }
-
-        
     }
 }

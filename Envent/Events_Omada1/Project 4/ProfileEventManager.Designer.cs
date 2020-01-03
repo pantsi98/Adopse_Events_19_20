@@ -31,6 +31,8 @@
             this.createnewevent = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.emailExist = new System.Windows.Forms.Label();
+            this.usernameExist = new System.Windows.Forms.Label();
             this.passChange = new System.Windows.Forms.LinkLabel();
             this.circularPicture7 = new Project_4.App_Code.circularPicture();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -94,6 +96,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.emailExist);
+            this.panel1.Controls.Add(this.usernameExist);
             this.panel1.Controls.Add(this.passChange);
             this.panel1.Controls.Add(this.circularPicture7);
             this.panel1.Controls.Add(this.emailTextBox);
@@ -118,6 +122,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1149, 697);
             this.panel1.TabIndex = 59;
+            // 
+            // emailExist
+            // 
+            this.emailExist.ForeColor = System.Drawing.Color.Red;
+            this.emailExist.Location = new System.Drawing.Point(730, 144);
+            this.emailExist.Name = "emailExist";
+            this.emailExist.Size = new System.Drawing.Size(212, 17);
+            this.emailExist.TabIndex = 106;
+            this.emailExist.Text = "Το email δεν είναι έγκυρο";
+            this.emailExist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.emailExist.Visible = false;
+            // 
+            // usernameExist
+            // 
+            this.usernameExist.ForeColor = System.Drawing.Color.Red;
+            this.usernameExist.Location = new System.Drawing.Point(169, 144);
+            this.usernameExist.Name = "usernameExist";
+            this.usernameExist.Size = new System.Drawing.Size(212, 17);
+            this.usernameExist.TabIndex = 105;
+            this.usernameExist.Text = "Το username χρησιμοποιείται";
+            this.usernameExist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.usernameExist.Visible = false;
             // 
             // passChange
             // 
@@ -152,6 +178,7 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(331, 27);
             this.emailTextBox.TabIndex = 102;
+            this.emailTextBox.Leave += new System.EventHandler(this.emailTextBox_Leave);
             // 
             // label1
             // 
@@ -233,6 +260,7 @@
             this.lastnameTextBox.Name = "lastnameTextBox";
             this.lastnameTextBox.Size = new System.Drawing.Size(331, 27);
             this.lastnameTextBox.TabIndex = 94;
+            this.lastnameTextBox.Leave += new System.EventHandler(this.lastnameTextBox_Leave);
             // 
             // onomaTextBox
             // 
@@ -245,6 +273,7 @@
             this.onomaTextBox.Name = "onomaTextBox";
             this.onomaTextBox.Size = new System.Drawing.Size(331, 27);
             this.onomaTextBox.TabIndex = 81;
+            this.onomaTextBox.Leave += new System.EventHandler(this.onomaTextBox_Leave);
             // 
             // fullolabel
             // 
@@ -279,6 +308,7 @@
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(331, 22);
             this.dobPicker.TabIndex = 91;
+            this.dobPicker.Leave += new System.EventHandler(this.dobPicker_Leave);
             // 
             // label7
             // 
@@ -300,6 +330,7 @@
             this.usernamTextBox.Name = "usernamTextBox";
             this.usernamTextBox.Size = new System.Drawing.Size(331, 27);
             this.usernamTextBox.TabIndex = 86;
+            this.usernamTextBox.Leave += new System.EventHandler(this.usernamTextBox_Leave);
             // 
             // label5
             // 
@@ -331,6 +362,7 @@
             this.adressTextBox.Name = "adressTextBox";
             this.adressTextBox.Size = new System.Drawing.Size(331, 27);
             this.adressTextBox.TabIndex = 83;
+            this.adressTextBox.Leave += new System.EventHandler(this.adressTextBox_Leave);
             // 
             // label3
             // 
@@ -421,5 +453,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
         private App_Code.circularPicture circularPicture1;
+        private System.Windows.Forms.Label usernameExist;
+        private System.Windows.Forms.Label emailExist;
     }
 }

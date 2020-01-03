@@ -30,6 +30,8 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.emailExist = new System.Windows.Forms.Label();
+            this.usernameExist = new System.Windows.Forms.Label();
             this.passChange = new System.Windows.Forms.LinkLabel();
             this.circularPicture7 = new Project_4.App_Code.circularPicture();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -53,8 +55,6 @@
             this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.circularPicture2 = new Project_4.App_Code.circularPicture();
             this.circularPicture1 = new Project_4.App_Code.circularPicture();
-            this.usernameExist = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture9)).BeginInit();
@@ -83,7 +83,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.emailExist);
             this.panel1.Controls.Add(this.usernameExist);
             this.panel1.Controls.Add(this.passChange);
             this.panel1.Controls.Add(this.circularPicture7);
@@ -110,6 +110,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1149, 697);
             this.panel1.TabIndex = 40;
+            // 
+            // emailExist
+            // 
+            this.emailExist.Location = new System.Drawing.Point(730, 144);
+            this.emailExist.Name = "emailExist";
+            this.emailExist.Size = new System.Drawing.Size(212, 17);
+            this.emailExist.TabIndex = 105;
+            this.emailExist.Text = "Το email δεν είναι έγκυρο";
+            this.emailExist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.emailExist.Visible = false;
+            // 
+            // usernameExist
+            // 
+            this.usernameExist.Location = new System.Drawing.Point(169, 144);
+            this.usernameExist.Name = "usernameExist";
+            this.usernameExist.Size = new System.Drawing.Size(212, 17);
+            this.usernameExist.TabIndex = 104;
+            this.usernameExist.Text = "Το username χρησιμοποιείται";
+            this.usernameExist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.usernameExist.Visible = false;
             // 
             // passChange
             // 
@@ -382,26 +402,6 @@
             this.circularPicture1.TabIndex = 32;
             this.circularPicture1.TabStop = false;
             // 
-            // usernameExist
-            // 
-            this.usernameExist.Location = new System.Drawing.Point(169, 144);
-            this.usernameExist.Name = "usernameExist";
-            this.usernameExist.Size = new System.Drawing.Size(212, 17);
-            this.usernameExist.TabIndex = 104;
-            this.usernameExist.Text = "Το username χρησιμοποιείται";
-            this.usernameExist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.usernameExist.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(730, 144);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 17);
-            this.label2.TabIndex = 105;
-            this.label2.Text = "Το email δεν είναι έγκυρο";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.Visible = false;
-            // 
             // ProfileControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -456,7 +456,7 @@
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel passChange;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label emailExist;
         private System.Windows.Forms.Label usernameExist;
     }
 }
