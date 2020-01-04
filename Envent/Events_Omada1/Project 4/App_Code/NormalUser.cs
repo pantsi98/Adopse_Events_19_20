@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,16 @@ namespace Project_4.App_Code
 
         public NormalUser(string userName, string passWord) : base(userName,passWord)
         {
-            profile = new UserProfile(userID);
+            if (userID != null )
+            {
+                profile = new UserProfile(userID);
+                Debug.WriteLine("to user id einai: " + userID);
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("no param ston userid");
+                Debug.WriteLine("no param sto user id");
+            }
         }
         public override Profile GetProfile()
         {
