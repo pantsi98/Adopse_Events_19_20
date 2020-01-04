@@ -201,7 +201,7 @@
             this.savebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.savebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.savebtn.Location = new System.Drawing.Point(823, 633);
+            this.savebtn.Location = new System.Drawing.Point(833, 633);
             this.savebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.savebtn.Name = "savebtn";
             this.savebtn.Size = new System.Drawing.Size(214, 48);
