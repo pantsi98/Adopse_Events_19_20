@@ -211,5 +211,10 @@ namespace Project_4
             ResetPassword su = new ResetPassword();
             panel1.Controls.Add(su);
         }
+
+        private void onomaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
