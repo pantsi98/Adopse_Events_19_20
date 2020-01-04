@@ -10,8 +10,6 @@ namespace Project_4.App_Code
 {
     public class Play
     {
-        private Event ev;
-        private Venue venue;
         private static List<DateTime> dates = new List<DateTime>();
         private int ev;
         //private Event ev;
@@ -19,17 +17,6 @@ namespace Project_4.App_Code
         private int venue;
         private DateTime date;
         private bool status;
-
-        public Play(int eventID) {
-            enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
-            List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
-            for (int i = 0; i < res.Count; i++)
-            {
-                DateTime date = res.ElementAt(i).date;
-                dates.Add(date);
-                Debug.WriteLine(date);
-            }
-        }
 
         public List<DateTime> GetDates()
         {

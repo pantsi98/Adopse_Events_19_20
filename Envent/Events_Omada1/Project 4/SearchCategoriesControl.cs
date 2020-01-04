@@ -46,6 +46,7 @@ namespace Project_4
             List<Categories> categories = Categories.categories;
             Categories catev;
             List<Categories> catschildren = new List<Categories>();
+            Categories catfather;
 
             catevents = events.FindAll(x => x.GetCategory() == cat);
             catev = categories.Find(x => x.GetID() == cat);

@@ -344,10 +344,17 @@ namespace Project_4
             MainPanel.Controls.Add(scccinema);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void adv_src_btn_Click(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(searchFilters);
+            if (!MainPanel.Controls.Contains(searchFilters))
+            {
+                MainPanel.Controls.Add(searchFilters);
+                searchFilters.BringToFront();
+            }
+            else
+            {
+                MainPanel.Controls.Remove(searchFilters);
+            }
         }
     }
 }

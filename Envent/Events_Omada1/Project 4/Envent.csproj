@@ -119,13 +119,35 @@
     <Compile Include="App_Code\Play.cs" />
     <Compile Include="App_Code\Reservation.cs" />
     <Compile Include="App_Code\Search.cs" />
+    <Compile Include="App_Code\StaticMethods\BufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="App_Code\StaticMethods\Categories.cs" />
     <Compile Include="App_Code\StaticMethods\Events.cs" />
     <Compile Include="App_Code\StaticMethods\Images.cs" />
     <Compile Include="App_Code\StaticMethods\InstanceOfUser.cs" />
+    <Compile Include="App_Code\StaticMethods\Loader.cs" />
     <Compile Include="App_Code\StaticMethods\ValidationCheck.cs" />
     <Compile Include="App_Code\Ticket.cs" />
     <Compile Include="App_Code\Venue.cs" />
+    <Compile Include="BookingStep1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep1.Designer.cs">
+      <DependentUpon>BookingStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingStep2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2.Designer.cs">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingStep2Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingStep2Card.Designer.cs">
+      <DependentUpon>BookingStep2Card.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateNewEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +167,12 @@
     </Compile>
     <Compile Include="EventFullDescription.Designer.cs">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters.Designer.cs">
+      <DependentUpon>Filters.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>UserControl</SubType>
@@ -231,8 +259,26 @@
     <Compile Include="SignUpUser.Designer.cs">
       <DependentUpon>SignUpUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Splash_Animation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash_Animation.Designer.cs">
+      <DependentUpon>Splash_Animation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Advanced Search.resx">
       <DependentUpon>Advanced Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_Code\StaticMethods\BufferedPanel.resx">
+      <DependentUpon>BufferedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep1.resx">
+      <DependentUpon>BookingStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep2.resx">
+      <DependentUpon>BookingStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingStep2Card.resx">
+      <DependentUpon>BookingStep2Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateNewEvent.resx">
       <DependentUpon>CreateNewEvent.cs</DependentUpon>
@@ -250,6 +296,9 @@
     <Compile Include="App_Code\User.cs" />
     <Compile Include="App_Code\UserProfile.cs" />
     <Compile Include="App_Code\Visitor.cs" />
+    <EmbeddedResource Include="Filters.resx">
+      <DependentUpon>Filters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpUser.resx">
       <DependentUpon>SignUpUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash_Animation.resx">
+      <DependentUpon>Splash_Animation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="enventDataSet.xsc">
       <DependentUpon>enventDataSet.xsd</DependentUpon>

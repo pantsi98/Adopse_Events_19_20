@@ -12,6 +12,9 @@ namespace Project_4
 {
     public partial class Advanced_Search : UserControl
     {
+
+        Pen pen = new Pen(Color.FromArgb(86, 128, 233), 3);
+
         public Advanced_Search()
         {
             InitializeComponent();
@@ -35,6 +38,11 @@ namespace Project_4
         public string GetCity()
         {
             return this.cityBox.Text;
+        }
+
+        private void Advanced_Search_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(pen, 0, 45, 230, 45);
         }
     }
 }
