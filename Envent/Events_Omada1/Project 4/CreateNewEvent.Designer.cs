@@ -66,30 +66,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.createplaypanel = new System.Windows.Forms.Panel();
+            this.deletePlay = new System.Windows.Forms.Button();
             this.timepicker = new System.Windows.Forms.DateTimePicker();
-            this.circularPicture5 = new Project_4.App_Code.circularPicture();
-            this.circularPicture1 = new Project_4.App_Code.circularPicture();
-            this.circularPicture2 = new Project_4.App_Code.circularPicture();
-            this.circularPicture3 = new Project_4.App_Code.circularPicture();
-            this.savechanges = new System.Windows.Forms.Button();
-            this.circularPicture4 = new Project_4.App_Code.circularPicture();
             ((System.ComponentModel.ISupportInitialize)(this.meiomenoticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kanonikoticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationhour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.createplaypanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).BeginInit();
             this.SuspendLayout();
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(227, 15);
+            this.label20.Location = new System.Drawing.Point(228, 25);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(155, 17);
@@ -109,7 +99,6 @@
             this.kanonikoticket.Name = "kanonikoticket";
             this.kanonikoticket.Size = new System.Drawing.Size(54, 22);
             this.kanonikoticket.TabIndex = 123;
-            this.kanonikoticket.ValueChanged += new System.EventHandler(this.kanonikoticket_ValueChanged);
             // 
             // label17
             // 
@@ -201,13 +190,14 @@
             this.savebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.savebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.savebtn.Location = new System.Drawing.Point(833, 633);
+            this.savebtn.Location = new System.Drawing.Point(441, 647);
             this.savebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.savebtn.Name = "savebtn";
             this.savebtn.Size = new System.Drawing.Size(214, 48);
             this.savebtn.TabIndex = 109;
             this.savebtn.Text = "Τέλος";
             this.savebtn.UseVisualStyleBackColor = false;
+            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
             // 
             // createEvent
             // 
@@ -215,7 +205,7 @@
             this.createEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.createEvent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createEvent.Location = new System.Drawing.Point(170, 568);
+            this.createEvent.Location = new System.Drawing.Point(182, 579);
             this.createEvent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.createEvent.Name = "createEvent";
             this.createEvent.Size = new System.Drawing.Size(242, 48);
@@ -240,7 +230,7 @@
             this.Addplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Addplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Addplay.Location = new System.Drawing.Point(251, 251);
+            this.Addplay.Location = new System.Drawing.Point(233, 259);
             this.Addplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Addplay.Name = "Addplay";
             this.Addplay.Size = new System.Drawing.Size(113, 34);
@@ -252,7 +242,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(188, 10);
+            this.label9.Location = new System.Drawing.Point(195, 10);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(200, 17);
@@ -271,9 +261,9 @@
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(21, 315);
+            this.listView1.Location = new System.Drawing.Point(36, 306);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(531, 257);
+            this.listView1.Size = new System.Drawing.Size(478, 257);
             this.listView1.TabIndex = 104;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -282,27 +272,27 @@
             // date
             // 
             this.date.Text = "Ημερομηνία";
-            this.date.Width = 128;
+            this.date.Width = 95;
             // 
             // time
             // 
             this.time.Text = "Ώρα";
-            this.time.Width = 70;
+            this.time.Width = 55;
             // 
             // place
             // 
             this.place.Text = "Τοποθεσία";
-            this.place.Width = 142;
+            this.place.Width = 90;
             // 
             // Normal
             // 
             this.Normal.Text = "Κανονικό";
-            this.Normal.Width = 106;
+            this.Normal.Width = 80;
             // 
             // reduced
             // 
             this.reduced.Text = "Μειωμένο";
-            this.reduced.Width = 108;
+            this.reduced.Width = 80;
             // 
             // dateofPlay
             // 
@@ -325,6 +315,7 @@
             // 
             this.katigoria.AutoCompleteCustomSource.AddRange(new string[] {
             "Μουσική"});
+            this.katigoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.katigoria.FormattingEnabled = true;
             this.katigoria.Items.AddRange(new object[] {
             "Music",
@@ -344,7 +335,10 @@
             // 
             // topothesia
             // 
+            this.topothesia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.topothesia.FormattingEnabled = true;
+            this.topothesia.Items.AddRange(new object[] {
+            "ATHINAIS"});
             this.topothesia.Location = new System.Drawing.Point(158, 166);
             this.topothesia.Name = "topothesia";
             this.topothesia.Size = new System.Drawing.Size(314, 24);
@@ -457,6 +451,7 @@
             // 
             // createplaypanel
             // 
+            this.createplaypanel.Controls.Add(this.deletePlay);
             this.createplaypanel.Controls.Add(this.timepicker);
             this.createplaypanel.Controls.Add(this.listView1);
             this.createplaypanel.Controls.Add(this.label3);
@@ -473,11 +468,28 @@
             this.createplaypanel.Controls.Add(this.label13);
             this.createplaypanel.Controls.Add(this.label10);
             this.createplaypanel.Controls.Add(this.label11);
-            this.createplaypanel.Location = new System.Drawing.Point(550, 15);
+            this.createplaypanel.Location = new System.Drawing.Point(528, 15);
             this.createplaypanel.Name = "createplaypanel";
-            this.createplaypanel.Size = new System.Drawing.Size(573, 596);
+            this.createplaypanel.Size = new System.Drawing.Size(595, 623);
             this.createplaypanel.TabIndex = 126;
+            this.createplaypanel.Visible = false;
             this.createplaypanel.Paint += new System.Windows.Forms.PaintEventHandler(this.createplaypanel_Paint);
+            this.createplaypanel.MouseHover += new System.EventHandler(this.createplaypanel_MouseHover);
+            // 
+            // deletePlay
+            // 
+            this.deletePlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.deletePlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deletePlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.deletePlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deletePlay.Location = new System.Drawing.Point(348, 578);
+            this.deletePlay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deletePlay.Name = "deletePlay";
+            this.deletePlay.Size = new System.Drawing.Size(219, 34);
+            this.deletePlay.TabIndex = 127;
+            this.deletePlay.Text = "Διαγραφή Παράστασης";
+            this.deletePlay.UseVisualStyleBackColor = false;
+            this.deletePlay.Click += new System.EventHandler(this.deletePlay_Click);
             // 
             // timepicker
             // 
@@ -488,93 +500,11 @@
             this.timepicker.Size = new System.Drawing.Size(314, 22);
             this.timepicker.TabIndex = 125;
             // 
-            // circularPicture5
-            // 
-            this.circularPicture5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture5.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture5.Location = new System.Drawing.Point(463, 71);
-            this.circularPicture5.Name = "circularPicture5";
-            this.circularPicture5.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture5.TabIndex = 127;
-            this.circularPicture5.TabStop = false;
-            this.circularPicture5.Click += new System.EventHandler(this.circularPicture5_Click);
-            // 
-            // circularPicture1
-            // 
-            this.circularPicture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture1.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture1.Location = new System.Drawing.Point(463, 122);
-            this.circularPicture1.Name = "circularPicture1";
-            this.circularPicture1.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture1.TabIndex = 128;
-            this.circularPicture1.TabStop = false;
-            this.circularPicture1.Click += new System.EventHandler(this.circularPicture1_Click);
-            // 
-            // circularPicture2
-            // 
-            this.circularPicture2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture2.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture2.Location = new System.Drawing.Point(463, 216);
-            this.circularPicture2.Name = "circularPicture2";
-            this.circularPicture2.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture2.TabIndex = 129;
-            this.circularPicture2.TabStop = false;
-            this.circularPicture2.Click += new System.EventHandler(this.circularPicture2_Click);
-            // 
-            // circularPicture3
-            // 
-            this.circularPicture3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture3.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture3.Location = new System.Drawing.Point(463, 424);
-            this.circularPicture3.Name = "circularPicture3";
-            this.circularPicture3.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture3.TabIndex = 130;
-            this.circularPicture3.TabStop = false;
-            this.circularPicture3.Click += new System.EventHandler(this.circularPicture3_Click);
-            // 
-            // savechanges
-            // 
-            this.savechanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
-            this.savechanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savechanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.savechanges.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.savechanges.Location = new System.Drawing.Point(170, 506);
-            this.savechanges.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.savechanges.Name = "savechanges";
-            this.savechanges.Size = new System.Drawing.Size(242, 48);
-            this.savechanges.TabIndex = 131;
-            this.savechanges.Text = "Αποθήκευση Αλλαγων";
-            this.savechanges.UseVisualStyleBackColor = false;
-            this.savechanges.Visible = false;
-            this.savechanges.Click += new System.EventHandler(this.savechanges_Click);
-            // 
-            // circularPicture4
-            // 
-            this.circularPicture4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture4.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture4.Location = new System.Drawing.Point(463, 170);
-            this.circularPicture4.Name = "circularPicture4";
-            this.circularPicture4.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture4.TabIndex = 132;
-            this.circularPicture4.TabStop = false;
-            this.circularPicture4.Click += new System.EventHandler(this.circularPicture4_Click);
-            // 
             // CreateNewEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.circularPicture4);
-            this.Controls.Add(this.savechanges);
-            this.Controls.Add(this.circularPicture3);
-            this.Controls.Add(this.circularPicture2);
-            this.Controls.Add(this.circularPicture1);
-            this.Controls.Add(this.circularPicture5);
             this.Controls.Add(this.createplaypanel);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label17);
@@ -604,11 +534,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.createplaypanel.ResumeLayout(false);
             this.createplaypanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,17 +574,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel createplaypanel;
-        private App_Code.circularPicture circularPicture5;
-        private App_Code.circularPicture circularPicture1;
-        private App_Code.circularPicture circularPicture2;
-        private App_Code.circularPicture circularPicture3;
-        private System.Windows.Forms.Button savechanges;
-        private App_Code.circularPicture circularPicture4;
         private System.Windows.Forms.ColumnHeader date;
         private System.Windows.Forms.ColumnHeader time;
         private System.Windows.Forms.ColumnHeader place;
         private System.Windows.Forms.ColumnHeader Normal;
         private System.Windows.Forms.ColumnHeader reduced;
         private System.Windows.Forms.DateTimePicker timepicker;
+        private System.Windows.Forms.Button deletePlay;
     }
 }

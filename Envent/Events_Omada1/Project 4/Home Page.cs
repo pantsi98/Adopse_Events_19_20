@@ -76,20 +76,23 @@ namespace Project_4
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (button8.Text == "LOGIN")
-            {
-                MainPanel.Controls.Clear();
-                LogIn su = new LogIn();
+            MainPanel.Controls.Clear();
+                  ProfileEventManager su = new ProfileEventManager();
                 MainPanel.Controls.Add(su);
-            }
-            else if (button8.Text == "LOGOUT")
-            {
-                InstanceOfUser.LogOut();
-                button8.Text = "LOGIN";
-                button7.Visible = true;
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(hm);
-            }
+            // if (button8.Text == "LOGIN")
+            //  {
+            //        MainPanel.Controls.Clear();
+            //        LogIn su = new LogIn();
+            //      MainPanel.Controls.Add(su);
+            //}
+            //else if (button8.Text == "LOGOUT")
+            //{
+            //  InstanceOfUser.LogOut();
+            //   button8.Text = "LOGIN";
+            // button7.Visible = true;
+            //MainPanel.Controls.Clear();
+            //MainPanel.Controls.Add(hm);
+            //  } 
         }
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
