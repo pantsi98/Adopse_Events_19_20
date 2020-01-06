@@ -16,11 +16,22 @@ namespace Project_4
     {
         User uem = InstanceOfUser.GetUser();
         Play play =new Play(1);
+        int event_id;
        
         public CreateNewEvent()
         {
             InitializeComponent();
-          
+            //gemisma ton topothesion
+            Venue vn = new Venue();
+            List<String> venues = new List<String>();
+            venues = vn.getAllVenues();
+            /*foreach (String x in venues)
+            {
+                //cmbMovieListingBox.Items.Add(film.GetFilmTitle());
+                topothesia.Items.Add(vn.getAllVenues());
+            }
+            */
+            topothesia.Items.AddRange(vn.getAllVenues().ToArray());
         }
 
         public int Id;
@@ -145,8 +156,9 @@ namespace Project_4
         private void createEvent_Click(object sender, EventArgs e)
         {
 
-           // EventManager em = (EventManager)uem;
+            //EventManager em = (EventManager)uem;
            // em.CreateEvent(titlos.Text, katigoriacomboboxselect(), perigrafi.Text, selectedduration());
+            //event_id = em.GetEventIdByTtitle(titlos.Text);
             eventCreatedui();
             //edw apotelesma pou an gurizei id event
 
@@ -170,6 +182,10 @@ namespace Project_4
 
             ///entoles gia na emfanizei to play poy egine
             
+
+            //dimiourgia enos obj venue gia na parei ola ta names
+             
+
             String date= dateofPlay.Value.ToString("yyyy-MM-dd");
             String time = timepicker.Value.ToString("HH:mm");
             String kan = kanonikoticket.Value.ToString();

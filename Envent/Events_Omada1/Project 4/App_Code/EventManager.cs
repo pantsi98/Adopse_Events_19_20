@@ -28,6 +28,7 @@ namespace Project_4.User_Classes
             try{
                 enventDataSetTableAdapters.eventsTableAdapter ev = new enventDataSetTableAdapters.eventsTableAdapter();
                 ev.createEvent(title, category, description, this.GetUserID(), duration, true);
+                
             }catch(EventException msg)
             {
                 MessageBox.Show(msg.ToString());
@@ -138,6 +139,19 @@ namespace Project_4.User_Classes
             catch (EventException msg)
             {
                 MessageBox.Show(msg.ToString());
+            }
+        }
+
+        public int GetEventIdByTtitle(string title)
+        {
+            try {
+                enventDataSetTableAdapters.eventsTableAdapter ev = new enventDataSetTableAdapters.eventsTableAdapter();
+                int id = ev.getIdFromTitle(title).Value;
+                return id;
+            }
+            catch(Exception ex)
+            {
+                return 0;
             }
         }
     }
