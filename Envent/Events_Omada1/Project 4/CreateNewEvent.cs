@@ -15,11 +15,20 @@ namespace Project_4
     public partial class CreateNewEvent : UserControl
     {
         User uem = InstanceOfUser.GetUser();
-       
+
+        int event_id;
+        int venue_id;
+        Ticket t1, t2;
+
         public CreateNewEvent()
         {
             InitializeComponent();
-          
+            //gemisma ton topothesion
+            Venue vn = new Venue();
+            List<String> venues = new List<String>();
+            venues = vn.getAllVenues();
+           
+            topothesia.Items.AddRange(vn.getAllVenues().ToArray());
         }
 
         public int Id;
@@ -28,26 +37,29 @@ namespace Project_4
         private void CreateNewEvent_Load(object sender, EventArgs e)
         {
             Addplay.Enabled = false;
-            savebtn.Enabled = false;
             createEvent.Enabled = false;
-           
-           
-           
-
+         
         }
         
 
-        private void uploadImage_Click(object sender, EventArgs e)
+       
+        Boolean deiktislathwnPlay;
+
+        private Boolean cheackallPlay()
         {
-            OpenFileDialog op = new OpenFileDialog();
+            deiktislathwnPlay = true;
+            if(topothesia.Text=="")
+                deiktislathwnPlay = false;
+            else if (kanonikoticket.Value==0)
+                deiktislathwnPlay = false;
+            else if (meiomenoticket.Value == 0)
+                deiktislathwnPlay = false;
 
-            op.Filter = "Choose Image(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
-            if (op.ShowDialog() == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(op.FileName);
+            return deiktislathwnPlay;
 
-            }
         }
+
+
         Boolean deiktislathwn;
         private Boolean checkall()
         {
@@ -57,11 +69,13 @@ namespace Project_4
                 deiktislathwn = false;
             else if (perigrafi.Text == "")
                 deiktislathwn = false;
-            else if (durationhour.Value == 0 || durationmin.Value == 0)
+            else if (durationhour.Value == 0 )
                 deiktislathwn = false;
             else if (katigoria.Text == "")
                 deiktislathwn = false;
-            
+            else if(urlimage.Text=="")
+                deiktislathwn = false;
+
             return deiktislathwn;
         }
 
@@ -70,6 +84,7 @@ namespace Project_4
             if (!checkall())
             {
                 createEvent.Enabled = false;
+                
             }
             else
             {
@@ -109,28 +124,104 @@ namespace Project_4
         private int selectedduration()
         {
             int hour = Convert.ToInt32(Math.Round(durationhour.Value));
-            int min = Convert.ToInt32(Math.Round(durationmin.Value));
-            return hour * 60 + min;
+            //se lepta
+            return hour * 60 ;
 
         }
-         
+        private void eventCreatedui()
+        {
+            //enable ta textbox 
+            titlos.Enabled = false;
+            katigoria.Enabled = false;
+            durationhour.Enabled = false;
+            urlimage.Enabled = false;
+            createEvent.Enabled = false;
+            createEvent.Enabled = false;
+            createplaypanel.Visible = true;
+            
+        } 
+
         private void createEvent_Click(object sender, EventArgs e)
         {
+            label2.Visible = false;
+           EventManager em = (EventManager)uem;
+            try
+            {
 
-            EventManager em = (EventManager)uem;
-            em.CreateEvent(titlos.Text, katigoriacomboboxselect(), perigrafi.Text, selectedduration());
-            //edw apotelesma pou an gurizei id event
-
-            //enable ta textbox 
-            titlos.Enabled = true;
-            katigoria.Enabled = true;
-            durationhour.Enabled = true;
-            durationmin.Enabled = true;
-            uploadImage.Enabled = true;
-            createEvent.Enabled = true;
-
-
+                em.CreateEvent(titlos.Text, katigoriacomboboxselect(), perigrafi.Text, selectedduration(), urlimage.Text);
+                event_id = em.GetEventIdByTtitle(titlos.Text);
+                eventCreatedui();
+            }
+            catch (Exception msg) {
+                label2.Visible = true;
+                label2.Text = "H δημιουργία Event απέτυχε";
+            }
             
+        }
+
+     
+        private void Addplay_Click(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            EventManager em = (EventManager)uem;
+            string location_combobox_text = topothesia.SelectedItem.ToString();
+          
+            DateTime mydate = dateofPlay.Value.Date + timepicker.Value.TimeOfDay;
+            try
+            {
+                enventDataSetTableAdapters.venuesTableAdapter vn = new enventDataSetTableAdapters.venuesTableAdapter();
+                venue_id = vn.GetVenueIdFromVenueName(location_combobox_text).GetValueOrDefault();
+               int  play_id=em.CreatePlay(event_id, venue_id, mydate);
+
+
+                int normalticket = Convert.ToInt32(kanonikoticket.Value);
+                int reducedticket = Convert.ToInt32(meiomenoticket.Value);
+
+                try {
+                    
+                    t1.CreateTicket("normal", normalticket, play_id);
+                    t2.CreateTicket("reduced", reducedticket, play_id);
+                    
+                    //emfanisi se listview
+                    String date1 = mydate.ToString();
+                    String kan = kanonikoticket.Value.ToString();
+                    String top = topothesia.Text;
+                    String meiom = meiomenoticket.Value.ToString();
+                    ListViewItem item = new ListViewItem(new[] { date1, top, kan, meiom });
+                    listView1.Items.Add(item);
+
+                } catch (Exception msg) {
+                    label2.Visible = true;
+                    label2.Text = "H δημιουργία εισιτηρίου απέτυχε";
+                } 
+
+            }
+            catch (Exception msg) {
+                label2.Visible = true;
+                label2.Text = "H δημιουργία παραστασης απέτυχε";
+            }
+
+           
+
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deletePlay_Click(object sender, EventArgs e)
+        {
+            for (int i = listView1.Items.Count - 1; i >= 0; i--)
+            {
+                if (listView1.Items[i].Selected)
+                {
+                    listView1.Items[i].Remove();
+                }
+            }
+
+
         }
 
         private void createplaypanel_Paint(object sender, PaintEventArgs e)
@@ -138,117 +229,24 @@ namespace Project_4
 
         }
 
-        private void Addplay_Click(object sender, EventArgs e)
+
+
+        private void createplaypanel_MouseHover(object sender, EventArgs e)
         {
-            int normalticket = Convert.ToInt32(kanonikoticket.Value);
-            int reducedticket = Convert.ToInt32(meiomenoticket.Value);
-            //dokimastiko id play
-            int play_id=0;
-            Ticket tic = new Ticket();
-            tic.CreateTicket("normal", normalticket, play_id);
-            tic.CreateTicket("reduced", reducedticket, play_id);
-
-
-
-
-            ///entoles gia na emfanizei to play poy egine
-            String date= dateofPlay.Value.ToString("yyyy-MM-dd");
-            String time = timepicker.Value.ToString();
-            String kan = kanonikoticket.Value.ToString();
-            String meiom = meiomenoticket.Value.ToString();
-            ListViewItem item = new ListViewItem(date);
-            item.SubItems.Add(time);
-            item.SubItems.Add(topothesia.Text);
-            item.SubItems.Add(kan);
-            item.SubItems.Add(meiom);
-
-        }
-
-        private void kanonikoticket_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        Boolean tit = false;
-        Boolean katig = false;
-        Boolean per = false;
-        Boolean dur = false;
-
-        private void circularPicture5_Click(object sender, EventArgs e)
-        { 
-            createEvent.Visible = false;
-            savechanges.Visible = true;
-            titlos.Enabled = false;
-            tit = true;
-        }
-
-        private void circularPicture1_Click(object sender, EventArgs e)
-        {
-            createEvent.Visible = false;
-            savechanges.Visible = true;
-            katigoria.Enabled = false;
-            katig = true;
-        }
-
-        private void circularPicture4_Click(object sender, EventArgs e)
-        {
-            createEvent.Visible = false;
-            savechanges.Visible = true;
-            perigrafi.Enabled = false;
-            per = true;
-        }
-
-        private void circularPicture2_Click(object sender, EventArgs e)
-        {
-            createEvent.Visible = false;
-            savechanges.Visible = true;
-            durationhour.Enabled = false;
-            durationmin.Enabled = false;
-            dur = true;
-        }
-
-        private void circularPicture3_Click(object sender, EventArgs e)
-        {
-
-            createEvent.Visible = false;
-            savechanges.Visible = true;
-            uploadImage.Enabled = false;
-
-            
-        }
-
-        private void savechanges_Click(object sender, EventArgs e)
-        {
-            EventManager em = (EventManager)uem;
-            
-            if (tit = true)
+            if (!cheackallPlay())
             {
-                em.UpdateEventTitle(1, titlos.Text);
+               Addplay.Enabled = false;
             }
-            else if (katig = true)
+            else
             {
-                em.UpdateEventCategory(1, katigoriacomboboxselect());
+                Addplay.Enabled = true;
             }
-            else if (per = true)
-            {
-                em.UpdateEventDescription(1, perigrafi.Text);
-
-            }
-            else if (dur = true) {
-                em.UpdateEventDuration(1, selectedduration());
-            }
-            tit = false;
-            katig = false;
-            per = false;
-            dur = false;
-            savechanges.Visible = false;
-            createEvent.Visible = true;
-            createEvent.Enabled = false;
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void savebtn_Click(object sender, EventArgs e)
         {
+           
 
         }
     }

@@ -13,7 +13,7 @@ namespace Project_4.App_Code
         private String name;
         private String location;
         private int capacity;
-        
+        private static List<String> venues = new List<String>();
 
         public Venue()
         {
@@ -51,6 +51,18 @@ namespace Project_4.App_Code
         public int GetCapacity()
         {
             return capacity;
+        }
+        public List<String> getAllVenues()
+        {
+            enventDataSetTableAdapters.venuesTableAdapter ven = new enventDataSetTableAdapters.venuesTableAdapter();
+            List<enventDataSet.venuesRow> res = ven.getAllVenueNames().ToList();
+            for(int i=0;i<res.Count; i++)
+            {
+                String venue = res.ElementAt(i).name;
+                venues.Add(venue);
+            }
+            return venues;
+
         }
     }
 }
