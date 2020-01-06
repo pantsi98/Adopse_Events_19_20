@@ -83,7 +83,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1130, 745);
             this.panel2.TabIndex = 15;
-          
             // 
             // dobPicker
             // 
@@ -160,7 +159,6 @@
             this.confimrpassLabel.TabIndex = 43;
             this.confimrpassLabel.Text = "Ο κωδικός δεν ταιριάζει.";
             this.confimrpassLabel.Visible = false;
-         
             // 
             // passwordLabel
             // 
@@ -171,12 +169,11 @@
             this.passwordLabel.Location = new System.Drawing.Point(223, 124);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(722, 22);
+            this.passwordLabel.Size = new System.Drawing.Size(780, 22);
             this.passwordLabel.TabIndex = 42;
-            this.passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμε" +
-    "ρο.";
+            this.passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , νούμερο, κεφαλαιο και μικ" +
+    "ρό γράμμα .";
             this.passwordLabel.Visible = false;
-            
             // 
             // usernameLabel
             // 
@@ -189,7 +186,6 @@
             this.usernameLabel.TabIndex = 41;
             this.usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται ήδη.";
             this.usernameLabel.Visible = false;
-          
             // 
             // emailLabel
             // 
@@ -202,7 +198,6 @@
             this.emailLabel.TabIndex = 40;
             this.emailLabel.Text = "To email δεν είναι έγκυρο.";
             this.emailLabel.Visible = false;
-         
             // 
             // address
             // 
@@ -398,12 +393,12 @@
             this.Onoma.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Onoma_MouseClick);
             this.Onoma.Leave += new System.EventHandler(this.Onoma_Leave);
             // 
-            // SignUpEventMnager
+            // SignUpEventManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "SignUpEventMnager";
+            this.Name = "SignUpEventManager";
             this.Size = new System.Drawing.Size(1134, 750);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

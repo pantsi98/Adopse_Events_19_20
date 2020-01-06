@@ -34,16 +34,19 @@ namespace Project_4.User_Classes
                 MessageBox.Show(msg.ToString());
             }
         }
-        public void CreatePlay(int event_id, int venue_id, DateTime date)
+        public int CreatePlay(int event_id, int venue_id, DateTime date)
         {
             try
             {
                 enventDataSetTableAdapters.playTableAdapter pl = new enventDataSetTableAdapters.playTableAdapter();
                 pl.createPlay(event_id, venue_id, date);
+                int play_id = pl.getPlayId(event_id, date).Value;
+                return play_id;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                return 0;
             }
         }
 
