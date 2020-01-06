@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Project_4.App_Code
 {
@@ -11,7 +12,7 @@ namespace Project_4.App_Code
     {
         private int id;
         private String type;
-        private float price;
+        private int price;
         private int play_id;
 
 
@@ -50,11 +51,20 @@ namespace Project_4.App_Code
         {
             return price;
         }
-        public void CreateTicket(string type,float price, int play_id)
+        public void CreateTicket(string type,int price, int play_id)
         {
-            this.type = type;
-            this.price = price;
-            this.play_id = play_id;
+            try
+            {
+                enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
+
+                this.type = type;
+                this.price = price;
+                this.play_id = play_id;
+                tick.createTicket(type, price, play_id);
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
     }

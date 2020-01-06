@@ -17,6 +17,7 @@ namespace Project_4
         User uem = InstanceOfUser.GetUser();
         Play play =new Play(1);
         int event_id;
+        int venue_id;
        
         public CreateNewEvent()
         {
@@ -175,7 +176,11 @@ namespace Project_4
             Ticket tic = new Ticket();
             tic.CreateTicket("normal", normalticket, play_id);
             tic.CreateTicket("reduced", reducedticket, play_id);
+            string location_combobox_text = topothesia.SelectedItem.ToString();
 
+            enventDataSetTableAdapters.venuesTableAdapter vn = new enventDataSetTableAdapters.venuesTableAdapter();
+            venue_id = vn.GetVenueIdFromVenueName(location_combobox_text).GetValueOrDefault();
+            //em.Createplay()..... To do
 
 
 

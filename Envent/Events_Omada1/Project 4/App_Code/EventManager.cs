@@ -23,15 +23,27 @@ namespace Project_4.User_Classes
             return profile;
         }
 
-        public void CreateEvent(string title, int category, string description, int duration)
+        public void CreateEvent(string title, int category, string description, int duration,string img)
         {
             try{
                 enventDataSetTableAdapters.eventsTableAdapter ev = new enventDataSetTableAdapters.eventsTableAdapter();
-                ev.createEvent(title, category, description, this.GetUserID(), duration, true);
+                ev.createEvent(title, category, description, this.GetUserID(), duration, true,img);
                 
             }catch(EventException msg)
             {
                 MessageBox.Show(msg.ToString());
+            }
+        }
+        public void CreatePlay(int event_id, int venue_id, DateTime date)
+        {
+            try
+            {
+                enventDataSetTableAdapters.playTableAdapter pl = new enventDataSetTableAdapters.playTableAdapter();
+                pl.createPlay(event_id, venue_id, date);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
 
