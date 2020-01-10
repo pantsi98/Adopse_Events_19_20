@@ -23,35 +23,16 @@ namespace Project_4.User_Classes
             return profile;
         }
 
-        public void CreateEvent(string title, int category, string description, int duration,string img)
+        public void CreateEvent(string title, int category, string description, int duration)
         {
             try{
                 enventDataSetTableAdapters.eventsTableAdapter ev = new enventDataSetTableAdapters.eventsTableAdapter();
-                ev.createEvent(title, category, description, this.GetUserID(), duration, true,img);
-                
+                ev.createEvent(title, category, description, this.GetUserID(), duration, true);
             }catch(EventException msg)
             {
                 MessageBox.Show(msg.ToString());
             }
         }
-        public int CreatePlay(int event_id, int venue_id, DateTime date)
-        {
-            try
-            {
-                enventDataSetTableAdapters.playTableAdapter pl = new enventDataSetTableAdapters.playTableAdapter();
-                pl.createPlay(event_id, venue_id, date);
-                int play_id = pl.getPlayId(event_id, date).Value;
-                return play_id;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return 0;
-            }
-        }
-
-
-
 
         public void ChangeEventStatus(int eventID , bool status)
         {
@@ -154,19 +135,6 @@ namespace Project_4.User_Classes
             catch (EventException msg)
             {
                 MessageBox.Show(msg.ToString());
-            }
-        }
-
-        public int GetEventIdByTtitle(string title)
-        {
-            try {
-                enventDataSetTableAdapters.eventsTableAdapter ev = new enventDataSetTableAdapters.eventsTableAdapter();
-                int id = ev.getIdFromTitle(title).Value;
-                return id;
-            }
-            catch(Exception ex)
-            {
-                return 0;
             }
         }
     }

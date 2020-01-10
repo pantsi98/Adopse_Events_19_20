@@ -256,12 +256,6 @@
     <Compile Include="Splash_Animation.Designer.cs">
       <DependentUpon>Splash_Animation.cs</DependentUpon>
     </Compile>
-    <Compile Include="updateEvent.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="updateEvent.Designer.cs">
-      <DependentUpon>updateEvent.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="App_Code\StaticMethods\BufferedPanel.resx">
       <DependentUpon>BufferedPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,9 +327,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Splash_Animation.resx">
       <DependentUpon>Splash_Animation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="updateEvent.resx">
-      <DependentUpon>updateEvent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="enventDataSet.xsc">
       <DependentUpon>enventDataSet.xsd</DependentUpon>

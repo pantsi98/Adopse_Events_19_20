@@ -213,7 +213,7 @@ namespace Project_4
                 if (!App_Code.StaticMethods.ValidationCheck.PasswordIsValid(Kodikos1.Text))
                 {
                     passwordLabel.Visible = true;
-                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες ,νούμερο, κεφαλαιο και μικρό γράμμα.";
+                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμερο.";
                     checkpassIsValid = false;
                 }
 
