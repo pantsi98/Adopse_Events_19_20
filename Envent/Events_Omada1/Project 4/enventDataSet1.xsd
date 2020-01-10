@@ -1293,6 +1293,7 @@ WHERE `email` = @email</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              </DbSource>
             </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="preffered_categoriesTableAdapter" GeneratorDataComponentClassName="preffered_categoriesTableAdapter" Name="preffered_categories" UserDataComponentName="preffered_categoriesTableAdapter">
