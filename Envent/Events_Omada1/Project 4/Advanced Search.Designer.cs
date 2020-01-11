@@ -44,6 +44,9 @@
             this.until_label = new System.Windows.Forms.Label();
             this.category_label = new System.Windows.Forms.Label();
             this.city_label = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.enventDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enventDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
@@ -106,8 +109,8 @@
             "Music",
             "Conference",
             "Festival",
-            "FootBall",
-            "BasketBall"});
+            "Soccer",
+            "Basketball"});
             this.categoryBox.Location = new System.Drawing.Point(262, 178);
             this.categoryBox.Name = "categoryBox";
             this.categoryBox.Size = new System.Drawing.Size(121, 21);
@@ -182,11 +185,21 @@
             this.city_label.TabIndex = 11;
             this.city_label.Text = "Πόλη";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(96, 270);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Press Enter To Search";
+            // 
             // Advanced_Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.city_label);
             this.Controls.Add(this.category_label);
             this.Controls.Add(this.until_label);
@@ -226,5 +239,8 @@
         private System.Windows.Forms.Label until_label;
         private System.Windows.Forms.Label category_label;
         private System.Windows.Forms.Label city_label;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }

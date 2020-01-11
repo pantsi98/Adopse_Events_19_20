@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
+using System.Windows;
 //Author Τζέιμς Μπαλάση
 
 namespace Project_4.User_Classes
@@ -34,28 +35,40 @@ namespace Project_4.User_Classes
             return results;
         }
 
-        public List<Event> FilterSearch(string keyword, int catid,DateTime pick1 , DateTime pick2,string city)
+        public List<Event> FilterSearch(string keyword, string category,DateTime pick1 , DateTime pick2,string city)
         {
             List<int> playsVenue = new List<int>();
             List<int> eventsPlays = new List<int>();
             List<Event> results = this.SearchForEvent(keyword);
-            results = results.FindAll(x => x.GetCategory() == catid);
-            playsVenue = Venue.venues.FindAll(x => x.GetCity() == city).Select(l => l.GetId()).ToList();
-            eventsPlays = App_Code.Play.plays.FindAll(x => (DateTime.Compare(x.getDates(),pick2)<= 0) && !eventsPlays.Contains(x.GetEventID())).Select(l => l.GetEventID()).ToList();
-            
-            if (!eventsPlays.Any())
+            if (category.Length != 0)
             {
-                foreach (int i in App_Code.Play.plays.FindAll(x => (DateTime.Compare(x.getDates(), pick1) >= 0) && !eventsPlays.Contains(x.GetEventID())).Select(l => l.GetEventID()).ToList())
+                int catid = App_Code.StaticMethods.Categories.NameToID(category);
+                results = results.FindAll(x => x.GetCategory() == catid);
+            }
+            if (city.Length != 0)
+            {
+                playsVenue = Venue.venues.FindAll(x => x.GetCity() == city).Select(l => l.GetId()).ToList();
+            }
+            else
+            {
+                playsVenue = Venue.venues.Select(l => l.GetId()).ToList();
+            }
+            eventsPlays = App_Code.Play.plays.FindAll(x => (DateTime.Compare(x.getDates(),pick2)<= 0) && !eventsPlays.Contains(x.GetEventID())).Select(l => l.GetEventID()).ToList();
+                foreach (int i in App_Code.Play.plays.FindAll(x => (DateTime.Compare(x.getDates(), pick1) < 0) && eventsPlays.Contains(x.GetEventID())).Select(l => l.GetEventID()).ToList())
+                {
+                    if (eventsPlays.Any()) { 
+                        eventsPlays.Remove(i);
+                    }
+                    else { break; }
+                }
+            foreach (int i in App_Code.Play.plays.FindAll(x => !playsVenue.Contains(x.GetVenueID())).Select(l => l.GetEventID()).ToList())
+            {
+                if (eventsPlays.Any())
                 {
                     eventsPlays.Remove(i);
                 }
+                else { break; }
             }
-
-            foreach (int i in App_Code.Play.plays.FindAll(x => !playsVenue.Contains(x.GetVenueID())).Select(l => l.GetEventID()).ToList())
-            {
-                eventsPlays.Remove(i);
-            }
-
             results = results.FindAll(x => eventsPlays.Contains(x.GetID()));
             return results;
         }

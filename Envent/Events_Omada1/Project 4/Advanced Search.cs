@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_4.User_Classes;
+using Project_4.App_Code.StaticMethods;
 
 namespace Project_4
 {
@@ -14,7 +16,6 @@ namespace Project_4
     {
 
         Pen pen = new Pen(Color.FromArgb(86, 128, 233), 3);
-
         public Advanced_Search()
         {
             InitializeComponent();
