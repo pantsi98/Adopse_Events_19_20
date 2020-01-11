@@ -512,7 +512,7 @@
             this.Kodikos1.Size = new System.Drawing.Size(532, 27);
             this.Kodikos1.TabIndex = 9;
             this.Kodikos1.Text = "Κωδικός";
-            this.Kodikos1.Enter += new System.EventHandler(this.Kodikos1_MouseClick);
+            this.Kodikos1.Enter += new System.EventHandler(this.Kodikos1_Enter);
             this.Kodikos1.Leave += new System.EventHandler(this.Kodikos1_Leave);
             // 
             // Kodikos2
@@ -525,7 +525,7 @@
             this.Kodikos2.Size = new System.Drawing.Size(532, 27);
             this.Kodikos2.TabIndex = 10;
             this.Kodikos2.Text = "Επαλήθευση Κωδικού";
-            this.Kodikos2.Enter += new System.EventHandler(this.Kodikos2_MouseClick);
+            this.Kodikos2.Enter += new System.EventHandler(this.Kodikos2_Enter);
             this.Kodikos2.Leave += new System.EventHandler(this.Kodikos2_Leave);
             // 
             // Epitheto
