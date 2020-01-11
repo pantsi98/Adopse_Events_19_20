@@ -75,11 +75,6 @@ namespace Project_4
                 System.Windows.Forms.MessageBox.Show("Η πληρωμή με κάρτα δεν είναι ακόμη διαθέσιμη", "Μη διαθέσιμος τρόπος πληρωμής",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
-
-        private void booking_panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
 

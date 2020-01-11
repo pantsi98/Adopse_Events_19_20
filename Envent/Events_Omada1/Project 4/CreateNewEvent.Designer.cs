@@ -67,23 +67,23 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.createplaypanel = new System.Windows.Forms.Panel();
             this.timepicker = new System.Windows.Forms.DateTimePicker();
+            this.circularPicture5 = new Project_4.App_Code.circularPicture();
+            this.circularPicture1 = new Project_4.App_Code.circularPicture();
+            this.circularPicture2 = new Project_4.App_Code.circularPicture();
+            this.circularPicture3 = new Project_4.App_Code.circularPicture();
             this.savechanges = new System.Windows.Forms.Button();
             this.circularPicture4 = new Project_4.App_Code.circularPicture();
-            this.circularPicture3 = new Project_4.App_Code.circularPicture();
-            this.circularPicture2 = new Project_4.App_Code.circularPicture();
-            this.circularPicture1 = new Project_4.App_Code.circularPicture();
-            this.circularPicture5 = new Project_4.App_Code.circularPicture();
             ((System.ComponentModel.ISupportInitialize)(this.meiomenoticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kanonikoticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationhour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.createplaypanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).BeginInit();
             this.SuspendLayout();
             // 
             // label20
@@ -488,6 +488,54 @@
             this.timepicker.Size = new System.Drawing.Size(314, 22);
             this.timepicker.TabIndex = 125;
             // 
+            // circularPicture5
+            // 
+            this.circularPicture5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture5.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture5.Location = new System.Drawing.Point(463, 71);
+            this.circularPicture5.Name = "circularPicture5";
+            this.circularPicture5.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture5.TabIndex = 127;
+            this.circularPicture5.TabStop = false;
+            this.circularPicture5.Click += new System.EventHandler(this.circularPicture5_Click);
+            // 
+            // circularPicture1
+            // 
+            this.circularPicture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture1.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture1.Location = new System.Drawing.Point(463, 122);
+            this.circularPicture1.Name = "circularPicture1";
+            this.circularPicture1.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture1.TabIndex = 128;
+            this.circularPicture1.TabStop = false;
+            this.circularPicture1.Click += new System.EventHandler(this.circularPicture1_Click);
+            // 
+            // circularPicture2
+            // 
+            this.circularPicture2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture2.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture2.Location = new System.Drawing.Point(463, 216);
+            this.circularPicture2.Name = "circularPicture2";
+            this.circularPicture2.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture2.TabIndex = 129;
+            this.circularPicture2.TabStop = false;
+            this.circularPicture2.Click += new System.EventHandler(this.circularPicture2_Click);
+            // 
+            // circularPicture3
+            // 
+            this.circularPicture3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circularPicture3.Image = global::Project_4.Properties.Resources.editIcon;
+            this.circularPicture3.Location = new System.Drawing.Point(463, 424);
+            this.circularPicture3.Name = "circularPicture3";
+            this.circularPicture3.Size = new System.Drawing.Size(49, 27);
+            this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPicture3.TabIndex = 130;
+            this.circularPicture3.TabStop = false;
+            this.circularPicture3.Click += new System.EventHandler(this.circularPicture3_Click);
+            // 
             // savechanges
             // 
             this.savechanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
@@ -515,54 +563,6 @@
             this.circularPicture4.TabIndex = 132;
             this.circularPicture4.TabStop = false;
             this.circularPicture4.Click += new System.EventHandler(this.circularPicture4_Click);
-            // 
-            // circularPicture3
-            // 
-            this.circularPicture3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture3.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture3.Location = new System.Drawing.Point(463, 424);
-            this.circularPicture3.Name = "circularPicture3";
-            this.circularPicture3.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture3.TabIndex = 130;
-            this.circularPicture3.TabStop = false;
-            this.circularPicture3.Click += new System.EventHandler(this.circularPicture3_Click);
-            // 
-            // circularPicture2
-            // 
-            this.circularPicture2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture2.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture2.Location = new System.Drawing.Point(463, 216);
-            this.circularPicture2.Name = "circularPicture2";
-            this.circularPicture2.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture2.TabIndex = 129;
-            this.circularPicture2.TabStop = false;
-            this.circularPicture2.Click += new System.EventHandler(this.circularPicture2_Click);
-            // 
-            // circularPicture1
-            // 
-            this.circularPicture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture1.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture1.Location = new System.Drawing.Point(463, 122);
-            this.circularPicture1.Name = "circularPicture1";
-            this.circularPicture1.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture1.TabIndex = 128;
-            this.circularPicture1.TabStop = false;
-            this.circularPicture1.Click += new System.EventHandler(this.circularPicture1_Click);
-            // 
-            // circularPicture5
-            // 
-            this.circularPicture5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.circularPicture5.Image = global::Project_4.Properties.Resources.editIcon;
-            this.circularPicture5.Location = new System.Drawing.Point(463, 71);
-            this.circularPicture5.Name = "circularPicture5";
-            this.circularPicture5.Size = new System.Drawing.Size(49, 27);
-            this.circularPicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPicture5.TabIndex = 127;
-            this.circularPicture5.TabStop = false;
-            this.circularPicture5.Click += new System.EventHandler(this.circularPicture5_Click);
             // 
             // CreateNewEvent
             // 
@@ -594,7 +594,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "CreateNewEvent";
-            this.Size = new System.Drawing.Size(1235, 785);
+            this.Size = new System.Drawing.Size(1149, 697);
             this.Load += new System.EventHandler(this.CreateNewEvent_Load);
             this.MouseHover += new System.EventHandler(this.CreateNewEvent_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.meiomenoticket)).EndInit();
@@ -604,11 +604,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.createplaypanel.ResumeLayout(false);
             this.createplaypanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPicture5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicture4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
