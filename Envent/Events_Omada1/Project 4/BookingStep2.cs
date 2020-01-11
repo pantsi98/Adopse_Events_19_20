@@ -16,21 +16,29 @@ namespace Project_4
 {
     public partial class BookingStep2 : UserControl
     {
+        int user_id;
+        int event_id;
+        string event_date;
+        int normal_tickets_count;
+        int reduced_tickets_count;
         public BookingStep2()
         {
+            
             InitializeComponent();
         }
 
         public BookingStep2(int id, string date, string pay_type, int normal , int reduced)
         {
             
-                InitializeComponent();
-                //pairno titlo tou event
-                Event ev = new Event(id);
-                //pairno ta tickets
-                enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
-                float normal_ticket_price = (float)tick.GetNormalPriceEventId(id);
-                float reduced_ticket_price = (float)tick.GetReducedPriceEventId(id);
+            InitializeComponent();
+            //pairno titlo tou event
+            Event ev = new Event(id);
+            event_id = id;
+            event_date = date;
+            //pairno ta tickets
+            enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
+            float normal_ticket_price = (float)tick.GetNormalPriceEventId(id);
+            float reduced_ticket_price = (float)tick.GetReducedPriceEventId(id);
 
 
             User x = InstanceOfUser.GetUser();
@@ -38,6 +46,7 @@ namespace Project_4
             if(x is Project_4.App_Code.NormalUser) {
                 NormalUser nr = (NormalUser)x;
                 name_label.Text = nr.GetProfile().GetLastName() + " " + nr.GetProfile().GetFirstName();
+                user_id = nr.GetUserID();
             }
                 
             PlayTitle_label.Text = ev.GetTitle();
@@ -49,7 +58,9 @@ namespace Project_4
 
             float total_price = normal_ticket_price * normal + reduced_ticket_price * reduced;
             total_Price.Text = total_price.ToString();
-            
+
+            normal_tickets_count = normal;
+            reduced_tickets_count = reduced;
         }
 
         private void label3_Click(object sender, EventArgs e)
