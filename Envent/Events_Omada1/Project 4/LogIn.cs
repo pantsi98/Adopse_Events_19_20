@@ -52,6 +52,23 @@ namespace Project_4
             }
         }
 
+        private void PasswordLog_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PasswordLog_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PasswordLog.ForeColor = Color.Black;
+            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
+            {
+
+                PasswordLog.Text = "";
+                PasswordLog.ForeColor = Color.Black;
+                PasswordLog.PasswordChar = '*';
+            }
+        }
+
         private void UsernameLog_Leave(object sender, EventArgs e)
         {
             if (UsernameLog.Text == "")
@@ -110,7 +127,7 @@ namespace Project_4
                     Cursor.Current = Cursors.WaitCursor;
                     vis.LogInAsNormalUser(username, password);
                     Cursor.Current = Cursors.Default;
-                    if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "OK", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                    if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "Επιτυχής Σύνδεση", MessageBoxButtons.OK,MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.OK)
                     {
                         Control parent = this.Parent;
                         while (parent.Name != "Form1")
@@ -147,7 +164,7 @@ namespace Project_4
                         Cursor.Current = Cursors.WaitCursor;
                         vis.LogInAsEventManager(username, password);
                         Cursor.Current = Cursors.Default;
-                        if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "OK", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                        if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "Επιτυχής Σύνδεση", MessageBoxButtons.OK, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.OK)
                         {
                             Control parent = this.Parent;
                             while (parent.Name != "homepagePanel")
