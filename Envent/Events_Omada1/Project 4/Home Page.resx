@@ -194,19 +194,19 @@
   </data>
   <data name="cinemaBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        Vus3Mi6L7xg213gAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="sportsBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

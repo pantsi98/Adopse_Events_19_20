@@ -139,6 +139,7 @@
             // 
             this.MainPanel.AutoScroll = true;
             this.MainPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MainPanel.BackColor = System.Drawing.Color.White;
             this.MainPanel.Location = new System.Drawing.Point(300, 61);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainPanel.Name = "MainPanel";
