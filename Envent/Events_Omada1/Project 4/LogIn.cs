@@ -40,17 +40,7 @@ namespace Project_4
 
             }
  }
-        private void PasswordLog_Click(object sender, EventArgs e)
-        {
-            PasswordLog.ForeColor = Color.Black;
-            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
-            {
-
-                PasswordLog.Text = "";
-                PasswordLog.ForeColor = Color.Black;
-                PasswordLog.PasswordChar = '*';
-            }
-        }
+        
 
         private void UsernameLog_Leave(object sender, EventArgs e)
         {
@@ -205,6 +195,19 @@ namespace Project_4
 
         private void UsernameLog_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void PasswordLog_Enter(object sender, EventArgs e)
+        {
+            PasswordLog.ForeColor = Color.Black;
+            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
+            {
+
+                PasswordLog.Text = "";
+                PasswordLog.ForeColor = Color.Black;
+                PasswordLog.PasswordChar = '*';
+            }
 
         }
     }

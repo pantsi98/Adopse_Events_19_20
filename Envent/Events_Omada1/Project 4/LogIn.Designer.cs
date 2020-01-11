@@ -121,7 +121,8 @@
             this.PasswordLog.Size = new System.Drawing.Size(345, 34);
             this.PasswordLog.TabIndex = 1;
             this.PasswordLog.Text = "Κωδικός";
-            this.PasswordLog.Click += new System.EventHandler(this.PasswordLog_Click);
+          
+            this.PasswordLog.Enter += new System.EventHandler(this.PasswordLog_Enter);
             this.PasswordLog.Leave += new System.EventHandler(this.PasswordLog_Leave);
             // 
             // UsernameLog

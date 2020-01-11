@@ -83,7 +83,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1130, 745);
             this.panel2.TabIndex = 15;
-          
             // 
             // dobPicker
             // 
@@ -113,13 +112,13 @@
             this.femaleRadioButton.Name = "femaleRadioButton";
             this.femaleRadioButton.Size = new System.Drawing.Size(94, 26);
             this.femaleRadioButton.TabIndex = 32;
-            this.femaleRadioButton.TabStop = true;
             this.femaleRadioButton.Text = "Γυναίκα";
             this.femaleRadioButton.UseVisualStyleBackColor = true;
             // 
             // maleRadioButton
             // 
             this.maleRadioButton.AutoSize = true;
+            this.maleRadioButton.Checked = true;
             this.maleRadioButton.Location = new System.Drawing.Point(8, 12);
             this.maleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.maleRadioButton.Name = "maleRadioButton";
@@ -160,7 +159,6 @@
             this.confimrpassLabel.TabIndex = 43;
             this.confimrpassLabel.Text = "Ο κωδικός δεν ταιριάζει.";
             this.confimrpassLabel.Visible = false;
-         
             // 
             // passwordLabel
             // 
@@ -176,7 +174,6 @@
             this.passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμε" +
     "ρο.";
             this.passwordLabel.Visible = false;
-            
             // 
             // usernameLabel
             // 
@@ -189,7 +186,6 @@
             this.usernameLabel.TabIndex = 41;
             this.usernameLabel.Text = "Το ψευδόνυμο που επιλέξατε χρησιμοποιείται ήδη.";
             this.usernameLabel.Visible = false;
-          
             // 
             // emailLabel
             // 
@@ -202,7 +198,6 @@
             this.emailLabel.TabIndex = 40;
             this.emailLabel.Text = "To email δεν είναι έγκυρο.";
             this.emailLabel.Visible = false;
-         
             // 
             // address
             // 
@@ -273,6 +268,8 @@
             this.address.Size = new System.Drawing.Size(472, 27);
             this.address.TabIndex = 31;
             this.address.Text = "Περιοχή";
+            this.address.MouseClick += new System.Windows.Forms.MouseEventHandler(this.address_MouseClick);
+            this.address.Leave += new System.EventHandler(this.address_Leave_1);
             // 
             // panel1
             // 
@@ -359,7 +356,7 @@
             this.Kodikos1.Size = new System.Drawing.Size(472, 27);
             this.Kodikos1.TabIndex = 8;
             this.Kodikos1.Text = "Κωδικός";
-            this.Kodikos1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kodikos1_MouseClick);
+            this.Kodikos1.Enter += new System.EventHandler(this.Kodikos1_Enter);
             this.Kodikos1.Leave += new System.EventHandler(this.Kodikos1_Leave);
             // 
             // Kodikos2
@@ -371,7 +368,7 @@
             this.Kodikos2.Size = new System.Drawing.Size(472, 27);
             this.Kodikos2.TabIndex = 9;
             this.Kodikos2.Text = "Επαλήθευση Κωδικού";
-            this.Kodikos2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kodikos2_MouseClick);
+            this.Kodikos2.Enter += new System.EventHandler(this.Kodikos2_Enter);
             this.Kodikos2.Leave += new System.EventHandler(this.Kodikos2_Leave);
             // 
             // Epitheto
@@ -398,12 +395,12 @@
             this.Onoma.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Onoma_MouseClick);
             this.Onoma.Leave += new System.EventHandler(this.Onoma_Leave);
             // 
-            // SignUpEventMnager
+            // SignUpEventManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "SignUpEventMnager";
+            this.Name = "SignUpEventManager";
             this.Size = new System.Drawing.Size(1134, 750);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

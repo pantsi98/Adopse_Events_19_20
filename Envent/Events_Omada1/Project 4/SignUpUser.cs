@@ -85,7 +85,7 @@ namespace Project_4
 
             }
         }
-        private void Kodikos1_MouseClick(object sender, EventArgs e)
+        private void Kodikos1_Enter(object sender, EventArgs e)
         {
             Kodikos1.ForeColor = Color.Black;
             if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
@@ -95,10 +95,10 @@ namespace Project_4
                 Kodikos1.ForeColor = Color.Black;
                 Kodikos1.PasswordChar = '*';
             }
+           
 
         }
-
-        private void Kodikos2_MouseClick(object sender, EventArgs e)
+        private void Kodikos2_Enter(object sender, EventArgs e)
         {
             Kodikos2.ForeColor = Color.Black;
             if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "Παρακαλώ συμπλήρωστε Κωδικό Επαλήθευσης")
@@ -108,7 +108,9 @@ namespace Project_4
                 Kodikos2.ForeColor = Color.Black;
                 Kodikos2.PasswordChar = '*';
             }
+
         }
+
         Boolean deiktislathwn;
         private Boolean AllCheck()
         {
@@ -383,5 +385,7 @@ namespace Project_4
             }
             Cursor.Current = Cursors.Default;
         }
+
+      
     }
 }
