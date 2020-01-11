@@ -52,10 +52,6 @@ namespace Project_4
             }
         }
 
-        private void PasswordLog_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
 
         private void PasswordLog_KeyPress(object sender, KeyPressEventArgs e)
         {
