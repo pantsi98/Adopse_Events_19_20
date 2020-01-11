@@ -12,10 +12,11 @@ namespace Project_4.App_Code
     {
         private Event ev;
         private Venue venue;
-        private static List<DateTime> dates = new List<DateTime>();
+        private static List<DateTime> dates;
         private bool status;
 
         public Play(int eventID) {
+            dates = new List<DateTime>();
             enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
             List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
             for (int i = 0; i < res.Count; i++)
@@ -28,13 +29,8 @@ namespace Project_4.App_Code
 
         public List<DateTime> GetDates()
         {
-            List<DateTime> dt = new List<DateTime>();
-            foreach(DateTime i in dates)
-            {
-                dt.Add(i.Date.Date);
-                Debug.WriteLine(i.Date.Date);
-            }
-            return dt;
+
+            return dates;
         }
     }
 }

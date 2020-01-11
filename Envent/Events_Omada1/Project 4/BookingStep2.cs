@@ -11,6 +11,7 @@ using Project_4.User_Classes;
 using Project_4.App_Code.StaticMethods;
 using Project_4.App_Code;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace Project_4
 {
@@ -18,7 +19,11 @@ namespace Project_4
     {
         int user_id;
         int event_id;
-        string event_date;
+        DateTime event_date;
+        DateTime date_new;
+        string date_string;
+
+
         int normal_tickets_count;
         int reduced_tickets_count;
         public BookingStep2()
@@ -27,7 +32,7 @@ namespace Project_4
             InitializeComponent();
         }
 
-        public BookingStep2(int id, string date, string pay_type, int normal , int reduced)
+        public BookingStep2(int id, DateTime date, string pay_type, int normal , int reduced)
         {
             
             InitializeComponent();
@@ -35,6 +40,9 @@ namespace Project_4
             Event ev = new Event(id);
             event_id = id;
             event_date = date;
+            date_string = event_date.ToString();
+            date_new = DateTime.ParseExact(date_string, "yyyy-MM-dd HH:mm:ss", null);
+      
             //pairno ta tickets
             enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
             float normal_ticket_price = (float)tick.GetNormalPriceEventId(id);
@@ -50,7 +58,7 @@ namespace Project_4
             }
                 
             PlayTitle_label.Text = ev.GetTitle();
-            date_label.Text = date;
+            date_label.Text = date.ToString();
             normalTickets_Label.Text = normal.ToString();
             reducedTickets_Label.Text = reduced.ToString();
             label5.Text += "(" + normal_ticket_price + "€) :";
@@ -70,7 +78,15 @@ namespace Project_4
 
         private void PlayTitle_label_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void next_button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(event_id.ToString());
+            enventDbDataSetTableAdapters.reservationsTableAdapter rsv = new enventDbDataSetTableAdapters.reservationsTableAdapter();
+            MessageBox.Show(date_new.ToString());
+            rsv.createRsv(user_id, event_id,date_new, normal_tickets_count, reduced_tickets_count);
         }
     }
 }

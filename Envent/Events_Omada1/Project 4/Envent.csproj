@@ -159,6 +159,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="enventDbDataSet.cs">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="enventDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EventFullDescription.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -345,6 +353,17 @@
     </None>
     <None Include="enventDataSet1.xss">
       <DependentUpon>enventDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet.xsc">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="enventDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>enventDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="enventDbDataSet.xss">
+      <DependentUpon>enventDbDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
