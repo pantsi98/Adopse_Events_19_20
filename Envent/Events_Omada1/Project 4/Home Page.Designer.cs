@@ -67,7 +67,7 @@
             this.homepagePanel.Location = new System.Drawing.Point(0, 0);
             this.homepagePanel.Margin = new System.Windows.Forms.Padding(2);
             this.homepagePanel.Name = "homepagePanel";
-            this.homepagePanel.Size = new System.Drawing.Size(1920, 61);
+            this.homepagePanel.Size = new System.Drawing.Size(1535, 61);
             this.homepagePanel.TabIndex = 2;
             // 
             // cCircularButton1

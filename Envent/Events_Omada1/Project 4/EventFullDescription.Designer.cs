@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.topothesia);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(14, 258);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(879, 81);
             this.panel1.TabIndex = 0;
@@ -103,7 +103,7 @@
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button8.Location = new System.Drawing.Point(740, 14);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(124, 50);
             this.button8.TabIndex = 4;
@@ -162,7 +162,7 @@
             this.IconEvent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.IconEvent.Image = global::Project_4.Properties.Resources.Banff_Canada_s;
             this.IconEvent.Location = new System.Drawing.Point(14, 17);
-            this.IconEvent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IconEvent.Margin = new System.Windows.Forms.Padding(2);
             this.IconEvent.Name = "IconEvent";
             this.IconEvent.Size = new System.Drawing.Size(880, 222);
             this.IconEvent.TabIndex = 1;
@@ -174,23 +174,11 @@
             this.panel2.Controls.Add(this.IconEvent);
             this.panel2.ForeColor = System.Drawing.Color.Coral;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(909, 252);
             this.panel2.TabIndex = 2;
             // 
-            // tabControl1
-            // 
-            /*this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tabControl1.Location = new System.Drawing.Point(14, 391);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(879, 275);
-            this.tabControl1.TabIndex = 3;*/
             // book_tab
             // 
             this.book_tab.Controls.Add(this.tabPage1);
@@ -215,9 +203,9 @@
             this.tabPage1.Controls.Add(this.perigrafilabel);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(871, 245);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Περιγραφή";
@@ -287,9 +275,9 @@
             this.tabPage2.Controls.Add(this.NameofPlace);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(871, 245);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Τοποθεσία";
@@ -356,7 +344,7 @@
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(871, 245);
             this.tabPage3.TabIndex = 2;
@@ -481,9 +469,9 @@
             this.Controls.Add(this.book_tab);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EventFullDescription";
-            this.Size = new System.Drawing.Size(911, 749);
+            this.Size = new System.Drawing.Size(1233, 784);
             this.Load += new System.EventHandler(this.EventFullDescription_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
