@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using Project_4.App_Code.StaticMethods;
+using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -40,7 +42,17 @@ namespace Project_4
 
             }
  }
-        
+        private void PasswordLog_Click(object sender, EventArgs e)
+        {
+            PasswordLog.ForeColor = Color.Black;
+            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
+            {
+
+                PasswordLog.Text = "";
+                PasswordLog.ForeColor = Color.Black;
+                PasswordLog.PasswordChar = '*';
+            }
+        }
 
 
         private void PasswordLog_KeyPress(object sender, KeyPressEventArgs e)
@@ -112,6 +124,8 @@ namespace Project_4
                     //try gia na dei ean einai normaluser
                     Cursor.Current = Cursors.WaitCursor;
                     vis.LogInAsNormalUser(username, password);
+                    NormalUser nu = (NormalUser)InstanceOfUser.GetUser();
+                    MessageBox.Show(nu.GetUserID().ToString());
                     Cursor.Current = Cursors.Default;
                     if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "Επιτυχής Σύνδεση", MessageBoxButtons.OK,MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.OK)
                     {
@@ -208,19 +222,6 @@ namespace Project_4
 
         private void UsernameLog_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void PasswordLog_Enter(object sender, EventArgs e)
-        {
-            PasswordLog.ForeColor = Color.Black;
-            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
-            {
-
-                PasswordLog.Text = "";
-                PasswordLog.ForeColor = Color.Black;
-                PasswordLog.PasswordChar = '*';
-            }
 
         }
     }
