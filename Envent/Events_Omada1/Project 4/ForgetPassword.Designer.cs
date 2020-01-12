@@ -54,9 +54,9 @@
             this.ForgotPaspanel.Controls.Add(this.EmailForgot);
             this.ForgotPaspanel.Controls.Add(this.label1);
             this.ForgotPaspanel.Location = new System.Drawing.Point(0, 0);
-            this.ForgotPaspanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ForgotPaspanel.Margin = new System.Windows.Forms.Padding(2);
             this.ForgotPaspanel.Name = "ForgotPaspanel";
-            this.ForgotPaspanel.Size = new System.Drawing.Size(848, 605);
+            this.ForgotPaspanel.Size = new System.Drawing.Size(1233, 784);
             this.ForgotPaspanel.TabIndex = 6;
             // 
             // labelSend
@@ -74,8 +74,8 @@
             this.ver_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ver_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.ver_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ver_button.Location = new System.Drawing.Point(353, 399);
-            this.ver_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ver_button.Location = new System.Drawing.Point(523, 501);
+            this.ver_button.Margin = new System.Windows.Forms.Padding(2);
             this.ver_button.Name = "ver_button";
             this.ver_button.Size = new System.Drawing.Size(161, 41);
             this.ver_button.TabIndex = 33;
@@ -87,8 +87,8 @@
             // 
             this.txtVerCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.txtVerCode.ForeColor = System.Drawing.Color.Gray;
-            this.txtVerCode.Location = new System.Drawing.Point(295, 348);
-            this.txtVerCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVerCode.Location = new System.Drawing.Point(475, 451);
+            this.txtVerCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtVerCode.Name = "txtVerCode";
             this.txtVerCode.Size = new System.Drawing.Size(261, 26);
             this.txtVerCode.TabIndex = 32;
@@ -99,7 +99,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(241, 313);
+            this.label3.Location = new System.Drawing.Point(398, 415);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(409, 17);
@@ -112,9 +112,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(848, 51);
+            this.panel1.Size = new System.Drawing.Size(1233, 51);
             this.panel1.TabIndex = 30;
             // 
             // label2
@@ -122,7 +122,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(290, 10);
+            this.label2.Location = new System.Drawing.Point(471, 13);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(287, 25);
@@ -135,8 +135,8 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(353, 212);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(523, 315);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 41);
             this.button1.TabIndex = 4;
@@ -148,8 +148,8 @@
             // 
             this.EmailForgot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.EmailForgot.ForeColor = System.Drawing.Color.Gray;
-            this.EmailForgot.Location = new System.Drawing.Point(294, 154);
-            this.EmailForgot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EmailForgot.Location = new System.Drawing.Point(475, 266);
+            this.EmailForgot.Margin = new System.Windows.Forms.Padding(2);
             this.EmailForgot.Name = "EmailForgot";
             this.EmailForgot.Size = new System.Drawing.Size(261, 26);
             this.EmailForgot.TabIndex = 3;
@@ -163,7 +163,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(176, 123);
+            this.label1.Location = new System.Drawing.Point(336, 227);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(560, 17);
@@ -177,7 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ForgotPaspanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ForgetPassword";
             this.Size = new System.Drawing.Size(1233, 784);
             this.ForgotPaspanel.ResumeLayout(false);

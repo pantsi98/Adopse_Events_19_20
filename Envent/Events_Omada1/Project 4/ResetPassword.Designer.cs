@@ -41,7 +41,7 @@
             // 
             this.new_pass_label.AutoSize = true;
             this.new_pass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.new_pass_label.Location = new System.Drawing.Point(109, 139);
+            this.new_pass_label.Location = new System.Drawing.Point(362, 355);
             this.new_pass_label.Name = "new_pass_label";
             this.new_pass_label.Size = new System.Drawing.Size(108, 20);
             this.new_pass_label.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.ver_new_pass.AutoSize = true;
             this.ver_new_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ver_new_pass.Location = new System.Drawing.Point(109, 173);
+            this.ver_new_pass.Location = new System.Drawing.Point(362, 389);
             this.ver_new_pass.Name = "ver_new_pass";
             this.ver_new_pass.Size = new System.Drawing.Size(202, 20);
             this.ver_new_pass.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // txtResetPass
             // 
-            this.txtResetPass.Location = new System.Drawing.Point(339, 139);
+            this.txtResetPass.Location = new System.Drawing.Point(592, 355);
             this.txtResetPass.Name = "txtResetPass";
             this.txtResetPass.PasswordChar = '*';
             this.txtResetPass.Size = new System.Drawing.Size(169, 20);
@@ -67,7 +67,7 @@
             // 
             // txtResetPassVer
             // 
-            this.txtResetPassVer.Location = new System.Drawing.Point(339, 173);
+            this.txtResetPassVer.Location = new System.Drawing.Point(592, 389);
             this.txtResetPassVer.Name = "txtResetPassVer";
             this.txtResetPassVer.PasswordChar = '*';
             this.txtResetPassVer.Size = new System.Drawing.Size(169, 20);
@@ -76,7 +76,7 @@
             // button_reset_pass
             // 
             this.button_reset_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_reset_pass.Location = new System.Drawing.Point(234, 228);
+            this.button_reset_pass.Location = new System.Drawing.Point(487, 444);
             this.button_reset_pass.Name = "button_reset_pass";
             this.button_reset_pass.Size = new System.Drawing.Size(139, 41);
             this.button_reset_pass.TabIndex = 4;
@@ -87,8 +87,8 @@
             // showPass
             // 
             this.showPass.AutoSize = true;
-            this.showPass.Location = new System.Drawing.Point(512, 139);
-            this.showPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showPass.Location = new System.Drawing.Point(765, 355);
+            this.showPass.Margin = new System.Windows.Forms.Padding(2);
             this.showPass.Name = "showPass";
             this.showPass.Size = new System.Drawing.Size(111, 17);
             this.showPass.TabIndex = 6;
