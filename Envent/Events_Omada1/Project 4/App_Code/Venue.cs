@@ -13,12 +13,7 @@ namespace Project_4.App_Code
         private String name;
         private String location;
         private int capacity;
-        private string telephone;
-        private string city;
-
-        static enventDataSetTableAdapters.venuesTableAdapter venueAdapter= new enventDataSetTableAdapters.venuesTableAdapter();
-        static List<enventDataSet.venuesRow> venueList = new List<enventDataSet.venuesRow>();
-        public static List<Venue> venues = new List<Venue>();
+        
 
         public Venue()
         {
@@ -41,17 +36,6 @@ namespace Project_4.App_Code
                 throw new VenueException("Το Venue δεν υπάρχει");
             }
         }
-
-        public Venue(int id, string name, string location, int capacity,string telephone, string city)
-        {
-            this.id = id;
-            this.name = name;
-            this.location = location;
-            this.capacity = capacity;
-            this.telephone = telephone;
-            this.city = city;
-        }
-
         public int GetId()
         {
             return id;
@@ -67,21 +51,6 @@ namespace Project_4.App_Code
         public int GetCapacity()
         {
             return capacity;
-        }
-
-        public static void FillVenuesData()
-        {
-            venueList = venueAdapter.GetVenues().ToList();
-            for (int i = 0; i < venueList.Count; i++)
-            {
-                Venue venueItem = new Venue(venueList.ElementAt(i).id, venueList.ElementAt(i).name, venueList.ElementAt(i).location, venueList.ElementAt(i).capacity, venueList.ElementAt(i).tel, venueList.ElementAt(i).city);
-                venues.Add(venueItem);
-            }
-        }
-
-        public string GetCity()
-        {
-            return this.city;
         }
     }
 }

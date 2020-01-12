@@ -29,7 +29,7 @@ namespace Project_4
             int indexEv;
 
             Dictionary<string, int> category = new Dictionary<string, int>();
-            category["musicPanel"] = 1; category["theaterPanel"] = 2; category["conferencePanel"] = 6; category["festivalsPanel"] = 4; category["sportsPanel"] = 8;
+            category["musicPanel"] = 1; category["theaterPanel"] = 2; category["conferencePanel"] = 3; category["festivalsPanel"] = 4; category["sportsPanel"] = 8;
             User user = InstanceOfUser.GetUser();
             List<Event> events = App_Code.StaticMethods.Events.events;
             List<Event> eventsCat = new List<Event>();
