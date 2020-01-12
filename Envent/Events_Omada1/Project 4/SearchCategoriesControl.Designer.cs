@@ -28,20 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.titleLabel = new System.Windows.Forms.Label();
-            this.tilePanel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tilePictureBox4 = new System.Windows.Forms.PictureBox();
-            this.tilePanel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tilePictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tilePanel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tilePictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tilePanel1 = new System.Windows.Forms.Panel();
-            this.tileLabel1 = new System.Windows.Forms.Label();
-            this.tilePictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tilePanel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -68,15 +54,20 @@
             this.tilePanel11 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.tilePictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.tilePanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox4)).BeginInit();
-            this.tilePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox3)).BeginInit();
-            this.tilePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox2)).BeginInit();
-            this.tilePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox1)).BeginInit();
+            this.tilePanel1 = new System.Windows.Forms.Panel();
+            this.tilePictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tileLabel1 = new System.Windows.Forms.Label();
+            this.tilePanel2 = new System.Windows.Forms.Panel();
+            this.tilePictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tilePanel3 = new System.Windows.Forms.Panel();
+            this.tilePictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tilePanel4 = new System.Windows.Forms.Panel();
+            this.tilePictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.tilePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox5)).BeginInit();
@@ -95,161 +86,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox10)).BeginInit();
             this.tilePanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox11)).BeginInit();
+            this.tilePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox1)).BeginInit();
+            this.tilePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox2)).BeginInit();
+            this.tilePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox3)).BeginInit();
+            this.tilePanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.titleLabel);
-            this.panel1.Controls.Add(this.tilePanel4);
-            this.panel1.Controls.Add(this.tilePanel3);
-            this.panel1.Controls.Add(this.tilePanel2);
-            this.panel1.Controls.Add(this.tilePanel1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1284, 267);
-            this.panel1.TabIndex = 0;
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.titleLabel.Location = new System.Drawing.Point(56, 17);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(76, 25);
-            this.titleLabel.TabIndex = 5;
-            this.titleLabel.Text = "label1";
-            // 
-            // tilePanel4
-            // 
-            this.tilePanel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePanel4.Controls.Add(this.label4);
-            this.tilePanel4.Controls.Add(this.tilePictureBox4);
-            this.tilePanel4.Location = new System.Drawing.Point(991, 55);
-            this.tilePanel4.Name = "tilePanel4";
-            this.tilePanel4.Size = new System.Drawing.Size(241, 209);
-            this.tilePanel4.TabIndex = 4;
-            this.tilePanel4.Click += new System.EventHandler(this.TileClick);
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(3, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 60);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "label4";
-            this.label4.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePictureBox4
-            // 
-            this.tilePictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.tilePictureBox4.Name = "tilePictureBox4";
-            this.tilePictureBox4.Size = new System.Drawing.Size(241, 110);
-            this.tilePictureBox4.TabIndex = 0;
-            this.tilePictureBox4.TabStop = false;
-            this.tilePictureBox4.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePanel3
-            // 
-            this.tilePanel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePanel3.Controls.Add(this.label3);
-            this.tilePanel3.Controls.Add(this.tilePictureBox3);
-            this.tilePanel3.Location = new System.Drawing.Point(676, 55);
-            this.tilePanel3.Name = "tilePanel3";
-            this.tilePanel3.Size = new System.Drawing.Size(241, 209);
-            this.tilePanel3.TabIndex = 3;
-            this.tilePanel3.Click += new System.EventHandler(this.TileClick);
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label3.Location = new System.Drawing.Point(3, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(232, 60);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "label3";
-            this.label3.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePictureBox3
-            // 
-            this.tilePictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.tilePictureBox3.Name = "tilePictureBox3";
-            this.tilePictureBox3.Size = new System.Drawing.Size(241, 110);
-            this.tilePictureBox3.TabIndex = 0;
-            this.tilePictureBox3.TabStop = false;
-            this.tilePictureBox3.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePanel2
-            // 
-            this.tilePanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePanel2.Controls.Add(this.label2);
-            this.tilePanel2.Controls.Add(this.tilePictureBox2);
-            this.tilePanel2.Location = new System.Drawing.Point(368, 55);
-            this.tilePanel2.Name = "tilePanel2";
-            this.tilePanel2.Size = new System.Drawing.Size(241, 209);
-            this.tilePanel2.TabIndex = 2;
-            this.tilePanel2.Click += new System.EventHandler(this.TileClick);
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(3, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 60);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePictureBox2
-            // 
-            this.tilePictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.tilePictureBox2.Name = "tilePictureBox2";
-            this.tilePictureBox2.Size = new System.Drawing.Size(241, 110);
-            this.tilePictureBox2.TabIndex = 0;
-            this.tilePictureBox2.TabStop = false;
-            this.tilePictureBox2.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePanel1
-            // 
-            this.tilePanel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePanel1.Controls.Add(this.tileLabel1);
-            this.tilePanel1.Controls.Add(this.tilePictureBox1);
-            this.tilePanel1.Location = new System.Drawing.Point(53, 55);
-            this.tilePanel1.Name = "tilePanel1";
-            this.tilePanel1.Size = new System.Drawing.Size(241, 209);
-            this.tilePanel1.TabIndex = 0;
-            this.tilePanel1.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tileLabel1
-            // 
-            this.tileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tileLabel1.Location = new System.Drawing.Point(3, 113);
-            this.tileLabel1.Name = "tileLabel1";
-            this.tileLabel1.Size = new System.Drawing.Size(232, 60);
-            this.tileLabel1.TabIndex = 1;
-            this.tileLabel1.Text = "label1";
-            this.tileLabel1.Click += new System.EventHandler(this.TileClick);
-            // 
-            // tilePictureBox1
-            // 
-            this.tilePictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tilePictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tilePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.tilePictureBox1.Name = "tilePictureBox1";
-            this.tilePictureBox1.Size = new System.Drawing.Size(241, 110);
-            this.tilePictureBox1.TabIndex = 0;
-            this.tilePictureBox1.TabStop = false;
-            this.tilePictureBox1.Click += new System.EventHandler(this.TileClick);
             // 
             // panel2
             // 
@@ -272,6 +118,7 @@
             this.tilePanel5.Name = "tilePanel5";
             this.tilePanel5.Size = new System.Drawing.Size(241, 209);
             this.tilePanel5.TabIndex = 8;
+            this.tilePanel5.Visible = false;
             this.tilePanel5.Click += new System.EventHandler(this.TileClick);
             // 
             // label5
@@ -305,6 +152,7 @@
             this.tilePanel6.Name = "tilePanel6";
             this.tilePanel6.Size = new System.Drawing.Size(241, 209);
             this.tilePanel6.TabIndex = 7;
+            this.tilePanel6.Visible = false;
             this.tilePanel6.Click += new System.EventHandler(this.TileClick);
             // 
             // label6
@@ -338,6 +186,7 @@
             this.tilePanel8.Name = "tilePanel8";
             this.tilePanel8.Size = new System.Drawing.Size(241, 209);
             this.tilePanel8.TabIndex = 5;
+            this.tilePanel8.Visible = false;
             this.tilePanel8.Click += new System.EventHandler(this.TileClick);
             // 
             // label8
@@ -371,6 +220,7 @@
             this.tilePanel7.Name = "tilePanel7";
             this.tilePanel7.Size = new System.Drawing.Size(241, 209);
             this.tilePanel7.TabIndex = 6;
+            this.tilePanel7.Visible = false;
             this.tilePanel7.Click += new System.EventHandler(this.TileClick);
             // 
             // label7
@@ -415,6 +265,7 @@
             this.tilePanel9.Name = "tilePanel9";
             this.tilePanel9.Size = new System.Drawing.Size(241, 209);
             this.tilePanel9.TabIndex = 8;
+            this.tilePanel9.Visible = false;
             this.tilePanel9.Click += new System.EventHandler(this.TileClick);
             // 
             // label9
@@ -448,6 +299,7 @@
             this.tilePanel12.Name = "tilePanel12";
             this.tilePanel12.Size = new System.Drawing.Size(241, 209);
             this.tilePanel12.TabIndex = 5;
+            this.tilePanel12.Visible = false;
             this.tilePanel12.Click += new System.EventHandler(this.TileClick);
             // 
             // label12
@@ -481,6 +333,7 @@
             this.tilePanel10.Name = "tilePanel10";
             this.tilePanel10.Size = new System.Drawing.Size(241, 209);
             this.tilePanel10.TabIndex = 7;
+            this.tilePanel10.Visible = false;
             this.tilePanel10.Click += new System.EventHandler(this.TileClick);
             // 
             // label10
@@ -514,6 +367,7 @@
             this.tilePanel11.Name = "tilePanel11";
             this.tilePanel11.Size = new System.Drawing.Size(241, 209);
             this.tilePanel11.TabIndex = 6;
+            this.tilePanel11.Visible = false;
             this.tilePanel11.Click += new System.EventHandler(this.TileClick);
             // 
             // label11
@@ -537,6 +391,164 @@
             this.tilePictureBox11.TabStop = false;
             this.tilePictureBox11.Click += new System.EventHandler(this.TileClick);
             // 
+            // tilePanel1
+            // 
+            this.tilePanel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePanel1.Controls.Add(this.tileLabel1);
+            this.tilePanel1.Controls.Add(this.tilePictureBox1);
+            this.tilePanel1.Location = new System.Drawing.Point(53, 55);
+            this.tilePanel1.Name = "tilePanel1";
+            this.tilePanel1.Size = new System.Drawing.Size(241, 209);
+            this.tilePanel1.TabIndex = 0;
+            this.tilePanel1.Visible = false;
+            this.tilePanel1.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePictureBox1
+            // 
+            this.tilePictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.tilePictureBox1.Name = "tilePictureBox1";
+            this.tilePictureBox1.Size = new System.Drawing.Size(241, 110);
+            this.tilePictureBox1.TabIndex = 0;
+            this.tilePictureBox1.TabStop = false;
+            this.tilePictureBox1.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tileLabel1
+            // 
+            this.tileLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.tileLabel1.Location = new System.Drawing.Point(3, 113);
+            this.tileLabel1.Name = "tileLabel1";
+            this.tileLabel1.Size = new System.Drawing.Size(232, 60);
+            this.tileLabel1.TabIndex = 1;
+            this.tileLabel1.Text = "label1";
+            this.tileLabel1.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePanel2
+            // 
+            this.tilePanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePanel2.Controls.Add(this.label2);
+            this.tilePanel2.Controls.Add(this.tilePictureBox2);
+            this.tilePanel2.Location = new System.Drawing.Point(368, 55);
+            this.tilePanel2.Name = "tilePanel2";
+            this.tilePanel2.Size = new System.Drawing.Size(241, 209);
+            this.tilePanel2.TabIndex = 2;
+            this.tilePanel2.Visible = false;
+            this.tilePanel2.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePictureBox2
+            // 
+            this.tilePictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.tilePictureBox2.Name = "tilePictureBox2";
+            this.tilePictureBox2.Size = new System.Drawing.Size(241, 110);
+            this.tilePictureBox2.TabIndex = 0;
+            this.tilePictureBox2.TabStop = false;
+            this.tilePictureBox2.Click += new System.EventHandler(this.TileClick);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(3, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(232, 60);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePanel3
+            // 
+            this.tilePanel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePanel3.Controls.Add(this.label3);
+            this.tilePanel3.Controls.Add(this.tilePictureBox3);
+            this.tilePanel3.Location = new System.Drawing.Point(676, 55);
+            this.tilePanel3.Name = "tilePanel3";
+            this.tilePanel3.Size = new System.Drawing.Size(241, 209);
+            this.tilePanel3.TabIndex = 3;
+            this.tilePanel3.Visible = false;
+            this.tilePanel3.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePictureBox3
+            // 
+            this.tilePictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.tilePictureBox3.Name = "tilePictureBox3";
+            this.tilePictureBox3.Size = new System.Drawing.Size(241, 110);
+            this.tilePictureBox3.TabIndex = 0;
+            this.tilePictureBox3.TabStop = false;
+            this.tilePictureBox3.Click += new System.EventHandler(this.TileClick);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.Location = new System.Drawing.Point(3, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 60);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "label3";
+            this.label3.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePanel4
+            // 
+            this.tilePanel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePanel4.Controls.Add(this.label4);
+            this.tilePanel4.Controls.Add(this.tilePictureBox4);
+            this.tilePanel4.Location = new System.Drawing.Point(991, 55);
+            this.tilePanel4.Name = "tilePanel4";
+            this.tilePanel4.Size = new System.Drawing.Size(241, 209);
+            this.tilePanel4.TabIndex = 4;
+            this.tilePanel4.Visible = false;
+            this.tilePanel4.Click += new System.EventHandler(this.TileClick);
+            // 
+            // tilePictureBox4
+            // 
+            this.tilePictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tilePictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tilePictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.tilePictureBox4.Name = "tilePictureBox4";
+            this.tilePictureBox4.Size = new System.Drawing.Size(241, 110);
+            this.tilePictureBox4.TabIndex = 0;
+            this.tilePictureBox4.TabStop = false;
+            this.tilePictureBox4.Click += new System.EventHandler(this.TileClick);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.Location = new System.Drawing.Point(3, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(232, 60);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "label4";
+            this.label4.Click += new System.EventHandler(this.TileClick);
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.titleLabel.Location = new System.Drawing.Point(56, 17);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(91, 25);
+            this.titleLabel.TabIndex = 5;
+            this.titleLabel.Text = "Results";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.titleLabel);
+            this.panel1.Controls.Add(this.tilePanel4);
+            this.panel1.Controls.Add(this.tilePanel3);
+            this.panel1.Controls.Add(this.tilePanel2);
+            this.panel1.Controls.Add(this.tilePanel1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1284, 267);
+            this.panel1.TabIndex = 0;
+            // 
             // SearchCategoriesControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,16 +558,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "SearchCategoriesControl";
             this.Size = new System.Drawing.Size(1284, 800);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.tilePanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox4)).EndInit();
-            this.tilePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox3)).EndInit();
-            this.tilePanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox2)).EndInit();
-            this.tilePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tilePanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox5)).EndInit();
@@ -574,23 +576,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox10)).EndInit();
             this.tilePanel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox11)).EndInit();
+            this.tilePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox1)).EndInit();
+            this.tilePanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox2)).EndInit();
+            this.tilePanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox3)).EndInit();
+            this.tilePanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tilePictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.Panel tilePanel1;
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Panel panel3;
-        public System.Windows.Forms.PictureBox tilePictureBox1;
-        public System.Windows.Forms.Panel tilePanel4;
-        public System.Windows.Forms.PictureBox tilePictureBox4;
-        public System.Windows.Forms.Panel tilePanel3;
-        public System.Windows.Forms.PictureBox tilePictureBox3;
-        public System.Windows.Forms.Panel tilePanel2;
-        public System.Windows.Forms.PictureBox tilePictureBox2;
         public System.Windows.Forms.Panel tilePanel5;
         public System.Windows.Forms.PictureBox tilePictureBox5;
         public System.Windows.Forms.Panel tilePanel6;
@@ -607,10 +609,6 @@
         public System.Windows.Forms.Panel tilePanel11;
         public System.Windows.Forms.PictureBox tilePictureBox11;
         public System.Windows.Forms.PictureBox tilePictureBox6;
-        public System.Windows.Forms.Label tileLabel1;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label label8;
@@ -619,6 +617,19 @@
         public System.Windows.Forms.Label label12;
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Panel tilePanel1;
+        public System.Windows.Forms.Label tileLabel1;
+        public System.Windows.Forms.PictureBox tilePictureBox1;
+        public System.Windows.Forms.Panel tilePanel2;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.PictureBox tilePictureBox2;
+        public System.Windows.Forms.Panel tilePanel3;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.PictureBox tilePictureBox3;
+        public System.Windows.Forms.Panel tilePanel4;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.PictureBox tilePictureBox4;
         private System.Windows.Forms.Label titleLabel;
+        public System.Windows.Forms.Panel panel1;
     }
 }

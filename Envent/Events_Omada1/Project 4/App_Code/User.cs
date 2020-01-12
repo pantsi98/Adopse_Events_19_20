@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Project_4.App_Code.StaticMethods;
+using Project_4.App_Code;
+using System.Windows;
 //Author Τζέιμς Μπαλάση
 
 namespace Project_4.User_Classes
@@ -19,20 +21,58 @@ namespace Project_4.User_Classes
         public abstract void ShowEventDeails(int id);
 
         //Αρχική μέθοδος του search. Πιθανόν να υπάρξει τροποποίηση για πιο ευφυη αναζήτηση.
-/*public List<String> SearchForEvent(string keyWord)//παράμετρος οι χαρακτήρες που πληκτρολογή ο χρήστης
-{
-    var valid = new Regex(@"^.*" + keyWord + ".*$"); //Δημιουργια regular expression
-    List<string> results = new List<string>(); //Εδώ αποθηκεύονται τα αποτελέσματα
-    foreach (string i in Events.eventsTitle) //Σάρωση της στατικής κλάσης όπου αποθηκεύονται τα events
-    {
-        if (valid.IsMatch(i)) //Έλεγχος αν ταιρίαζει η αναζήτηση του χρήστη στο regular expression
+        public List<Event> SearchForEvent(string keyWord)//παράμετρος οι χαρακτήρες που πληκτρολογή ο χρήστης
         {
-            results.Add(i); //Εισαγώγη στα αποτελέσματα
+            var valid = new Regex(@"^.*" + keyWord + ".*$"); //Δημιουργια regular expression
+            List<Event> results = new List<Event>(); //Εδώ αποθηκεύονται τα αποτελέσματα
+            foreach (Event i in Events.events) //Σάρωση της στατικής κλάσης όπου αποθηκεύονται τα events
+            {
+                if (valid.IsMatch(i.GetTitle())) //Έλεγχος αν ταιρίαζει η αναζήτηση του χρήστη στο regular expression
+                {
+                    results.Add(i); //Εισαγώγη στα αποτελέσματα
+                }
+            }
+            return results;
+        }
+
+        public List<Event> FilterSearch(string keyword, string category,DateTime pick1 , DateTime pick2,string city)
+        {
+            List<int> playsVenue = new List<int>();
+            List<int> eventsPlays = new List<int>();
+            List<Event> results = this.SearchForEvent(keyword);
+            if (category.Length != 0)
+            {
+                int catid = App_Code.StaticMethods.Categories.NameToID(category);
+                results = results.FindAll(x => x.GetCategory() == catid);
+            }
+            if (city.Length != 0)
+            {
+                playsVenue = Venue.venues.FindAll(x => x.GetCity() == city).Select(l => l.GetId()).ToList();
+            }
+            else
+            {
+                playsVenue = Venue.venues.Select(l => l.GetId()).ToList();
+            }
+            eventsPlays = App_Code.Play.plays.FindAll(x => (DateTime.Compare(x.getDates(),pick2)<= 0) && !eventsPlays.Contains(x.GetEventID())).Select(l => l.GetEventID()).ToList();
+                foreach (int i in App_Code.Play.plays.FindAll(x => (DateTime.Compare(x.getDates(), pick1) < 0) && eventsPlays.Contains(x.GetEventID())).Select(l => l.GetEventID()).ToList())
+                {
+                    if (eventsPlays.Any()) { 
+                        eventsPlays.Remove(i);
+                    }
+                    else { break; }
+                }
+            foreach (int i in App_Code.Play.plays.FindAll(x => !playsVenue.Contains(x.GetVenueID())).Select(l => l.GetEventID()).ToList())
+            {
+                if (eventsPlays.Any())
+                {
+                    eventsPlays.Remove(i);
+                }
+                else { break; }
+            }
+            results = results.FindAll(x => eventsPlays.Contains(x.GetID()));
+            return results;
         }
     }
-    return results;
-}*/
-}
 }
  
  

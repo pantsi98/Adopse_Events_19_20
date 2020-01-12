@@ -32,6 +32,8 @@ namespace Project_4
         //On load παίρνει τις τιμές απο το dataset και τις βάζει στα πεδία και τις τοπικές μεταβλητές .
         private void Profile_Load(object sender, EventArgs e)
         {
+            try
+            {
                 if (x is NormalUser)
                 {
                     NormalUser nu = (NormalUser)x;
@@ -43,6 +45,7 @@ namespace Project_4
                     dob = dobPicker.Value = nu.GetProfile().GetDob();
                     adress = adressTextBox.Text = nu.GetProfile().GetAddress();
                 }
+            }catch(Exception ex) { }
         }
         private void circularPicture4_Click(object sender, EventArgs e)
         {
