@@ -71,7 +71,7 @@
             this.createnewevent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createnewevent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.createnewevent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createnewevent.Location = new System.Drawing.Point(1142, 99);
+            this.createnewevent.Location = new System.Drawing.Point(1099, 115);
             this.createnewevent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.createnewevent.Name = "createnewevent";
             this.createnewevent.Size = new System.Drawing.Size(297, 50);
@@ -86,7 +86,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(1142, 169);
+            this.button1.Location = new System.Drawing.Point(1099, 169);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(297, 50);
@@ -118,7 +118,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.adressTextBox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(290, 253);
+            this.panel1.Location = new System.Drawing.Point(247, 253);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1149, 697);
             this.panel1.TabIndex = 59;
@@ -380,7 +380,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(290, 168);
+            this.button3.Location = new System.Drawing.Point(247, 169);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 50);
@@ -405,14 +405,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.circularPicture1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.createnewevent);
             this.Name = "ProfileEventManager";
-            this.Size = new System.Drawing.Size(1620, 995);
+            this.Size = new System.Drawing.Size(1644, 995);
             this.Load += new System.EventHandler(this.ProfileEventManager_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

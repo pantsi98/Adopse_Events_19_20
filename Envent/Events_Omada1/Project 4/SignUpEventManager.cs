@@ -371,6 +371,16 @@ namespace Project_4
                 address.Text = "Παρακαλώ συμπληρώστε περιοχή";
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
