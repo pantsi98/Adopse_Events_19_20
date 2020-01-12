@@ -82,9 +82,9 @@
             this.panel1.Controls.Add(this.topothesia);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(14, 258);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(879, 81);
+            this.panel1.Size = new System.Drawing.Size(1217, 81);
             this.panel1.TabIndex = 0;
             // 
             // eventTitle
@@ -102,10 +102,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(740, 14);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Location = new System.Drawing.Point(1033, 15);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(124, 50);
+            this.button8.Size = new System.Drawing.Size(153, 50);
             this.button8.TabIndex = 4;
             this.button8.Text = "Κράτηση";
             this.button8.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             // 
             this.imerominia.AutoSize = true;
             this.imerominia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.imerominia.Location = new System.Drawing.Point(587, 48);
+            this.imerominia.Location = new System.Drawing.Point(682, 48);
             this.imerominia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.imerominia.Name = "imerominia";
             this.imerominia.Size = new System.Drawing.Size(80, 18);
@@ -126,7 +126,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Image = global::Project_4.Properties.Resources.calendar;
-            this.label2.Location = new System.Drawing.Point(558, 52);
+            this.label2.Location = new System.Drawing.Point(653, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
@@ -136,7 +136,7 @@
             // topothesia
             // 
             this.topothesia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.topothesia.Location = new System.Drawing.Point(584, 15);
+            this.topothesia.Location = new System.Drawing.Point(679, 15);
             this.topothesia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.topothesia.Name = "topothesia";
             this.topothesia.Size = new System.Drawing.Size(152, 24);
@@ -149,7 +149,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.Image = global::Project_4.Properties.Resources.maps_and_flags;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(558, 14);
+            this.label1.Location = new System.Drawing.Point(653, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 18);
@@ -162,9 +162,9 @@
             this.IconEvent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.IconEvent.Image = global::Project_4.Properties.Resources.Banff_Canada_s;
             this.IconEvent.Location = new System.Drawing.Point(14, 17);
-            this.IconEvent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IconEvent.Margin = new System.Windows.Forms.Padding(2);
             this.IconEvent.Name = "IconEvent";
-            this.IconEvent.Size = new System.Drawing.Size(880, 222);
+            this.IconEvent.Size = new System.Drawing.Size(1204, 222);
             this.IconEvent.TabIndex = 1;
             this.IconEvent.TabStop = false;
             // 
@@ -174,23 +174,11 @@
             this.panel2.Controls.Add(this.IconEvent);
             this.panel2.ForeColor = System.Drawing.Color.Coral;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(909, 252);
+            this.panel2.Size = new System.Drawing.Size(1231, 252);
             this.panel2.TabIndex = 2;
             // 
-            // tabControl1
-            // 
-            /*this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tabControl1.Location = new System.Drawing.Point(14, 391);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(879, 275);
-            this.tabControl1.TabIndex = 3;*/
             // book_tab
             // 
             this.book_tab.Controls.Add(this.tabPage1);
@@ -202,7 +190,7 @@
             this.book_tab.Margin = new System.Windows.Forms.Padding(2);
             this.book_tab.Name = "book_tab";
             this.book_tab.SelectedIndex = 0;
-            this.book_tab.Size = new System.Drawing.Size(879, 275);
+            this.book_tab.Size = new System.Drawing.Size(1217, 391);
             this.book_tab.TabIndex = 3;
             this.book_tab.MouseClick += new System.Windows.Forms.MouseEventHandler(this.book_tab_MouseClick);
             // 
@@ -215,10 +203,10 @@
             this.tabPage1.Controls.Add(this.perigrafilabel);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(871, 245);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(1209, 361);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Περιγραφή";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -227,7 +215,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label12.Location = new System.Drawing.Point(4, 17);
+            this.label12.Location = new System.Drawing.Point(38, 47);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(78, 17);
@@ -238,7 +226,7 @@
             // 
             this.categorylabel.AutoSize = true;
             this.categorylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.categorylabel.Location = new System.Drawing.Point(83, 17);
+            this.categorylabel.Location = new System.Drawing.Point(117, 47);
             this.categorylabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.categorylabel.Name = "categorylabel";
             this.categorylabel.Size = new System.Drawing.Size(30, 17);
@@ -249,7 +237,7 @@
             // 
             this.durationlabel.AutoSize = true;
             this.durationlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.durationlabel.Location = new System.Drawing.Point(83, 33);
+            this.durationlabel.Location = new System.Drawing.Point(117, 78);
             this.durationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.durationlabel.Name = "durationlabel";
             this.durationlabel.Size = new System.Drawing.Size(35, 17);
@@ -260,7 +248,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label5.Location = new System.Drawing.Point(4, 33);
+            this.label5.Location = new System.Drawing.Point(38, 78);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 17);
@@ -271,10 +259,10 @@
             // 
             this.perigrafilabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.perigrafilabel.Location = new System.Drawing.Point(14, 68);
+            this.perigrafilabel.Location = new System.Drawing.Point(14, 184);
             this.perigrafilabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.perigrafilabel.Name = "perigrafilabel";
-            this.perigrafilabel.Size = new System.Drawing.Size(834, 159);
+            this.perigrafilabel.Size = new System.Drawing.Size(1172, 159);
             this.perigrafilabel.TabIndex = 3;
             this.perigrafilabel.Text = "περιγραφη";
             // 
@@ -287,10 +275,10 @@
             this.tabPage2.Controls.Add(this.NameofPlace);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(871, 245);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(1209, 332);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Τοποθεσία";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -298,7 +286,7 @@
             // tilefonoofPlace
             // 
             this.tilefonoofPlace.AutoSize = true;
-            this.tilefonoofPlace.Location = new System.Drawing.Point(118, 144);
+            this.tilefonoofPlace.Location = new System.Drawing.Point(118, 104);
             this.tilefonoofPlace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tilefonoofPlace.Name = "tilefonoofPlace";
             this.tilefonoofPlace.Size = new System.Drawing.Size(96, 18);
@@ -308,7 +296,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(20, 144);
+            this.label11.Location = new System.Drawing.Point(20, 104);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(79, 18);
@@ -356,9 +344,9 @@
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(871, 245);
+            this.tabPage3.Size = new System.Drawing.Size(1209, 332);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Τιμές Εισητηρίων";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -441,7 +429,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Size = new System.Drawing.Size(871, 245);
+            this.tabPage4.Size = new System.Drawing.Size(1209, 332);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Παραστάσεις";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -481,9 +469,9 @@
             this.Controls.Add(this.book_tab);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EventFullDescription";
-            this.Size = new System.Drawing.Size(911, 749);
+            this.Size = new System.Drawing.Size(1233, 784);
             this.Load += new System.EventHandler(this.EventFullDescription_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

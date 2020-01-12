@@ -47,9 +47,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Project_4.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
@@ -100,6 +97,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advanced Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Advanced Search.Designer.cs">
+      <DependentUpon>Advanced Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\CCircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -172,6 +175,12 @@
     </Compile>
     <Compile Include="EventFullDescription.Designer.cs">
       <DependentUpon>EventFullDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters.Designer.cs">
+      <DependentUpon>Filters.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>UserControl</SubType>
@@ -264,6 +273,9 @@
     <Compile Include="Splash_Animation.Designer.cs">
       <DependentUpon>Splash_Animation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Advanced Search.resx">
+      <DependentUpon>Advanced Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App_Code\StaticMethods\BufferedPanel.resx">
       <DependentUpon>BufferedPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +304,9 @@
     <Compile Include="App_Code\User.cs" />
     <Compile Include="App_Code\UserProfile.cs" />
     <Compile Include="App_Code\Visitor.cs" />
+    <EmbeddedResource Include="Filters.resx">
+      <DependentUpon>Filters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -414,6 +429,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\eventImg1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -75,6 +75,11 @@ namespace Project_4
                 System.Windows.Forms.MessageBox.Show("Η πληρωμή με κάρτα δεν είναι ακόμη διαθέσιμη", "Μη διαθέσιμος τρόπος πληρωμής",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
+
+        private void date_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -8,11 +8,14 @@ using System.Threading.Tasks;
 
 namespace Project_4.App_Code
 {
-    class Play
+    public class Play
     {
         private Event ev;
         private Venue venue;
         private static List<DateTime> dates;
+        private int ev;
+        private int venue;
+        private DateTime date;
         private bool status;
 
         public Play(int eventID) {
