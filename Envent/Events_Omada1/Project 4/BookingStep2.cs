@@ -80,19 +80,14 @@ namespace Project_4
                 if (MessageBox.Show("Η κράτηση πραμγατοποιήθηκε επιτυχώς!", "Επιτυχής κράτηση", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     Control parent = this.Parent;
-                    while (parent.Name != "Form1")
+                    while (parent.Name != "MainPanel")
                     {
                         Debug.WriteLine(parent.Name);
                         parent = parent.Parent;
                     }
 
-                    foreach (Control c in parent.Controls)
-                    {
-                        if (c.Name == "homepagePanel")
-                        {
-                            parent = c;
-                        }
-                    }
+                    parent.Controls.Clear();
+                    parent.Controls.Add(new HomeMain());
                 }
             }
             catch (Exception ex)
