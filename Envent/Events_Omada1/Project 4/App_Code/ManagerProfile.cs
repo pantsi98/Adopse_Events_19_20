@@ -15,6 +15,11 @@ namespace Project_4.User_Classes
             List<enventDataSet.adminRow> results = pro.getProfile(userID).ToList();
             this.iban = results.ElementAt(0).iban;
         }
+        public ManagerProfile(string fname, string lname, string email, string address, string gender, DateTime dob, string iban)
+       : base(fname, lname, email, address, gender, dob)
+        {
+            this.iban = iban;
+        }
 
         public override void UpdateAddress(int id, string address)
         {

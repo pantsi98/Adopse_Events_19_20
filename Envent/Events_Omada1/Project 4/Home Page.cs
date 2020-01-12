@@ -15,6 +15,8 @@ using Project_4.User_Classes;
 
 namespace Project_4
 {
+    
+
     public partial class Form1 : Form
     {
         public int index = 0;
@@ -139,9 +141,18 @@ namespace Project_4
 
         private void cCircularButton1_Click(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
-            ProfileControl su = new ProfileControl();
-            MainPanel.Controls.Add(su);
+            User x = InstanceOfUser.GetUser();
+            if (x is Project_4.App_Code.NormalUser) {
+                MainPanel.Controls.Clear();
+                ProfileControl su = new ProfileControl();
+                MainPanel.Controls.Add(su); }
+            else
+            {
+                MainPanel.Controls.Clear();
+                ProfileEventManager su = new ProfileEventManager();
+                MainPanel.Controls.Add(su);
+
+            }
         }
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)

@@ -114,7 +114,6 @@ namespace Project_4
         Boolean deiktislathwn;
         private Boolean AllCheck()
         {
-
             deiktislathwn = true;
 
             if (Onoma.Text == "Όνομα" || Onoma.Text == "" || Onoma.Text == "Παρακαλώ συμπληρώστε όνομα")
@@ -125,11 +124,15 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (Email1.Text == "" || Email1.Text == "" || Email1.Text == "Παρακαλώ συμπληρώστε Εmail")
+            else if (username1.Text == "Username" || username1.Text == "" || username1.Text == "Παρακαλώ συμπλήρωστε ψευδόνυμο")
             {
                 deiktislathwn = false;
             }
-            else if (Kodikos1.Text == "" || Kodikos1.Text == "" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
+            else if (Email1.Text == "Email" || Email1.Text == "" || Email1.Text == "Παρακαλώ συμπληρώστε Εmail")
+            {
+                deiktislathwn = false;
+            }
+            else if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
             {
                 deiktislathwn = false;
             }
@@ -141,24 +144,22 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
+            else if (checksamepass == false)
             {
-                deiktislathwn = false;
-            }
-            else if (checksamepass == false) {
                 deiktislathwn = false;
             }
             else if (emailcheck == false)
             {
                 deiktislathwn = false;
             }
-            else if (checkpassIsValid==false)
+            else if (checkpassIsValid == false)
             {
                 deiktislathwn = false;
             }
 
             return deiktislathwn;
         }
+    
 
         private void Register_Click(object sender, EventArgs e)
         {

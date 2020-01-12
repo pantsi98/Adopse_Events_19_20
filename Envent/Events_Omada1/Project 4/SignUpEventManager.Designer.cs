@@ -85,11 +85,12 @@
             this.panel2.Size = new System.Drawing.Size(1644, 745);
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover_1);
             // 
             // dobPicker
             // 
             this.dobPicker.Location = new System.Drawing.Point(586, 535);
-            this.dobPicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dobPicker.Margin = new System.Windows.Forms.Padding(4);
             this.dobPicker.Name = "dobPicker";
             this.dobPicker.Size = new System.Drawing.Size(265, 27);
             this.dobPicker.TabIndex = 46;
@@ -99,9 +100,9 @@
             this.radioButtonBox.Controls.Add(this.femaleRadioButton);
             this.radioButtonBox.Controls.Add(this.maleRadioButton);
             this.radioButtonBox.Location = new System.Drawing.Point(588, 450);
-            this.radioButtonBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonBox.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonBox.Name = "radioButtonBox";
-            this.radioButtonBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonBox.Padding = new System.Windows.Forms.Padding(4);
             this.radioButtonBox.Size = new System.Drawing.Size(233, 46);
             this.radioButtonBox.TabIndex = 45;
             this.radioButtonBox.TabStop = false;
@@ -110,7 +111,7 @@
             // 
             this.femaleRadioButton.AutoSize = true;
             this.femaleRadioButton.Location = new System.Drawing.Point(107, 14);
-            this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.femaleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.femaleRadioButton.Name = "femaleRadioButton";
             this.femaleRadioButton.Size = new System.Drawing.Size(94, 26);
             this.femaleRadioButton.TabIndex = 32;
@@ -122,7 +123,7 @@
             this.maleRadioButton.AutoSize = true;
             this.maleRadioButton.Checked = true;
             this.maleRadioButton.Location = new System.Drawing.Point(8, 12);
-            this.maleRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maleRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.maleRadioButton.Name = "maleRadioButton";
             this.maleRadioButton.Size = new System.Drawing.Size(92, 26);
             this.maleRadioButton.TabIndex = 31;
