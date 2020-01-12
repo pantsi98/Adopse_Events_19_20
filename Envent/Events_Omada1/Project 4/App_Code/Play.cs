@@ -10,6 +10,7 @@ namespace Project_4.App_Code
 {
     class Play
     {
+<<<<<<< HEAD
         private Event ev1;
         private Venue venue1;
         private static List<DateTime> dates;
@@ -24,6 +25,14 @@ namespace Project_4.App_Code
 
         public Play(int eventID) {
             dates = new List<DateTime>();
+=======
+        private Event ev;
+        private Venue venue;
+        private static List<DateTime> dates = new List<DateTime>();
+        private bool status;
+
+        public Play(int eventID) {
+>>>>>>> parent of 6b1ffb0... Merge pull request #65 from PanChee00/SearchFunctionDevelop
             enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
             List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
             for (int i = 0; i < res.Count; i++)
@@ -34,6 +43,7 @@ namespace Project_4.App_Code
             }
         }
 
+<<<<<<< HEAD
         public Play(int ev, int venue, DateTime date, bool status)
         {
             this.ev = ev;
@@ -72,6 +82,17 @@ namespace Project_4.App_Code
         public int GetVenueID()
         {
             return this.venue;
+=======
+        public List<DateTime> GetDates()
+        {
+            List<DateTime> dt = new List<DateTime>();
+            foreach(DateTime i in dates)
+            {
+                dt.Add(i.Date.Date);
+                Debug.WriteLine(i.Date.Date);
+            }
+            return dt;
+>>>>>>> parent of 6b1ffb0... Merge pull request #65 from PanChee00/SearchFunctionDevelop
         }
     }
 }
