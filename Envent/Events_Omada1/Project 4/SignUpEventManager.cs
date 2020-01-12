@@ -22,7 +22,7 @@ namespace Project_4
         private void SignUpUser_Load(object sender, EventArgs e)
         {
             Register.Enabled = false;
-            maleRadioButton.Checked = true;
+           
 
         }
 
@@ -54,7 +54,7 @@ namespace Project_4
         private void IBAN_MouseClick(object sender, MouseEventArgs e)
         {
             IBAN.ForeColor = Color.Black;
-            if (IBAN.Text == "IBAN" || IBAN.Text == "Παρακαλώ συμπλήρωστε IBAN")
+            if (IBAN.Text == "IBAN" || IBAN.Text == "Παρακαλώ συμπληρώστε IBAN")
             {
 
                 IBAN.Text = "";
@@ -62,6 +62,20 @@ namespace Project_4
 
             }
 
+
+
+        }
+
+        private void address_MouseClick(object sender, MouseEventArgs e)
+        {
+            address.ForeColor = Color.Black;
+            if (address.Text == "Περιοχή" || address.Text == "Παρακαλώ συμπληρώστε περιοχή")
+            {
+
+                address.Text = "";
+                address.ForeColor = Color.Black;
+
+            }
 
 
         }
@@ -91,7 +105,7 @@ namespace Project_4
         private void address_MouseClick(object sender, EventArgs e)
         {
             address.ForeColor = Color.Black;
-            if (address.Text == "Περιοχή" || address.Text == "Παρακαλώ συμπληρώστε διέυθυνση")
+            if (address.Text == "Περιοχή" || address.Text == "Παρακαλώ συμπληρώστε περιοχή")
             {
 
                 address.Text = "";
@@ -99,7 +113,7 @@ namespace Project_4
 
             }
         }
-        private void Kodikos1_MouseClick(object sender, EventArgs e)
+        private void Kodikos1_Enter(object sender, EventArgs e)
         {
             Kodikos1.ForeColor = Color.Black;
             if (Kodikos1.Text == "Κωδικός" || Kodikos1.Text == "Παρακαλώ συμπληρώστε κωδικό")
@@ -109,10 +123,9 @@ namespace Project_4
                 Kodikos1.ForeColor = Color.Black;
                 Kodikos1.PasswordChar = '*';
             }
-
         }
 
-        private void Kodikos2_MouseClick(object sender, EventArgs e)
+        private void Kodikos2_Enter(object sender, EventArgs e)
         {
             Kodikos2.ForeColor = Color.Black;
             if (Kodikos2.Text == "Επαλήθευση Κωδικού" || Kodikos2.Text == "Παρακαλώ συμπλήρωστε Κωδικό Επαλήθευσης")
@@ -122,7 +135,9 @@ namespace Project_4
                 Kodikos2.ForeColor = Color.Black;
                 Kodikos2.PasswordChar = '*';
             }
+
         }
+      
         Boolean deiktislathwn;
         private Boolean AllCheck()
         {
@@ -145,7 +160,7 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (address.Text == "Περιοχή" || address.Text == "" || address.Text == "Παρακαλώ συμπληρώστε διέυθυνση")
+            else if (address.Text == "Περιοχή" || address.Text == "" || address.Text == "Παρακαλώ συμπληρώστε περιοχή")
             {
                 deiktislathwn = false;
             }
@@ -234,7 +249,7 @@ namespace Project_4
                 if (!App_Code.StaticMethods.ValidationCheck.PasswordIsValid(Kodikos1.Text))
                 {
                     passwordLabel.Visible = true;
-                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , κεφαλαιο γράμμα και νούμερο.";
+                    passwordLabel.Text = "Ο κωδικός πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες , νούμερο, κεφαλαιο γράμμα και μικρό .";
                     checkpassIsValid = false;
                 }
 
@@ -315,15 +330,7 @@ namespace Project_4
 
 
         }
-        private void address_Leave(object sender, EventArgs e)
-        {
-            if (address.TextLength == 0)
-            {
-                address.ForeColor = Color.Red;
-                address.Text = "Παρακαλώ συμπληρώστε διέυθυνση";
-            }
-
-        }
+       
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
@@ -377,6 +384,24 @@ namespace Project_4
             Cursor.Current = Cursors.Default;
         }
 
-       }
+        private void address_Leave_1(object sender, EventArgs e)
+        {
+            if (address.Text == "")
+            {
+                address.ForeColor = Color.Red;
+                address.Text = "Παρακαλώ συμπληρώστε περιοχή";
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
 }
 

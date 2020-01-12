@@ -88,6 +88,7 @@
             // 
             this.EventstreeView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.EventstreeView.Location = new System.Drawing.Point(0, 0);
+            this.EventstreeView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EventstreeView.Name = "EventstreeView";
             treeNode1.Name = "Node3";
             treeNode1.Text = "Ιανουάριος";
@@ -144,21 +145,22 @@
             this.EventstreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode13,
             treeNode26});
-            this.EventstreeView.Size = new System.Drawing.Size(215, 520);
+            this.EventstreeView.Size = new System.Drawing.Size(215, 963);
             this.EventstreeView.TabIndex = 51;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(221, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(841, 520);
+            this.panel1.Size = new System.Drawing.Size(1423, 963);
             this.panel1.TabIndex = 52;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(219, 61);
+            this.label1.Location = new System.Drawing.Point(219, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(427, 17);
             this.label1.TabIndex = 0;
@@ -171,8 +173,9 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.EventstreeView);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HistoryEventManager";
-            this.Size = new System.Drawing.Size(1066, 536);
+            this.Size = new System.Drawing.Size(1644, 965);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
