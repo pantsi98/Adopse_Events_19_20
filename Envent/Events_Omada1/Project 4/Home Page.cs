@@ -89,6 +89,7 @@ namespace Project_4
                 InstanceOfUser.LogOut();
                 button8.Text = "LOGIN";
                 button7.Visible = true;
+                cCircularButton1.Visible = false;
                 MainPanel.Controls.Clear();
                 MainPanel.Controls.Add(hm);
             }
@@ -142,11 +143,11 @@ namespace Project_4
         private void cCircularButton1_Click(object sender, EventArgs e)
         {
             User x = InstanceOfUser.GetUser();
-            if (x is Project_4.App_Code.NormalUser) {
+            if (x is NormalUser) {
                 MainPanel.Controls.Clear();
                 ProfileControl su = new ProfileControl();
                 MainPanel.Controls.Add(su); }
-            else
+            else if (x is EventManager)
             {
                 MainPanel.Controls.Clear();
                 ProfileEventManager su = new ProfileEventManager();

@@ -140,14 +140,31 @@ namespace Project_4
                         if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "OK", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                         {
                             Control parent = this.Parent;
-                            while (parent.Name != "homepagePanel")
+                            while (parent.Name != "Form1")
                             {
+                                Debug.WriteLine(parent.Name);
                                 parent = parent.Parent;
                             }
-                            parent.Controls["cCircularbutton1"].Visible = true;
-                            //parent.Controls["button8"].Visible = false;
-                            Debug.WriteLine(parent.Name);
+
+                            foreach (Control c in parent.Controls)
+                            {
+                                if (c.Name == "homepagePanel")
+                                {
+                                    parent = c;
+                                }
+                            }
+
+                            switch (parent.Controls["button8"].Text)
+                            {
+                                case "LOGIN":
+                                    parent.Controls["button8"].Text = "LOGOUT";
+                                    parent.Controls["button7"].Visible = false;
+                                    parent.Controls["cCircularbutton1"].Visible = true;
+                                    break;
+                            }
+
                             Controls.Clear();
+                            Controls.Add(new HomeMain());
                         }
                     }
                     catch (User_Classes.Exceptions.FailLoginAsEventManager msg1)
