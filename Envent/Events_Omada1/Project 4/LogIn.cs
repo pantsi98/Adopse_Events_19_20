@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using Project_4.App_Code.StaticMethods;
+using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -122,6 +124,8 @@ namespace Project_4
                     //try gia na dei ean einai normaluser
                     Cursor.Current = Cursors.WaitCursor;
                     vis.LogInAsNormalUser(username, password);
+                    NormalUser nu = (NormalUser)InstanceOfUser.GetUser();
+                    MessageBox.Show(nu.GetUserID().ToString());
                     Cursor.Current = Cursors.Default;
                     if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "Επιτυχής Σύνδεση", MessageBoxButtons.OK,MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.OK)
                     {
