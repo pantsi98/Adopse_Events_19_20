@@ -97,7 +97,7 @@ namespace Project_4
                 newLabel.Height = 20;
                 newLabel.Location = new Point(10, 50 + 2 * z * newLabel.Height);
                 newLabel.Name = "label" + z;
-                MessageBox.Show(date.ToString());
+                
                 newLabel.Text = date.ToString("dd/MM/yyyy HH:mm");
                 date_panel.Controls.Add(newLabel);
 

@@ -19,7 +19,7 @@ namespace Project_4
         string payment_type;
         int normal_tickets;
         int reduced_tickets;
-        DateTime date;
+        string date;
         public BookingStep1()
         {
           //  InitializeComponent();
@@ -57,7 +57,7 @@ namespace Project_4
 
             if (paymentComboBox.SelectedItem.ToString() == "Στο ταμείο")
             {
-                date = Convert.ToDateTime(dateComboBox.SelectedItem.ToString());
+                date = dateComboBox.SelectedItem.ToString();
                 payment_type = paymentComboBox.SelectedItem.ToString();
                 normal_tickets = (int)normalTicketsCounter.Value;
                 reduced_tickets = (int)reducedTicketsCounter.Value;

@@ -21,7 +21,11 @@ namespace Project_4.App_Code
         public List<DateTime> GetDates()
         {
             List<DateTime> dt = new List<DateTime>();
+<<<<<<< HEAD
             foreach (DateTime i in dates)
+=======
+            foreach(DateTime i in dates)
+>>>>>>> parent of b1ccca3... Merge pull request #66 from PanChee00/Final_Fixes
             {
                 dt.Add(i.Date.Date);
                 Debug.WriteLine(i.Date.Date);
@@ -33,8 +37,7 @@ namespace Project_4.App_Code
         public static List<Play> plays = new List<Play>();
 
 
-        public static void FillPlaysData()
-        {
+        public static void FillPlaysData(){
             pl = pla.GetPlays().ToList();
             for (int i = 0; i < pl.Count; i++)
             {
@@ -43,6 +46,7 @@ namespace Project_4.App_Code
             }
         }
 
+<<<<<<< HEAD
         public Play(int eventID)
         {
             enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
@@ -52,6 +56,16 @@ namespace Project_4.App_Code
         }
 
         public Play(int ev, int venue, DateTime date, bool status)
+=======
+    public Play(int eventID) {
+        enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
+        List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
+        this.date = res.ElementAt(0).date;
+        this.status = res.ElementAt(0).status;
+    }
+
+        public Play(int ev,int venue,DateTime date, bool status)
+>>>>>>> parent of b1ccca3... Merge pull request #66 from PanChee00/Final_Fixes
         {
             this.ev = ev;
             this.venue = venue;
