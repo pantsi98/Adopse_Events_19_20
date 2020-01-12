@@ -91,7 +91,8 @@ namespace Project_4.User_Classes
                     return InstanceOfUser.GetUser();
 
                 } else {
-                    throw new FailLoginAsEventManager("O manager δεν υπάρχει");
+                // throw new FailLoginAsEventManager("O manager δεν υπάρχει");
+                throw new FailLoginAsEventManager();
                 }
             }
 
