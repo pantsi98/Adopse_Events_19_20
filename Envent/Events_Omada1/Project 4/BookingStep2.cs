@@ -36,12 +36,11 @@ namespace Project_4
         {
             
             InitializeComponent();
-            //pairno titlo tou event
+            //pairno to event
             Event ev = new Event(id);
             event_id = id;
             event_date = date;
             date_string = event_date.ToString("yyyy-MM-dd HH:mm:ss");
-            Console.WriteLine(date_string);
             date_new = Convert.ToDateTime(date_string);
       
             //pairno ta tickets
@@ -71,22 +70,9 @@ namespace Project_4
             normal_tickets_count = normal;
             reduced_tickets_count = reduced;
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PlayTitle_label_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void next_button_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(event_id.ToString());
             enventDbDataSetTableAdapters.reservationsTableAdapter rsv = new enventDbDataSetTableAdapters.reservationsTableAdapter();
-            MessageBox.Show(date_new.ToString());
             rsv.createRsv(user_id, event_id,date_new, normal_tickets_count, reduced_tickets_count);
         }
     }
