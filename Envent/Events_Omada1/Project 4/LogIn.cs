@@ -154,10 +154,10 @@ namespace Project_4
                         if (MessageBox.Show("Είσοδος στον λογαριασμό σας!", "OK", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                         {
                             Control parent = this.Parent;
-                            while (parent.Name != "homepagePanel")
+                           /* while (parent.Name != "homepagePanel")
                             {
                                 parent = parent.Parent;
-                            }
+                            }*/
                             parent.Controls["cCircularbutton1"].Visible = true;
                             //parent.Controls["button8"].Visible = false;
                             Debug.WriteLine(parent.Name);

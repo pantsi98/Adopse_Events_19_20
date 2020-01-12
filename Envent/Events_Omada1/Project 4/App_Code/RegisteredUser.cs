@@ -15,8 +15,17 @@ namespace Project_4.User_Classes
 
         public RegisteredUser(string userName, string passWord)
         {
+                
+            try
+            {
                 enventDataSetTableAdapters.userTableAdapter id = new enventDataSetTableAdapters.userTableAdapter();
                 this.userID = id.getID(userName).ToList().ElementAt(0).id;
+            }
+            catch (Exception e)
+            {
+                enventDataSetTableAdapters.adminTableAdapter id = new enventDataSetTableAdapters.adminTableAdapter();
+                this.userID =  id.GetID(userName).ToList().ElementAt(0).id;
+            }
                 this.userName = userName;
                 this.passWord = passWord;
                 
