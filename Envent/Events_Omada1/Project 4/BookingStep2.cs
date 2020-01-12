@@ -40,8 +40,9 @@ namespace Project_4
             Event ev = new Event(id);
             event_id = id;
             event_date = date;
-            date_string = event_date.ToString();
-            date_new = DateTime.ParseExact(date_string, "yyyy-MM-dd HH:mm:ss", null);
+            date_string = event_date.ToString("yyyy-MM-dd HH:mm:ss");
+            Console.WriteLine(date_string);
+            date_new = Convert.ToDateTime(date_string);
       
             //pairno ta tickets
             enventDataSetTableAdapters.ticketsTableAdapter tick = new enventDataSetTableAdapters.ticketsTableAdapter();
