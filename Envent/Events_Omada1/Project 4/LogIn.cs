@@ -211,6 +211,18 @@ namespace Project_4
         {
 
         }
+
+        private void PasswordLog_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            PasswordLog.ForeColor = Color.Black;
+            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
+            {
+
+                PasswordLog.Text = "";
+                PasswordLog.ForeColor = Color.Black;
+                PasswordLog.PasswordChar = '*';
+            }
+        }
     }
     }
 

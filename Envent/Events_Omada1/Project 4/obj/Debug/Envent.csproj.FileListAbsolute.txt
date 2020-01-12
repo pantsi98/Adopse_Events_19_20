@@ -39,5 +39,3 @@ C:\Users\J\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\o
 C:\Users\J\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.exe
 C:\Users\J\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project 4.pdb
 C:\Users\J\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Envent.csprojAssemblyReference.cache
-C:\Users\J\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Advanced_Search.resources
-C:\Users\J\Documents\GitHub\Adopse_Events_19_20\Envent\Events_Omada1\Project 4\obj\Debug\Project_4.Filters.resources
