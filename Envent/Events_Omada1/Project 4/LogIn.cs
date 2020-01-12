@@ -20,13 +20,13 @@ namespace Project_4
         {
             InitializeComponent();
         }
-   
+
         private void LogIn_Load_1(object sender, EventArgs e)
         {
             Syndesi.Enabled = false;
-           
+
             UsernameLog.Text = "Username";
-           
+
             PasswordLog.Text = "Κωδικός";
 
         }
@@ -41,7 +41,7 @@ namespace Project_4
                 UsernameLog.ForeColor = Color.Black;
 
             }
- }
+        }
         private void PasswordLog_Click(object sender, EventArgs e)
         {
             PasswordLog.ForeColor = Color.Black;
@@ -67,7 +67,7 @@ namespace Project_4
         }
         private void PasswordLog_Leave(object sender, EventArgs e)
         {
-            if (PasswordLog.Text == "" )
+            if (PasswordLog.Text == "")
             {
 
                 PasswordLog.ForeColor = Color.Red;
@@ -85,8 +85,8 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός" || PasswordLog.Text== "Συμπληρώστε Kωδικό")
-            { 
+            if (PasswordLog.Text == "" || PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
+            {
                 deiktislathwn = false;
             }
 
@@ -131,7 +131,7 @@ namespace Project_4
                             }
                         }
 
-                        switch (parent.Controls["button8"].Text) 
+                        switch (parent.Controls["button8"].Text)
                         {
                             case "LOGIN":
                                 parent.Controls["button8"].Text = "LOGOUT";
@@ -139,7 +139,7 @@ namespace Project_4
                                 parent.Controls["cCircularbutton1"].Visible = true;
                                 break;
                         }
-                        
+
                         Controls.Clear();
                         Controls.Add(new HomeMain());
                     }
@@ -169,7 +169,7 @@ namespace Project_4
                         Cursor.Current = Cursors.Default;
                         messagelabel.Text = msg1.ToString();
                         loginfail.Visible = true;
-                        
+
                         UsernameLog.ForeColor = System.Drawing.Color.Gray;
                         UsernameLog.Text = "Username";
                         PasswordLog.ForeColor = System.Drawing.Color.Gray;
@@ -196,16 +196,16 @@ namespace Project_4
 
         private void LogInpanel_MouseHover(object sender, EventArgs e)
         {
-         
-                if (!AllCheck())
-                {
-                    Syndesi.Enabled = false;
-                }
-                else
-                {
-                    Syndesi.Enabled = true;
-                }
+
+            if (!AllCheck())
+            {
+                Syndesi.Enabled = false;
             }
+            else
+            {
+                Syndesi.Enabled = true;
+            }
+        }
 
         private void UsernameLog_TextChanged(object sender, EventArgs e)
         {
@@ -223,6 +223,17 @@ namespace Project_4
                 PasswordLog.PasswordChar = '*';
             }
         }
-    }
-    }
 
+        private void PasswordLog_Enter(object sender, EventArgs e)
+        {
+            PasswordLog.ForeColor = Color.Black;
+            if (PasswordLog.Text == "Κωδικός" || PasswordLog.Text == "Συμπληρώστε Kωδικό")
+            {
+
+                PasswordLog.Text = "";
+                PasswordLog.ForeColor = Color.Black;
+                PasswordLog.PasswordChar = '*';
+            }
+        }
+    }
+}
