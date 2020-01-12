@@ -43,8 +43,8 @@ namespace Project_4
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
             MainPanel.Controls.Clear();
-            HomeMain su = new HomeMain();
-            MainPanel.Controls.Add(su);
+            //HomeMain su = new HomeMain();
+            MainPanel.Controls.Add(hm);
             cCircularButton1.Visible = false;
             this.searchButton.Visible = false;
         }
@@ -171,7 +171,8 @@ namespace Project_4
                 events = user.SearchForEvent(keyword);
                 if(searchTextBox.TextLength == 0)
                 {
-                    MainPanel.Controls.Add(hm1);
+                    MainPanel.Controls.Clear();
+                    MainPanel.Controls.Add(hm);
                 }
                 else
                 {
