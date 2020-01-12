@@ -139,9 +139,20 @@ namespace Project_4
 
         private void cCircularButton1_Click(object sender, EventArgs e)
         {
-            MainPanel.Controls.Clear();
-            ProfileControl su = new ProfileControl();
-            MainPanel.Controls.Add(su);
+            User x = InstanceOfUser.GetUser();
+            if (x is NormalUser)
+            {
+                MainPanel.Controls.Clear();
+                ProfileControl su = new ProfileControl();
+                MainPanel.Controls.Add(su);
+            }
+            else if (x is EventManager)
+            {
+                MainPanel.Controls.Clear();
+                ProfileEventManager pem = new ProfileEventManager();
+                MainPanel.Controls.Add(pem);
+            }
+            
         }
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
