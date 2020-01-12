@@ -18,6 +18,7 @@ namespace Project_4
     public partial class Form1 : Form
     {
         public int index = 0;
+        List<Image> pics = Images.pic;
         SearchCategoriesControl sccsearch = new SearchCategoriesControl();
         SearchCategoriesControl sccmusic = new SearchCategoriesControl(1);
         SearchCategoriesControl scctheater = new SearchCategoriesControl(2);
@@ -29,6 +30,10 @@ namespace Project_4
         SearchCategoriesControl sccsoccer = new SearchCategoriesControl(8);
         SearchCategoriesControl sccbasket = new SearchCategoriesControl(9);
         SearchCategoriesControl scccinema = new SearchCategoriesControl(10);
+        Advanced_Search searchFilters = new Advanced_Search();
+        HomeMain hm1 = new HomeMain();
+        HomeMain hm2 = new HomeMain();
+        User user = InstanceOfUser.GetUser();
         HomeMain hm = new HomeMain();
         
         public Form1()
@@ -38,9 +43,10 @@ namespace Project_4
             sportsSubMenu.BackColor = Color.FromArgb(193, 200, 228);
             hideSubmenus();
             MainPanel.Controls.Clear();
-            HomeMain su = new HomeMain();
-            MainPanel.Controls.Add(su);
+            //HomeMain su = new HomeMain();
+            MainPanel.Controls.Add(hm);
             cCircularButton1.Visible = false;
+            this.searchButton.Visible = false;
         }
 
         private void Splash_Animation()
@@ -48,6 +54,17 @@ namespace Project_4
             Splash_Animation sa = new Splash_Animation();
             sa.SetDesktopLocation(500, 500);
             Application.Run(new Splash_Animation());
+            homepagePanel.BringToFront();
+        }
+
+        public HomeMain GetHome()
+        {
+            return hm1;
+        }
+
+        public string GetSearchText()
+        {
+            return searchTextBox.Text;
         }
 
         private void hideSubmenus()
@@ -64,7 +81,6 @@ namespace Project_4
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -99,6 +115,8 @@ namespace Project_4
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'enventDataSet.category' table. You can move, or remove it, as needed.
+            this.categoryTableAdapter.Fill(this.enventDataSet.category);
 
         }
 
@@ -146,37 +164,24 @@ namespace Project_4
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(searchTextBox.Text))
+            if (!MainPanel.Controls[0].Name.Equals("Advanced_Search"))
             {
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(hm);
-
-            }
-            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
-            {
-
-                foreach (Control item in sccsearch.Controls)
+                String keyword = searchTextBox.Text;
+                List<Event> events = new List<Event>();
+                events = user.SearchForEvent(keyword);
+                if(searchTextBox.TextLength == 0)
                 {
-                    System.Diagnostics.Trace.WriteLine(item.GetType().ToString());
+                    MainPanel.Controls.Clear();
+                    MainPanel.Controls.Add(hm);
                 }
-
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(sccsearch);
-            }
-            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count > 0)
-            {
-                foreach (Control item in sccsearch.Controls)
+                else
                 {
-                    if (item.GetType() == typeof(Label))
-                    {
-                        item.Text = searchTextBox.Text;
-                    }
+                    this.loadResults(events);
                 }
-                sccsearch.tileLabel1.Text = searchTextBox.Text;
-
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(sccsearch);
             }
+            
+            #region Comments           
+            #endregion
         }
 
         private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -191,37 +196,6 @@ namespace Project_4
 
         private void searchTextBox_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if (string.IsNullOrEmpty(searchTextBox.Text))
-            {
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(new HomeMain());
-
-            }
-            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count == 0)
-            {
-                
-                foreach (Control item in sccsearch.Controls)
-                {
-                    System.Diagnostics.Trace.WriteLine(item.GetType().ToString());
-                }
-
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(sccsearch);
-            }
-            else if (!string.IsNullOrEmpty(searchTextBox.Text) && MainPanel.Controls.Count > 0)
-            {
-                foreach (Control item in sccsearch.Controls)
-                {
-                    if (item.GetType() == typeof(Label))
-                    {
-                        item.Text = searchTextBox.Text;
-                    }
-                }
-                sccsearch.tileLabel1.Text = searchTextBox.Text;
-
-                MainPanel.Controls.Clear();
-                MainPanel.Controls.Add(sccsearch);
-            }
         }
 
         private void newsButton_Click(object sender, EventArgs e)
@@ -264,6 +238,84 @@ namespace Project_4
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(scccinema);
+        }
+
+        private void adv_src_btn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(searchFilters))
+            {
+                MainPanel.Controls.Add(searchFilters);
+                searchFilters.BringToFront();
+                this.searchButton.Visible = true;
+            }
+            else
+            {
+                MainPanel.Controls.Remove(searchFilters);
+                this.searchButton.Visible = false;
+            }
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            String keyword = searchTextBox.Text;
+            List<Event> events = new List<Event>();
+            String category = searchFilters.GetCategory();
+            DateTime since = searchFilters.GetSince();
+            DateTime until = searchFilters.GetUntil();
+            string city = searchFilters.GetCity();
+            events = user.FilterSearch(keyword,category,since,until,city);
+            this.loadResults(events);
+            this.searchButton.Visible = false;
+        }
+
+        protected void loadResults(List<Event> events)
+        {
+            MainPanel.Controls.Clear();
+            int imgIndex = 0;
+            int tileIndex = 0;
+            int panelIndex = 0;
+            Control eventsTile;
+            Control.ControlCollection tiles = sccsearch.Controls;
+            for (int i = 0; i <= 10; i++)
+            {
+                eventsTile = tiles[tiles.Count - panelIndex - 1].Controls[tiles[tiles.Count - panelIndex - 1].Controls.Count - tileIndex - 1];
+                if (events.Count > i)
+                {
+                    foreach (Control v in eventsTile.Controls)
+                    {
+                        if (v is PictureBox)
+                        {
+                            PictureBox eventPic = (PictureBox)v;
+                            Image rszimg = Images.resizeImage(Images.pic.ElementAt(imgIndex), new Size(241, 110));
+                            eventPic.Image = rszimg;
+                            imgIndex++;
+                        }
+                        if (v is Label)
+                        {
+                            Label lb = (Label)v;
+                            lb.Text = events.ElementAt(i).GetTitle();
+                            eventsTile.Visible = true;
+                        }
+                    }
+                }
+                else
+                {
+                    eventsTile.Visible = false;
+                }
+
+                tileIndex++;
+                if (tileIndex == 4)
+                {
+                    panelIndex++;
+                    tileIndex = 0;
+                }
+                if (panelIndex == 3)
+                {
+                    panelIndex = 0;
+                    break;
+                }
+            }
+            MainPanel.Controls.Add(sccsearch);
         }
     }
 }

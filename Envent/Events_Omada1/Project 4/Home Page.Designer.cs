@@ -28,14 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homepagePanel = new System.Windows.Forms.Panel();
-            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.adv_src_btn = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.enventDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.enventDataSet = new Project_4.enventDataSet();
+            this.categoryTableAdapter = new Project_4.enventDataSetTableAdapters.categoryTableAdapter();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.cCircularButton1 = new Project_4.App_Code.CCircularButton();
             this.sideBarPanel = new Project_4.GradientSideBarPanel();
             this.cinemaBtn = new System.Windows.Forms.Button();
             this.sportsSubMenu = new System.Windows.Forms.Panel();
@@ -51,6 +58,9 @@
             this.musicBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.homepagePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSet)).BeginInit();
             this.sideBarPanel.SuspendLayout();
             this.sportsSubMenu.SuspendLayout();
             this.conferenceSubMenu.SuspendLayout();
@@ -59,9 +69,11 @@
             // homepagePanel
             // 
             this.homepagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.homepagePanel.Controls.Add(this.searchButton);
             this.homepagePanel.Controls.Add(this.cCircularButton1);
-            this.homepagePanel.Controls.Add(this.panel2);
+            this.homepagePanel.Controls.Add(this.adv_src_btn);
             this.homepagePanel.Controls.Add(this.searchTextBox);
+            this.homepagePanel.Controls.Add(this.panel2);
             this.homepagePanel.Controls.Add(this.button8);
             this.homepagePanel.Controls.Add(this.button7);
             this.homepagePanel.Location = new System.Drawing.Point(0, 0);
@@ -70,18 +82,31 @@
             this.homepagePanel.Size = new System.Drawing.Size(1535, 61);
             this.homepagePanel.TabIndex = 2;
             // 
-            // cCircularButton1
+            // adv_src_btn
             // 
-            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
-            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
-            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cCircularButton1.Location = new System.Drawing.Point(388, 6);
-            this.cCircularButton1.Name = "cCircularButton1";
-            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
-            this.cCircularButton1.TabIndex = 0;
-            this.cCircularButton1.UseVisualStyleBackColor = false;
-            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
+            this.adv_src_btn.BackColor = System.Drawing.Color.White;
+            this.adv_src_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adv_src_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.adv_src_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(128)))), ((int)(((byte)(233)))));
+            this.adv_src_btn.Location = new System.Drawing.Point(1048, -1);
+            this.adv_src_btn.Name = "adv_src_btn";
+            this.adv_src_btn.Size = new System.Drawing.Size(147, 63);
+            this.adv_src_btn.TabIndex = 7;
+            this.adv_src_btn.Text = "Advanced Search";
+            this.adv_src_btn.UseVisualStyleBackColor = false;
+            this.adv_src_btn.Click += new System.EventHandler(this.adv_src_btn_Click);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchTextBox.Location = new System.Drawing.Point(450, 5);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.searchTextBox.MinimumSize = new System.Drawing.Size(376, 5);
+            this.searchTextBox.Multiline = true;
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(550, 51);
+            this.searchTextBox.TabIndex = 2;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // panel2
             // 
@@ -92,27 +117,12 @@
             this.panel2.Size = new System.Drawing.Size(271, 82);
             this.panel2.TabIndex = 6;
             // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchTextBox.Location = new System.Drawing.Point(529, 6);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.searchTextBox.MinimumSize = new System.Drawing.Size(376, 5);
-            this.searchTextBox.Multiline = true;
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(554, 50);
-            this.searchTextBox.TabIndex = 2;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
-            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
-            this.searchTextBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.searchTextBox_PreviewKeyDown);
-            // 
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(1238, 0);
+            this.button8.Location = new System.Drawing.Point(1242, 0);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(126, 61);
@@ -126,7 +136,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(1364, 0);
+            this.button7.Location = new System.Drawing.Point(1368, 0);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(126, 61);
@@ -146,6 +156,48 @@
             this.MainPanel.Size = new System.Drawing.Size(1233, 784);
             this.MainPanel.TabIndex = 5;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataMember = "category";
+            this.categoryBindingSource.DataSource = this.enventDataSetBindingSource;
+            // 
+            // enventDataSetBindingSource
+            // 
+            this.enventDataSetBindingSource.DataSource = this.enventDataSet;
+            this.enventDataSetBindingSource.Position = 0;
+            // 
+            // enventDataSet
+            // 
+            this.enventDataSet.DataSetName = "enventDataSet";
+            this.enventDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoryTableAdapter
+            // 
+            this.categoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(933, 19);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(50, 23);
+            this.searchButton.TabIndex = 8;
+            this.searchButton.Text = "GO";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // cCircularButton1
+            // 
+            this.cCircularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cCircularButton1.BackgroundImage = global::Project_4.Properties.Resources.profileIconWhiten;
+            this.cCircularButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cCircularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCircularButton1.Location = new System.Drawing.Point(348, 6);
+            this.cCircularButton1.Name = "cCircularButton1";
+            this.cCircularButton1.Size = new System.Drawing.Size(51, 50);
+            this.cCircularButton1.TabIndex = 0;
+            this.cCircularButton1.UseVisualStyleBackColor = false;
+            this.cCircularButton1.Click += new System.EventHandler(this.cCircularButton1_Click);
             // 
             // sideBarPanel
             // 
@@ -404,6 +456,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enventDataSet)).EndInit();
             this.sideBarPanel.ResumeLayout(false);
             this.sportsSubMenu.ResumeLayout(false);
             this.conferenceSubMenu.ResumeLayout(false);
@@ -420,7 +475,6 @@
         private System.Windows.Forms.Button conferencesBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel conferenceSubMenu;
         private System.Windows.Forms.Button festivalsBtn;
@@ -434,6 +488,13 @@
         private App_Code.CCircularButton cCircularButton1;
         public System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button cinemaBtn;
+        private System.Windows.Forms.BindingSource enventDataSetBindingSource;
+        private enventDataSet enventDataSet;
+        private System.Windows.Forms.BindingSource categoryBindingSource;
+        private enventDataSetTableAdapters.categoryTableAdapter categoryTableAdapter;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Button adv_src_btn;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 
