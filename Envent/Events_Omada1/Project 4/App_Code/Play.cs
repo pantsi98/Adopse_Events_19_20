@@ -8,14 +8,11 @@ using System.Threading.Tasks;
 
 namespace Project_4.App_Code
 {
-    public class Play
+    class Play
     {
         private Event ev1;
         private Venue venue1;
         private static List<DateTime> dates;
-        private int ev;
-        private int venue;
-        private DateTime date;
         private bool status;
 
         static enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();

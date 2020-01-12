@@ -48,10 +48,5 @@ namespace Project_4.App_Code.StaticMethods
         {
             return father;
         }
-
-        public static int NameToID(string name)
-        {
-            return categories.Find(x => x.GetName() == name).GetID();
-        }
     }
 }

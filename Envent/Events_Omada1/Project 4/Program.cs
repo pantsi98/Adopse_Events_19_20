@@ -10,7 +10,6 @@ using System.Net;
 using System.Drawing;
 using System.IO;
 using System.Threading;
-using Project_4.App_Code;
 
 namespace Project_4
 {
@@ -27,11 +26,9 @@ namespace Project_4
             Splash_Animation sa = new Splash_Animation();
             sa.SetDesktopLocation(500, 500);
             sa.Show();
-            InstanceOfUser.CreateVisitor();
-            Venue.FillVenuesData();
-            Play.FillPlaysData();
             Events.FillEventsData();
             Images.LoadImages();
+            InstanceOfUser.CreateVisitor();
             Categories.FillCategoryData();
             sa.Close();
             Application.Run(new Form1());

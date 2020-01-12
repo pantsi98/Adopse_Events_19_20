@@ -34,20 +34,18 @@
             // bookingStep2Card_panel
             // 
             this.bookingStep2Card_panel.Location = new System.Drawing.Point(0, 0);
-            this.bookingStep2Card_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookingStep2Card_panel.Name = "bookingStep2Card_panel";
-            this.bookingStep2Card_panel.Size = new System.Drawing.Size(1233, 784);
+            this.bookingStep2Card_panel.Size = new System.Drawing.Size(907, 702);
             this.bookingStep2Card_panel.TabIndex = 0;
             this.bookingStep2Card_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.bookingStep2Card_panel_Paint);
             // 
             // BookingStep2Card
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bookingStep2Card_panel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BookingStep2Card";
-            this.Size = new System.Drawing.Size(1233, 784);
+            this.Size = new System.Drawing.Size(907, 702);
             this.ResumeLayout(false);
 
         }
