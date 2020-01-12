@@ -13,6 +13,9 @@ namespace Project_4.App_Code
         private Event ev1;
         private Venue venue1;
         private static List<DateTime> dates;
+        private int ev;
+        private int venue;
+        private DateTime date;
         private bool status;
 
         static enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
