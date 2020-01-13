@@ -68,8 +68,7 @@ namespace Project_4
         }
         private void next_button_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 enventDbDataSetTableAdapters.reservationsTableAdapter rsv = new enventDbDataSetTableAdapters.reservationsTableAdapter();
                 rsv.createRsv(user_id, normal_tickets_count, reduced_tickets_count, date_new, event_id);
                 if (MessageBox.Show("Η κράτηση πραμγατοποιήθηκε επιτυχώς!", "Επιτυχής κράτηση", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
@@ -83,11 +82,11 @@ namespace Project_4
                     parent.Controls.Clear();
                     parent.Controls.Add(new HomeMain());
                 }
-            }
+            /*}
             catch (Exception ex)
             {
                 MessageBox.Show("Η κράτηση δεν πραγματοποιήθηκε! Παρακαλώ ξαναδοκιμάστε.", "Μη επιτυχής κράτηση", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
         }
     }
