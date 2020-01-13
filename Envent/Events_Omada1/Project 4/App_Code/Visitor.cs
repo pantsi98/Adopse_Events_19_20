@@ -56,7 +56,7 @@ namespace Project_4.User_Classes
         public bool checkUserName(string userName)
         {
             enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
-            if (Convert.ToInt32(checkUserName.checkUserName(userName)) > 0)
+            if (Convert.ToInt32(checkUserName.checkUserName1(userName)) > 0)
             {
                 return false;
             }

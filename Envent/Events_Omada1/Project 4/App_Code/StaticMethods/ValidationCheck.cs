@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Project_4.App_Code.StaticMethods
 {
@@ -56,7 +57,15 @@ namespace Project_4.App_Code.StaticMethods
         public static bool CheckUserName(String userName)
         {
             enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
-            return Convert.ToBoolean(checkUserName.checkUserName(userName));
+            if (Convert.ToBoolean(checkUserName.ScalarUserName(userName)))
+            {
+                
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static bool CheckEmail(String email)

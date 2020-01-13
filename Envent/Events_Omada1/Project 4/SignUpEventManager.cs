@@ -22,7 +22,6 @@ namespace Project_4
         private void SignUpUser_Load(object sender, EventArgs e)
         {
             Register.Enabled = false;
-           
 
         }
 
@@ -137,7 +136,7 @@ namespace Project_4
             }
 
         }
-      
+
         Boolean deiktislathwn;
         private Boolean AllCheck()
         {
@@ -152,7 +151,11 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (Email1.Text == "" || Email1.Text == "" || Email1.Text == "Παρακαλώ συμπληρώστε Εmail")
+            else if (Email1.Text == "Email" || Email1.Text == "" || Email1.Text == "Παρακαλώ συμπληρώστε Εmail")
+            {
+                deiktislathwn = false;
+            }
+            else if (username1.Text == "Username" || username1.Text == "" || username1.Text == "Παρακαλώ συμπλήρωστε ψευδόνυμο")
             {
                 deiktislathwn = false;
             }
@@ -172,7 +175,8 @@ namespace Project_4
             {
                 deiktislathwn = false;
             }
-            else if (IBAN.Text == "IBAN" || IBAN.Text=="" || IBAN.Text =="Παρακαλώ συμπλήρωστε IBAN") {
+            else if (IBAN.Text == "IBAN" || IBAN.Text == "" || IBAN.Text == "Παρακαλώ συμπλήρωστε IBAN")
+            {
                 deiktislathwn = false;
             }
             else if (checksamepass = false)
@@ -231,7 +235,8 @@ namespace Project_4
                 }
 
 
-            }  }
+            }
+        }
         Boolean checkpassIsValid;
 
         private void Kodikos1_Leave(object sender, EventArgs e)
@@ -330,18 +335,11 @@ namespace Project_4
 
 
         }
-       
+
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
-            if (!AllCheck())
-            {
-                Register.Enabled = false;
-            }
-            else
-            {
-                Register.Enabled = true;
-            }
+
         }
 
 
@@ -401,6 +399,18 @@ namespace Project_4
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel2_MouseHover_1(object sender, EventArgs e)
+        {
+            if (!AllCheck())
+            {
+                Register.Enabled = false;
+            }
+            else
+            {
+                Register.Enabled = true;
+            }
         }
     }
 }
