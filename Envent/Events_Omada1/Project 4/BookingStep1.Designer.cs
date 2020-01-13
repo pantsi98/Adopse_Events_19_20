@@ -170,7 +170,7 @@
             this.panel2.Controls.Add(this.play_title);
             this.panel2.ForeColor = System.Drawing.Color.Red;
             this.panel2.Location = new System.Drawing.Point(0, 6);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1317, 51);
             this.panel2.TabIndex = 31;

@@ -22,7 +22,7 @@ namespace Project_4
         string date;
         public BookingStep1()
         {
-          //  InitializeComponent();
+            //  InitializeComponent();
 
         }
 
@@ -35,17 +35,16 @@ namespace Project_4
             play_title.Text = ev1.GetTitle();
             Play pl1 = new Play(id);
             List<DateTime> dates = pl1.GetDates();
-            
+
             foreach (DateTime date in dates)
             {
                 if (!dateComboBox.Items.Contains(date))
                 {
                     dateComboBox.Items.Add(date);
                 }
-                
+
             }
         }
-
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -70,9 +69,10 @@ namespace Project_4
                 }
                 parent.Controls.Clear();
                 parent.Controls.Add(b2);
-            }else if(paymentComboBox.SelectedItem.ToString() == "Με κάρτα")
+            }
+            else if (paymentComboBox.SelectedItem.ToString() == "Με κάρτα")
             {
-                System.Windows.Forms.MessageBox.Show("Η πληρωμή με κάρτα δεν είναι ακόμη διαθέσιμη", "Μη διαθέσιμος τρόπος πληρωμής",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("Η πληρωμή με κάρτα δεν είναι ακόμη διαθέσιμη", "Μη διαθέσιμος τρόπος πληρωμής", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
