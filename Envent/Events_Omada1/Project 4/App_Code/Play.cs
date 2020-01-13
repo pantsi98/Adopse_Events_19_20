@@ -10,28 +10,16 @@ namespace Project_4.App_Code
 {
     public class Play
     {
+        private Event ev1;
+        private Venue venue1;
         private static List<DateTime> dates = new List<DateTime>();
         private int ev;
-        //private Event ev;
-        //private Venue venue;
         private int venue;
         private DateTime date;
         private bool status;
-
-        public List<DateTime> GetDates()
-        {
-            List<DateTime> dt = new List<DateTime>();
-            foreach(DateTime i in dates)
-            {
-                dt.Add(i.Date.Date);
-                Debug.WriteLine(i.Date.Date);
-            }
-            return dt;
-        }
         static enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
         static List<enventDataSet.playRow> pl = new List<enventDataSet.playRow>();
         public static List<Play> plays = new List<Play>();
-
 
         public static void FillPlaysData(){
             pl = pla.GetPlays().ToList();
@@ -42,12 +30,26 @@ namespace Project_4.App_Code
             }
         }
 
-    public Play(int eventID) {
-        enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
-        List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
-        this.date = res.ElementAt(0).date;
-        this.status = res.ElementAt(0).status;
-    }
+        public Play(int eventID)
+        {
+            dates = new List<DateTime>();
+            enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
+            List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
+            for (int i = 0; i < res.Count; i++)
+            {
+                DateTime date = res.ElementAt(i).date;
+                dates.Add(date);
+                Debug.WriteLine(date);
+            }
+        }
+
+
+        /* public Play(int eventID) {
+         enventDataSetTableAdapters.playTableAdapter pla = new enventDataSetTableAdapters.playTableAdapter();
+         List<enventDataSet.playRow> res = pla.getPlay(eventID).ToList();
+         this.date = res.ElementAt(0).date;
+         this.status = res.ElementAt(0).status;
+     }*/
 
         public Play(int ev,int venue,DateTime date, bool status)
         {
@@ -70,6 +72,12 @@ namespace Project_4.App_Code
         public int GetVenueID()
         {
             return this.venue;
+        }
+
+        public List<DateTime> GetDates()
+        {
+
+            return dates;
         }
     }
 }

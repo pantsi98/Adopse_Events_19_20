@@ -19,7 +19,7 @@ namespace Project_4
         string payment_type;
         int normal_tickets;
         int reduced_tickets;
-        string date;
+        DateTime date;
         public BookingStep1()
         {
             //  InitializeComponent();
@@ -56,7 +56,7 @@ namespace Project_4
 
             if (paymentComboBox.SelectedItem.ToString() == "Στο ταμείο")
             {
-                date = dateComboBox.SelectedItem.ToString();
+                date = Convert.ToDateTime(dateComboBox.SelectedItem.ToString());
                 payment_type = paymentComboBox.SelectedItem.ToString();
                 normal_tickets = (int)normalTicketsCounter.Value;
                 reduced_tickets = (int)reducedTicketsCounter.Value;
@@ -74,11 +74,6 @@ namespace Project_4
             {
                 System.Windows.Forms.MessageBox.Show("Η πληρωμή με κάρτα δεν είναι ακόμη διαθέσιμη", "Μη διαθέσιμος τρόπος πληρωμής", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void date_label_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

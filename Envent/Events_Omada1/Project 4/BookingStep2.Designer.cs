@@ -134,6 +134,7 @@
             this.next_button.TabIndex = 10;
             this.next_button.Text = "Ολοκλήρωση Κράτησης";
             this.next_button.UseVisualStyleBackColor = true;
+            this.next_button.Click += new System.EventHandler(this.next_button_Click);
             // 
             // date_label
             // 
@@ -159,7 +160,6 @@
             this.PlayTitle_label.Name = "PlayTitle_label";
             this.PlayTitle_label.Size = new System.Drawing.Size(365, 23);
             this.PlayTitle_label.TabIndex = 5;
-            this.PlayTitle_label.Click += new System.EventHandler(this.PlayTitle_label_Click);
             // 
             // label3
             // 
@@ -169,7 +169,6 @@
             this.label3.Size = new System.Drawing.Size(154, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Τίτλος Παράστασης : \r\n";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // name_label
             // 

@@ -153,7 +153,6 @@
             this.date_label.Size = new System.Drawing.Size(289, 23);
             this.date_label.TabIndex = 1;
             this.date_label.Text = "Επιλέξτε την ημερομηνία που επιθυμείτε";
-            this.date_label.Click += new System.EventHandler(this.date_label_Click);
             // 
             // panel1
             // 
