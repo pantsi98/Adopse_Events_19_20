@@ -70,8 +70,8 @@ namespace Project_4
         {
             
                 enventDbDataSetTableAdapters.reservationsTableAdapter rsv = new enventDbDataSetTableAdapters.reservationsTableAdapter();
-                rsv.createRsv(user_id, normal_tickets_count, reduced_tickets_count, date_new, event_id);
-                if (MessageBox.Show("Η κράτηση πραμγατοποιήθηκε επιτυχώς!", "Επιτυχής κράτηση", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            rsv.createRsv(user_id, event_id, date_new, normal_tickets_count, reduced_tickets_count);
+            if (MessageBox.Show("Η κράτηση πραμγατοποιήθηκε επιτυχώς!", "Επιτυχής κράτηση", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     Control parent = this.Parent;
                     while (parent.Name != "MainPanel")

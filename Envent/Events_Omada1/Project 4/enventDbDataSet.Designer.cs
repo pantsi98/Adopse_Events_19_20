@@ -1411,44 +1411,44 @@ namespace Project_4.enventDbDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "INSERT INTO `reservations` (`user_id`, `bool`, `payment_type`, `normal_tickets`, " +
-                "`reduced_tickets`, `date`, `event_id`) VALUES (@user_id, true, \"cash\" , @normal_" +
-                "ticket, @reduced_ticket , @date, @event)";
+            this._commandCollection[1].CommandText = "INSERT INTO `reservations` (`user_id`, `event_id`, `bool`, `payment_type`,`date`," +
+                "`normal_tickets`, `reduced_tickets`) VALUES (@user_id, @ev_id, true, \'cash\',@dat" +
+                "e,@norm_tick, @red_tick)\n";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p1";
+            param.ParameterName = "@user_id";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "user_id";
             this._commandCollection[1].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p4";
+            param.ParameterName = "@ev_id";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "normal_tickets";
+            param.SourceColumn = "event_id";
             this._commandCollection[1].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p5";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
-            param.IsNullable = true;
-            param.SourceColumn = "reduced_tickets";
-            this._commandCollection[1].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p6";
+            param.ParameterName = "@date";
             param.DbType = global::System.Data.DbType.DateTime;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.DateTime;
             param.IsNullable = true;
             param.SourceColumn = "date";
             this._commandCollection[1].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p7";
+            param.ParameterName = "@norm_tick";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "event_id";
+            param.SourceColumn = "normal_tickets";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@red_tick";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "reduced_tickets";
             this._commandCollection[1].Parameters.Add(param);
         }
         
@@ -1770,34 +1770,34 @@ namespace Project_4.enventDbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int createRsv(global::System.Nullable<int> p1, global::System.Nullable<int> p4, global::System.Nullable<int> p5, global::System.Nullable<global::System.DateTime> p6, global::System.Nullable<int> p7) {
+        public virtual int createRsv(global::System.Nullable<int> user_id, global::System.Nullable<int> ev_id, global::System.Nullable<global::System.DateTime> date, global::System.Nullable<int> norm_tick, global::System.Nullable<int> red_tick) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
-            if ((p1.HasValue == true)) {
-                command.Parameters[0].Value = ((int)(p1.Value));
+            if ((user_id.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(user_id.Value));
             }
             else {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((p4.HasValue == true)) {
-                command.Parameters[1].Value = ((int)(p4.Value));
+            if ((ev_id.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(ev_id.Value));
             }
             else {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((p5.HasValue == true)) {
-                command.Parameters[2].Value = ((int)(p5.Value));
+            if ((date.HasValue == true)) {
+                command.Parameters[2].Value = ((System.DateTime)(date.Value));
             }
             else {
                 command.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((p6.HasValue == true)) {
-                command.Parameters[3].Value = ((System.DateTime)(p6.Value));
+            if ((norm_tick.HasValue == true)) {
+                command.Parameters[3].Value = ((int)(norm_tick.Value));
             }
             else {
                 command.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((p7.HasValue == true)) {
-                command.Parameters[4].Value = ((int)(p7.Value));
+            if ((red_tick.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(red_tick.Value));
             }
             else {
                 command.Parameters[4].Value = global::System.DBNull.Value;
