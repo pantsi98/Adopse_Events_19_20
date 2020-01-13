@@ -44,12 +44,9 @@ namespace Project_4
 
         String description;
         String title;
-        
-
 
         private void PrepareElements(int id)
         {
-
             //pairno to venue 
             enventDataSetTableAdapters.venuesTableAdapter ven = new enventDataSetTableAdapters.venuesTableAdapter();
             int venue_id = (int)ven.GetVenueIdFromEventID(id);
@@ -97,15 +94,12 @@ namespace Project_4
                 newLabel.Height = 20;
                 newLabel.Location = new Point(10, 50 + 2 * z * newLabel.Height);
                 newLabel.Name = "label" + z;
-                MessageBox.Show(date.ToString());
                 newLabel.Text = date.ToString("dd/MM/yyyy HH:mm");
                 date_panel.Controls.Add(newLabel);
 
                 
                 z++;
             }
-
-
         }
 
         private void EventFullDescription_Load(object sender, EventArgs e)
@@ -143,11 +137,7 @@ namespace Project_4
         }
 
         private void book_tab_MouseClick(object sender, MouseEventArgs e)
-        {
-           
-           
-            
-           
+        {  
         }
 
         private void button8_Click(object sender, EventArgs e)

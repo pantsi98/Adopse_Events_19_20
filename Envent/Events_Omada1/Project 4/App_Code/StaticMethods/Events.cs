@@ -12,7 +12,7 @@ using Project_4.App_Code.StaticMethods;
 using Project_4.User_Classes;
 namespace Project_4.App_Code.StaticMethods
 {
-    class Events
+    public class Events
     {
         static enventDataSetTableAdapters.eventsTableAdapter eve = new enventDataSetTableAdapters.eventsTableAdapter();
         static List<enventDataSet.eventsRow> eveList = new List<enventDataSet.eventsRow>();
@@ -36,6 +36,11 @@ namespace Project_4.App_Code.StaticMethods
                 ids.Add(e.GetID());
             }
             return ids;
+        }
+
+        public static int GetID(string title)
+        {
+            return events.Find(x => x.GetTitle() == title).GetID();
         }
     }
 }

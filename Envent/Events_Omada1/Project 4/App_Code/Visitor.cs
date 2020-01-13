@@ -56,7 +56,7 @@ namespace Project_4.User_Classes
         public bool checkUserName(string userName)
         {
             enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
-            if (Convert.ToInt32(checkUserName.tryLogInAsUser(userName)) > 0)
+            if (Convert.ToInt32(checkUserName.checkUserName(userName)) > 0)
             {
                 return false;
             }
@@ -71,13 +71,13 @@ namespace Project_4.User_Classes
         {
 
                 enventDataSetTableAdapters.userTableAdapter tr = new enventDataSetTableAdapters.userTableAdapter();
-                if (Convert.ToInt32(tr.tryLogInAsUser(userName))>0)
+                if (Convert.ToInt32(tr.tryLogInAsUser(userName,passWord))>0)
                 {
                     InstanceOfUser.CreateCustomerUser(userName, passWord); //Δημιουργία global χρήστη τύπου normla στην στατική κλάση.
                     return InstanceOfUser.GetUser(); // Επιστροφή
                 }
                 else{
-                    throw new Exceptions.FailLogInAsNormalUser("O Χρήστης δεν υπάρχει");
+                    throw new Exceptions.FailLogInAsNormalUser("Λάθος στοιχεία");
                 }
             }
 
@@ -91,7 +91,7 @@ namespace Project_4.User_Classes
                     return InstanceOfUser.GetUser();
 
                 } else {
-                    throw new FailLoginAsEventManager("O manager δεν υπάρχει");
+                    throw new FailLoginAsEventManager("Λάθος στοιχεία");
                 }
             }
 

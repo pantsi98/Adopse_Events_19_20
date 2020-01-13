@@ -75,6 +75,7 @@ namespace Project_4
 
         private void tilesControlsClick(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             Control parent = this.Parent;
             while (parent.Name != "MainPanel")
             {
@@ -84,8 +85,7 @@ namespace Project_4
             Control a = (Control)sender;
             if (a is Label)
             {
-                enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
-                int event_id = (int)ev1.getIdFromTitle(a.Text);
+                int event_id = App_Code.StaticMethods.Events.GetID(a.Text);
                 evd = new EventFullDescription(event_id);
             }
             else if (a is PictureBox)
@@ -95,8 +95,7 @@ namespace Project_4
                 {
                     if (c is Label)
                     {
-                        enventDataSetTableAdapters.eventsTableAdapter ev1 = new enventDataSetTableAdapters.eventsTableAdapter();
-                        int event_id = (int)ev1.getIdFromTitle(a.Text);
+                        int event_id = App_Code.StaticMethods.Events.GetID(c.Text);
                         evd = new EventFullDescription(event_id);
                     }
                 }
@@ -104,11 +103,12 @@ namespace Project_4
 
             parent.Controls.Clear();
             parent.Controls.Add(evd);
+            Cursor.Current = Cursors.Default;
         }
 
         private void musicTilePanel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
     }
 }

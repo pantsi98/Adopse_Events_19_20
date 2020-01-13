@@ -56,7 +56,7 @@ namespace Project_4.App_Code.StaticMethods
         public static bool CheckUserName(String userName)
         {
             enventDataSetTableAdapters.userTableAdapter checkUserName = new enventDataSetTableAdapters.userTableAdapter();
-            return Convert.ToBoolean(checkUserName.tryLogInAsUser(userName));
+            return Convert.ToBoolean(checkUserName.checkUserName(userName));
         }
 
         public static bool CheckEmail(String email)
